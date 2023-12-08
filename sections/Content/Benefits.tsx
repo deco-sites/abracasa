@@ -70,16 +70,14 @@ export default function Benefits(
         </div>
         <div class="flex-auto flex flex-col gap-1 lg:gap-2">
           <div
-            class={`text-base lg:text-xl leading-7 ${
+            class={`text-base leading-7 font-bold ${
               reverse ? "text-base-100" : "text-base-content"
             }`}
           >
             {benefit.label}
           </div>
           <p
-            class={`text-sm leading-5 ${
-              reverse ? "text-base-100" : "text-neutral"
-            } ${benefitLayout == "piledup" ? "hidden lg:block" : ""}`}
+            class={`text-sm leading-5 text-black`}
           >
             {benefit.description}
           </p>

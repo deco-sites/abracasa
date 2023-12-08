@@ -8,7 +8,7 @@ import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
 
 export interface Props {
-  alerts: string[];
+  alerts?: string[];
 
   /** @title Search Bar */
   searchbar?: Omit<SearchbarProps, "platform">;
@@ -41,7 +41,8 @@ function Header({
           platform={platform}
         >
           <div class="bg-base-100 fixed w-full z-50">
-            <Alert alerts={alerts} />
+            {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
+
             <Navbar
               items={items}
               searchbar={searchbar && { ...searchbar, platform }}
