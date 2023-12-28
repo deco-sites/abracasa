@@ -30,7 +30,6 @@ export interface Layout {
   onMouseOver?: {
     image?: "Change image" | "Zoom image";
     card?: "None" | "Move up";
-    showFavoriteIcon?: boolean;
     showSkuSelector?: boolean;
     showCardShadow?: boolean;
     showCta?: boolean;
@@ -57,8 +56,8 @@ const relative = (url: string) => {
   return `${link.pathname}${link.search}`;
 };
 
-const WIDTH = 200;
-const HEIGHT = 279;
+const WIDTH = 252;
+const HEIGHT = 252;
 
 function ProductCard(
   { product, preload, itemListName, layout, platform, index }: Props,
@@ -99,7 +98,7 @@ function ProductCard(
     <a
       href={url && relative(url)}
       aria-label="view product"
-      class="btn btn-block"
+      class="btn btn-block bg-dimgray hover:bg-dimgray text-white font-normal leading-[15px] text-sm"
     >
       {l?.basics?.ctaText || "Ver produto"}
     </a>
@@ -147,11 +146,6 @@ function ProductCard(
               ? "left-2"
               : "right-2"
           }
-          ${
-            l?.onMouseOver?.showFavoriteIcon
-              ? "lg:hidden lg:group-hover:block"
-              : "lg:hidden"
-          }
         `}
         >
           {platform === "vtex" && (
@@ -172,7 +166,7 @@ function ProductCard(
             alt={front.alternateName}
             width={WIDTH}
             height={HEIGHT}
-            class={`bg-base-100 col-span-full row-span-full rounded w-full ${
+            class={`bg-base-100 col-span-full row-span-full w-full ${
               l?.onMouseOver?.image == "Zoom image"
                 ? "duration-100 transition-scale scale-100 lg:group-hover:scale-125"
                 : ""
@@ -189,7 +183,7 @@ function ProductCard(
               alt={back?.alternateName ?? front.alternateName}
               width={WIDTH}
               height={HEIGHT}
-              class="bg-base-100 col-span-full row-span-full transition-opacity rounded w-full opacity-0 lg:group-hover:opacity-100"
+              class="hidden lg:block bg-base-100 col-span-full row-span-full transition-opacity w-full opacity-0 lg:group-hover:opacity-100"
               sizes="(max-width: 640px) 50vw, 20vw"
               loading="lazy"
               decoding="async"
@@ -238,7 +232,9 @@ function ProductCard(
               {l?.hide?.productName ? "" : (
                 <h2
                   class="truncate text-base lg:text-lg text-base-content"
-                  dangerouslySetInnerHTML={{ __html: name ?? "" }}
+                  dangerouslySetInnerHTML={{
+                    __html: isVariantOf?.name ?? name ?? "",
+                  }}
                 />
               )}
               {l?.hide?.productDescription ? "" : (
@@ -259,20 +255,20 @@ function ProductCard(
               } ${align === "center" ? "justify-center" : "justify-start"}`}
             >
               <div
-                class={`line-through text-base-300 text-xs ${
+                class={`line-through text-gray-400 text-xs ${
                   l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
                 }`}
               >
                 {formatPrice(listPrice, offers?.priceCurrency)}
               </div>
-              <div class="text-accent text-base lg:text-xl">
+              <div class="text-black font-bold text-sm">
                 {formatPrice(price, offers?.priceCurrency)}
               </div>
             </div>
             {l?.hide?.installments
               ? ""
               : (
-                <div class="text-base-300 text-sm lg:text-base truncate">
+                <div class="text-black text-sm lg:text-base truncate">
                   ou {installments}
                 </div>
               )}

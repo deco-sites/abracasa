@@ -11,6 +11,7 @@ export default {
     extend: {
       colors: {
         "firebrick": "#ab0033",
+        "dimgray": "#555555",
       },
     },
   },
