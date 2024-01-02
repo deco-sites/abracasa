@@ -49,7 +49,6 @@ function ProductInfo({ page, layout }: Props) {
     isVariantOf,
     additionalProperty = [],
   } = product;
-  const description = product.description || isVariantOf?.description;
   const {
     price = 0,
     listPrice,
@@ -94,27 +93,29 @@ function ProductInfo({ page, layout }: Props) {
         </h1>
       </div>
       {/* Prices */}
-      <div class="mt-4">
-        <div class="flex flex-row gap-2 items-center">
+      <div class="flex items-start flex-col mt-4">
+        <div class="flex flex-col items-start">
           {(listPrice ?? 0) > price && (
-            <span class="line-through text-base-300 text-xs">
+            <span class="line-through text-xs leading-4">
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="font-medium text-xl text-secondary">
+          <span class="font-bold text-[22px] leading-[30px]">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
-        <span class="text-sm text-base-300">
+        <span class="text-[22px] leading-[30px] text-[#555]">
           {installments}
         </span>
       </div>
       {/* Sku Selector */}
-      <div class="mt-4 sm:mt-6">
-        <ProductSelector product={product} />
-      </div>
+      {isVariantOf && isVariantOf?.hasVariant?.length > 0 && (
+        <div class="mt-3">
+          <ProductSelector product={product} />
+        </div>
+      )}
       {/* Add to Cart and Favorites button */}
-      <div class="mt-4 sm:mt-10 flex flex-col gap-2">
+      <div class="mt-4 sm:mt-6 flex flex-col gap-2">
         {availability === "https://schema.org/InStock"
           ? (
             <>
@@ -125,11 +126,13 @@ function ProductInfo({ page, layout }: Props) {
                     productID={productID}
                     seller={seller}
                   />
-                  <WishlistButton
+                  {
+                    /* <WishlistButton
                     variant="full"
                     productID={productID}
                     productGroupID={productGroupID}
-                  />
+                  /> */
+                  }
                 </>
               )}
               {platform === "wake" && (
@@ -180,20 +183,6 @@ function ProductInfo({ page, layout }: Props) {
             }]}
           />
         )}
-      </div>
-      {/* Description card */}
-      <div class="mt-4 sm:mt-6">
-        <span class="text-sm">
-          {description && (
-            <details>
-              <summary class="cursor-pointer">Descrição</summary>
-              <div
-                class="ml-2 mt-2"
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
-            </details>
-          )}
-        </span>
       </div>
       {/* Analytics Event */}
       <SendEventOnView

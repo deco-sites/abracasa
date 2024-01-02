@@ -33,15 +33,16 @@ import * as $$$$$$25 from "./sections/Product/ImageGalleryFrontBack.tsx";
 import * as $$$$$$26 from "./sections/Product/ImageGallerySlider.tsx";
 import * as $$$$$$27 from "./sections/Product/NotFound.tsx";
 import * as $$$$$$28 from "./sections/Product/NotFoundChallenge.tsx";
-import * as $$$$$$29 from "./sections/Product/ProductInfo.tsx";
-import * as $$$$$$30 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$31 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$32 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$33 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$34 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$35 from "./sections/Social/InstagramWidget.tsx";
-import * as $$$$$$36 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$37 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$29 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$30 from "./sections/Product/ProductInfo.tsx";
+import * as $$$$$$31 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$32 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$33 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$34 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$35 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$36 from "./sections/Social/InstagramWidget.tsx";
+import * as $$$$$$37 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$38 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -80,15 +81,16 @@ const manifest = {
     "deco-sites/abracasa/sections/Product/ImageGallerySlider.tsx": $$$$$$26,
     "deco-sites/abracasa/sections/Product/NotFound.tsx": $$$$$$27,
     "deco-sites/abracasa/sections/Product/NotFoundChallenge.tsx": $$$$$$28,
-    "deco-sites/abracasa/sections/Product/ProductInfo.tsx": $$$$$$29,
-    "deco-sites/abracasa/sections/Product/ProductShelf.tsx": $$$$$$30,
-    "deco-sites/abracasa/sections/Product/ProductShelfTabbed.tsx": $$$$$$31,
-    "deco-sites/abracasa/sections/Product/SearchResult.tsx": $$$$$$32,
-    "deco-sites/abracasa/sections/Product/Wishlist.tsx": $$$$$$33,
-    "deco-sites/abracasa/sections/Social/InstagramPosts.tsx": $$$$$$34,
-    "deco-sites/abracasa/sections/Social/InstagramWidget.tsx": $$$$$$35,
-    "deco-sites/abracasa/sections/Social/WhatsApp.tsx": $$$$$$36,
-    "deco-sites/abracasa/sections/Theme/Theme.tsx": $$$$$$37,
+    "deco-sites/abracasa/sections/Product/ProductDetails.tsx": $$$$$$29,
+    "deco-sites/abracasa/sections/Product/ProductInfo.tsx": $$$$$$30,
+    "deco-sites/abracasa/sections/Product/ProductShelf.tsx": $$$$$$31,
+    "deco-sites/abracasa/sections/Product/ProductShelfTabbed.tsx": $$$$$$32,
+    "deco-sites/abracasa/sections/Product/SearchResult.tsx": $$$$$$33,
+    "deco-sites/abracasa/sections/Product/Wishlist.tsx": $$$$$$34,
+    "deco-sites/abracasa/sections/Social/InstagramPosts.tsx": $$$$$$35,
+    "deco-sites/abracasa/sections/Social/InstagramWidget.tsx": $$$$$$36,
+    "deco-sites/abracasa/sections/Social/WhatsApp.tsx": $$$$$$37,
+    "deco-sites/abracasa/sections/Theme/Theme.tsx": $$$$$$38,
   },
   "apps": {
     "deco-sites/abracasa/apps/decohub.ts": $$$$$$$$$$$0,

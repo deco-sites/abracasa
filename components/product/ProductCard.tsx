@@ -140,7 +140,7 @@ function ProductCard(
       >
         {/* Wishlist button */}
         <div
-          class={`absolute top-2 z-10
+          class={`absolute top-1 z-10
           ${
             l?.elementsPositions?.favoriteIcon === "Top left"
               ? "left-2"
@@ -246,7 +246,7 @@ function ProductCard(
             </div>
           )}
         {l?.hide?.allPrices ? "" : (
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col">
             <div
               class={`flex flex-col gap-0 ${
                 l?.basics?.oldPriceSize === "Normal"
@@ -255,7 +255,7 @@ function ProductCard(
               } ${align === "center" ? "justify-center" : "justify-start"}`}
             >
               <div
-                class={`line-through text-gray-400 text-xs ${
+                class={`line-through text-[#555] text-xs ${
                   l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
                 }`}
               >
@@ -268,7 +268,7 @@ function ProductCard(
             {l?.hide?.installments
               ? ""
               : (
-                <div class="text-black text-sm lg:text-base truncate">
+                <div class="text-black text-xs leading-[23px] truncate">
                   ou {installments}
                 </div>
               )}
