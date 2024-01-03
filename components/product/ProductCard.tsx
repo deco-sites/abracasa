@@ -69,6 +69,7 @@ function ProductCard(
     image: images,
     offers,
     isVariantOf,
+    additionalProperty = [],
   } = product;
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
@@ -138,6 +139,26 @@ function ProductCard(
         class="relative overflow-hidden"
         style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
       >
+        {/* Flags */}
+        <div
+          class={`flex items-center gap-1 absolute top-0 z-10 ${
+            l?.elementsPositions?.favoriteIcon === "Top left"
+              ? "right-0"
+              : "left-0"
+          }`}
+        >
+          {((listPrice ?? 0) - (price ?? 0) > 0) && (
+            <div class="flex items-center justify-center bg-[#555] text-xs leading-[18px] text-white w-full px-2 h-[18px]">
+              -{Math.round(((listPrice! - price!) * 100) / listPrice!)}%
+            </div>
+          )}
+
+          {additionalProperty.find((item) => item.value === "Exclusivo") && (
+            <div class="flex items-center justify-center bg-[#555] text-xs leading-[18px] text-white w-full px-2 h-[18px]">
+              Exclusivo
+            </div>
+          )}
+        </div>
         {/* Wishlist button */}
         <div
           class={`absolute top-1 z-10
