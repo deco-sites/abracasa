@@ -48,13 +48,13 @@ function ProductShelf({
 
       <div
         id={id}
-        class="container max-w-[95%] grid grid-cols-[48px_1fr_48px] px-0 sm:px-5"
+        class="container grid grid-cols-[48px_1fr_48px] px-2 sm:px-5"
       >
-        <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar gap-6 col-span-full row-start-2 row-end-5">
+        <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar gap-6 col-span-full row-start-2 row-end-5 pb-2">
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item w-[252px] first:pl-6 sm:first:pl-0 last:pr-6 sm:last:pr-0"
+              class="carousel-item w-[252px] lg:w-[292px]"
             >
               <ProductCard
                 product={product}

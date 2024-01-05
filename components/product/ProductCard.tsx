@@ -8,6 +8,7 @@ import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
+import Installments from "./Installments.tsx";
 
 export interface Layout {
   basics?: {
@@ -76,9 +77,20 @@ function ProductCard(
   const productGroupID = isVariantOf?.productGroupID;
   const description = product.description || isVariantOf?.description;
   const [front, back] = images ?? [];
-  const { listPrice, price, installments } = useOffer(offers);
+  const { listPrice, price } = useOffer(offers);
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
+
+  const {
+    billingDuration: installmentsBillingDuration,
+    billingIncrement: installmentsBillingIncrement,
+  } = (offers?.offers[0].priceSpecification || [])
+    .filter((item) => item.billingDuration !== undefined)
+    .sort((a, b) => (b.billingDuration || 0) - (a.billingDuration || 0))
+    .map(({ billingDuration, billingIncrement }) => ({
+      billingDuration,
+      billingIncrement,
+    }))[0] || {};
 
   const l = layout;
   const align =
@@ -99,7 +111,7 @@ function ProductCard(
     <a
       href={url && relative(url)}
       aria-label="view product"
-      class="btn btn-block bg-dimgray hover:bg-dimgray text-white font-normal leading-[15px] text-sm"
+      class="btn btn-block bg-transparent border border-dimgray rounded-none hover:bg-dimgray text-dimgray hover:text-white font-normal leading-[15px] text-[13px]"
     >
       {l?.basics?.ctaText || "Ver produto"}
     </a>
@@ -108,7 +120,7 @@ function ProductCard(
   return (
     <div
       id={id}
-      class={`card card-compact group w-full ${
+      class={`card card-compact group w-full border border-[#D9D9D9] rounded-none ${
         align === "center" ? "text-center" : "text-start"
       } ${l?.onMouseOver?.showCardShadow ? "lg:hover:card-bordered" : ""}
         ${
@@ -141,31 +153,32 @@ function ProductCard(
       >
         {/* Flags */}
         <div
-          class={`flex items-center gap-1 absolute top-0 z-10 ${
+          class={`flex items-center gap-1.5 absolute top-2 z-10 ${
             l?.elementsPositions?.favoriteIcon === "Top left"
-              ? "right-0"
-              : "left-0"
+              ? "right-2"
+              : "left-2"
           }`}
         >
-          {((listPrice ?? 0) - (price ?? 0) > 0) && (
-            <div class="flex items-center justify-center bg-[#555] text-xs leading-[18px] text-white w-full px-2 h-[18px]">
-              -{Math.round(((listPrice! - price!) * 100) / listPrice!)}%
-            </div>
-          )}
+          {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
+            (
+              <div class="flex items-center justify-center bg-[#555] rounded-md text-xs leading-[12px] text-white py-3 px-1.5 min-w-[104px] w-full h-[18px]">
+                pronta entrega
+              </div>
+            )}
 
           {additionalProperty.find((item) => item.value === "Exclusivo") && (
-            <div class="flex items-center justify-center bg-[#555] text-xs leading-[18px] text-white w-full px-2 h-[18px]">
-              Exclusivo
+            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 w-full h-[18px]">
+              exclusivo
             </div>
           )}
         </div>
         {/* Wishlist button */}
         <div
-          class={`absolute top-1 z-10
+          class={`absolute top-0 z-10
           ${
             l?.elementsPositions?.favoriteIcon === "Top left"
-              ? "left-2"
-              : "right-2"
+              ? "left-1"
+              : "right-1"
           }
         `}
         >
@@ -249,10 +262,10 @@ function ProductCard(
         {l?.hide?.productName && l?.hide?.productDescription
           ? ""
           : (
-            <div class="flex flex-col gap-0">
+            <div class="flex flex-col gap-0 lg:px-1.5">
               {l?.hide?.productName ? "" : (
                 <h2
-                  class="truncate text-base lg:text-lg text-base-content"
+                  class="text-sm text-black"
                   dangerouslySetInnerHTML={{
                     __html: isVariantOf?.name ?? name ?? "",
                   }}
@@ -266,35 +279,63 @@ function ProductCard(
               )}
             </div>
           )}
-        {l?.hide?.allPrices ? "" : (
+
+        <div class="flex items-center justify-between w-full h-full lg:px-1.5">
           <div class="flex flex-col">
-            <div
-              class={`flex flex-col gap-0 ${
-                l?.basics?.oldPriceSize === "Normal"
-                  ? "lg:flex-row lg:gap-2"
-                  : ""
-              } ${align === "center" ? "justify-center" : "justify-start"}`}
-            >
-              <div
-                class={`line-through text-[#555] text-xs ${
-                  l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                }`}
-              >
-                {formatPrice(listPrice, offers?.priceCurrency)}
-              </div>
-              <div class="text-black font-bold text-sm">
-                {formatPrice(price, offers?.priceCurrency)}
-              </div>
-            </div>
-            {l?.hide?.installments
+            {l?.hide?.allPrices
               ? ""
               : (
-                <div class="text-black text-xs leading-[23px] truncate">
-                  ou {installments}
+                <div class="flex flex-col leading-[15px]">
+                  <div
+                    class={`flex flex-col gap-0 ${
+                      l?.basics?.oldPriceSize === "Normal"
+                        ? "lg:flex-row lg:gap-2"
+                        : ""
+                    } ${
+                      align === "center" ? "justify-center" : "justify-start"
+                    }`}
+                  >
+                    <div
+                      class={`line-through text-[#A4A2A2] text-xs ${
+                        l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
+                      }`}
+                    >
+                      {formatPrice(listPrice, offers?.priceCurrency)}
+                    </div>
+                    <div class="text-black font-bold text-sm">
+                      {formatPrice(price, offers?.priceCurrency)}
+                    </div>
+                  </div>
+                  {l?.hide?.installments ? "" : (
+                    <Installments
+                      installmentsBillingDuration={installmentsBillingDuration ??
+                        0}
+                      installmentsBillingIncrement={installmentsBillingIncrement ??
+                        0}
+                    />
+                  )}
                 </div>
               )}
           </div>
-        )}
+
+          {/* Discount Flags */}
+          <div class="flex flex-col lg:flex-row lg:gap-1 text-xs leading-[18px]">
+            {(listPrice ?? 0) > (price ?? 0) && (
+              <span class="text-[#E31010] font-semibold">
+                {formatPrice(
+                  (listPrice ?? 0) - (price ?? 0),
+                  offers?.priceCurrency,
+                )}
+              </span>
+            )}
+
+            {((listPrice ?? 0) - (price ?? 0) > 0) && (
+              <div class="flex items-center justify-center bg-[#E31010] rounded text-xs font-bold leading-[18px] text-white p-2 w-10 h-[18px]">
+                -{Math.round(((listPrice! - price!) * 100) / listPrice!)}%
+              </div>
+            )}
+          </div>
+        </div>
 
         {/* SKU Selector */}
         {l?.elementsPositions?.skuSelector === "Bottom" && (
