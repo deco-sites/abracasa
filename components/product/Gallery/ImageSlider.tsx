@@ -102,7 +102,7 @@ export default function GallerySlider(props: Props) {
         ))}
       </ul>
 
-      <SliderJS rootId={id} />
+      <SliderJS rootId={id} scroll="smooth" />
     </div>
   );
 }

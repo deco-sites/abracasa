@@ -13,13 +13,13 @@ export default function ProductDetails({ page }: Props) {
   return (
     <div
       role="tablist"
-      class="tabs tabs-bordered max-w-[1200px] mx-auto px-4 lg:px-0 mt-6"
+      class="hidden lg:tabs tabs-bordered max-w-[1200px] mx-auto px-4 lg:px-0 mt-6"
     >
       <input
         type="radio"
         name="my_tabs_1"
         role="tab"
-        class="tab checked:text-firebrick"
+        class="tab min-w-[300px] checked:text-firebrick"
         aria-label="Sobre"
         checked
       />
@@ -35,11 +35,33 @@ export default function ProductDetails({ page }: Props) {
         type="radio"
         name="my_tabs_1"
         role="tab"
-        class="tab checked:text-firebrick"
-        aria-label="Dimensões"
+        class="tab min-w-[300px] checked:text-firebrick"
+        aria-label="Dimensões e detalhes"
       />
       <div role="tabpanel" class="tab-content pt-6">
         Detalhamentos de dimensões
+      </div>
+
+      <input
+        type="radio"
+        name="my_tabs_1"
+        role="tab"
+        class="tab min-w-[300px] checked:text-firebrick"
+        aria-label="Avaliações"
+      />
+      <div role="tabpanel" class="tab-content pt-6">
+        Avaliações
+      </div>
+
+      <input
+        type="radio"
+        name="my_tabs_1"
+        role="tab"
+        class="tab min-w-[300px] checked:text-firebrick"
+        aria-label="Assista o vídeo"
+      />
+      <div role="tabpanel" class="tab-content pt-6">
+        Assista o Vídeo
       </div>
     </div>
   );

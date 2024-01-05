@@ -27,7 +27,7 @@ interface Props {
 }
 
 const variants = {
-  active: "ring ring-1 ring-offset-base-100 ring-offset-2",
+  active: "bg-[#212121] text-white font-bold",
   disabled:
     `relative after:absolute after:left-0 after:top-1/2 after:h-[1px] after:bg-red-800 after:w-full after:block after:-rotate-45 after:content-[""]`,
   default: "border border-base-200 hover:border-primary",
@@ -37,12 +37,12 @@ function Avatar({ content, variant = "default" }: Props) {
   return (
     <div class="avatar placeholder text-xs">
       <div
-        class={`rounded-full w-8 h-8 ${colors[content] ?? colors[variant]} ${
+        class={`rounded-[2px] w-16 h-8 ${colors[content] ?? colors[variant]} ${
           variants[variant]
         }`}
       >
-        <span class="uppercase">
-          {colors[content] ? "" : content.substring(0, 2)}
+        <span class="lowercase">
+          {colors[content] ? "" : content}
         </span>
       </div>
     </div>
