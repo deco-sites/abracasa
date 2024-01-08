@@ -193,7 +193,8 @@ function Footer({
     <FooterItems
       sections={sections}
       justify={layout?.variation == "Variation 2" ||
-        layout?.variation == "Variation 3"}
+        layout?.variation == "Variation 3" ||
+        layout?.variation == "Variation 4"}
     />
   );
   const _social = layout?.hide?.socialLinks
@@ -214,11 +215,9 @@ function Footer({
 
   return (
     <footer
-      class={`w-full flex flex-col pt-10 pb-2 md:pb-10 gap-10 ${
-        ColorClasses(layout)
-      }`}
+      class={`w-full flex flex-col pt-10 pb-2 md:pb-10 gap-10 border border-t`}
     >
-      <div class="lg:container mx-6 lg:mx-auto">
+      <div>
         {(!layout?.variation || layout?.variation == "Variation 1") && (
           <div class="flex flex-col gap-10">
             <div class="flex flex-col md:flex-row md:justify-between md:flex-wrap lg:flex-nowrap gap-8 lg:gap-12">
@@ -294,25 +293,17 @@ function Footer({
           <div class="flex flex-col gap-10">
             {_newsletter}
             {layout?.hide?.newsletter ? <></> : <Divider />}
-            <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 lg:justify-between">
+            <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 lg:justify-between lg:container">
+              {_social}
               {_sectionLinks}
-              <div class="flex flex-col md:flex-row lg:flex-col gap-10 lg:gap-10 lg:w-2/5 lg:pl-10">
-                <div class="flex flex-col md:flex-row gap-10 lg:gap-20">
-                  <div class="lg:flex-auto">
-                    {_payments}
-                  </div>
-                  <div class="lg:flex-auto">
-                    {_social}
-                  </div>
-                </div>
-                <div class="flex flex-col gap-10 lg:gap-10">
-                  {_region}
-                  {_apps}
-                </div>
+
+              <div class="flex flex-col gap-5">
+                {_payments}
+                {_region}
               </div>
             </div>
             <Divider />
-            <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center">
+            <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center lg:container">
               {_logo}
               <PoweredByDeco />
             </div>
