@@ -5,8 +5,10 @@ import ExtraLinks from "$store/components/footer/ExtraLinks.tsx";
 import FooterItems from "$store/components/footer/FooterItems.tsx";
 import Logo from "$store/components/footer/Logo.tsx";
 import MobileApps from "$store/components/footer/MobileApps.tsx";
+import Security from "$store/components/footer/Security.tsx";
 import PaymentMethods from "$store/components/footer/PaymentMethods.tsx";
 import RegionSelector from "$store/components/footer/RegionSelector.tsx";
+import Techs from "$store/components/footer/Techs.tsx";
 import Social from "$store/components/footer/Social.tsx";
 import Newsletter from "$store/islands/Newsletter.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
@@ -34,7 +36,25 @@ export interface SocialItem {
 }
 
 export interface PaymentItem {
-  label: "Diners" | "Elo" | "Mastercard" | "Pix" | "Visa";
+  image: ImageWidget;
+  description: string;
+  width?: number;
+  height?: number;
+}
+
+export interface SecurityItem {
+  image: ImageWidget;
+  description: string;
+  link: string;
+  target: "_blank" | "_self";
+  width?: number;
+  height?: number;
+}
+
+export interface TechItem {
+  label: string;
+  link: string;
+  target: "_blank" | "_self";
 }
 
 export interface MobileApps {
@@ -74,11 +94,14 @@ export interface Layout {
     newsletter?: boolean;
     sectionLinks?: boolean;
     socialLinks?: boolean;
+    securityMethods?: boolean;
     paymentMethods?: boolean;
     mobileApps?: boolean;
     regionOptions?: boolean;
     extraLinks?: boolean;
     backToTheTop?: boolean;
+    footerDescription?: boolean;
+    techs?: boolean;
   };
 }
 
@@ -98,6 +121,10 @@ export interface Props {
     title?: string;
     items: SocialItem[];
   };
+  security?: {
+    title?: string;
+    items: SecurityItem[];
+  };
   payments?: {
     title?: string;
     items: PaymentItem[];
@@ -107,6 +134,13 @@ export interface Props {
   extraLinks?: Item[];
   backToTheTop?: {
     text?: string;
+  };
+  footerDescription?: {
+    text?: string;
+  };
+  techs?: {
+    title?: string;
+    items: TechItem[];
   };
   layout?: Layout;
 }
@@ -157,12 +191,21 @@ function Footer({
   },
   payments = {
     title: "Formas de pagamento",
-    items: [{ label: "Mastercard" }, { label: "Visa" }, { label: "Pix" }],
+    items: [],
+  },
+  security = {
+    title: "Segurança",
+    items: [],
+  },
+  techs = {
+    title: "Tecnologias: ",
+    items: [],
   },
   mobileApps = { apple: "/", android: "/" },
   regionOptions = { currency: [], language: [] },
   extraLinks = [],
   backToTheTop,
+  footerDescription,
   layout = {
     backgroundColor: "Primary",
     variation: "Variation 1",
@@ -172,10 +215,12 @@ function Footer({
       sectionLinks: false,
       socialLinks: false,
       paymentMethods: false,
+      securityMethods: false,
       mobileApps: false,
       regionOptions: false,
       extraLinks: false,
       backToTheTop: false,
+      footerDescription: false,
     },
   },
 }: Props) {
@@ -200,6 +245,9 @@ function Footer({
   const _social = layout?.hide?.socialLinks
     ? <></>
     : <Social content={social} vertical={layout?.variation == "Variation 3"} />;
+  const _security = layout?.hide?.securityMethods
+    ? <></>
+    : <Security content={security} />;
   const _payments = layout?.hide?.paymentMethods
     ? <></>
     : <PaymentMethods content={payments} />;
@@ -212,6 +260,7 @@ function Footer({
   const _links = layout?.hide?.extraLinks
     ? <></>
     : <ExtraLinks content={extraLinks} />;
+  const _techs = layout?.hide?.techs ? <></> : <Techs content={techs} />;
 
   return (
     <footer
@@ -290,7 +339,7 @@ function Footer({
           </div>
         )}
         {layout?.variation == "Variation 4" && (
-          <div class="flex flex-col gap-10">
+          <div class="flex flex-col gap-10 px-2 lg:px-0">
             {_newsletter}
             {layout?.hide?.newsletter ? <></> : <Divider />}
             <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 lg:justify-between lg:container">
@@ -298,14 +347,21 @@ function Footer({
               {_sectionLinks}
 
               <div class="flex flex-col gap-5">
+                {_security}
                 {_payments}
-                {_region}
               </div>
             </div>
             <Divider />
             <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center lg:container">
-              {_logo}
-              <PoweredByDeco />
+              {layout?.hide?.footerDescription
+                ? <></>
+                : (
+                  <p class="text-black text-xs text-center md:text-start">
+                    {footerDescription?.text}
+                  </p>
+                )}
+
+              {_techs}
             </div>
           </div>
         )}

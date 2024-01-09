@@ -1,6 +1,6 @@
 export default function SectionNewsLetter() {
   return (
-    <div class="bg-[#B9154C] text-white max-w-full max-h-[142px] flex items-center justify-center">
+    <div class="bg-[#B9154C] text-white max-w-full flex items-center justify-center">
       <div class="w-full h-full bg-[#B9154C] text-center my-10 md:my-7 py-2 px-6">
         <h1 class="text-xl font-bold">
           Receba novidades, ofertas e conteúdos exclusivos!

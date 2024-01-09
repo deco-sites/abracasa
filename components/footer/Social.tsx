@@ -20,12 +20,12 @@ export default function Social(
   return (
     <>
       {content && content.items && content.items.length > 0 && (
-        <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col lg:items-center gap-4">
           {content.title && (
-            <h3 class="text-sm text-center">{content.title}</h3>
+            <span class="text-sm lg:text-center">{content.title}</span>
           )}
           <ul
-            class={`grid grid-cols-6 md:grid-cols-3 md:items-center gap-3`}
+            class={`grid grid-cols-6 md:grid-cols-3 md:items-center gap-4`}
           >
             {content.items.map((item) => {
               return (
@@ -37,8 +37,8 @@ export default function Social(
                     aria-label={`${item.label} Logo`}
                     class="flex gap-2 items-center"
                   >
-                    <span class="block p-1 border rounded-full">
-                      <Icon size={24} id={item.label} />
+                    <span class="block text-[#828282]">
+                      <Icon size={30} id={item.label} strokeWidth={0.1} />
                     </span>
                     {vertical && (
                       <div class="text-sm hidden lg:block">{item.label}</div>
