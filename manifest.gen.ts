@@ -12,7 +12,7 @@ import * as $$$$$$4 from "./sections/Content/Faq.tsx";
 import * as $$$$$$5 from "./sections/Content/HighlightsBanners.tsx";
 import * as $$$$$$6 from "./sections/Content/Logos.tsx";
 import * as $$$$$$7 from "./sections/Content/PartnerShips.tsx";
-import * as $$$$$$8 from "./sections/Content/SectionNewsLetter.tsx";
+import * as $$$$$$8 from "./sections/Content/SectionText.tsx";
 import * as $$$$$$9 from "./sections/Content/Testimonials.tsx";
 import * as $$$$$$10 from "./sections/Footer/Footer.tsx";
 import * as $$$$$$11 from "./sections/Gallery.tsx";
@@ -31,20 +31,21 @@ import * as $$$$$$23 from "./sections/Links/Shortcuts.tsx";
 import * as $$$$$$24 from "./sections/Miscellaneous/CampaignTimer.tsx";
 import * as $$$$$$25 from "./sections/Miscellaneous/CookieConsent.tsx";
 import * as $$$$$$26 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$27 from "./sections/Product/ImageGalleryFrontBack.tsx";
-import * as $$$$$$28 from "./sections/Product/ImageGallerySlider.tsx";
-import * as $$$$$$29 from "./sections/Product/NotFound.tsx";
-import * as $$$$$$30 from "./sections/Product/NotFoundChallenge.tsx";
-import * as $$$$$$31 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$32 from "./sections/Product/ProductInfo.tsx";
-import * as $$$$$$33 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$34 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$35 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$36 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$37 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$38 from "./sections/Social/InstagramWidget.tsx";
-import * as $$$$$$39 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$40 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$27 from "./sections/Newsletter/SectionNewsletter.tsx";
+import * as $$$$$$28 from "./sections/Product/ImageGalleryFrontBack.tsx";
+import * as $$$$$$29 from "./sections/Product/ImageGallerySlider.tsx";
+import * as $$$$$$30 from "./sections/Product/NotFound.tsx";
+import * as $$$$$$31 from "./sections/Product/NotFoundChallenge.tsx";
+import * as $$$$$$32 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$33 from "./sections/Product/ProductInfo.tsx";
+import * as $$$$$$34 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$35 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$36 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$37 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$38 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$39 from "./sections/Social/InstagramWidget.tsx";
+import * as $$$$$$40 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$41 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -62,7 +63,7 @@ const manifest = {
     "deco-sites/abracasa/sections/Content/HighlightsBanners.tsx": $$$$$$5,
     "deco-sites/abracasa/sections/Content/Logos.tsx": $$$$$$6,
     "deco-sites/abracasa/sections/Content/PartnerShips.tsx": $$$$$$7,
-    "deco-sites/abracasa/sections/Content/SectionNewsLetter.tsx": $$$$$$8,
+    "deco-sites/abracasa/sections/Content/SectionText.tsx": $$$$$$8,
     "deco-sites/abracasa/sections/Content/Testimonials.tsx": $$$$$$9,
     "deco-sites/abracasa/sections/Footer/Footer.tsx": $$$$$$10,
     "deco-sites/abracasa/sections/Gallery.tsx": $$$$$$11,
@@ -81,20 +82,21 @@ const manifest = {
     "deco-sites/abracasa/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$24,
     "deco-sites/abracasa/sections/Miscellaneous/CookieConsent.tsx": $$$$$$25,
     "deco-sites/abracasa/sections/Newsletter/Newsletter.tsx": $$$$$$26,
-    "deco-sites/abracasa/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$27,
-    "deco-sites/abracasa/sections/Product/ImageGallerySlider.tsx": $$$$$$28,
-    "deco-sites/abracasa/sections/Product/NotFound.tsx": $$$$$$29,
-    "deco-sites/abracasa/sections/Product/NotFoundChallenge.tsx": $$$$$$30,
-    "deco-sites/abracasa/sections/Product/ProductDetails.tsx": $$$$$$31,
-    "deco-sites/abracasa/sections/Product/ProductInfo.tsx": $$$$$$32,
-    "deco-sites/abracasa/sections/Product/ProductShelf.tsx": $$$$$$33,
-    "deco-sites/abracasa/sections/Product/ProductShelfTabbed.tsx": $$$$$$34,
-    "deco-sites/abracasa/sections/Product/SearchResult.tsx": $$$$$$35,
-    "deco-sites/abracasa/sections/Product/Wishlist.tsx": $$$$$$36,
-    "deco-sites/abracasa/sections/Social/InstagramPosts.tsx": $$$$$$37,
-    "deco-sites/abracasa/sections/Social/InstagramWidget.tsx": $$$$$$38,
-    "deco-sites/abracasa/sections/Social/WhatsApp.tsx": $$$$$$39,
-    "deco-sites/abracasa/sections/Theme/Theme.tsx": $$$$$$40,
+    "deco-sites/abracasa/sections/Newsletter/SectionNewsletter.tsx": $$$$$$27,
+    "deco-sites/abracasa/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$28,
+    "deco-sites/abracasa/sections/Product/ImageGallerySlider.tsx": $$$$$$29,
+    "deco-sites/abracasa/sections/Product/NotFound.tsx": $$$$$$30,
+    "deco-sites/abracasa/sections/Product/NotFoundChallenge.tsx": $$$$$$31,
+    "deco-sites/abracasa/sections/Product/ProductDetails.tsx": $$$$$$32,
+    "deco-sites/abracasa/sections/Product/ProductInfo.tsx": $$$$$$33,
+    "deco-sites/abracasa/sections/Product/ProductShelf.tsx": $$$$$$34,
+    "deco-sites/abracasa/sections/Product/ProductShelfTabbed.tsx": $$$$$$35,
+    "deco-sites/abracasa/sections/Product/SearchResult.tsx": $$$$$$36,
+    "deco-sites/abracasa/sections/Product/Wishlist.tsx": $$$$$$37,
+    "deco-sites/abracasa/sections/Social/InstagramPosts.tsx": $$$$$$38,
+    "deco-sites/abracasa/sections/Social/InstagramWidget.tsx": $$$$$$39,
+    "deco-sites/abracasa/sections/Social/WhatsApp.tsx": $$$$$$40,
+    "deco-sites/abracasa/sections/Theme/Theme.tsx": $$$$$$41,
   },
   "apps": {
     "deco-sites/abracasa/apps/decohub.ts": $$$$$$$$$$$0,
