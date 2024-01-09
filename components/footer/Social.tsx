@@ -38,7 +38,12 @@ export default function Social(
                     class="flex gap-2 items-center"
                   >
                     <span class="block text-[#828282]">
-                      <Icon size={30} id={item.label} strokeWidth={0.1} />
+                      <Icon
+                        size={30}
+                        id={item.label}
+                        strokeWidth={0.1}
+                        loading="lazy"
+                      />
                     </span>
                     {vertical && (
                       <div class="text-sm hidden lg:block">{item.label}</div>

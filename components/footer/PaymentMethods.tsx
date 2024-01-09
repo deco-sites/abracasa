@@ -25,6 +25,7 @@ export default function PaymentMethods(
                     alt={item.description}
                     width={item.width || 30}
                     height={item.height || 30}
+                    loading="lazy"
                   />
                 </li>
               );

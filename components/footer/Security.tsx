@@ -32,6 +32,7 @@ export default function SecurityMethods(
                       alt={item.description}
                       width={item.width || 48}
                       height={item.height || 30}
+                      loading="lazy"
                     />
                   </a>
                 </li>
