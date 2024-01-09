@@ -10,7 +10,7 @@ export default function SectionNewsLetter() {
         </p>
         <form
           action=""
-          class="w-full h-full flex flex-col md:flex-row items-center justify-center gap-4"
+          class="w-full h-full flex flex-col md:flex-row items-center justify-center gap-7 pb-5"
         >
           <input
             type="text"
@@ -24,7 +24,7 @@ export default function SectionNewsLetter() {
           />
           <button
             type="submit"
-            class="border border-solid border-[#B9154C] min-w-[140px] min-h-[32px] bg-[#2C2C2C] px-4 text-base font-semibold focus:outline-none focus:ring-2 focus:ring-[#B9154C]focus:ring-opacity-50"
+            class="border border-solid border-[#B9154C] min-w-[140px] min-h-[32px] bg-[#2C2C2C] px-4 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#B9154C]focus:ring-opacity-50"
           >
             Enviar
           </button>
@@ -32,4 +32,4 @@ export default function SectionNewsLetter() {
       </div>
     </div>
   );
-}
+  }
