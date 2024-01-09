@@ -1,1 +1,1 @@
-export { default } from "$store/components/ui/SectionText.tsx"
+export { default } from "$store/components/ui/SectionText.tsx";
