@@ -264,7 +264,7 @@ function Footer({
 
   return (
     <footer
-      class={`w-full flex flex-col pt-10 pb-2 md:pb-10 gap-10 border border-t`}
+      class={`w-full flex flex-col md:pt-10 pb-2 md:pb-10 gap-6 md:gap-10 md:border-t`}
     >
       <div>
         {(!layout?.variation || layout?.variation == "Variation 1") && (
@@ -339,10 +339,10 @@ function Footer({
           </div>
         )}
         {layout?.variation == "Variation 4" && (
-          <div class="flex flex-col gap-10 px-2 lg:px-0">
+          <div class="flex flex-col gap-6 md:gap-10">
             {_newsletter}
             {layout?.hide?.newsletter ? <></> : <Divider />}
-            <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 lg:justify-between lg:container">
+            <div class="flex flex-col md:flex-row gap-6 md:gap-20 md:justify-between md:container px-4 md:px-0">
               {_social}
               {_sectionLinks}
 
@@ -352,7 +352,7 @@ function Footer({
               </div>
             </div>
             <Divider />
-            <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center lg:container">
+            <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center md:container px-4 md:px-0">
               {layout?.hide?.footerDescription
                 ? <></>
                 : (

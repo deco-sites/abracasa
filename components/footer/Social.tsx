@@ -20,9 +20,9 @@ export default function Social(
   return (
     <>
       {content && content.items && content.items.length > 0 && (
-        <div class="flex flex-col lg:items-center gap-4">
+        <div class="flex flex-col md:items-center gap-4 border-y py-4 md:border-none md:py-0">
           {content.title && (
-            <span class="text-sm lg:text-center">{content.title}</span>
+            <span class="text-sm md:text-center">{content.title}</span>
           )}
           <ul
             class={`grid grid-cols-6 md:grid-cols-3 md:items-center gap-4`}

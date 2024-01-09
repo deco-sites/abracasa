@@ -17,12 +17,12 @@ export default function FooterItems(
     <>
       {sections.length > 0 && (
         <ul
-          class={`flex flex-col lg:flex-row gap-6 lg:gap-28 ${
-            justify && "lg:justify-between"
+          class={`flex flex-col md:flex-row gap-6 md:gap-12 lg:gap-28 ${
+            justify && "md:justify-between"
           }`}
         >
           {sections.map((section) => (
-            <li>
+            <li class="border-b md:border-none pb-3 md:pb-0">
               <div class="flex flex-col gap-2">
                 <span class="text-sm">
                   {section.label}

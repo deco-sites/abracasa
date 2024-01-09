@@ -16,7 +16,7 @@ export default function SecurityMethods(
   return (
     <>
       {content && content.items && content.items.length > 0 && (
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 border-b pb-4 md:border-none md:pb-0">
           {content.title && <span class="text-sm">{content.title}</span>}
           <ul class="flex flex-wrap items-center gap-4">
             {content.items.map((item) => {
