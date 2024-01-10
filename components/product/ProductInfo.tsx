@@ -73,8 +73,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
 
   const referenceId = additionalProperty.find((item) => item.name === "RefId")
     ?.value;
-  const similarsColorsLength = (relatedProducts && relatedProducts.length) ??
-    null;
+  const similarsColorsLength = (relatedProducts && relatedProducts.length) ?? 0;
   const discountValue = Math.ceil(listPrice! - price!);
   const discountPercentage = Math.round((discountValue * 100) / listPrice!);
   const hasPromptDeliveryFlag = additionalProperty.find((item) =>
@@ -173,7 +172,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
             </div>
           )}
 
-          {similarsColorsLength && (
+          {similarsColorsLength > 0 && (
             <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 max-w-[70px] w-full h-[18px]">
               +{similarsColorsLength} cores
             </div>
