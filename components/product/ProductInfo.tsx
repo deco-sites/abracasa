@@ -19,6 +19,7 @@ import ProductSelector from "./ProductVariantSelector.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
+  relatedProducts: Product[] | null;
   layout: {
     /**
      * @title Product Name
@@ -29,13 +30,15 @@ interface Props {
   };
 }
 
-function ProductInfo({ page, layout }: Props) {
+function ProductInfo({ page, relatedProducts, layout }: Props) {
   const platform = usePlatform();
   const id = useId();
 
   if (page === null) {
     throw new Error("Missing Product Details Page Info");
   }
+
+  console.log(relatedProducts?.length);
 
   const {
     breadcrumbList,
@@ -71,7 +74,8 @@ function ProductInfo({ page, layout }: Props) {
 
   const referenceId = additionalProperty.find((item) => item.name === "RefId")
     ?.value;
-
+  const similarsColorsLength = (relatedProducts && relatedProducts.length) ??
+    null;
   const discountValue = Math.ceil(listPrice! - price!);
   const discountPercentage = Math.round((discountValue * 100) / listPrice!);
   const hasPromptDeliveryFlag = additionalProperty.find((item) =>
@@ -167,6 +171,12 @@ function ProductInfo({ page, layout }: Props) {
           {hasExclusiveFlag && (
             <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 max-w-[70px] w-full h-[18px]">
               exclusivo
+            </div>
+          )}
+
+          {similarsColorsLength && (
+            <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 max-w-[70px] w-full h-[18px]">
+              +{similarsColorsLength} cores
             </div>
           )}
 
