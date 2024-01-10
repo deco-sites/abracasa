@@ -12,6 +12,7 @@ export default {
       colors: {
         "firebrick": "#ab0033",
         "dimgray": "#555555",
+        "whitesmoke": "#f2f2f2",
       },
     },
   },
