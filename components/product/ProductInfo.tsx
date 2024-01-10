@@ -16,6 +16,7 @@ import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import { Product, ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
+import Similars from "./Similars.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -37,8 +38,6 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
   if (page === null) {
     throw new Error("Missing Product Details Page Info");
   }
-
-  console.log(relatedProducts?.length);
 
   const {
     breadcrumbList,
@@ -87,7 +86,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
 
   return (
     <div
-      class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-10 md:pb-6 lg:max-w-[440px]"
+      class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-10 md:pb-6 lg:max-w-[440px] px-4 md:px-0"
       id={id}
     >
       {/* Code and name */}
@@ -335,6 +334,12 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
           <span>Lojas físicas com este produto</span>
         </button>
       </div>
+
+      {relatedProducts && relatedProducts.length > 0 && (
+        <div class="mt-6">
+          <Similars relatedProducts={relatedProducts} />
+        </div>
+      )}
       {/* Analytics Event */}
       <SendEventOnView
         id={id}

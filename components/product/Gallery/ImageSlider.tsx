@@ -44,7 +44,7 @@ export default function GallerySlider(props: Props) {
 
   return (
     <>
-      <div class="lg:ml-6">
+      <div class="lg:ml-6 overflow-auto max-w-[95vw] md:max-w-full">
         <Breadcrumb itemListElement={breadcrumb.itemListElement} />
       </div>
 
