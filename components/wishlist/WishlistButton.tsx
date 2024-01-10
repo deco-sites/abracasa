@@ -9,12 +9,14 @@ export interface Props {
   productID: string;
   productGroupID?: string;
   variant?: "icon" | "full";
+  icon?: "Heart" | "HeartOutline";
 }
 
 function WishlistButton({
   variant = "icon",
   productGroupID,
   productID,
+  icon = "Heart",
 }: Props) {
   const { user } = useUser();
   const { loading, addItem, removeItem, getItem } = useWishlist();
@@ -71,7 +73,7 @@ function WishlistButton({
       }}
     >
       <Icon
-        id="HeartOutline"
+        id={icon || "Heart"}
         size={24}
         strokeWidth={1}
         fill={inWishlist ? "black" : "none"}

@@ -72,6 +72,15 @@ function ProductInfo({ page, layout }: Props) {
   const referenceId = additionalProperty.find((item) => item.name === "RefId")
     ?.value;
 
+  const discountValue = listPrice! - price!;
+  const discountPercentage = Math.round((discountValue * 100) / listPrice!);
+  const hasPromptDeliveryFlag = additionalProperty.find((item) =>
+    item.value === "Pronta Entrega"
+  );
+  const hasExclusiveFlag = additionalProperty.find((item) =>
+    item.value === "Exclusivo"
+  );
+
   return (
     <div
       class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-10 md:pb-6 lg:max-w-[440px]"
@@ -129,6 +138,7 @@ function ProductInfo({ page, layout }: Props) {
 
           <div class="flex items-center gap-1">
             <WishlistButton
+              icon="HeartOutline"
               variant="icon"
               productID={productID}
               productGroupID={productGroupID}
@@ -145,6 +155,27 @@ function ProductInfo({ page, layout }: Props) {
             ID: {referenceId}
           </span>
         )}
+
+        {/* Flags */}
+        <div class="flex items-center gap-2 mt-1">
+          {hasPromptDeliveryFlag && (
+            <div class="flex items-center justify-center bg-[#555] rounded-md text-xs leading-[12px] text-white py-3 px-1.5 max-w-[120px] w-full h-[18px]">
+              pronta entrega
+            </div>
+          )}
+
+          {hasExclusiveFlag && (
+            <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 max-w-[70px] w-full h-[18px]">
+              exclusivo
+            </div>
+          )}
+
+          {((listPrice ?? 0) - (price ?? 0) > 0) && (
+            <div class="flex items-center justify-center bg-[#E31010] rounded-md text-xs font-bold leading-[18px] text-white py-3 px-1 max-w-[46px] w-full h-[18px]">
+              -{discountPercentage}%
+            </div>
+          )}
+        </div>
       </div>
       {/* Prices */}
       <div class="flex items-start flex-col mt-4">
@@ -156,7 +187,7 @@ function ProductInfo({ page, layout }: Props) {
               </span>
 
               <span class="text-[#E31010] text-[13px] leading-[18px]">
-                (R$ 150 off)
+                (R$ {discountValue} off)
               </span>
             </div>
           )}
