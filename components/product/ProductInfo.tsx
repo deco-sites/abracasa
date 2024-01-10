@@ -13,12 +13,14 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
-import { ProductDetailsPage } from "apps/commerce/types.ts";
+import { Product, ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
+import Similars from "./Similars.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
+  relatedProducts: Product[] | null;
   layout: {
     /**
      * @title Product Name
@@ -29,7 +31,7 @@ interface Props {
   };
 }
 
-function ProductInfo({ page, layout }: Props) {
+function ProductInfo({ page, relatedProducts, layout }: Props) {
   const platform = usePlatform();
   const id = useId();
 
@@ -71,10 +73,19 @@ function ProductInfo({ page, layout }: Props) {
 
   const referenceId = additionalProperty.find((item) => item.name === "RefId")
     ?.value;
+  const similarsColorsLength = (relatedProducts && relatedProducts.length) ?? 0;
+  const discountValue = Math.ceil(listPrice! - price!);
+  const discountPercentage = Math.round((discountValue * 100) / listPrice!);
+  const hasPromptDeliveryFlag = additionalProperty.find((item) =>
+    item.value === "Pronta Entrega"
+  );
+  const hasExclusiveFlag = additionalProperty.find((item) =>
+    item.value === "Exclusivo"
+  );
 
   return (
     <div
-      class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-10 md:pb-6 lg:max-w-[440px]"
+      class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-10 md:pb-6 lg:max-w-[440px] px-4 md:px-0"
       id={id}
     >
       {/* Code and name */}
@@ -129,6 +140,7 @@ function ProductInfo({ page, layout }: Props) {
 
           <div class="flex items-center gap-1">
             <WishlistButton
+              icon="HeartOutline"
               variant="icon"
               productID={productID}
               productGroupID={productGroupID}
@@ -145,6 +157,33 @@ function ProductInfo({ page, layout }: Props) {
             ID: {referenceId}
           </span>
         )}
+
+        {/* Flags */}
+        <div class="flex items-center gap-2 mt-1">
+          {hasPromptDeliveryFlag && (
+            <div class="flex items-center justify-center bg-[#555] rounded-md text-xs leading-[12px] text-white py-3 px-1.5 max-w-[120px] w-full h-[18px]">
+              pronta entrega
+            </div>
+          )}
+
+          {hasExclusiveFlag && (
+            <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 max-w-[70px] w-full h-[18px]">
+              exclusivo
+            </div>
+          )}
+
+          {similarsColorsLength > 0 && (
+            <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 max-w-[70px] w-full h-[18px]">
+              +{similarsColorsLength} cores
+            </div>
+          )}
+
+          {((listPrice ?? 0) - (price ?? 0) > 0) && (
+            <div class="flex items-center justify-center bg-[#E31010] rounded-md text-xs font-bold leading-[18px] text-white py-3 px-1 max-w-[46px] w-full h-[18px]">
+              -{discountPercentage}%
+            </div>
+          )}
+        </div>
       </div>
       {/* Prices */}
       <div class="flex items-start flex-col mt-4">
@@ -156,7 +195,7 @@ function ProductInfo({ page, layout }: Props) {
               </span>
 
               <span class="text-[#E31010] text-[13px] leading-[18px]">
-                (R$ 150 off)
+                (R$ {discountValue} off)
               </span>
             </div>
           )}
@@ -294,6 +333,12 @@ function ProductInfo({ page, layout }: Props) {
           <span>Lojas físicas com este produto</span>
         </button>
       </div>
+
+      {relatedProducts && relatedProducts.length > 0 && (
+        <div class="mt-6">
+          <Similars relatedProducts={relatedProducts} />
+        </div>
+      )}
       {/* Analytics Event */}
       <SendEventOnView
         id={id}

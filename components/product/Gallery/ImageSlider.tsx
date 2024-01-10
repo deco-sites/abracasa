@@ -44,9 +44,11 @@ export default function GallerySlider(props: Props) {
 
   return (
     <>
-      <Breadcrumb itemListElement={breadcrumb.itemListElement} />
+      <div class="lg:ml-6 overflow-auto max-w-[95vw] md:max-w-full">
+        <Breadcrumb itemListElement={breadcrumb.itemListElement} />
+      </div>
 
-      <div id={id} class="grid grid-flow-row sm:grid-flow-col">
+      <div id={id} class="grid grid-flow-row sm:grid-flow-col lg:gap-6">
         {/* Image Slider */}
         <div class="relative order-1 sm:order-2">
           <Slider class="carousel carousel-center gap-6 w-screen sm:w-[40vw]">
@@ -55,7 +57,7 @@ export default function GallerySlider(props: Props) {
                 index={index}
                 class="carousel-item w-full"
               >
-                <Image
+                <img
                   class="w-full"
                   sizes="(max-width: 640px) 100vw, 40vw"
                   style={{ aspectRatio }}
@@ -64,7 +66,7 @@ export default function GallerySlider(props: Props) {
                   width={width}
                   height={height}
                   // Preload LCP image for better web vitals
-                  preload={index === 0}
+                  preload={index === 0 ? "true" : "false"}
                   loading={index === 0 ? "eager" : "lazy"}
                 />
               </Slider.Item>
@@ -95,15 +97,15 @@ export default function GallerySlider(props: Props) {
         </div>
 
         {/* Dots */}
-        <ul class="carousel carousel-center gap-1 px-4 sm:px-0 sm:flex-col order-2 sm:order-1">
+        <ul class="carousel carousel-center gap-1 px-4 sm:px-0 sm:flex-col order-2 sm:order-1 sm:border-r sm:border-[#DFDFDF]/60 sm:pr-6">
           {images.map((img, index) => (
-            <li class="carousel-item min-w-[63px] sm:min-w-[100px]">
+            <li class="carousel-item min-w-[98px]">
               <Slider.Dot index={index}>
                 <Image
-                  style={{ aspectRatio }}
-                  class="group-disabled:border-base-300 border rounded "
-                  width={63}
-                  height={87.5}
+                  style={{ aspectRatio: 1 }}
+                  class="group-disabled:border-base-300 border object-cover"
+                  width={98}
+                  height={98}
                   src={img.url!}
                   alt={img.alternateName}
                 />
