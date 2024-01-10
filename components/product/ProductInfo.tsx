@@ -72,7 +72,7 @@ function ProductInfo({ page, layout }: Props) {
   const referenceId = additionalProperty.find((item) => item.name === "RefId")
     ?.value;
 
-  const discountValue = listPrice! - price!;
+  const discountValue = Math.ceil(listPrice! - price!);
   const discountPercentage = Math.round((discountValue * 100) / listPrice!);
   const hasPromptDeliveryFlag = additionalProperty.find((item) =>
     item.value === "Pronta Entrega"
