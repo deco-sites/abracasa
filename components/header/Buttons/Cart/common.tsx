@@ -1,3 +1,4 @@
+import { asset } from "$fresh/runtime.ts";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
@@ -26,7 +27,7 @@ function CartButton({ loading, currency, total, items }: Props) {
   return (
     <div class="indicator">
       <span
-        class={`indicator-item badge badge-secondary badge-sm ${
+        class={`indicator-item badge badge-secondary badge-sm bg-firebrick text-white border-none ${
           totalItems === 0 ? "hidden" : ""
         }`}
       >
@@ -34,13 +35,19 @@ function CartButton({ loading, currency, total, items }: Props) {
       </span>
 
       <Button
-        class="btn-circle btn-sm btn-ghost"
+        hasBtnClass={false}
+        class="group"
         aria-label="open cart"
         data-deco={displayCart.value && "open-cart"}
         loading={loading}
         onClick={onClick}
       >
-        <Icon id="ShoppingCart" size={24} strokeWidth={2} />
+        <img
+          src={asset("/image/cart.svg")}
+          width={30}
+          height={30}
+          alt="Cart icon"
+        />
       </Button>
     </div>
   );

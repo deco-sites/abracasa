@@ -13,6 +13,7 @@ export default {
         "firebrick": "#ab0033",
         "dimgray": "#555555",
         "whitesmoke": "#f2f2f2",
+        "snow": "#fbfbfb",
       },
     },
   },
