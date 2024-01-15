@@ -9,13 +9,11 @@
  * no JavaScript is shipped to the browser!
  */
 
-import ProductCard from "$store/components/product/ProductCard.tsx";
-import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import Slider from "$store/components/ui/Slider.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useId } from "$store/sdk/useId.ts";
-import { useSuggestions } from "$store/sdk/useSuggestions.ts";
+import { useAutocomplete } from "$store/hooks/useAutocomplete.ts";
 import { useUI } from "$store/sdk/useUI.ts";
 import { Suggestion } from "apps/commerce/types.ts";
 import { Resolved } from "deco/engine/core/resolver.ts";
@@ -65,8 +63,8 @@ function Searchbar({
   const searchInputRef = useRef<HTMLInputElement>(null);
   const modal = useRef<HTMLDivElement>(null);
 
-  const { setQuery, payload, loading } = useSuggestions(loader);
-  const { products = [], searches = [] } = payload.value ?? {};
+  const { setSearch: setQuery, suggestions, loading } = useAutocomplete();
+  const { products = [], searches = [] } = suggestions.value ?? {};
 
   const hasProducts = Boolean(products.length);
   const hasTerms = Boolean(searches.length);
@@ -165,26 +163,37 @@ function Searchbar({
               <>
                 <div
                   class={hasProducts
-                    ? "flex flex-col pt-6 pb-1 md:pt-0 gap-6 lg:pl-3"
+                    ? "flex flex-col pt-6 pb-2.5 md:pt-1 gap-6 lg:pl-3"
                     : "hidden"}
                 >
-                  {products.map((product, index) => (
-                    <ProductCard
-                      product={product}
-                      platform={platform}
-                      layout={{
-                        hide: {
-                          productDescription: true,
-                          cta: true,
-                          skuSelector: true,
-                        },
-                        basics: {
-                          contentAlignment: "Center",
-                          oldPriceSize: "Small",
-                        },
-                      }}
-                    />
-                  ))}
+                  {products?.map(({ isVariantOf, image: images, url }) => {
+                    const [front] = images ?? [];
+
+                    return (
+                      <a
+                        href={url || "#"}
+                        class="flex items-center w-full h-full gap-3"
+                      >
+                        <Image
+                          src={front.url || ""}
+                          alt={front.alternateName}
+                          width={60}
+                          height={60}
+                          loading="lazy"
+                          decoding="async"
+                          preload={false}
+                        />
+
+                        <h2
+                          class="truncate text-black uppercase font-semibold text-xs pt-1.5"
+                          dangerouslySetInnerHTML={{
+                            __html: isVariantOf?.name ?? name ??
+                              "",
+                          }}
+                        />
+                      </a>
+                    );
+                  })}
                 </div>
               </>
             )}
