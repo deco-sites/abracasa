@@ -101,7 +101,7 @@ function Searchbar({
         <input
           ref={searchInputRef}
           id={useId()}
-          class="flex-grow w-[80%] bg-snow outline-none placeholder-shown:sibling:hidden placeholder:text-sm text-black pl-2.5"
+          class="flex-grow w-[80%] bg-snow outline-none placeholder-shown:sibling:hidden placeholder:text-sm text-sm text-black pl-2.5"
           aria-label="Barra de pesquisa"
           aria-expanded={showSuggestions ? "true" : "false"}
           name={name}
@@ -129,7 +129,6 @@ function Searchbar({
 
         <button
           type="submit"
-          class="btn-ghost bg-transparent"
           aria-label="Search"
           for={id}
           tabIndex={-1}
@@ -155,7 +154,7 @@ function Searchbar({
           {notFound
             ? (
               <span
-                class="font-bold uppercase py-2"
+                class="py-2"
                 role="heading"
                 aria-level={3}
               >
