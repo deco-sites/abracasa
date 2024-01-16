@@ -9,15 +9,26 @@ export interface Props {
 export default function ProductDetails({ page }: Props) {
   if (!page) return null;
 
-  const measurementImage = page?.product?.image?.find((item) =>
-    item.name === "medidas"
-  );
+  const {
+    product,
+  } = page;
 
-  const description = page?.product?.description ||
-    page?.product?.isVariantOf?.description;
+  const {
+    isVariantOf,
+    image: images = [],
+  } = product;
+
+  const additionalInfos =
+    isVariantOf?.additionalProperty?.filter((item) =>
+      item?.name !== "ProdutosSimilares"
+    ) ?? [];
+
+  const measurementImage = images?.find((item) => item.name === "medidas");
+
+  const description = product?.description || product?.isVariantOf?.description;
 
   return (
-    <div class="hidden lg:flex flex-col max-w-[1200px] mx-auto w-full gap-3">
+    <div class="hidden lg:flex flex-col max-w-[1200px] mx-auto w-full gap-4">
       <div class="grid grid-cols-4 w-full max-w-[1200px] mx-auto px-4 lg:px-0 mt-6">
         <a
           href="#about-product"
@@ -26,7 +37,10 @@ export default function ProductDetails({ page }: Props) {
           Sobre o produto
         </a>
 
-        <a href="#" class="text-center border-b border-b-firebrick pb-2">
+        <a
+          href="#dimensions-and-details"
+          class="text-center border-b border-b-firebrick pb-2"
+        >
           Dimensões e detalhes
         </a>
 
@@ -39,21 +53,62 @@ export default function ProductDetails({ page }: Props) {
         </a>
       </div>
 
-      <div
-        id="about-product"
-        dangerouslySetInnerHTML={{
-          __html: description?.replace(/\r?\n/g, "<br />") || "",
-        }}
-      />
-
-      {measurementImage && measurementImage.url && (
-        <Image
-          src={measurementImage.url}
-          alt={measurementImage.alternateName || "Medidas"}
-          width={420}
-          height={420}
+      <div class="flex flex-col gap-2 max-w-[87%] xl:max-w-full mx-auto">
+        <div
+          id="about-product"
+          dangerouslySetInnerHTML={{
+            __html: description?.replace(/\r?\n/g, "<br />") || "",
+          }}
         />
-      )}
+
+        {measurementImage && measurementImage.url && (
+          <Image
+            src={measurementImage.url}
+            alt={measurementImage.alternateName || "Medidas"}
+            width={420}
+            height={420}
+          />
+        )}
+
+        <ul
+          id="dimensions-and-details"
+          class="flex flex-col max-w-[75%] mx-auto w-full gap-1"
+        >
+          {additionalInfos?.map((item) => (
+            <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+              <span class="font-bold w-full">{item.name}</span>
+
+              {item?.name?.includes("Materiais")
+                ? (
+                  <div
+                    class="w-[65%] text-justify leading-relaxed tracking-wide"
+                    dangerouslySetInnerHTML={{
+                      __html: item?.value?.replace(/\r?\n/g, "<br />") || "",
+                    }}
+                  />
+                )
+                : item?.name?.includes("Limpeza e cuidados")
+                ? (
+                  <a
+                    target="_blank"
+                    aria-label="abrir manual"
+                    href={item.value}
+                    class="w-[65%] text-crimson text-end"
+                  >
+                    Abrir manual
+                  </a>
+                )
+                : (
+                  <span
+                    class={`${item?.name !== "Garantia" && "text-end"} w-[65%]`}
+                  >
+                    {item.value}
+                  </span>
+                )}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

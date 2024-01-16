@@ -14,6 +14,7 @@ export default {
         "dimgray": "#555555",
         "whitesmoke": "#f2f2f2",
         "snow": "#fbfbfb",
+        "crimson": "#c9154c",
       },
     },
   },
