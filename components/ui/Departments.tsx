@@ -21,7 +21,7 @@ export default function Departments({ departments = [] }: Props) {
           href={item.link || "#"}
           class="flex flex-col items-center justify-center gap-1 hover:text-[#c2024a]"
         >
-          <Image
+          <img
             src={item.image}
             alt={item.description}
             width={item.width || 100}
@@ -29,7 +29,7 @@ export default function Departments({ departments = [] }: Props) {
             loading={item.loading}
             class="rounded-full min-h-[100p] min-w-[100px]"
           />
-          <span>{item.label}</span>
+          <span class="text-[15px] leading-[32px]">{item.label}</span>
         </a>
       ))}
     </div>
