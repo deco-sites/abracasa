@@ -10,7 +10,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
         href={url}
         class="flex items-center justify-center px-4 py-3 group-hover:bg-firebrick transition-all duration-300 w-[140px]"
       >
-        <span class="group-hover:underline group-hover:text-white text-sm leading-[22px] transition-all duration-300">
+        <span class="group-hover:text-white text-sm leading-[22px] transition-all duration-300">
           {name}
         </span>
       </a>

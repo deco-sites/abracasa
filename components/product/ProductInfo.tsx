@@ -1,11 +1,6 @@
 import { SendEventOnView } from "$store/components/Analytics.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import AddToCartButtonLinx from "$store/islands/AddToCartButton/linx.tsx";
-import AddToCartButtonShopify from "$store/islands/AddToCartButton/shopify.tsx";
-import AddToCartButtonVNDA from "$store/islands/AddToCartButton/vnda.tsx";
 import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
-import AddToCartButtonWake from "$store/islands/AddToCartButton/wake.tsx";
-import AddToCartButtonNuvemshop from "$store/islands/AddToCartButton/nuvemshop.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
@@ -226,39 +221,6 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
                     seller={seller}
                   />
                 </>
-              )}
-              {platform === "wake" && (
-                <AddToCartButtonWake
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                />
-              )}
-              {platform === "linx" && (
-                <AddToCartButtonLinx
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                  productGroupID={productGroupID}
-                />
-              )}
-              {platform === "vnda" && (
-                <AddToCartButtonVNDA
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                  additionalProperty={additionalProperty}
-                />
-              )}
-              {platform === "shopify" && (
-                <AddToCartButtonShopify
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                />
-              )}
-              {platform === "nuvemshop" && (
-                <AddToCartButtonNuvemshop
-                  productGroupID={productGroupID}
-                  eventParams={{ items: [eventItem] }}
-                  additionalProperty={additionalProperty}
-                />
               )}
             </>
           )

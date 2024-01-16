@@ -9,12 +9,12 @@ import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
 import Installments from "./Installments.tsx";
+import AddToCartButton from "$store/islands/Shelf/AddToCartButton.tsx";
 
 export interface Layout {
   basics?: {
     contentAlignment?: "Left" | "Center";
     oldPriceSize?: "Small" | "Normal";
-    ctaText?: string;
   };
   elementsPositions?: {
     skuSelector?: "Top" | "Bottom";
@@ -77,7 +77,7 @@ function ProductCard(
   const productGroupID = isVariantOf?.productGroupID;
   const description = product.description || isVariantOf?.description;
   const [front, back] = images ?? [];
-  const { listPrice, price } = useOffer(offers);
+  const { listPrice, price, seller } = useOffer(offers);
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
 
@@ -97,6 +97,7 @@ function ProductCard(
     !l?.basics?.contentAlignment || l?.basics?.contentAlignment == "Left"
       ? "left"
       : "center";
+
   const skuSelector = variants.map(([value, link]) => (
     <li>
       <a href={link}>
@@ -107,14 +108,21 @@ function ProductCard(
       </a>
     </li>
   ));
+
+  const eventItem = mapProductToAnalyticsItem({
+    product,
+    price,
+    listPrice,
+    quantity: 1,
+    index,
+  });
+
   const cta = (
-    <a
-      href={url && relative(url)}
-      aria-label="view product"
-      class="btn btn-block bg-transparent border border-dimgray rounded-none hover:bg-dimgray text-dimgray hover:text-white font-normal leading-[15px] text-[13px] cursor-pointer"
-    >
-      {l?.basics?.ctaText || "Ver produto"}
-    </a>
+    <AddToCartButton
+      seller={seller!}
+      productID={productID}
+      eventParams={{ items: [eventItem] }}
+    />
   );
 
   return (

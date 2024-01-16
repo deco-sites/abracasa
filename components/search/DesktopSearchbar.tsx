@@ -14,11 +14,7 @@ import Image from "apps/website/components/Image.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import { useAutocomplete } from "$store/hooks/useAutocomplete.ts";
-import { useUI } from "$store/sdk/useUI.ts";
-import { Suggestion } from "apps/commerce/types.ts";
-import { Resolved } from "deco/engine/core/resolver.ts";
 import { useEffect, useRef, useState } from "preact/compat";
-import type { Platform } from "$store/apps/site.ts";
 
 // Editable props
 export interface Props {
@@ -40,22 +36,12 @@ export interface Props {
    * @default q
    */
   name?: string;
-
-  /**
-   * @title Suggestions Integration
-   * @todo: improve this typings ({query: string, count: number}) => Suggestions
-   */
-  loader: Resolved<Suggestion | null>;
-
-  platform?: Platform;
 }
 
 function Searchbar({
   placeholder = "What are you looking for?",
   action = "/s",
   name = "q",
-  loader,
-  platform,
 }: Props) {
   const id = useId();
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -147,7 +133,7 @@ function Searchbar({
       {showSuggestions && (
         <div
           ref={modal}
-          class="flex flex-col w-full gap-6 absolute flex-grow top-10 lg:top-[52px] px-[15px] pt-2 lg:pt-0 rounded-md max-h-[525px] bg-white lg:shadow-lg overflow-y-auto lg:overflow-y-hidden z-[9999999]"
+          class="flex flex-col w-full gap-6 absolute flex-grow top-10 lg:top-[52px] px-[15px] pt-2 lg:pt-0 rounded-md max-h-[525px] bg-white lg:shadow-lg overflow-y-auto z-[9999999]"
         >
           {notFound
             ? (
