@@ -15,7 +15,7 @@ export interface Props {
 
 export default function Departments({ departments = [] }: Props) {
   return (
-    <div class="flex items-center md:justify-center mx-auto gap-6 lg:gap-16 lg:max-w-[80%] px-4 lg:px-0 overflow-x-scroll md:overflow-x-hidden w-full py-6">
+    <div class="flex items-center md:justify-center mx-auto gap-6 lg:gap-16 lg:max-w-[80%] px-4 lg:px-0 overflow-x-scroll md:overflow-x-hidden w-full py-6 scrollbar-none">
       {departments?.map((item) => (
         <a
           href={item.link || "#"}
