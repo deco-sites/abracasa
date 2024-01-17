@@ -30,6 +30,8 @@ export type AvailableIcons =
   | "Mastercard"
   | "Message"
   | "Youtube"
+  | "Exchange"
+  | "Payment"
   | "Phone"
   | "Pix"
   | "Plus"
