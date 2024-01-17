@@ -23,20 +23,29 @@ export interface Props {
 }
 
 const Aside = (
-  { title, onClose, children }: {
+  { title, onClose, children, isMinicart = false }: {
     title: string;
     onClose?: () => void;
     children: ComponentChildren;
+    isMinicart?: boolean;
   },
 ) => (
-  <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100vw]">
-    <div class="flex justify-between items-center">
-      <h1 class="px-4 py-3">
-        <span class="font-medium text-2xl">{title}</span>
+  <div
+    class={`bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100%] ${
+      isMinicart && "w-full lg:w-[300px]"
+    }`}
+  >
+    <div class="flex justify-between items-center px-4 py-3">
+      <h1>
+        <span class="text-base leading-5 text-[#212121]">{title}</span>
       </h1>
       {onClose && (
-        <Button class="btn btn-ghost" onClick={onClose}>
-          <Icon id="XMark" size={24} strokeWidth={2} />
+        <Button hasBtnClass={false} onClick={onClose}>
+          <Icon
+            id={isMinicart ? "ChevronRight" : "XMark"}
+            size={24}
+            strokeWidth={2}
+          />
         </Button>
       )}
     </div>
@@ -85,7 +94,8 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
         onClose={() => displayCart.value = false}
         aside={
           <Aside
-            title="Minha sacola"
+            isMinicart={true}
+            title="MEU CARRINHO"
             onClose={() => displayCart.value = false}
           >
             <Cart platform={platform} />

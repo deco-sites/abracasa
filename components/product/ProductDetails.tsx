@@ -53,7 +53,7 @@ export default function ProductDetails({ page }: Props) {
         </a>
       </div>
 
-      <div class="flex flex-col gap-2 max-w-[87%] xl:max-w-full mx-auto">
+      <div class="flex flex-col gap-12 max-w-[87%] xl:max-w-full mx-auto">
         <div
           id="about-product"
           dangerouslySetInnerHTML={{

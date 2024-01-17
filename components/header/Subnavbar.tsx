@@ -16,7 +16,15 @@ export interface Props {
 }
 
 export default function Subnavbar({ items, searchbar, logo }: Props) {
-  const [scrollingMode, setScrollingMode] = useState(window.scrollY > 0);
+  const [scrollingMode, setScrollingMode] = useState(self.window.scrollY > 0);
+
+  if (self.window.scrollY > 0) {
+    const alert = document.getElementById("alert-slider")!;
+    const desktopNavbar = document.getElementById("desktop-navbar")!;
+
+    desktopNavbar.classList.remove("md:flex");
+    alert.classList.add("hidden");
+  }
 
   function handleScroll() {
     const alert = document.getElementById("alert-slider")!;

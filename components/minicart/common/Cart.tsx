@@ -1,4 +1,5 @@
 import Button from "$store/components/ui/Button.tsx";
+import { asset } from "$fresh/runtime.ts";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useUI } from "$store/sdk/useUI.ts";
@@ -43,42 +44,43 @@ function Cart({
 
   return (
     <div
-      class="flex flex-col justify-center items-center overflow-hidden"
-      style={{ minWidth: "calc(min(100vw, 425px))", maxWidth: "425px" }}
+      class="flex flex-col overflow-hidden"
+      style={{ minWidth: "calc(min(100vw, 300px))", maxWidth: "300px" }}
     >
       {isEmtpy
         ? (
-          <div class="flex flex-col gap-6">
-            <span class="font-medium text-2xl">Sua sacola está vazia</span>
+          <div class="flex flex-col items-center justify-center gap-6 max-w-[75%] mx-auto mt-12">
+            <img
+              src={asset("/image/cart.svg")}
+              width={30}
+              height={30}
+              alt="Cart icon"
+              loading="lazy"
+            />
+
+            <span class="font-bold text-sm leading-[15px] text-center">
+              Carrinho vazio, continue navegando e adicione produtos aqui!
+            </span>
+
             <Button
-              class="btn-outline"
+              class="btn-outline uppercase text-xs leading-4 font-normal"
               onClick={() => {
                 displayCart.value = false;
               }}
             >
-              Escolher produtos
+              Continuar comprando
             </Button>
           </div>
         )
         : (
           <>
-            {/* Free Shipping Bar */}
-            <div class="px-2 py-4 w-full">
-              <FreeShippingProgressBar
-                total={total}
-                locale={locale}
-                currency={currency}
-                target={freeShippingTarget}
-              />
-            </div>
-
             {/* Cart Items */}
             <ul
               role="list"
-              class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
+              class="mt-6 px-6 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
             >
               {items.map((item, index) => (
-                <li key={index}>
+                <li key={index} class="border-b pb-1">
                   <CartItem
                     item={item}
                     index={index}

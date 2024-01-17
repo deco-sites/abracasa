@@ -67,18 +67,19 @@ function CartItem(
       <Image
         {...image}
         style={{ aspectRatio: "108 / 150" }}
-        width={108}
-        height={150}
+        width={53}
+        height={53}
         class="h-full object-contain"
       />
 
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-2 text-[#515151]">
         <div class="flex justify-between items-center">
-          <span>{name}</span>
+          <span class="text-sm font-normal leading-4">{name}</span>
+
           <Button
             disabled={loading || isGift}
             loading={loading}
-            class="btn-ghost btn-square"
+            hasBtnClass={false}
             onClick={withLoading(async () => {
               const analyticsItem = itemToAnalyticsItem(index);
 
@@ -90,14 +91,22 @@ function CartItem(
               });
             })}
           >
-            <Icon id="Trash" size={24} />
+            <Icon
+              id="XMark"
+              size={24}
+              strokeWidth={1.75}
+              class="hover:text-firebrick transition-colors duration-100"
+            />
           </Button>
         </div>
+
         <div class="flex items-center gap-2">
-          <span class="line-through text-base-300 text-sm">
+          {
+            /* <span class="line-through text-base-300 text-sm">
             {formatPrice(list, currency, locale)}
-          </span>
-          <span class="text-sm text-secondary">
+          </span> */
+          }
+          <span class="text-sm leading-[14px]">
             {isGift ? "Grátis" : formatPrice(sale, currency, locale)}
           </span>
         </div>
