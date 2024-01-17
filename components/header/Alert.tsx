@@ -2,8 +2,12 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 
+import type { HTMLWidget } from "apps/admin/widgets.ts";
+
+export type TAlert = HTMLWidget;
+
 export interface Props {
-  alerts: string[];
+  alerts?: TAlert[];
   /**
    * @title Autoplay interval
    * @description time (in seconds) to start the carousel autoplay
@@ -19,9 +23,10 @@ function Alert({ alerts = [], interval = 5 }: Props) {
       <Slider class="carousel carousel-center w-screen bg-[#d9d9d9] gap-6 h-[52px]">
         {alerts.map((alert, index) => (
           <Slider.Item index={index} class="carousel-item">
-            <span class="text-sm text-secondary-content flex justify-center items-center w-screen h-full">
-              {alert}
-            </span>
+            <div
+              dangerouslySetInnerHTML={{ __html: alert }}
+              class="text-sm text-secondary-content flex justify-center items-center w-screen h-full"
+            />
           </Slider.Item>
         ))}
       </Slider>
