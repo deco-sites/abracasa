@@ -35,11 +35,7 @@ function SearchbarModal({ searchbar, type = "desktop" }: Props) {
     );
   }
 
-  return (
-    <div class="w-full lg:max-w-[600px]">
-      <DesktopSearchbar {...searchbar} />
-    </div>
-  );
+  return <DesktopSearchbar {...searchbar} />;
 }
 
 export default SearchbarModal;

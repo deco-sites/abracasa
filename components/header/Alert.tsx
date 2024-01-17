@@ -1,6 +1,5 @@
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
-import { useId } from "$store/sdk/useId.ts";
 
 import type { HTMLWidget } from "apps/admin/widgets.ts";
 
@@ -16,11 +15,11 @@ export interface Props {
 }
 
 function Alert({ alerts = [], interval = 5 }: Props) {
-  const id = useId();
+  const id = "alert-slider";
 
   return (
     <div id={id}>
-      <Slider class="carousel carousel-center w-screen bg-[#d9d9d9] gap-6 h-[52px]">
+      <Slider class="carousel carousel-center w-screen bg-[#d9d9d9] gap-6 h-[33px]">
         {alerts.map((alert, index) => (
           <Slider.Item index={index} class="carousel-item">
             <div

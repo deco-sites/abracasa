@@ -1,7 +1,12 @@
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import { headerHeight } from "./constants.ts";
 
-function NavItem({ item }: { item: SiteNavigationElement }) {
+function NavItem(
+  { item, scrollingMode = false }: {
+    item: SiteNavigationElement;
+    scrollingMode?: boolean;
+  },
+) {
   const { url, name, children } = item;
 
   return (
@@ -19,7 +24,11 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
         (
           <div
             class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start gap-1 border-t border-b-2 border-base-200 w-screen py-4"
-            style={{ top: "0px", left: "0px", marginTop: headerHeight }}
+            style={{
+              top: "0px",
+              left: "0px",
+              marginTop: scrollingMode ? "86px" : headerHeight,
+            }}
           >
             <ul class="flex flex-col items-start gap-0.5 text-[#555]">
               {children.map((node) => (

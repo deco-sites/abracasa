@@ -8,6 +8,7 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { asset } from "$fresh/runtime.ts";
 import NavItem from "./NavItem.tsx";
+import Subnavbar from "$store/islands/Header/Subnavbar.tsx";
 import { navbarHeight } from "./constants.ts";
 
 function Navbar({ items, searchbar, logo }: {
@@ -44,7 +45,10 @@ function Navbar({ items, searchbar, logo }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-col justify-center items-center w-full">
+      <div
+        id="desktop-navbar"
+        class="hidden md:flex flex-col justify-center items-center w-full"
+      >
         <div class="flex justify-between items-center max-w-[85%] gap-2.5 w-full">
           <div class="flex-none w-44">
             {logo && (
@@ -58,7 +62,9 @@ function Navbar({ items, searchbar, logo }: {
             )}
           </div>
 
-          <Searchbar searchbar={searchbar} />
+          <div class="w-full lg:max-w-[600px]">
+            <Searchbar searchbar={searchbar} />
+          </div>
 
           <div class="flex items-center justify-between max-w-[45%] w-full gap-4">
             <a
@@ -115,6 +121,8 @@ function Navbar({ items, searchbar, logo }: {
           {items.map((item) => <NavItem item={item} />)}
         </div>
       </div>
+
+      <Subnavbar items={items} searchbar={searchbar} logo={logo} />
     </>
   );
 }
