@@ -2,7 +2,7 @@ import { useId } from "$store/sdk/useId.ts";
 
 const script = (id: string) => {
   const callback = () => {
-    const KEY = "store-cookie-consent";
+    const KEY = "abracasa-store-cookie-consent";
     const ACCEPTED = "accepted";
     const HIDDEN = "translate-y-[200%]";
 

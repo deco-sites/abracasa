@@ -1,4 +1,4 @@
-import Icon from "$store/components/ui/Icon.tsx";
+import { asset } from "$fresh/runtime.ts";
 
 export interface Props {
   phone?: number;
@@ -12,15 +12,17 @@ function WhatsApp({ phone }: Props) {
   return (
     <a
       href={`https://api.whatsapp.com/send/?phone=${phone}&text&type=phone_number&app_absent=0`}
-      class="fixed bottom-6 right-6 z-40"
+      class="fixed bottom-6 right-6 z-30"
       aria-label="Chat on WhatsApp"
     >
-      <button
-        class="bg-[#45D268] text-white p-2 rounded-full shadow-lg"
-        aria-label="Chat on WhatsApp"
-      >
-        <Icon id="WhatsApp" size={32} stroke="0.01" />
-      </button>
+      <img
+        class="object-cover"
+        src={asset("/image/logo_whatsapp.svg")}
+        width={60}
+        height={60}
+        alt="Logo do Whatsapp"
+        loading="lazy"
+      />
     </a>
   );
 }
