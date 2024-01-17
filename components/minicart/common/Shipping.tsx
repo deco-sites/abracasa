@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
 
 import Button from "$store/components/ui/Button.tsx";
@@ -13,6 +13,45 @@ function Shipping({ shippingValue, setShippingValue }: Props) {
   const { items } = cart.value ?? { items: [] };
   const [loading, setLoading] = useState(false);
   const [cep, setCep] = useState("");
+
+  useEffect(() => {
+    async function shippingCalculate() {
+      setLoading(true);
+
+      if (shippingValue && items.length > 0) {
+        const shippingValueCalculated = await simulate({
+          items: items.map((item) => ({
+            id: Number(item.id),
+            quantity: item.quantity,
+            seller: item.seller,
+          })),
+          postalCode: cep,
+          country: "BRA",
+        });
+
+        const methods = shippingValueCalculated.logisticsInfo?.reduce(
+          (initial, { slas }) => {
+            const price = slas.length > 0 ? slas[0].price : 0;
+            return [...initial, price];
+          },
+          [] as number[],
+        ) ?? [];
+
+        const totalShippingPrice = methods.reduce(
+          (sum, price) => sum + price,
+          0,
+        );
+
+        const price = totalShippingPrice === 0 ? null : totalShippingPrice;
+
+        setShippingValue(price);
+      }
+
+      setLoading(false);
+    }
+
+    shippingCalculate();
+  }, [cart.value, shippingValue]);
 
   return (
     <div class="flex justify-between items-center px-2 w-full">
