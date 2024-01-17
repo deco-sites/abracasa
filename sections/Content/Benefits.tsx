@@ -97,7 +97,7 @@ export default function Benefits(
               alignment={layout?.headerAlignment || "center"}
             />
             <div class="w-full flex justify-center">
-              <div class="flex flex-col gap-4 lg:gap-8 w-full lg:grid grid-flow-col auto-cols-fr">
+              <div class="flex flex-col gap-1 lg:gap-8 w-full lg:grid grid-flow-col auto-cols-fr">
                 {listOfBenefits}
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function Benefits(
             alignment={layout?.headerAlignment || "center"}
           />
           <div class="w-full flex justify-center">
-            <div class="grid gap-4 w-full py-6 px-4 border border-base-300 lg:gap-8 lg:grid-flow-col lg:auto-cols-fr lg:p-10">
+            <div class="grid grid-cols-2 gap-1 w-full py-6 px-4 border border-base-300 lg:gap-8 lg:grid-flow-col lg:auto-cols-fr lg:p-10">
               {listOfBenefits}
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function Benefits(
             alignment={layout?.headerAlignment || "center"}
           />
           <div class="w-full flex justify-center">
-            <div class="grid gap-4 w-full lg:gap-8 lg:grid-flow-col lg:auto-cols-fr">
+            <div class="grid grid-cols-2 gap-1 w-full lg:gap-8 lg:grid-flow-col lg:auto-cols-fr">
               {listOfBenefits}
             </div>
           </div>
