@@ -30,6 +30,9 @@ export interface SocialItem {
     | "Facebook"
     | "Instagram"
     | "Linkedin"
+    | "Spotify"
+    | "Pinterest"
+    | "Youtube"
     | "Tiktok"
     | "Twitter";
   link: string;
