@@ -23,25 +23,22 @@ function Navbar({ items, searchbar, logo }: {
       {/* Mobile Version */}
       <div
         style={{ height: navbarHeight }}
-        class="md:hidden flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 gap-2"
+        class="md:hidden flex flex-row justify-between items-center border-b border-base-200 w-full px-4 gap-2"
       >
-        <MenuButton />
-
         {logo && (
           <a
             href="/"
-            class="flex-grow inline-flex items-center"
-            style={{ minHeight: navbarHeight }}
+            class="inline-flex"
+            style={{ minHeight: "80px" }}
             aria-label="Store logo"
           >
             <Image src={logo.src} alt={logo.alt} width={80} height={16} />
           </a>
         )}
 
-        <div class="flex gap-1">
-          <SearchButton />
-          {platform === "vtex" && <CartButtonVTEX />}
-        </div>
+        <SearchButton />
+        {platform === "vtex" && <CartButtonVTEX />}
+        <MenuButton />
       </div>
 
       {/* Desktop Version */}

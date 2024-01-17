@@ -27,7 +27,7 @@ function NavItem(
             style={{
               top: "0px",
               left: "0px",
-              marginTop: scrollingMode ? "86px" : headerHeight,
+              marginTop: scrollingMode ? "78px" : headerHeight,
             }}
           >
             <ul class="flex flex-col items-start gap-0.5 text-[#555]">

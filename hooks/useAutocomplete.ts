@@ -11,7 +11,7 @@ const listLoader = invoke.vtex.loaders.legacy.productList;
 
 const setSearch = debounce(async (search: string) => {
   try {
-    const params: { query?: string; count: number } = { count: 10 };
+    const params: { query?: string; count: number } = { count: 20 };
     if (search !== "") params.query = search;
 
     const availableSuggestions = await suggestions(

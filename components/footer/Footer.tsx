@@ -342,7 +342,7 @@ function Footer({
           <div class="flex flex-col gap-6 md:gap-10">
             {_newsletter}
             {layout?.hide?.newsletter ? <></> : <Divider />}
-            <div class="flex flex-col md:flex-row gap-6 md:gap-20 md:justify-between md:container px-4 md:px-0">
+            <div class="flex flex-col md:flex-row gap-6 md:gap-20 md:justify-between mx-auto max-w-[1350px] px-4">
               {_social}
               {_sectionLinks}
 
@@ -352,7 +352,7 @@ function Footer({
               </div>
             </div>
             <Divider />
-            <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center md:container px-4 md:px-0">
+            <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center lg:mx-auto lg:max-w-[95%] px-4">
               {layout?.hide?.footerDescription
                 ? <></>
                 : (
