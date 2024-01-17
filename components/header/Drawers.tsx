@@ -32,7 +32,7 @@ const Aside = (
 ) => (
   <div
     class={`bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100%] ${
-      isMinicart && "w-full lg:w-[300px]"
+      isMinicart && "lg:w-[300px]"
     }`}
   >
     <div class="flex justify-between items-center px-4 py-3">
