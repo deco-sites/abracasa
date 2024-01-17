@@ -1,3 +1,4 @@
+import { useCart } from "apps/vtex/hooks/useCart.ts";
 import { useState } from "preact/hooks";
 import Button from "$store/components/ui/Button.tsx";
 
@@ -7,9 +8,12 @@ export interface Props {
 }
 
 function Coupon({ coupon, onAddCoupon }: Props) {
+  const { cart } = useCart();
   const [loading, setLoading] = useState(false);
+  const [isCouponUnavailable, setIsCouponUnavailable] = useState(false);
 
   return (
+    <div class="flex flex-col gap-0.5">
     <div class="flex justify-between items-center px-2 w-full">
       {!coupon
         ? (
@@ -27,6 +31,14 @@ function Coupon({ coupon, onAddCoupon }: Props) {
               try {
                 setLoading(true);
                 await onAddCoupon(text);
+
+                const verifyCoupon = coupon == null &&
+                  cart.value?.ratesAndBenefitsData?.rateAndBenefitsIdentifiers &&
+                  cart.value?.ratesAndBenefitsData?.rateAndBenefitsIdentifiers
+                      .length == 0;
+                const couponExists = !!verifyCoupon;
+
+                setIsCouponUnavailable(couponExists);
               } finally {
                 setLoading(false);
               }
@@ -72,6 +84,9 @@ function Coupon({ coupon, onAddCoupon }: Props) {
             </Button>
           </div>
         )}
+    </div>
+
+    {isCouponUnavailable && <span class="px-3 text-firebrick font-bold text-xs">Cupom inválido!</span>}
     </div>
   );
 }
