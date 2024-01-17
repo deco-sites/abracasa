@@ -118,7 +118,7 @@ function Cart({
 
               {/* Total */}
               <div class="grid grid-cols-2 items-center divide-x border-t border-base-200 py-2 px-2 w-full">
-                <div class="flex justify-between items-center text-xs w-full pr-3">
+                <div class="flex justify-between items-center text-xs w-full pr-2">
                   <span>Descontos:</span>
                   {discounts === 0
                     ? (
@@ -133,7 +133,7 @@ function Cart({
                     )}
                 </div>
 
-                <div class="flex justify-between items-center font-bold text-sm w-full pl-3">
+                <div class="flex justify-between items-center font-bold text-sm w-full pl-2">
                   <span>Total:</span>
                   <span>
                     {formatPrice(total, currency, locale)}
