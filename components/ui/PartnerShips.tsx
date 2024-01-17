@@ -19,12 +19,12 @@ export default function PartnerShips(
     <section class="flex flex-col container lg:max-w-[80%] h-full pt-2 pb-12 px-4 lg:px-0">
       <div class="w-full h-full flex flex-col items-center justify-center text-center">
         <div class="w-full h-full my-2">
-          <h1 class="text-4xl text-[#555555]">
+          <h1 class="text-4xl leading-[49px] text-[#555555] my-0">
             Parcerias
           </h1>
         </div>
-        <div class="w-full h-full my-2">
-          <p class="text-lg text-[#828282]">
+        <div class="w-full h-full">
+          <p class="text-lg leading-[25px] text-[#828282] mb-6">
             Confira o conteúdo dos nossos parceiros direto do nosso insta.
           </p>
         </div>
@@ -32,11 +32,11 @@ export default function PartnerShips(
           {/* borda */}
         </div>
         <div class="w-full h-full my-2">
-          <h2 class="text-4xl text-[#555555]">
+          <h2 class="text-4xl leading-[49px] text-[#555555]">
             Siga a Abra Casa
           </h2>
         </div>
-        <div class="w-full h-full flex items-center justify-center mt-2 gap-3">
+        <div class="w-full h-full flex items-center justify-center mt-2 gap-5">
           {socialMedia.map((item) => (
             <a
               href={item.diretionalLink}
