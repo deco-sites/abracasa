@@ -1,6 +1,7 @@
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 
 import Image from "apps/website/components/Image.tsx";
+import ReviewsSummary from "./ReviewsSummary.tsx";
 
 export interface Props {
   page: ProductDetailsPage | null;
@@ -44,11 +45,17 @@ export default function ProductDetails({ page }: Props) {
           Dimensões e detalhes
         </a>
 
-        <a href="#" class="text-center border-b border-b-firebrick pb-2">
+        <a
+          href="#avaliations"
+          class="text-center border-b border-b-firebrick pb-2"
+        >
           Avaliações
         </a>
 
-        <a href="#" class="text-center border-b border-b-firebrick pb-2">
+        <a
+          href="#avaliations"
+          class="text-center border-b border-b-firebrick pb-2"
+        >
           Perguntas e respostas
         </a>
       </div>
@@ -61,53 +68,66 @@ export default function ProductDetails({ page }: Props) {
           }}
         />
 
-        {measurementImage && measurementImage.url && (
-          <Image
-            src={measurementImage.url}
-            alt={measurementImage.alternateName || "Medidas"}
-            width={420}
-            height={420}
-          />
-        )}
+        <div class="flex flex-col gap-12">
+          <h1 id="dimensions-and-details" class="font-bold text-xl">
+            Dimensões e Detalhes
+          </h1>
 
-        <ul
-          id="dimensions-and-details"
-          class="flex flex-col max-w-[75%] mx-auto w-full gap-1"
-        >
-          {additionalInfos?.map((item) => (
-            <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-              <span class="font-bold w-full">{item.name}</span>
+          <div class="flex items-center justify-center">
+            {measurementImage && measurementImage.url && (
+              <Image
+                src={measurementImage.url}
+                alt={measurementImage.alternateName || "Medidas"}
+                width={420}
+                height={420}
+              />
+            )}
+          </div>
 
-              {item?.name?.includes("Materiais")
-                ? (
-                  <div
-                    class="w-[65%] text-justify leading-relaxed tracking-wide"
-                    dangerouslySetInnerHTML={{
-                      __html: item?.value?.replace(/\r?\n/g, "<br />") || "",
-                    }}
-                  />
-                )
-                : item?.name?.includes("Limpeza e cuidados")
-                ? (
-                  <a
-                    target="_blank"
-                    aria-label="abrir manual"
-                    href={item.value}
-                    class="w-[65%] text-crimson text-end"
-                  >
-                    Abrir manual
-                  </a>
-                )
-                : (
-                  <span
-                    class={`${item?.name !== "Garantia" && "text-end"} w-[65%]`}
-                  >
-                    {item.value}
-                  </span>
-                )}
-            </li>
-          ))}
-        </ul>
+          <ul class="flex flex-col max-w-[75%] mx-auto w-full gap-1">
+            {additionalInfos?.map((item) => (
+              <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                <span class="font-bold w-full">{item.name}</span>
+
+                {item?.name?.includes("Materiais")
+                  ? (
+                    <div
+                      class="w-[65%] text-justify leading-relaxed tracking-wide"
+                      dangerouslySetInnerHTML={{
+                        __html: item?.value?.replace(/\r?\n/g, "<br />") || "",
+                      }}
+                    />
+                  )
+                  : item?.name?.includes("Limpeza e cuidados")
+                  ? (
+                    <a
+                      target="_blank"
+                      aria-label="abrir manual"
+                      href={item.value}
+                      class="w-[65%] text-crimson text-end"
+                    >
+                      Abrir manual
+                    </a>
+                  )
+                  : (
+                    <span
+                      class={`${
+                        item?.name !== "Garantia" && "text-end"
+                      } w-[65%]`}
+                    >
+                      {item.value}
+                    </span>
+                  )}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <h1 id="avaliations" class="font-bold text-2xl">Avaliações</h1>
+
+          <ReviewsSummary />
+        </div>
       </div>
     </div>
   );

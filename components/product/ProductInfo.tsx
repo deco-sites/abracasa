@@ -12,6 +12,8 @@ import { Product, ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
 import Similars from "./Similars.tsx";
+import ReviewsScript from "./ReviewsScript.tsx";
+import QuickReview from "./QuickReview.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -83,43 +85,16 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
       class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-10 md:pb-6 lg:max-w-[440px] px-4 md:px-0"
       id={id}
     >
+      <ReviewsScript />
       {/* Code and name */}
       <div class="mt-4 sm:mt-8">
         <div class="flex items-center justify-between gap-3 w-full">
           <div class="flex flex-col gap-1.5">
             <div class="flex items-center gap-2">
-              <div class="rating rating-sm">
-                <input
-                  type="radio"
-                  name="rating-6"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-6"
-                  class="mask mask-star-2 bg-orange-400"
-                  checked
-                />
-                <input
-                  type="radio"
-                  name="rating-6"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-6"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-6"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-              </div>
-
-              <span class="uppercase text-xs text-[#B2B2B2] leading-3 pt-0.5">
-                (103 avaliações)
-              </span>
+              <QuickReview
+                productID={isVariantOf?.productGroupID ||
+                  product.inProductGroupWithID}
+              />
             </div>
 
             <h1>
