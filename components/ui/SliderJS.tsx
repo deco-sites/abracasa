@@ -5,6 +5,7 @@ export interface Props {
   scroll?: "smooth" | "auto";
   interval?: number;
   infinite?: boolean;
+  orientation?: "horizontal" | "vertical";
 }
 
 const ATTRIBUTES = {
@@ -41,14 +42,38 @@ const intersectionX = (element: DOMRect, container: DOMRect): number => {
   return element.width;
 };
 
+const intersectionY = (element: DOMRect, container: DOMRect): number => {
+  const delta = container.height / 1_000;
+
+  if (element.bottom < container.top - delta) {
+    return 0.0;
+  }
+
+  if (element.top > container.bottom + delta) {
+    return 0.0;
+  }
+
+  if (element.top < container.top - delta) {
+    return element.bottom - container.top + delta;
+  }
+
+  if (element.bottom > container.bottom + delta) {
+    return container.bottom - element.top + delta;
+  }
+
+  return element.height;
+};
+
 // as any are ok in typeguard functions
 const isHTMLElement = (x: Element): x is HTMLElement =>
   // deno-lint-ignore no-explicit-any
   typeof (x as any).offsetLeft === "number";
 
-const setup = ({ rootId, scroll, interval, infinite }: Props) => {
+const setup = ({ rootId, scroll, interval, infinite, orientation }: Props) => {
   const root = document.getElementById(rootId);
-  const slider = root?.querySelector(`[${ATTRIBUTES["data-slider"]}]`);
+  const slider = root?.querySelector<HTMLElement>(
+    `[${ATTRIBUTES["data-slider"]}]`,
+  );
   const items = root?.querySelectorAll(`[${ATTRIBUTES["data-slider-item"]}]`);
   const prev = root?.querySelector(`[${ATTRIBUTES['data-slide="prev"']}]`);
   const next = root?.querySelector(`[${ATTRIBUTES['data-slide="next"']}]`);
@@ -63,6 +88,8 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
     return;
   }
 
+  const isVertical = orientation === "vertical";
+
   const getElementsInsideContainer = () => {
     const indices: number[] = [];
     const sliderRect = slider.getBoundingClientRect();
@@ -71,10 +98,9 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
       const item = items.item(index);
       const rect = item.getBoundingClientRect();
 
-      const ratio = intersectionX(
-        rect,
-        sliderRect,
-      ) / rect.width;
+      const ratio = isVertical
+        ? intersectionY(rect, sliderRect) / rect.height
+        : intersectionX(rect, sliderRect) / rect.width;
 
       if (ratio > THRESHOLD) {
         indices.push(index);
@@ -96,9 +122,9 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
     }
 
     slider.scrollTo({
-      top: 0,
+      top: isVertical ? item.offsetTop - slider.offsetTop : 0,
       behavior: scroll,
-      left: item.offsetLeft - root.offsetLeft,
+      left: isVertical ? 0 : item.offsetLeft - slider.offsetLeft,
     });
   };
 
@@ -189,13 +215,12 @@ function Slider({
   scroll = "smooth",
   interval,
   infinite = false,
+  orientation = "horizontal",
 }: Props) {
-  useEffect(() => setup({ rootId, scroll, interval, infinite }), [
-    rootId,
-    scroll,
-    interval,
-    infinite,
-  ]);
+  useEffect(
+    () => setup({ rootId, scroll, interval, infinite, orientation }),
+    [rootId, scroll, interval, infinite, orientation],
+  );
 
   return <div data-slider-controller-js />;
 }
