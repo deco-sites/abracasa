@@ -20,24 +20,24 @@ export default function Subnavbar({ items, searchbar, logo }: Props) {
 
   if (self.window.scrollY > 0) {
     const alert = document.getElementById("alert-slider")!;
-    const desktopNavbar = document.getElementById("desktop-navbar")!;
+    const desktopNavbar = document.getElementById("desktop-navbar");
 
-    desktopNavbar.classList.remove("lg:flex");
+    desktopNavbar?.classList?.remove("lg:flex");
     alert.classList.add("hidden");
   }
 
   function handleScroll() {
     const alert = document.getElementById("alert-slider")!;
-    const desktopNavbar = document.getElementById("desktop-navbar")!;
+    const desktopNavbar = document.getElementById("desktop-navbar");
 
     if (self.window.scrollY > 0) {
       setScrollingMode(true);
       alert.classList.add("hidden");
-      desktopNavbar.classList.remove("lg:flex");
+      desktopNavbar?.classList.remove("lg:flex");
     } else {
       setScrollingMode(false);
       alert.classList.remove("hidden");
-      desktopNavbar.classList.add("lg:flex");
+      desktopNavbar?.classList.add("lg:flex");
     }
   }
 
