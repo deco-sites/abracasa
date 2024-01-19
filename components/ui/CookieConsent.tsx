@@ -64,7 +64,7 @@ function CookieConsent(props: Props) {
         id={id}
         class="transform-gpu translate-y-[200%] transition fixed bottom-0 sm:bottom-4 w-screen z-50"
       >
-        <div class="container px-4 py-4 rounded border border-base-200 flex flex-col sm:flex-row gap-4 items-start sm:items-center shadow bg-base-100">
+        <div class="lg:max-w-[80%] container px-4 py-4 rounded border border-base-200 flex flex-col sm:flex-row gap-4 items-start sm:items-center shadow bg-base-100">
           <div class="flex-grow text-sm">
             {text && (
               <div

@@ -5,7 +5,7 @@ import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
-import { headerHeight } from "./constants.ts";
+import { FnContext } from "deco/types.ts";
 
 export type TAlert = HTMLWidget;
 
@@ -30,13 +30,14 @@ function Header({
   searchbar,
   navItems,
   logo,
-}: Props) {
+  device,
+}: ReturnType<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
 
   return (
     <>
-      <header class="h-[150px] md:h-[180px]">
+      <header class="h-[140px] lg:h-[180px]">
         <Drawers
           menu={{ items }}
           searchbar={searchbar}
@@ -49,6 +50,7 @@ function Header({
               items={items}
               searchbar={searchbar && { ...searchbar, platform }}
               logo={logo}
+              device={device}
             />
           </div>
         </Drawers>
@@ -56,5 +58,12 @@ function Header({
     </>
   );
 }
+
+export const loader = (props: Props, req: Request, ctx: FnContext) => {
+  return {
+    ...props,
+    device: ctx.device,
+  };
+};
 
 export default Header;

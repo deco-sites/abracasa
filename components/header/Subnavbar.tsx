@@ -22,7 +22,7 @@ export default function Subnavbar({ items, searchbar, logo }: Props) {
     const alert = document.getElementById("alert-slider")!;
     const desktopNavbar = document.getElementById("desktop-navbar")!;
 
-    desktopNavbar.classList.remove("md:flex");
+    desktopNavbar.classList.remove("lg:flex");
     alert.classList.add("hidden");
   }
 
@@ -33,22 +33,22 @@ export default function Subnavbar({ items, searchbar, logo }: Props) {
     if (self.window.scrollY > 0) {
       setScrollingMode(true);
       alert.classList.add("hidden");
-      desktopNavbar.classList.remove("md:flex");
+      desktopNavbar.classList.remove("lg:flex");
     } else {
       setScrollingMode(false);
       alert.classList.remove("hidden");
-      desktopNavbar.classList.add("md:flex");
+      desktopNavbar.classList.add("lg:flex");
     }
   }
 
   useEffect(() => {
     globalThis.addEventListener("scroll", handleScroll);
-  }, []);
+  });
 
   return (
     <>
       {scrollingMode && (
-        <div class="hidden md:flex flex-col justify-center items-center w-full">
+        <div class="hidden lg:flex flex-col justify-center items-center w-full">
           <div class="flex justify-between items-center max-w-[85%] gap-2.5 w-full">
             <div class="flex">
               {logo && (
