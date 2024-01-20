@@ -126,7 +126,12 @@ function Navbar({ items, searchbar, logo, device }: {
         </div>
       )}
 
-      <Subnavbar items={items} searchbar={searchbar} logo={logo} />
+      <Subnavbar
+        items={items}
+        searchbar={searchbar}
+        logo={logo}
+        device={device}
+      />
     </>
   );
 }

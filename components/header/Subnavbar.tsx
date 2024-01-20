@@ -8,46 +8,51 @@ import Image from "apps/website/components/Image.tsx";
 import { useEffect, useState } from "preact/hooks";
 import { asset } from "$fresh/runtime.ts";
 import NavItem from "./NavItem.tsx";
+import { Device } from "deco/utils/device.ts";
 
 export interface Props {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: { src: string; alt: string };
+  device: Device;
 }
 
-export default function Subnavbar({ items, searchbar, logo }: Props) {
+export default function Subnavbar({ items, searchbar, logo, device }: Props) {
   const [scrollingMode, setScrollingMode] = useState(self.window.scrollY > 0);
 
   if (self.window.scrollY > 0) {
-    const alert = document.getElementById("alert-slider")!;
+    const alert = document.getElementById("alert-slider");
     const desktopNavbar = document.getElementById("desktop-navbar");
 
     desktopNavbar?.classList?.remove("lg:flex");
-    alert.classList.add("hidden");
-  }
-
-  function handleScroll() {
-    const alert = document.getElementById("alert-slider")!;
-    const desktopNavbar = document.getElementById("desktop-navbar");
-
-    if (self.window.scrollY > 0) {
-      setScrollingMode(true);
-      alert.classList.add("hidden");
-      desktopNavbar?.classList.remove("lg:flex");
-    } else {
-      setScrollingMode(false);
-      alert.classList.remove("hidden");
-      desktopNavbar?.classList.add("lg:flex");
-    }
+    alert?.classList?.add("hidden");
   }
 
   useEffect(() => {
-    globalThis.addEventListener("scroll", handleScroll);
+    const window_ = window;
+
+    function handleScroll() {
+      const alert = document.getElementById("alert-slider");
+      const desktopNavbar = document.getElementById("desktop-navbar");
+
+      if (self.window.scrollY > 0) {
+        setScrollingMode(true);
+        alert?.classList.add("hidden");
+        desktopNavbar?.classList.remove("lg:flex");
+      } else {
+        setScrollingMode(false);
+        alert?.classList.remove("hidden");
+        desktopNavbar?.classList.add("lg:flex");
+      }
+    }
+
+    window_.addEventListener("scroll", handleScroll);
+    return () => window_.removeEventListener("scroll", handleScroll);
   });
 
   return (
     <>
-      {scrollingMode && (
+      {scrollingMode && device === "desktop" && (
         <div class="hidden lg:flex flex-col justify-center items-center w-full">
           <div class="flex justify-between items-center max-w-[85%] gap-2.5 w-full">
             <div class="flex">
