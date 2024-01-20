@@ -14,6 +14,7 @@ import ProductSelector from "./ProductVariantSelector.tsx";
 import Similars from "./Similars.tsx";
 import ReviewsScript from "./ReviewsScript.tsx";
 import QuickReview from "./QuickReview.tsx";
+import AugmentedReality from "./AugmentedReality.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -123,7 +124,10 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
         </div>
 
         {referenceId && (
-          <span class="text-xs text-[#828282] uppercase leading-3">
+          <span
+            id="referenceId"
+            class="text-xs text-[#828282] uppercase leading-3"
+          >
             ID: {referenceId}
           </span>
         )}
@@ -270,6 +274,8 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
           <span>Lojas físicas com este produto</span>
         </button>
       </div>
+
+      <AugmentedReality />
 
       {relatedProducts && relatedProducts.length > 0 && (
         <div class="mt-6">

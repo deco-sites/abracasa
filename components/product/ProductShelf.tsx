@@ -79,7 +79,7 @@ function ProductShelf({
             </Slider.NextButton>
           </div>
         </>
-        <SliderJS rootId={id} />
+        <SliderJS rootId={id} scroll="smooth" />
         <SendEventOnView
           id={id}
           event={{

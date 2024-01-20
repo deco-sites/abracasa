@@ -94,6 +94,15 @@ export default function GallerySlider(props: Props) {
               height={Math.trunc(700 * height / width)}
             />
           </div>
+
+          <div id="r2u" class="hidden lg:grid grid-cols-2 gap-3 max-w-[550px]">
+            <div class="flex flex-col gap-2 items-center justify-center">
+              <h2 class="font-bold text-lg text-black">Veja no seu espaço</h2>
+              <div id="qrCode" class="w-20 h-20" />
+            </div>
+
+            <div id="r2u-viewer" />
+          </div>
         </div>
 
         {/* Mobile Dots */}
