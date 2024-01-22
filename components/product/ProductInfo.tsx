@@ -15,6 +15,7 @@ import Similars from "./Similars.tsx";
 import ReviewsScript from "./ReviewsScript.tsx";
 import QuickReview from "./QuickReview.tsx";
 import AugmentedReality from "./AugmentedReality.tsx";
+import CTA from "./CTA.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -275,13 +276,28 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
         </button>
       </div>
 
-      <AugmentedReality />
-
       {relatedProducts && relatedProducts.length > 0 && (
         <div class="mt-6">
           <Similars relatedProducts={relatedProducts} />
         </div>
       )}
+
+      <AugmentedReality />
+
+      <CTA
+        eventParams={{ items: [eventItem] }}
+        productID={productID}
+        seller={seller}
+        name={isVariantOf?.name ?? name}
+        price={price}
+        listPrice={listPrice}
+        content={{
+          image: product?.image?.[0]?.url ?? "",
+          alt: product?.image?.[0]?.alternateName ?? "",
+        }}
+        priceCurrency={offers?.priceCurrency}
+        installments={installments ?? ""}
+      />
       {/* Analytics Event */}
       <SendEventOnView
         id={id}
