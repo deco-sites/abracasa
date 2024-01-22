@@ -3,6 +3,12 @@ import type { JSX } from "preact";
 
 export type AvailableIcons =
   | "ArrowsPointingOut"
+  | "Location"
+  | "Arrows"
+  | "Baloons"
+  | "Car"
+  | "Group"
+  | "Padlock"
   | "Bars3"
   | "ChevronLeft"
   | "ChevronRight"
