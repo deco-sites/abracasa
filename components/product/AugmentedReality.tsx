@@ -21,6 +21,7 @@ export default function Viewer() {
 
       const viewerPosition = document.getElementById("r2u-viewer");
       const qrCode = document.getElementById("qrCode");
+      const qrCodeText = document.getElementById("qrCodeText");
 
       if (viewerPosition) {
         await window_.R2U.viewer.create({
@@ -35,6 +36,8 @@ export default function Viewer() {
           element: qrCode,
           sku: skuId,
         });
+
+        qrCodeText!.innerText = "Veja no seu espaço";
       }
     });
   }
