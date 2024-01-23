@@ -45,7 +45,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
   return (
     <>
-      <div class="lg:ml-6 overflow-auto max-w-[95vw] md:max-w-full">
+      <div class="lg:ml-6 overflow-auto max-w-[95vw] md:max-w-full mb-4">
         <Breadcrumb itemListElement={breadcrumb.itemListElement} />
       </div>
 
@@ -130,14 +130,16 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
         {props.device === "tablet" || props.device === "desktop" && (
               <div
                 id="pdp-vertical-carousel"
-                class="hidden sm:flex flex-col items-center justify-center gap-2 order-1 border-r sm:border-[#DFDFDF]/60 pr-6 relative"
+                class="hidden sm:flex flex-col items-center gap-2 order-1 border-r sm:border-[#DFDFDF]/60 pr-6 relative"
               >
-                <Slider.PrevButton
-                  class="no-animation btn btn-circle btn-outline"
-                  disabled
-                >
-                  <Icon size={24} id="ChevronUp" strokeWidth={3} />
-                </Slider.PrevButton>
+                {images.length >= 6 && (
+                  <Slider.PrevButton
+                    class="no-animation btn btn-circle btn-outline"
+                    disabled
+                  >
+                    <Icon size={24} id="ChevronUp" strokeWidth={3} />
+                  </Slider.PrevButton>
+                )}
 
                 <Slider
                   id="pdp-vertical-carousel"
@@ -163,12 +165,14 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
                   ))}
                 </Slider>
 
-                <Slider.NextButton
-                  class="no-animation btn btn-circle btn-outline"
-                  disabled={images.length < 2}
-                >
-                  <Icon size={24} id="ChevronDown" strokeWidth={3} />
-                </Slider.NextButton>
+                {images.length >= 6 && (
+                  <Slider.NextButton
+                    class="no-animation btn btn-circle btn-outline"
+                    disabled={images.length < 6}
+                  >
+                    <Icon size={24} id="ChevronDown" strokeWidth={3} />
+                  </Slider.NextButton>
+                )}
 
                 <SliderJS
                   rootId="pdp-vertical-carousel"
