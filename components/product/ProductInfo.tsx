@@ -11,6 +11,7 @@ import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import { Product, ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
+import ShareButton from "./ShareButton.tsx";
 import Similars from "./Similars.tsx";
 import ReviewsScript from "./ReviewsScript.tsx";
 import QuickReview from "./QuickReview.tsx";
@@ -48,6 +49,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
     name = "",
     isVariantOf,
     additionalProperty = [],
+    url,
   } = product;
   const {
     price = 0,
@@ -118,9 +120,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
               productGroupID={productGroupID}
             />
 
-            <button aria-label="share item">
-              <Icon id="Share" size={24} strokeWidth={1} />
-            </button>
+            {url && <ShareButton url={url} />}
           </div>
         </div>
 
