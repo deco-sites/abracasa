@@ -38,10 +38,10 @@ export default function CTA(
       const ctaContent = document.getElementById("cta-content");
 
       if (scrollY > 1120) {
-        ctaContent?.classList.remove("opacity-0");
+        ctaContent?.classList.remove("opacity-0", "invisible");
         ctaContent?.classList.add("opacity-100");
       } else {
-        ctaContent?.classList.add("opacity-0");
+        ctaContent?.classList.add("opacity-0", "invisible");
         ctaContent?.classList.remove("opacity-100");
       }
     });
@@ -51,7 +51,7 @@ export default function CTA(
     <>
       <div
         id="cta-content"
-        class="opacity-0 z-40 py-2 px-3 w-full h-auto lg:h-[100px] fixed bottom-0 left-0 bg-base-100 shadow-2xl border-t border-solid border-[#d9d9d9] transition-all ease-in duration-300"
+        class="invisible opacity-0 z-40 py-2 px-3 w-full h-auto lg:h-[100px] fixed bottom-0 left-0 bg-base-100 shadow-2xl border-t border-solid border-[#d9d9d9] transition-all ease-in duration-300"
       >
         <div class="flex items-center justify-between lg:max-w-[90%] xl:max-w-[80%] mx-auto gap-4">
           <aside class="flex items-center gap-4">

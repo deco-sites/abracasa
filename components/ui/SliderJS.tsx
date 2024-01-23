@@ -158,7 +158,7 @@ const setup = ({ rootId, scroll, interval, infinite, orientation }: Props) => {
         const index = Number(item.target.getAttribute("data-slider-item")) || 0;
         const dot = dots?.item(index);
 
-        if (item.isIntersecting) {
+        if (item.isIntersecting && !isVertical) {
           dot?.setAttribute("disabled", "");
         } else {
           dot?.removeAttribute("disabled");
@@ -166,14 +166,14 @@ const setup = ({ rootId, scroll, interval, infinite, orientation }: Props) => {
 
         if (!infinite) {
           if (index === 0) {
-            if (item.isIntersecting) {
+            if (item.isIntersecting && !isVertical) {
               prev?.setAttribute("disabled", "");
             } else {
               prev?.removeAttribute("disabled");
             }
           }
           if (index === items.length - 1) {
-            if (item.isIntersecting) {
+            if (item.isIntersecting && !isVertical) {
               next?.setAttribute("disabled", "");
             } else {
               next?.removeAttribute("disabled");

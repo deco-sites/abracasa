@@ -6,6 +6,7 @@ import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
+import { FnContext } from "deco/types.ts";
 
 export interface Props {
   /** @title Integration */
@@ -23,7 +24,7 @@ export interface Props {
  * On mobile, there's one single column with 3 rows. Note that the orders are different from desktop to mobile, that's why
  * we rearrange each cell with col-start- directives
  */
-export default function GallerySlider(props: Props) {
+export default function GallerySlider(props: ReturnType<typeof loader>) {
   const id = useId();
 
   if (props.page === null) {
@@ -106,38 +107,10 @@ export default function GallerySlider(props: Props) {
         </div>
 
         {/* Mobile Dots */}
-        <ul class="sm:hidden carousel carousel-center gap-1 px-4 order-2">
-          {images.map((img, index) => (
-            <li class="carousel-item min-w-[98px]">
-              <Slider.Dot index={index}>
-                <Image
-                  style={{ aspectRatio: 1 }}
-                  class="group-disabled:border-base-300 border object-cover"
-                  width={98}
-                  height={98}
-                  src={img.url!}
-                  alt={img.alternateName}
-                />
-              </Slider.Dot>
-            </li>
-          ))}
-        </ul>
-
-        {/* Desktop Dots */}
-        <div
-          id="pdp-vertical-carousel"
-          class="hidden sm:flex flex-col items-center justify-center gap-2 order-1 border-r sm:border-[#DFDFDF]/60 pr-6 relative"
-        >
-          <Slider.PrevButton
-            class="no-animation btn btn-circle btn-outline"
-            disabled
-          >
-            <Icon size={24} id="ChevronUp" strokeWidth={3} />
-          </Slider.PrevButton>
-
-          <Slider class="carousel carousel-vertical px-0 max-h-[605px] gap-4">
+        {props.device === "mobile" && (
+          <ul class="sm:hidden carousel carousel-center gap-1 px-4 order-2">
             {images.map((img, index) => (
-              <Slider.Item index={index} class="carousel-item min-w-[98px]">
+              <li class="carousel-item min-w-[98px]">
                 <Slider.Dot index={index}>
                   <Image
                     style={{ aspectRatio: 1 }}
@@ -148,26 +121,72 @@ export default function GallerySlider(props: Props) {
                     alt={img.alternateName}
                   />
                 </Slider.Dot>
-              </Slider.Item>
+              </li>
             ))}
-          </Slider>
+          </ul>
+        )}
 
-          <Slider.NextButton
-            class="no-animation btn btn-circle btn-outline"
-            disabled={images.length < 2}
-          >
-            <Icon size={24} id="ChevronDown" strokeWidth={3} />
-          </Slider.NextButton>
+        {/* Desktop Dots */}
+        {props.device === "tablet" || props.device === "desktop" && (
+              <div
+                id="pdp-vertical-carousel"
+                class="hidden sm:flex flex-col items-center justify-center gap-2 order-1 border-r sm:border-[#DFDFDF]/60 pr-6 relative"
+              >
+                <Slider.PrevButton
+                  class="no-animation btn btn-circle btn-outline"
+                  disabled
+                >
+                  <Icon size={24} id="ChevronUp" strokeWidth={3} />
+                </Slider.PrevButton>
 
-          <SliderJS
-            rootId="pdp-vertical-carousel"
-            scroll="smooth"
-            orientation="vertical"
-          />
-        </div>
+                <Slider
+                  id="pdp-vertical-carousel"
+                  class="carousel carousel-vertical px-0 max-h-[605px] gap-4"
+                >
+                  {images.map((img, index) => (
+                    <Slider.Item
+                      id="pdp-vertical-carousel"
+                      index={index}
+                      class="carousel-item w-[98px] relative"
+                    >
+                      <Slider.Dot index={index}>
+                        <Image
+                          style={{ aspectRatio: 1 }}
+                          class="group-disabled:border-base-300 border"
+                          width={98}
+                          height={98}
+                          src={img.url!}
+                          alt={img.alternateName}
+                        />
+                      </Slider.Dot>
+                    </Slider.Item>
+                  ))}
+                </Slider>
+
+                <Slider.NextButton
+                  class="no-animation btn btn-circle btn-outline"
+                  disabled={images.length < 2}
+                >
+                  <Icon size={24} id="ChevronDown" strokeWidth={3} />
+                </Slider.NextButton>
+
+                <SliderJS
+                  rootId="pdp-vertical-carousel"
+                  scroll="smooth"
+                  orientation="vertical"
+                />
+              </div>
+            )}
 
         <SliderJS rootId={id} scroll="smooth" />
       </div>
     </>
   );
 }
+
+export const loader = (props: Props, req: Request, ctx: FnContext) => {
+  return {
+    ...props,
+    device: ctx.device,
+  };
+};
