@@ -120,9 +120,9 @@ function Navbar({ items, searchbar, logo, device }: {
               {platform === "vtex" && <CartButtonVTEX />}
             </div>
           </div>
-          <div class="flex-auto flex items-center justify-center border-t border-base-200 gap-2.5 w-full">
+          <ul class="flex-auto flex items-center justify-center border-t border-base-200 gap-2.5 w-full">
             {items.map((item) => <NavItem item={item} />)}
-          </div>
+          </ul>
         </div>
       )}
 

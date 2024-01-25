@@ -54,7 +54,7 @@ function Result({
 
   return (
     <>
-      <div class="container px-4 sm:py-10">
+      <div class="px-4 sm:py-10">
         <SearchControls
           sortOptions={sortOptions}
           filters={filters}
@@ -62,18 +62,24 @@ function Result({
           displayFilter={layout?.variant === "drawer"}
         />
 
-        <div class="flex flex-row">
+        <div class="flex flex-row mt-4 container">
           {layout?.variant === "aside" && filters.length > 0 && (
             <aside class="hidden sm:block w-min min-w-[250px]">
               <Filters filters={filters} />
             </aside>
           )}
-          <div class="flex-grow" id={id}>
-            <ProductGallery
-              products={products}
-              offset={offset}
-              layout={{ card: cardLayout, columns: layout?.columns }}
-            />
+          <div class="flex flex-col gap-6">
+            <span class="text-sm text-[#828282] leading-[27px] font-normal text-end md:text-start">
+              {pageInfo.records} produtos
+            </span>
+
+            <div class="flex-grow" id={id}>
+              <ProductGallery
+                products={products}
+                offset={offset}
+                layout={{ card: cardLayout, columns: layout?.columns }}
+              />
+            </div>
           </div>
         </div>
 
