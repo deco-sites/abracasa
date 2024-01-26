@@ -169,20 +169,20 @@ function ProductCard(
         >
           {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
             (
-              <div class="flex items-center justify-center bg-[#555] rounded-md text-xs leading-[12px] text-white py-3 px-1.5 min-w-[104px] w-full h-[18px]">
+              <div class="flex items-center justify-center bg-[#555] rounded-md text-xs leading-[12.57px] text-white py-3 px-[4.61px] min-w-[90px] w-full h-[18.54px]">
                 pronta entrega
               </div>
             )}
 
           {additionalProperty.find((item) => item.value === "Exclusivo") && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 w-full h-[18px]">
+            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] w-full h-[18.54px]">
               exclusivo
             </div>
           )}
         </div>
         {/* Wishlist button */}
         <div
-          class={`absolute top-0 z-10
+          class={`absolute top-2 z-10
           ${
             l?.elementsPositions?.favoriteIcon === "Top left"
               ? "left-1"
