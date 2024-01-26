@@ -9,18 +9,14 @@
  * no JavaScript is shipped to the browser!
  */
 
-import ProductCard from "$store/components/product/ProductCard.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import Slider from "$store/components/ui/Slider.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useId } from "$store/sdk/useId.ts";
-import { useSuggestions } from "$store/sdk/useSuggestions.ts";
+import { useAutocomplete } from "$store/hooks/useAutocomplete.ts";
 import { useUI } from "$store/sdk/useUI.ts";
-import { Suggestion } from "apps/commerce/types.ts";
-import { Resolved } from "deco/engine/core/resolver.ts";
 import { useEffect, useRef } from "preact/compat";
-import type { Platform } from "$store/apps/site.ts";
 
 // Editable props
 export interface Props {
@@ -42,28 +38,18 @@ export interface Props {
    * @default q
    */
   name?: string;
-
-  /**
-   * @title Suggestions Integration
-   * @todo: improve this typings ({query: string, count: number}) => Suggestions
-   */
-  loader: Resolved<Suggestion | null>;
-
-  platform?: Platform;
 }
 
 function Searchbar({
   placeholder = "What are you looking for?",
   action = "/s",
   name = "q",
-  loader,
-  platform,
 }: Props) {
   const id = useId();
   const { displaySearchPopup } = useUI();
   const searchInputRef = useRef<HTMLInputElement>(null);
-  const { setQuery, payload, loading } = useSuggestions(loader);
-  const { products = [], searches = [] } = payload.value ?? {};
+  const { setSearch: setQuery, suggestions, loading } = useAutocomplete();
+  const { products = [], searches = [] } = suggestions.value ?? {};
   const hasProducts = Boolean(products.length);
   const hasTerms = Boolean(searches.length);
 
@@ -75,7 +61,7 @@ function Searchbar({
 
   return (
     <div
-      class="w-full grid gap-8 px-4 py-6 overflow-y-hidden"
+      class="w-full grid gap-8 px-4 py-6 max-h-full"
       style={{ gridTemplateRows: "min-content auto" }}
     >
       <form id={id} action={action} class="join">
@@ -122,7 +108,7 @@ function Searchbar({
       </form>
 
       <div
-        class={`overflow-y-scroll ${!hasProducts && !hasTerms ? "hidden" : ""}`}
+        class={`${!hasProducts && !hasTerms ? "hidden" : ""}`}
       >
         <div class="gap-4 grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-[150px_1fr]">
           <div class="flex flex-col gap-6">
@@ -142,15 +128,19 @@ function Searchbar({
                         id="MagnifyingGlass"
                         size={24}
                         strokeWidth={0.01}
+                        loading="lazy"
                       />
                     </span>
-                    <span dangerouslySetInnerHTML={{ __html: term }} />
+                    <span
+                      class="capitalize"
+                      dangerouslySetInnerHTML={{ __html: term }}
+                    />
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          <div class="flex flex-col pt-6 md:pt-0 gap-6 overflow-x-hidden">
+          <div class="flex flex-col pt-6 md:pt-0 gap-3">
             <span
               class="font-medium text-xl"
               role="heading"
@@ -158,21 +148,36 @@ function Searchbar({
             >
               Produtos sugeridos
             </span>
-            <Slider class="carousel">
-              {products.map((product, index) => (
-                <Slider.Item
-                  index={index}
-                  class="carousel-item first:ml-4 last:mr-4 min-w-[200px] max-w-[200px]"
-                >
-                  <ProductCard
-                    product={product}
-                    platform={platform}
-                    index={index}
-                    itemListName="Suggeestions"
-                  />
-                </Slider.Item>
-              ))}
-            </Slider>
+            <div class="flex flex-col pt-6 pb-2 gap-2">
+              {products?.map(({ isVariantOf, image: images, url }) => {
+                const [front] = images ?? [];
+
+                return (
+                  <a
+                    href={url || "#"}
+                    class="flex items-center w-full h-full gap-3"
+                  >
+                    <Image
+                      src={front.url || ""}
+                      alt={front.alternateName}
+                      width={60}
+                      height={60}
+                      loading="lazy"
+                      decoding="async"
+                      preload={false}
+                    />
+
+                    <h2
+                      class="truncate text-black uppercase font-semibold text-xs pt-1.5"
+                      dangerouslySetInnerHTML={{
+                        __html: isVariantOf?.name ?? name ??
+                          "",
+                      }}
+                    />
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

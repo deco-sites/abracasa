@@ -93,7 +93,7 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
         >
           {displayMenu.value && <Menu {...menu} />}
           {searchbar && displaySearchDrawer.value && (
-            <div class="w-screen">
+            <div class="w-screen overflow-y-scroll">
               <Searchbar {...searchbar} />
             </div>
           )}
