@@ -44,8 +44,8 @@ function CartButton({ loading, currency, total, items }: Props) {
       >
         <img
           src={asset("/image/cart.svg")}
-          width={30}
-          height={30}
+          width={32}
+          height={32}
           alt="Cart icon"
         />
       </Button>

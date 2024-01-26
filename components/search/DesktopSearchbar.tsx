@@ -125,6 +125,7 @@ function Searchbar({
                 size={24}
                 strokeWidth={0.01}
                 fill="none"
+                class="text-[#919191]"
               />
             )}
         </button>
