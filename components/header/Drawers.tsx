@@ -23,26 +23,27 @@ export interface Props {
 }
 
 const Aside = (
-  { title, onClose, children, isMinicart = false }: {
-    title: string;
+  { title, onClose, children, isMinicart = false, isMenu = false }: {
+    title: ComponentChildren;
     onClose?: () => void;
     children: ComponentChildren;
     isMinicart?: boolean;
+    isMenu?: boolean;
   },
 ) => (
   <div
     class={`bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100%] ${
-      isMinicart && "lg:w-[300px]"
-    }`}
+      isMenu && "w-[75%]"
+    } ${isMinicart && "lg:w-[300px]"}`}
   >
     <div class="flex justify-between items-center px-4 py-3">
       <h1>
-        <span class="text-base leading-5 text-[#212121]">{title}</span>
+        {title}
       </h1>
       {onClose && (
         <Button hasBtnClass={false} onClick={onClose}>
           <Icon
-            id={isMinicart ? "ChevronRight" : "XMark"}
+            id={(isMinicart || isMenu) ? "ChevronRight" : "XMark"}
             size={24}
             strokeWidth={2}
           />
@@ -65,7 +66,8 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
   const { displayCart, displayMenu, displaySearchDrawer } = useUI();
 
   return (
-    <Drawer // left drawer
+    <Drawer
+      class={displayMenu.value ? "drawer-end" : ""}
       open={displayMenu.value || displaySearchDrawer.value}
       onClose={() => {
         displayMenu.value = false;
@@ -77,7 +79,17 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
             displayMenu.value = false;
             displaySearchDrawer.value = false;
           }}
-          title={displayMenu.value ? "Menu" : "Buscar"}
+          isMenu={displayMenu.value ? true : false}
+          title={displayMenu.value
+            ? (
+              <p class="flex flex-col text-[#555] text-sm leading-4">
+                <span>Olá, seja bem vindo à</span>
+                <span class="text-firebrick font-bold leading-[30px] text-[22px]">
+                  Abra Casa
+                </span>
+              </p>
+            )
+            : <span>Buscar</span>}
         >
           {displayMenu.value && <Menu {...menu} />}
           {searchbar && displaySearchDrawer.value && (
@@ -95,7 +107,11 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
         aside={
           <Aside
             isMinicart={true}
-            title="MEU CARRINHO"
+            title={
+              <span class="text-base leading-5 text-[#212121] uppercase">
+                Meu Carrinho
+              </span>
+            }
             onClose={() => displayCart.value = false}
           >
             <Cart platform={platform} />
