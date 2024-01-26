@@ -77,7 +77,7 @@ function BannerItem(
       id={id}
       href={image?.href ?? "#"}
       aria-label={image?.alt}
-      class="relative h-[600px] overflow-y-hidden w-full"
+      class="relative h-[576px] overflow-y-hidden w-full"
     >
       <Picture preload={lcp}>
         <Source
@@ -91,7 +91,7 @@ function BannerItem(
           media="(min-width: 768px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={desktop.image}
-          width={desktop.width || 1920}
+          width={desktop.width || 2000}
           height={desktop.height || 600}
         />
         <img
@@ -197,11 +197,19 @@ function BannerCarousel(props: Props) {
         })}
       </Slider>
 
-      <Buttons />
+      {images && images.length > 1 && (
+        <>
+          <Buttons />
 
-      <Dots images={images} interval={interval} />
+          <Dots images={images} interval={interval} />
 
-      <SliderJS rootId={id} interval={interval && interval * 1e3} infinite />
+          <SliderJS
+            rootId={id}
+            interval={interval && interval * 1e3}
+            infinite
+          />
+        </>
+      )}
     </div>
   );
 }

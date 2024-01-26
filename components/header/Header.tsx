@@ -48,7 +48,7 @@ function Header({
 
             <Navbar
               items={items}
-              searchbar={searchbar && { ...searchbar, platform }}
+              searchbar={searchbar && { ...searchbar }}
               logo={logo}
               device={device}
             />

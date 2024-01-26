@@ -72,34 +72,17 @@ function Navbar({ items, searchbar, logo, device }: {
             <div class="flex items-center justify-between max-w-[45%] w-full gap-4">
               <a
                 class="inline-flex items-center gap-1 group text-xs"
-                href="/nossas-lojas"
+                href="/institucional/nossas-lojas"
                 aria-label="Log in"
               >
                 <img
                   src={asset("/image/store.svg")}
-                  width={24}
-                  height={24}
+                  width={32}
+                  height={32}
                   alt="Store icon"
                   class="group-hover:text-firebrick"
                 />
                 <span>nossas lojas</span>
-              </a>
-
-              <a
-                class="inline-flex items-center gap-1 group text-xs"
-                href="/login"
-                aria-label="Log in"
-              >
-                <img
-                  src={asset("/image/user.svg")}
-                  width={24}
-                  height={24}
-                  alt="User icon"
-                  class="group-hover:text-firebrick"
-                />
-                <span>
-                  entrar <br /> meus pedidos
-                </span>
               </a>
 
               <a
@@ -109,7 +92,7 @@ function Navbar({ items, searchbar, logo, device }: {
               >
                 <Icon
                   id="Heart"
-                  size={24}
+                  size={30}
                   strokeWidth={0.75}
                   fill="none"
                   class="group-hover:text-firebrick"
@@ -117,12 +100,29 @@ function Navbar({ items, searchbar, logo, device }: {
                 <span>favoritos</span>
               </a>
 
+              <a
+                class="inline-flex items-center gap-1 group text-xs"
+                href="/login"
+                aria-label="Log in"
+              >
+                <img
+                  src={asset("/image/user.svg")}
+                  width={32}
+                  height={32}
+                  alt="User icon"
+                  class="group-hover:text-firebrick"
+                />
+                <span>
+                  entrar <br /> meus pedidos
+                </span>
+              </a>
+
               {platform === "vtex" && <CartButtonVTEX />}
             </div>
           </div>
-          <div class="flex-auto flex items-center justify-center border-t border-base-200 gap-2.5 w-full">
+          <ul class="flex-auto flex items-center justify-center border-t border-base-200 gap-2.5 w-full">
             {items.map((item) => <NavItem item={item} />)}
-          </div>
+          </ul>
         </div>
       )}
 

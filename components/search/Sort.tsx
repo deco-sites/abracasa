@@ -22,33 +22,44 @@ export type Props = Pick<ProductListingPage, "sortOptions">;
 
 // TODO: move this to the loader
 const portugueseMappings = {
-  "relevance:desc": "Relevância",
+  "relevance:desc": "Maior Relevância",
   "price:desc": "Maior Preço",
   "price:asc": "Menor Preço",
-  "orders:desc": "Mais vendidos",
+  "orders:desc": "Mais Vendidos",
   "name:desc": "Nome - de Z a A",
   "name:asc": "Nome - de A a Z",
-  // "release:desc": "Relevância - Decrescente",
-  "discount:desc": "Maior desconto",
+  "release:desc": "Menor Relevância",
+  "discount:desc": "Maior Desconto",
 };
 
 function Sort({ sortOptions }: Props) {
   const sort = useSort();
+
+  const filteredSortOptions = sortOptions.filter(
+    ({ label }) =>
+      label !== "name:desc" && label !== "name:asc" &&
+      label !== "release:desc" && label !== "",
+  );
 
   return (
     <select
       id="sort"
       name="sort"
       onInput={applySort}
-      class="w-min h-[36px] px-1 rounded m-2 text-base-content cursor-pointer outline-none"
+      class="w-min h-[36px] px-1 rounded-none m-2 cursor-pointer outline-none bg-white"
     >
-      {sortOptions.map(({ value, label }) => ({
+      {filteredSortOptions?.map(({ value, label }) => ({
         value,
         label: portugueseMappings[label as keyof typeof portugueseMappings] ??
           label,
       })).filter(({ label }) => label).map(({ value, label }) => (
-        <option key={value} value={value} selected={value === sort}>
-          <span class="text-sm">{label}</span>
+        <option
+          key={value}
+          value={value}
+          selected={value === sort}
+          class="selected:text-firebirck text-center p-4"
+        >
+          <span class="text-sm py-2.5">{label}</span>
         </option>
       ))}
     </select>

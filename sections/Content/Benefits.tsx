@@ -54,9 +54,11 @@ export default function Benefits(
           showDivider && benefitLayout !== "piledup"
             ? "border-b border-neutral-300"
             : ""
-        } ${showDivider ? "pb-4 lg:pr-8 lg:border-r lg:border-b-0" : ""} ${
-          showDivider && !reverse ? "lg:pb-0" : ""
-        }`}
+        } ${
+          showDivider
+            ? "pb-4 lg:pr-8 border-b-2 lg:border-r-2 lg:border-b-0 border-[#d9d9d9] border-solid lg:max-w-full"
+            : ""
+        } ${showDivider && !reverse ? "lg:pb-0" : ""}`}
       >
         <div class="flex-none">
           <Icon
@@ -112,7 +114,7 @@ export default function Benefits(
             alignment={layout?.headerAlignment || "center"}
           />
           <div class="w-full flex justify-center">
-            <div class="grid grid-cols-2 gap-1 w-full py-6 px-4 border border-base-300 lg:gap-8 lg:grid-flow-col lg:auto-cols-fr lg:p-10">
+            <div class="grid w-full py-6 px-4 border border-base-300 gap-8 lg:grid-flow-col lg:auto-cols-fr lg:p-10">
               {listOfBenefits}
             </div>
           </div>
@@ -126,7 +128,7 @@ export default function Benefits(
             alignment={layout?.headerAlignment || "center"}
           />
           <div class="w-full flex justify-center">
-            <div class="grid grid-cols-2 gap-1 w-full lg:gap-8 lg:grid-flow-col lg:auto-cols-fr">
+            <div class="grid gap-1 w-full lg:gap-8 lg:grid-flow-col lg:auto-cols-fr">
               {listOfBenefits}
             </div>
           </div>
