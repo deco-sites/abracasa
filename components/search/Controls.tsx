@@ -4,7 +4,7 @@ import Filters from "$store/components/search/Filters.tsx";
 import MobileFilters from "$store/components/search/MobileFilters.tsx";
 import Sort from "$store/components/search/Sort.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
-import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
+import PromptDelivery from "$store/components/search/PromptDelivery.tsx";
 import { useSignal } from "@preact/signals";
 import type { ProductListingPage } from "apps/commerce/types.ts";
 
@@ -53,7 +53,7 @@ function SearchControls(
       }
     >
       <div class="flex w-full sm:h-[53px] sm:border-b sm:border-base-200">
-        <div class="flex flex-col justify-between container h-full w-full p-4 mb-4 sm:flex-row sm:mb-0 sm:p-0 sm:gap-4">
+        <div class="flex flex-col justify-between xl:container h-full w-full p-4 mb-4 sm:flex-row sm:mb-0 sm:p-0 sm:gap-4">
           {/* Mobile Filters */}
           <div class="flex lg:hidden flex-row items-center justify-between border-b border-base-200 sm:gap-4 sm:border-none">
             <Button
@@ -70,9 +70,13 @@ function SearchControls(
           </div>
 
           {/* Desktop Filters */}
-          <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-2 w-full">
+          <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-12 w-full">
             <div class="flex items-center gap-2">
-              <Filters filters={filters} />
+              <div class="flex items-center">
+                <Filters filters={filters} />
+                {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
+              </div>
+
               <button
                 aria-label="limpar filtros"
                 onClick={removeSort}
@@ -82,7 +86,29 @@ function SearchControls(
               </button>
             </div>
 
-            {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
+            <div class="flex items-center gap-3">
+              <PromptDelivery />
+
+              <div class="flex items-center justify-center gap-2">
+                <span class="text-normal leading-[22px] text-[#555]">
+                  Visualizar:
+                </span>
+
+                <button
+                  aria-label="trocar para visualização de três colunas"
+                  onClick={() => {}}
+                >
+                  <Icon id="ThreeColumns" width={34} height={34} />
+                </button>
+
+                <button
+                  aria-label="trocar para visualização de quatro colunas"
+                  onClick={() => {}}
+                >
+                  <Icon id="FourthColumns" width={34} height={34} />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

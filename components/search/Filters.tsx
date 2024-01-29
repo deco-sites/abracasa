@@ -87,7 +87,7 @@ function Filters({ filters }: Props) {
               aria-label={`open ${filter.label}`}
               tabIndex={0}
               role="button"
-              class="btn text-sm leading-[22px] text-[#555] font-normal bg-transparent hover:bg-transparent m-1 gap-1.5"
+              class="btn text-sm leading-[22px] text-[#555] font-normal bg-transparent hover:bg-transparent m-1 gap-1.5 w-full"
             >
               <span class="visible:text-firebrick ">{filter.label}</span>
               <Icon id="ChevronDown" size={24} strokeWidth={2} loading="lazy" />
