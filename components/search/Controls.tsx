@@ -72,7 +72,7 @@ function SearchControls(
           {/* Desktop Filters */}
           <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-12 w-full">
             <div class="flex items-center gap-2">
-              <div class="flex items-center">
+              <div class="flex items-center gap-4">
                 <Filters filters={filters} />
                 {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
               </div>

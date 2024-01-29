@@ -77,7 +77,7 @@ function Filters({ filters }: Props) {
   const excludedKeys = ["Brands", "PriceRanges", "Categories", "Departments"];
 
   return (
-    <ul class="flex flex-row gap-3 p-4">
+    <ul class="flex flex-row gap-3">
       {filters
         .filter(isToggle)
         .filter((item) => !excludedKeys.includes(item.key))

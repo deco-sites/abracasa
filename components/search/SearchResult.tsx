@@ -1,7 +1,7 @@
 import { SendEventOnView } from "$store/components/Analytics.tsx";
 import { Layout as CardLayout } from "$store/components/product/ProductCard.tsx";
 import Filters from "$store/components/search/Filters.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
+import SearchTitle from "$store/islands/SearchTitle.tsx";
 import SearchControls from "$store/islands/SearchControls.tsx";
 import CustomPagination from "./CustomPagination.tsx";
 import { useId } from "$store/sdk/useId.ts";
@@ -33,8 +33,9 @@ export interface Props {
 
 function NotFound() {
   return (
-    <div class="w-full flex justify-center items-center py-10">
-      <span>Not Found!</span>
+    <div class="w-full flex flex-col justify-center items-center gap-2 py-10">
+      <span>Ops! não existe nenhum produto disponível para essa busca.</span>
+      <span>Tente procurar por outro termo.</span>
     </div>
   );
 }
@@ -55,6 +56,8 @@ function Result({
 
   return (
     <>
+      <SearchTitle productsCount={pageInfo.records} />
+
       <div class="px-4 sm:py-10">
         <SearchControls
           sortOptions={sortOptions}
@@ -114,11 +117,27 @@ function Result({
 }
 
 function SearchResult({ page, ...props }: Props) {
-  if (!page) {
+  if (!page || !page.products || page.products.length === 0) {
     return <NotFound />;
   }
 
   return <Result {...props} page={page} />;
 }
+
+export const loader = (props: Props, req: Request) => {
+  const url = new URL(req.url);
+
+  if (url.searchParams.has("readyDelivery")) {
+    const filteredProducts = props.page?.products?.filter((product) =>
+      product.additionalProperty?.some((property) =>
+        property.value?.includes("Pronta Entrega")
+      )
+    ) || null;
+
+    return { ...props, page: { ...props.page, products: filteredProducts } };
+  }
+
+  return props;
+};
 
 export default SearchResult;
