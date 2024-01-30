@@ -35,13 +35,13 @@ function Dots({ cards, interval = 0 }: Pick<Props, "interval" | "cards">) {
             `,
         }}
       />
-      <ul class="flex lg:hidden carousel translate-y-7 justify-center col-span-full gap-4 z-10 row-start-4">
+      <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4 translate-y-16">
         {cards?.map((_, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
               <div class="py-5">
                 <div
-                  class="w-3 h-3 rounded-full group-disabled:animate-progress bg-gradient-to-r from-dark-pink from-[length:var(--dot-progress)] to-black to-[length:var(--dot-progress)]"
+                  class="w-[60px] sm:w-[100px] h-1 group-disabled:animate-progress bg-gradient-to-r from-firebrick from-[length:var(--dot-progress)] to-[#f2f2f2] to-[length:var(--dot-progress)]"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
@@ -84,7 +84,7 @@ export default function CategoryList({ title, cards, interval }: Props) {
   const id = useId();
 
   return (
-    <section class="flex flex-col flex-grow w-full h-full items-center justify-center bg-white my-8">
+    <section class="flex flex-col flex-grow w-full h-full items-center justify-center bg-white pt-8 pb-12">
       <div class="flex items-center justify-center text-center mb-6">
         <h2 class="text-2xl lg:text-4xl font-normal text-[#555] lg:leading-[49px]">
           {title}
@@ -130,6 +130,8 @@ export default function CategoryList({ title, cards, interval }: Props) {
         </Slider>
 
         <Buttons />
+
+        {/* <Dots cards={cards} interval={interval} /> */}
 
         <SliderJS
           rootId={id}
