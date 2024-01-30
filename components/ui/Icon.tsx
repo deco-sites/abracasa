@@ -38,6 +38,7 @@ export type AvailableIcons =
   | "Youtube"
   | "Exchange"
   | "Clock"
+  | "PhysicalStores"
   | "OneColumn"
   | "TwoColumns"
   | "ThreeColumns"
