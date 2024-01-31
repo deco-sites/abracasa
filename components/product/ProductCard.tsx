@@ -288,7 +288,7 @@ function ProductCard(
             </div>
           )}
 
-        <div class="flex items-center justify-between w-full h-full lg:px-1.5">
+        <div class="flex items-center justify-between w-full h-full gap-2 lg:px-1.5">
           <div class="flex flex-col">
             {l?.hide?.allPrices
               ? ""
