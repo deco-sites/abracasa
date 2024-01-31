@@ -11,6 +11,7 @@ import { parseRange } from "apps/commerce/utils/filters.ts";
 
 interface Props {
   filters: ProductListingPage["filters"];
+  isCategoriesFilterActive?: boolean;
 }
 
 const isToggle = (filter: Filter): filter is FilterToggle =>
@@ -69,8 +70,14 @@ function FilterValues({ key, values }: FilterToggle) {
   );
 }
 
-function Filters({ filters }: Props) {
-  const excludedKeys = ["Brands", "PriceRanges", "Categories", "Departments"];
+function Filters({ filters, isCategoriesFilterActive }: Props) {
+  const excludedKeys = isCategoriesFilterActive
+    ? ["Brands", "PriceRanges", "Departments"]
+    : ["Brands", "PriceRanges", "Departments", "Categories"];
+
+  const translations: Record<string, string> = {
+    "Categories": "Categorias",
+  };
 
   return (
     <ul class="flex flex-row gap-3">
@@ -85,7 +92,9 @@ function Filters({ filters }: Props) {
               role="button"
               class="btn text-sm leading-[22px] text-[#555] font-normal bg-transparent hover:bg-transparent m-1 gap-1.5 w-full"
             >
-              <span class="visible:text-firebrick ">{filter.label}</span>
+              <span>
+                {translations[filter.label] || filter.label}
+              </span>
               <Icon id="ChevronDown" size={24} strokeWidth={2} loading="lazy" />
             </div>
             <FilterValues {...filter} />

@@ -10,6 +10,7 @@ import { parseRange } from "apps/commerce/utils/filters.ts";
 
 interface Props {
   filters: ProductListingPage["filters"];
+  isCategoriesFilterActive?: boolean;
 }
 
 const isToggle = (filter: Filter): filter is FilterToggle =>
@@ -61,8 +62,14 @@ function FilterValues({ key, values }: FilterToggle) {
   );
 }
 
-function Filters({ filters }: Props) {
-  const excludedKeys = ["Brands", "PriceRanges", "Categories", "Departments"];
+function Filters({ filters, isCategoriesFilterActive }: Props) {
+  const excludedKeys = isCategoriesFilterActive
+    ? ["Brands", "PriceRanges", "Departments"]
+    : ["Brands", "PriceRanges", "Departments", "Categories"];
+
+  const translations: Record<string, string> = {
+    "Categories": "Categorias",
+  };
 
   return (
     <div class="flex flex-col gap-6 pt-4">
@@ -80,7 +87,7 @@ function Filters({ filters }: Props) {
             />
 
             <div class="collapse-title uppercase font-bold p-0 min-h-[0px] px-4">
-              {filter.label}
+              {translations[filter.label] || filter.label}
             </div>
 
             <div class="collapse-content flex flex-col gap-4 p-0 mt-2 !pt-4 bg-[#f2f2f2] !rounded-none">

@@ -13,6 +13,7 @@ export type Props =
   & Pick<ProductListingPage, "filters" | "breadcrumb" | "sortOptions">
   & {
     displayFilter?: boolean;
+    isCategoriesFilterActive?: boolean;
   };
 
 const applySort = (format: string) => {
@@ -24,7 +25,8 @@ const applySort = (format: string) => {
 };
 
 function SearchControls(
-  { filters, breadcrumb, displayFilter, sortOptions }: Props,
+  { filters, breadcrumb, displayFilter, sortOptions, isCategoriesFilterActive }:
+    Props,
 ) {
   const open = useSignal(false);
 
@@ -55,7 +57,10 @@ function SearchControls(
               </Button>
             </div>
             <div class="flex-grow overflow-auto">
-              <MobileFilters filters={filters} />
+              <MobileFilters
+                filters={filters}
+                isCategoriesFilterActive={isCategoriesFilterActive}
+              />
             </div>
           </div>
         </>
@@ -112,7 +117,10 @@ function SearchControls(
           <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-12 w-full">
             <div class="flex items-center gap-2">
               <div class="flex items-center gap-4">
-                <Filters filters={filters} />
+                <Filters
+                  filters={filters}
+                  isCategoriesFilterActive={isCategoriesFilterActive}
+                />
                 {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
               </div>
 

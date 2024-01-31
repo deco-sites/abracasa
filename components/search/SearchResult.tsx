@@ -27,6 +27,8 @@ export interface Props {
   layout?: Layout;
   cardLayout?: CardLayout;
 
+  isCategoriesFilterActive?: boolean;
+
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
 }
@@ -45,6 +47,7 @@ function Result({
   layout,
   cardLayout,
   startingPage = 0,
+  isCategoriesFilterActive = false,
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo.recordPerPage || products.length;
@@ -64,6 +67,7 @@ function Result({
           filters={filters}
           breadcrumb={breadcrumb}
           displayFilter={layout?.variant === "drawer"}
+          isCategoriesFilterActive={isCategoriesFilterActive}
         />
 
         <div class="flex flex-row mt-4 container justify-center">
