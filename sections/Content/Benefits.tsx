@@ -70,7 +70,7 @@ export default function Benefits(
             fill="currentColor"
           />
         </div>
-        <div class="flex-auto flex flex-col gap-1 lg:gap-2">
+        <div class="flex-auto flex flex-col gap-1 lg:gap-2 font-sans">
           <div
             class={`text-base leading-7 font-bold ${
               reverse ? "text-base-100" : "text-base-content"
@@ -79,7 +79,7 @@ export default function Benefits(
             {benefit.label}
           </div>
           <p
-            class={`text-sm leading-5 text-black`}
+            class={`text-sm leading-5 text-[#212121]`}
           >
             {benefit.description}
           </p>
