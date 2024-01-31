@@ -2,7 +2,7 @@ export default function Form() {
   return (
     <form className="flex flex-col items-end justify-end max-w-[1250px] mx-auto mt-7">
       {/* Linha 1: Nome Completo */}
-      <div class="w-full h-full flex flex-row items-start justify-center gap-3">
+      <div class="w-full h-full flex flex-col md:flex-row items-start justify-center gap-3">
         <div class="w-full gap-3">
           <div className="mb-4">
             <label
