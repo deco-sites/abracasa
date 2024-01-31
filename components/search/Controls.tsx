@@ -116,13 +116,10 @@ function SearchControls(
           {/* Desktop Filters */}
           <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-12 w-full">
             <div class="flex items-center gap-2">
-              <div class="flex items-center gap-4">
-                <Filters
-                  filters={filters}
-                  isCategoriesFilterActive={isCategoriesFilterActive}
-                />
-                {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
-              </div>
+              <Filters
+                filters={filters}
+                isCategoriesFilterActive={isCategoriesFilterActive}
+              />
 
               <button
                 aria-label="limpar filtros"
@@ -135,6 +132,8 @@ function SearchControls(
 
             <div class="flex items-center gap-3">
               <PromptDelivery />
+
+              {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
 
               <div class="flex items-center justify-center gap-2">
                 <span class="text-normal leading-[22px] text-[#555]">

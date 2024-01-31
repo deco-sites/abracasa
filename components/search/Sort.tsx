@@ -79,23 +79,20 @@ function Sort(
     <select
       id="sort"
       name="sort"
+      aria-label="sort options"
       onInput={applySort}
-      class="w-min h-[36px] px-2 rounded cursor-pointer outline-none bg-white btn font-normal"
+      class="w-[90px] h-full rounded-[2px] text-base-content cursor-pointer outline-none px-0.5 bg-white"
     >
+      <option value="" hidden class="text-[25px]">
+        Ordenar
+      </option>
       {filteredSortOptions?.map(({ value, label }) => ({
         value,
         label: portugueseMappings[label as keyof typeof portugueseMappings] ??
           label,
       })).filter(({ label }) => label).map(({ value, label }) => (
-        <option
-          key={value}
-          value={value}
-          selected={value === sort}
-          class={`${
-            value === sort && "text-firebrick font-bold"
-          } text-center p-4`}
-        >
-          <span class="text-sm py-2.5">{label}</span>
+        <option key={value} value={value}>
+          <span class="text-sm py-2.5 text-center">{label}</span>
         </option>
       ))}
     </select>
