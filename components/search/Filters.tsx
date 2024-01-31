@@ -29,10 +29,6 @@ function ValueItem(
 }
 
 function FilterValues({ key, values }: FilterToggle) {
-  const flexDirection = key === "Cor" || key === "Material"
-    ? "flex-col"
-    : "flex-row";
-
   return (
     <ul
       style={{
