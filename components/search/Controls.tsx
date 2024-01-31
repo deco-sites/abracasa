@@ -14,6 +14,14 @@ export type Props =
     displayFilter?: boolean;
   };
 
+const applySort = (format: string) => {
+  const urlSearchParams = new URLSearchParams(window.location.search);
+
+  urlSearchParams.set("layout", format);
+
+  window.location.search = urlSearchParams.toString();
+};
+
 function SearchControls(
   { filters, breadcrumb, displayFilter, sortOptions }: Props,
 ) {
@@ -55,18 +63,56 @@ function SearchControls(
       <div class="flex w-full sm:h-[53px] sm:border-b sm:border-base-200">
         <div class="flex flex-col justify-between xl:container h-full w-full p-4 mb-4 sm:flex-row sm:mb-0 sm:p-0 sm:gap-4">
           {/* Mobile Filters */}
-          <div class="flex lg:hidden flex-row items-center justify-between border-b border-base-200 sm:gap-4 sm:border-none">
-            <Button
-              class={displayFilter ? "btn-ghost" : "btn-ghost sm:hidden"}
-              onClick={() => {
-                open.value = true;
-              }}
-            >
-              Filtrar
-              <Icon id="FilterList" width={16} height={16} />
-            </Button>
+          <div class="flex lg:hidden flex-row items-start justify-between border-b border-base-200 gap-4 sm:border-none pb-4 w-full">
+            <div class="flex flex-1 items-center gap-2.5">
+              <Button
+                hasBtnClass={false}
+                class={displayFilter
+                  ? "flex items-center justify-center text-black bg-[#f2f2f2] text-[15px] w-full max-w-[80px] h-[30px] p-1"
+                  : "sm:hidden"}
+                onClick={() => {
+                  open.value = true;
+                }}
+              >
+                Filtrar
+              </Button>
 
-            {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
+              <Button
+                hasBtnClass={false}
+                class={displayFilter
+                  ? "flex items-center justify-center text-black bg-[#f2f2f2] text-[15px] w-full max-w-[80px] h-[30px] p-1"
+                  : "sm:hidden"}
+                onClick={() => {
+                  open.value = true;
+                }}
+              >
+                Ordenar
+              </Button>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-5">
+              <PromptDelivery />
+
+              <div class="flex items-center justify-center gap-2">
+                <span class="text-normal leading-[22px] text-[#555]">
+                  Visualizar:
+                </span>
+
+                <button
+                  aria-label="trocar para visualização de uma coluna"
+                  onClick={() => applySort("1")}
+                >
+                  <Icon id="OneColumn" width={12} height={24} />
+                </button>
+
+                <button
+                  aria-label="trocar para visualização de duas colunas"
+                  onClick={() => applySort("2")}
+                >
+                  <Icon id="TwoColumns" width={24} height={24} />
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* Desktop Filters */}
@@ -96,14 +142,14 @@ function SearchControls(
 
                 <button
                   aria-label="trocar para visualização de três colunas"
-                  onClick={() => {}}
+                  onClick={() => applySort("3")}
                 >
                   <Icon id="ThreeColumns" width={34} height={34} />
                 </button>
 
                 <button
                   aria-label="trocar para visualização de quatro colunas"
-                  onClick={() => {}}
+                  onClick={() => applySort("4")}
                 >
                   <Icon id="FourthColumns" width={34} height={34} />
                 </button>

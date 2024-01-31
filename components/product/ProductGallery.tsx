@@ -6,7 +6,7 @@ import { Product } from "apps/commerce/types.ts";
 
 export interface Columns {
   mobile?: 1 | 2;
-  desktop?: 2 | 3 | 4 | 5;
+  desktop?: 3 | 4 | 5;
 }
 
 export interface Props {
@@ -24,10 +24,9 @@ const MOBILE_COLUMNS = {
 };
 
 const DESKTOP_COLUMNS = {
-  2: "md:grid-cols-2",
-  3: "md:grid-cols-3",
-  4: "md:grid-cols-4",
-  5: "md:grid-cols-5",
+  3: "lg:grid-cols-3",
+  4: "lg:grid-cols-4",
+  5: "lg:grid-cols-5",
 };
 
 function ProductGallery({ products, layout, offset }: Props) {
@@ -36,7 +35,13 @@ function ProductGallery({ products, layout, offset }: Props) {
   const desktop = DESKTOP_COLUMNS[layout?.columns?.desktop ?? 4];
 
   return (
-    <div class={`grid ${mobile} gap-2 items-start ${desktop} md:gap-10`}>
+    <div
+      class={`grid ${
+        mobile ?? "grid-cols-1"
+      } gap-2 items-center justify-center ${
+        desktop ?? "lg:grid-cols-4"
+      } lg:gap-10`}
+    >
       {products?.map((product, index) => (
         <ProductCard
           product={product}

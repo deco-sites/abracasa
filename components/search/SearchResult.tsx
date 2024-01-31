@@ -66,7 +66,7 @@ function Result({
           displayFilter={layout?.variant === "drawer"}
         />
 
-        <div class="flex flex-row mt-4 container">
+        <div class="flex flex-row mt-4 container justify-center">
           {layout?.variant === "aside" && filters.length > 0 && (
             <aside class="hidden sm:block w-min min-w-[250px]">
               <Filters filters={filters} />
@@ -116,16 +116,14 @@ function Result({
   );
 }
 
-function SearchResult({ page, ...props }: Props) {
-  if (!page || !page.products || page.products.length === 0) {
-    return <NotFound />;
-  }
-
-  return <Result {...props} page={page} />;
-}
-
 export const loader = (props: Props, req: Request) => {
   const url = new URL(req.url);
+  const layoutValue = url.searchParams.get("layout");
+
+  const updatedLayout = {
+    mobile: Number(layoutValue) || props?.layout?.columns?.mobile || 1,
+    desktop: Number(layoutValue) || props?.layout?.columns?.desktop || 4,
+  };
 
   if (url.searchParams.has("readyDelivery")) {
     const filteredProducts = props.page?.products?.filter((product) =>
@@ -134,10 +132,25 @@ export const loader = (props: Props, req: Request) => {
       )
     ) || null;
 
-    return { ...props, page: { ...props.page, products: filteredProducts } };
+    return {
+      ...props,
+      page: { ...props.page, products: filteredProducts },
+      layout: { ...props.layout, columns: updatedLayout },
+    };
   }
 
-  return props;
+  return {
+    ...props,
+    layout: { ...props.layout, columns: updatedLayout },
+  };
 };
+
+function SearchResult({ page, ...props }: Props) {
+  if (!page || !page.products || page.products.length === 0) {
+    return <NotFound />;
+  }
+
+  return <Result {...props} page={page} />;
+}
 
 export default SearchResult;
