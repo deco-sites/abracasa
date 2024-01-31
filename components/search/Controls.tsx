@@ -3,6 +3,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Filters from "$store/components/search/Filters.tsx";
 import MobileFilters from "$store/components/search/MobileFilters.tsx";
 import Sort from "$store/components/search/Sort.tsx";
+import MobileSortButton from "$store/components/search/MobileSortButton.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
 import PromptDelivery from "$store/components/search/PromptDelivery.tsx";
 import { useSignal } from "@preact/signals";
@@ -77,17 +78,9 @@ function SearchControls(
                 Filtrar
               </Button>
 
-              <Button
-                hasBtnClass={false}
-                class={displayFilter
-                  ? "flex items-center justify-center text-black bg-[#f2f2f2] text-[15px] w-full max-w-[80px] h-[30px] p-1"
-                  : "sm:hidden"}
-                onClick={() => {
-                  open.value = true;
-                }}
-              >
-                Ordenar
-              </Button>
+              {sortOptions.length > 0 && (
+                <MobileSortButton sortOptions={sortOptions} />
+              )}
             </div>
 
             <div class="flex flex-col sm:flex-row gap-5">

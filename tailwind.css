@@ -52,6 +52,10 @@
     background: #555555;
     border-radius: 100vh;
   }
+
+  .move-to-up {
+    animation: move-to-up .4s ease;
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {
@@ -65,5 +69,11 @@
 
   to {
     --dot-progress: 100%
+  }
+}
+
+@keyframes move-to-up {
+  0% {
+    height: 0px;
   }
 }

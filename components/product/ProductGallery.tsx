@@ -38,7 +38,7 @@ function ProductGallery({ products, layout, offset }: Props) {
     <div
       class={`grid ${
         mobile ?? "grid-cols-1"
-      } gap-2 items-center justify-center ${
+      } gap-2 items-start justify-center ${
         desktop ?? "lg:grid-cols-4"
       } lg:gap-10`}
     >

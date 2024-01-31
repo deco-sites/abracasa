@@ -32,7 +32,9 @@ const portugueseMappings = {
   "discount:desc": "Maior Desconto",
 };
 
-function Sort({ sortOptions }: Props) {
+function Sort(
+  { sortOptions, isMobile = false }: Props & { isMobile?: boolean },
+) {
   const sort = useSort();
 
   const filteredSortOptions = sortOptions.filter(
@@ -40,6 +42,38 @@ function Sort({ sortOptions }: Props) {
       label !== "name:desc" && label !== "name:asc" &&
       label !== "release:desc" && label !== "",
   );
+
+  if (isMobile) {
+    const applySortOnMobile = (value: string) => {
+      const urlSearchParams = new URLSearchParams(window.location.search);
+
+      urlSearchParams.set(SORT_QUERY_PARAM, value);
+      window.location.search = urlSearchParams.toString();
+    };
+
+    return (
+      <>
+        {filteredSortOptions?.map(({ value, label }) => ({
+          value,
+          label: portugueseMappings[label as keyof typeof portugueseMappings] ??
+            label,
+        })).filter(({ label }) => label).map(({ value, label }) => (
+          <button
+            key={value}
+            value={value}
+            selected={value === sort}
+            onClick={() => applySortOnMobile(value)}
+            aria-label={`ordenar por ${label}`}
+            class={`${
+              value === sort && "text-firebrick font-bold"
+            } text-center`}
+          >
+            {label}
+          </button>
+        ))}
+      </>
+    );
+  }
 
   return (
     <select
@@ -57,7 +91,9 @@ function Sort({ sortOptions }: Props) {
           key={value}
           value={value}
           selected={value === sort}
-          class="selected:text-firebirck text-center p-4"
+          class={`${
+            value === sort && "text-firebrick font-bold"
+          } text-center p-4`}
         >
           <span class="text-sm py-2.5">{label}</span>
         </option>
