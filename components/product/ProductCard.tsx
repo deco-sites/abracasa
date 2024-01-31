@@ -163,8 +163,8 @@ function ProductCard(
         <div
           class={`flex items-center gap-1.5 absolute top-2 z-10 ${
             l?.elementsPositions?.favoriteIcon === "Top left"
-              ? "right-2"
-              : "left-2"
+              ? "right-1 md:right-2"
+              : "left-1 md:left-2"
           }`}
         >
           {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
@@ -182,7 +182,7 @@ function ProductCard(
         </div>
         {/* Wishlist button */}
         <div
-          class={`absolute top-2 z-10
+          class={`hidden sm:block absolute top-2 z-10
           ${
             l?.elementsPositions?.favoriteIcon === "Top left"
               ? "left-1"
