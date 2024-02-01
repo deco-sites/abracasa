@@ -18,7 +18,7 @@ const colors: Record<string, string> = {
   // Color variants - only applied when no color as content is passed
   "active": "bg-neutral-focus text-neutral-content ring-neutral-focus ",
   "disabled": "bg-neutral-content text-neutral",
-  "default": "bg-base-100 text-primary",
+  "default": "bg-base-100 text-black",
 };
 
 interface Props {
@@ -30,7 +30,8 @@ const variants = {
   active: "bg-[#212121] text-white font-bold",
   disabled:
     `relative after:absolute after:left-0 after:top-1/2 after:h-[1px] after:bg-red-800 after:w-full after:block after:-rotate-45 after:content-[""]`,
-  default: "border border-base-200 hover:border-primary",
+  default:
+    "border border-base-200 hover:bg-[#212121] hover:text-white hover:font-bold",
 };
 
 function Avatar({ content, variant = "default" }: Props) {

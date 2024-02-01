@@ -23,11 +23,11 @@ function VariantSelector({ product }: Props) {
     });
 
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className="flex flex-col gap-4 max-w-[60%]">
       {sortedPossibilities.map(([name, values]) => (
         <li className="flex flex-col gap-2" key={name}>
           <span className="text-sm">{name}</span>
-          <ul className="flex flex-row gap-3">
+          <ul className="grid grid-cols-3 gap-x-1.5 gap-y-3">
             {Object.entries(values).map(([value, link]) => (
               <li key={value}>
                 <button f-partial={link} f-client-nav>
