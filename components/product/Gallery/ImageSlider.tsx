@@ -45,13 +45,13 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
   return (
     <>
-      <div class="lg:ml-6 overflow-auto px-2 lg:px-0 mb-4">
+      <div class="lg:ml-6 overflow-auto px-4 lg:px-0 my-4">
         <Breadcrumb itemListElement={breadcrumb.itemListElement} />
       </div>
 
       <div id={id} class="grid grid-flow-row sm:grid-flow-col lg:gap-6">
         {/* Image Slider */}
-        <div class="relative order-1 sm:order-2">
+        <div class="relative order-1 sm:order-2 mx-auto">
           <Slider class="carousel carousel-center gap-6 w-[90vw] sm:w-[40vw]">
             {images.map((img, index) => (
               <Slider.Item
@@ -82,10 +82,10 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
           </Slider.PrevButton>
 
           <Slider.NextButton
-            class="no-animation absolute right-2 top-1/2 md:btn md:btn-circle md:btn-outline rotate-180"
+            class="no-animation absolute right-2 top-1/2 md:btn md:btn-circle md:btn-outline"
             disabled={images.length < 2}
           >
-            <Icon size={24} id="ChevronLeft" strokeWidth={3} />
+            <Icon size={24} id="ChevronRight" strokeWidth={3} />
           </Slider.NextButton>
 
           <div class="absolute top-2 right-2 bg-base-100 rounded-full">
