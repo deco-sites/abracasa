@@ -99,7 +99,7 @@ export default function CategoryList({ title, cards, interval }: Props) {
           {cards?.map((card, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item w-[75%] md:w-[262px] xl:w-[500px] h-full flex flex-col items-start justify-start"
+              class="carousel-item w-[75%] md:w-[262px] xl:w-[32%] h-full flex flex-col items-start justify-start"
             >
               <div class="flex flex-col w-full h-full">
                 <a href={card.link}>
