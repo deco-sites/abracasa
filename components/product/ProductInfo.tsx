@@ -92,7 +92,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
     >
       <ReviewsScript />
       {/* Code and name */}
-      <div class="mt-4 sm:mt-8">
+      <div class="sm:mt-8">
         <div class="flex items-center justify-between gap-3 w-full">
           <div class="flex flex-col gap-1.5">
             <div class="flex items-center gap-2">

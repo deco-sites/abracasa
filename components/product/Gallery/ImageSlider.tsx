@@ -108,18 +108,13 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
         {/* Mobile Dots */}
         {props.device === "mobile" && (
-          <ul class="sm:hidden carousel carousel-center gap-1 px-4 order-2">
-            {images.map((img, index) => (
-              <li class="carousel-item min-w-[98px]">
+          <ul class="sm:hidden carousel carousel-center justify-center items-center gap-1 px-4 order-2">
+            {images.map((_, index) => (
+              <li class="carousel-item">
                 <Slider.Dot index={index}>
-                  <Image
-                    style={{ aspectRatio: 1 }}
-                    class="group-disabled:border-base-300 border object-cover"
-                    width={98}
-                    height={98}
-                    src={img.url!}
-                    alt={img.alternateName}
-                  />
+                  <div class="py-5">
+                    <div class="w-7 h-[5px] rounded group-disabled:bg-firebrick bg-[#e6e6e6]" />
+                  </div>
                 </Slider.Dot>
               </li>
             ))}
