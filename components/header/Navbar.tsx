@@ -9,6 +9,7 @@ import Image from "apps/website/components/Image.tsx";
 import { asset } from "$fresh/runtime.ts";
 import NavItem from "./NavItem.tsx";
 import Subnavbar from "$store/islands/Header/Subnavbar.tsx";
+import LoginElement from "$store/islands/LoginElement.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Device } from "deco/utils/device.ts";
 
@@ -100,22 +101,7 @@ function Navbar({ items, searchbar, logo, device }: {
                 <span>favoritos</span>
               </a>
 
-              <a
-                class="inline-flex items-center gap-1 group text-xs"
-                href="/login"
-                aria-label="Log in"
-              >
-                <img
-                  src={asset("/image/user.svg")}
-                  width={32}
-                  height={32}
-                  alt="User icon"
-                  class="group-hover:text-firebrick"
-                />
-                <span>
-                  entrar <br /> meus pedidos
-                </span>
-              </a>
+              <LoginElement />
 
               {platform === "vtex" && <CartButtonVTEX />}
             </div>

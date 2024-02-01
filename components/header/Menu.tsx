@@ -1,4 +1,5 @@
 import { asset } from "$fresh/runtime.ts";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 
@@ -7,8 +8,6 @@ export interface Props {
 }
 
 function MenuItem({ item }: { item: SiteNavigationElement }) {
-  console.log(item.children);
-
   const component = item?.children?.length
     ? (
       <div class="collapse collapse-arrow">
@@ -48,6 +47,8 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
 }
 
 function Menu({ items }: Props) {
+  const { user } = useUser();
+
   return (
     <div class="flex flex-col h-full max-h-full overflow-y-scroll">
       <ul class="flex flex-col py-2 gap-2">
@@ -63,7 +64,14 @@ function Menu({ items }: Props) {
               alt="User icon"
               class="group-hover:text-firebrick"
             />
-            <span class="text-sm">OLÁ registrar | entrar</span>
+            <p class="text-sm">
+              <span>
+                OLÁ {user.value ? `${user.value.email}` : "registrar"} |{" "}
+                <a href={user.value ? "/logout" : "/login"}>
+                  {user.value ? "sair" : "entrar"}
+                </a>
+              </span>
+            </p>
           </a>
 
           <a href="/account" class="pl-16 uppercase text-sm">Minha Conta</a>
