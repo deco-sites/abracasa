@@ -100,7 +100,7 @@ function Shipping({ shippingValue, setShippingValue }: Props) {
             <div class="flex items-center justify-center gap-6 w-full h-[36px] max-w-[180px] border border-gray-200 bg-white rounded p-2">
               <input
                 name="shipping"
-                class="w-full focus:outline-none placeholder:text-sm placeholder:text-[#d5d5d5]"
+                class="w-full focus:outline-none placeholder:text-sm text-sm placeholder:text-[#d5d5d5]"
                 type="text"
                 maxLength={8}
                 value={cep}

@@ -1,12 +1,9 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
-import { MenuButton, SearchButton } from "$store/islands/Header/Buttons.tsx";
 import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
 import Searchbar from "$store/islands/Header/Searchbar.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useEffect, useState } from "preact/hooks";
-import { asset } from "$fresh/runtime.ts";
 import NavItem from "./NavItem.tsx";
 import { Device } from "deco/utils/device.ts";
 
