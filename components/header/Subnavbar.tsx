@@ -18,10 +18,12 @@ export default function Subnavbar({ items, searchbar, logo, device }: Props) {
   const [scrollingMode, setScrollingMode] = useState(self.window.scrollY > 0);
 
   if (self.window.scrollY > 0) {
+    const timer = document.getElementById("campaign-timer");
     const alert = document.getElementById("alert-slider");
     const desktopNavbar = document.getElementById("desktop-navbar");
 
     desktopNavbar?.classList?.remove("lg:flex");
+    timer?.classList?.remove("hidden");
     alert?.classList?.add("hidden");
   }
 
@@ -29,16 +31,19 @@ export default function Subnavbar({ items, searchbar, logo, device }: Props) {
     const window_ = window;
 
     function handleScroll() {
+      const timer = document.getElementById("campaign-timer");
       const alert = document.getElementById("alert-slider");
       const desktopNavbar = document.getElementById("desktop-navbar");
 
       if (self.window.scrollY > 0) {
         setScrollingMode(true);
         alert?.classList.add("hidden");
+        timer?.classList.add("hidden");
         desktopNavbar?.classList.remove("lg:flex");
       } else {
         setScrollingMode(false);
         alert?.classList.remove("hidden");
+        timer?.classList.remove("hidden");
         desktopNavbar?.classList.add("lg:flex");
       }
     }
