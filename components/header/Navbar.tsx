@@ -13,10 +13,11 @@ import LoginElement from "$store/islands/LoginElement.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Device } from "deco/utils/device.ts";
 
-function Navbar({ items, searchbar, logo, device }: {
+function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: { src: string; alt: string };
+  hasCampaignTimer?: boolean;
   device: Device;
 }) {
   const platform = usePlatform();
@@ -111,7 +112,9 @@ function Navbar({ items, searchbar, logo, device }: {
             </div>
           </div>
           <ul class="flex-auto flex items-center justify-center border-t border-base-200 gap-2.5 w-full">
-            {items.map((item) => <NavItem item={item} />)}
+            {items.map((item) => (
+              <NavItem item={item} hasCampaignTimer={hasCampaignTimer} />
+            ))}
           </ul>
         </div>
       )}

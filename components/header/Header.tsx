@@ -40,9 +40,12 @@ function Header({
   const platform = usePlatform();
   const items = navItems ?? [];
 
-  const hasCampaignTimer = campaignTimer &&
-    !campaignTimer.hiddenCampaignTimer && campaignTimer.text &&
-    campaignTimer.image;
+  const hasCampaignTimer = !!(
+    campaignTimer &&
+    campaignTimer.text !== undefined &&
+    campaignTimer.image !== undefined &&
+    !campaignTimer.hiddenCampaignTimer
+  );
 
   return (
     <>
@@ -65,6 +68,7 @@ function Header({
               searchbar={searchbar && { ...searchbar }}
               logo={logo}
               device={device}
+              hasCampaignTimer={hasCampaignTimer}
             />
           </div>
         </Drawers>
