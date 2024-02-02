@@ -122,7 +122,7 @@ function Searchbar({
         class={`${!hasProducts && !hasTerms ? "hidden" : "pb-12 h-full"}`}
       >
         <div class="gap-4 grid grid-cols-1 px-2 h-full">
-          <div class="flex flex-col gap-2 overflow-y-auto max-h-[38%] h-full">
+          <div class="flex flex-col gap-2 overflow-y-auto max-h-[50%] h-full">
             {products?.map(({ isVariantOf, image: images, url }) => {
               const [front] = images ?? [];
 
