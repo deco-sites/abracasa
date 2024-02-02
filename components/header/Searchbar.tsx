@@ -1,9 +1,7 @@
-import { headerHeight } from "$store/components/header/constants.ts";
 import Searchbar, {
   Props as SearchbarProps,
 } from "$store/components/search/Searchbar.tsx";
 import DesktopSearchbar from "$store/components/search/DesktopSearchbar.tsx";
-import Modal from "$store/components/ui/Modal.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 
 export interface Props {
@@ -20,18 +18,13 @@ function SearchbarModal({ searchbar, type = "desktop" }: Props) {
 
   if (type === "mobile") {
     return (
-      <Modal
-        loading="lazy"
-        open={displaySearchPopup.value}
-        onClose={() => displaySearchPopup.value = false}
-      >
-        <div
-          class="absolute top-0 bg-base-100 container"
-          style={{ marginTop: headerHeight }}
-        >
-          <Searchbar {...searchbar} />
-        </div>
-      </Modal>
+      <>
+        {displaySearchPopup.value && (
+          <div class="fixed bg-base-100 container z-[99999]">
+            <Searchbar {...searchbar} />
+          </div>
+        )}
+      </>
     );
   }
 

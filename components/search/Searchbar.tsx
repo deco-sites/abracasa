@@ -9,7 +9,6 @@
  * no JavaScript is shipped to the browser!
  */
 
-import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
@@ -60,26 +59,16 @@ function Searchbar({
   }, [displaySearchPopup.value]);
 
   return (
-    <div
-      class="w-full grid gap-8 px-4 py-6 max-h-full"
-      style={{ gridTemplateRows: "min-content auto" }}
-    >
-      <form id={id} action={action} class="join">
-        <Button
-          type="submit"
-          class="join-item btn-square"
-          aria-label="Search"
-          for={id}
-          tabIndex={-1}
-        >
-          {loading.value
-            ? <span class="loading loading-spinner loading-xs" />
-            : <Icon id="MagnifyingGlass" size={24} strokeWidth={0.01} />}
-        </Button>
+    <div class="w-full grid gap-6 max-h-full relative z-[70]">
+      <form
+        id={id}
+        action={action}
+        class="flex flex-grow h-[60px] justify-between bg-[#d9d9d9] px-2.5"
+      >
         <input
           ref={searchInputRef}
           id="search-input"
-          class="input input-bordered join-item flex-grow"
+          class="flex-grow w-[80%] bg-[#d9d9d9] outline-none placeholder-shown:sibling:hidden placeholder:text-sm text-sm text-black"
           name={name}
           onInput={(e) => {
             const value = e.currentTarget.value;
@@ -98,86 +87,72 @@ function Searchbar({
           aria-controls="search-suggestion"
           autocomplete="off"
         />
-        <Button
-          type="button"
-          class="join-item btn-ghost btn-square hidden sm:inline-flex"
-          onClick={() => displaySearchPopup.value = false}
-        >
-          <Icon id="XMark" size={24} strokeWidth={2} />
-        </Button>
+
+        <div class="flex items-center justify-center gap-3">
+          <button
+            type="submit"
+            aria-label="Search"
+            for={id}
+            tabIndex={-1}
+          >
+            {loading.value
+              ? <span class="loading loading-spinner loading-xs" />
+              : (
+                <Icon
+                  id="MagnifyingGlass"
+                  size={24}
+                  strokeWidth={0.01}
+                  fill="none"
+                  class="text-[#919191]"
+                />
+              )}
+          </button>
+
+          <button
+            type="button"
+            class="text-[#919191]"
+            onClick={() => displaySearchPopup.value = false}
+          >
+            <Icon id="XMark" size={24} strokeWidth={2} />
+          </button>
+        </div>
       </form>
 
       <div
-        class={`${!hasProducts && !hasTerms ? "hidden" : ""}`}
+        class={`${
+          !hasProducts && !hasTerms ? "hidden" : "h-[80%] overflow-y-auto pb-12"
+        }`}
       >
-        <div class="gap-4 grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-[150px_1fr]">
-          <div class="flex flex-col gap-6">
-            <span
-              class="font-medium text-xl"
-              role="heading"
-              aria-level={3}
-            >
-              Sugestões
-            </span>
-            <ul id="search-suggestion" class="flex flex-col gap-6">
-              {searches.map(({ term }) => (
-                <li>
-                  <a href={`/s?q=${term}`} class="flex gap-4 items-center">
-                    <span>
-                      <Icon
-                        id="MagnifyingGlass"
-                        size={24}
-                        strokeWidth={0.01}
-                        loading="lazy"
-                      />
-                    </span>
-                    <span
-                      class="capitalize"
-                      dangerouslySetInnerHTML={{ __html: term }}
-                    />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div class="flex flex-col pt-6 md:pt-0 gap-3">
-            <span
-              class="font-medium text-xl"
-              role="heading"
-              aria-level={3}
-            >
-              Produtos sugeridos
-            </span>
-            <div class="flex flex-col pt-6 pb-2 gap-2">
-              {products?.map(({ isVariantOf, image: images, url }) => {
-                const [front] = images ?? [];
+        <div class="gap-4 grid grid-cols-1 px-2">
+          <div class="flex flex-col gap-2">
+            {products?.map(({ isVariantOf, image: images, url }) => {
+              const [front] = images ?? [];
 
-                return (
-                  <a
-                    href={url || "#"}
-                    class="flex items-center w-full h-full gap-3"
-                  >
-                    <Image
-                      src={front.url || ""}
-                      alt={front.alternateName}
-                      width={60}
-                      height={60}
-                      loading="lazy"
-                      decoding="async"
-                      preload={false}
-                    />
+              return (
+                <a
+                  href={url || "#"}
+                  class="flex items-center w-full h-full gap-3"
+                >
+                  <Image
+                    src={front.url || ""}
+                    alt={front.alternateName}
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                    decoding="async"
+                    preload={false}
+                  />
 
-                    <h2
-                      class="truncate text-black uppercase font-semibold text-xs pt-1.5"
-                      dangerouslySetInnerHTML={{
-                        __html: isVariantOf?.name ?? name ??
-                          "",
-                      }}
-                    />
-                  </a>
-                );
-              })}
-            </div>
+                  <h2
+                    class="truncate text-black uppercase font-semibold text-xs pt-1.5"
+                    dangerouslySetInnerHTML={{
+                      __html: isVariantOf?.name ?? name ??
+                        "",
+                    }}
+                  />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

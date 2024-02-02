@@ -1,6 +1,5 @@
 import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
 import Cart from "$store/components/minicart/Cart.tsx";
-import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
@@ -10,11 +9,9 @@ import type { ComponentChildren } from "preact";
 import { lazy, Suspense } from "preact/compat";
 
 const Menu = lazy(() => import("$store/components/header/Menu.tsx"));
-const Searchbar = lazy(() => import("$store/components/search/Searchbar.tsx"));
 
 export interface Props {
   menu: MenuProps;
-  searchbar?: SearchbarProps;
   /**
    * @ignore_gen true
    */
@@ -62,22 +59,20 @@ const Aside = (
   </div>
 );
 
-function Drawers({ menu, searchbar, children, platform }: Props) {
-  const { displayCart, displayMenu, displaySearchDrawer } = useUI();
+function Drawers({ menu, children, platform }: Props) {
+  const { displayCart, displayMenu } = useUI();
 
   return (
     <Drawer
       class={displayMenu.value ? "drawer-end" : ""}
-      open={displayMenu.value || displaySearchDrawer.value}
+      open={displayMenu.value}
       onClose={() => {
         displayMenu.value = false;
-        displaySearchDrawer.value = false;
       }}
       aside={
         <Aside
           onClose={() => {
             displayMenu.value = false;
-            displaySearchDrawer.value = false;
           }}
           isMenu={displayMenu.value ? true : false}
           title={displayMenu.value
@@ -92,11 +87,6 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
             : <span>Buscar</span>}
         >
           {displayMenu.value && <Menu {...menu} />}
-          {searchbar && displaySearchDrawer.value && (
-            <div class="w-screen overflow-y-scroll">
-              <Searchbar {...searchbar} />
-            </div>
-          )}
         </Aside>
       }
     >

@@ -26,25 +26,29 @@ function Navbar({ items, searchbar, logo, device }: {
     <>
       {/* Mobile Version */}
       {!isDesktop && (
-        <div
-          style={{ height: navbarHeight }}
-          class="lg:hidden flex flex-row justify-between items-center border-b border-base-200 w-full px-4 gap-2"
-        >
-          {logo && (
-            <a
-              href="/"
-              class="inline-flex"
-              style={{ minHeight: "80px" }}
-              aria-label="Store logo"
-            >
-              <Image src={logo.src} alt={logo.alt} width={80} height={16} />
-            </a>
-          )}
+        <>
+          <div
+            style={{ height: navbarHeight }}
+            class="lg:hidden flex flex-row justify-between items-center border-b border-base-200 w-full px-4 gap-2"
+          >
+            {logo && (
+              <a
+                href="/"
+                class="inline-flex"
+                style={{ minHeight: "80px" }}
+                aria-label="Store logo"
+              >
+                <Image src={logo.src} alt={logo.alt} width={80} height={16} />
+              </a>
+            )}
 
-          <SearchButton />
-          {platform === "vtex" && <CartButtonVTEX />}
-          <MenuButton />
-        </div>
+            <SearchButton />
+            {platform === "vtex" && <CartButtonVTEX />}
+            <MenuButton />
+          </div>
+
+          <Searchbar searchbar={searchbar} type="mobile" />
+        </>
       )}
 
       {/* Desktop Version */}

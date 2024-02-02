@@ -3,7 +3,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 
 export default function SearchButton() {
-  const { displaySearchDrawer, displaySearchPopup } = useUI();
+  const { displaySearchPopup } = useUI();
 
   return (
     <>
@@ -25,7 +25,7 @@ export default function SearchButton() {
         class="btn-circle btn-sm btn-ghost sm:hidden"
         aria-label="search icon button"
         onClick={() => {
-          displaySearchDrawer.value = !displaySearchDrawer.value;
+          displaySearchPopup.value = !displaySearchPopup.value;
         }}
       >
         <Icon

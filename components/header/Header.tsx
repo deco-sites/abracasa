@@ -53,7 +53,6 @@ function Header({
       >
         <Drawers
           menu={{ items }}
-          searchbar={searchbar}
           platform={platform}
         >
           <div class="bg-base-100 fixed w-full z-[9999999]">
