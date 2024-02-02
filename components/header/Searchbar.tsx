@@ -20,7 +20,7 @@ function SearchbarModal({ searchbar, type = "desktop" }: Props) {
     return (
       <>
         {displaySearchPopup.value && (
-          <div class="fixed bg-base-100 container z-[99999]">
+          <div class="fixed bg-base-100 container h-auto z-[99999]">
             <Searchbar {...searchbar} />
           </div>
         )}

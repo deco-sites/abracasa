@@ -59,7 +59,7 @@ function Searchbar({
   }, [displaySearchPopup.value]);
 
   return (
-    <div class="w-full grid gap-6 max-h-full relative z-[70]">
+    <div class="w-full grid gap-6 max-h-full relative h-full z-[70]">
       <form
         id={id}
         action={action}
@@ -119,12 +119,10 @@ function Searchbar({
       </form>
 
       <div
-        class={`${
-          !hasProducts && !hasTerms ? "hidden" : "h-[80%] overflow-y-auto pb-12"
-        }`}
+        class={`${!hasProducts && !hasTerms ? "hidden" : "pb-12 h-full"}`}
       >
-        <div class="gap-4 grid grid-cols-1 px-2">
-          <div class="flex flex-col gap-2">
+        <div class="gap-4 grid grid-cols-1 px-2 h-full">
+          <div class="flex flex-col gap-2 overflow-y-auto max-h-[38%] h-full">
             {products?.map(({ isVariantOf, image: images, url }) => {
               const [front] = images ?? [];
 
