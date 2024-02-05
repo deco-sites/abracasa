@@ -87,7 +87,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
 
   return (
     <div
-      class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-10 md:pb-6 lg:max-w-[440px] px-4 md:px-0"
+      class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-[72px] md:pb-6 lg:max-w-[440px] px-4 md:px-0"
       id={id}
     >
       <ReviewsScript />
@@ -190,7 +190,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
         </div>
       )}
       {/* Add to Cart and Favorites button */}
-      <div class="mt-2 flex flex-col gap-2">
+      <div class="mt-[15px] flex flex-col gap-2">
         {availability === "https://schema.org/InStock"
           ? (
             <>

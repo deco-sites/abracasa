@@ -45,7 +45,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
   return (
     <>
-      <div class="lg:ml-6 overflow-auto px-4 lg:px-0 my-4">
+      <div class="lg:ml-6 overflow-auto my-4">
         <Breadcrumb itemListElement={breadcrumb.itemListElement} />
       </div>
 
@@ -75,17 +75,43 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
           </Slider>
 
           <Slider.PrevButton
-            class="no-animation absolute left-2 top-1/2 md:btn md:btn-circle md:btn-outline"
+            class="block no-animation absolute left-2 top-1/2 lg:hidden rotate-180"
             disabled
           >
-            <Icon size={24} id="ChevronLeft" strokeWidth={3} />
+            <svg
+              width="20"
+              height="30"
+              viewBox="0 0 20 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.99634 4.73917L17.928 16.3483L4.99634 27.9574"
+                stroke="#94938F"
+                stroke-width="0.587803"
+                stroke-miterlimit="10"
+              />
+            </svg>
           </Slider.PrevButton>
 
           <Slider.NextButton
-            class="no-animation absolute right-2 top-1/2 md:btn md:btn-circle md:btn-outline"
+            class="block no-animation absolute right-2 top-1/2 lg:hidden"
             disabled={images.length < 2}
           >
-            <Icon size={24} id="ChevronRight" strokeWidth={3} />
+            <svg
+              width="20"
+              height="30"
+              viewBox="0 0 20 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.99634 4.73917L17.928 16.3483L4.99634 27.9574"
+                stroke="#94938F"
+                stroke-width="0.587803"
+                stroke-miterlimit="10"
+              />
+            </svg>
           </Slider.NextButton>
 
           <div class="absolute top-2 right-2 bg-base-100 rounded-full">
@@ -129,16 +155,16 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
               >
                 {images.length >= 6 && (
                   <Slider.PrevButton
-                    class="no-animation btn btn-circle btn-outline"
+                    class="no-animation"
                     disabled
                   >
-                    <Icon size={24} id="ChevronUp" strokeWidth={3} />
+                    <Icon size={32} id="ChevronUp" strokeWidth={1.75} />
                   </Slider.PrevButton>
                 )}
 
                 <Slider
                   id="pdp-vertical-carousel"
-                  class="carousel carousel-vertical px-0 max-h-[605px] gap-4"
+                  class="carousel carousel-vertical px-0 max-h-[555px] gap-4"
                 >
                   {images.map((img, index) => (
                     <Slider.Item
@@ -162,10 +188,10 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
                 {images.length >= 6 && (
                   <Slider.NextButton
-                    class="no-animation btn btn-circle btn-outline"
+                    class="no-animation"
                     disabled={images.length < 6}
                   >
-                    <Icon size={24} id="ChevronDown" strokeWidth={3} />
+                    <Icon size={32} id="ChevronDown" strokeWidth={1.75} />
                   </Slider.NextButton>
                 )}
 
