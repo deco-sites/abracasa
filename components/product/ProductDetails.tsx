@@ -84,12 +84,12 @@ export default function ProductDetails(
                   <ul class="flex flex-col w-full gap-1">
                     {additionalInfos?.map((item) => (
                       <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                        <span class="font-bold w-full">{item.name}</span>
+                        <span class="font-bold w-[70%]">{item.name}</span>
 
                         {item?.name?.includes("Materiais")
                           ? (
                             <div
-                              class="w-[65%] text-justify leading-relaxed tracking-wide"
+                              class="w-full text-end leading-relaxed tracking-wide"
                               dangerouslySetInnerHTML={{
                                 __html:
                                   item?.value?.replace(/\r?\n/g, "<br />") ||
@@ -103,7 +103,7 @@ export default function ProductDetails(
                               target="_blank"
                               aria-label="abrir manual"
                               href={item.value}
-                              class="w-[65%] text-crimson text-end"
+                              class="w-full text-crimson text-end"
                             >
                               Abrir manual
                             </a>
@@ -111,8 +111,10 @@ export default function ProductDetails(
                           : (
                             <span
                               class={`${
-                                item?.name !== "Garantia" && "text-end"
-                              } w-[65%]`}
+                                item?.name === "Entrega"
+                                  ? "text-justify"
+                                  : "text-end"
+                              } w-full`}
                             >
                               {item.value}
                             </span>

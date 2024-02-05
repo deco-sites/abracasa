@@ -14,7 +14,11 @@ function StoreInfo({ title, phone, links, local }: StoreInfo) {
       <h4 class="text-rosybrown uppercase font-semibold">{title}</h4>
       <p>{local}</p>
       {links.map((item) => (
-        <a href={item} class="flex items-center justify-center gap-2">
+        <a
+          href={item}
+          target="_blank"
+          class="flex items-center justify-center gap-2"
+        >
           <span>
             {phone}
           </span>

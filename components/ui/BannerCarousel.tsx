@@ -77,22 +77,22 @@ function BannerItem(
       id={id}
       href={image?.href ?? "#"}
       aria-label={image?.alt}
-      class="relative h-[460.8px] 2xl:h-[600px] overflow-y-hidden w-full"
+      class="relative h-[460.8px] xl:h-[600px] overflow-y-hidden w-full"
     >
       <Picture preload={lcp}>
         <Source
           media="(max-width: 767px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={mobile.image}
-          width={mobile.width || 768}
+          width={mobile.width || 767}
           height={mobile.height || 972}
         />
         <Source
           media="(min-width: 768px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={desktop.image}
-          width={desktop.width || 1536}
-          height={desktop.height || 460.8}
+          width={desktop.width || 2000}
+          height={desktop.height || 600}
         />
         <img
           class="object-cover w-full h-full"
