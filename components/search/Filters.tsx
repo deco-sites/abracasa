@@ -72,11 +72,13 @@ function FilterValues({ key, values }: FilterToggle) {
 
 function Filters({ filters, isCategoriesFilterActive }: Props) {
   const excludedKeys = isCategoriesFilterActive
-    ? ["Brands", "PriceRanges", "Departments"]
+    ? ["PriceRanges"]
     : ["Brands", "PriceRanges", "Departments", "Categories"];
 
   const translations: Record<string, string> = {
     "Categories": "Categorias",
+    "Departments": "Departamentos",
+    "Brands": "Marcas",
   };
 
   return (
@@ -84,22 +86,31 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
       {filters
         .filter(isToggle)
         .filter((item) => !excludedKeys.includes(item.key))
-        .map((filter) => (
-          <li class="flex flex-col gap-4 dropdown dropdown-end">
-            <div
-              aria-label={`open ${filter.label}`}
-              tabIndex={0}
-              role="button"
-              class="btn text-sm leading-[22px] text-[#555] font-normal bg-transparent hover:bg-transparent m-1 gap-1.5 w-full"
-            >
-              <span>
-                {translations[filter.label] || filter.label}
-              </span>
-              <Icon id="ChevronDown" size={24} strokeWidth={2} loading="lazy" />
-            </div>
-            <FilterValues {...filter} />
-          </li>
-        ))}
+        .map((filter) => {
+          if (!filter.values || filter.values.length === 0) return null;
+
+          return (
+            <li class="flex flex-col gap-4 dropdown dropdown-end">
+              <div
+                aria-label={`open ${filter.label}`}
+                tabIndex={0}
+                role="button"
+                class="btn text-sm leading-[22px] text-[#555] font-normal bg-transparent hover:bg-transparent m-1 gap-1.5 w-full"
+              >
+                <span>
+                  {translations[filter.label] || filter.label}
+                </span>
+                <Icon
+                  id="ChevronDown"
+                  size={24}
+                  strokeWidth={2}
+                  loading="lazy"
+                />
+              </div>
+              <FilterValues {...filter} />
+            </li>
+          );
+        })}
     </ul>
   );
 }
