@@ -229,7 +229,9 @@ export default function ProductDetails(
                       : (
                         <span
                           class={`${
-                            item?.name !== "Garantia" && "text-end"
+                            item?.name === "Entrega"
+                              ? "text-justify"
+                              : "text-end"
                           } w-[65%]`}
                         >
                           {item.value}
