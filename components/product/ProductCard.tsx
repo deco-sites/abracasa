@@ -303,13 +303,17 @@ function ProductCard(
                       align === "center" ? "justify-center" : "justify-start"
                     }`}
                   >
-                    <div
-                      class={`line-through text-[#A4A2A2] text-xs ${
-                        l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                      }`}
-                    >
-                      {formatPrice(listPrice, offers?.priceCurrency)}
-                    </div>
+                    {(listPrice ?? 0) > (price ?? 0) && (
+                      <div
+                        class={`line-through text-[#A4A2A2] text-xs ${
+                          l?.basics?.oldPriceSize === "Normal"
+                            ? "lg:text-xl"
+                            : ""
+                        }`}
+                      >
+                        {formatPrice(listPrice, offers?.priceCurrency)}
+                      </div>
+                    )}
                     <div class="text-black font-bold text-sm">
                       {formatPrice(price, offers?.priceCurrency)}
                     </div>
