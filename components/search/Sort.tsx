@@ -2,7 +2,7 @@ import { useMemo } from "preact/hooks";
 import { ProductListingPage } from "apps/commerce/types.ts";
 import type { JSX } from "preact";
 
-const SORT_QUERY_PARAM = "sort";
+const SORT_QUERY_PARAM = "O";
 
 const useSort = () =>
   useMemo(() => {
