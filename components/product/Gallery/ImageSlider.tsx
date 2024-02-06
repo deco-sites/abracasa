@@ -1,3 +1,4 @@
+import { asset } from "$fresh/runtime.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
 import ProductImageZoom from "$store/islands/ProductImageZoom.tsx";
@@ -32,7 +33,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
   }
 
   const {
-    page: { product: { image: images = [] } },
+    page: { product: { image: images = [], additionalProperty = [] } },
     layout: { width, height },
   } = props;
   const breadcrumb = {
@@ -51,6 +52,20 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
         {/* Image Slider */}
         <div class="relative order-1 sm:order-2 mx-auto">
           <ProductImageZoom images={images} width={width} height={height} />
+
+          {additionalProperty?.some((property) =>
+            property.value?.includes("Atelie Casa")
+          ) && (
+            <div class="absolute flex flex-col gap-1 z-10 top-2 left-1.5">
+              <img
+                src={asset("/image/logo_atelie_abracasa_large.png")}
+                width={145}
+                height={145}
+                alt="Logo Ateliê Cadabra"
+                loading="lazy"
+              />
+            </div>
+          )}
 
           <Slider.PrevButton
             class="block no-animation absolute left-2 top-1/2 lg:hidden rotate-180"

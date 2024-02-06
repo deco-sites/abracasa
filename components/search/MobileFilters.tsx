@@ -105,7 +105,7 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
                 <FilterValues {...filter} />
               </div>
             </div>
-          )
+          );
         })}
     </div>
   );

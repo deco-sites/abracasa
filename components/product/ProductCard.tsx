@@ -1,3 +1,4 @@
+import { asset } from "$fresh/runtime.ts";
 import type { Platform } from "$store/apps/site.ts";
 import { SendEventOnClick } from "$store/components/Analytics.tsx";
 import Avatar from "$store/components/ui/Avatar.tsx";
@@ -197,6 +198,19 @@ function ProductCard(
             />
           )}
         </div>
+        {additionalProperty?.some((property) =>
+          property.value?.includes("Atelie Casa")
+        ) && (
+          <div class="absolute flex flex-col gap-1 z-10 bottom-2 left-1.5">
+            <img
+              src={asset("/image/logo_atelie_abracasa.svg")}
+              width={18}
+              height={18}
+              alt="Logo Ateliê Cadabra"
+              loading="lazy"
+            />
+          </div>
+        )}
         {/* Product Images */}
         <a
           href={url && relative(url)}
