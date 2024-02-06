@@ -52,27 +52,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
       <div id={id} class="grid grid-flow-row sm:grid-flow-col lg:gap-6">
         {/* Image Slider */}
         <div class="relative order-1 sm:order-2 mx-auto">
-          <Slider class="carousel carousel-center gap-6 w-[90vw] sm:w-[40vw]">
-            {images.map((img, index) => (
-              <Slider.Item
-                index={index}
-                class="carousel-item w-full"
-              >
-                <img
-                  class="w-full"
-                  sizes="(max-width: 640px) 100vw, 40vw"
-                  style={{ aspectRatio }}
-                  src={img.url!}
-                  alt={img.alternateName}
-                  width={width}
-                  height={height}
-                  // Preload LCP image for better web vitals
-                  preload={index === 0 ? "true" : "false"}
-                  loading={index === 0 ? "eager" : "lazy"}
-                />
-              </Slider.Item>
-            ))}
-          </Slider>
+          <ProductImageZoom images={images} width={width} height={height} />
 
           <Slider.PrevButton
             class="block no-animation absolute left-2 top-1/2 lg:hidden rotate-180"
@@ -113,14 +93,6 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
               />
             </svg>
           </Slider.NextButton>
-
-          <div class="absolute top-2 right-2 bg-base-100 rounded-full">
-            <ProductImageZoom
-              images={images}
-              width={700}
-              height={Math.trunc(700 * height / width)}
-            />
-          </div>
 
           <div id="r2u" class="hidden lg:grid grid-cols-2 gap-3 max-w-[550px]">
             <div class="flex flex-col gap-2 items-center justify-center">
