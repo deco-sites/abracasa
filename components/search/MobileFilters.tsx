@@ -79,30 +79,34 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
       {filters
         .filter(isToggle)
         .filter((item) => !excludedKeys.includes(item.key))
-        .map((filter) => (
-          <div class="collapse rounded-none">
-            <input
-              type="checkbox"
-              name="pdc-filters"
-              class="min-h-[0px]"
-              aria-label="Filtros"
-              checked={filter.values.some((item) => item.selected === true)}
-            />
+        .map((filter) => {
+          if (!filter.values || filter.values.length === 0) return null;
 
-            <div class="flex justify-between collapse-title uppercase font-bold p-0 min-h-[0px] px-4 w-full">
-              <span>{translations[filter.label] || filter.label}</span>
-              <Icon
-                id="ChevronDown"
-                size={24}
-                strokeWidth={1.75}
+          return (
+            <div class="collapse rounded-none">
+              <input
+                type="checkbox"
+                name="pdc-filters"
+                class="min-h-[0px]"
+                aria-label="Filtros"
+                checked={filter.values.some((item) => item.selected === true)}
               />
-            </div>
 
-            <div class="collapse-content flex flex-col gap-4 p-0 mt-2 !pt-4 bg-[#f2f2f2] !rounded-none">
-              <FilterValues {...filter} />
+              <div class="flex justify-between collapse-title uppercase font-bold p-0 min-h-[0px] px-4 w-full">
+                <span>{translations[filter.label] || filter.label}</span>
+                <Icon
+                  id="ChevronDown"
+                  size={24}
+                  strokeWidth={1.75}
+                />
+              </div>
+
+              <div class="collapse-content flex flex-col gap-4 p-0 mt-2 !pt-4 bg-[#f2f2f2] !rounded-none">
+                <FilterValues {...filter} />
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
     </div>
   );
 }
