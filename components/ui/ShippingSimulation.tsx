@@ -92,7 +92,7 @@ function ShippingSimulation({ items }: Props) {
       </div>
 
       <form
-        class="flex items-center border border-[#D9D9D9] justify-between max-w-[354px]"
+        class="flex items-center border border-[#D9D9D9] justify-between w-full"
         onSubmit={(e) => {
           e.preventDefault();
           handleSimulation();
@@ -101,7 +101,7 @@ function ShippingSimulation({ items }: Props) {
         <input
           as="input"
           type="text"
-          class="text-sm text-black w-full h-[54px] pl-3 placeholder:text-[#D9D9D9] focus:outline-none"
+          class="w-full text-sm text-black h-[54px] pl-3 placeholder:text-[#D9D9D9] focus:outline-none"
           placeholder="Digite seu cep"
           value={postalCode.value}
           maxLength={8}
