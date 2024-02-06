@@ -1,4 +1,5 @@
 import Avatar from "$store/components/ui/Avatar.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import type {
   Filter,
@@ -64,11 +65,13 @@ function FilterValues({ key, values }: FilterToggle) {
 
 function Filters({ filters, isCategoriesFilterActive }: Props) {
   const excludedKeys = isCategoriesFilterActive
-    ? ["Brands", "PriceRanges", "Departments"]
+    ? ["PriceRanges"]
     : ["Brands", "PriceRanges", "Departments", "Categories"];
 
   const translations: Record<string, string> = {
     "Categories": "Categorias",
+    "Departments": "Departamentos",
+    "Brands": "Marcas",
   };
 
   return (
@@ -77,7 +80,7 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
         .filter(isToggle)
         .filter((item) => !excludedKeys.includes(item.key))
         .map((filter) => (
-          <div class="collapse collapse-arrow rounded-none">
+          <div class="collapse rounded-none">
             <input
               type="checkbox"
               name="pdc-filters"
@@ -86,8 +89,13 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
               checked={filter.values.some((item) => item.selected === true)}
             />
 
-            <div class="collapse-title uppercase font-bold p-0 min-h-[0px] px-4">
-              {translations[filter.label] || filter.label}
+            <div class="flex justify-between collapse-title uppercase font-bold p-0 min-h-[0px] px-4 w-full">
+              <span>{translations[filter.label] || filter.label}</span>
+              <Icon
+                id="ChevronDown"
+                size={24}
+                strokeWidth={1.75}
+              />
             </div>
 
             <div class="collapse-content flex flex-col gap-4 p-0 mt-2 !pt-4 bg-[#f2f2f2] !rounded-none">
