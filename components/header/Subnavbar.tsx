@@ -62,7 +62,7 @@ export default function Subnavbar({ items, searchbar, logo, device }: Props) {
                 <a
                   href="/"
                   aria-label="Store logo"
-                  class="block px-4 py-3 w-[160px]"
+                  class="block px-4 py-3 w-[80px] xl:w-[160px]"
                 >
                   <Image src={logo.src} alt={logo.alt} width={80} height={16} />
                 </a>

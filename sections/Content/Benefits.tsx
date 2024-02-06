@@ -107,7 +107,7 @@ export default function Benefits(
         )
         : ""}
       {layout?.variation === "With border" && (
-        <div class="w-full container lg:max-w-[85%] flex flex-col px-4 py-8 gap-8 lg:gap-10 lg:py-10 lg:px-0">
+        <div class="w-full container lg:max-w-[83%] flex flex-col px-4 py-8 gap-8 lg:gap-10 lg:py-10 lg:px-0">
           <Header
             title={title}
             description={description}

@@ -38,7 +38,7 @@ function ProductShelf({
   }
 
   return (
-    <div class="w-full container py-8 flex flex-col gap-12 lg:gap-16 lg:py-10 relative lg:max-w-[85%] xl:max-w-[90%]">
+    <div class="w-full container py-8 flex flex-col gap-12 lg:gap-16 lg:py-10 relative lg:max-w-[85%]">
       <Header
         title={title || ""}
         description={description || ""}
@@ -48,7 +48,7 @@ function ProductShelf({
 
       <div
         id={id}
-        class="container grid grid-cols-[48px_1fr_48px] px-2 sm:px-5"
+        class="grid grid-cols-[48px_1fr_48px] px-2 sm:px-5"
       >
         <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar gap-6 col-span-full row-start-2 row-end-5 pb-2">
           {products?.map((product, index) => (

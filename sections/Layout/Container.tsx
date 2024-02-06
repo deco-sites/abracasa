@@ -27,7 +27,7 @@ function Container({ children }: Props) {
   }
 
   return (
-    <div class="container">
+    <div class="container lg:max-w-[86%] xl:max-w-[85%]">
       <children.Component {...children.props} />
     </div>
   );
