@@ -35,8 +35,6 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
     page: { product: { image: images = [] } },
     layout: { width, height },
   } = props;
-  const aspectRatio = `${width} / ${height}`;
-
   const breadcrumb = {
     ...props.page.breadcrumbList,
     itemListElement: props.page.breadcrumbList?.itemListElement.slice(0, -1),
@@ -45,7 +43,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
   return (
     <>
-      <div class="lg:ml-6 overflow-auto my-4">
+      <div class="lg:ml-6 px-4 sm:px-0 my-4 max-w-[98vw] sm:max-w-full">
         <Breadcrumb itemListElement={breadcrumb.itemListElement} />
       </div>
 
