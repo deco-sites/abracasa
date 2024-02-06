@@ -66,7 +66,9 @@ export default function CTA(
               />
             )}
 
-            <span class="hidden lg:block lg:max-w-[580px]">{name}</span>
+            <span class="hidden lg:block lg:max-w-[580px] text-black">
+              {name}
+            </span>
 
             <div class="flex flex-col md:flex-row md:items-end md:gap-3">
               <div class="flex flex-col">
@@ -86,7 +88,7 @@ export default function CTA(
             </div>
           </aside>
 
-          <div class="min-w-[50%] md:min-w-[26%]">
+          <div class="min-w-[50%] md:min-w-[26%] xl:min-w-[400px]">
             <AddToCartButtonVTEX
               eventParams={eventParams}
               productID={productID}
