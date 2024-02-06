@@ -51,6 +51,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
     isVariantOf,
     additionalProperty = [],
     url,
+    sku: skuId,
   } = product;
   const {
     price = 0,
@@ -196,11 +197,12 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
             <>
               {platform === "vtex" && (
                 <>
-                  <AddToCartButtonVTEX
-                    eventParams={{ items: [eventItem] }}
-                    productID={productID}
-                    seller={seller}
-                  />
+                  <a
+                    href={`/checkout/cart/add?sku=${skuId}&qty=1&seller=${seller}&redirect=true&sc=1`}
+                    class="flex items-center justify-center h-[66px] w-full bg-[#555] hover:bg-black/70 font-bold text-white uppercase text-[18px] leading-[25px]"
+                  >
+                    Comprar
+                  </a>
                 </>
               )}
             </>
