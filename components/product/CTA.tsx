@@ -66,7 +66,7 @@ export default function CTA(
               />
             )}
 
-            <span class="hidden lg:block lg:max-w-[580px] text-black">
+            <span class="hidden lg:block lg:max-w-[550px] text-[16px] text-[#212121] leading-4">
               {name}
             </span>
 
@@ -82,9 +82,16 @@ export default function CTA(
                 </span>
               </div>
 
-              <span class="text-xs md:text-[18px] leading-[25px] text-black md:font-medium">
-                {installments?.replace("sem juros", "")?.replace(".", ",")}
-              </span>
+              <p class="text-xs md:text-[18px] leading-[25px] text-black md:font-normal">
+                <span class="block md:hidden">
+                  {installments?.replace("sem juros", "")?.replace(".", ",")
+                    ?.replace("de", "")}
+                </span>
+
+                <span class="hidden md:block">
+                  {installments?.replace("sem juros", "")?.replace(".", ",")}
+                </span>
+              </p>
             </div>
           </aside>
 
