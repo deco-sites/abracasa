@@ -99,14 +99,12 @@ export default function ProductDetails(
                           )
                           : item?.name?.includes("Limpeza e cuidados")
                           ? (
-                            <a
-                              target="_blank"
-                              aria-label="abrir manual"
-                              href={item.value}
-                              class="w-full text-crimson text-end"
-                            >
-                              Abrir manual
-                            </a>
+                            <div
+                              class="text-end w-full"
+                              dangerouslySetInnerHTML={{
+                                __html: item.value || "",
+                              }}
+                            />
                           )
                           : (
                             <span
@@ -217,14 +215,15 @@ export default function ProductDetails(
                       )
                       : item?.name?.includes("Limpeza e cuidados")
                       ? (
-                        <a
-                          target="_blank"
-                          aria-label="abrir manual"
-                          href={item.value}
-                          class="w-[65%] text-crimson text-end"
-                        >
-                          Abrir manual
-                        </a>
+                        <div
+                          class={`${
+                            item?.value?.includes("Abrir manual") &&
+                            "text-crimson"
+                          } text-end w-full`}
+                          dangerouslySetInnerHTML={{
+                            __html: item.value?.replace("?", "") || "",
+                          }}
+                        />
                       )
                       : (
                         <span
