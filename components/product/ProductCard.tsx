@@ -51,6 +51,7 @@ interface Props {
 
   layout?: Layout;
   platform?: Platform;
+  isPLP?: boolean;
 }
 
 const relative = (url: string) => {
@@ -62,7 +63,8 @@ const WIDTH = 252;
 const HEIGHT = 252;
 
 function ProductCard(
-  { product, preload, itemListName, layout, platform, index }: Props,
+  { product, preload, itemListName, layout, platform, index, isPLP = false }:
+    Props,
 ) {
   const {
     url,
@@ -136,6 +138,7 @@ function ProductCard(
         l?.onMouseOver?.card === "Move up" &&
         "duration-500 transition-translate ease-in-out lg:hover:-translate-y-2"
       }
+      ${isPLP && "min-h-[356px] lg:min-h-[550px]"}
       `}
       data-deco="view-product"
     >

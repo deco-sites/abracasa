@@ -49,6 +49,7 @@ function ProductGallery({ products, layout, offset }: Props) {
           index={offset + index}
           layout={layout?.card}
           platform={platform}
+          isPLP={true}
         />
       ))}
     </div>

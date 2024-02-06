@@ -70,7 +70,7 @@ function Result({
           isCategoriesFilterActive={isCategoriesFilterActive}
         />
 
-        <div class="flex flex-row mt-4 container max-w-[85%] justify-center">
+        <div class="flex flex-row mt-4 container lg:max-w-[85%] justify-center">
           {layout?.variant === "aside" && filters.length > 0 && (
             <aside class="hidden sm:block w-min min-w-[250px]">
               <Filters filters={filters} />
