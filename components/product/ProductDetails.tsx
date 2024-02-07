@@ -11,13 +11,21 @@ export interface Props {
   page: ProductDetailsPage | null;
   appKey?: Secret;
   appToken?: Secret;
-  /** @ignore */
+  /**
+   * @ignore
+   */
   weight?: number;
-  /** @ignore */
+  /**
+   * @ignore
+   */
   length?: number;
-  /** @ignore */
+  /**
+   * @ignore
+   */
   width?: number;
-  /** @ignore */
+  /**
+   * @ignore
+   */
   height?: number;
   /**
    * @ignore
@@ -370,7 +378,7 @@ export const loader = async (props: Props, req: Request, ctx: FnContext) => {
 
   if (skuId && VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null) {
     const data = await fetchSafe(
-      `https://abracadabra.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit/${skuId}`,
+      `https://abracasa.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit/${skuId}`,
       {
         headers: {
           "X-VTEX-API-AppKey": VTEXAPIAPPKEY,
