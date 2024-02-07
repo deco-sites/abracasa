@@ -7,6 +7,14 @@ import { Device } from "deco/utils/device.ts";
 
 export interface Props {
   page: ProductDetailsPage | null;
+  /** @ignore */
+  packagedWeightKg?: number;
+  /** @ignore */
+  length?: number;
+  /** @ignore */
+  width?: number;
+  /** @ignore */
+  height?: number;
   /**
    * @ignore
    */
@@ -14,7 +22,7 @@ export interface Props {
 }
 
 export default function ProductDetails(
-  { page, device }: Props,
+  { page, packagedWeightKg, length, width, height, device }: Props,
 ) {
   if (!page) return null;
 
@@ -124,6 +132,13 @@ export default function ProductDetails(
                           )}
                       </li>
                     ))}
+                    <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                      <span class="font-bold w-[70%]">Tamanho</span>
+
+                      <div class="text-end w-full">
+                        {width}
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </details>
@@ -243,6 +258,13 @@ export default function ProductDetails(
                       )}
                   </li>
                 ))}
+                <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                  <span class="font-bold w-[70%]">Tamanho</span>
+
+                  <div class="text-end w-full">
+                    {width}
+                  </div>
+                </li>
               </ul>
             </div>
 
@@ -268,48 +290,12 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
       }).then((response) => response.json());
 
     if (data) {
-      const packagedWeightKg = {
-        "@type": "PropertyValue",
-        "name": "Peso",
-        "value": (data!.PackagedWeightKg! / 1000) + " Kg",
-        "valueReference": "SPECIFICATION",
-      };
-
-      const length = {
-        "@type": "PropertyValue",
-        "name": "Comprimento",
-        "value": (data!.Length! / 100)?.toLocaleString("pt-BR", {
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
-        }) + " Metros",
-        "valueReference": "SPECIFICATION",
-      };
-
-      const width = {
-        "@type": "PropertyValue",
-        "name": "Largura",
-        "value": (data!.Width! / 100)?.toLocaleString("pt-BR", {
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
-        }) + " Centímetros",
-        "valueReference": "SPECIFICATION",
-      };
-
-      const height = {
-        "@type": "PropertyValue",
-        "name": "Altura",
-        "value": (data!.Height! / 100)?.toLocaleString("pt-BR", {
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
-        }) + " Centímetros",
-        "valueReference": "SPECIFICATION",
-      };
-
-      console.log(packagedWeightKg);
-      console.log(length);
-
       return {
         ...props,
+        packagedWeightKg: data.PackagedWeightKg,
+        length: data.Length,
+        width: data.Width,
+        height: data.Height,
         device: ctx.device,
       };
     }
