@@ -2,15 +2,11 @@ import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import ReviewsSummary from "./ReviewsSummary.tsx";
-import { FnContext } from "deco/types.ts";
+import { AppContext } from "$store/apps/site.ts";
 import { Device } from "deco/utils/device.ts";
-import { Secret } from "apps/website/loaders/secret.ts";
-import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 
 export interface Props {
   page: ProductDetailsPage | null;
-  appKey?: Secret;
-  appToken?: Secret;
   /**
    * @ignore
    */
@@ -262,81 +258,76 @@ export default function ProductDetails(
   );
 }
 
-export const loader = async (props: Props, req: Request, ctx: FnContext) => {
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const skuId = props.page?.product.sku || props.page?.product.productID;
-  const VTEXAPIAPPKEY = await props?.appKey?.get?.();
-  const VTEXAPIAPPTOKEN = await props?.appToken?.get?.();
 
-  if (skuId && VTEXAPIAPPKEY && VTEXAPIAPPTOKEN) {
-    const data = await fetchSafe(
-      `https://abracadabra.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit/${skuId}`,
-      {
-        headers: {
-          "X-VTEX-API-AppKey": VTEXAPIAPPKEY,
-          "X-VTEX-API-AppToken": VTEXAPIAPPTOKEN,
-        },
-      },
-    ).then((data) => data.json());
+  if (skuId) {
+    const data = await ctx.vtex?.vcs
+      ["GET /api/catalog/pvt/stockkeepingunit/:skuId"]({
+        skuId,
+      }).then((response) => response.json());
 
-    const packagedWeightKg = {
-      "@type": "PropertyValue",
-      "name": "Peso",
-      "value": (data?.PackagedWeightKg / 1000) + " Kg",
-      "valueReference": "SPECIFICATION",
-    };
+    if (data) {
+      const packagedWeightKg = {
+        "@type": "PropertyValue",
+        "name": "Peso",
+        "value": (data!.PackagedWeightKg! / 1000) + " Kg",
+        "valueReference": "SPECIFICATION",
+      };
 
-    const length = {
-      "@type": "PropertyValue",
-      "name": "Comprimento",
-      "value": (data?.Length / 100)?.toLocaleString("pt-BR", {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      }) + " Metros",
-      "valueReference": "SPECIFICATION",
-    };
+      const length = {
+        "@type": "PropertyValue",
+        "name": "Comprimento",
+        "value": (data!.Length! / 100)?.toLocaleString("pt-BR", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        }) + " Metros",
+        "valueReference": "SPECIFICATION",
+      };
 
-    const width = {
-      "@type": "PropertyValue",
-      "name": "Largura",
-      "value": (data?.Width / 100)?.toLocaleString("pt-BR", {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      }) + " Centímetros",
-      "valueReference": "SPECIFICATION",
-    };
+      const width = {
+        "@type": "PropertyValue",
+        "name": "Largura",
+        "value": (data!.Width! / 100)?.toLocaleString("pt-BR", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        }) + " Centímetros",
+        "valueReference": "SPECIFICATION",
+      };
 
-    const height = {
-      "@type": "PropertyValue",
-      "name": "Altura",
-      "value": (data?.Height / 100)?.toLocaleString("pt-BR", {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      }) + " Centímetros",
-      "valueReference": "SPECIFICATION",
-    };
+      const height = {
+        "@type": "PropertyValue",
+        "name": "Altura",
+        "value": (data!.Height! / 100)?.toLocaleString("pt-BR", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        }) + " Centímetros",
+        "valueReference": "SPECIFICATION",
+      };
 
-    const additionalProperty = [
-      props.page?.product?.isVariantOf?.additionalProperty,
-      packagedWeightKg,
-      length,
-      width,
-      height,
-    ];
+      const additionalProperty = [
+        props.page?.product?.isVariantOf?.additionalProperty,
+        packagedWeightKg,
+        length,
+        width,
+        height,
+      ];
 
-    return {
-      ...props,
-      page: {
-        ...props.page,
-        product: {
-          ...props.page?.product,
-          isVariantOf: {
-            ...props.page?.product?.isVariantOf,
-            additionalProperty,
+      return {
+        ...props,
+        page: {
+          ...props.page,
+          product: {
+            ...props.page?.product,
+            isVariantOf: {
+              ...props.page?.product?.isVariantOf,
+              additionalProperty,
+            },
           },
         },
-      },
-      device: ctx.device,
-    };
+        device: ctx.device,
+      };
+    }
   }
 
   return {

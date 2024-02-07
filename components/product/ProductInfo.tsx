@@ -224,7 +224,8 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
 
       {/* Special Buttons */}
       <div class="flex flex-col gap-2.5 mt-6 border-b border-[#DFDFDF] pb-6">
-        <button
+        {
+          /* <button
           aria-label="call seller"
           class="px-3 py-1 leading-3 text-[13px] w-[280px] h-10 flex items-center bg-[#E7E7E7CC] text-black gap-1.5"
         >
@@ -242,7 +243,8 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
           </svg>
 
           <span>Fazer chamada com um vendedor</span>
-        </button>
+        </button> */
+        }
 
         {isVariantOf && isVariantOf.model && (
           <PhysicalStoresButton refId={isVariantOf.model} />
