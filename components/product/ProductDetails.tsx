@@ -100,9 +100,12 @@ export default function ProductDetails(
                           : item?.name?.includes("Limpeza e cuidados")
                           ? (
                             <div
-                              class="text-end w-full"
+                              class={`${
+                                item?.value?.includes("Abrir manual") &&
+                                "text-crimson"
+                              } text-end w-full`}
                               dangerouslySetInnerHTML={{
-                                __html: item.value || "",
+                                __html: item.value?.replace("?", "") || "",
                               }}
                             />
                           )
