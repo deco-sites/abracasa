@@ -2,14 +2,19 @@ import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import ReviewsSummary from "./ReviewsSummary.tsx";
-import { FnContext } from "deco/types.ts";
+import { AppContext } from "$store/apps/site.ts";
+import { Device } from "deco/utils/device.ts";
 
 export interface Props {
   page: ProductDetailsPage | null;
+  /**
+   * @ignore
+   */
+  device?: Device;
 }
 
 export default function ProductDetails(
-  { page, device }: ReturnType<typeof loader>,
+  { page, device }: Props,
 ) {
   if (!page) return null;
 
@@ -28,6 +33,8 @@ export default function ProductDetails(
     isVariantOf?.additionalProperty?.filter((item) =>
       item?.name !== "ProdutosSimilares"
     ) ?? [];
+
+  console.log(additionalInfos);
 
   const measurementImage = images?.find((item) => item.name === "medidas");
 
@@ -253,7 +260,44 @@ export default function ProductDetails(
   );
 }
 
-export const loader = (props: Props, req: Request, ctx: FnContext) => {
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+  const skuId = props.page?.product.sku || props.page?.product.productID;
+
+  if (skuId) {
+    const data = await ctx.vtex?.vcs
+      ["GET /api/catalog/pvt/stockkeepingunit/:skuId"]({
+        skuId,
+      }).then((response) => response.json());
+
+    const packagedWeightKg = data?.PackagedWeightKg;
+    const length = data?.Length;
+    const width = data?.Width;
+    const height = data?.Height;
+
+    const additionalProperty = [
+      props.page?.product?.isVariantOf?.additionalProperty,
+      packagedWeightKg,
+      length,
+      width,
+      height,
+    ];
+
+    return {
+      ...props,
+      page: {
+        ...props.page,
+        product: {
+          ...props.page?.product,
+          isVariantOf: {
+            ...props.page?.product?.isVariantOf,
+            additionalProperty,
+          },
+        },
+      },
+      device: ctx.device,
+    };
+  }
+
   return {
     ...props,
     device: ctx.device,
