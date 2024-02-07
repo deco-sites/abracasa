@@ -2,13 +2,17 @@ import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import ReviewsSummary from "./ReviewsSummary.tsx";
-import { AppContext } from "$store/apps/site.ts";
+import { FnContext } from "deco/types.ts";
 import { Device } from "deco/utils/device.ts";
+import { Secret } from "apps/website/loaders/secret.ts";
+import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 
 export interface Props {
   page: ProductDetailsPage | null;
+  appKey?: Secret;
+  appToken?: Secret;
   /** @ignore */
-  packagedWeightKg?: number;
+  weight?: number;
   /** @ignore */
   length?: number;
   /** @ignore */
@@ -22,7 +26,7 @@ export interface Props {
 }
 
 export default function ProductDetails(
-  { page, packagedWeightKg, length, width, height, device }: Props,
+  { page, weight, length, width, height, device }: Props,
 ) {
   if (!page) return null;
 
@@ -132,13 +136,52 @@ export default function ProductDetails(
                           )}
                       </li>
                     ))}
-                    <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                      <span class="font-bold w-[70%]">Tamanho</span>
+                    {weight && (
+                      <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                        <span class="font-bold w-[70%]">Peso</span>
 
-                      <div class="text-end w-full">
-                        {width}
-                      </div>
-                    </li>
+                        <span>{weight / 1000} kg</span>
+                      </li>
+                    )}
+
+                    {length && (
+                      <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                        <span class="font-bold w-[70%]">Comprimento</span>
+
+                        <span>
+                          {(length / 100)?.toLocaleString("pt-BR", {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          })} Metros
+                        </span>
+                      </li>
+                    )}
+
+                    {width && (
+                      <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                        <span class="font-bold w-[70%]">Largura</span>
+
+                        <span>
+                          {(width / 100)?.toLocaleString("pt-BR", {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          })} Centímetros
+                        </span>
+                      </li>
+                    )}
+
+                    {height && (
+                      <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                        <span class="font-bold w-[70%]">Altura</span>
+
+                        <span>
+                          {(height / 100)?.toLocaleString("pt-BR", {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          })} Centímetros
+                        </span>
+                      </li>
+                    )}
                   </ul>
                 </div>
               </details>
@@ -258,13 +301,53 @@ export default function ProductDetails(
                       )}
                   </li>
                 ))}
-                <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                  <span class="font-bold w-[70%]">Tamanho</span>
 
-                  <div class="text-end w-full">
-                    {width}
-                  </div>
-                </li>
+                {weight && (
+                  <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                    <span class="font-bold w-[70%]">Peso</span>
+
+                    <span>{weight / 1000} kg</span>
+                  </li>
+                )}
+
+                {length && (
+                  <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                    <span class="font-bold w-[70%]">Comprimento</span>
+
+                    <span>
+                      {(length / 100)?.toLocaleString("pt-BR", {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })} Metros
+                    </span>
+                  </li>
+                )}
+
+                {width && (
+                  <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                    <span class="font-bold w-[70%]">Largura</span>
+
+                    <span>
+                      {(width / 100)?.toLocaleString("pt-BR", {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })} Centímetros
+                    </span>
+                  </li>
+                )}
+
+                {height && (
+                  <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                    <span class="font-bold w-[70%]">Altura</span>
+
+                    <span>
+                      {(height / 100)?.toLocaleString("pt-BR", {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })} Centímetros
+                    </span>
+                  </li>
+                )}
               </ul>
             </div>
 
@@ -280,22 +363,29 @@ export default function ProductDetails(
   );
 }
 
-export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+export const loader = async (props: Props, req: Request, ctx: FnContext) => {
   const skuId = props.page?.product.sku || props.page?.product.productID;
+  const VTEXAPIAPPKEY = await props?.appKey?.get?.();
+  const VTEXAPIAPPTOKEN = await props?.appToken?.get?.();
 
-  if (skuId) {
-    const data = await ctx.vtex?.vcs
-      ["GET /api/catalog/pvt/stockkeepingunit/:skuId"]({
-        skuId,
-      }).then((response) => response.json());
+  if (skuId && VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null) {
+    const data = await fetchSafe(
+      `https://abracadabra.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit/${skuId}`,
+      {
+        headers: {
+          "X-VTEX-API-AppKey": VTEXAPIAPPKEY,
+          "X-VTEX-API-AppToken": VTEXAPIAPPTOKEN,
+        },
+      },
+    ).then((data) => data.json());
 
     if (data) {
       return {
         ...props,
-        packagedWeightKg: data.PackagedWeightKg,
-        length: data.Length,
-        width: data.Width,
-        height: data.Height,
+        weight: data?.PackagedWeightKg,
+        length: data?.Length,
+        width: data?.Width,
+        height: data?.Height,
         device: ctx.device,
       };
     }
