@@ -2,15 +2,11 @@ import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import ReviewsSummary from "./ReviewsSummary.tsx";
-import { FnContext } from "deco/types.ts";
+import { AppContext } from "$store/apps/site.ts";
 import { Device } from "deco/utils/device.ts";
-import { Secret } from "apps/website/loaders/secret.ts";
-import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 
 export interface Props {
   page: ProductDetailsPage | null;
-  appKey?: Secret;
-  appToken?: Secret;
   /**
    * @ignore
    */
@@ -109,12 +105,9 @@ export default function ProductDetails(
                           : item?.name?.includes("Limpeza e cuidados")
                           ? (
                             <div
-                              class={`${
-                                item?.value?.includes("Abrir manual") &&
-                                "text-crimson"
-                              } text-end w-full`}
+                              class="text-end w-full"
                               dangerouslySetInnerHTML={{
-                                __html: item.value?.replace("?", "") || "",
+                                __html: item.value || "",
                               }}
                             />
                           )
@@ -265,21 +258,14 @@ export default function ProductDetails(
   );
 }
 
-export const loader = async (props: Props, req: Request, ctx: FnContext) => {
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const skuId = props.page?.product.sku || props.page?.product.productID;
-  const VTEXAPIAPPKEY = await props?.appKey?.get?.();
-  const VTEXAPIAPPTOKEN = await props?.appToken?.get?.();
 
-  if (skuId && VTEXAPIAPPKEY && VTEXAPIAPPTOKEN) {
-    const data = await fetchSafe(
-      `https://abracadabra.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit/${skuId}`,
-      {
-        headers: {
-          "X-VTEX-API-AppKey": VTEXAPIAPPKEY,
-          "X-VTEX-API-AppToken": VTEXAPIAPPTOKEN,
-        },
-      },
-    ).then((data) => data.json());
+  if (skuId) {
+    const data = await ctx.vtex?.vcs
+      ["GET /api/catalog/pvt/stockkeepingunit/:skuId"]({
+        skuId,
+      }).then((response) => response.json());
 
     if (data) {
       const packagedWeightKg = {
@@ -319,26 +305,11 @@ export const loader = async (props: Props, req: Request, ctx: FnContext) => {
         "valueReference": "SPECIFICATION",
       };
 
-      const additionalProperty = [
-        props.page?.product?.isVariantOf?.additionalProperty,
-        packagedWeightKg,
-        length,
-        width,
-        height,
-      ];
+      console.log(packagedWeightKg);
+      console.log(length);
 
       return {
         ...props,
-        page: {
-          ...props.page,
-          product: {
-            ...props.page?.product,
-            isVariantOf: {
-              ...props.page?.product?.isVariantOf,
-              additionalProperty,
-            },
-          },
-        },
         device: ctx.device,
       };
     }
