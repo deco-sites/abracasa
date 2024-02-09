@@ -6,9 +6,24 @@ import { FnContext } from "deco/types.ts";
 import { Device } from "deco/utils/device.ts";
 import { Secret } from "apps/website/loaders/secret.ts";
 import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
   page: ProductDetailsPage | null;
+  atelieImage?: {
+    mobile?: {
+      image?: ImageWidget;
+      width?: number;
+      height?: number;
+    };
+    desktop?: {
+      image?: ImageWidget;
+      width?: number;
+      height?: number;
+    };
+    description?: string;
+    link?: string;
+  };
   appKey?: Secret;
   appToken?: Secret;
   /**
@@ -34,7 +49,7 @@ export interface Props {
 }
 
 export default function ProductDetails(
-  { page, weight, length, width, height, device }: Props,
+  { page, weight, length, width, height, atelieImage, device }: Props,
 ) {
   if (!page) return null;
 
@@ -45,6 +60,7 @@ export default function ProductDetails(
   const {
     isVariantOf,
     image: images = [],
+    additionalProperty = [],
   } = product;
 
   const isDesktop = device === "desktop";
@@ -57,6 +73,10 @@ export default function ProductDetails(
   const measurementImage = images?.find((item) => item.name === "medidas");
 
   const description = product?.description || product?.isVariantOf?.description;
+
+  const hasAtelieFlag = additionalProperty?.some((property) =>
+    property.value?.includes("Atelie Casa")
+  );
 
   return (
     <>
@@ -73,12 +93,26 @@ export default function ProductDetails(
                 </summary>
 
                 {description && (
-                  <div
-                    class="text-base font-normal my-8"
-                    dangerouslySetInnerHTML={{
-                      __html: description.replace(/\r?\n/g, "<br />"),
-                    }}
-                  />
+                  <div class="flex flex-col gap-4 my-8 w-full">
+                    {hasAtelieFlag && atelieImage && (
+                      <a href={atelieImage.link} class="w-full">
+                        <Image
+                          src={atelieImage?.mobile?.image || ""}
+                          alt={atelieImage?.description || "Banner Ateliê"}
+                          width={atelieImage?.mobile?.width || 550}
+                          height={atelieImage?.mobile?.height || 280}
+                          loading="lazy"
+                          class="w-full"
+                        />
+                      </a>
+                    )}
+                    <div
+                      class="text-base font-normal"
+                      dangerouslySetInnerHTML={{
+                        __html: description.replace(/\r?\n/g, "<br />"),
+                      }}
+                    />
+                  </div>
                 )}
               </details>
             </span>
@@ -245,7 +279,20 @@ export default function ProductDetails(
             </a>
           </div>
 
-          <div class="flex flex-col gap-12 max-w-[87%] xl:max-w-full mx-auto">
+          <div class="flex flex-col gap-10 max-w-[87%] xl:max-w-full mx-auto">
+            {hasAtelieFlag && atelieImage && (
+              <a href={atelieImage.link} class="w-full">
+                <Image
+                  src={atelieImage?.desktop?.image || ""}
+                  alt={atelieImage?.description || "Banner Ateliê"}
+                  width={atelieImage?.desktop?.width || 1920}
+                  height={atelieImage?.desktop?.height || 386}
+                  loading="lazy"
+                  class="w-full"
+                />
+              </a>
+            )}
+
             <div
               id="about-product"
               dangerouslySetInnerHTML={{
