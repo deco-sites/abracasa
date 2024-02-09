@@ -164,7 +164,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
         </div>
       </div>
       {/* Prices */}
-      <div class="flex items-start flex-col mt-4">
+      <div class="flex items-start flex-col mt-6">
         <div class="flex flex-col items-start">
           {(listPrice ?? 0) > price && (
             <div class="flex items-center gap-2">
