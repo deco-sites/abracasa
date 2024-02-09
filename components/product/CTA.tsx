@@ -66,7 +66,7 @@ export default function CTA(
               />
             )}
 
-            <span class="hidden lg:block lg:max-w-[550px] text-[16px] text-[#212121] leading-4">
+            <span class="hidden lg:block lg:max-w-[290px] 2xl:max-w-[550px] text-[16px] text-[#212121] leading-4">
               {name}
             </span>
 
@@ -95,7 +95,7 @@ export default function CTA(
             </div>
           </aside>
 
-          <div class="min-w-[50%] md:min-w-[26%] xl:min-w-[400px]">
+          <div class="min-w-[50%] md:min-w-[26%] xl:w-auto max-w-[400px]">
             <AddToCartButtonVTEX
               eventParams={eventParams}
               productID={productID}

@@ -15,7 +15,7 @@ export default function Techs(
 
           <ul class="flex flex-wrap divide-x items-center">
             {content.items.map((item) => (
-              <li class="first:pr-2 first:pl-0 pr-0 pl-2">
+              <li class="pr-2 first:pl-0 last:pr-0 pl-2">
                 <a
                   href={item.link}
                   target={item.target || "_blank"}
