@@ -23,7 +23,7 @@ export default function Subnavbar({ items, searchbar, logo, device }: Props) {
     const desktopNavbar = document.getElementById("desktop-navbar");
 
     desktopNavbar?.classList?.remove("lg:flex");
-    timer?.classList?.remove("hidden");
+    timer?.classList?.add("hidden");
     alert?.classList?.add("hidden");
   }
 
