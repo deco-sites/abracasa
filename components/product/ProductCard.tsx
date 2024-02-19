@@ -138,7 +138,7 @@ function ProductCard(
         l?.onMouseOver?.card === "Move up" &&
         "duration-500 transition-translate ease-in-out lg:hover:-translate-y-2"
       }
-      ${isPLP && "min-h-[356px] lg:min-h-[550px]"}
+      ${isPLP && "min-h-[400px] lg:min-h-full"}
       `}
       data-deco="view-product"
     >
@@ -290,7 +290,7 @@ function ProductCard(
             <div class="flex flex-col gap-0 lg:px-1.5">
               {l?.hide?.productName ? "" : (
                 <h2
-                  class="text-sm text-black"
+                  class="text-[13.44px] text-black leading-[18.48px] tracking-[0.84px]"
                   dangerouslySetInnerHTML={{
                     __html: isVariantOf?.name ?? name ?? "",
                   }}
@@ -351,10 +351,7 @@ function ProductCard(
           <div class="flex flex-col lg:flex-row lg:gap-1 text-xs leading-[18px]">
             {(listPrice ?? 0) > (price ?? 0) && (
               <span class="text-[#E31010] font-semibold">
-                {formatPrice(
-                  (listPrice ?? 0) - (price ?? 0),
-                  offers?.priceCurrency,
-                )}
+                R$ {Math.round((listPrice ?? 0) - (price ?? 0))} OFF
               </span>
             )}
 

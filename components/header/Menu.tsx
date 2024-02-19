@@ -93,7 +93,7 @@ function Menu({ items }: Props) {
         <li class="border-y">
           <a
             class="flex items-center gap-4 px-4 py-3"
-            href="https://www.deco.cx"
+            href="/institucional/nossas-lojas"
           >
             <img
               src={asset("/image/store.svg")}

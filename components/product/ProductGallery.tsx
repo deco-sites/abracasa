@@ -24,9 +24,9 @@ const MOBILE_COLUMNS = {
 };
 
 const DESKTOP_COLUMNS = {
-  3: "lg:grid-cols-3",
-  4: "lg:grid-cols-4",
-  5: "lg:grid-cols-5",
+  3: "xl:grid-cols-3",
+  4: "xl:grid-cols-4",
+  5: "xl:grid-cols-5",
 };
 
 function ProductGallery({ products, layout, offset }: Props) {
@@ -39,8 +39,8 @@ function ProductGallery({ products, layout, offset }: Props) {
       class={`grid ${
         mobile ?? "grid-cols-1"
       } gap-2 items-start justify-center ${
-        desktop ?? "lg:grid-cols-4"
-      } lg:gap-10`}
+        desktop ?? "xl:grid-cols-4"
+      } lg:grid-cols-3 lg:gap-10`}
     >
       {products?.map((product, index) => (
         <ProductCard

@@ -91,7 +91,8 @@ function SearchControls(
             <div class="flex flex-col sm:flex-row gap-5">
               <PromptDelivery />
 
-              <div class="flex items-center justify-center gap-2">
+              {
+                /* <div class="flex items-center justify-center gap-2">
                 <span class="text-normal leading-[22px] text-[#555]">
                   Visualizar:
                 </span>
@@ -109,7 +110,8 @@ function SearchControls(
                 >
                   <Icon id="TwoColumns" width={24} height={24} />
                 </button>
-              </div>
+              </div> */
+              }
             </div>
           </div>
 
@@ -135,7 +137,8 @@ function SearchControls(
 
               {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
 
-              <div class="flex items-center justify-center gap-2">
+              {
+                /* <div class="flex items-center justify-center gap-2">
                 <span class="text-normal leading-[22px] text-[#555]">
                   Visualizar:
                 </span>
@@ -153,7 +156,8 @@ function SearchControls(
                 >
                   <Icon id="FourthColumns" width={34} height={34} />
                 </button>
-              </div>
+              </div> */
+              }
             </div>
           </div>
         </div>
