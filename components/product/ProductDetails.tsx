@@ -180,15 +180,15 @@ export default function ProductDetails(
                     ))}
                     {weight && (
                       <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                        <span class="font-bold w-[70%]">Peso</span>
+                        <span class="font-bold">Peso</span>
 
-                        <span>{weight / 1000} kg</span>
+                        <span>{weight / 1000}kg</span>
                       </li>
                     )}
 
                     {length && (
                       <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                        <span class="font-bold w-[70%]">Comprimento</span>
+                        <span class="font-bold">Comprimento</span>
 
                         <span>
                           {(length / 100)?.toLocaleString("pt-BR", {
@@ -201,26 +201,26 @@ export default function ProductDetails(
 
                     {width && (
                       <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                        <span class="font-bold w-[70%]">Largura</span>
+                        <span class="font-bold">Largura</span>
 
                         <span>
-                          {(width / 100)?.toLocaleString("pt-BR", {
+                          {width?.toLocaleString("pt-BR", {
                             minimumFractionDigits: 2,
                             maximumFractionDigits: 2,
-                          })} Centímetros
+                          })}cm
                         </span>
                       </li>
                     )}
 
                     {height && (
                       <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                        <span class="font-bold w-[70%]">Altura</span>
+                        <span class="font-bold">Altura</span>
 
                         <span>
-                          {(height / 100)?.toLocaleString("pt-BR", {
+                          {height?.toLocaleString("pt-BR", {
                             minimumFractionDigits: 2,
                             maximumFractionDigits: 2,
-                          })} Centímetros
+                          })}cm
                         </span>
                       </li>
                     )}
@@ -361,7 +361,7 @@ export default function ProductDetails(
                   <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
                     <span class="font-bold w-[70%]">Peso</span>
 
-                    <span>{weight / 1000} kg</span>
+                    <span>{weight / 1000}kg</span>
                   </li>
                 )}
 
@@ -383,10 +383,10 @@ export default function ProductDetails(
                     <span class="font-bold w-[70%]">Largura</span>
 
                     <span>
-                      {(width / 100)?.toLocaleString("pt-BR", {
+                      {width?.toLocaleString("pt-BR", {
                         minimumFractionDigits: 2,
                         maximumFractionDigits: 2,
-                      })} Centímetros
+                      })}cm
                     </span>
                   </li>
                 )}
@@ -396,10 +396,10 @@ export default function ProductDetails(
                     <span class="font-bold w-[70%]">Altura</span>
 
                     <span>
-                      {(height / 100)?.toLocaleString("pt-BR", {
+                      {height?.toLocaleString("pt-BR", {
                         minimumFractionDigits: 2,
                         maximumFractionDigits: 2,
-                      })} Centímetros
+                      })}cm
                     </span>
                   </li>
                 )}
@@ -437,7 +437,7 @@ export const loader = async (props: Props, req: Request, ctx: FnContext) => {
     if (data) {
       return {
         ...props,
-        weight: data?.PackagedWeightKg,
+        weight: data?.WeightKg,
         length: data?.Length,
         width: data?.Width,
         height: data?.Height,
