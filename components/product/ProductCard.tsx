@@ -138,7 +138,7 @@ function ProductCard(
         l?.onMouseOver?.card === "Move up" &&
         "duration-500 transition-translate ease-in-out lg:hover:-translate-y-2"
       }
-      ${isPLP && "min-h-[400px] lg:min-h-full"}
+      ${isPLP && "min-h-full"}
       `}
       data-deco="view-product"
     >
