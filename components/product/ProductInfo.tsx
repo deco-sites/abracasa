@@ -89,7 +89,7 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
 
   return (
     <div
-      class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-[72px] md:pb-6 lg:w-[440px] px-4 md:px-0"
+      class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-[72px] md:pb-6 min-w-[100vw] sm:min-w-full lg:w-[440px] px-4 md:px-0"
       id={id}
     >
       <ReviewsScript />

@@ -63,6 +63,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
                 height={145}
                 alt="Logo Ateliê Cadabra"
                 loading="lazy"
+                class="w-[90px] md:w-[145px]"
               />
             </div>
           )}
