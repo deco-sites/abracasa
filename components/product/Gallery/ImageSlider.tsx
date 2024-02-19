@@ -44,7 +44,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
   return (
     <>
-      <div class="lg:ml-6 px-4 sm:px-0 my-4 max-w-[98vw] sm:max-w-full">
+      <div class="lg:ml-6 px-0 my-4 max-w-[98vw] sm:max-w-full">
         <Breadcrumb itemListElement={breadcrumb.itemListElement} />
       </div>
 

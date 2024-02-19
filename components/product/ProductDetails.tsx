@@ -191,10 +191,10 @@ export default function ProductDetails(
                         <span class="font-bold">Comprimento</span>
 
                         <span>
-                          {(length / 100)?.toLocaleString("pt-BR", {
+                          {length?.toLocaleString("pt-BR", {
                             minimumFractionDigits: 2,
                             maximumFractionDigits: 2,
-                          })} Metros
+                          })}cm
                         </span>
                       </li>
                     )}
@@ -370,10 +370,10 @@ export default function ProductDetails(
                     <span class="font-bold w-[70%]">Comprimento</span>
 
                     <span>
-                      {(length / 100)?.toLocaleString("pt-BR", {
+                      {length?.toLocaleString("pt-BR", {
                         minimumFractionDigits: 2,
                         maximumFractionDigits: 2,
-                      })} Metros
+                      })}cm
                     </span>
                   </li>
                 )}
