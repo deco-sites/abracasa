@@ -14,9 +14,10 @@ const setSearch = debounce(async (search: string) => {
     const params: { query?: string; count: number } = { count: 60 };
     if (search !== "") params.query = search;
 
-    const availableSuggestions = await suggestions(
-      params,
-    );
+    const availableSuggestions = await suggestions({
+      query: params?.query?.replaceAll(" ", "-") ?? "",
+      count: params.count,
+    });
 
     if (availableSuggestions && availableSuggestions.products) {
       const skuIds = availableSuggestions?.products?.filter((item) => item.sku)
