@@ -6,6 +6,7 @@ export interface Props {
   interval?: number;
   infinite?: boolean;
   orientation?: "horizontal" | "vertical";
+  activedIndex?: number;
 }
 
 const ATTRIBUTES = {
@@ -69,7 +70,9 @@ const isHTMLElement = (x: Element): x is HTMLElement =>
   // deno-lint-ignore no-explicit-any
   typeof (x as any).offsetLeft === "number";
 
-const setup = ({ rootId, scroll, interval, infinite, orientation }: Props) => {
+const setup = (
+  { rootId, scroll, interval, infinite, orientation, activedIndex }: Props,
+) => {
   const root = document.getElementById(rootId);
   const slider = root?.querySelector<HTMLElement>(
     `[${ATTRIBUTES["data-slider"]}]`,
@@ -193,6 +196,8 @@ const setup = ({ rootId, scroll, interval, infinite, orientation }: Props) => {
   prev?.addEventListener("click", onClickPrev);
   next?.addEventListener("click", onClickNext);
 
+  goToItem(activedIndex ?? 0);
+
   const timeout = interval && setInterval(onClickNext, interval);
 
   // Unregister callbacks
@@ -216,10 +221,12 @@ function Slider({
   interval,
   infinite = false,
   orientation = "horizontal",
+  activedIndex,
 }: Props) {
   useEffect(
-    () => setup({ rootId, scroll, interval, infinite, orientation }),
-    [rootId, scroll, interval, infinite, orientation],
+    () =>
+      setup({ rootId, scroll, interval, infinite, orientation, activedIndex }),
+    [rootId, scroll, interval, infinite, orientation, activedIndex],
   );
 
   return <div data-slider-controller-js />;
