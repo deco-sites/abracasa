@@ -11,13 +11,13 @@ export interface StoreInfo {
 function StoreInfo({ title, phone, links, local }: StoreInfo) {
   return (
     <div class="flex flex-col items-start justify-start gap-2 w-full leading-5 text-[13px]">
-      <h4 class="text-rosybrown uppercase font-semibold">{title}</h4>
-      <p>{local}</p>
+      <h4 class="uppercase text-lg text-[#212121]">{title}</h4>
+      <p class="text-black leading-6">{local}</p>
       {links.map((item) => (
         <a
           href={item}
           target="_blank"
-          class="flex items-center justify-center gap-2"
+          class="flex text-black leading-6 items-center justify-center gap-2"
         >
           <span>
             {phone}
