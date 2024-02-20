@@ -284,26 +284,27 @@ function ProductCard(
           </>
         )}
 
-        {l?.hide?.productName && l?.hide?.productDescription
-          ? ""
-          : (
-            <div class="flex flex-col gap-0 lg:px-1.5">
-              {l?.hide?.productName ? "" : (
-                <h2
-                  class="text-[13.44px] text-black leading-[18.48px] tracking-[0.84px]"
-                  dangerouslySetInnerHTML={{
-                    __html: isVariantOf?.name ?? name ?? "",
-                  }}
-                />
-              )}
-              {l?.hide?.productDescription ? "" : (
-                <div
-                  class="truncate text-sm lg:text-sm text-neutral"
-                  dangerouslySetInnerHTML={{ __html: description ?? "" }}
-                />
-              )}
-            </div>
-          )}
+        {l?.hide?.productName && l?.hide?.productDescription ? "" : (
+          <a
+            href={url && relative(url)}
+            class="flex flex-col gap-0 lg:px-1.5"
+          >
+            {l?.hide?.productName ? "" : (
+              <h2
+                class="text-[13.44px] text-black leading-[18.48px] tracking-[0.84px]"
+                dangerouslySetInnerHTML={{
+                  __html: isVariantOf?.name ?? name ?? "",
+                }}
+              />
+            )}
+            {l?.hide?.productDescription ? "" : (
+              <div
+                class="truncate text-sm lg:text-sm text-neutral"
+                dangerouslySetInnerHTML={{ __html: description ?? "" }}
+              />
+            )}
+          </a>
+        )}
 
         <div class="flex items-center justify-between w-full h-full gap-2 lg:px-1.5">
           <div class="flex flex-col">
