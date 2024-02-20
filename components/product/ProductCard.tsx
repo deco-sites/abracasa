@@ -348,7 +348,7 @@ function ProductCard(
           </div>
 
           {/* Discount Flags */}
-          <div class="flex flex-col lg:flex-row lg:gap-1 text-xs leading-[18px]">
+          <div class="flex flex-col lg:flex-row lg:gap-1 text-[11px] sm:text-xs leading-[18px]">
             {(listPrice ?? 0) > (price ?? 0) && (
               <span class="text-[#E31010] font-semibold">
                 R$ {Math.round((listPrice ?? 0) - (price ?? 0))} OFF
