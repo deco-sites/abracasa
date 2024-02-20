@@ -165,7 +165,7 @@ function ProductCard(
       >
         {/* Flags */}
         <div
-          class={`flex items-center gap-1.5 absolute top-2 z-10 ${
+          class={`flex items-center gap-1.5 absolute top-2 z-10 max-w-full overflow-auto ${
             l?.elementsPositions?.favoriteIcon === "Top left"
               ? "right-1 md:right-2"
               : "left-1 md:left-2"
