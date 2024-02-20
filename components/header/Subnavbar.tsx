@@ -5,7 +5,7 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useEffect, useState } from "preact/hooks";
 import NavItem from "./NavItem.tsx";
-import { Device } from "deco/utils/device.ts";
+import { Device } from "apps/website/matchers/device.ts";
 
 export interface Props {
   items: SiteNavigationElement[];

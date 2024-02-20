@@ -11,7 +11,7 @@ import NavItem from "./NavItem.tsx";
 import Subnavbar from "$store/islands/Header/Subnavbar.tsx";
 import LoginElement from "$store/islands/LoginElement.tsx";
 import { navbarHeight } from "./constants.ts";
-import { Device } from "deco/utils/device.ts";
+import { Device } from "apps/website/matchers/device.ts";
 
 function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
   items: SiteNavigationElement[];

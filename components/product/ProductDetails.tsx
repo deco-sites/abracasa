@@ -3,7 +3,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import ReviewsSummary from "./ReviewsSummary.tsx";
 import { FnContext } from "deco/types.ts";
-import { Device } from "deco/utils/device.ts";
+import { Device } from "apps/website/matchers/device.ts";
 import { Secret } from "apps/website/loaders/secret.ts";
 import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
