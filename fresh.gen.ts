@@ -21,6 +21,7 @@ import * as $Header_Searchbar from "./islands/Header/Searchbar.tsx";
 import * as $Header_Subnavbar from "./islands/Header/Subnavbar.tsx";
 import * as $LoginElement from "./islands/LoginElement.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
+import * as $NewsletterForm from "./islands/NewsletterForm.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
 import * as $PhysicalStoresButton from "./islands/PhysicalStoresButton.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
@@ -55,6 +56,7 @@ const manifest = {
     "./islands/Header/Subnavbar.tsx": $Header_Subnavbar,
     "./islands/LoginElement.tsx": $LoginElement,
     "./islands/Newsletter.tsx": $Newsletter,
+    "./islands/NewsletterForm.tsx": $NewsletterForm,
     "./islands/OutOfStock.tsx": $OutOfStock,
     "./islands/PhysicalStoresButton.tsx": $PhysicalStoresButton,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
