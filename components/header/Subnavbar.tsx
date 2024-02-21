@@ -15,9 +15,9 @@ export interface Props {
 }
 
 export default function Subnavbar({ items, searchbar, logo, device }: Props) {
-  const [scrollingMode, setScrollingMode] = useState(self.window.scrollY > 0);
+  const [scrollingMode, setScrollingMode] = useState(self.window.scrollY > 160);
 
-  if (self.window.scrollY > 0) {
+  if (self.window.scrollY > 160) {
     const timer = document.getElementById("campaign-timer");
     const alert = document.getElementById("alert-slider");
     const desktopNavbar = document.getElementById("desktop-navbar");
@@ -43,7 +43,7 @@ export default function Subnavbar({ items, searchbar, logo, device }: Props) {
         "mobile-navbar-anchor",
       );
 
-      if (self.window.scrollY > 0) {
+      if (self.window.scrollY > 160) {
         setScrollingMode(true);
         alert?.classList?.add("hidden");
         timer?.classList?.add("hidden");
