@@ -21,10 +21,14 @@ export default function Subnavbar({ items, searchbar, logo, device }: Props) {
     const timer = document.getElementById("campaign-timer");
     const alert = document.getElementById("alert-slider");
     const desktopNavbar = document.getElementById("desktop-navbar");
+    const mobileNavbar = document.getElementById("mobile-navbar");
+    const mobileNavbarAnchor = document.getElementById("mobile-navbar-anchor");
 
     desktopNavbar?.classList?.remove("lg:flex");
     timer?.classList?.add("hidden");
     alert?.classList?.add("hidden");
+    mobileNavbar?.classList?.add("!h-[56px]");
+    mobileNavbarAnchor?.classList?.add("!max-w-[56px]");
   }
 
   useEffect(() => {
@@ -34,17 +38,25 @@ export default function Subnavbar({ items, searchbar, logo, device }: Props) {
       const timer = document.getElementById("campaign-timer");
       const alert = document.getElementById("alert-slider");
       const desktopNavbar = document.getElementById("desktop-navbar");
+      const mobileNavbar = document.getElementById("mobile-navbar");
+      const mobileNavbarAnchor = document.getElementById(
+        "mobile-navbar-anchor",
+      );
 
       if (self.window.scrollY > 0) {
         setScrollingMode(true);
-        alert?.classList.add("hidden");
-        timer?.classList.add("hidden");
-        desktopNavbar?.classList.remove("lg:flex");
+        alert?.classList?.add("hidden");
+        timer?.classList?.add("hidden");
+        desktopNavbar?.classList?.remove("lg:flex");
+        mobileNavbar?.classList?.add("!h-[56px]");
+        mobileNavbarAnchor?.classList?.add("!max-w-[56px]");
       } else {
         setScrollingMode(false);
-        alert?.classList.remove("hidden");
-        timer?.classList.remove("hidden");
-        desktopNavbar?.classList.add("lg:flex");
+        alert?.classList?.remove("hidden");
+        timer?.classList?.remove("hidden");
+        desktopNavbar?.classList?.add("lg:flex");
+        mobileNavbar?.classList?.remove("!h-[56px]");
+        mobileNavbarAnchor?.classList?.remove("!max-w-[56px]");
       }
     }
 

@@ -64,7 +64,7 @@ function Drawers({ menu, children, platform }: Props) {
 
   return (
     <Drawer
-      class={displayMenu.value ? "drawer-end" : ""}
+      class="drawer-end"
       open={displayMenu.value}
       onClose={() => {
         displayMenu.value = false;
@@ -74,7 +74,7 @@ function Drawers({ menu, children, platform }: Props) {
           onClose={() => {
             displayMenu.value = false;
           }}
-          isMenu={displayMenu.value ? true : false}
+          isMenu={displayMenu.value}
           title={displayMenu.value
             ? (
               <p class="flex flex-col text-[#555] text-sm leading-4">
@@ -90,7 +90,7 @@ function Drawers({ menu, children, platform }: Props) {
         </Aside>
       }
     >
-      <Drawer // right drawer
+      <Drawer
         class="drawer-end"
         open={displayCart.value !== false}
         onClose={() => displayCart.value = false}

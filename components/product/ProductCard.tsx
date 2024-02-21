@@ -242,7 +242,7 @@ function ProductCard(
               alt={back?.alternateName ?? front.alternateName}
               width={WIDTH}
               height={HEIGHT}
-              class="hidden lg:block bg-base-100 col-span-full row-span-full transition-opacity w-full opacity-0 lg:group-hover:opacity-100"
+              class="block bg-base-100 col-span-full row-span-full transition-opacity w-full opacity-0 group-hover:opacity-100"
               sizes="(max-width: 640px) 50vw, 20vw"
               loading="lazy"
               decoding="async"

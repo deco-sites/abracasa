@@ -29,17 +29,23 @@ function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
       {!isDesktop && (
         <>
           <div
-            style={{ height: navbarHeight }}
-            class="lg:hidden flex flex-row justify-between items-center border-b border-base-200 w-full px-4 gap-2"
+            id="mobile-navbar"
+            class="lg:hidden flex flex-row justify-between items-center border-b border-base-200 w-full px-4 gap-2 h-[105px]"
           >
             {logo && (
               <a
+                id="mobile-navbar-anchor"
                 href="/"
-                class="inline-flex"
-                style={{ minHeight: "80px" }}
+                class="inline-flex max-h-[80px] max-w-[80px] w-full h-full py-0.5"
                 aria-label="Store logo"
               >
-                <Image src={logo.src} alt={logo.alt} width={80} height={16} />
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={80}
+                  height={16}
+                  class="w-full h-full object-cover"
+                />
               </a>
             )}
 
