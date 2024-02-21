@@ -58,7 +58,7 @@ function Result({
   const offset = zeroIndexedOffsetPage * perPage;
 
   return (
-    <>
+    <div class="flex flex-col gap-1">
       <SearchTitle productsCount={pageInfo.records} />
 
       <div class="px-4 sm:py-10">
@@ -116,7 +116,7 @@ function Result({
           },
         }}
       />
-    </>
+    </div>
   );
 }
 
