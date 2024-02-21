@@ -35,37 +35,35 @@ function FilterValues({ key, values }: FilterToggle) {
       style={{
         top: "55px",
       }}
-      class={`block dropdown-content z-[999999] py-6 px-3 shadow bg-base-100 rounded-none gap-2 w-[50vw] min-w-[120px] h-[300px] !left-0 overflow-auto border-y border-solid border-[#d9d9d9]`}
+      class={`flex flex-wrap flex-col dropdown-content z-[999999] py-6 px-3 shadow bg-base-100 rounded-none gap-2 min-w-[35vw] overflow-auto w-full h-[280px] !left-0 border-y border-solid border-[#d9d9d9]`}
     >
-      <div class={`flex flex-wrap h-full w-full gap-1.5 flex-col`}>
-        {values.map((item) => {
-          const { url, selected, value, quantity } = item;
+      {values.map((item) => {
+        const { url, selected, value, quantity } = item;
 
-          if (key === "cor" || key === "tamanho") {
-            return (
-              <a href={url} rel="nofollow">
-                <Avatar
-                  content={value}
-                  variant={selected ? "active" : "default"}
-                />
-              </a>
-            );
-          }
-
-          if (key === "price") {
-            const range = parseRange(item.value);
-
-            return range && (
-              <ValueItem
-                {...item}
-                label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
+        if (key === "cor" || key === "tamanho") {
+          return (
+            <a href={url} rel="nofollow">
+              <Avatar
+                content={value}
+                variant={selected ? "active" : "default"}
               />
-            );
-          }
+            </a>
+          );
+        }
 
-          return <ValueItem {...item} />;
-        })}
-      </div>
+        if (key === "price") {
+          const range = parseRange(item.value);
+
+          return range && (
+            <ValueItem
+              {...item}
+              label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
+            />
+          );
+        }
+
+        return <ValueItem {...item} />;
+      })}
     </ul>
   );
 }
@@ -82,7 +80,7 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
   };
 
   return (
-    <ul class="flex flex-row gap-3">
+    <ul class="flex flex-wrap flex-row gap-3">
       {filters
         .filter(isToggle)
         .filter((item) => !excludedKeys.includes(item.key))
@@ -95,9 +93,9 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
                 aria-label={`open ${filter.label}`}
                 tabIndex={0}
                 role="button"
-                class="btn text-sm leading-[22px] text-[#555] font-normal bg-transparent hover:bg-transparent m-1 gap-1.5 w-full"
+                class="flex items-center justify-center border rounded-[4px] px-1.5 h-[48px] text-sm leading-[22px] text-[#555] font-normal bg-transparent hover:bg-transparent m-1 gap-1.5 w-full"
               >
-                <span>
+                <span class="capitalize">
                   {translations[filter.label] || filter.label}
                 </span>
                 <Icon
