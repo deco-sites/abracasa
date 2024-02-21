@@ -15,7 +15,11 @@ import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import { useAutocomplete } from "$store/hooks/useAutocomplete.ts";
 import { useUI } from "$store/sdk/useUI.ts";
+import { useSuggestions } from "$store/sdk/useSuggestions.ts";
+import { Resolved } from "deco/engine/core/resolver.ts";
+import { Search, Suggestion } from "apps/commerce/types.ts";
 import { useEffect, useRef } from "preact/compat";
+import type { Platform } from "$store/apps/site.ts";
 
 // Editable props
 export interface Props {
@@ -37,18 +41,28 @@ export interface Props {
    * @default q
    */
   name?: string;
+
+  /**
+   * @title Suggestions Integration
+   * @todo: improve this typings ({query: string, count: number}) => Suggestions
+   */
+  loader: Resolved<Suggestion | null>;
+
+  platform?: Platform;
 }
 
 function Searchbar({
   placeholder = "What are you looking for?",
   action = "/s",
   name = "q",
+  loader,
+  platform,
 }: Props) {
   const id = useId();
   const { displaySearchPopup } = useUI();
   const searchInputRef = useRef<HTMLInputElement>(null);
-  const { setSearch: setQuery, suggestions, loading } = useAutocomplete();
-  const { products = [], searches = [] } = suggestions.value ?? {};
+  const { setQuery, payload, loading } = useSuggestions(loader);
+  const { products = [], searches = [] } = payload.value ?? {};
   const hasProducts = Boolean(products.length);
   const hasTerms = Boolean(searches.length);
 
@@ -132,7 +146,7 @@ function Searchbar({
                   class="flex items-center w-full h-full gap-3"
                 >
                   <Image
-                    src={front.url || ""}
+                    src={front.url?.replace("-25-25", "-60-60") || ""}
                     alt={front.alternateName}
                     width={60}
                     height={60}

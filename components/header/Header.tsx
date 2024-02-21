@@ -65,7 +65,7 @@ function Header({
 
             <Navbar
               items={items}
-              searchbar={searchbar && { ...searchbar }}
+              searchbar={searchbar && { ...searchbar, platform }}
               logo={logo}
               device={device}
               hasCampaignTimer={hasCampaignTimer}
