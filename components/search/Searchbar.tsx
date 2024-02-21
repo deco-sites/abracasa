@@ -47,8 +47,6 @@ export interface Props {
    * @todo: improve this typings ({query: string, count: number}) => Suggestions
    */
   loader: Resolved<Suggestion | null>;
-
-  platform?: Platform;
 }
 
 function Searchbar({
@@ -56,7 +54,6 @@ function Searchbar({
   action = "/s",
   name = "q",
   loader,
-  platform,
 }: Props) {
   const id = useId();
   const { displaySearchPopup } = useUI();
