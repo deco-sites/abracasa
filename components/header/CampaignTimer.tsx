@@ -52,6 +52,7 @@ export interface Props {
    */
   textHex?: string;
   hiddenCampaignTimer?: boolean;
+  hiddenNumbers?: boolean;
 }
 
 const snippet = (expiresAt: string, rootId: string) => {
@@ -110,6 +111,7 @@ function CampaignTimer({
   hiddenCampaignTimer,
   textHex,
   backgroundHex,
+  hiddenNumbers,
 }: Props) {
   const id = useId();
 
@@ -171,7 +173,7 @@ function CampaignTimer({
               )}
               <div
                 style={{ color: `${textHex}` }}
-                class="flex items-center h-20"
+                class={`${hiddenNumbers && "opacity-0"} flex items-center h-20`}
               >
                 <div class="flex flex-col items-center justify-center text-center sm:gap-1 min-w-full">
                   <div id={`${id}::expired`} class="hidden h-full text-center">
