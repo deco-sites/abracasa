@@ -306,7 +306,10 @@ function ProductCard(
           </a>
         )}
 
-        <div class="flex items-center justify-between w-full h-full gap-2 lg:px-1.5">
+        <a
+          href={url && relative(url)}
+          class="flex items-center justify-between w-full h-full gap-2 lg:px-1.5"
+        >
           <div class="flex flex-col">
             {l?.hide?.allPrices
               ? ""
@@ -362,7 +365,7 @@ function ProductCard(
               </div>
             )}
           </div>
-        </div>
+        </a>
 
         {/* SKU Selector */}
         {l?.elementsPositions?.skuSelector === "Bottom" && (
