@@ -40,7 +40,7 @@ function WishlistButton({
 
         if (!isUserLoggedIn) {
           window.alert(
-            "Por favor, entre em sua conta para adicionar a lista de desejos.",
+            "Por favor, entre em sua conta para adicionar produtos à sua lista de desejos.",
           );
 
           return;
