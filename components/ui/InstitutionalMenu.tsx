@@ -14,8 +14,8 @@ export default function InstitutionalMenu(
 ) {
   return (
     <section class="w-full h-full flex items-center justify-center border-b border-solid border-[#8282829f]">
-      <div class="max-w-[1617px] min-h-[205px] flex items-center justify-center">
-        <div class="max-w-[100vw] overflow-auto scrollbar-none w-full h-full flex items-center gap-5 px-4">
+      <div class="max-w-[95%] min-h-[205px] flex items-center justify-center">
+        <div class="max-w-full overflow-auto scrollbar-none w-full h-full flex items-center gap-5">
           {cards?.map((card) => (
             <div
               class={`${
