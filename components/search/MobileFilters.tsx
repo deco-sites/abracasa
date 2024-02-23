@@ -65,8 +65,8 @@ function FilterValues({ key, values }: FilterToggle) {
 
 function Filters({ filters, isCategoriesFilterActive }: Props) {
   const excludedKeys = isCategoriesFilterActive
-    ? ["PriceRanges"]
-    : ["Brands", "PriceRanges", "Departments", "Categories"];
+    ? ["PriceRanges", "SITE ANTIGO"]
+    : ["Brands", "PriceRanges", "Departments", "Categories", "SITE ANTIGO"];
 
   const translations: Record<string, string> = {
     "Categories": "Categorias",
