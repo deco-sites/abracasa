@@ -68,6 +68,7 @@ export default function Benefits(
             height={36}
             strokeWidth={0.01}
             fill="currentColor"
+            loading="lazy"
           />
         </div>
         <div class="flex-auto flex flex-col gap-1 lg:gap-2 font-sans">

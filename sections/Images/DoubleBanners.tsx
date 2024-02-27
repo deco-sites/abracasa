@@ -35,6 +35,7 @@ export default function DoubleBanners({ images, preload }: Props) {
             height={item.height || 560}
             alt={item.alt}
             loading={preload ? "eager" : "lazy"}
+            decoding={preload ? "auto" : "async"}
           />
         </a>
       ))}
