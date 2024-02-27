@@ -5,11 +5,6 @@ export {
 
 export function LoadingFallback() {
   return (
-    <div
-      style={{ height: "710px" }}
-      class="w-full flex justify-center items-center"
-    >
-      <span class="loading loading-spinner" />
-    </div>
+    <div class="w-[90vw] sm:w-[40vw] h-[375px] sm:h-[645px] skeleton flex justify-center items-center mt-8" />
   );
 }

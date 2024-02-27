@@ -40,6 +40,7 @@ export default function Similars({ relatedProducts }: Props) {
                 href={product.url && relative(product.url)}
                 aria-label="view product"
                 class="grid grid-cols-1 grid-rows-1 w-full"
+                rel="prefetch"
               >
                 <Image
                   src={product?.image?.[0]?.url ?? ""}
