@@ -112,7 +112,16 @@ function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
                 <span>favoritos</span>
               </a>
 
-              <LoginElement />
+              <div class="inline-flex items-center gap-1 group text-xs">
+                <img
+                  src={asset("/image/user.svg")}
+                  width={32}
+                  height={32}
+                  alt="User icon"
+                  class="group-hover:text-firebrick"
+                />
+                <LoginElement />
+              </div>
 
               {platform === "vtex" && <CartButtonVTEX />}
             </div>

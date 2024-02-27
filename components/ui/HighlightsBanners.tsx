@@ -112,6 +112,8 @@ export default function CategoryList({ title, cards, interval }: Props) {
                     width={500}
                     height={640}
                     loading="lazy"
+                    decoding="async"
+                    preload={false}
                   />
                 </a>
 
