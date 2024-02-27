@@ -5,6 +5,6 @@ export {
 
 export function LoadingFallback() {
   return (
-    <div class="w-full lg:w-[800px] lg:h-[645px] skeleton flex justify-center items-center mt-8" />
+    <div class="w-[90vw] sm:w-[40vw] h-[375px] sm:h-[645px] skeleton flex justify-center items-center mt-8" />
   );
 }
