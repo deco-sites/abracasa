@@ -63,8 +63,13 @@ export default function Similars({ relatedProducts }: Props) {
             </Slider.PrevButton>
           </div>
           <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
-            <Slider.NextButton class="absolute left-[80%] rotate-180 disabled:opacity-50">
-              <Icon size={20} id="ChevronLeft" strokeWidth={3} />
+            <Slider.NextButton class="absolute left-[80%] disabled:opacity-50">
+              <Icon
+                size={20}
+                id="ChevronLeft"
+                strokeWidth={3}
+                class="rotate-180"
+              />
             </Slider.NextButton>
           </div>
         </>

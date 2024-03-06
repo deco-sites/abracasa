@@ -57,9 +57,9 @@ function Buttons() {
   return (
     <>
       <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
-        <Slider.PrevButton class="btn btn-circle glass rotate-180">
+        <Slider.PrevButton class="btn btn-circle glass">
           <Icon
-            class="text-base-100"
+            class="text-base-100 rotate-180"
             size={24}
             id="ChevronRight"
             strokeWidth={3}
