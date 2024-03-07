@@ -24,6 +24,7 @@ export interface Props {
     | "md:flex-col"
     | "md:flex-row-reverse"
     | "md:flex-col-reverse";
+  removePaddingBottom?: boolean;
 }
 
 export default function ImageAndText({
@@ -34,11 +35,14 @@ export default function ImageAndText({
   backgroundColor,
   mobileDevicePosition = "flex-col",
   mediaDevicePosition = "md:flex-row",
+  removePaddingBottom,
 }: Props) {
   return (
     <div
       style={{ backgroundColor: backgroundColor }}
-      class={`${mobileDevicePosition} ${mediaDevicePosition} flex py-12 lg:py-16 gap-6 w-full h-full justify-between items-center`}
+      class={`${mobileDevicePosition} ${mediaDevicePosition} ${
+        removePaddingBottom ? "pt-12" : "py-12"
+      } flex lg:py-16 gap-6 w-full h-full justify-between items-center`}
     >
       <div class="flex flex-col gap-8 w-full md:max-w-[300px] mx-auto px-4 lg:px-0">
         <div class="flex flex-col gap-4 w-full">

@@ -8,10 +8,12 @@ export interface Props {
   preload?: boolean;
   autoplay?: boolean;
   muted?: boolean;
+  controls?: boolean;
 }
 
 export default function Video(
-  { video, width, height, preload, autoplay, muted = false }: Props,
+  { video, width, height, preload, autoplay, muted = false, controls = false }:
+    Props,
 ) {
   if (!video) return null;
 
@@ -23,6 +25,7 @@ export default function Video(
       forceOptimizedSrc={preload}
       autoPlay={autoplay}
       muted={muted}
+      controls={controls}
       class="w-full h-full object-cover"
     />
   );
