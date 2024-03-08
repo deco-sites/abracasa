@@ -42,7 +42,7 @@ export default function ImageAndText({
       style={{ backgroundColor: backgroundColor }}
       class={`${mobileDevicePosition} ${mediaDevicePosition} ${
         removePaddingBottom ? "pt-12" : "py-12"
-      } flex lg:py-16 gap-6 w-full h-full justify-between items-center`}
+      } flex lg:py-16 gap-12 lg:gap-6 w-full h-full justify-between items-center`}
     >
       <div class="flex flex-col gap-8 w-full md:max-w-[300px] mx-auto px-4 lg:px-0">
         <div class="flex flex-col gap-4 w-full">
