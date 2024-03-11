@@ -9,14 +9,24 @@ export interface Props {
   autoplay?: boolean;
   muted?: boolean;
   controls?: boolean;
+  /**
+   * @default true
+   */
+  loop?: boolean;
 }
 
 export default function Video(
-  { video, width, height, preload, autoplay, muted = false, controls = false }:
-    Props,
+  {
+    video,
+    width,
+    height,
+    preload,
+    autoplay,
+    muted = false,
+    controls = false,
+    loop = true,
+  }: Props,
 ) {
-  if (!video) return null;
-
   return (
     <VideoComponent
       src={video}
@@ -26,6 +36,7 @@ export default function Video(
       autoPlay={autoplay}
       muted={muted}
       controls={controls}
+      loop={loop}
       class="w-full h-full object-cover"
     />
   );
