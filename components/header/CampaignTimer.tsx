@@ -53,6 +53,7 @@ export interface Props {
   textHex?: string;
   hiddenCampaignTimer?: boolean;
   hiddenNumbers?: boolean;
+  hiddenDays?: boolean;
 }
 
 const snippet = (expiresAt: string, rootId: string) => {
@@ -112,8 +113,18 @@ function CampaignTimer({
   textHex,
   backgroundHex,
   hiddenNumbers,
+  hiddenDays = false,
 }: Props) {
   const id = useId();
+
+  if (expiresAt) {
+    const date = new Date();
+    const expiredDate = new Date(expiresAt);
+
+    if (expiredDate < date) {
+      return null;
+    }
+  }
 
   return (
     <>
@@ -184,17 +195,21 @@ function CampaignTimer({
 
                   <div id={`${id}::counter`}>
                     <div class="flex sm:grid sm:grid-flow-col gap-2 text-center sm:auto-cols-max items-center font-bold uppercase px-2 sm:px-0">
-                      <div class="hidden lg:flex flex-col items-center justify-center text-center">
-                        <span class="countdown text-sm sm:text-xl md:text-3xl">
-                          <span id={`${id}::days`} />
-                        </span>
-                        <span class="text-[8px] sm:text-[10px]">
-                          {labels?.days || "Dias"}
-                        </span>
-                      </div>
-                      <div class="hidden lg:flex">
-                        :
-                      </div>
+                      {!hiddenDays && (
+                        <>
+                          <div class="hidden lg:flex flex-col items-center justify-center text-center">
+                            <span class="countdown text-sm sm:text-xl md:text-3xl">
+                              <span id={`${id}::days`} />
+                            </span>
+                            <span class="text-[8px] sm:text-[10px]">
+                              {labels?.days || "Dias"}
+                            </span>
+                          </div>
+                          <div class="hidden lg:flex">
+                            :
+                          </div>
+                        </>
+                      )}
                       <div class="flex flex-col items-center justify-center text-center">
                         <span class="countdown text-sm sm:text-xl md:text-3xl">
                           <span id={`${id}::hours`} />
