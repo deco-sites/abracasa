@@ -8,10 +8,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 export interface Banner {
   /** @description RegExp to enable this banner on the current URL. Use /feminino/* to display this banner on feminino category  */
   matcher: string;
-  /** @description text to be rendered on top of the image */
   title?: string;
-  /** @description text to be rendered on top of the image */
-  subtitle?: string;
   image: {
     /** @description Image for big screens */
     desktop: ImageWidget;
@@ -46,15 +43,17 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
     return null;
   }
 
-  const { title, subtitle, image } = banner;
+  const { title, image } = banner;
 
   return (
-    <div class="grid grid-cols-1 grid-rows-1 h-full overflow-y-hidden w-full">
-      <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
+    <div class="relative h-full overflow-y-hidden w-full">
+      <Picture
+        preload
+      >
         <Source
           src={image.mobile}
-          width={360}
-          height={120}
+          width={800}
+          height={400}
           media="(max-width: 767px)"
         />
         <Source
@@ -69,19 +68,6 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
           alt={image.alt ?? title}
         />
       </Picture>
-
-      <div class="container flex flex-col items-center justify-center sm:items-start col-start-1 col-span-1 row-start-1 row-span-1 w-full">
-        <h1>
-          <span class="text-5xl font-medium text-base-100">
-            {title}
-          </span>
-        </h1>
-        <h2>
-          <span class="text-xl font-medium text-base-100">
-            {subtitle}
-          </span>
-        </h2>
-      </div>
     </div>
   );
 }
