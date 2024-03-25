@@ -66,7 +66,7 @@ function SearchControls(
         </>
       }
     >
-      <div class="flex w-full sm:h-[95px] sm:border-b sm:border-base-200">
+      <div class="flex w-full sm:h-full sm:border-b sm:border-base-200">
         <div class="flex flex-col justify-between xl:container xl:max-w-[85%] h-full w-full p-4 mb-4 sm:flex-row sm:mb-0 sm:p-0 sm:gap-4">
           {/* Mobile Filters */}
           <div class="flex lg:hidden flex-row items-start justify-between border-b border-base-200 gap-4 sm:border-none pb-4 w-full">
@@ -132,7 +132,7 @@ function SearchControls(
               </button>
             </div>
 
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[315px]">
               <PromptDelivery />
 
               {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}

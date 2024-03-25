@@ -40,7 +40,7 @@ function FilterValues({ key, values }: FilterToggle) {
       {values.map((item) => {
         const { url, selected, value, quantity } = item;
 
-        if (key === "cor" || key === "tamanho") {
+        if (key === "tamanho") {
           return (
             <a href={url} rel="nofollow">
               <Avatar
@@ -70,8 +70,17 @@ function FilterValues({ key, values }: FilterToggle) {
 
 function Filters({ filters, isCategoriesFilterActive }: Props) {
   const excludedKeys = isCategoriesFilterActive
-    ? ["PriceRanges", "SITE ANTIGO"]
-    : ["Brands", "PriceRanges", "Departments", "Categories", "SITE ANTIGO"];
+    ? ["PriceRanges", "SITE ANTIGO", "produtossimilares", "price"]
+    : [
+      "Brands",
+      "PriceRanges",
+      "Departments",
+      "Categories",
+      "SITE ANTIGO",
+      "produtossimilares",
+      "price",
+      "brand",
+    ];
 
   const translations: Record<string, string> = {
     "Categories": "Categorias",
