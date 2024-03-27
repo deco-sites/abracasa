@@ -80,20 +80,9 @@ function ProductCard(
   const productGroupID = isVariantOf?.productGroupID;
   const description = product.description || isVariantOf?.description;
   const [front, back] = images ?? [];
-  const { listPrice, price, seller } = useOffer(offers);
+  const { listPrice, price, seller, installments } = useOffer(offers);
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
-
-  const {
-    billingDuration: installmentsBillingDuration,
-    billingIncrement: installmentsBillingIncrement,
-  } = (offers?.offers[0].priceSpecification || [])
-    .filter((item) => item.billingDuration !== undefined)
-    .sort((a, b) => (b.billingDuration || 0) - (a.billingDuration || 0))
-    .map(({ billingDuration, billingIncrement }) => ({
-      billingDuration,
-      billingIncrement,
-    }))[0] || {};
 
   const l = layout;
   const align =
@@ -339,13 +328,10 @@ function ProductCard(
                       {formatPrice(price, offers?.priceCurrency)}
                     </div>
                   </div>
-                  {l?.hide?.installments ? "" : (
-                    <Installments
-                      installmentsBillingDuration={installmentsBillingDuration ??
-                        0}
-                      installmentsBillingIncrement={installmentsBillingIncrement ??
-                        0}
-                    />
+                  {installments && (
+                    <p class="flex text-xs leading-[15px] text-black">
+                      {installments?.replace(".", ",")}
+                    </p>
                   )}
                 </div>
               )}
