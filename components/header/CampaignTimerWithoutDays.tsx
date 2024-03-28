@@ -2,8 +2,6 @@ import { useId } from "preact/hooks";
 import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 
-import CampaignTimerWithoutDays from "./CampaignTimerWithoutDays.tsx";
-
 export interface Props {
   image?: {
     /** @description desktop otimized image */
@@ -55,10 +53,6 @@ export interface Props {
   textHex?: string;
   hiddenCampaignTimer?: boolean;
   hiddenNumbers?: boolean;
-  /**
-   * @title Desativar Dias (Máximo: 99H. Desativar a opção caso hajam mais horas)
-   */
-  hiddenDays?: boolean;
 }
 
 const snippet = (expiresAt: string, rootId: string) => {
@@ -67,15 +61,13 @@ const snippet = (expiresAt: string, rootId: string) => {
   const getDelta = () => {
     const delta = expirationDate - new Date().getTime();
 
-    const days = Math.floor(delta / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
-      (delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+      delta / (1000 * 60 * 60),
     );
     const minutes = Math.floor((delta % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((delta % (1000 * 60)) / 1000);
 
     return {
-      days,
       hours,
       minutes,
       seconds,
@@ -91,7 +83,7 @@ const snippet = (expiresAt: string, rootId: string) => {
   };
 
   setInterval(() => {
-    const { days, hours, minutes, seconds } = getDelta();
+    const { hours, minutes, seconds } = getDelta();
     const isExpired = hours + minutes + seconds < 0;
 
     if (isExpired) {
@@ -101,7 +93,6 @@ const snippet = (expiresAt: string, rootId: string) => {
       expired?.classList.remove("hidden");
       counter?.classList.add("hidden");
     } else {
-      setValue(`${rootId}::days`, days);
       setValue(`${rootId}::hours`, hours);
       setValue(`${rootId}::minutes`, minutes);
       setValue(`${rootId}::seconds`, seconds);
@@ -118,33 +109,8 @@ function CampaignTimer({
   textHex,
   backgroundHex,
   hiddenNumbers,
-  hiddenDays = false,
 }: Props) {
   const id = useId();
-
-  if (expiresAt) {
-    const date = new Date();
-    const expiredDate = new Date(expiresAt);
-
-    if (expiredDate < date) {
-      return null;
-    }
-  }
-
-  if (hiddenDays) {
-    return (
-      <CampaignTimerWithoutDays
-        image={image}
-        expiresAt={expiresAt}
-        labels={labels}
-        text={text}
-        hiddenCampaignTimer={hiddenCampaignTimer}
-        textHex={textHex}
-        backgroundHex={backgroundHex}
-        hiddenNumbers={hiddenNumbers}
-      />
-    );
-  }
 
   return (
     <>
@@ -215,17 +181,6 @@ function CampaignTimer({
 
                   <div id={`${id}::counter`}>
                     <div class="flex sm:grid sm:grid-flow-col gap-2 text-center sm:auto-cols-max items-center font-bold uppercase px-2 sm:px-0">
-                      <div class="hidden lg:flex flex-col items-center justify-center text-center">
-                        <span class="countdown text-sm sm:text-xl md:text-3xl">
-                          <span id={`${id}::days`} />
-                        </span>
-                        <span class="text-[8px] sm:text-[10px]">
-                          {labels?.days || "Dias"}
-                        </span>
-                      </div>
-                      <div class="hidden lg:flex">
-                        :
-                      </div>
                       <div class="flex flex-col items-center justify-center text-center">
                         <span class="countdown text-sm sm:text-xl md:text-3xl">
                           <span id={`${id}::hours`} />
