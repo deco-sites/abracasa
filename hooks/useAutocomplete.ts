@@ -40,7 +40,7 @@ const setSearch = debounce(async (search: string) => {
   } finally {
     loading.value = false;
   }
-}, 250);
+}, 150);
 
 const state = {
   setSearch: (s: string) => {
