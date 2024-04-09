@@ -122,15 +122,6 @@ function CampaignTimer({
 }: Props) {
   const id = useId();
 
-  if (expiresAt) {
-    const date = new Date();
-    const expiredDate = new Date(expiresAt);
-
-    if (expiredDate < date) {
-      return null;
-    }
-  }
-
   if (hiddenDays) {
     return (
       <CampaignTimerWithoutDays

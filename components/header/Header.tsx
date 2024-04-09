@@ -44,7 +44,12 @@ function Header({
     campaignTimer &&
     campaignTimer.text !== undefined &&
     campaignTimer.image !== undefined &&
-    !campaignTimer.hiddenCampaignTimer
+    !campaignTimer.hiddenCampaignTimer &&
+    (
+      (campaignTimer.expiresAt &&
+        new Date(campaignTimer.expiresAt) > new Date()) ||
+      !campaignTimer.expiresAt
+    )
   );
 
   return (
