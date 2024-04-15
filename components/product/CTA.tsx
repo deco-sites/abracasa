@@ -51,7 +51,7 @@ export default function CTA(
     <>
       <div
         id="cta-content"
-        class="invisible opacity-0 z-40 p-2 w-full h-[78px] sm:h-auto lg:h-[100px] fixed bottom-0 left-0 bg-base-100 shadow-2xl border-t border-solid border-[#d9d9d9] transition-all ease-in duration-300"
+        class="invisible opacity-0 z-40 px-3 py-2 w-full h-auto lg:h-[100px] fixed bottom-0 left-0 bg-base-100 shadow-2xl border-t border-solid border-[#d9d9d9] transition-all ease-in duration-300"
       >
         <div class="flex items-center justify-between lg:max-w-[90%] xl:max-w-[80%] mx-auto gap-4">
           <aside class="flex items-center gap-6 lg:gap-8">
