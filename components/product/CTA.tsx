@@ -70,19 +70,19 @@ export default function CTA(
               {name}
             </span>
 
-            <div class="flex flex-col md:flex-row md:items-end md:gap-3">
+            <div class="flex flex-col md:flex-row md:items-end md:gap-3 max-h-[56.15px] sm:max-h-none">
               <div class="flex flex-col">
                 {(listPrice ?? 0) > (price ?? 0) && (
                   <span class="line-through text-xs leading-4">
                     {formatPrice(listPrice, priceCurrency)}
                   </span>
                 )}
-                <span class="font-bold text-[22px] leading-[30px] text-[#212121]">
+                <span class="font-bold text-[22px] leading-[30px] text-[#212121] my-[-3px] md:my-0">
                   {formatPrice(price, priceCurrency)}
                 </span>
               </div>
 
-              <p class="text-xs md:text-[18px] leading-[25px] text-black md:font-normal">
+              <p class="text-xs md:text-[18px] leading-[25px] text-black font-normal mt-[-3px] md:mt-0">
                 <span class="block md:hidden">
                   {installments?.replace("sem juros", "")?.replace(".", ",")
                     ?.replace("de", "")}
