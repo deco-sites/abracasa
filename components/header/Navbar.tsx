@@ -33,20 +33,39 @@ function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
             class="lg:hidden flex flex-row justify-between items-center border-b border-base-200 w-full px-4 gap-2 h-[105px]"
           >
             {logo && (
-              <a
-                id="mobile-navbar-anchor"
-                href="/"
-                class="inline-flex max-h-[80px] max-w-[80px] w-full h-full py-0.5"
-                aria-label="Store logo"
-              >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={80}
-                  height={16}
-                  class="w-full h-full object-cover"
-                />
-              </a>
+              <>
+                <a
+                  id="mobile-navbar-anchor"
+                  href="/"
+                  class="inline-flex max-h-[80px] max-w-[80px] w-full h-full py-0.5"
+                  aria-label="Store logo"
+                >
+                  <Image
+                    id="mobile-navbar-image"
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={80}
+                    height={16}
+                    class="w-full h-full object-cover"
+                  />
+                </a>
+
+                <a
+                  id="mobile-navbar-anchor-minimized"
+                  href="/"
+                  class="hidden max-h-[40px] max-w-[40px] w-full h-full py-0.5"
+                  aria-label="Store minimized logo"
+                >
+                  <img
+                    src="/image/minimized-icon.jpg"
+                    alt="Logo Abracasa Minificada"
+                    width={40}
+                    height={40}
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </a>
+              </>
             )}
 
             <SearchButton />
@@ -137,7 +156,6 @@ function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
       <Subnavbar
         items={items}
         searchbar={searchbar}
-        logo={logo}
         device={device}
       />
     </>

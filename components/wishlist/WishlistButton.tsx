@@ -39,7 +39,7 @@ function WishlistButton({
         e.preventDefault();
 
         if (!isUserLoggedIn) {
-          window.alert(
+          globalThis.alert(
             "Por favor, entre em sua conta para adicionar produtos à sua lista de desejos.",
           );
 
