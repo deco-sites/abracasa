@@ -17,11 +17,11 @@ export type Props =
   };
 
 const applySort = (format: string) => {
-  const urlSearchParams = new URLSearchParams(window.location.search);
+  const urlSearchParams = new URLSearchParams(globalThis.location.search);
 
   urlSearchParams.set("layout", format);
 
-  window.location.search = urlSearchParams.toString();
+  globalThis.location.search = urlSearchParams.toString();
 };
 
 function SearchControls(
@@ -31,11 +31,11 @@ function SearchControls(
   const open = useSignal(false);
 
   const removeSort = () => {
-    const currentUrl = new URL(window?.location?.href);
+    const currentUrl = new URL(globalThis?.location?.href);
 
     currentUrl.search = "";
 
-    window.location.href = currentUrl.toString();
+    globalThis.location.href = currentUrl.toString();
   };
 
   return (
