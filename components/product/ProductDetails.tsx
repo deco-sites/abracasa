@@ -7,6 +7,7 @@ import { Device } from "apps/website/matchers/device.ts";
 import { Secret } from "apps/website/loaders/secret.ts";
 import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
+import PersonalShopper from "../ui/PersonalShopper.tsx";
 
 export interface Props {
   page: ProductDetailsPage | null;
@@ -414,6 +415,7 @@ export default function ProductDetails(
           </div>
         </div>
       )}
+      <PersonalShopper />
     </>
   );
 }
