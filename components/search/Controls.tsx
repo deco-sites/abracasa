@@ -16,15 +16,7 @@ export type Props =
     isCategoriesFilterActive?: boolean;
   };
 
-const applySort = (format: string) => {
-  const urlSearchParams = new URLSearchParams(globalThis.location.search);
-
-  urlSearchParams.set("layout", format);
-
-  globalThis.location.search = urlSearchParams.toString();
-};
-
-function SearchControls(
+export default function SearchControls(
   { filters, breadcrumb, displayFilter, sortOptions, isCategoriesFilterActive }:
     Props,
 ) {
@@ -90,28 +82,6 @@ function SearchControls(
 
             <div class="flex flex-col sm:flex-row gap-5">
               <PromptDelivery />
-
-              {
-                /* <div class="flex items-center justify-center gap-2">
-                <span class="text-normal leading-[22px] text-[#555]">
-                  Visualizar:
-                </span>
-
-                <button
-                  aria-label="trocar para visualização de uma coluna"
-                  onClick={() => applySort("1")}
-                >
-                  <Icon id="OneColumn" width={12} height={24} />
-                </button>
-
-                <button
-                  aria-label="trocar para visualização de duas colunas"
-                  onClick={() => applySort("2")}
-                >
-                  <Icon id="TwoColumns" width={24} height={24} />
-                </button>
-              </div> */
-              }
             </div>
           </div>
 
@@ -136,28 +106,6 @@ function SearchControls(
               <PromptDelivery />
 
               {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
-
-              {
-                /* <div class="flex items-center justify-center gap-2">
-                <span class="text-normal leading-[22px] text-[#555]">
-                  Visualizar:
-                </span>
-
-                <button
-                  aria-label="trocar para visualização de três colunas"
-                  onClick={() => applySort("3")}
-                >
-                  <Icon id="ThreeColumns" width={34} height={34} />
-                </button>
-
-                <button
-                  aria-label="trocar para visualização de quatro colunas"
-                  onClick={() => applySort("4")}
-                >
-                  <Icon id="FourthColumns" width={34} height={34} />
-                </button>
-              </div> */
-              }
             </div>
           </div>
         </div>
@@ -165,5 +113,3 @@ function SearchControls(
     </Drawer>
   );
 }
-
-export default SearchControls;

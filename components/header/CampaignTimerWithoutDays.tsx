@@ -100,7 +100,7 @@ const snippet = (expiresAt: string, rootId: string) => {
   }, 1000);
 };
 
-function CampaignTimer({
+function CampaignTimerWithoutDays({
   image,
   expiresAt = `${new Date()}`,
   labels,
@@ -228,4 +228,4 @@ function CampaignTimer({
   );
 }
 
-export default CampaignTimer;
+export default CampaignTimerWithoutDays;

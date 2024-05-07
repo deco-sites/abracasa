@@ -1,5 +1,3 @@
-import { asset } from "$fresh/runtime.ts";
-
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 export default function LoginElement() {

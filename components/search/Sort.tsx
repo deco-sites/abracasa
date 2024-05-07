@@ -6,16 +6,19 @@ const SORT_QUERY_PARAM = "O";
 
 const useSort = () =>
   useMemo(() => {
-    const urlSearchParams = new URLSearchParams(window.location?.search);
+    const urlSearchParams = new URLSearchParams(globalThis.location?.search);
     return urlSearchParams.get(SORT_QUERY_PARAM) ?? "";
   }, []);
 
 // TODO: Replace with "search utils"
 const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>) => {
-  const urlSearchParams = new URLSearchParams(window.location.search);
+  const urlSearchParams = new URLSearchParams(globalThis.location.search);
 
-  urlSearchParams.set(SORT_QUERY_PARAM, e.currentTarget.value);
-  window.location.search = urlSearchParams.toString();
+  const isCampaign = globalThis?.location?.href?.includes("campanha");
+  const sortValue = isCampaign ? "sort" : SORT_QUERY_PARAM;
+
+  urlSearchParams.set(sortValue, e.currentTarget.value);
+  globalThis.location.search = urlSearchParams.toString();
 };
 
 export type Props = Pick<ProductListingPage, "sortOptions">;
