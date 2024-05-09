@@ -33,7 +33,9 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
   }
 
   const {
-    page: { product: { image: images = [], additionalProperty = [] } },
+    page: {
+      product: { image: definitiveImages = [], additionalProperty = [] },
+    },
     layout: { width, height },
   } = props;
   const breadcrumb = {
@@ -41,6 +43,14 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
     itemListElement: props.page.breadcrumbList?.itemListElement.slice(0, -1),
     numberOfItems: props.page.breadcrumbList.numberOfItems - 1,
   };
+
+  const images = definitiveImages.filter((item) => item.name !== "medidas");
+
+  const index = images.findIndex((item) => item.name === "dois");
+
+  if (index !== -1) {
+    images.splice(1, 0, images.splice(index, 1)[0]);
+  }
 
   return (
     <>
