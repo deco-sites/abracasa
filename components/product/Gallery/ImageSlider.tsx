@@ -33,7 +33,9 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
   }
 
   const {
-    page: { product: { image: images = [], additionalProperty = [] } },
+    page: {
+      product: { image: images = [], additionalProperty = [] },
+    },
     layout: { width, height },
   } = props;
   const breadcrumb = {
