@@ -56,5 +56,7 @@ export default async function SellbieCashback(
     throw new Error("Unable to obtain auth token.");
   }
 
-  return await fetchCashback(token, cpf);
+  const cashback = await fetchCashback(token, cpf);
+
+  return cashback;
 }
