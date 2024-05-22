@@ -1,12 +1,13 @@
 import { formatPrice } from "deco-sites/abracasa/sdk/format.ts";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
+import { invoke } from "$store/runtime.ts";
+import { useSignal } from "@preact/signals";
+import { useEffect } from "preact/hooks";
+import type { Secret } from "apps/website/loaders/secret.ts";
 
-const cashbacks = {
-  Ativos: [
-    { "valor": 10, "DataFim": "2024-05-31T23:59:59" },
-    { "valor": 30, "DataFim": "2024-05-31T23:59:59" },
-    { "valor": 50, "DataFim": "2024-05-31T23:59:59" },
-  ],
-};
+export interface Props {
+  storeToken?: Secret;
+}
 
 function CashbackContent(
   { content, priceColor }: { content: string; priceColor: string },
@@ -15,13 +16,37 @@ function CashbackContent(
     <div class="flex flex-col gap-0.5 px-2 text-center">
       <span class="text-sm">{content}</span>
       <span class={`${priceColor} font-bold text-lg`}>
-        {formatPrice(cashbacks.Ativos[0].valor)}
+        {formatPrice(10)}
       </span>
     </div>
   );
 }
 
-function SellbieCashback() {
+function SellbieCashback({ storeToken }: Props) {
+  const { user } = useUser();
+  const cashback = useSignal(null);
+
+  if (!user || !user.value || !user.value.email) return null;
+
+  useEffect(() => {
+    async function getUserCashback() {
+      const cpf = await invoke["deco-sites/abracasa"].loaders.dataentities
+        ["get-personal-info"]({ email: user?.value?.email });
+
+      if (!cpf) return;
+
+      const cashbackValue = await invoke["deco-sites/abracasa"].loaders.sellbie
+        ["get-cashback"]({ storeToken, cpf });
+
+      if (cashbackValue) {
+        cashback.value = cashbackValue;
+        console.log(cashbackValue);
+      }
+    }
+
+    getUserCashback();
+  }, [user.value.email]);
+
   return (
     <div class="dropdown dropdown-hover">
       <div
