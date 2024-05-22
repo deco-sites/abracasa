@@ -5,6 +5,7 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import { useEffect, useState } from "preact/hooks";
 import NavItem from "./NavItem.tsx";
 import { Device } from "apps/website/matchers/device.ts";
+import SellbieCashback from "deco-sites/abracasa/components/ui/Cashback.tsx";
 
 export interface Props {
   items: SiteNavigationElement[];
@@ -97,6 +98,8 @@ export default function Subnavbar({ items, searchbar, device }: Props) {
                 <NavItem item={item} scrollingMode={true} />
               ))}
             </div>
+
+            <SellbieCashback />
 
             <div class="w-full lg:max-w-[500px]">
               <Searchbar searchbar={searchbar} />

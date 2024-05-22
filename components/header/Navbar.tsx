@@ -10,8 +10,8 @@ import { asset } from "$fresh/runtime.ts";
 import NavItem from "./NavItem.tsx";
 import Subnavbar from "$store/islands/Header/Subnavbar.tsx";
 import LoginElement from "$store/islands/LoginElement.tsx";
-import { navbarHeight } from "./constants.ts";
 import { Device } from "apps/website/matchers/device.ts";
+import SellbieCashback from "deco-sites/abracasa/components/ui/Cashback.tsx";
 
 function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
   items: SiteNavigationElement[];
@@ -69,6 +69,7 @@ function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
             )}
 
             <SearchButton />
+            <SellbieCashback />
             {platform === "vtex" && <CartButtonVTEX />}
             <MenuButton />
           </div>
@@ -130,6 +131,8 @@ function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
                 />
                 <span>favoritos</span>
               </a>
+
+              <SellbieCashback />
 
               <div class="inline-flex items-center gap-1 group text-xs">
                 <img
