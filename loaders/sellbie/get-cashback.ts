@@ -1,6 +1,13 @@
 import { AppContext } from "$store/apps/site.ts";
 import type { Secret } from "apps/website/loaders/secret.ts";
 
+export type CashbackAPIResponse = {
+  "resultado": {
+    "SaldoTotalDisponivel": number | null;
+    "SaldoTotalAcumulado": number | null;
+    "CashbackTotalPendente": number | null;
+  } | null;
+};
 export interface Props {
   storeToken: Secret;
   cpf: string;
@@ -38,7 +45,9 @@ async function fetchCashback(token: string, cpf: string) {
       throw new Error(`Failed to fetch cashback: ${response.statusText}`);
     }
 
-    return await response.json();
+    const cashback = await response.json() as CashbackAPIResponse;
+
+    return cashback;
   } catch (error) {
     console.error("Failed to fetch cashback:", error);
     throw error;

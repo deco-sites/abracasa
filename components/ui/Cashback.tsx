@@ -3,6 +3,7 @@ import { useUser } from "apps/vtex/hooks/useUser.ts";
 import { invoke } from "$store/runtime.ts";
 import { useSignal } from "@preact/signals";
 import { useEffect } from "preact/hooks";
+import type { CashbackAPIResponse } from "$store/loaders/sellbie/get-cashback.ts";
 import type { Secret } from "apps/website/loaders/secret.ts";
 
 export interface Props {
@@ -10,13 +11,17 @@ export interface Props {
 }
 
 function CashbackContent(
-  { content, priceColor }: { content: string; priceColor: string },
+  { content, priceColor, value }: {
+    content: string;
+    priceColor: string;
+    value: number;
+  },
 ) {
   return (
     <div class="flex flex-col gap-0.5 px-2 text-center">
       <span class="text-sm">{content}</span>
       <span class={`${priceColor} font-bold text-lg`}>
-        {formatPrice(10)}
+        {formatPrice(value)}
       </span>
     </div>
   );
@@ -24,7 +29,7 @@ function CashbackContent(
 
 function SellbieCashback({ storeToken }: Props) {
   const { user } = useUser();
-  const cashback = useSignal(null);
+  const cashback = useSignal<CashbackAPIResponse | null>(null);
 
   if (!user || !user.value || !user.value.email) return null;
 
@@ -65,10 +70,12 @@ function SellbieCashback({ storeToken }: Props) {
           <CashbackContent
             content="Cashback disponível"
             priceColor="text-emerald-400"
+            value={cashback.value?.resultado?.SaldoTotalDisponivel ?? 0}
           />
           <CashbackContent
             content="Cashback a expirar"
             priceColor="text-red-400"
+            value={cashback.value?.resultado?.CashbackTotalPendente ?? 0}
           />
         </div>
       </div>
