@@ -95,10 +95,10 @@ export function useStores(props: LiveProductProps): UseStoresResult {
     const filteredStores: StoreInfo[] = [];
 
     data.forEach((t) => {
-      t.data[0].rowData.forEach((y) => {
+      t.data?.[0]?.rowData.forEach((y) => {
         if (
-          y?.values[0]?.formattedValue &&
-          y?.values[0]?.formattedValue.toLowerCase().replace(" ", "") ===
+          y?.values?.[0]?.formattedValue &&
+          y?.values?.[0]?.formattedValue.toLowerCase().replace(" ", "") ===
             refId?.toLowerCase()
         ) {
           const storeInfo: StockItem = {

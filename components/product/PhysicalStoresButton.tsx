@@ -20,7 +20,7 @@ export default function PhysicalStoresButton({ refId }: Props) {
   let availablesStores: StoreInfo[] = [];
 
   if (IS_BROWSER) {
-    const { filteredStores } = useStores({ refId: String(refId) });
+    const { filteredStores } = useStores({ refId });
 
     if (filteredStores.length !== 0) {
       isActive = true;
