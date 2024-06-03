@@ -422,10 +422,13 @@ export default function ProductDetails(
 
 export const loader = async (props: Props, req: Request, ctx: FnContext) => {
   const skuId = props.page?.product.sku || props.page?.product.productID;
+  const isKit = props.page?.product?.additionalProperty?.find((item) =>
+    item.value == "Kit Quarto" || item.value == "Conjunto Mesa e Cadeira"
+  );
   const VTEXAPIAPPKEY = await props?.appKey?.get?.();
   const VTEXAPIAPPTOKEN = await props?.appToken?.get?.();
 
-  if (skuId && VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null) {
+  if (skuId && VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null && !isKit) {
     const data = await fetchSafe(
       `https://abracasa.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit/${skuId}`,
       {
