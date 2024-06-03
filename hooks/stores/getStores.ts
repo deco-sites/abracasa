@@ -1,5 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
-import storesHTML from "./storesHTML.ts";
+import storesJSON from "./storesData.ts";
 
 interface StockItem {
   properties: {
@@ -31,35 +31,8 @@ interface UseStoresResult {
   filteredStores: StoreInfo[];
 }
 
-function parseHTMLToStoreArray(html: string): StoreInfo[] {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(html, "text/html");
-  const lojas: StoreInfo[] = [];
-
-  const liElements = doc.querySelectorAll("li");
-
-  liElements.forEach((element) => {
-    const className = element.getAttribute("class") || "";
-    const title = element.querySelector("h4")?.textContent?.trim() || "";
-    const local =
-      element.querySelector("p:nth-of-type(1)")?.textContent?.trim() || "";
-    const phone =
-      element.querySelector("p:nth-of-type(2)")?.textContent?.trim() || "";
-
-    const links: string[] = [];
-    element.querySelectorAll("a").forEach((linkElement) => {
-      const href = linkElement.getAttribute("href") || "";
-      links.push(href);
-    });
-
-    lojas.push({ className, title, local, phone, links });
-  });
-
-  return lojas;
-}
-
 export function useStores(props: LiveProductProps): UseStoresResult {
-  const storeArray = parseHTMLToStoreArray(storesHTML);
+  const storeArray: StoreInfo[] = storesJSON;
   const [filteredStores, setFilteredStores] = useState<StoreInfo[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -68,7 +41,7 @@ export function useStores(props: LiveProductProps): UseStoresResult {
 
     async function fetchData() {
       const stockData = await getStockData();
-      getLojas(stockData, props.refId);
+      getStores(stockData, props.refId);
       setLoading(false);
     }
 
@@ -77,9 +50,8 @@ export function useStores(props: LiveProductProps): UseStoresResult {
 
   async function getStockData() {
     try {
-      const apiKey = "AIzaSyBrrO7AEU5h8FMdE2YipRZ9-8uTt-oZrXU";
       const url =
-        `https://sheets.googleapis.com/v4/spreadsheets/1MQJnfXASX3Ayw4EadYwQ8CVeGP88zQyhn65hm0QQC0I/?key=${apiKey}&includeGridData=true`;
+        `https://sheets.googleapis.com/v4/spreadsheets/1MQJnfXASX3Ayw4EadYwQ8CVeGP88zQyhn65hm0QQC0I?fields=sheets(properties(title),data.rowData.values.formattedValue)&key=AIzaSyBrrO7AEU5h8FMdE2YipRZ9-8uTt-oZrXU`;
 
       const response = await fetch(url);
       const data: StockData = await response.json();
@@ -90,7 +62,7 @@ export function useStores(props: LiveProductProps): UseStoresResult {
     }
   }
 
-  function getLojas(data: StockItem[], refId: string) {
+  function getStores(data: StockItem[], refId: string) {
     const stores: StockItem[] = [];
     const filteredStores: StoreInfo[] = [];
 
