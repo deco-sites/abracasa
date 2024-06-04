@@ -10,16 +10,20 @@ import { asset } from "$fresh/runtime.ts";
 import NavItem from "./NavItem.tsx";
 import Subnavbar from "$store/islands/Header/Subnavbar.tsx";
 import LoginElement from "$store/islands/LoginElement.tsx";
-import { navbarHeight } from "./constants.ts";
 import { Device } from "apps/website/matchers/device.ts";
+import SellbieCashback from "$store/islands/Cashback.tsx";
+import type { Secret } from "apps/website/loaders/secret.ts";
 
-function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
-  items: SiteNavigationElement[];
-  searchbar?: SearchbarProps;
-  logo?: { src: string; alt: string };
-  hasCampaignTimer?: boolean;
-  device: Device;
-}) {
+function Navbar(
+  { items, searchbar, logo, hasCampaignTimer, device, storeToken }: {
+    items: SiteNavigationElement[];
+    searchbar?: SearchbarProps;
+    logo?: { src: string; alt: string };
+    hasCampaignTimer?: boolean;
+    device: Device;
+    storeToken?: Secret;
+  },
+) {
   const platform = usePlatform();
   const isDesktop = device === "desktop";
 
@@ -69,6 +73,7 @@ function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
             )}
 
             <SearchButton />
+            <SellbieCashback storeToken={storeToken} />
             {platform === "vtex" && <CartButtonVTEX />}
             <MenuButton />
           </div>
@@ -131,6 +136,8 @@ function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
                 <span>favoritos</span>
               </a>
 
+              <SellbieCashback storeToken={storeToken} />
+
               <div class="inline-flex items-center gap-1 group text-xs">
                 <img
                   src={asset("/image/user.svg")}
@@ -157,6 +164,7 @@ function Navbar({ items, searchbar, logo, hasCampaignTimer, device }: {
         items={items}
         searchbar={searchbar}
         device={device}
+        storeToken={storeToken}
       />
     </>
   );
