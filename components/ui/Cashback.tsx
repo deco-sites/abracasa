@@ -65,7 +65,10 @@ function SellbieCashback({ storeToken }: Props) {
       if (!cpf) return;
 
       const cashbackValue = await invoke["deco-sites/abracasa"].loaders.sellbie
-        ["get-cashback"]({ storeToken, cpf });
+        ["get-cashback"]({
+          storeToken,
+          cpf: cpf?.replaceAll(".", "")?.replace("-", ""),
+        });
 
       if (cashbackValue) {
         cashback.value = cashbackValue;

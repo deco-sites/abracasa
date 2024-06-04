@@ -31,5 +31,5 @@ export default async function getPersonalInfo(
     requestOptions,
   ).then((res) => res.json()) as APIResponse;
 
-  return response[0].document;
+  return response?.[0]?.document;
 }
