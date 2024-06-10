@@ -4,7 +4,7 @@ export default function Viewer() {
       const skuId = document.getElementById("referenceId")?.innerText?.replace(
         "ID: ",
         "",
-      ).toLocaleLowerCase();
+      ).toLocaleUpperCase();
 
       if (!skuId) return;
 
