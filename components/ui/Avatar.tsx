@@ -42,7 +42,7 @@ function Avatar({ content, variant = "default" }: Props) {
           variants[variant]
         }`}
       >
-        <span class="lowercase">
+        <span class="lowercase truncate">
           {colors[content] ? "" : content}
         </span>
       </div>

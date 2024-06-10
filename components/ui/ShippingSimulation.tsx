@@ -83,7 +83,7 @@ function ShippingSimulation({ items }: Props) {
     } finally {
       loading.value = false;
     }
-  }, []);
+  }, [items, postalCode.value]);
 
   return (
     <div class="flex flex-col gap-2">

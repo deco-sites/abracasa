@@ -27,7 +27,7 @@ function VariantSelector({ product }: Props) {
       {sortedPossibilities.map(([name, values]) => (
         <li className="flex flex-col gap-2" key={name}>
           <span className="text-sm">{name}</span>
-          <ul className="grid grid-cols-3 gap-x-1.5 gap-y-3">
+          <ul className="grid grid-cols-3 items-center gap-x-1.5 gap-y-3">
             {Object.entries(values).map(([value, link]) => (
               <li key={value}>
                 <button f-partial={link} f-client-nav>
