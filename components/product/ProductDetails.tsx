@@ -68,7 +68,7 @@ export default function ProductDetails(
 
   const additionalInfos =
     isVariantOf?.additionalProperty?.filter((item) =>
-      item?.name !== "ProdutosSimilares"
+      item.name !== "ProdutosSimilares" && item.name !== "sellerId"
     ) ?? [];
 
   const measurementImage = images?.find((item) => item.name === "medidas");
