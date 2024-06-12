@@ -45,7 +45,7 @@ function CashbackContent(
     <div class="flex flex-col gap-0.5 px-2 text-center">
       <span class="text-sm">{content}</span>
       <span class={`${priceColor} font-bold text-lg`}>
-        {formatPrice(value)}
+        {value === 0 ? "R$ 0,00" : formatPrice(value)}
       </span>
     </div>
   );
