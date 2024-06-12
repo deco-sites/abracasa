@@ -27,7 +27,7 @@ export default async function getPersonalInfo(
   };
 
   const response = await fetch(
-    `https://abracasa.vtexcommercestable.com.br/api/dataentities/CL/search?_where=email=${email}&_fields=document`,
+    `https://novaabracasa.vtexcommercestable.com.br/api/dataentities/CL/search?email=${email}&_fields=document`,
     requestOptions,
   ).then((res) => res.json()) as APIResponse;
 
