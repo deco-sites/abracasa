@@ -51,7 +51,7 @@ function CashbackContent(
   );
 }
 
-function SellbieCashback({ storeToken }: Props) {
+function SellbieCashback() {
   const { user } = useUser();
   const cashback = useSignal<CashbackAPIResponse | null>(null);
 
@@ -66,7 +66,6 @@ function SellbieCashback({ storeToken }: Props) {
 
       const cashbackValue = await invoke["deco-sites/abracasa"].loaders.sellbie
         ["get-cashback"]({
-          storeToken,
           cpf: cpf?.replaceAll(".", "")?.replace("-", ""),
         });
 

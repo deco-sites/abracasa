@@ -1,9 +1,3 @@
-import type { Secret } from "apps/website/loaders/secret.ts";
-
-export interface Props {
-  storeToken: Secret;
-}
-
 export type APIResponse = {
   sucesso: boolean;
   resultado: {
@@ -14,16 +8,9 @@ export type APIResponse = {
   };
 };
 
-export default async function AuthorizationToken(
-  { storeToken }: Props,
-): Promise<APIResponse | null> {
-  const token = storeToken?.get?.();
-
-  if (!token) {
-    console.error("No store token provided.");
-    return null;
-  }
-
+export default async function AuthorizationToken(): Promise<
+  APIResponse | null
+> {
   try {
     const response = await fetch("https://motor.sellbie.com.br/api/Auth", {
       method: "POST",

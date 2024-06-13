@@ -14,13 +14,13 @@ export interface Props {
 }
 
 async function fetchAuthToken(
-  storeToken: Secret,
   ctx: AppContext,
 ): Promise<string | null> {
   try {
     const response = await ctx.invoke["deco-sites/abracasa"].loaders.sellbie
-      ["get-auth-token"]({ storeToken });
-    return response?.resultado.accessToken || null;
+      ["get-auth-token"]();
+    console.log(response);
+    return response?.resultado?.accessToken || null;
   } catch (error) {
     console.error("Failed to fetch auth token:", error);
     return null;
@@ -55,11 +55,11 @@ async function fetchCashback(token: string, cpf: string) {
 }
 
 export default async function SellbieCashback(
-  { storeToken, cpf }: Props,
+  { cpf }: Props,
   _req: Request,
   ctx: AppContext,
 ) {
-  const token = await fetchAuthToken(storeToken, ctx);
+  const token = await fetchAuthToken(ctx);
 
   if (!token) {
     throw new Error("Unable to obtain auth token.");

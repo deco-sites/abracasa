@@ -1,8 +1,7 @@
 import Component from "$store/components/ui/Cashback.tsx";
-import type { Props } from "$store/components/ui/Cashback.tsx";
 
-function Island(props: Props) {
-  return <Component {...props} />;
+function Island() {
+  return <Component />;
 }
 
 export default Island;
