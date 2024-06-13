@@ -34,7 +34,6 @@ function Cart({
   loading,
   currency,
   discounts,
-  freeShippingTarget,
   checkoutHref,
   itemToAnalyticsItem,
   onUpdateQuantity,

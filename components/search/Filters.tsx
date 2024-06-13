@@ -18,7 +18,7 @@ const isToggle = (filter: Filter): filter is FilterToggle =>
   filter["@type"] === "FilterToggle";
 
 function ValueItem(
-  { url, selected, label, quantity }: FilterToggleValue,
+  { url, selected, label }: FilterToggleValue,
 ) {
   return (
     <a href={url} rel="nofollow" class="flex items-center gap-2">
@@ -38,7 +38,7 @@ function FilterValues({ key, values }: FilterToggle) {
       class={`flex flex-wrap flex-col dropdown-content z-[999999] py-6 px-3 shadow bg-base-100 rounded-none gap-2 min-w-[35vw] overflow-auto w-full h-[280px] !left-0 border-y border-solid border-[#d9d9d9]`}
     >
       {values.map((item) => {
-        const { url, selected, value, quantity } = item;
+        const { url, selected, value } = item;
 
         if (key === "tamanho") {
           return (

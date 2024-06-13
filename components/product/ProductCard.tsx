@@ -9,7 +9,6 @@ import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
-import Installments from "./Installments.tsx";
 import AddToCartButton from "$store/islands/Shelf/AddToCartButton.tsx";
 
 export interface Layout {

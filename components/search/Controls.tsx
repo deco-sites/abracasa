@@ -17,8 +17,7 @@ export type Props =
   };
 
 export default function SearchControls(
-  { filters, breadcrumb, displayFilter, sortOptions, isCategoriesFilterActive }:
-    Props,
+  { filters, displayFilter, sortOptions, isCategoriesFilterActive }: Props,
 ) {
   const open = useSignal(false);
 

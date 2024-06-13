@@ -21,38 +21,6 @@ export interface Props {
   }>;
 }
 
-function Dots({ cards, interval = 0 }: Pick<Props, "interval" | "cards">) {
-  return (
-    <>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-            @property --dot-progress {
-              syntax: '<percentage>';
-              inherits: false;
-              initial-value: 0%;
-            }
-            `,
-        }}
-      />
-      <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4 translate-y-16">
-        {cards?.map((_, index) => (
-          <li class="carousel-item">
-            <Slider.Dot index={index}>
-              <div class="py-5">
-                <div
-                  class="w-[60px] sm:w-[100px] h-1 group-disabled:animate-progress bg-gradient-to-r from-firebrick from-[length:var(--dot-progress)] to-[#f2f2f2] to-[length:var(--dot-progress)]"
-                  style={{ animationDuration: `${interval}s` }}
-                />
-              </div>
-            </Slider.Dot>
-          </li>
-        ))}
-      </ul>
-    </>
-  );
-}
-
 function Buttons() {
   return (
     <>

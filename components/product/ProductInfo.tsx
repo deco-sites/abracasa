@@ -1,6 +1,4 @@
 import { SendEventOnView } from "$store/components/Analytics.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
-import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
@@ -12,7 +10,6 @@ import { Product, ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
 import ShareButton from "./ShareButton.tsx";
-import SellerButton from "./SellerButton.tsx";
 import Similars from "./Similars.tsx";
 import ReviewsScript from "./ReviewsScript.tsx";
 import QuickReview from "./QuickReview.tsx";

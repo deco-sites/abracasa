@@ -1,5 +1,4 @@
-import { AppContext } from "apps/vtex/mod.ts";
-import { parseCookie } from "apps/vtex/utils/vtexId.ts";
+import { getCookies } from "std/http/mod.ts";
 
 export interface Props {
   email: string;
@@ -12,17 +11,17 @@ export type APIResponse = [
 export default async function getPersonalInfo(
   props: Props,
   req: Request,
-  ctx: AppContext,
 ): Promise<string | null> {
   const { email } = props;
-  const { cookie } = parseCookie(req.headers, ctx.account);
+  const cookies = getCookies(req.headers);
+  const cookie = cookies["VtexIdclientAutCookie_novaabracasa"];
 
   const requestOptions = {
     method: "GET",
     headers: {
       "Accept": "application/vnd.vtex.ds.v10+json",
       "Content-Type": "application/json",
-      cookie,
+      "VtexIdclientAutCookie": cookie,
     },
   };
 

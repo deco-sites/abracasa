@@ -9,7 +9,7 @@ export interface Props {
   }[];
 }
 
-export default function OurStores({ title, cards }: Props) {
+export default function OurStores({ cards }: Props) {
   return (
     <div class="max-w-[1190px] w-full h-full flex flex-col items-start mx-auto my-10 lg:my-16 px-8 lg:px-0">
       <div class="flex flex-col items-start gap-4 justify-start w-full h-full">

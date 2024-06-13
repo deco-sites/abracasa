@@ -18,7 +18,7 @@ const isToggle = (filter: Filter): filter is FilterToggle =>
   filter["@type"] === "FilterToggle";
 
 function ValueItem(
-  { url, selected, label, quantity }: FilterToggleValue,
+  { url, selected, label }: FilterToggleValue,
 ) {
   return (
     <a href={url} rel="nofollow" class="flex items-center gap-2 px-4">
@@ -33,7 +33,7 @@ function FilterValues({ key, values }: FilterToggle) {
   return (
     <ul class="flex flex-wrap gap-6 flex-col">
       {values.map((item) => {
-        const { url, selected, value, quantity } = item;
+        const { url, selected, value } = item;
 
         if (key === "cor" || key === "tamanho") {
           return (

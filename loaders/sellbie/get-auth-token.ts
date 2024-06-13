@@ -27,7 +27,7 @@ export default async function AuthorizationToken(
   try {
     const response = await fetch("https://motor.sellbie.com.br/api/Auth", {
       method: "POST",
-      body: JSON.stringify({ token }),
+      body: JSON.stringify({ token: "AV5LWI1P9GR" }),
       headers: {
         "Content-Type": "application/json",
       },
