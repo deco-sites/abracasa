@@ -1,5 +1,4 @@
 import { AppContext } from "$store/apps/site.ts";
-import type { Secret } from "apps/website/loaders/secret.ts";
 
 export type CashbackAPIResponse = {
   "resultado": {
@@ -8,8 +7,8 @@ export type CashbackAPIResponse = {
     "CashbackTotalPendente": number | null;
   } | null;
 };
+
 export interface Props {
-  storeToken: Secret;
   cpf: string;
 }
 

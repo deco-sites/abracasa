@@ -6,7 +6,7 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
-import { Product, ProductDetailsPage } from "apps/commerce/types.ts";
+import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
 import ShareButton from "./ShareButton.tsx";
@@ -19,7 +19,6 @@ import PhysicalStoresButton from "$store/islands/PhysicalStoresButton.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
-  relatedProducts: Product[] | null;
   layout: {
     /**
      * @title Product Name
@@ -30,7 +29,7 @@ interface Props {
   };
 }
 
-function ProductInfo({ page, relatedProducts, layout }: Props) {
+function ProductInfo({ page, layout }: Props) {
   const platform = usePlatform();
   const id = useId();
 
@@ -74,7 +73,8 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
 
   const referenceId = additionalProperty.find((item) => item.name === "RefId")
     ?.value;
-  const similarsColorsLength = (relatedProducts && relatedProducts.length) ?? 0;
+  const similarsColorsLength =
+    (page.product.isSimilarTo && page.product.isSimilarTo.length) ?? 0;
   const discountValue = Math.ceil(listPrice! - price!);
   const discountPercentage = Math.round((discountValue * 100) / listPrice!);
   const hasPromptDeliveryFlag = additionalProperty.find((item) =>
@@ -229,9 +229,9 @@ function ProductInfo({ page, relatedProducts, layout }: Props) {
         )}
       </div>
 
-      {relatedProducts && relatedProducts.length > 0 && (
+      {page.product.isSimilarTo && page.product.isSimilarTo.length > 0 && (
         <div class="mt-6">
-          <Similars relatedProducts={relatedProducts} />
+          <Similars relatedProducts={page.product.isSimilarTo} />
         </div>
       )}
 
