@@ -14,7 +14,7 @@ export default function PersonalShopper() {
       <script
         type="module"
         id="pa-widget-script"
-        src="https://cdn-personalshopper.nizza.com/widget-script/prod/pa-ws-index.js?account=abracasa"
+        src="https://cdn-personalshopper.nizza.com/widget-script/prod/pa-ws-index.js?account=novaabracasa"
       />
 
       <pa-widget-legacy></pa-widget-legacy>

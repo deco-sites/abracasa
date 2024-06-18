@@ -16,6 +16,7 @@ import QuickReview from "./QuickReview.tsx";
 import AugmentedReality from "./AugmentedReality.tsx";
 import CTA from "./CTA.tsx";
 import PhysicalStoresButton from "$store/islands/PhysicalStoresButton.tsx";
+import PersonalShopper from "deco-sites/abracasa/components/ui/PersonalShopper.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -228,6 +229,8 @@ function ProductInfo({ page, layout }: Props) {
           <PhysicalStoresButton refId={isVariantOf.model} />
         )}
       </div>
+
+      <PersonalShopper />
 
       {page.product.isSimilarTo && page.product.isSimilarTo.length > 0 && (
         <div class="mt-6">
