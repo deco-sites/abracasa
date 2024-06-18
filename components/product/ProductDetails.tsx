@@ -1,4 +1,4 @@
-import { ProductDetailsPage } from "apps/commerce/types.ts";
+import { ProductDetailsPage, PropertyValue } from "apps/commerce/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import ReviewsSummary from "./ReviewsSummary.tsx";
@@ -66,10 +66,20 @@ export default function ProductDetails(
 
   const isDesktop = device === "desktop";
 
-  const additionalInfos =
-    isVariantOf?.additionalProperty?.filter((item) =>
-      item.name !== "ProdutosSimilares" && item.name !== "sellerId"
-    ) ?? [];
+  const additionalInfos: PropertyValue[] =
+    (isVariantOf?.additionalProperty ?? [])
+      .filter((item) =>
+        item.name !== "ProdutosSimilares" && item.name !== "sellerId"
+      )
+      .reduce((acc: PropertyValue[], item) => {
+        const existing = acc.find((i) => i.name === item.name);
+        if (existing) {
+          existing.value += `, ${item.value}`;
+        } else {
+          acc.push({ ...item });
+        }
+        return acc;
+      }, []);
 
   const measurementImage = images?.find((item) => item.name === "medidas");
 
@@ -142,43 +152,57 @@ export default function ProductDetails(
                   </div>
 
                   <ul class="flex flex-col w-full gap-1">
-                    {additionalInfos?.map((item) => (
-                      <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                        <span class="font-bold w-[70%]">{item.name}</span>
+                    {additionalInfos?.map((item, index) => (
+                      <li
+                        key={index}
+                        className="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8"
+                      >
+                        <span className="font-bold w-full">{item.name}</span>
 
-                        {item?.name?.includes("Materiais")
-                          ? (
-                            <div
-                              class="w-full text-end leading-relaxed tracking-wide"
-                              dangerouslySetInnerHTML={{
-                                __html:
-                                  item?.value?.replace(/\r?\n/g, "<br />") ||
-                                  "",
-                              }}
-                            />
-                          )
-                          : item?.name?.includes("Limpeza e cuidados")
-                          ? (
-                            <div
-                              class="text-end w-full"
-                              dangerouslySetInnerHTML={{
-                                __html: item.value || "",
-                              }}
-                            />
-                          )
-                          : (
-                            <span
-                              class={`${
-                                item?.name === "Entrega"
-                                  ? "text-justify"
-                                  : "text-end"
-                              } w-full`}
-                            >
-                              {item.value}
-                            </span>
-                          )}
+                        {item?.name?.includes("Materiais") && (
+                          <div
+                            className="w-full text-end leading-relaxed tracking-wide"
+                            dangerouslySetInnerHTML={{
+                              __html:
+                                item?.value?.replace(/\r?\n/g, "<br />") || "",
+                            }}
+                          />
+                        )}
+
+                        {item?.name?.includes("Limpeza e cuidados") && (
+                          <div
+                            className="text-end w-full"
+                            dangerouslySetInnerHTML={{
+                              __html: item.value || "",
+                            }}
+                          />
+                        )}
+
+                        {item?.value?.includes("Abrir manual") && (
+                          <div
+                            className="text-crimson text-end w-full"
+                            dangerouslySetInnerHTML={{
+                              __html: item.value.replace("?", ""),
+                            }}
+                          />
+                        )}
+
+                        {!item?.name?.includes("Materiais") &&
+                          !item?.name?.includes("Limpeza e cuidados") &&
+                          !item?.value?.includes("Abrir manual") && (
+                          <span
+                            className={`${
+                              item.name === "Entrega"
+                                ? "text-justify"
+                                : "text-end"
+                            } w-full`}
+                          >
+                            {item.value}
+                          </span>
+                        )}
                       </li>
                     ))}
+
                     {weight && (
                       <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
                         <span class="font-bold">Peso</span>
@@ -318,36 +342,36 @@ export default function ProductDetails(
               </div>
 
               <ul class="flex flex-col max-w-[75%] mx-auto w-full gap-1">
-                {additionalInfos?.map((item) => (
-                  <li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                    <span class="font-bold w-full">{item.name}</span>
+                {additionalInfos?.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8"
+                  >
+                    <span className="font-bold w-full">{item.name}</span>
 
-                    {item?.name?.includes("Materiais")
+                    {item?.value?.includes("Abrir manual")
                       ? (
                         <div
-                          class="w-[65%] text-justify leading-relaxed tracking-wide"
+                          className="text-crimson text-end w-full"
+                          dangerouslySetInnerHTML={{
+                            __html: item.value.replace("?", ""),
+                          }}
+                        />
+                      )
+                      : item?.name?.includes("Materiais")
+                      ? (
+                        <div
+                          className="w-[65%] text-justify leading-relaxed tracking-wide"
                           dangerouslySetInnerHTML={{
                             __html: item?.value?.replace(/\r?\n/g, "<br />") ||
                               "",
                           }}
                         />
                       )
-                      : item?.name?.includes("Limpeza e cuidados")
-                      ? (
-                        <div
-                          class={`${
-                            item?.value?.includes("Abrir manual") &&
-                            "text-crimson"
-                          } text-end w-full`}
-                          dangerouslySetInnerHTML={{
-                            __html: item.value?.replace("?", "") || "",
-                          }}
-                        />
-                      )
                       : (
                         <span
-                          class={`${
-                            item?.name === "Entrega"
+                          className={`${
+                            item.name === "Entrega"
                               ? "text-justify"
                               : "text-end"
                           } w-[65%]`}
