@@ -8,6 +8,7 @@ import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import CampaignTimer from "./CampaignTimer.tsx";
 import { FnContext } from "deco/types.ts";
+import type { Secret } from "apps/website/loaders/secret.ts";
 
 export type TAlert = HTMLWidget;
 
@@ -27,6 +28,9 @@ export interface Props {
 
   /** @title Logo */
   logo?: { src: ImageWidget; alt: string };
+
+  appKey: Secret;
+  appToken: Secret;
 }
 
 function Header({
@@ -36,6 +40,8 @@ function Header({
   navItems,
   logo,
   device,
+  appKey,
+  appToken,
 }: ReturnType<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
@@ -74,6 +80,8 @@ function Header({
               logo={logo}
               device={device}
               hasCampaignTimer={hasCampaignTimer}
+              appKey={appKey}
+              appToken={appToken}
             />
           </div>
         </Drawers>

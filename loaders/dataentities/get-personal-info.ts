@@ -1,7 +1,9 @@
-import { getCookies } from "std/http/mod.ts";
+import { Secret } from "apps/website/loaders/secret.ts";
 
 export interface Props {
   email: string;
+  appKey: Secret;
+  appToken: Secret;
 }
 
 export type APIResponse = [
@@ -10,18 +12,21 @@ export type APIResponse = [
 
 export default async function getPersonalInfo(
   props: Props,
-  req: Request,
 ): Promise<string | null> {
   const { email } = props;
-  const cookies = getCookies(req.headers);
-  const cookie = cookies["VtexIdclientAutCookie_novaabracasa"];
+
+  const appKey = await props?.appKey?.get?.();
+  const appToken = await props?.appKey?.get?.();
+
+  if (!appKey || !appToken) return null;
 
   const requestOptions = {
     method: "GET",
     headers: {
       "Accept": "application/vnd.vtex.ds.v10+json",
       "Content-Type": "application/json",
-      "VtexIdclientAutCookie": cookie,
+      "X-VTEX-API-AppKey": appKey,
+      "X-VTEX-API-AppToken": appToken,
     },
   };
 

@@ -12,14 +12,17 @@ import Subnavbar from "$store/islands/Header/Subnavbar.tsx";
 import LoginElement from "$store/islands/LoginElement.tsx";
 import { Device } from "apps/website/matchers/device.ts";
 import SellbieCashback from "$store/islands/Cashback.tsx";
+import type { Secret } from "apps/website/loaders/secret.ts";
 
 function Navbar(
-  { items, searchbar, logo, hasCampaignTimer, device }: {
+  { items, searchbar, logo, hasCampaignTimer, device, appKey, appToken }: {
     items: SiteNavigationElement[];
     searchbar?: SearchbarProps;
     logo?: { src: string; alt: string };
     hasCampaignTimer?: boolean;
     device: Device;
+    appKey: Secret;
+    appToken: Secret;
   },
 ) {
   const platform = usePlatform();
@@ -71,7 +74,7 @@ function Navbar(
             )}
 
             <SearchButton />
-            <SellbieCashback />
+            <SellbieCashback appKey={appKey} appToken={appToken} />
             {platform === "vtex" && <CartButtonVTEX />}
             <MenuButton />
           </div>
@@ -134,7 +137,7 @@ function Navbar(
                 <span>favoritos</span>
               </a>
 
-              <SellbieCashback />
+              <SellbieCashback appKey={appKey} appToken={appToken} />
 
               <div class="inline-flex items-center gap-1 group text-xs">
                 <img
@@ -162,6 +165,8 @@ function Navbar(
         items={items}
         searchbar={searchbar}
         device={device}
+        appKey={appKey}
+        appToken={appToken}
       />
     </>
   );

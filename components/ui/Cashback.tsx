@@ -8,7 +8,8 @@ import type { CashbackAPIResponse } from "$store/loaders/sellbie/get-cashback.ts
 import type { Secret } from "apps/website/loaders/secret.ts";
 
 export interface Props {
-  storeToken?: Secret;
+  appKey: Secret;
+  appToken: Secret;
 }
 
 function NotLoggedIn() {
@@ -51,18 +52,22 @@ function CashbackContent(
   );
 }
 
-function SellbieCashback() {
+function SellbieCashback({ appKey, appToken }: Props) {
   const { user } = useUser();
   const cashback = useSignal<CashbackAPIResponse | null>(null);
+  const cpfValue = useSignal<string>("");
+  console.log(cpfValue.value);
 
   if (!user || !user.value || !user.value.email) return <NotLoggedIn />;
 
   useEffect(() => {
     async function getUserCashback() {
       const cpf = await invoke["deco-sites/abracasa"].loaders.dataentities
-        ["get-personal-info"]({ email: user?.value?.email });
+        ["get-personal-info"]({ email: user?.value?.email, appKey, appToken });
 
       if (!cpf) return;
+
+      cpfValue.value = cpf;
 
       const cashbackValue = await invoke["deco-sites/abracasa"].loaders.sellbie
         ["get-cashback"]({
