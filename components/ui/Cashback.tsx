@@ -5,12 +5,6 @@ import { invoke } from "$store/runtime.ts";
 import { useSignal } from "@preact/signals";
 import { useEffect } from "preact/hooks";
 import type { CashbackAPIResponse } from "$store/loaders/sellbie/get-cashback.ts";
-import type { Secret } from "apps/website/loaders/secret.ts";
-
-export interface Props {
-  appKey: Secret;
-  appToken: Secret;
-}
 
 function NotLoggedIn() {
   return (
@@ -52,26 +46,22 @@ function CashbackContent(
   );
 }
 
-function SellbieCashback({ appKey, appToken }: Props) {
+function SellbieCashback() {
   const { user } = useUser();
   const cashback = useSignal<CashbackAPIResponse | null>(null);
-  const cpfValue = useSignal<string>("");
-  console.log(cpfValue.value);
 
   if (!user || !user.value || !user.value.email) return <NotLoggedIn />;
 
   useEffect(() => {
     async function getUserCashback() {
       const cpf = await invoke["deco-sites/abracasa"].loaders.dataentities
-        ["get-personal-info"]({ email: user?.value?.email, appKey, appToken });
+        ["get-personal-info"]();
 
-      if (!cpf) return;
-
-      cpfValue.value = cpf;
+      if (!cpf?.document) return;
 
       const cashbackValue = await invoke["deco-sites/abracasa"].loaders.sellbie
         ["get-cashback"]({
-          cpf: cpf?.replaceAll(".", "")?.replace("-", ""),
+          cpf: cpf?.document?.replaceAll(".", "")?.replace("-", ""),
         });
 
       if (cashbackValue) {

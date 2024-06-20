@@ -1,39 +1,37 @@
-import { Secret } from "apps/website/loaders/secret.ts";
+import { parseCookie } from "apps/vtex/utils/vtexId.ts";
+import { createGraphqlClient } from "apps/utils/graphql.ts";
+import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 
-export interface Props {
-  email: string;
-  appKey: Secret;
-  appToken: Secret;
+interface User {
+  document?: string;
 }
 
-export type APIResponse = [
-  { document: string | null },
-];
+async function loader(
+  _props: unknown,
+  req: Request,
+): Promise<{ document?: string } | null> {
+  const io = createGraphqlClient({
+    endpoint:
+      `https://novaabracasa.vtexcommercestable.com.br/api/io/_v/private/graphql/v1`,
+    fetcher: fetchSafe,
+  });
 
-export default async function getPersonalInfo(
-  props: Props,
-): Promise<string | null> {
-  const { email } = props;
+  const { cookie } = parseCookie(req.headers, "novaabracasa");
 
-  const appKey = await props?.appKey?.get?.();
-  const appToken = await props?.appKey?.get?.();
+  const query = "query getUserProfile { profile { document } }";
 
-  if (!appKey || !appToken) return null;
+  try {
+    const { profile: user } = await io.query<{ profile: User }, null>(
+      { query },
+      { headers: { cookie } },
+    );
 
-  const requestOptions = {
-    method: "GET",
-    headers: {
-      "Accept": "application/vnd.vtex.ds.v10+json",
-      "Content-Type": "application/json",
-      "X-VTEX-API-AppKey": appKey,
-      "X-VTEX-API-AppToken": appToken,
-    },
-  };
-
-  const response = await fetch(
-    `https://novaabracasa.vtexcommercestable.com.br/api/dataentities/CL/search?email=${email}&_fields=document`,
-    requestOptions,
-  ).then((res) => res.json()) as APIResponse;
-
-  return response?.[0]?.document;
+    return {
+      document: user.document,
+    };
+  } catch (_) {
+    return null;
+  }
 }
+
+export default loader;

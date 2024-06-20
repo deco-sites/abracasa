@@ -18,7 +18,6 @@ async function fetchAuthToken(
   try {
     const response = await ctx.invoke["deco-sites/abracasa"].loaders.sellbie
       ["get-auth-token"]();
-    console.log(response);
     return response?.resultado?.accessToken || null;
   } catch (error) {
     console.error("Failed to fetch auth token:", error);

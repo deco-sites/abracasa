@@ -6,18 +6,15 @@ import { useEffect, useState } from "preact/hooks";
 import NavItem from "./NavItem.tsx";
 import { Device } from "apps/website/matchers/device.ts";
 import SellbieCashback from "$store/islands/Cashback.tsx";
-import type { Secret } from "apps/website/loaders/secret.ts";
 
 export interface Props {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   device: Device;
-  appKey: Secret;
-  appToken: Secret;
 }
 
 export default function Subnavbar(
-  { items, searchbar, device, appKey, appToken }: Props,
+  { items, searchbar, device }: Props,
 ) {
   const [scrollingMode, setScrollingMode] = useState(self.window.scrollY > 160);
 
@@ -104,7 +101,7 @@ export default function Subnavbar(
               ))}
             </div>
 
-            <SellbieCashback appKey={appKey} appToken={appToken} />
+            <SellbieCashback />
 
             <div class="w-full lg:max-w-[500px]">
               <Searchbar searchbar={searchbar} />
