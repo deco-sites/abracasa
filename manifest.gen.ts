@@ -5,10 +5,11 @@
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$2 from "./loaders/dataentities/get-personal-info.ts";
+import * as $$$3 from "./loaders/extensions/productSimilarsColors.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
-import * as $$$3 from "./loaders/sellbie/get-auth-token.ts";
-import * as $$$4 from "./loaders/sellbie/get-cashback.ts";
+import * as $$$4 from "./loaders/sellbie/get-auth-token.ts";
+import * as $$$5 from "./loaders/sellbie/get-cashback.ts";
 import * as $$$$$$0 from "./sections/Cashback/AdaptativeContent.tsx";
 import * as $$$$$$1 from "./sections/Cashback/Cashback.tsx";
 import * as $$$$$$2 from "./sections/Cashback/HTMLContent.tsx";
@@ -66,10 +67,11 @@ import * as $$$$$$52 from "./sections/Theme/Theme.tsx";
 const manifest = {
   "loaders": {
     "deco-sites/abracasa/loaders/dataentities/get-personal-info.ts": $$$2,
+    "deco-sites/abracasa/loaders/extensions/productSimilarsColors.ts": $$$3,
     "deco-sites/abracasa/loaders/Layouts/ProductCard.tsx": $$$0,
     "deco-sites/abracasa/loaders/List/Sections.tsx": $$$1,
-    "deco-sites/abracasa/loaders/sellbie/get-auth-token.ts": $$$3,
-    "deco-sites/abracasa/loaders/sellbie/get-cashback.ts": $$$4,
+    "deco-sites/abracasa/loaders/sellbie/get-auth-token.ts": $$$4,
+    "deco-sites/abracasa/loaders/sellbie/get-cashback.ts": $$$5,
   },
   "sections": {
     "deco-sites/abracasa/sections/Cashback/AdaptativeContent.tsx": $$$$$$0,
