@@ -6,6 +6,9 @@ export interface Props {
   similarsColors?: boolean;
 }
 
+/**
+ * @title VTEX - New Similars Colors
+ */
 export default function productSimilarsColors(
   { similarsColors }: Props,
   _req: Request,
@@ -28,13 +31,15 @@ export default function productSimilarsColors(
             count: 20,
           });
 
+        const filteredSimilarsProducts = similarsProducts?.products.filter((
+          item,
+        ) => item.name !== p.product.name);
+
         return {
           ...p,
           product: {
             ...p.product,
-            isSimilarTo: similarsProducts?.products.filter((item) =>
-              item.name !== p.product.name
-            ),
+            isSimilarTo: filteredSimilarsProducts || p.product.isSimilarTo,
           },
         };
       } catch (error) {
