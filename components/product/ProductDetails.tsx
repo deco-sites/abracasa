@@ -8,6 +8,13 @@ import { Secret } from "apps/website/loaders/secret.ts";
 import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
 
+export interface APIResponse {
+  WeightKg: number;
+  Length: number;
+  Width: number;
+  Height: number;
+}
+
 export interface Props {
   page: ProductDetailsPage | null;
   atelieImage?: {
@@ -460,7 +467,7 @@ export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
           "X-VTEX-API-AppToken": VTEXAPIAPPTOKEN,
         },
       },
-    ).then((data) => data.json());
+    ).then((data) => data.json()) as APIResponse;
 
     if (data) {
       return {

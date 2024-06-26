@@ -54,14 +54,11 @@ function SellbieCashback() {
 
   useEffect(() => {
     async function getUserCashback() {
-      const cpf = await invoke["deco-sites/abracasa"].loaders.dataentities
-        ["get-personal-info"]();
-
-      if (!cpf?.document) return;
+      if (!user.value?.taxID) return;
 
       const cashbackValue = await invoke["deco-sites/abracasa"].loaders.sellbie
         ["get-cashback"]({
-          cpf: cpf?.document?.replaceAll(".", "")?.replace("-", ""),
+          cpf: user.value.taxID,
         });
 
       if (cashbackValue) {
