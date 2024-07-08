@@ -9,6 +9,7 @@ export interface Props {
   autoplay?: boolean;
   muted?: boolean;
   controls?: boolean;
+  alt?: string;
   /**
    * @default true
    */
@@ -22,6 +23,7 @@ export default function Video(
     height,
     preload,
     autoplay,
+    alt,
     muted = false,
     controls = false,
     loop = true,
@@ -32,12 +34,13 @@ export default function Video(
       src={video}
       width={width || 1250}
       height={height || 400}
+      alt={alt || "Descrição"}
       forceOptimizedSrc={preload}
       autoPlay={autoplay}
       muted={muted}
       controls={controls}
       loop={loop}
-      class="w-full h-full object-cover"
+      class="w-full h-full object-cover object-center"
     />
   );
 }
