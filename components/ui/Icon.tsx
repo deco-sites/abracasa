@@ -59,6 +59,10 @@ export type AvailableIcons =
   | "User"
   | "Visa"
   | "WhatsApp"
+  | "Attendance"
+  | "Design"
+  | "Practicality"
+  | "Products"
   | "XMark"
   | "Zoom";
 
