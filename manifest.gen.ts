@@ -37,32 +37,33 @@ import * as $$$$$$24 from "./sections/Images/Carousel.tsx";
 import * as $$$$$$25 from "./sections/Images/CarouselWithVideo.tsx";
 import * as $$$$$$26 from "./sections/Images/DoubleBanners.tsx";
 import * as $$$$$$27 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$28 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$29 from "./sections/Layout/Container.tsx";
-import * as $$$$$$30 from "./sections/Layout/Flex.tsx";
-import * as $$$$$$31 from "./sections/Layout/Grid.tsx";
-import * as $$$$$$32 from "./sections/Layout/GridItem.tsx";
-import * as $$$$$$33 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$34 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$35 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$36 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$37 from "./sections/Miscellaneous/SellbieCashback.tsx";
-import * as $$$$$$38 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$39 from "./sections/Newsletter/SectionNewsletter.tsx";
-import * as $$$$$$40 from "./sections/Product/ImageGalleryFrontBack.tsx";
-import * as $$$$$$41 from "./sections/Product/ImageGallerySlider.tsx";
-import * as $$$$$$42 from "./sections/Product/NotFound.tsx";
-import * as $$$$$$43 from "./sections/Product/NotFoundChallenge.tsx";
-import * as $$$$$$44 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$45 from "./sections/Product/ProductInfo.tsx";
-import * as $$$$$$46 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$47 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$48 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$49 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$50 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$51 from "./sections/Social/InstagramWidget.tsx";
-import * as $$$$$$52 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$53 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$28 from "./sections/Images/ImageWithCta.tsx";
+import * as $$$$$$29 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$30 from "./sections/Layout/Container.tsx";
+import * as $$$$$$31 from "./sections/Layout/Flex.tsx";
+import * as $$$$$$32 from "./sections/Layout/Grid.tsx";
+import * as $$$$$$33 from "./sections/Layout/GridItem.tsx";
+import * as $$$$$$34 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$35 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$36 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$37 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$38 from "./sections/Miscellaneous/SellbieCashback.tsx";
+import * as $$$$$$39 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$40 from "./sections/Newsletter/SectionNewsletter.tsx";
+import * as $$$$$$41 from "./sections/Product/ImageGalleryFrontBack.tsx";
+import * as $$$$$$42 from "./sections/Product/ImageGallerySlider.tsx";
+import * as $$$$$$43 from "./sections/Product/NotFound.tsx";
+import * as $$$$$$44 from "./sections/Product/NotFoundChallenge.tsx";
+import * as $$$$$$45 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$46 from "./sections/Product/ProductInfo.tsx";
+import * as $$$$$$47 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$48 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$49 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$50 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$51 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$52 from "./sections/Social/InstagramWidget.tsx";
+import * as $$$$$$53 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$54 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -101,32 +102,33 @@ const manifest = {
     "deco-sites/abracasa/sections/Images/CarouselWithVideo.tsx": $$$$$$25,
     "deco-sites/abracasa/sections/Images/DoubleBanners.tsx": $$$$$$26,
     "deco-sites/abracasa/sections/Images/ImageGallery.tsx": $$$$$$27,
-    "deco-sites/abracasa/sections/Images/ShoppableBanner.tsx": $$$$$$28,
-    "deco-sites/abracasa/sections/Layout/Container.tsx": $$$$$$29,
-    "deco-sites/abracasa/sections/Layout/Flex.tsx": $$$$$$30,
-    "deco-sites/abracasa/sections/Layout/Grid.tsx": $$$$$$31,
-    "deco-sites/abracasa/sections/Layout/GridItem.tsx": $$$$$$32,
-    "deco-sites/abracasa/sections/Links/LinkTree.tsx": $$$$$$33,
-    "deco-sites/abracasa/sections/Links/Shortcuts.tsx": $$$$$$34,
-    "deco-sites/abracasa/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$35,
-    "deco-sites/abracasa/sections/Miscellaneous/CookieConsent.tsx": $$$$$$36,
-    "deco-sites/abracasa/sections/Miscellaneous/SellbieCashback.tsx": $$$$$$37,
-    "deco-sites/abracasa/sections/Newsletter/Newsletter.tsx": $$$$$$38,
-    "deco-sites/abracasa/sections/Newsletter/SectionNewsletter.tsx": $$$$$$39,
-    "deco-sites/abracasa/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$40,
-    "deco-sites/abracasa/sections/Product/ImageGallerySlider.tsx": $$$$$$41,
-    "deco-sites/abracasa/sections/Product/NotFound.tsx": $$$$$$42,
-    "deco-sites/abracasa/sections/Product/NotFoundChallenge.tsx": $$$$$$43,
-    "deco-sites/abracasa/sections/Product/ProductDetails.tsx": $$$$$$44,
-    "deco-sites/abracasa/sections/Product/ProductInfo.tsx": $$$$$$45,
-    "deco-sites/abracasa/sections/Product/ProductShelf.tsx": $$$$$$46,
-    "deco-sites/abracasa/sections/Product/ProductShelfTabbed.tsx": $$$$$$47,
-    "deco-sites/abracasa/sections/Product/SearchResult.tsx": $$$$$$48,
-    "deco-sites/abracasa/sections/Product/Wishlist.tsx": $$$$$$49,
-    "deco-sites/abracasa/sections/Social/InstagramPosts.tsx": $$$$$$50,
-    "deco-sites/abracasa/sections/Social/InstagramWidget.tsx": $$$$$$51,
-    "deco-sites/abracasa/sections/Social/WhatsApp.tsx": $$$$$$52,
-    "deco-sites/abracasa/sections/Theme/Theme.tsx": $$$$$$53,
+    "deco-sites/abracasa/sections/Images/ImageWithCta.tsx": $$$$$$28,
+    "deco-sites/abracasa/sections/Images/ShoppableBanner.tsx": $$$$$$29,
+    "deco-sites/abracasa/sections/Layout/Container.tsx": $$$$$$30,
+    "deco-sites/abracasa/sections/Layout/Flex.tsx": $$$$$$31,
+    "deco-sites/abracasa/sections/Layout/Grid.tsx": $$$$$$32,
+    "deco-sites/abracasa/sections/Layout/GridItem.tsx": $$$$$$33,
+    "deco-sites/abracasa/sections/Links/LinkTree.tsx": $$$$$$34,
+    "deco-sites/abracasa/sections/Links/Shortcuts.tsx": $$$$$$35,
+    "deco-sites/abracasa/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$36,
+    "deco-sites/abracasa/sections/Miscellaneous/CookieConsent.tsx": $$$$$$37,
+    "deco-sites/abracasa/sections/Miscellaneous/SellbieCashback.tsx": $$$$$$38,
+    "deco-sites/abracasa/sections/Newsletter/Newsletter.tsx": $$$$$$39,
+    "deco-sites/abracasa/sections/Newsletter/SectionNewsletter.tsx": $$$$$$40,
+    "deco-sites/abracasa/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$41,
+    "deco-sites/abracasa/sections/Product/ImageGallerySlider.tsx": $$$$$$42,
+    "deco-sites/abracasa/sections/Product/NotFound.tsx": $$$$$$43,
+    "deco-sites/abracasa/sections/Product/NotFoundChallenge.tsx": $$$$$$44,
+    "deco-sites/abracasa/sections/Product/ProductDetails.tsx": $$$$$$45,
+    "deco-sites/abracasa/sections/Product/ProductInfo.tsx": $$$$$$46,
+    "deco-sites/abracasa/sections/Product/ProductShelf.tsx": $$$$$$47,
+    "deco-sites/abracasa/sections/Product/ProductShelfTabbed.tsx": $$$$$$48,
+    "deco-sites/abracasa/sections/Product/SearchResult.tsx": $$$$$$49,
+    "deco-sites/abracasa/sections/Product/Wishlist.tsx": $$$$$$50,
+    "deco-sites/abracasa/sections/Social/InstagramPosts.tsx": $$$$$$51,
+    "deco-sites/abracasa/sections/Social/InstagramWidget.tsx": $$$$$$52,
+    "deco-sites/abracasa/sections/Social/WhatsApp.tsx": $$$$$$53,
+    "deco-sites/abracasa/sections/Theme/Theme.tsx": $$$$$$54,
   },
   "apps": {
     "deco-sites/abracasa/apps/decohub.ts": $$$$$$$$$$$0,

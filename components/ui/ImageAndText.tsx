@@ -1,11 +1,22 @@
 import Image from "apps/website/components/Image.tsx";
 
-import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
-  title: HTMLWidget;
-  description?: HTMLWidget;
-  button?: { link?: string; title?: string; target?: "_blank" | "_self" };
+  /**
+   * @format rich-text
+   */
+  title: string;
+  /**
+   * @format rich-text
+   */
+  description?: string;
+  button?: {
+    link?: string;
+    title?: string;
+    target?: "_blank" | "_self";
+    isBold?: boolean;
+  };
   aside?: {
     image: ImageWidget;
     width?: number;
@@ -54,7 +65,9 @@ export default function ImageAndText({
           <a
             href={button.link || "#"}
             target={button.target || "_blank"}
-            class="flex items-center justify-center border border-black w-full text-black hover:bg-black hover:text-white transition-colors duration-300 py-2.5 px-1"
+            class={`flex items-center justify-center border border-black w-full text-black hover:bg-black hover:text-white transition-colors duration-300 py-2.5 px-1 ${
+              button.isBold ? "font-bold" : "font-medium"
+            }`}
           >
             {button.title}
           </a>

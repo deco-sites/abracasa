@@ -1,7 +1,8 @@
-import type { HTMLWidget } from "apps/admin/widgets.ts";
-
 export interface Props {
-  html?: HTMLWidget;
+  /**
+   * @format rich-text
+   */
+  html?: string;
 }
 
 export default function HTMLContent({ html }: Props) {
