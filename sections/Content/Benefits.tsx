@@ -71,9 +71,9 @@ export default function Benefits(
             loading="lazy"
           />
         </div>
-        <div class="flex-auto flex flex-col gap-1 lg:gap-2 font-sans">
+        <div class="flex-auto flex flex-col gap-1 lg:gap-4">
           <div
-            class={`text-base leading-7 font-bold ${
+            class={`text-base text-center font-bold lg:min-h-[56px] lg:max-w-[85%] mx-auto ${
               reverse ? "text-base-100" : "text-base-content"
             }`}
           >
