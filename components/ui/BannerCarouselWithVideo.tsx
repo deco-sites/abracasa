@@ -132,7 +132,7 @@ function VideoItem(
   const { alt, mobile, desktop } = video;
 
   const device = useDevice();
-  const isDesktop = device === "desktop";
+  const isMobile = device === "mobile";
 
   return (
     <a
@@ -141,12 +141,12 @@ function VideoItem(
       aria-label={video?.alt}
       class="relative overflow-y-hidden w-full h-full xl:max-h-[564px]"
     >
-      {isDesktop
+      {isMobile
         ? (
           <Video
-            src={desktop.video}
-            width={desktop.width || 2000}
-            height={desktop.height || 600}
+            src={mobile.video}
+            width={mobile.width || 767}
+            height={mobile.height || 972}
             forceOptimizedSrc={lcp}
             loop={video.loop}
             autoplay={video.autoplay}
@@ -157,9 +157,9 @@ function VideoItem(
         )
         : (
           <Video
-            src={mobile.video}
-            width={mobile.width || 767}
-            height={mobile.height || 972}
+            src={desktop.video}
+            width={desktop.width || 2000}
+            height={desktop.height || 564}
             forceOptimizedSrc={lcp}
             loop={video.loop}
             autoplay={video.autoplay}
