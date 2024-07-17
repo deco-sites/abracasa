@@ -14,8 +14,8 @@ const useSort = () =>
 const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>) => {
   const urlSearchParams = new URLSearchParams(globalThis.location.search);
 
-  const isCampaign = globalThis?.location?.href?.includes("campanha");
-  const sortValue = isCampaign ? "sort" : SORT_QUERY_PARAM;
+  // const isCampaign = globalThis?.location?.href?.includes("campanha");
+  const sortValue = SORT_QUERY_PARAM;
 
   urlSearchParams.set(sortValue, e.currentTarget.value);
   globalThis.location.search = urlSearchParams.toString();
