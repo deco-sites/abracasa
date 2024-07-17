@@ -9,6 +9,7 @@ import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
+import Video from "apps/website/components/Video.tsx";
 
 /**
  * @titleBy alt
@@ -142,11 +143,11 @@ function VideoItem(
     >
       {isDesktop
         ? (
-          <video
+          <Video
             src={desktop.video}
-            width={desktop.width}
-            height={desktop.height}
-            preload={lcp ? "true" : "false"}
+            width={desktop.width || 2000}
+            height={desktop.height || 600}
+            forceOptimizedSrc={lcp}
             loop={video.loop}
             autoplay={video.autoplay}
             muted={video.muted}
@@ -155,11 +156,11 @@ function VideoItem(
           />
         )
         : (
-          <video
+          <Video
             src={mobile.video}
-            width={mobile.width}
-            height={mobile.height}
-            preload={lcp ? "true" : "false"}
+            width={mobile.width || 767}
+            height={mobile.height || 972}
+            forceOptimizedSrc={lcp}
             loop={video.loop}
             autoplay={video.autoplay}
             muted={video.muted}
