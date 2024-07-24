@@ -95,7 +95,7 @@ function Cart({
             </ul>
 
             {/* Cart Footer */}
-            <footer class="flex flex-col w-full">
+            <footer class="flex flex-col w-full z-10">
               {/* Subtotal */}
               <div class="w-full flex justify-between px-2 pb-0.5 text-sm">
                 <span>Subtotal</span>
@@ -144,7 +144,7 @@ function Cart({
                 <a class="inline-block w-full" href={checkoutHref}>
                   <Button
                     data-deco="buy-button"
-                    class="btn-primary btn-block rounded-none border-none bg-[#555555] hover:bg-[#2c2c2c] transition-colors duration-300 text-white font-bold"
+                    class="btn-primary btn-block rounded-none border-none bg-[#555555] hover:bg-[#2c2c2c] transition-colors duration-300 text-white font-bold select-none"
                     disabled={loading || isEmtpy}
                     onClick={() => {
                       sendEvent({

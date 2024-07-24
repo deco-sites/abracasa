@@ -32,7 +32,7 @@ function Navbar(
         <>
           <div
             id="mobile-navbar"
-            class="lg:hidden flex flex-row justify-between items-center border-b border-base-200 w-full px-4 gap-2 h-[105px]"
+            class="xl:hidden flex flex-row justify-between items-center border-b border-base-200 w-full px-4 gap-2 h-[105px]"
           >
             {logo && (
               <>
@@ -84,7 +84,7 @@ function Navbar(
       {isDesktop && (
         <div
           id="desktop-navbar"
-          class="hidden lg:flex flex-col justify-center items-center w-full"
+          class="hidden xl:flex flex-col justify-center items-center w-full"
         >
           <div class="flex justify-between items-center max-w-[85%] gap-2.5 w-full">
             <div class="flex-none w-44">

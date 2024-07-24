@@ -56,7 +56,7 @@ function Header({
     <>
       <header
         class={`${
-          hasCampaignTimer ? "h-[250px] lg:h-[290px]" : "h-[140px] lg:h-[180px]"
+          hasCampaignTimer ? "h-[250px] xl:h-[290px]" : "h-[140px] xl:h-[180px]"
         }`}
       >
         <Drawers
