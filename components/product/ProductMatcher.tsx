@@ -2,8 +2,8 @@ import Icon from "deco-sites/abracasa/components/ui/Icon.tsx";
 import SuggestionCard from "$store/components/product/SuggestionCard.tsx";
 import { formatPrice } from "deco-sites/abracasa/sdk/format.ts";
 import { useOffer } from "deco-sites/abracasa/sdk/useOffer.ts";
-import type { Product, ProductDetailsPage } from "apps/commerce/types.ts";
 import AddToCartButton from "$store/islands/ShowTogether/AddToCartButton.tsx";
+import type { Product, ProductDetailsPage } from "apps/commerce/types.ts";
 
 export interface Props {
   page: ProductDetailsPage | null;
@@ -45,8 +45,8 @@ export default function ProductMatcher({ page, suggestions }: Props) {
   const installmentPrice = totalPrice / 8;
 
   return (
-    <div class="flex flex-col xl:flex-row container max-w-[1200px] items-center w-full xl:gap-8 mb-8">
-      <div class="flex flex-col xl:flex-row items-center justify-start border border-gray-dark xl:border-none rounded-xl px-2 xl:px-0 xl:gap-8">
+    <div class="flex flex-col xl:flex-row container max-w-[1200px] items-center w-full px-2 xl:px-0 xl:gap-8 my-8">
+      <div class="flex flex-col xl:flex-row items-center justify-start border border-gray-dark xl:border-none rounded-xl px-1 xl:px-0 xl:gap-8">
         <ProductCard product={product} />
 
         <div class="btn btn-circle btn-outline text-gray-950 hover:text-gray-950 hover:bg-transparent">
