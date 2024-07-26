@@ -21,3 +21,22 @@ export const formatPrice = (
   currency = "BRL",
   locale = "pt-BR",
 ) => price ? formatter(currency, locale).format(price) : null;
+
+export const formatPriceWithoutCents = (
+  price: number | undefined,
+  currency = "BRL",
+  locale = "pt-BR",
+) => {
+  const formatter = new Intl.NumberFormat(locale, {
+    style: "currency",
+    currency,
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+
+  if (!price) {
+    return null;
+  }
+
+  return formatter.format(price);
+};

@@ -30,6 +30,7 @@ import * as $SearchControls from "./islands/SearchControls.tsx";
 import * as $SearchTitle from "./islands/SearchTitle.tsx";
 import * as $Shelf_AddToCartButton from "./islands/Shelf/AddToCartButton.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
+import * as $ShowTogether_AddToCartButton from "./islands/ShowTogether/AddToCartButton.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $WishlistButton from "./islands/WishlistButton.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -66,6 +67,7 @@ const manifest = {
     "./islands/SearchTitle.tsx": $SearchTitle,
     "./islands/Shelf/AddToCartButton.tsx": $Shelf_AddToCartButton,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
+    "./islands/ShowTogether/AddToCartButton.tsx": $ShowTogether_AddToCartButton,
     "./islands/SliderJS.tsx": $SliderJS,
     "./islands/WishlistButton.tsx": $WishlistButton,
   },

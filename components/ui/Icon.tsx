@@ -54,6 +54,7 @@ export type AvailableIcons =
   | "Star"
   | "Tiktok"
   | "Trash"
+  | "DiscountCaret"
   | "Truck"
   | "Twitter"
   | "User"
