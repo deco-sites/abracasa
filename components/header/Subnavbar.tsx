@@ -28,7 +28,7 @@ export default function Subnavbar(
       "mobile-navbar-anchor-minimized",
     );
 
-    desktopNavbar?.classList?.remove("lg:flex");
+    desktopNavbar?.classList?.remove("xl:flex");
     timer?.classList?.add("hidden");
     alert?.classList?.add("hidden");
     mobileNavbar?.classList?.add("!h-[56px]");
@@ -55,7 +55,7 @@ export default function Subnavbar(
         setScrollingMode(true);
         alert?.classList?.add("hidden");
         timer?.classList?.add("hidden");
-        desktopNavbar?.classList?.remove("lg:flex");
+        desktopNavbar?.classList?.remove("xl:flex");
         mobileNavbar?.classList?.add("!h-[56px]");
         mobileNavbarAnchor?.classList?.add("!hidden");
         mobileMinimizedImage?.classList?.remove("hidden");
@@ -63,7 +63,7 @@ export default function Subnavbar(
         setScrollingMode(false);
         alert?.classList?.remove("hidden");
         timer?.classList?.remove("hidden");
-        desktopNavbar?.classList?.add("lg:flex");
+        desktopNavbar?.classList?.add("xl:flex");
         mobileNavbar?.classList?.remove("!h-[56px]");
         mobileNavbarAnchor?.classList?.remove("!hidden");
         mobileMinimizedImage?.classList?.add("hidden");
@@ -77,7 +77,7 @@ export default function Subnavbar(
   return (
     <>
       {scrollingMode && device === "desktop" && (
-        <div class="hidden lg:flex flex-col justify-center items-center w-full">
+        <div class="hidden xl:flex flex-col justify-center items-center w-full">
           <div class="flex justify-between items-center max-w-[85%] gap-2.5 w-full">
             <div class="flex">
               <a
