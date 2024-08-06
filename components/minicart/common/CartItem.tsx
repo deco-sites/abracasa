@@ -18,6 +18,7 @@ export interface Item {
     sale: number;
     list: number;
   };
+  detailUrl?: string;
 }
 
 export interface Props {
@@ -41,7 +42,7 @@ function CartItem(
     itemToAnalyticsItem,
   }: Props,
 ) {
-  const { image, name, price: { sale }, quantity } = item;
+  const { image, name, price: { sale }, quantity, detailUrl } = item;
   const isGift = sale < 0.01;
   const [loading, setLoading] = useState(false);
 
@@ -64,17 +65,29 @@ function CartItem(
         gridTemplateColumns: "auto 1fr",
       }}
     >
-      <Image
-        {...image}
-        style={{ aspectRatio: "108 / 150" }}
-        width={53}
-        height={53}
-        class="h-full object-contain"
-      />
+      <a
+        aria-label="view product"
+        href={detailUrl}
+        class="contents"
+      >
+        <Image
+          {...image}
+          style={{ aspectRatio: "108 / 150" }}
+          width={53}
+          height={53}
+          class="h-full object-contain"
+        />
+      </a>
 
       <div class="flex flex-col gap-2 text-[#515151]">
         <div class="flex justify-between items-center">
-          <span class="text-sm font-normal leading-4">{name}</span>
+          <a
+            aria-label="view product"
+            href={detailUrl}
+            class="text-sm font-normal leading-4"
+          >
+            {name}
+          </a>
 
           <Button
             disabled={loading || isGift}
@@ -101,11 +114,6 @@ function CartItem(
         </div>
 
         <div class="flex items-center gap-2">
-          {
-            /* <span class="line-through text-base-300 text-sm">
-            {formatPrice(list, currency, locale)}
-          </span> */
-          }
           <span class="text-sm leading-[14px]">
             {isGift ? "Grátis" : formatPrice(sale, currency, locale)}
           </span>

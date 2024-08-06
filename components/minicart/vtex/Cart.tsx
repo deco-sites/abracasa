@@ -21,6 +21,7 @@ function Cart() {
           sale: item.sellingPrice / 100,
           list: item.listPrice / 100,
         },
+        detailUrl: item.detailUrl,
       }))}
       total={(total + discounts) / 100}
       subtotal={total / 100}
