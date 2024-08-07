@@ -32,7 +32,7 @@ export default function SearchButton() {
           id="MagnifyingGlass"
           size={24}
           strokeWidth={0.1}
-          class="text-[#919191]"
+          class="text-white"
         />
       </Button>
     </>

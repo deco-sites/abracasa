@@ -15,6 +15,11 @@ export default {
         "whitesmoke": "#f2f2f2",
         "snow": "#fbfbfb",
         "crimson": "#c9154c",
+        "gray-normal": "#AEAEAE",
+        "gray-dark": "#585858",
+      },
+      boxShadow: {
+        "inner-custom": "inset 0px 7px 3px -3px rgba(50, 50, 50, 0.1);",
       },
     },
   },

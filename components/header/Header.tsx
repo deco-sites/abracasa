@@ -1,21 +1,15 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
-import type { Props as CampaignTimerProps } from "$store/components/header/CampaignTimer.tsx";
 import Drawers from "$store/islands/Header/Drawers.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
-import CampaignTimer from "./CampaignTimer.tsx";
 import { FnContext } from "deco/types.ts";
+import { useScript } from "deco/hooks/useScript.ts";
 
 export type TAlert = HTMLWidget;
 
 export interface Props {
-  campaignTimer?: CampaignTimerProps;
-
-  alerts?: TAlert[];
-
   /** @title Search Bar */
   searchbar?: Omit<SearchbarProps, "platform">;
 
@@ -30,8 +24,6 @@ export interface Props {
 }
 
 function Header({
-  campaignTimer,
-  alerts,
   searchbar,
   navItems,
   logo,
@@ -40,44 +32,49 @@ function Header({
   const platform = usePlatform();
   const items = navItems ?? [];
 
-  const hasCampaignTimer = !!(
-    campaignTimer &&
-    campaignTimer.text !== undefined &&
-    campaignTimer.image !== undefined &&
-    !campaignTimer.hiddenCampaignTimer &&
-    (
-      (campaignTimer.expiresAt &&
-        new Date(campaignTimer.expiresAt) > new Date()) ||
-      !campaignTimer.expiresAt
-    )
-  );
+  function handleScroll() {
+    document.addEventListener("scroll", () => {
+      const scrollY = globalThis.scrollY;
+      const header = document.getElementById("nav");
+
+      if (scrollY > 0) {
+        header?.classList.remove("text-white", "xl:hover:text-gray-dark");
+        header?.classList.add("bg-base-100", "text-gray-dark");
+        header?.setAttribute("data-scrolling", "true");
+      } else {
+        header?.classList.remove("bg-base-100", "text-gray-dark");
+        header?.classList.add("text-white", "xl:hover:text-gray-dark");
+        header?.setAttribute("data-scrolling", "false");
+      }
+    });
+  }
 
   return (
     <>
-      <header
-        class={`${
-          hasCampaignTimer ? "h-[250px] xl:h-[290px]" : "h-[140px] xl:h-[180px]"
-        }`}
-      >
+      <header>
         <Drawers
           menu={{ items }}
           platform={platform}
         >
-          <div class="bg-base-100 fixed w-full z-[9999999]">
-            {hasCampaignTimer && <CampaignTimer {...campaignTimer} />}
-
-            {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
-
+          <div
+            data-scrolling="false"
+            id="nav"
+            class="xl:hover:bg-base-100 fixed w-full z-[9999999] shadow-inner-custom xl:hover:shadow-none text-white xl:hover:text-gray-dark transition duration-200 ease-in group/nav"
+          >
             <Navbar
               items={items}
               searchbar={searchbar && { ...searchbar }}
               logo={logo}
               device={device}
-              hasCampaignTimer={hasCampaignTimer}
             />
           </div>
         </Drawers>
       </header>
+
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(handleScroll) }}
+      />
     </>
   );
 }

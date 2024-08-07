@@ -104,29 +104,15 @@ function BannerItem(
   );
 }
 
-function Dots({ images, interval = 0 }: Props) {
+function Dots({ images }: Props) {
   return (
     <>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-          @property --dot-progress {
-            syntax: '<percentage>';
-            inherits: false;
-            initial-value: 0%;
-          }
-          `,
-        }}
-      />
       <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4">
         {images?.map((_, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
               <div class="py-5">
-                <div
-                  class="w-[40px] sm:w-[100px] h-1 group-disabled:animate-progress bg-gradient-to-r from-firebrick from-[length:var(--dot-progress)] to-white to-[length:var(--dot-progress)]"
-                  style={{ animationDuration: `${interval}s` }}
-                />
+                <div class="w-2.5 h-2.5 rounded-full group-disabled:bg-firebrick bg-white" />
               </div>
             </Slider.Dot>
           </li>
@@ -140,9 +126,9 @@ function Buttons() {
   return (
     <>
       <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
-        <Slider.PrevButton class="btn btn-circle glass">
+        <Slider.PrevButton class="w-7 h-7">
           <Icon
-            class="text-base-100"
+            class="text-gray-normal"
             size={24}
             id="ChevronLeft"
             strokeWidth={3}
@@ -150,11 +136,11 @@ function Buttons() {
         </Slider.PrevButton>
       </div>
       <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
-        <Slider.NextButton class="btn btn-circle glass">
+        <Slider.NextButton class="w-7 h-7">
           <Icon
-            class="text-base-100"
+            class="text-gray-normal rotate-180"
             size={24}
-            id="ChevronRight"
+            id="ChevronLeft"
             strokeWidth={3}
           />
         </Slider.NextButton>
@@ -200,7 +186,7 @@ function BannerCarousel(props: Props) {
         <>
           <Buttons />
 
-          <Dots images={images} interval={interval} />
+          <Dots images={images} />
 
           <SliderJS
             rootId={id}

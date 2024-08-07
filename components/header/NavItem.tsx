@@ -1,24 +1,19 @@
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import { headerHeight } from "./constants.ts";
 
 function NavItem(
-  { item, scrollingMode = false, hasCampaignTimer }: {
+  { item }: {
     item: SiteNavigationElement;
-    scrollingMode?: boolean;
-    hasCampaignTimer?: boolean;
   },
 ) {
   const { url, name, children } = item;
-
-  const navItemHeight = hasCampaignTimer ? "290px" : headerHeight;
 
   return (
     <li class="group flex items-center">
       <a
         href={url}
-        class="flex items-center justify-center px-4 py-3 group-hover:bg-firebrick transition-all duration-300 w-[140px]"
+        class="flex items-center justify-center h-[118px]"
       >
-        <span class="group-hover:text-white text-sm leading-[22px] transition-all duration-300">
+        <span class="flex items-center justify-center group-hover:text-firebrick text-sm leading-[22px] h-full">
           {name}
         </span>
       </a>
@@ -30,7 +25,7 @@ function NavItem(
             style={{
               top: "0px",
               left: "0px",
-              marginTop: scrollingMode ? "58px" : navItemHeight,
+              marginTop: "120px",
             }}
           >
             <ul class="flex flex-col items-start gap-0.5 text-[#555]">
