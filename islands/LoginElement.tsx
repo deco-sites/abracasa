@@ -6,7 +6,7 @@ export default function LoginElement() {
 
   return (
     <a
-      href={user.value ? "/logout" : "/login"}
+      href={user.value ? "/account" : "/login"}
       class="inline-flex items-center gap-1 text-xs"
       aria-label="Log in"
     >
@@ -16,8 +16,8 @@ export default function LoginElement() {
         height={32}
         alt="User icon"
       />
-      <span>
-        {user.value ? "Sair" : "Entrar"}
+      <span class="truncate">
+        {user.value ? (user.value.name ?? "Conta") : "Entrar"}
       </span>
     </a>
   );
