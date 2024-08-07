@@ -15,6 +15,7 @@ export default {
         "whitesmoke": "#f2f2f2",
         "snow": "#fbfbfb",
         "crimson": "#c9154c",
+        "gray-light": "#A5A5A5",
         "gray-normal": "#AEAEAE",
         "gray-dark": "#585858",
       },
