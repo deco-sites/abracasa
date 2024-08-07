@@ -6,6 +6,7 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Navbar from "./Navbar.tsx";
 import { FnContext } from "deco/types.ts";
 import { useScript } from "deco/hooks/useScript.ts";
+import { SectionProps } from "deco/mod.ts";
 
 export type TAlert = HTMLWidget;
 
@@ -28,7 +29,8 @@ function Header({
   navItems,
   logo,
   device,
-}: ReturnType<typeof loader>) {
+  isHomePage,
+}: SectionProps<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
 
@@ -59,7 +61,7 @@ function Header({
 
   return (
     <>
-      <header>
+      <header class={!isHomePage ? "h-[105px] xl:h-[126px]" : ""}>
         <Drawers
           menu={{ items }}
           platform={platform}
@@ -87,10 +89,13 @@ function Header({
   );
 }
 
-export const loader = (props: Props, _req: Request, ctx: FnContext) => {
+export const loader = (props: Props, req: Request, ctx: FnContext) => {
+  const isHomePage = new URL(req.url);
+
   return {
     ...props,
     device: ctx.device,
+    isHomePage: isHomePage.pathname === "/",
   };
 };
 
