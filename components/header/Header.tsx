@@ -38,12 +38,20 @@ function Header({
       const header = document.getElementById("nav");
 
       if (scrollY > 0) {
-        header?.classList.remove("text-white", "xl:hover:text-gray-dark");
+        header?.classList.remove(
+          "text-white",
+          "xl:hover:text-gray-dark",
+          "overlay",
+        );
         header?.classList.add("bg-base-100", "text-gray-dark");
         header?.setAttribute("data-scrolling", "true");
       } else {
         header?.classList.remove("bg-base-100", "text-gray-dark");
-        header?.classList.add("text-white", "xl:hover:text-gray-dark");
+        header?.classList.add(
+          "text-white",
+          "xl:hover:text-gray-dark",
+          "overlay",
+        );
         header?.setAttribute("data-scrolling", "false");
       }
     });
@@ -59,7 +67,7 @@ function Header({
           <div
             data-scrolling="false"
             id="nav"
-            class="xl:hover:bg-base-100 fixed w-full z-[9999999] shadow-inner-custom xl:hover:shadow-none text-white xl:hover:text-gray-dark transition duration-200 ease-in group/nav"
+            class="xl:hover:bg-base-100 fixed w-full z-[9999999] text-white xl:hover:text-gray-dark transition duration-200 ease-in group/nav overlay"
           >
             <Navbar
               items={items}

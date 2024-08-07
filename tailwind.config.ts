@@ -18,9 +18,6 @@ export default {
         "gray-normal": "#AEAEAE",
         "gray-dark": "#585858",
       },
-      boxShadow: {
-        "inner-custom": "inset 0px 7px 3px -3px rgba(50, 50, 50, 0.1);",
-      },
     },
   },
 };
