@@ -122,7 +122,7 @@ function ShippingSimulation({ items }: Props) {
 
       <div class="flex flex-col">
         <a
-          class="text-xs leading-4 text-[#555] underline"
+          class="text-xs leading-4 text-dimgray underline"
           target="_blank"
           href="http://www.buscacep.correios.com.br/sistemas/buscacep/"
         >

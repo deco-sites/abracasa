@@ -28,12 +28,12 @@ export default function PromptDelivery() {
       <div class="w-[13px] h-[13px] border border-gray-400 rounded-sm flex justify-center items-center">
         <div
           class={`${
-            self?.location?.href?.includes("readyDelivery") && "bg-[#555]"
+            self?.location?.href?.includes("readyDelivery") && "bg-dimgray"
           } w-[13px] h-[13px] rounded-sm`}
         />
       </div>
       <Icon id="Clock" width={32} height={25} fill="none" />
-      <span class="leading-[22px] text-[#555] text-base">Pronta Entrega</span>
+      <span class="leading-[22px] text-dimgray text-base">Pronta Entrega</span>
     </button>
   );
 }

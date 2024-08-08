@@ -54,7 +54,7 @@ export default function CategoryList({ title, cards, interval }: Props) {
   return (
     <section class="flex flex-col flex-grow w-full h-full items-center justify-center bg-white pt-8 pb-12">
       <div class="flex items-center justify-center text-center mb-6">
-        <h2 class="text-2xl lg:text-4xl font-normal text-[#555] lg:leading-[49px]">
+        <h2 class="text-2xl lg:text-4xl font-normal text-dimgray lg:leading-[49px]">
           {title}
         </h2>
       </div>

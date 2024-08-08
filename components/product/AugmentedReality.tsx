@@ -1,3 +1,5 @@
+import { useScript } from "deco/hooks/useScript.ts";
+
 export default function Viewer() {
   function handleGenerateComponents() {
     self.addEventListener("DOMContentLoaded", async () => {
@@ -22,6 +24,7 @@ export default function Viewer() {
       const viewerPosition = document.getElementById("r2u-viewer");
       const qrCode = document.getElementById("qrCode");
       const qrCodeText = document.getElementById("qrCodeText");
+      const arButton = document.getElementById("arButton");
 
       if (viewerPosition) {
         await window_.R2U.viewer.create({
@@ -39,6 +42,16 @@ export default function Viewer() {
 
         qrCodeText!.innerText = "Veja no seu espaço";
       }
+
+      if (arButton) {
+        await window_.R2U.ar.attach({
+          element: arButton,
+          sku: skuId,
+        });
+
+        arButton.classList.remove("hidden");
+        arButton.classList.add("flex");
+      }
     });
   }
 
@@ -49,7 +62,7 @@ export default function Viewer() {
       <script
         defer
         dangerouslySetInnerHTML={{
-          __html: `(${handleGenerateComponents.toString()})()`,
+          __html: useScript(handleGenerateComponents),
         }}
       />
     </>
