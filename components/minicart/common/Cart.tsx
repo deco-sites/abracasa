@@ -1,5 +1,4 @@
 import Button from "$store/components/ui/Button.tsx";
-import { asset } from "$fresh/runtime.ts";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useState } from "preact/hooks";
@@ -8,6 +7,7 @@ import { AnalyticsItem } from "apps/commerce/types.ts";
 import CartItem, { Item, Props as ItemProps } from "./CartItem.tsx";
 import Coupon, { Props as CouponProps } from "./Coupon.tsx";
 import Shipping from "./Shipping.tsx";
+import Icon from "deco-sites/abracasa/components/ui/Icon.tsx";
 
 interface Props {
   items: Item[];
@@ -51,8 +51,8 @@ function Cart({
       {isEmtpy
         ? (
           <div class="flex flex-col items-center justify-center gap-6 max-w-[75%] mx-auto mt-12">
-            <img
-              src={asset("/image/cart.svg")}
+            <Icon
+              id="Cart"
               width={30}
               height={30}
               alt="Cart icon"

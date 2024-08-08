@@ -1,4 +1,3 @@
-import { asset } from "$fresh/runtime.ts";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
@@ -57,8 +56,8 @@ function Menu({ items }: Props) {
             class="flex items-center gap-4 px-4"
             href="/login"
           >
-            <img
-              src={asset("/image/user.svg")}
+            <Icon
+              id="UserIcon"
               width={32}
               height={32}
               alt="User icon"
@@ -95,8 +94,8 @@ function Menu({ items }: Props) {
             class="flex items-center gap-4 px-4 py-3"
             href="/institucional/nossas-lojas"
           >
-            <img
-              src={asset("/image/store.svg")}
+            <Icon
+              id="OurStores"
               width={32}
               height={32}
               alt="Store icon"
