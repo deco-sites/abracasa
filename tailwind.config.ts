@@ -18,6 +18,7 @@ export default {
         "gray-light": "#A5A5A5",
         "gray-normal": "#AEAEAE",
         "gray-dark": "#585858",
+        "gray-48": "#7A7A7A",
       },
     },
   },
