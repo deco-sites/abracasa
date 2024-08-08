@@ -6,5 +6,5 @@ export default function ArButton() {
     >
       Veja na sua casa
     </button>
-  )
+  );
 }
