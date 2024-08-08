@@ -90,12 +90,12 @@ function Header({
 }
 
 export const loader = (props: Props, req: Request, ctx: FnContext) => {
-  const isHomePage = new URL(req.url);
+  const url = new URL(req.url);
 
   return {
     ...props,
     device: ctx.device,
-    isHomePage: isHomePage.pathname === "/",
+    isHomePage: url.pathname === "/" || url.pathname === "/home-teste",
   };
 };
 
