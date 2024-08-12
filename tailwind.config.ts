@@ -9,6 +9,9 @@ export default {
       center: true,
     },
     extend: {
+      fontFamily: {
+        sans: ["Noto Sans"],
+      },
       colors: {
         "firebrick": "#ab0033",
         "dimgray": "#555555",

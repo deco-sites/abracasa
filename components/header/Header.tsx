@@ -74,7 +74,7 @@ function Header({
           <div
             data-scrolling={isHomePage ? "false" : "true"}
             id="nav"
-            class={`fixed w-full z-[9999999] transition duration-200 ease-in group/nav ${
+            class={`font-sans fixed w-full z-[9999999] transition duration-200 ease-in group/nav ${
               isHomePage
                 ? "overlay xl:hover:bg-base-100 xl:hover:text-gray-dark text-white"
                 : "bg-base-100 text-gray-dark border-b"
