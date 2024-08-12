@@ -75,7 +75,7 @@ function NavItem(
                   </div>
 
                   <ul class="flex flex-col gap-1 mt-2">
-                    {node.children?.slice(0, 4)?.map((leaf) => (
+                    {node.children?.map((leaf) => (
                       <li>
                         <a
                           class="text-gray-dark hover:text-firebrick transition-colors duration-100 ease-in text-sm"
@@ -85,17 +85,6 @@ function NavItem(
                         </a>
                       </li>
                     ))}
-
-                    {node.children && node.children.length > 4 && (
-                      <li>
-                        <a
-                          href={node.url}
-                          class="text-gray-dark font-bold text-xs"
-                        >
-                          + Ver tudo
-                        </a>
-                      </li>
-                    )}
                   </ul>
                 </li>
               ))}
