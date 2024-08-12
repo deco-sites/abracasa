@@ -58,7 +58,7 @@ function NavItem(
                       class={`text-gray-dark text-sm ${
                         hasChildren
                           ? "font-semibold"
-                          : "font-normal hover:text-firebrick transition-colors duration-100 ease-in"
+                          : "hover:text-firebrick transition-colors duration-100 ease-in"
                       }`}
                     >
                       <span>{node.name}</span>
@@ -78,10 +78,10 @@ function NavItem(
                     {node.children?.map((leaf) => (
                       <li>
                         <a
-                          class="text-gray-dark hover:text-firebrick transition-colors duration-100 ease-in text-sm"
+                          class="text-gray-dark hover:text-firebrick transition-colors duration-100 ease-in"
                           href={leaf.url}
                         >
-                          <span class="text-xs">{leaf.name}</span>
+                          <span class="text-[13px]">{leaf.name}</span>
                         </a>
                       </li>
                     ))}
