@@ -39,7 +39,8 @@ function Header({
       const scrollY = globalThis.scrollY;
       const header = document.getElementById("nav");
 
-      const isHome = document.location.pathname === "/";
+      const isHome = document.location.pathname === "/" ||
+        document.location.pathname === "/home-teste";
 
       if (!isHome) return;
 
