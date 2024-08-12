@@ -33,7 +33,7 @@ export default function Departments({ departments = [] }: Props) {
             >
               <a
                 href={item.link || "#"}
-                class="flex flex-col items-center justify-center gap-1 text-gray-48 hover:text-firebrick"
+                class="flex flex-col items-center justify-center gap-1 text-gray-48 hover:text-firebrick transition-colors duration-150 ease-in font-sans"
               >
                 <Image
                   src={item.image}
@@ -42,7 +42,7 @@ export default function Departments({ departments = [] }: Props) {
                   height={item.height || 100}
                   loading={item.loading}
                 />
-                <span class="text-xs text-gray-48 leading-[35px] tracking-[5%] text-center font-sans">
+                <span class="text-xs leading-[35px] tracking-[5%] text-center">
                   {item.label}
                 </span>
               </a>
