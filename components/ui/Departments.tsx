@@ -20,7 +20,7 @@ export default function Departments({ departments = [] }: Props) {
   const id = useId();
 
   return (
-    <div class="w-full py-6 mt-6 relative xl:max-w-[85%] lg:mx-auto">
+    <div class="w-full py-6 mt-6 relative lg:mx-auto">
       <div
         id={id}
         class="grid px-4"

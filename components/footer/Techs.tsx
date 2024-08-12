@@ -10,7 +10,7 @@ export default function Techs(
   return (
     <>
       {content && content.items && content.items.length > 0 && (
-        <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-1.5 text-xs leading-4 min-w-[120px]">
+        <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-1.5 text-xs leading-4 lg:min-w-[205px]">
           {content.title && <span>{content.title}</span>}
 
           <ul class="flex flex-wrap divide-x items-center">
