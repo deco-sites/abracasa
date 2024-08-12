@@ -39,6 +39,10 @@ function Header({
       const scrollY = globalThis.scrollY;
       const header = document.getElementById("nav");
 
+      const isHome = document.location.pathname === "/";
+
+      if (!isHome) return;
+
       if (scrollY > 0) {
         header?.classList.remove(
           "text-white",
@@ -67,9 +71,13 @@ function Header({
           platform={platform}
         >
           <div
-            data-scrolling="false"
+            data-scrolling={isHomePage ? "false" : "true"}
             id="nav"
-            class="xl:hover:bg-base-100 fixed w-full z-[9999999] text-white xl:hover:text-gray-dark transition duration-200 ease-in group/nav overlay"
+            class={`fixed w-full z-[9999999] transition duration-200 ease-in group/nav ${
+              isHomePage
+                ? "overlay xl:hover:bg-base-100 xl:hover:text-gray-dark text-white"
+                : "bg-base-100 text-gray-dark border-b"
+            }`}
           >
             <Navbar
               items={items}
