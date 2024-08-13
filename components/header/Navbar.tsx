@@ -82,7 +82,7 @@ function Navbar(
       {isDesktop && (
         <div
           id="desktop-navbar"
-          class="hidden xl:flex flex-col justify-center items-center w-full py-1"
+          class="hidden xl:flex flex-col justify-center items-center w-full py-1 group-data-[scrolling='true']/nav:py-0"
         >
           <div class="flex justify-between items-center max-w-[95%] gap-7 w-full">
             <div class="flex-none w-[75px]">
