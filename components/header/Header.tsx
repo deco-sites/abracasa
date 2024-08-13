@@ -35,36 +35,28 @@ function Header({
   const items = navItems ?? [];
 
   function handleScroll() {
+    const header = document.getElementById("nav");
+    const isHome = ["/", "/home-teste"].includes(document.location.pathname);
+
     document.addEventListener("scroll", () => {
-      const scrollY = globalThis.scrollY;
-      const header = document.getElementById("nav");
+      const scrollY = globalThis.scrollY > 0;
 
-      const isHome = document.location.pathname === "/" ||
-        document.location.pathname === "/home-teste";
-
-      if (scrollY > 0) {
-        if (isHome) {
-          header?.classList.remove(
-            "text-white",
-            "xl:hover:text-gray-dark",
-            "overlay",
-          );
-          header?.classList.add("bg-base-100", "text-gray-dark");
-        }
-
-        header?.setAttribute("data-scrolling", "true");
+      if (!isHome) {
+        header?.classList.add("bg-base-100", "text-gray-dark");
+        header?.classList.remove(
+          "text-white",
+          "overlay",
+          "xl:hover:text-gray-dark",
+        );
       } else {
-        if (isHome) {
-          header?.classList.remove("bg-base-100", "text-gray-dark");
-          header?.classList.add(
-            "text-white",
-            "xl:hover:text-gray-dark",
-            "overlay",
-          );
-        }
-
-        header?.setAttribute("data-scrolling", "false");
+        header?.classList.toggle("bg-base-100", scrollY);
+        header?.classList.toggle("text-gray-dark", scrollY);
+        header?.classList.toggle("text-white", !scrollY);
+        header?.classList.toggle("xl:hover:text-gray-dark", !scrollY);
+        header?.classList.toggle("overlay", !scrollY);
       }
+
+      header?.setAttribute("data-scrolling", scrollY.toString());
     });
   }
 
