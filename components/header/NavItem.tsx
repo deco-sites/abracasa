@@ -15,7 +15,7 @@ function NavItem(
     <li class="group flex items-center">
       <a
         href={url}
-        class="flex items-center justify-center h-[118px]"
+        class="flex items-center justify-center h-[118px] group-data-[scrolling='true']/nav:h-[75px]"
       >
         <span class="flex items-center justify-center group-hover:text-firebrick text-sm leading-[22px] tracking-[12%] h-full font-medium">
           {name}
@@ -25,11 +25,10 @@ function NavItem(
       {children && children.length > 0 &&
         (
           <div
-            class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start border-t border-b-2 border-base-200 w-screen py-4 px-8 gap-16"
+            class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start border-t border-b-2 border-base-200 w-screen py-4 px-8 gap-16 mt-[120px] group-data-[scrolling='true']/nav:mt-[75px]"
             style={{
               top: "0px",
               left: "0px",
-              marginTop: "120px",
             }}
           >
             {image?.url && (

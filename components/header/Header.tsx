@@ -42,23 +42,27 @@ function Header({
       const isHome = document.location.pathname === "/" ||
         document.location.pathname === "/home-teste";
 
-      if (!isHome) return;
-
       if (scrollY > 0) {
-        header?.classList.remove(
-          "text-white",
-          "xl:hover:text-gray-dark",
-          "overlay",
-        );
-        header?.classList.add("bg-base-100", "text-gray-dark");
+        if (isHome) {
+          header?.classList.remove(
+            "text-white",
+            "xl:hover:text-gray-dark",
+            "overlay",
+          );
+          header?.classList.add("bg-base-100", "text-gray-dark");
+        }
+
         header?.setAttribute("data-scrolling", "true");
       } else {
-        header?.classList.remove("bg-base-100", "text-gray-dark");
-        header?.classList.add(
-          "text-white",
-          "xl:hover:text-gray-dark",
-          "overlay",
-        );
+        if (isHome) {
+          header?.classList.remove("bg-base-100", "text-gray-dark");
+          header?.classList.add(
+            "text-white",
+            "xl:hover:text-gray-dark",
+            "overlay",
+          );
+        }
+
         header?.setAttribute("data-scrolling", "false");
       }
     });
@@ -72,9 +76,10 @@ function Header({
           platform={platform}
         >
           <div
-            data-scrolling={isHomePage ? "false" : "true"}
+            data-scrolling="false"
+            data-isHome={isHomePage ? "true" : "false"}
             id="nav"
-            class={`font-sans fixed w-full z-[9999999] transition duration-200 ease-in group/nav ${
+            class={`font-sans fixed w-full z-[9999999] transition duration-200 ease-in group/nav data-[scrolling='true']:h-[56px] data-[scrolling='true']:xl:h-[75px] ${
               isHomePage
                 ? "overlay xl:hover:bg-base-100 xl:hover:text-gray-dark text-white"
                 : "bg-base-100 text-gray-dark border-b"
