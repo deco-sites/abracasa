@@ -46,7 +46,7 @@ function NavItem(
               class={`flex ${
                 !hasChildren
                   ? "flex-col flex-wrap gap-y-2 gap-x-[90px] max-h-[270px]"
-                  : "flex-wrap gap-12 container"
+                  : "flex-wrap gap-12 container h-[400px]"
               }`}
             >
               {children.map((node) => (
@@ -74,7 +74,7 @@ function NavItem(
                   </div>
 
                   <ul class="flex flex-col gap-1 mt-2">
-                    {node.children?.map((leaf) => (
+                    {node.children?.slice(0, 4)?.map((leaf) => (
                       <li>
                         <a
                           class="text-gray-dark hover:text-firebrick transition-colors duration-100 ease-in"

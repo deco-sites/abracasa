@@ -99,7 +99,7 @@ export default function AdaptativeBenefits({ benefits = [] }: Props) {
       <div class="xl:max-w-[85%] xl:mx-auto">
         <div class="grid grid-cols-4 divide-x divide-light-shade-gray w-full gap-x-8">
           {benefits.map(({ title, content }) => (
-            <div class="flex flex-col gap-1.5 max-w-[75%] py-4 pl-10">
+            <div class="flex flex-col gap-1.5 max-w-[85%] py-4 pl-10">
               <span class="text-[#333232] font-semibold text-xs">{title}</span>
 
               <div
