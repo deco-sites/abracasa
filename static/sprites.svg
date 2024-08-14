@@ -51,6 +51,8 @@
 		</defs>
 	</symbol>
 
+	<symbol id="VideoPlay" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"><style>tspan { white-space:pre }.shp0 { fill: #f5f2ee } .shp1 { fill: #ababab } </style><g id="menu"><g id="Video" style="opacity: 0.749"><path id="Ellipse 1" class="shp0" d="M1,18.5c0,9.66 7.84,17.5 17.5,17.5c9.66,0 17.5,-7.84 17.5,-17.5c0,-9.67 -7.84,-17.5 -17.5,-17.5c-9.67,0 -17.5,7.83 -17.5,17.5z" fill="#F5F2EE"></path><path id="Shape 6" class="shp1" d="M14.52,27.25l11.93,-8.75l-11.93,-8.75z" fill="#ABABAB"></path></g></g></symbol>
+
 	<symbol
 		id="PhysicalStores"
 		width="16"

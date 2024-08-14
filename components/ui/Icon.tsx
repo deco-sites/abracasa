@@ -33,6 +33,7 @@ export type AvailableIcons =
   | "Minus"
   | "MapPin"
   | "MagnifyingGlass"
+  | "VideoPlay"
   | "Mastercard"
   | "Message"
   | "Youtube"
