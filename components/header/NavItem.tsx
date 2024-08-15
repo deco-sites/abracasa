@@ -45,8 +45,8 @@ function NavItem(
             <ul
               class={`flex ${
                 !hasChildren
-                  ? "flex-col flex-wrap gap-y-2 gap-x-[90px] max-h-[270px]"
-                  : "flex-wrap gap-12 container h-[400px]"
+                  ? "flex-col flex-wrap gap-x-[90px] max-h-[270px]"
+                  : "flex-wrap flex-col gap-8 h-[400px] py-2 justify-between flex-1"
               }`}
             >
               {children.map((node) => (
@@ -57,7 +57,7 @@ function NavItem(
                       class={`text-gray-dark text-sm ${
                         hasChildren
                           ? "font-semibold"
-                          : "hover:text-firebrick transition-colors duration-100 ease-in"
+                          : "hover:text-firebrick transition-colors duration-100 ease-in tracking-[0.5px] leading-[180%]"
                       }`}
                     >
                       <span>{node.name}</span>
@@ -74,13 +74,15 @@ function NavItem(
                   </div>
 
                   <ul class="flex flex-col gap-1 mt-2">
-                    {node.children?.slice(0, 4)?.map((leaf) => (
+                    {node.children?.map((leaf) => (
                       <li>
                         <a
                           class="text-gray-dark hover:text-firebrick transition-colors duration-100 ease-in"
                           href={leaf.url}
                         >
-                          <span class="text-[13px]">{leaf.name}</span>
+                          <span class="text-[13px] tracking-[0.5px] leading-[180%]">
+                            {leaf.name}
+                          </span>
                         </a>
                       </li>
                     ))}
