@@ -100,7 +100,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
           {hasVideo && props.device === "mobile" && <MobileVideoPlay />}
 
           <Slider.PrevButton
-            class="block no-animation absolute left-2 top-1/2 lg:hidden rotate-180"
+            class="block no-animation absolute left-2 top-1/2 z-10 lg:hidden rotate-180"
             disabled
           >
             <svg
@@ -120,7 +120,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
           </Slider.PrevButton>
 
           <Slider.NextButton
-            class="block no-animation absolute right-2 top-1/2 lg:hidden"
+            class="block no-animation absolute right-2 top-1/2 z-10 lg:hidden"
             disabled={files.length < 2}
           >
             <svg

@@ -97,7 +97,7 @@ export default function PrincipalImages(
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     alt={item.alternateName}
                     sizes="(max-width: 640px) 100vw, 40vw"
-                    class="w-full h-full duration-100 cursor-pointer"
+                    class="w-full h-full duration-100 cursor-pointer z-[5]"
                     style={{
                       aspectRatio: ASPECT_RATIO,
                       transition: "transform 0.3s ease",

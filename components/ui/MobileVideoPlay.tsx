@@ -52,7 +52,7 @@ export default function MobileVideoPlay() {
       <button
         id="mobilePlayButton"
         aria-label="go to slider item 2"
-        class="absolute flex flex-col md:hidden gap-1 z-10 bottom-3 left-2"
+        class="absolute flex flex-col md:hidden gap-1 z-[4] bottom-3 left-2"
       >
         <svg
           class="playIcon"
