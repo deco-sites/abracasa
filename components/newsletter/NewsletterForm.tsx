@@ -46,7 +46,7 @@ export default function NewsletterForm({ title, subtitle }: Props) {
 
             <form
               onSubmit={handleSubmit}
-              class="w-full h-full flex flex-col md:flex-row items-center justify-center gap-7 pb-5"
+              class="w-full h-full flex flex-col lg:flex-row items-center justify-center gap-7 pb-5"
             >
               <input
                 name="name"
