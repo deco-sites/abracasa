@@ -76,7 +76,7 @@ function BannerItem(
       id={id}
       href={image?.href ?? "#"}
       aria-label={image?.alt}
-      class="relative overflow-y-hidden w-full"
+      class="relative overflow-y-hidden w-full h-[573px] md:h-[586px]"
     >
       <Picture preload={lcp}>
         <Source
@@ -90,8 +90,8 @@ function BannerItem(
           media="(min-width: 768px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={desktop.image}
-          width={desktop.width || 2500}
-          height={desktop.height || 800}
+          width={desktop.width || 1440}
+          height={desktop.height || 586}
         />
         <img
           class="object-cover h-full w-full"

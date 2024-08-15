@@ -37,7 +37,7 @@ function MobileBenefits({ benefits, interval, infinite }: Props) {
               index={index}
               class="carousel-item w-full"
             >
-              <div class="flex flex-col gap-1.5 items-center justify-center py-2.5 px-8 w-full">
+              <div class="flex flex-col gap-1.5 items-center justify-center py-2.5 px-10 w-full">
                 <span class="text-[#333232] font-semibold text-xs">
                   {title}
                 </span>
