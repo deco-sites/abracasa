@@ -97,18 +97,20 @@ export default function AdaptativeBenefits({ benefits = [] }: Props) {
   return (
     <div class="flex items-center justify-center w-full bg-aprox-whitesmoke font-sans">
       <div class="xl:max-w-[85%] xl:mx-auto">
-        <div class="grid grid-cols-4 divide-x divide-light-shade-gray w-full gap-x-8">
+        <ul class="grid grid-cols-4 divide-x divide-light-shade-gray w-full gap-x-8">
           {benefits.map(({ title, content }) => (
-            <div class="flex flex-col gap-1.5 max-w-[85%] py-4 pl-10">
-              <span class="text-[#333232] font-semibold text-xs">{title}</span>
+            <li class="flex flex-col gap-1.5 py-4 first:pl-4 pl-10 2xl:max-w-[85%]">
+              <span class="text-[#333232] font-semibold text-xs leading-[15px] xl:leading-[18px] xl:tracking-[0.03em]">
+                {title}
+              </span>
 
               <div
                 dangerouslySetInnerHTML={{ __html: content }}
-                class="text-dimgray text-xs tracking-[3%] leading-4"
+                class="text-dimgray text-xs leading-4 tracking-[0.03em]"
               />
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   );

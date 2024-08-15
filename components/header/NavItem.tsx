@@ -17,7 +17,7 @@ function NavItem(
         href={url}
         class="flex items-center justify-center h-[118px] group-data-[scrolling='true']/nav:h-[75px]"
       >
-        <span class="flex items-center justify-center group-hover:text-firebrick text-sm leading-[22px] tracking-[12%] h-full font-medium">
+        <span class="flex items-center justify-center group-hover:text-firebrick text-sm leading-[22px] tracking-[0.12em] h-full font-medium">
           {name}
         </span>
       </a>

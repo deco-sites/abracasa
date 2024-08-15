@@ -133,7 +133,7 @@ function Navbar(
                   height={32}
                   alt="Store icon"
                 />
-                <span>Lojas</span>
+                <span class="tracking-[0.05em]">Lojas</span>
               </a>
 
               <SellbieCashback />

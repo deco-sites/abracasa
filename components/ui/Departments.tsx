@@ -43,7 +43,7 @@ export default function Departments({ departments = [] }: Props) {
                   loading={item.loading}
                   class="h-[70px]"
                 />
-                <span class="text-xs leading-[35px] tracking-[5%] text-center">
+                <span class="text-xs leading-[35px] tracking-[0.05em] text-center">
                   {item.label}
                 </span>
               </a>
