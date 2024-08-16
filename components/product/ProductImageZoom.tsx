@@ -8,18 +8,16 @@ import Modal from "$store/components/ui/ImagesModal.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 
 import { useId } from "$store/sdk/useId.ts";
+import { ImageObject, VideoObject } from "apps/commerce/types.ts";
 
 export interface Props {
-  images: Array<{
-    url?: string;
-    alternateName?: string;
-  }>;
+  files: (ImageObject | VideoObject)[];
   width: number;
   height: number;
 }
 
 export default function PrincipalImages(
-  { images, width: WIDTH, height: HEIGHT }: Props,
+  { files, width: WIDTH, height: HEIGHT }: Props,
 ) {
   const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
@@ -59,34 +57,58 @@ export default function PrincipalImages(
   return (
     <>
       <Slider class="carousel carousel-center gap-6 w-[90vw] sm:w-[40vw]">
-        {images?.map((img, index) => {
+        {files?.map((item, index) => {
           return (
             <Slider.Item
               index={index}
               class="carousel-item w-full"
             >
-              <img
-                id={`image-${index}`}
-                class="w-full duration-100 cursor-pointer"
-                sizes="(max-width: 640px) 100vw, 40vw"
-                style={{
-                  aspectRatio: ASPECT_RATIO,
-                  transition: "transform 0.3s ease",
-                }}
-                src={img.url!}
-                alt={img.alternateName}
-                width={WIDTH}
-                height={HEIGHT}
-                onMouseMove={(e) => handleMouseMove(e)}
-                onMouseLeave={(e) => handleMouseLeave(e)}
-                onClick={() => {
-                  activedIndex.value = index;
-                  isModalOpened.value = true;
-                }}
-                // Preload LCP image for better web vitals
-                preload={index === 0 ? "true" : "false"}
-                loading={index === 0 ? "eager" : "lazy"}
-              />
+              {item["@type"] === "ImageObject"
+                ? (
+                  <img
+                    id={`item-${index}`}
+                    class="w-full duration-100 cursor-pointer"
+                    sizes="(max-width: 640px) 100vw, 40vw"
+                    style={{
+                      aspectRatio: ASPECT_RATIO,
+                      transition: "transform 0.3s ease",
+                    }}
+                    src={item.url!}
+                    alt={item.alternateName}
+                    width={WIDTH}
+                    height={HEIGHT}
+                    onMouseMove={(e) => handleMouseMove(e)}
+                    onMouseLeave={(e) => handleMouseLeave(e)}
+                    onClick={() => {
+                      activedIndex.value = index;
+                      isModalOpened.value = true;
+                    }}
+                    // Preload LCP image for better web vitals
+                    preload={index === 0 ? "true" : "false"}
+                    loading={index === 0 ? "eager" : "lazy"}
+                  />
+                )
+                : (
+                  <iframe
+                    id={`item-${index}`}
+                    src={item.contentUrl!}
+                    width="100%"
+                    height="100%"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    alt={item.alternateName}
+                    sizes="(max-width: 640px) 100vw, 40vw"
+                    class="w-full h-full duration-100 cursor-pointer z-[5]"
+                    style={{
+                      aspectRatio: ASPECT_RATIO,
+                      transition: "transform 0.3s ease",
+                    }}
+                    onClick={() => {
+                      activedIndex.value = index;
+                      isModalOpened.value = true;
+                    }}
+                    loading="lazy"
+                  />
+                )}
             </Slider.Item>
           );
         })}
@@ -114,19 +136,35 @@ export default function PrincipalImages(
             </button>
 
             <Slider class="carousel col-span-full col-start-1 row-start-1 row-span-full h-full w-full">
-              {images.map((image, index) => (
+              {files.map((item, index) => (
                 <Slider.Item
                   index={index}
                   class="carousel-item w-full h-full justify-center items-center"
                 >
-                  <Image
-                    style={{ aspectRatio: `${700} / ${700}` }}
-                    src={image.url!}
-                    alt={image.alternateName}
-                    width={720}
-                    height={700}
-                    class="h-full w-auto"
-                  />
+                  {item["@type"] === "ImageObject"
+                    ? (
+                      <Image
+                        style={{ aspectRatio: `${700} / ${700}` }}
+                        src={item.url!}
+                        alt={item.alternateName}
+                        width={720}
+                        height={700}
+                        class="h-full w-auto"
+                        loading="lazy"
+                      />
+                    )
+                    : (
+                      <div class="w-full h-full inline-block">
+                        <iframe
+                          src={item.contentUrl!}
+                          alt={item.alternateName}
+                          width="100%"
+                          height="100%"
+                          class="h-full w-full aspect-video"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
                 </Slider.Item>
               ))}
             </Slider>
