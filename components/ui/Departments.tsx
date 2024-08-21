@@ -25,7 +25,7 @@ export default function Departments({ departments = [] }: Props) {
         id={id}
         class="grid px-4"
       >
-        <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar gap-7 xl:gap-14 scrollbar-none lg:justify-center">
+        <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar gap-10 xl:gap-14 scrollbar-none lg:justify-center">
           {departments?.map((item, index) => (
             <Slider.Item
               index={index}
