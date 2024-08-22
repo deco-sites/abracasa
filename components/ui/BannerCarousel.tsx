@@ -76,7 +76,7 @@ function BannerItem(
       id={id}
       href={image?.href ?? "#"}
       aria-label={image?.alt}
-      class="relative overflow-y-hidden w-full h-[573px] md:h-[586px]"
+      class="relative overflow-hidden w-full h-[500px] md:h-[586px]"
     >
       <Picture preload={lcp}>
         <Source
