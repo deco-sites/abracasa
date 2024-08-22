@@ -18,7 +18,7 @@ function AddToCartButton({ productGroupID, productID, eventParams }: Props) {
             ProductID: productGroupID,
             SkuID: productID,
             Quantity: 1,
-          }]
+          }],
         })}
     />
   );
