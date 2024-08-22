@@ -162,7 +162,7 @@ function ProductCard(
         >
           {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
             (
-              <div class="flex items-center justify-center bg-[#555] rounded-md text-xs leading-[12.57px] text-white py-3 px-[4.61px] min-w-[95px] w-full h-[18.54px]">
+              <div class="flex items-center justify-center bg-dimgray rounded-md text-xs leading-[12.57px] text-white py-3 px-[4.61px] min-w-[95px] w-full h-[18.54px]">
                 pronta entrega
               </div>
             )}

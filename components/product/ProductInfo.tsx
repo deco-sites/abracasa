@@ -16,6 +16,7 @@ import QuickReview from "./QuickReview.tsx";
 import AugmentedReality from "./AugmentedReality.tsx";
 import CTA from "./CTA.tsx";
 import PhysicalStoresButton from "$store/islands/PhysicalStoresButton.tsx";
+import ArButton from "deco-sites/abracasa/components/product/ArButton.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -89,6 +90,7 @@ function ProductInfo({ page, layout }: Props) {
       class="flex flex-col lg:border lg:border-[#DFDFDF] lg:px-[25px] md:mt-[72px] md:pb-6 min-w-[100vw] sm:min-w-full lg:w-[440px] px-4 md:px-0"
       id={id}
     >
+      <ArButton />
       <ReviewsScript />
       {/* Code and name */}
       <div class="sm:mt-8">
@@ -136,7 +138,7 @@ function ProductInfo({ page, layout }: Props) {
         {/* Flags */}
         <div class="flex items-center gap-2 mt-1">
           {hasPromptDeliveryFlag && (
-            <div class="flex items-center justify-center bg-[#555] rounded-md text-xs leading-[12px] text-white py-3 px-1.5 max-w-[120px] w-full h-[18px]">
+            <div class="flex items-center justify-center bg-dimgray rounded-md text-xs leading-[12px] text-white py-3 px-1.5 max-w-[120px] w-full h-[18px]">
               pronta entrega
             </div>
           )}
@@ -197,7 +199,7 @@ function ProductInfo({ page, layout }: Props) {
                 <>
                   <a
                     href={`/checkout/cart/add?sku=${skuId}&qty=1&seller=${seller}&redirect=true&sc=1`}
-                    class="flex items-center justify-center h-[66px] w-full bg-[#555] hover:bg-black/70 font-bold text-white uppercase text-[18px] leading-[25px]"
+                    class="flex items-center justify-center h-[66px] w-full bg-dimgray hover:bg-black/70 font-bold text-white uppercase text-[18px] leading-[25px]"
                   >
                     Comprar
                   </a>

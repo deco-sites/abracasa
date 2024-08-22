@@ -64,7 +64,7 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
       <div
         class={`${
           appearMessage.value ? "visible opacity-100" : "invisible opacity-0"
-        } text-sm items-center justify-center absolute left-1/2 -translate-x-1/2 text-center bg-[#555] text-white py-2 px-4 transition-opacity duration-500 pointer-events-none`}
+        } text-sm items-center justify-center absolute left-1/2 -translate-x-1/2 text-center bg-dimgray text-white py-2 px-4 transition-opacity duration-500 pointer-events-none`}
       >
         O valor do frete foi alterado
       </div>
