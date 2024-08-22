@@ -1,21 +1,16 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
-import type { Props as CampaignTimerProps } from "$store/components/header/CampaignTimer.tsx";
 import Drawers from "$store/islands/Header/Drawers.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
-import CampaignTimer from "./CampaignTimer.tsx";
 import { FnContext } from "deco/types.ts";
+import { useScript } from "deco/hooks/useScript.ts";
+import { SectionProps } from "deco/mod.ts";
 
 export type TAlert = HTMLWidget;
 
 export interface Props {
-  campaignTimer?: CampaignTimerProps;
-
-  alerts?: TAlert[];
-
   /** @title Search Bar */
   searchbar?: Omit<SearchbarProps, "platform">;
 
@@ -30,62 +25,83 @@ export interface Props {
 }
 
 function Header({
-  campaignTimer,
-  alerts,
   searchbar,
   navItems,
   logo,
   device,
-}: ReturnType<typeof loader>) {
+  isHomePage,
+}: SectionProps<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
 
-  const hasCampaignTimer = !!(
-    campaignTimer &&
-    campaignTimer.text !== undefined &&
-    campaignTimer.image !== undefined &&
-    !campaignTimer.hiddenCampaignTimer &&
-    (
-      (campaignTimer.expiresAt &&
-        new Date(campaignTimer.expiresAt) > new Date()) ||
-      !campaignTimer.expiresAt
-    )
-  );
+  function handleScroll() {
+    const header = document.getElementById("nav");
+    const isHome = ["/", "/home-teste"].includes(document.location.pathname);
+
+    document.addEventListener("scroll", () => {
+      const scrollY = globalThis.scrollY > 0;
+
+      if (!isHome) {
+        header?.classList.add("bg-base-100", "text-gray-dark");
+        header?.classList.remove(
+          "text-white",
+          "overlay",
+          "xl:hover:text-gray-dark",
+        );
+      } else {
+        header?.classList.toggle("bg-base-100", scrollY);
+        header?.classList.toggle("text-gray-dark", scrollY);
+        header?.classList.toggle("text-white", !scrollY);
+        header?.classList.toggle("xl:hover:text-gray-dark", !scrollY);
+        header?.classList.toggle("overlay", !scrollY);
+      }
+
+      header?.setAttribute("data-scrolling", scrollY.toString());
+    });
+  }
 
   return (
     <>
-      <header
-        class={`${
-          hasCampaignTimer ? "h-[250px] xl:h-[290px]" : "h-[140px] xl:h-[180px]"
-        }`}
-      >
+      <header class={!isHomePage ? "h-[105px] xl:h-[126px]" : ""}>
         <Drawers
           menu={{ items }}
           platform={platform}
         >
-          <div class="bg-base-100 fixed w-full z-[9999999]">
-            {hasCampaignTimer && <CampaignTimer {...campaignTimer} />}
-
-            {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
-
+          <div
+            data-scrolling="false"
+            data-isHome={isHomePage ? "true" : "false"}
+            id="nav"
+            class={`font-sans fixed w-full z-[9999999] transition duration-200 ease-in group/nav data-[scrolling='true']:h-[56px] data-[scrolling='true']:xl:h-[75px] ${
+              isHomePage
+                ? "overlay xl:hover:bg-base-100 xl:hover:text-gray-dark text-white"
+                : "bg-base-100 text-gray-dark border-b"
+            }`}
+          >
             <Navbar
               items={items}
               searchbar={searchbar && { ...searchbar }}
               logo={logo}
               device={device}
-              hasCampaignTimer={hasCampaignTimer}
             />
           </div>
         </Drawers>
       </header>
+
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(handleScroll) }}
+      />
     </>
   );
 }
 
-export const loader = (props: Props, _req: Request, ctx: FnContext) => {
+export const loader = (props: Props, req: Request, ctx: FnContext) => {
+  const url = new URL(req.url);
+
   return {
     ...props,
     device: ctx.device,
+    isHomePage: url.pathname === "/" || url.pathname === "/home-teste",
   };
 };
 

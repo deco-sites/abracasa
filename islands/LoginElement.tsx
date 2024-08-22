@@ -1,24 +1,24 @@
 import { useUser } from "apps/vtex/hooks/useUser.ts";
+import Icon from "deco-sites/abracasa/components/ui/Icon.tsx";
 
 export default function LoginElement() {
   const { user } = useUser();
 
   return (
-    <span>
-      <a
-        href={user.value ? "/logout" : "/login"}
-        aria-label="Log in"
-      >
-        {user.value ? "sair" : "entrar"}
-      </a>
-
-      <br />
-
-      <a
-        href={user.value ? "/account#/orders" : "/login"}
-      >
-        meus pedidos
-      </a>
-    </span>
+    <a
+      href={user.value ? "/account" : "/login"}
+      class="inline-flex items-center gap-1 text-xs"
+      aria-label="Log in"
+    >
+      <Icon
+        id="UserIcon"
+        width={32}
+        height={32}
+        alt="User icon"
+      />
+      <span class="truncate tracking-[0.05em]">
+        {user.value ? (user.value.name ?? "Conta") : "Entrar"}
+      </span>
+    </a>
   );
 }

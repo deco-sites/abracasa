@@ -6,19 +6,16 @@ import Searchbar from "$store/islands/Header/Searchbar.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import { asset } from "$fresh/runtime.ts";
 import NavItem from "./NavItem.tsx";
-import Subnavbar from "$store/islands/Header/Subnavbar.tsx";
 import LoginElement from "$store/islands/LoginElement.tsx";
 import { Device } from "apps/website/matchers/device.ts";
 import SellbieCashback from "$store/islands/Cashback.tsx";
 
 function Navbar(
-  { items, searchbar, logo, hasCampaignTimer, device }: {
+  { items, searchbar, logo, device }: {
     items: SiteNavigationElement[];
     searchbar?: SearchbarProps;
     logo?: { src: string; alt: string };
-    hasCampaignTimer?: boolean;
     device: Device;
   },
 ) {
@@ -32,14 +29,14 @@ function Navbar(
         <>
           <div
             id="mobile-navbar"
-            class="xl:hidden flex flex-row justify-between items-center border-b border-base-200 w-full px-4 gap-2 h-[105px]"
+            class="xl:hidden flex flex-row justify-between items-center w-full px-4 gap-2 h-[105px] group-data-[scrolling='true']/nav:h-[56px]"
           >
             {logo && (
               <>
                 <a
                   id="mobile-navbar-anchor"
                   href="/"
-                  class="inline-flex max-h-[80px] max-w-[80px] w-full h-full py-0.5"
+                  class="inline-flex group-data-[scrolling='true']/nav:hidden max-h-[80px] max-w-[80px] w-full h-full py-0.5"
                   aria-label="Store logo"
                 >
                   <Image
@@ -55,7 +52,7 @@ function Navbar(
                 <a
                   id="mobile-navbar-anchor-minimized"
                   href="/"
-                  class="hidden max-h-[40px] max-w-[40px] w-full h-full py-0.5"
+                  class="hidden group-data-[scrolling='true']/nav:inline-flex max-h-[40px] max-w-[40px] w-full h-full py-0.5"
                   aria-label="Store minimized logo"
                 >
                   <img
@@ -65,6 +62,7 @@ function Navbar(
                     height={40}
                     class="w-full h-full object-cover"
                     loading="lazy"
+                    decoding="async"
                   />
                 </a>
               </>
@@ -84,85 +82,69 @@ function Navbar(
       {isDesktop && (
         <div
           id="desktop-navbar"
-          class="hidden xl:flex flex-col justify-center items-center w-full"
+          class="hidden xl:flex flex-col justify-center items-center w-full py-1 group-data-[scrolling='true']/nav:py-0"
         >
-          <div class="flex justify-between items-center max-w-[85%] gap-2.5 w-full">
-            <div class="flex-none w-44">
+          <div class="flex justify-between items-center max-w-[95%] gap-7 w-full">
+            <div class="flex-none w-[75px]">
               {logo && (
                 <a
                   href="/"
                   aria-label="Store logo"
-                  class="block px-4 py-3 w-[160px]"
+                  class="block w-[75px]"
                 >
-                  <Image src={logo.src} alt={logo.alt} width={80} height={16} />
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={75}
+                    height={75}
+                    class="block group-data-[scrolling='true']/nav:hidden"
+                  />
+
+                  <img
+                    src="/image/minimized-icon.jpg"
+                    alt="Logo Abracasa Minificada"
+                    loading="lazy"
+                    decoding="async"
+                    width={40}
+                    height={40}
+                    class="hidden group-data-[scrolling='true']/nav:block"
+                  />
                 </a>
               )}
             </div>
 
-            <div class="w-full lg:max-w-[600px]">
+            <ul class="flex-auto flex items-center justify-center gap-10 px-4">
+              {items.map((item) => <NavItem item={item} />)}
+            </ul>
+
+            <div class="w-full max-w-[50%]">
               <Searchbar searchbar={searchbar} />
             </div>
 
-            <div class="flex items-center justify-between max-w-[45%] w-full gap-4">
+            <div class="flex items-center justify-between gap-7 w-full">
               <a
-                class="inline-flex items-center gap-1 group text-xs"
+                class="inline-flex items-center gap-1 text-xs"
                 href="/institucional/nossas-lojas"
                 aria-label="Log in"
               >
-                <img
-                  src={asset("/image/store.svg")}
+                <Icon
+                  id="OurStores"
                   width={32}
                   height={32}
                   alt="Store icon"
-                  class="group-hover:text-firebrick"
                 />
-                <span>nossas lojas</span>
-              </a>
-
-              <a
-                class="inline-flex items-center gap-1 group text-xs"
-                href="/wishlist"
-                aria-label="Wishlist"
-              >
-                <Icon
-                  id="Heart"
-                  size={30}
-                  strokeWidth={0.75}
-                  fill="none"
-                  class="group-hover:text-firebrick"
-                />
-                <span>favoritos</span>
+                <span class="tracking-[0.05em]">Lojas</span>
               </a>
 
               <SellbieCashback />
 
-              <div class="inline-flex items-center gap-1 group text-xs">
-                <img
-                  src={asset("/image/user.svg")}
-                  width={32}
-                  height={32}
-                  alt="User icon"
-                  class="group-hover:text-firebrick"
-                />
-                <LoginElement />
-              </div>
-
               {platform === "vtex" && <CartButtonVTEX />}
+
+              <LoginElement />
             </div>
           </div>
-          <ul class="flex-auto flex items-center justify-center border-t border-base-200 gap-2.5 w-full">
-            {items.map((item) => (
-              <NavItem item={item} hasCampaignTimer={hasCampaignTimer} />
-            ))}
-          </ul>
         </div>
       )}
-
-      <Subnavbar
-        items={items}
-        searchbar={searchbar}
-        device={device}
-      />
     </>
   );
 }

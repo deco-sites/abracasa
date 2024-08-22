@@ -1,8 +1,8 @@
-import { asset } from "$fresh/runtime.ts";
 import Button from "$store/components/ui/Button.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { AnalyticsItem } from "apps/commerce/types.ts";
+import Icon from "deco-sites/abracasa/components/ui/Icon.tsx";
 
 interface Props {
   loading: boolean;
@@ -35,14 +35,13 @@ function CartButton({ loading, currency, total, items }: Props) {
 
       <Button
         hasBtnClass={false}
-        class="group"
         aria-label="open cart"
         data-deco={displayCart.value && "open-cart"}
         loading={loading}
         onClick={onClick}
       >
-        <img
-          src={asset("/image/cart.svg")}
+        <Icon
+          id="Cart"
           width={32}
           height={32}
           alt="Cart icon"
