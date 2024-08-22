@@ -29,14 +29,14 @@ function Navbar(
         <>
           <div
             id="mobile-navbar"
-            class="xl:hidden flex flex-row justify-between items-center w-full px-4 gap-2 h-[105px]"
+            class="xl:hidden flex flex-row justify-between items-center w-full px-4 gap-2 h-[105px] group-data-[scrolling='true']/nav:h-[56px]"
           >
             {logo && (
               <>
                 <a
                   id="mobile-navbar-anchor"
                   href="/"
-                  class="inline-flex max-h-[80px] max-w-[80px] w-full h-full py-0.5"
+                  class="inline-flex group-data-[scrolling='true']/nav:hidden max-h-[80px] max-w-[80px] w-full h-full py-0.5"
                   aria-label="Store logo"
                 >
                   <Image
@@ -52,7 +52,7 @@ function Navbar(
                 <a
                   id="mobile-navbar-anchor-minimized"
                   href="/"
-                  class="hidden max-h-[40px] max-w-[40px] w-full h-full py-0.5"
+                  class="hidden group-data-[scrolling='true']/nav:inline-flex max-h-[40px] max-w-[40px] w-full h-full py-0.5"
                   aria-label="Store minimized logo"
                 >
                   <img
@@ -62,6 +62,7 @@ function Navbar(
                     height={40}
                     class="w-full h-full object-cover"
                     loading="lazy"
+                    decoding="async"
                   />
                 </a>
               </>
@@ -81,7 +82,7 @@ function Navbar(
       {isDesktop && (
         <div
           id="desktop-navbar"
-          class="hidden xl:flex flex-col justify-center items-center w-full py-1"
+          class="hidden xl:flex flex-col justify-center items-center w-full py-1 group-data-[scrolling='true']/nav:py-0"
         >
           <div class="flex justify-between items-center max-w-[95%] gap-7 w-full">
             <div class="flex-none w-[75px]">
@@ -91,7 +92,23 @@ function Navbar(
                   aria-label="Store logo"
                   class="block w-[75px]"
                 >
-                  <Image src={logo.src} alt={logo.alt} width={75} height={75} />
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={75}
+                    height={75}
+                    class="block group-data-[scrolling='true']/nav:hidden"
+                  />
+
+                  <img
+                    src="/image/minimized-icon.jpg"
+                    alt="Logo Abracasa Minificada"
+                    loading="lazy"
+                    decoding="async"
+                    width={40}
+                    height={40}
+                    class="hidden group-data-[scrolling='true']/nav:block"
+                  />
                 </a>
               )}
             </div>
@@ -116,7 +133,7 @@ function Navbar(
                   height={32}
                   alt="Store icon"
                 />
-                <span>Lojas</span>
+                <span class="tracking-[0.05em]">Lojas</span>
               </a>
 
               <SellbieCashback />

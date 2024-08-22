@@ -16,7 +16,7 @@ export default function LoginElement() {
         height={32}
         alt="User icon"
       />
-      <span class="truncate">
+      <span class="truncate tracking-[0.05em]">
         {user.value ? (user.value.name ?? "Conta") : "Entrar"}
       </span>
     </a>

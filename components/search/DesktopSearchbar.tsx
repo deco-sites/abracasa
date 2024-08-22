@@ -89,12 +89,12 @@ function Searchbar({
       <form
         id="search-form"
         action={action}
-        class="flex flex-grow relative h-[40px] px-2 border border-white group-hover/nav:border-black group-data-[scrolling='true']/nav:border-black"
+        class="flex flex-grow relative h-[40px] px-2 border border-white group-hover/nav:border-black group-data-[scrolling='true']/nav:border-black group-data-[isHome='false']/nav:border-black"
       >
         <input
           ref={searchInputRef}
           id="input-form"
-          class="flex-grow w-[80%] outline-none placeholder-shown:sibling:hidden placeholder:text-sm text-sm placeholder:text-white group-hover/nav:placeholder:text-gray-dark text-white group-hover/nav:text-gray-dark group-data-[scrolling='true']/nav:text-gray-dark group-data-[scrolling='true']/nav:placeholder:text-gray-dark bg-transparent"
+          class="flex-grow w-[80%] outline-none placeholder-shown:sibling:hidden placeholder:text-sm text-sm placeholder:text-white group-hover/nav:placeholder:text-gray-dark text-white group-hover/nav:text-gray-dark group-data-[scrolling='true']/nav:text-gray-dark group-data-[scrolling='true']/nav:placeholder:text-gray-dark group-data-[isHome='false']/nav:text-gray-dark group-data-[isHome='false']/nav:placeholder:text-gray-dark bg-transparent"
           aria-label="Barra de pesquisa"
           aria-expanded={showSuggestions ? "true" : "false"}
           name={name}
@@ -134,7 +134,7 @@ function Searchbar({
                 size={24}
                 strokeWidth={0.01}
                 fill="none"
-                class="text-white group-hover/nav:text-gray-dark group-data-[scrolling='true']/nav:text-gray-dark transition duration-150 ease-in"
+                class="text-white group-hover/nav:text-gray-dark group-data-[scrolling='true']/nav:text-gray-dark group-data-[isHome='false']/nav:text-gray-dark transition duration-150 ease-in"
               />
             )}
         </button>

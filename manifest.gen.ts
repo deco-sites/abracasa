@@ -15,37 +15,37 @@ import * as $$$$$$2 from "./sections/Cashback/HTMLContent.tsx";
 import * as $$$$$$3 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$4 from "./sections/Category/CategoryList.tsx";
 import * as $$$$$$5 from "./sections/Category/CategoryShelf.tsx";
-import * as $$$$$$6 from "./sections/Content/AdaptativeBenefits.tsx";
-import * as $$$$$$7 from "./sections/Content/Benefits.tsx";
-import * as $$$$$$8 from "./sections/Content/Departments.tsx";
-import * as $$$$$$9 from "./sections/Content/Faq.tsx";
-import * as $$$$$$10 from "./sections/Content/Form.tsx";
-import * as $$$$$$11 from "./sections/Content/HighlightsBanners.tsx";
-import * as $$$$$$12 from "./sections/Content/ImageAndTextHero.tsx";
-import * as $$$$$$13 from "./sections/Content/InstitutionalMenu.tsx";
-import * as $$$$$$14 from "./sections/Content/Logos.tsx";
-import * as $$$$$$15 from "./sections/Content/OurStores.tsx";
-import * as $$$$$$16 from "./sections/Content/PartnerShips.tsx";
-import * as $$$$$$17 from "./sections/Content/SectionText.tsx";
-import * as $$$$$$18 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$19 from "./sections/Content/TextAndImage.tsx";
-import * as $$$$$$20 from "./sections/Content/Video.tsx";
-import * as $$$$$$21 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$22 from "./sections/Gallery.tsx";
-import * as $$$$$$23 from "./sections/Header/Header.tsx";
-import * as $$$$$$24 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$25 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$26 from "./sections/Images/CarouselWithVideo.tsx";
-import * as $$$$$$27 from "./sections/Images/DoubleBanners.tsx";
-import * as $$$$$$28 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$29 from "./sections/Images/ImageWithCta.tsx";
-import * as $$$$$$30 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$31 from "./sections/Layout/Container.tsx";
-import * as $$$$$$32 from "./sections/Layout/Flex.tsx";
-import * as $$$$$$33 from "./sections/Layout/Grid.tsx";
-import * as $$$$$$34 from "./sections/Layout/GridItem.tsx";
-import * as $$$$$$35 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$36 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$6 from "./sections/Content/Benefits.tsx";
+import * as $$$$$$7 from "./sections/Content/Departments.tsx";
+import * as $$$$$$8 from "./sections/Content/Faq.tsx";
+import * as $$$$$$9 from "./sections/Content/Form.tsx";
+import * as $$$$$$10 from "./sections/Content/HighlightsBanners.tsx";
+import * as $$$$$$11 from "./sections/Content/ImageAndTextHero.tsx";
+import * as $$$$$$12 from "./sections/Content/InstitutionalMenu.tsx";
+import * as $$$$$$13 from "./sections/Content/Logos.tsx";
+import * as $$$$$$14 from "./sections/Content/OurStores.tsx";
+import * as $$$$$$15 from "./sections/Content/PartnerShips.tsx";
+import * as $$$$$$16 from "./sections/Content/SectionText.tsx";
+import * as $$$$$$17 from "./sections/Content/Testimonials.tsx";
+import * as $$$$$$18 from "./sections/Content/TextAndImage.tsx";
+import * as $$$$$$19 from "./sections/Content/Video.tsx";
+import * as $$$$$$20 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$21 from "./sections/Gallery.tsx";
+import * as $$$$$$22 from "./sections/Header/Header.tsx";
+import * as $$$$$$23 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$24 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$25 from "./sections/Images/CarouselWithVideo.tsx";
+import * as $$$$$$26 from "./sections/Images/DoubleBanners.tsx";
+import * as $$$$$$27 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$28 from "./sections/Images/ImageWithCta.tsx";
+import * as $$$$$$29 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$30 from "./sections/Layout/Container.tsx";
+import * as $$$$$$31 from "./sections/Layout/Flex.tsx";
+import * as $$$$$$32 from "./sections/Layout/Grid.tsx";
+import * as $$$$$$33 from "./sections/Layout/GridItem.tsx";
+import * as $$$$$$34 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$35 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$36 from "./sections/Miscellaneous/AdaptativeBenefits.tsx";
 import * as $$$$$$37 from "./sections/Miscellaneous/CampaignTimer.tsx";
 import * as $$$$$$38 from "./sections/Miscellaneous/CookieConsent.tsx";
 import * as $$$$$$39 from "./sections/Miscellaneous/SellbieCashback.tsx";
@@ -82,37 +82,38 @@ const manifest = {
     "deco-sites/abracasa/sections/Category/CategoryBanner.tsx": $$$$$$3,
     "deco-sites/abracasa/sections/Category/CategoryList.tsx": $$$$$$4,
     "deco-sites/abracasa/sections/Category/CategoryShelf.tsx": $$$$$$5,
-    "deco-sites/abracasa/sections/Content/AdaptativeBenefits.tsx": $$$$$$6,
-    "deco-sites/abracasa/sections/Content/Benefits.tsx": $$$$$$7,
-    "deco-sites/abracasa/sections/Content/Departments.tsx": $$$$$$8,
-    "deco-sites/abracasa/sections/Content/Faq.tsx": $$$$$$9,
-    "deco-sites/abracasa/sections/Content/Form.tsx": $$$$$$10,
-    "deco-sites/abracasa/sections/Content/HighlightsBanners.tsx": $$$$$$11,
-    "deco-sites/abracasa/sections/Content/ImageAndTextHero.tsx": $$$$$$12,
-    "deco-sites/abracasa/sections/Content/InstitutionalMenu.tsx": $$$$$$13,
-    "deco-sites/abracasa/sections/Content/Logos.tsx": $$$$$$14,
-    "deco-sites/abracasa/sections/Content/OurStores.tsx": $$$$$$15,
-    "deco-sites/abracasa/sections/Content/PartnerShips.tsx": $$$$$$16,
-    "deco-sites/abracasa/sections/Content/SectionText.tsx": $$$$$$17,
-    "deco-sites/abracasa/sections/Content/Testimonials.tsx": $$$$$$18,
-    "deco-sites/abracasa/sections/Content/TextAndImage.tsx": $$$$$$19,
-    "deco-sites/abracasa/sections/Content/Video.tsx": $$$$$$20,
-    "deco-sites/abracasa/sections/Footer/Footer.tsx": $$$$$$21,
-    "deco-sites/abracasa/sections/Gallery.tsx": $$$$$$22,
-    "deco-sites/abracasa/sections/Header/Header.tsx": $$$$$$23,
-    "deco-sites/abracasa/sections/Images/BannerGrid.tsx": $$$$$$24,
-    "deco-sites/abracasa/sections/Images/Carousel.tsx": $$$$$$25,
-    "deco-sites/abracasa/sections/Images/CarouselWithVideo.tsx": $$$$$$26,
-    "deco-sites/abracasa/sections/Images/DoubleBanners.tsx": $$$$$$27,
-    "deco-sites/abracasa/sections/Images/ImageGallery.tsx": $$$$$$28,
-    "deco-sites/abracasa/sections/Images/ImageWithCta.tsx": $$$$$$29,
-    "deco-sites/abracasa/sections/Images/ShoppableBanner.tsx": $$$$$$30,
-    "deco-sites/abracasa/sections/Layout/Container.tsx": $$$$$$31,
-    "deco-sites/abracasa/sections/Layout/Flex.tsx": $$$$$$32,
-    "deco-sites/abracasa/sections/Layout/Grid.tsx": $$$$$$33,
-    "deco-sites/abracasa/sections/Layout/GridItem.tsx": $$$$$$34,
-    "deco-sites/abracasa/sections/Links/LinkTree.tsx": $$$$$$35,
-    "deco-sites/abracasa/sections/Links/Shortcuts.tsx": $$$$$$36,
+    "deco-sites/abracasa/sections/Content/Benefits.tsx": $$$$$$6,
+    "deco-sites/abracasa/sections/Content/Departments.tsx": $$$$$$7,
+    "deco-sites/abracasa/sections/Content/Faq.tsx": $$$$$$8,
+    "deco-sites/abracasa/sections/Content/Form.tsx": $$$$$$9,
+    "deco-sites/abracasa/sections/Content/HighlightsBanners.tsx": $$$$$$10,
+    "deco-sites/abracasa/sections/Content/ImageAndTextHero.tsx": $$$$$$11,
+    "deco-sites/abracasa/sections/Content/InstitutionalMenu.tsx": $$$$$$12,
+    "deco-sites/abracasa/sections/Content/Logos.tsx": $$$$$$13,
+    "deco-sites/abracasa/sections/Content/OurStores.tsx": $$$$$$14,
+    "deco-sites/abracasa/sections/Content/PartnerShips.tsx": $$$$$$15,
+    "deco-sites/abracasa/sections/Content/SectionText.tsx": $$$$$$16,
+    "deco-sites/abracasa/sections/Content/Testimonials.tsx": $$$$$$17,
+    "deco-sites/abracasa/sections/Content/TextAndImage.tsx": $$$$$$18,
+    "deco-sites/abracasa/sections/Content/Video.tsx": $$$$$$19,
+    "deco-sites/abracasa/sections/Footer/Footer.tsx": $$$$$$20,
+    "deco-sites/abracasa/sections/Gallery.tsx": $$$$$$21,
+    "deco-sites/abracasa/sections/Header/Header.tsx": $$$$$$22,
+    "deco-sites/abracasa/sections/Images/BannerGrid.tsx": $$$$$$23,
+    "deco-sites/abracasa/sections/Images/Carousel.tsx": $$$$$$24,
+    "deco-sites/abracasa/sections/Images/CarouselWithVideo.tsx": $$$$$$25,
+    "deco-sites/abracasa/sections/Images/DoubleBanners.tsx": $$$$$$26,
+    "deco-sites/abracasa/sections/Images/ImageGallery.tsx": $$$$$$27,
+    "deco-sites/abracasa/sections/Images/ImageWithCta.tsx": $$$$$$28,
+    "deco-sites/abracasa/sections/Images/ShoppableBanner.tsx": $$$$$$29,
+    "deco-sites/abracasa/sections/Layout/Container.tsx": $$$$$$30,
+    "deco-sites/abracasa/sections/Layout/Flex.tsx": $$$$$$31,
+    "deco-sites/abracasa/sections/Layout/Grid.tsx": $$$$$$32,
+    "deco-sites/abracasa/sections/Layout/GridItem.tsx": $$$$$$33,
+    "deco-sites/abracasa/sections/Links/LinkTree.tsx": $$$$$$34,
+    "deco-sites/abracasa/sections/Links/Shortcuts.tsx": $$$$$$35,
+    "deco-sites/abracasa/sections/Miscellaneous/AdaptativeBenefits.tsx":
+      $$$$$$36,
     "deco-sites/abracasa/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$37,
     "deco-sites/abracasa/sections/Miscellaneous/CookieConsent.tsx": $$$$$$38,
     "deco-sites/abracasa/sections/Miscellaneous/SellbieCashback.tsx": $$$$$$39,

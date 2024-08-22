@@ -15,9 +15,9 @@ function NavItem(
     <li class="group flex items-center">
       <a
         href={url}
-        class="flex items-center justify-center h-[118px]"
+        class="flex items-center justify-center h-[118px] group-data-[scrolling='true']/nav:h-[75px]"
       >
-        <span class="flex items-center justify-center group-hover:text-firebrick text-sm leading-[22px] h-full">
+        <span class="flex items-center justify-center group-hover:text-firebrick text-sm leading-[22px] tracking-[0.12em] h-full font-medium">
           {name}
         </span>
       </a>
@@ -25,11 +25,10 @@ function NavItem(
       {children && children.length > 0 &&
         (
           <div
-            class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start border-t border-b-2 border-base-200 w-screen py-4 px-8 gap-16"
+            class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start border-t border-b-2 border-base-200 w-screen py-4 px-8 gap-16 mt-[120px] group-data-[scrolling='true']/nav:mt-[75px]"
             style={{
               top: "0px",
               left: "0px",
-              marginTop: "120px",
             }}
           >
             {image?.url && (
@@ -46,8 +45,8 @@ function NavItem(
             <ul
               class={`flex ${
                 !hasChildren
-                  ? "flex-col flex-wrap gap-y-2 gap-x-[90px] max-h-[270px]"
-                  : "flex-wrap gap-12 container"
+                  ? "flex-col flex-wrap gap-x-[90px] max-h-[270px]"
+                  : "flex-wrap flex-col gap-8 h-[400px] py-2 justify-between flex-1"
               }`}
             >
               {children.map((node) => (
@@ -58,7 +57,7 @@ function NavItem(
                       class={`text-gray-dark text-sm ${
                         hasChildren
                           ? "font-semibold"
-                          : "font-normal hover:text-firebrick transition-colors duration-100 ease-in"
+                          : "hover:text-firebrick transition-colors duration-100 ease-in tracking-[0.5px] leading-[180%]"
                       }`}
                     >
                       <span>{node.name}</span>
@@ -75,27 +74,18 @@ function NavItem(
                   </div>
 
                   <ul class="flex flex-col gap-1 mt-2">
-                    {node.children?.slice(0, 4)?.map((leaf) => (
+                    {node.children?.map((leaf) => (
                       <li>
                         <a
-                          class="text-gray-dark hover:text-firebrick transition-colors duration-100 ease-in text-sm"
+                          class="text-gray-dark hover:text-firebrick transition-colors duration-100 ease-in"
                           href={leaf.url}
                         >
-                          <span class="text-xs">{leaf.name}</span>
+                          <span class="text-[13px] tracking-[0.5px] leading-[180%]">
+                            {leaf.name}
+                          </span>
                         </a>
                       </li>
                     ))}
-
-                    {node.children && node.children.length > 4 && (
-                      <li>
-                        <a
-                          href={node.url}
-                          class="text-gray-dark font-bold text-xs"
-                        >
-                          + Ver tudo
-                        </a>
-                      </li>
-                    )}
                   </ul>
                 </li>
               ))}

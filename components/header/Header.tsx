@@ -35,27 +35,28 @@ function Header({
   const items = navItems ?? [];
 
   function handleScroll() {
-    document.addEventListener("scroll", () => {
-      const scrollY = globalThis.scrollY;
-      const header = document.getElementById("nav");
+    const header = document.getElementById("nav");
+    const isHome = ["/", "/home-teste"].includes(document.location.pathname);
 
-      if (scrollY > 0) {
+    document.addEventListener("scroll", () => {
+      const scrollY = globalThis.scrollY > 0;
+
+      if (!isHome) {
+        header?.classList.add("bg-base-100", "text-gray-dark");
         header?.classList.remove(
           "text-white",
-          "xl:hover:text-gray-dark",
           "overlay",
+          "xl:hover:text-gray-dark",
         );
-        header?.classList.add("bg-base-100", "text-gray-dark");
-        header?.setAttribute("data-scrolling", "true");
       } else {
-        header?.classList.remove("bg-base-100", "text-gray-dark");
-        header?.classList.add(
-          "text-white",
-          "xl:hover:text-gray-dark",
-          "overlay",
-        );
-        header?.setAttribute("data-scrolling", "false");
+        header?.classList.toggle("bg-base-100", scrollY);
+        header?.classList.toggle("text-gray-dark", scrollY);
+        header?.classList.toggle("text-white", !scrollY);
+        header?.classList.toggle("xl:hover:text-gray-dark", !scrollY);
+        header?.classList.toggle("overlay", !scrollY);
       }
+
+      header?.setAttribute("data-scrolling", scrollY.toString());
     });
   }
 
@@ -68,8 +69,13 @@ function Header({
         >
           <div
             data-scrolling="false"
+            data-isHome={isHomePage ? "true" : "false"}
             id="nav"
-            class="xl:hover:bg-base-100 fixed w-full z-[9999999] text-white xl:hover:text-gray-dark transition duration-200 ease-in group/nav overlay"
+            class={`font-sans fixed w-full z-[9999999] transition duration-200 ease-in group/nav data-[scrolling='true']:h-[56px] data-[scrolling='true']:xl:h-[75px] ${
+              isHomePage
+                ? "overlay xl:hover:bg-base-100 xl:hover:text-gray-dark text-white"
+                : "bg-base-100 text-gray-dark border-b"
+            }`}
           >
             <Navbar
               items={items}
