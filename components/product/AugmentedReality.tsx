@@ -3,12 +3,13 @@ import { useScript } from "deco/hooks/useScript.ts";
 export default function Viewer() {
   function handleGenerateComponents() {
     self.addEventListener("DOMContentLoaded", async () => {
-      const skuId = document.getElementById("referenceId")?.innerText?.replace(
-        "ID: ",
-        "",
-      ).toLocaleUpperCase();
+      const referenceId = document.getElementById("referenceId")?.innerText
+        ?.replace(
+          "ID: ",
+          "",
+        ).toLocaleUpperCase();
 
-      if (!skuId) return;
+      if (!referenceId) return;
 
       // deno-lint-ignore no-explicit-any
       const window_ = window as Window & { R2U?: any };
@@ -17,7 +18,7 @@ export default function Viewer() {
         customerId: "963e17e8-997b-4a4f-b1f4-7160e13a21e8",
       });
 
-      const isActive = await window_.R2U.sku.isActive(skuId);
+      const isActive = await window_.R2U.sku.isActive(referenceId);
 
       if (!isActive) return;
 
@@ -29,7 +30,7 @@ export default function Viewer() {
       if (viewerPosition) {
         await window_.R2U.viewer.create({
           element: viewerPosition,
-          sku: skuId,
+          sku: referenceId,
           popup: true,
         });
       }
@@ -37,7 +38,7 @@ export default function Viewer() {
       if (qrCode) {
         await window_.R2U.qrCode.create({
           element: qrCode,
-          sku: skuId,
+          sku: referenceId,
         });
 
         qrCodeText!.innerText = "Veja no seu espaço";
@@ -46,7 +47,7 @@ export default function Viewer() {
       if (arButton) {
         await window_.R2U.ar.attach({
           element: arButton,
-          sku: skuId,
+          sku: referenceId,
         });
 
         arButton.classList.remove("hidden");
