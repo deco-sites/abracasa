@@ -4,10 +4,14 @@ import Slider from "$store/components/ui/Slider.tsx";
 import ProductImageZoom from "$store/islands/ProductImageZoom.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
-import { useId } from "$store/sdk/useId.ts";
-import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
+import MobileVideoPlay from "deco-sites/abracasa/components/ui/MobileVideoPlay.tsx";
 import { FnContext } from "deco/types.ts";
+import type {
+  ImageObject,
+  ProductDetailsPage,
+  VideoObject,
+} from "apps/commerce/types.ts";
 
 export interface Props {
   /** @title Integration */
@@ -26,7 +30,7 @@ export interface Props {
  * we rearrange each cell with col-start- directives
  */
 export default function GallerySlider(props: ReturnType<typeof loader>) {
-  const id = useId();
+  const id = "files-slider";
 
   if (props.page === null) {
     throw new Error("Missing Product Details Page Info");
@@ -34,7 +38,11 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
   const {
     page: {
-      product: { image: images = [], additionalProperty = [] },
+      product: {
+        image: images = [],
+        additionalProperty = [],
+        video: videos = [],
+      },
     },
     layout: { width, height },
   } = props;
@@ -43,6 +51,25 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
     itemListElement: props.page.breadcrumbList?.itemListElement.slice(0, -1),
     numberOfItems: props.page.breadcrumbList.numberOfItems - 1,
   };
+
+  const files: (ImageObject | VideoObject)[] = [...images];
+
+  const hasVideo = videos.length > 0;
+
+  if (hasVideo) {
+    const videoModifiedUrl = new URL(videos?.[0].contentUrl ?? "").searchParams
+      .get("v");
+
+    const video: VideoObject = {
+      "@type": "VideoObject",
+      alternateName: videos[0].alternateName,
+      name: videos[0].name,
+      encodingFormat: videos[0].encodingFormat,
+      contentUrl: `https://www.youtube.com/embed/${videoModifiedUrl}?rel=0`,
+    };
+
+    files.splice(1, 0, video);
+  }
 
   return (
     <>
@@ -53,7 +80,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
       <div id={id} class="grid grid-flow-row sm:grid-flow-col lg:gap-6">
         {/* Image Slider */}
         <div class="relative order-1 sm:order-2 mx-auto">
-          <ProductImageZoom images={images} width={width} height={height} />
+          <ProductImageZoom files={files} width={width} height={height} />
 
           {additionalProperty?.some((property) =>
             property.value?.includes("Atelie Casa")
@@ -70,8 +97,10 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
             </div>
           )}
 
+          {hasVideo && props.device === "mobile" && <MobileVideoPlay />}
+
           <Slider.PrevButton
-            class="block no-animation absolute left-2 top-1/2 lg:hidden rotate-180"
+            class="block no-animation absolute left-2 top-1/2 z-10 lg:hidden rotate-180"
             disabled
           >
             <svg
@@ -91,8 +120,8 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
           </Slider.PrevButton>
 
           <Slider.NextButton
-            class="block no-animation absolute right-2 top-1/2 lg:hidden"
-            disabled={images.length < 2}
+            class="block no-animation absolute right-2 top-1/2 z-10 lg:hidden"
+            disabled={files.length < 2}
           >
             <svg
               width="20"
@@ -123,7 +152,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
         {/* Mobile Dots */}
         {props.device === "mobile" && (
           <ul class="sm:hidden carousel carousel-center justify-center items-center gap-1 px-4 order-2">
-            {images.map((_, index) => (
+            {files.map((_, index) => (
               <li class="carousel-item">
                 <Slider.Dot index={index}>
                   <div class="py-5">
@@ -141,7 +170,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
                 id="pdp-vertical-carousel"
                 class="hidden sm:flex flex-col items-center gap-2 order-1 border-r sm:border-[#DFDFDF]/60 pr-6 relative"
               >
-                {images.length >= 6 && (
+                {files.length >= 6 && (
                   <Slider.PrevButton
                     class="no-animation"
                     disabled
@@ -154,30 +183,46 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
                   id="pdp-vertical-carousel"
                   class="carousel carousel-vertical px-0 max-h-[555px] gap-4"
                 >
-                  {images.map((img, index) => (
+                  {files.map((item, index) => (
                     <Slider.Item
                       id="pdp-vertical-carousel"
                       index={index}
                       class="carousel-item w-[98px] relative"
                     >
                       <Slider.Dot index={index}>
-                        <Image
-                          style={{ aspectRatio: 1 }}
-                          class="group-disabled:border-base-300 border"
-                          width={98}
-                          height={98}
-                          src={img.url!}
-                          alt={img.alternateName}
-                        />
+                        {item["@type"] === "ImageObject"
+                          ? (
+                            <Image
+                              style={{ aspectRatio: 1 }}
+                              class="group-disabled:border-base-300 border"
+                              width={98}
+                              height={98}
+                              src={item.url!}
+                              alt={item.alternateName}
+                            />
+                          )
+                          : (
+                            <div class="flex items-center justify-center w-full relative">
+                              <Image
+                                style={{ aspectRatio: 1 }}
+                                src={images[0].url!}
+                                alt={images[0].alternateName}
+                                width={98}
+                                height={98}
+                                class="group-disabled:border-base-300 border"
+                              />
+                              <Icon id="VideoPlay" size={36} class="absolute" />
+                            </div>
+                          )}
                       </Slider.Dot>
                     </Slider.Item>
                   ))}
                 </Slider>
 
-                {images.length >= 6 && (
+                {files.length >= 6 && (
                   <Slider.NextButton
                     class="no-animation"
-                    disabled={images.length < 6}
+                    disabled={files.length < 6}
                   >
                     <Icon size={32} id="ChevronDown" strokeWidth={1.75} />
                   </Slider.NextButton>
