@@ -44,7 +44,7 @@ function Navbar(
                     src={logo.src}
                     alt={logo.alt}
                     width={80}
-                    height={16}
+                    height={76}
                     class="w-full h-full object-cover"
                   />
                 </a>
