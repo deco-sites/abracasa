@@ -1,7 +1,6 @@
 import { SendEventOnView } from "$store/components/Analytics.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
-import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
@@ -9,7 +8,6 @@ import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
-import ShareButton from "./ShareButton.tsx";
 import Similars from "./Similars.tsx";
 import ReviewsScript from "./ReviewsScript.tsx";
 import QuickReview from "./QuickReview.tsx";
@@ -48,7 +46,6 @@ function ProductInfo({ page, layout }: Props) {
     name = "",
     isVariantOf,
     additionalProperty = [],
-    url,
     sku: skuId,
   } = product;
   const {
@@ -58,7 +55,6 @@ function ProductInfo({ page, layout }: Props) {
     installments,
     availability,
   } = useOffer(offers);
-  const productGroupID = isVariantOf?.productGroupID ?? "";
   const breadcrumb = {
     ...breadcrumbList,
     itemListElement: breadcrumbList?.itemListElement.slice(0, -1),
@@ -114,7 +110,8 @@ function ProductInfo({ page, layout }: Props) {
             </h1>
           </div>
 
-          <div class="flex items-center gap-1">
+          {
+            /* <div class="flex items-center gap-1">
             <WishlistButton
               icon="HeartOutline"
               variant="icon"
@@ -123,7 +120,8 @@ function ProductInfo({ page, layout }: Props) {
             />
 
             {url && <ShareButton url={url} />}
-          </div>
+          </div> */
+          }
         </div>
 
         {referenceId && (

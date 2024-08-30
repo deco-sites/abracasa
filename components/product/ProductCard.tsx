@@ -2,7 +2,6 @@ import { asset } from "$fresh/runtime.ts";
 import type { Platform } from "$store/apps/site.ts";
 import { SendEventOnClick } from "$store/components/Analytics.tsx";
 import Avatar from "$store/components/ui/Avatar.tsx";
-import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
@@ -62,8 +61,7 @@ const WIDTH = 252;
 const HEIGHT = 252;
 
 function ProductCard(
-  { product, preload, itemListName, layout, platform, index, isPLP = false }:
-    Props,
+  { product, preload, itemListName, layout, index, isPLP = false }: Props,
 ) {
   const {
     url,
@@ -76,7 +74,6 @@ function ProductCard(
   } = product;
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
-  const productGroupID = isVariantOf?.productGroupID;
   const description = product.description || isVariantOf?.description;
   const [front, second] = images ?? [];
   const back = images?.find((item) => item.name === "dois") ?? second;
@@ -171,23 +168,6 @@ function ProductCard(
             <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] w-full h-[18.54px]">
               exclusivo
             </div>
-          )}
-        </div>
-        {/* Wishlist button */}
-        <div
-          class={`hidden sm:block absolute top-2 z-10
-          ${
-            l?.elementsPositions?.favoriteIcon === "Top left"
-              ? "left-1"
-              : "right-1"
-          }
-        `}
-        >
-          {platform === "vtex" && (
-            <WishlistButton
-              productGroupID={productGroupID}
-              productID={productID}
-            />
           )}
         </div>
         {additionalProperty?.some((property) =>
