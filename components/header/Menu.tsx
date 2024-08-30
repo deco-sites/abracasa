@@ -79,7 +79,8 @@ function Menu({ items }: Props) {
           </a>
         </li>
 
-        <li class="border-t">
+        {
+          /* <li class="border-t">
           <a
             class="flex items-center gap-4 px-4 py-3"
             href="/wishlist"
@@ -87,7 +88,8 @@ function Menu({ items }: Props) {
             <Icon id="Heart" size={32} strokeWidth={0.75} fill="none" />
             <span class="text-sm">favoritos</span>
           </a>
-        </li>
+        </li> */
+        }
 
         <li class="border-y">
           <a
