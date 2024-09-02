@@ -84,7 +84,7 @@ function BannerItem(
           fetchPriority={lcp ? "high" : "auto"}
           src={mobile.image}
           width={mobile.width || 767}
-          height={mobile.height || 545}
+          height={mobile.height || 942}
         />
         <Source
           media="(min-width: 768px)"
