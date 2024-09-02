@@ -62,7 +62,7 @@ function Header({
 
   return (
     <>
-      <header class={!isHomePage ? "h-[105px] xl:h-[126px]" : ""}>
+      <header class={!isHomePage ? "h-24 xl:h-[126px]" : ""}>
         <Drawers
           menu={{ items }}
           platform={platform}

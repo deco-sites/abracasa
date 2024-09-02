@@ -84,13 +84,13 @@ function BannerItem(
           fetchPriority={lcp ? "high" : "auto"}
           src={mobile.image}
           width={mobile.width || 767}
-          height={mobile.height || 972}
+          height={mobile.height || 545}
         />
         <Source
           media="(min-width: 768px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={desktop.image}
-          width={desktop.width || 1280}
+          width={desktop.width || 1920}
           height={desktop.height || 586}
         />
         <img
@@ -156,7 +156,7 @@ function BannerCarousel(props: Props) {
   return (
     <div
       id={id}
-      class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] md:h-[586px]"
+      class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] h-[545px] md:h-[586px]"
     >
       <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6">
         {images?.map((image, index) => {

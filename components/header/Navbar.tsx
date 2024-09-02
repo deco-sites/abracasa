@@ -29,23 +29,23 @@ function Navbar(
         <>
           <div
             id="mobile-navbar"
-            class="xl:hidden flex flex-row justify-between items-center w-full px-4 gap-2 h-[105px] group-data-[scrolling='true']/nav:h-[56px]"
+            class="xl:hidden flex flex-row justify-between items-center w-full px-4 gap-2 h-24 group-data-[scrolling='true']/nav:h-[56px]"
           >
             {logo && (
               <>
                 <a
                   id="mobile-navbar-anchor"
                   href="/"
-                  class="inline-flex group-data-[scrolling='true']/nav:hidden max-h-[80px] max-w-[80px] w-full h-full py-0.5"
+                  class="inline-flex group-data-[scrolling='true']/nav:hidden h-[54px] w-[54px] py-0.5"
                   aria-label="Store logo"
                 >
                   <Image
                     id="mobile-navbar-image"
                     src={logo.src}
                     alt={logo.alt}
-                    width={80}
-                    height={76}
-                    class="w-full h-full object-cover"
+                    width={54}
+                    height={54}
+                    class="w-[54px] h-[54px] object-cover"
                   />
                 </a>
 
