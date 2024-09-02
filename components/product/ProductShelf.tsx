@@ -11,6 +11,7 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+import { AppContext } from "apps/vtex/mod.ts";
 
 export interface Props {
   products: Product[] | null;
@@ -102,3 +103,54 @@ function ProductShelf({
 }
 
 export default ProductShelf;
+
+export const loader = async (props: Props, _req: Request, ctx: AppContext) => {
+  const { products } = props;
+
+  if (!products) return null;
+
+  const extractSimilarLabel = (item: Product) =>
+    item.isVariantOf?.additionalProperty.find((aP) =>
+      aP.name === "ProdutosSimilares"
+    )?.value;
+
+  const fetchSimilarProducts = async (label: string) => {
+    try {
+      const fetchedProducts = await ctx.invoke.vtex.loaders.legacy
+        .productListingPage({
+          fq: `specificationFilter_178:${encodeURIComponent(label)}`,
+          count: 20,
+        });
+
+      return fetchedProducts?.products?.filter((item) =>
+        item.productID !==
+          products.find((product) => extractSimilarLabel(product) === label)
+            ?.productID
+      ) || [];
+    } catch (error) {
+      console.error(`Failed to fetch products for label ${label}:`, error);
+      return [];
+    }
+  };
+
+  const similarsLabels = products.map(extractSimilarLabel);
+  const similarsProductsPromises = similarsLabels.map((label) =>
+    label !== undefined
+      ? fetchSimilarProducts(label)
+      : Promise.resolve(undefined)
+  );
+
+  const similarsProductsResults = await Promise.all(similarsProductsPromises);
+
+  const updatedProducts = products.map((product, index) => ({
+    ...product,
+    isSimilarTo: similarsLabels[index] === undefined
+      ? undefined
+      : similarsProductsResults[index],
+  }));
+
+  return {
+    ...props,
+    products: updatedProducts,
+  };
+};

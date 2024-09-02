@@ -169,6 +169,12 @@ function ProductCard(
               exclusivo
             </div>
           )}
+
+          {product.isSimilarTo && product.isSimilarTo.length > 0 && (
+            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] w-full h-[18.54px]">
+              +{product.isSimilarTo.length} cores
+            </div>
+          )}
         </div>
         {additionalProperty?.some((property) =>
           property.value?.includes("Atelie Casa")
