@@ -154,7 +154,7 @@ function ProductCard(
           class={`flex items-center gap-1.5 absolute top-2 z-10 max-w-full overflow-auto ${
             l?.elementsPositions?.favoriteIcon === "Top left"
               ? "right-1 md:right-2"
-              : "left-1 md:left-2"
+              : "left-1 md:left-2 pr-2 sm:pr-0"
           }`}
         >
           {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
@@ -171,7 +171,7 @@ function ProductCard(
           )}
 
           {product.isSimilarTo && product.isSimilarTo.length > 0 && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] w-full h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] w-full h-[18.54px] text-nowrap">
               +{product.isSimilarTo.length} cores
             </div>
           )}
