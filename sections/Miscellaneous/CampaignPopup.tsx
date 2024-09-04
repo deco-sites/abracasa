@@ -25,8 +25,11 @@ export default function CampaignPopup(props: Props) {
   const handleCloseModal = (name: string, value: string, hours: number) => {
     document.addEventListener("DOMContentLoaded", () => {
       const modalBtn = document.getElementById("close-modal-btn");
+      const modalOverlay = document.getElementById("modal-overlay");
 
       function setCookie() {
+        if (hours == 0) return;
+
         const date = new Date();
         date.setTime(date.getTime() + (hours * 60 * 60 * 1000)); // Convert hours to milliseconds
         const expires = "expires=" + date.toUTCString();
@@ -35,6 +38,11 @@ export default function CampaignPopup(props: Props) {
       }
 
       modalBtn?.addEventListener("click", () => {
+        setCookie();
+        document.getElementById("modal")?.classList.add("hidden");
+      });
+
+      modalOverlay?.addEventListener("click", () => {
         setCookie();
         document.getElementById("modal")?.classList.add("hidden");
       });
@@ -47,7 +55,10 @@ export default function CampaignPopup(props: Props) {
         id="modal"
         className="fixed inset-0 z-[99999999999] flex items-center justify-center"
       >
-        <div className="absolute inset-0 bg-black opacity-50" />
+        <div
+          id="modal-overlay"
+          className="absolute inset-0 bg-black opacity-50"
+        />
 
         <div className="relative w-[90%] sm:w-[400px] h-[400px]">
           <a href={popup.link} className="w-full h-full">
