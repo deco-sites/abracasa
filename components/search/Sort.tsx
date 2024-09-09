@@ -31,7 +31,7 @@ const portugueseMappings = {
   "orders:desc": "Mais Vendidos",
   "name:desc": "Nome - de Z a A",
   "name:asc": "Nome - de A a Z",
-  "release:desc": "Menor Relevância",
+  "release:desc": "Lançamentos",
   "discount:desc": "Maior Desconto",
 };
 
@@ -42,8 +42,7 @@ function Sort(
 
   const filteredSortOptions = sortOptions.filter(
     ({ label }) =>
-      label !== "name:desc" && label !== "name:asc" &&
-      label !== "release:desc" && label !== "",
+      label !== "name:desc" && label !== "name:asc" && label !== "",
   );
 
   if (isMobile) {

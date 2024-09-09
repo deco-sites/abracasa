@@ -175,15 +175,6 @@ export default function ProductDetails(
                           />
                         )}
 
-                        {item?.name?.includes("Limpeza e cuidados") && (
-                          <div
-                            className="text-end w-full"
-                            dangerouslySetInnerHTML={{
-                              __html: item.value || "",
-                            }}
-                          />
-                        )}
-
                         {item?.value?.includes("Abrir manual") && (
                           <div
                             className="text-crimson text-end w-full"
