@@ -151,7 +151,7 @@ function ProductCard(
       >
         {/* Flags */}
         <div
-          class={`flex items-center gap-1.5 absolute top-2 z-10 max-w-full overflow-auto ${
+          class={`flex items-center gap-1.5 absolute top-2 z-10 max-w-full overflow-x-auto scrollbar-none ${
             l?.elementsPositions?.favoriteIcon === "Top left"
               ? "right-1 md:right-2"
               : "left-1 md:left-2 pr-2 sm:pr-0"
@@ -159,19 +159,19 @@ function ProductCard(
         >
           {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
             (
-              <div class="flex items-center justify-center bg-dimgray rounded-md text-xs leading-[12.57px] text-white py-3 px-[4.61px] min-w-[96px] w-full h-[18.54px]">
+              <div class="flex items-center justify-center bg-dimgray rounded-md text-xs leading-[12.57px] text-white py-3 px-[4.61px] w-[96px] h-[18.54px]">
                 pronta entrega
               </div>
             )}
 
           {additionalProperty.find((item) => item.value === "Exclusivo") && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] w-full h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] w-[61px] h-[18.54px]">
               exclusivo
             </div>
           )}
 
           {product.isSimilarTo && product.isSimilarTo.length > 0 && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] min-w-[56px] w-full h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] w-[56px] h-[18.54px]">
               +{product.isSimilarTo.length} cores
             </div>
           )}
