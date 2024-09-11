@@ -5,9 +5,6 @@ import { useScript } from "deco/hooks/useScript.ts";
 import { getCookies } from "std/http/cookie.ts";
 
 export interface Props {
-  /**
-   * @description Example: 24 hours -> 1 day. 72 hours -> 2 days. Default: 72.
-   */
   hoursToShowPopupAgain?: number;
   popup: {
     source: ImageWidget;
@@ -27,23 +24,26 @@ export default function CampaignPopup(props: Props) {
       const modalBtn = document.getElementById("close-modal-btn");
       const modalOverlay = document.getElementById("modal-overlay");
 
-      function setCookie() {
-        if (hours == 0) return;
-
+      function setPopupCookie() {
         const date = new Date();
-        date.setTime(date.getTime() + (hours * 60 * 60 * 1000)); // Convert hours to milliseconds
-        const expires = "expires=" + date.toUTCString();
+        if (hours > 0) {
+          date.setTime(date.getTime() + (hours * 60 * 60 * 1000)); // Convert hours to milliseconds
+        } else {
+          // Set the cookie to expire at the end of the session
+          date.setTime(date.getTime() + (30 * 60 * 1000)); // Default to 30 minutes if not specified
+        }
+        const expires = hours > 0 ? "expires=" + date.toUTCString() : "";
         document.cookie = name + "=" + (value || "") + ";" + expires +
           ";path=/";
       }
 
       modalBtn?.addEventListener("click", () => {
-        setCookie();
+        setPopupCookie();
         document.getElementById("modal")?.classList.add("hidden");
       });
 
       modalOverlay?.addEventListener("click", () => {
-        setCookie();
+        setPopupCookie();
         document.getElementById("modal")?.classList.add("hidden");
       });
     });
@@ -53,15 +53,15 @@ export default function CampaignPopup(props: Props) {
     <>
       <div
         id="modal"
-        className="fixed inset-0 z-[99999999999] flex items-center justify-center"
+        class="fixed inset-0 z-[99999999999] flex items-center justify-center"
       >
         <div
           id="modal-overlay"
-          className="absolute inset-0 bg-black opacity-50"
+          class="absolute inset-0 bg-black opacity-50"
         />
 
-        <div className="relative w-[90%] sm:w-[400px] h-[400px]">
-          <a href={popup.link} className="w-full h-full">
+        <div class="relative w-[90%] sm:w-[400px] h-[400px]">
+          <a href={popup.link} class="w-full h-full">
             <Image
               src={popup.source}
               alt={popup.description}
@@ -73,7 +73,7 @@ export default function CampaignPopup(props: Props) {
 
           <button
             id="close-modal-btn"
-            className="absolute top-2 right-2 text-white bg-black rounded-full p-2 hover:bg-gray-800 transition-all duration-200"
+            class="absolute top-2 right-2 text-white bg-black rounded-full p-2 hover:bg-gray-800 transition-all duration-200"
           >
             <Icon id="XMark" size={20} strokeWidth={1} />
           </button>
