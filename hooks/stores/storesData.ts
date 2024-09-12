@@ -1,6 +1,6 @@
 const storesData = [
   {
-    "className": "casa-shopping",
+    "className": "Casa Shopping",
     "title": "CASA SHOPPING",
     "local":
       "Avenida Ayrton Senna, 2150 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-900. Casa Shopping - Bloco F Loja F",
@@ -10,7 +10,7 @@ const storesData = [
     ],
   },
   {
-    "className": "copacabana",
+    "className": "Copacabana",
     "title": "COPACABANA",
     "local":
       "Endereço: Av. N.S. de Copacabana 1137 - A - Copacabana - Rio de Janeiro - RJ",
@@ -20,7 +20,7 @@ const storesData = [
     ],
   },
   {
-    "className": "sao-paulo-guide-shop",
+    "className": "Sao Paulo Guide Shop",
     "title": "PINHEIROS - SP",
     "local":
       "Rua Teodoro Sampaio, 1312 - Pinheiros, São Paulo - SP, 05406-100.",
@@ -30,7 +30,7 @@ const storesData = [
     ],
   },
   {
-    "className": "sp-tatuape",
+    "className": "SP Tatuape",
     "title": "TATUAPÉ - SP",
     "local":
       "Endereço: Rua Emilia Marengo 305 e 309 - Tatuapé, São Paulo - SP, 03336-000",
@@ -40,7 +40,7 @@ const storesData = [
     ],
   },
   {
-    "className": "sp-vila-nova",
+    "className": "SP Vila Nova",
     "title": "Vila Nova Conceição- SP",
     "local":
       "Endereço: R. João Cachoeira, 1091 - Vila Nova Conceição, São Paulo - SP, 04535-013",
@@ -50,7 +50,7 @@ const storesData = [
     ],
   },
   {
-    "className": "rio-sul",
+    "className": "Rio Sul CDB",
     "title": "RIO SUL",
     "local": "Endereço: Rio Sul - Rua Lauro Muller, 116 LJ 76G – 4º Piso",
     "phone": "(21) 2275-577",
@@ -59,7 +59,7 @@ const storesData = [
     ],
   },
   {
-    "className": "icaraí-cdb",
+    "className": "Icarai",
     "title": "ICARAÍ",
     "local": "Endereço: Rua Gavião Peixoto, 68. Icaraí, Niterói",
     "phone": "(21) 3620-0200",
@@ -68,7 +68,7 @@ const storesData = [
     ],
   },
   {
-    "className": "tijuca",
+    "className": "Tijuca",
     "title": "SHOPPING TIJUCA",
     "local":
       "Endereço: Avenida Maracanã , 987 - bloco 4 - loja 35 (Subsolo) - Shopping Tijuca",
@@ -78,7 +78,7 @@ const storesData = [
     ],
   },
   {
-    "className": "via-parque",
+    "className": "Via Parque",
     "title": "VIA PARQUE - OUTLET E PONTA",
     "local":
       "Endereço: Avenida Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro - RJ, 22.775-003 Shopping Via Parque - 1.125 B1",
@@ -88,7 +88,7 @@ const storesData = [
     ],
   },
   {
-    "className": "norte-shopping",
+    "className": "Norte Shopping",
     "title": "NORTE SHOPPING",
     "local": "Av. Dom Helder Câmara, 5332 - Loja 1101 - 1° Piso",
     "phone": "(21) 3172-3684",
@@ -97,7 +97,7 @@ const storesData = [
     ],
   },
   {
-    "className": "recreio",
+    "className": "Recreio",
     "title": "RECREIO SHOPPING",
     "local": "Av. das Américas, 19019, loja 203 FGHI – 2º piso",
     "phone": "(21) 3030-5397",
@@ -106,7 +106,7 @@ const storesData = [
     ],
   },
   {
-    "className": "barra-shopping",
+    "className": "Barra Shopping",
     "title": "BARRA SHOPPING",
     "local":
       "Endereço: Avenida das Américas, 4.666 - Barra da Tijuca, Rio de Janeiro - RJ, 22640-102. Barra Shopping - Nível Lagoa Loja 122B",
@@ -116,7 +116,7 @@ const storesData = [
     ],
   },
   {
-    "className": "rio-sul-cdb",
+    "className": "Rio Sul CDB",
     "title": "SHOPPING RIO SUL",
     "local": "Rua Lauro Muller, 116 LJ D76AB – 4º Piso",
     "phone": "(21) 3496-8006",
@@ -125,7 +125,7 @@ const storesData = [
     ],
   },
   {
-    "className": "via-parque-cdb",
+    "className": "Via Parque CDB",
     "title": "VIA PARQUE SHOPPING",
     "local": "Av. Ayrton Senna, 3000 - 1º piso - Lj. 1120",
     "phone": "(21) 3795-6453",
@@ -134,7 +134,7 @@ const storesData = [
     ],
   },
   {
-    "className": "icarai-cdb",
+    "className": "Icarai CDB",
     "title": "ICARAÍ",
     "local": "Rua Miguel de Frias, 112",
     "phone": "(21) 3617-1950",

@@ -225,7 +225,7 @@ function ProductInfo({ page, layout }: Props) {
         {/* <SellerButton /> */}
 
         {isVariantOf && isVariantOf.model && (
-          <PhysicalStoresButton refId={isVariantOf.model} />
+          <PhysicalStoresButton refId={referenceId ?? isVariantOf.model} />
         )}
       </div>
 

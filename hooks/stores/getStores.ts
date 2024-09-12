@@ -75,7 +75,7 @@ export function useStores(props: LiveProductProps): UseStoresResult {
         ) {
           const storeInfo: StockItem = {
             properties: {
-              title: t.properties.title.toLowerCase().replaceAll(" ", "-"),
+              title: t.properties.title,
             },
             data: t.data,
           };
