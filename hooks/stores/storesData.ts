@@ -50,7 +50,7 @@ const storesData = [
     ],
   },
   {
-    "className": "Rio Sul CDB",
+    "className": "Rio Sul",
     "title": "RIO SUL",
     "local": "Endereço: Rio Sul - Rua Lauro Muller, 116 LJ 76G – 4º Piso",
     "phone": "(21) 2275-577",
