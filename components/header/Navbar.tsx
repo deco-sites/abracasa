@@ -79,72 +79,70 @@ function Navbar(
       )}
 
       {/* Desktop Version */}
-      {isDesktop && (
-        <div
-          id="desktop-navbar"
-          class="hidden xl:flex flex-col justify-center items-center w-full py-1 group-data-[scrolling='true']/nav:py-0"
-        >
-          <div class="flex justify-between items-center max-w-[95%] gap-7 w-full">
-            <div class="flex-none w-[75px]">
-              {logo && (
-                <a
-                  href="/"
-                  aria-label="Store logo"
-                  class="block w-[75px]"
-                >
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={75}
-                    height={75}
-                    class="block group-data-[scrolling='true']/nav:hidden"
-                  />
-
-                  <img
-                    src="/image/minimized-icon.jpg"
-                    alt="Logo Abracasa Minificada"
-                    loading="lazy"
-                    decoding="async"
-                    width={40}
-                    height={40}
-                    class="hidden group-data-[scrolling='true']/nav:block"
-                  />
-                </a>
-              )}
-            </div>
-
-            <ul class="flex-auto flex items-center justify-center gap-10 px-4">
-              {items.map((item) => <NavItem item={item} />)}
-            </ul>
-
-            <div class="w-full max-w-[50%]">
-              <Searchbar searchbar={searchbar} />
-            </div>
-
-            <div class="flex items-center justify-between gap-7 w-full">
+      <div
+        id="desktop-navbar"
+        class="hidden xl:flex flex-col justify-center items-center w-full py-1 group-data-[scrolling='true']/nav:py-0"
+      >
+        <div class="flex justify-between items-center max-w-[95%] gap-7 w-full">
+          <div class="flex-none w-[75px]">
+            {logo && (
               <a
-                class="inline-flex items-center gap-1 text-xs"
-                href="/institucional/nossas-lojas"
-                aria-label="Log in"
+                href="/"
+                aria-label="Store logo"
+                class="block w-[75px]"
               >
-                <Icon
-                  id="OurStores"
-                  width={32}
-                  height={32}
-                  alt="Store icon"
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={75}
+                  height={75}
+                  class="block group-data-[scrolling='true']/nav:hidden"
                 />
-                <span class="tracking-[0.05em]">Lojas</span>
+
+                <img
+                  src="/image/minimized-icon.jpg"
+                  alt="Logo Abracasa Minificada"
+                  loading="lazy"
+                  decoding="async"
+                  width={40}
+                  height={40}
+                  class="hidden group-data-[scrolling='true']/nav:block"
+                />
               </a>
+            )}
+          </div>
 
-              <SellbieCashback />
+          <ul class="flex-auto flex items-center justify-center gap-10 px-4">
+            {items.map((item) => <NavItem item={item} />)}
+          </ul>
 
-              {platform === "vtex" && <CartButtonVTEX />}
+          <div class="w-full max-w-[50%]">
+            <Searchbar searchbar={searchbar} />
+          </div>
 
-              <LoginElement />
-            </div>
+          <div class="flex items-center justify-between gap-7 w-full">
+            <a
+              class="inline-flex items-center gap-1 text-xs"
+              href="/institucional/nossas-lojas"
+              aria-label="Log in"
+            >
+              <Icon
+                id="OurStores"
+                width={32}
+                height={32}
+                alt="Store icon"
+              />
+              <span class="tracking-[0.05em]">Lojas</span>
+            </a>
+
+            <SellbieCashback />
+
+            {platform === "vtex" && <CartButtonVTEX />}
+
+            <LoginElement />
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 }
