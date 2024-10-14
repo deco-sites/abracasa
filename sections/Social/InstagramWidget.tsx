@@ -13,7 +13,7 @@ export default function InstagramWidget({ appId, title, subtitle }: Props) {
   return (
     <div class="flex flex-col container lg:max-w-[80%] pt-8 pb-12 px-4 lg:px-0">
       <div class="flex flex-col gap-2 items-center justify-center text-center pb-8">
-        <h1 class="text-dimgray leading-[30px] lg:leading-[49px] text-[22px] lg:text-4xl font-normal">
+        <h1 class="text-primary leading-[30px] lg:leading-[49px] text-[22px] lg:text-4xl font-normal">
           {title}
         </h1>
         {subtitle && (

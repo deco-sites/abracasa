@@ -73,14 +73,14 @@ export default function Benefits(
         </div>
         <div class="flex-auto flex flex-col gap-1 lg:gap-4">
           <div
-            class={`text-base text-center font-bold lg:min-h-[56px] lg:max-w-[85%] mx-auto ${
+            class={`text-center font-bold lg:min-h-[56px] lg:max-w-[85%] mx-auto ${
               reverse ? "text-base-100" : "text-base-content"
             }`}
           >
             {benefit.label}
           </div>
           <p
-            class={`text-sm leading-5 text-[#212121]`}
+            class={`text-sm leading-5 text-neutral`}
           >
             {benefit.description}
           </p>

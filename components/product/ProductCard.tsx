@@ -165,13 +165,13 @@ function ProductCard(
             )}
 
           {additionalProperty.find((item) => item.value === "Exclusivo") && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] min-w-[61px] text-nowrap h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-primary py-3 px-[4.61px] min-w-[61px] text-nowrap h-[18.54px]">
               exclusivo
             </div>
           )}
 
           {product.isSimilarTo && product.isSimilarTo.length > 0 && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] min-w-[66px] text-nowrap h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-primary py-3 px-[4.61px] min-w-[66px] text-nowrap h-[18.54px]">
               +{product.isSimilarTo.length} cores
             </div>
           )}
