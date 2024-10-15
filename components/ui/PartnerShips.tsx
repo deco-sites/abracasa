@@ -28,7 +28,7 @@ export default function PartnerShips(
       <div class="w-full h-full flex flex-col items-center justify-center text-center">
         {title && (
           <div class="w-full h-full my-2">
-            <h1 class="text-4xl leading-[49px] text-base-200 my-0">
+            <h1 class="text-4xl leading-[49px] text-warning my-0">
               {title || "Parcerias"}
             </h1>
           </div>
@@ -46,7 +46,7 @@ export default function PartnerShips(
         <div class="w-[30%] h-full mt-6 mb-2 border-b border-solid border-base-300" />
 
         <div class="w-full h-full my-2">
-          <h2 class="text-4xl leading-[49px] text-base-200">
+          <h2 class="text-4xl leading-[49px] text-warning">
             {subTitle || "Siga a Abra Casa"}
           </h2>
         </div>
