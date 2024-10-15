@@ -266,7 +266,7 @@ function Footer({
 
   return (
     <footer
-      class={`w-full flex flex-col md:pt-10 pb-2 md:pb-10 gap-6 md:gap-10 md:border-t`}
+      class={`w-full flex flex-col md:pt-10 pb-2 md:pb-10 gap-6 md:gap-10 md:border-t text-primary`}
     >
       <div>
         {(!layout?.variation || layout?.variation == "Variation 1") && (
@@ -358,7 +358,7 @@ function Footer({
               {layout?.hide?.footerDescription
                 ? <></>
                 : (
-                  <p class="text-black text-xs text-center md:text-start">
+                  <p class="text-xs text-center md:text-start">
                     {footerDescription?.text}
                   </p>
                 )}

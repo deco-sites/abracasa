@@ -21,7 +21,7 @@ function Header(props: Props) {
                 <h1
                   class={`text-2xl leading-8 lg:leading-10
                   ${
-                    props.colorReverse ? "text-primary-content" : "text-dimgray"
+                    props.colorReverse ? "text-primary-content" : "text-primary"
                   }
                   ${
                     props.fontSize === "Normal"
@@ -39,7 +39,7 @@ function Header(props: Props) {
                   class={`
                   leading-6 lg:leading-8
                   ${
-                    props.colorReverse ? "text-primary-content" : "text-dimgray"
+                    props.colorReverse ? "text-primary-content" : "text-primary"
                   }
                   ${props.fontSize === "Normal" ? "lg:text-xl" : "lg:text-2xl"}
                 `}

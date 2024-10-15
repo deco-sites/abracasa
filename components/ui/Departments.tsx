@@ -33,7 +33,7 @@ export default function Departments({ departments = [] }: Props) {
             >
               <a
                 href={item.link || "#"}
-                class="flex flex-col items-center justify-center gap-1 text-gray-48 hover:text-firebrick transition-colors duration-150 ease-in font-sans"
+                class="flex flex-col items-center justify-center gap-1 text-base-300 hover:text-firebrick transition-colors duration-150 ease-in font-sans"
               >
                 <Image
                   src={item.image}

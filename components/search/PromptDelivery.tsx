@@ -33,7 +33,7 @@ export default function PromptDelivery() {
         />
       </div>
       <Icon id="Clock" width={32} height={25} fill="none" />
-      <span class="leading-[22px] text-dimgray text-base">Pronta Entrega</span>
+      <span class="leading-[22px] text-primary text-base">Pronta Entrega</span>
     </button>
   );
 }

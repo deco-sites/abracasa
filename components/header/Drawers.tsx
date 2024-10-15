@@ -77,7 +77,7 @@ function Drawers({ menu, children, platform }: Props) {
           isMenu={displayMenu.value}
           title={displayMenu.value
             ? (
-              <p class="flex flex-col text-dimgray text-sm leading-4">
+              <p class="flex flex-col text-primary text-sm leading-4">
                 <span>Olá, seja bem vindo à</span>
                 <span class="text-firebrick font-bold leading-[30px] text-[22px]">
                   Abra Casa

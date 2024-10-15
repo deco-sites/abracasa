@@ -142,13 +142,13 @@ function ProductInfo({ page, layout }: Props) {
           )}
 
           {hasExclusiveFlag && (
-            <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 max-w-[70px] w-full h-[18px]">
+            <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-primary py-3 px-1 max-w-[70px] w-full h-[18px]">
               exclusivo
             </div>
           )}
 
           {similarsColorsLength > 0 && (
-            <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-dimgray py-3 px-1 max-w-[70px] w-full h-[18px]">
+            <div class="flex items-center justify-center bg-[#F0F0F0] rounded-md text-xs leading-[12px] text-primary py-3 px-1 max-w-[70px] w-full h-[18px]">
               +{similarsColorsLength} cores
             </div>
           )}
