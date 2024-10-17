@@ -159,19 +159,19 @@ function ProductCard(
         >
           {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
             (
-              <div class="flex items-center justify-center bg-dimgray rounded-md text-xs leading-[12.57px] text-white py-3 px-[4.61px] min-w-[96px] text-nowrap h-[18.54px]">
+              <div class="flex items-center justify-center bg-dimgray rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-white py-3 px-[4.61px] min-w-[96px] text-nowrap h-[18.54px]">
                 pronta entrega
               </div>
             )}
 
           {additionalProperty.find((item) => item.value === "Exclusivo") && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] min-w-[61px] text-nowrap h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-dimgray py-3 px-[4.61px] min-w-[61px] text-nowrap h-[18.54px]">
               exclusivo
             </div>
           )}
 
           {product.isSimilarTo && product.isSimilarTo.length > 0 && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] min-w-[66px] text-nowrap h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-dimgray py-3 px-[4.61px] min-w-[66px] text-nowrap h-[18.54px]">
               +{product.isSimilarTo.length} cores
             </div>
           )}
@@ -285,7 +285,7 @@ function ProductCard(
           href={url && relative(url)}
           class="flex items-center justify-between w-full h-full gap-2 lg:px-1.5"
         >
-          <div class="flex flex-col">
+          <div class="flex flex-col w-full">
             {l?.hide?.allPrices
               ? ""
               : (
@@ -299,24 +299,50 @@ function ProductCard(
                       align === "center" ? "justify-center" : "justify-start"
                     }`}
                   >
-                    {(listPrice ?? 0) > (price ?? 0) && (
-                      <div
-                        class={`line-through text-[#A4A2A2] text-xs ${
-                          l?.basics?.oldPriceSize === "Normal"
-                            ? "lg:text-xl"
-                            : ""
-                        }`}
-                      >
-                        {formatPrice(listPrice, offers?.priceCurrency)}
+                    <div class="flex justify-between items-center">
+                      {(listPrice ?? 0) > (price ?? 0) && (
+                        <div
+                          class={`line-through text-[#A4A2A2] text-xs ${
+                            l?.basics?.oldPriceSize === "Normal"
+                              ? "lg:text-xl"
+                              : ""
+                          }`}
+                        >
+                          {formatPrice(listPrice, offers?.priceCurrency)}
+                        </div>
+                      )}
+                      {(listPrice ?? 0) > (price ?? 0) && (
+                        <span class="text-[#E31010] font-semibold text-[10px] lg:hidden">
+                          R$ {Math.round((listPrice ?? 0) - (price ?? 0))} OFF
+                        </span>
+                      )}
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="text-black font-bold text-sm my-[9px] lg:my-0">
+                        {formatPrice(price, offers?.priceCurrency)}
                       </div>
-                    )}
-                    <div class="text-black font-bold text-sm">
-                      {formatPrice(price, offers?.priceCurrency)}
+                      <div class="flex items-center gap-[6px]">
+                        {(listPrice ?? 0) > (price ?? 0) && (
+                          <span class="text-[#E31010] font-semibold text-[10px] hidden lg:block">
+                            R$ {Math.round((listPrice ?? 0) - (price ?? 0))} OFF
+                          </span>
+                        )}
+                        {((listPrice ?? 0) - (price ?? 0) > 0) && (
+                          <div class="flex items-center justify-center bg-[#E31010] rounded text-xs font-bold leading-[18px] text-white p-2 w-10 h-[18px]">
+                            -{Math.round(
+                              ((listPrice! - price!) * 100) / listPrice!,
+                            )}%
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                   {installments && (
                     <p class="flex text-xs leading-[15px] text-black">
-                      {installments?.replace(".", ",")}
+                      {installments?.replace("sem juros", "s/ juros").replace(
+                        ".",
+                        ",",
+                      )}
                     </p>
                   )}
                 </div>
@@ -324,19 +350,6 @@ function ProductCard(
           </div>
 
           {/* Discount Flags */}
-          <div class="flex flex-col lg:flex-row lg:gap-1 text-[11px] sm:text-xs leading-[18px] items-end">
-            {(listPrice ?? 0) > (price ?? 0) && (
-              <span class="text-[#E31010] font-semibold">
-                R$ {Math.round((listPrice ?? 0) - (price ?? 0))} OFF
-              </span>
-            )}
-
-            {((listPrice ?? 0) - (price ?? 0) > 0) && (
-              <div class="flex items-center justify-center bg-[#E31010] rounded text-xs font-bold leading-[18px] text-white p-2 w-10 h-[18px]">
-                -{Math.round(((listPrice! - price!) * 100) / listPrice!)}%
-              </div>
-            )}
-          </div>
         </a>
 
         {/* SKU Selector */}

@@ -10,6 +10,7 @@ import type { Product, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import { AppContext } from "apps/vtex/mod.ts";
+import Breadcrumb from "deco-sites/abracasa/components/ui/Breadcrumb.tsx";
 
 export interface Layout {
   /**
@@ -62,7 +63,11 @@ function Result({
     <div id="PLP" class="flex flex-col gap-1">
       <SearchTitle productsCount={pageInfo.records} />
 
-      <div class="px-4 sm:py-10">
+      <div class="px-4 sm:py-10 sm:pt-[30px]">
+        <div class="container lg:max-w-[85%]">
+          <Breadcrumb itemListElement={breadcrumb.itemListElement} />
+        </div>
+
         <SearchControls
           sortOptions={sortOptions}
           filters={filters}
@@ -78,7 +83,7 @@ function Result({
             </aside>
           )}
           <div class="flex flex-col gap-6">
-            <span class="text-sm text-[#828282] leading-[27px] font-normal text-end md:text-start">
+            <span class="text-[13px] text-[#828282] leading-[27px] font-normal text-end md:text-start">
               {pageInfo.records} produtos
             </span>
 
