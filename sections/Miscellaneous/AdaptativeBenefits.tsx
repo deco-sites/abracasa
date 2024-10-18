@@ -31,7 +31,7 @@ function MobileBenefits({ benefits, interval, infinite }: Props) {
         id={id}
         class="grid grid-cols-[48px_1fr_48px] px-2 sm:px-5"
       >
-        <Slider class="carousel carousel-center snap-mandatory scroll-smooth sm:snap-end gap-6 col-span-full row-start-2 row-end-5 pb-2 scrollbar-none">
+        <Slider class="carousel carousel-center snap-mandatory scroll-smooth sm:snap-end gap-6 col-span-full row-start-2 row-end-5 pb-2 scrollbar-none w-full justify-between">
           {benefits?.map(({ title, content }, index) => (
             <Slider.Item
               index={index}

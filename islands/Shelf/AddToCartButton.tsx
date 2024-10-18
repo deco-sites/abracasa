@@ -54,7 +54,9 @@ function AddToCartButton(props: Props) {
       class="btn btn-block bg-transparent uppercase border border-dimgray rounded-none hover:bg-dimgray text-dimgray hover:text-white font-normal leading-[15px] text-[13px] cursor-pointer min-h-[36.96px] max-h-[36.96px] py-1.5 md:py-[10px]"
     >
       <span class="flex text-center md:hidden">Comprar</span>
-      <span class="hidden text-center md:flex">Adicionar ao carrinho</span>
+      <span class="hidden text-center md:flex tracking-[0.84px]">
+        Adicionar ao carrinho
+      </span>
     </Button>
   );
 }
