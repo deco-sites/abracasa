@@ -63,10 +63,11 @@ import * as $$$$$$50 from "./sections/Product/ProductShelf.tsx";
 import * as $$$$$$51 from "./sections/Product/ProductShelfTabbed.tsx";
 import * as $$$$$$52 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$53 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$54 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$55 from "./sections/Social/InstagramWidget.tsx";
-import * as $$$$$$56 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$57 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$54 from "./sections/ProxyIframe.tsx";
+import * as $$$$$$55 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$56 from "./sections/Social/InstagramWidget.tsx";
+import * as $$$$$$57 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$58 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -132,10 +133,11 @@ const manifest = {
     "deco-sites/abracasa/sections/Product/ProductShelfTabbed.tsx": $$$$$$51,
     "deco-sites/abracasa/sections/Product/SearchResult.tsx": $$$$$$52,
     "deco-sites/abracasa/sections/Product/Wishlist.tsx": $$$$$$53,
-    "deco-sites/abracasa/sections/Social/InstagramPosts.tsx": $$$$$$54,
-    "deco-sites/abracasa/sections/Social/InstagramWidget.tsx": $$$$$$55,
-    "deco-sites/abracasa/sections/Social/WhatsApp.tsx": $$$$$$56,
-    "deco-sites/abracasa/sections/Theme/Theme.tsx": $$$$$$57,
+    "deco-sites/abracasa/sections/ProxyIframe.tsx": $$$$$$54,
+    "deco-sites/abracasa/sections/Social/InstagramPosts.tsx": $$$$$$55,
+    "deco-sites/abracasa/sections/Social/InstagramWidget.tsx": $$$$$$56,
+    "deco-sites/abracasa/sections/Social/WhatsApp.tsx": $$$$$$57,
+    "deco-sites/abracasa/sections/Theme/Theme.tsx": $$$$$$58,
   },
   "apps": {
     "deco-sites/abracasa/apps/decohub.ts": $$$$$$$$$$$0,
