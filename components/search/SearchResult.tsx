@@ -76,13 +76,13 @@ function Result({
           isCategoriesFilterActive={isCategoriesFilterActive}
         />
 
-        <div class="flex flex-row mt-4 container lg:max-w-[85%] justify-center">
+        <div class="flex flex-row mt-[18px] lg:mt-2 container lg:max-w-[85%] justify-center">
           {layout?.variant === "aside" && filters.length > 0 && (
             <aside class="hidden sm:block w-min min-w-[250px]">
               <Filters filters={filters} />
             </aside>
           )}
-          <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
             <span class="text-[13px] text-[#828282] leading-[27px] font-normal text-end md:text-start">
               {pageInfo.records} produtos
             </span>
@@ -152,8 +152,8 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
       return fetchedProducts?.products?.filter((item) =>
         item.productID !==
-          products.find((product) => extractSimilarLabel(product) === label)
-            ?.productID
+        products.find((product) => extractSimilarLabel(product) === label)
+          ?.productID
       ) || [];
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);

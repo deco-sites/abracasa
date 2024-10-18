@@ -29,7 +29,7 @@ export default function CategoryCard({ image, label, href }: Props) {
         />
       </figure>
 
-      <span class="text-gray-base w-full text-center text-[15px] capitalize min-h-[45px]">
+      <span class="text-gray-base w-full text-center text-[13px] lg:text-sm text-[#7A7A7A] capitalize min-h-[45px]">
         {label}
       </span>
     </a>

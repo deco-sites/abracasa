@@ -104,7 +104,7 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
                 aria-label={`open ${filter.label}`}
                 tabIndex={0}
                 role="button"
-                class="flex items-center justify-center border px-1.5 h-[48px] text-sm leading-[22px] text-dimgray font-normal bg-transparent hover:bg-transparent m-1 gap-1.5 w-full"
+                class="flex items-center justify-center border px-1.5 h-[48px] text-[13px] leading-[22px] text-dimgray font-normal bg-transparent hover:bg-transparent m-1 gap-1.5 w-full"
               >
                 <span class="capitalize">
                   {translations[filter.label] || filter.label}
