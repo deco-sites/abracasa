@@ -26,7 +26,7 @@ function MobileBenefits({ benefits, interval, infinite }: Props) {
   const id = useId();
 
   return (
-    <div class="flex relative w-full bg-aprox-whitesmoke mx-auto font-sans">
+    <div class="flex relative w-full bg-secondary text-neutral mx-auto font-sans">
       <div
         id={id}
         class="grid grid-cols-[48px_1fr_48px] px-2 sm:px-5"
@@ -38,13 +38,13 @@ function MobileBenefits({ benefits, interval, infinite }: Props) {
               class="carousel-item w-full"
             >
               <div class="flex flex-col gap-1.5 items-center justify-center py-2.5 px-10 w-full">
-                <span class="text-[#333232] font-semibold text-xs">
+                <span class="font-semibold text-xs">
                   {title}
                 </span>
 
                 <div
                   dangerouslySetInnerHTML={{ __html: content }}
-                  class="text-dimgray text-center text-xs tracking-[0%] leading-4"
+                  class="text-primary text-center text-xs tracking-[0%] leading-4"
                 />
               </div>
             </Slider.Item>
@@ -95,18 +95,18 @@ export default function AdaptativeBenefits({ benefits = [] }: Props) {
   if (!isDesktop) return <MobileBenefits benefits={benefits} />;
 
   return (
-    <div class="flex items-center justify-center w-full bg-aprox-whitesmoke font-sans">
+    <div class="flex items-center justify-center w-full bg-secondary text-neutral font-sans">
       <div class="xl:max-w-[85%] xl:mx-auto">
         <ul class="grid grid-cols-4 divide-x divide-light-shade-gray w-full gap-x-8">
           {benefits.map(({ title, content }) => (
             <li class="flex flex-col gap-1.5 py-4 first:pl-4 pl-10 2xl:max-w-[85%]">
-              <span class="text-[#333232] font-semibold text-xs leading-[15px] xl:leading-[18px] xl:tracking-[0.03em]">
+              <span class="font-semibold text-xs leading-[15px] xl:leading-[18px] xl:tracking-[0.03em]">
                 {title}
               </span>
 
               <div
                 dangerouslySetInnerHTML={{ __html: content }}
-                class="text-dimgray text-xs leading-4 tracking-[0.03em]"
+                class="text-primary text-xs leading-4 tracking-[0.03em]"
               />
             </li>
           ))}
