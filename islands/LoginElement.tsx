@@ -36,7 +36,7 @@ export default function LoginElement() {
 
   return (
     <a
-      href={user.value ? "/account" : "/login"}
+      href={user.value ? "/user-myaccount" : "/user-login"}
       class="inline-flex items-center gap-1 text-xs"
       aria-label="Log in"
     >
