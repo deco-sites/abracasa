@@ -57,9 +57,9 @@ function SellbieCashback() {
       if (!user.value?.taxID) return;
 
       const cashbackValue = await invoke["deco-sites/abracasa"].loaders.sellbie
-      ["get-cashback"]({
-        cpf: user.value.taxID,
-      });
+        ["get-cashback"]({
+          cpf: user.value.taxID,
+        });
 
       if (cashbackValue) {
         cashback.value = cashbackValue;
