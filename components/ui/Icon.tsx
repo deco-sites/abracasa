@@ -14,6 +14,7 @@ export type AvailableIcons =
   | "ChevronRight"
   | "ChevronUp"
   | "ChevronDown"
+  | "ChevronDownFilter"
   | "CreditCard"
   | "Deco"
   | "Diners"
