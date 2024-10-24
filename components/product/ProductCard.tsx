@@ -308,8 +308,8 @@ function ProductCard(
                         </span>
                       )}
                     </div>
-                    <div class="flex items-center justify-between">
-                      <div class="text-black font-bold text-sm my-[9px] lg:my-0">
+                    <div class="flex items-center justify-between my-[4px] lg:my-0">
+                      <div class="text-black font-bold text-sm lg:my-0">
                         {formatPrice(price, offers?.priceCurrency)}
                       </div>
                       <div class="flex items-center gap-[6px]">
