@@ -150,8 +150,8 @@ function ProductCard(
         {/* Flags */}
         <div
           class={`inline-flex items-center scrollbar-none overflow-x-auto gap-[2px] lg:gap-1.5 absolute top-2 z-10 max-w-full ${l?.elementsPositions?.favoriteIcon === "Top left"
-              ? "right-1 md:right-2"
-              : "left-1 md:left-2 pr-2 sm:pr-0"
+            ? "right-1 md:right-2"
+            : "left-1 md:left-2 pr-2 sm:pr-0"
             }`}
         >
           {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
@@ -169,7 +169,7 @@ function ProductCard(
 
           {product.isSimilarTo && product.isSimilarTo.length > 0 && (
             <div class="flex items-center justify-center bg-white rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-dimgray py-3 px-[4.61px] lg:min-w-[66px] text-nowrap h-[18.54px]">
-              +{product.isSimilarTo.length} cores
+              +{product.isSimilarTo.length} {product.isSimilarTo.length === 1 ? 'cor' : 'cores'}
             </div>
           )}
         </div>
@@ -198,8 +198,8 @@ function ProductCard(
             width={WIDTH}
             height={HEIGHT}
             class={`bg-base-100 col-span-full row-span-full w-full ${l?.onMouseOver?.image == "Zoom image"
-                ? "duration-100 transition-scale scale-100 lg:group-hover:scale-125"
-                : ""
+              ? "duration-100 transition-scale scale-100 lg:group-hover:scale-125"
+              : ""
               }`}
             sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
@@ -256,7 +256,7 @@ function ProductCard(
         {l?.hide?.productName && l?.hide?.productDescription ? "" : (
           <a
             href={url && relative(url)}
-            class="flex flex-col gap-0 lg:px-1.5"
+            class="flex flex-col gap-0 lg:px-1.5 min-h-[55.41px]"
           >
             {l?.hide?.productName ? "" : (
               <h2
@@ -286,8 +286,8 @@ function ProductCard(
                 <div class="flex flex-col leading-[15px]">
                   <div
                     class={`flex flex-col gap-0 ${l?.basics?.oldPriceSize === "Normal"
-                        ? "lg:flex-row lg:gap-2"
-                        : ""
+                      ? "lg:flex-row lg:gap-2"
+                      : ""
                       } ${align === "center" ? "justify-center" : "justify-start"
                       }`}
                   >
@@ -295,8 +295,8 @@ function ProductCard(
                       {(listPrice ?? 0) > (price ?? 0) && (
                         <div
                           class={`line-through text-[#A4A2A2] text-xs ${l?.basics?.oldPriceSize === "Normal"
-                              ? "lg:text-xl"
-                              : ""
+                            ? "lg:text-xl"
+                            : ""
                             }`}
                         >
                           {formatPrice(listPrice, offers?.priceCurrency)}

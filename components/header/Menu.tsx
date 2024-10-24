@@ -54,7 +54,7 @@ function Menu({ items }: Props) {
         <li class="flex flex-col gap-4 pb-2">
           <a
             class="flex items-center gap-4 px-4"
-            href="/login"
+            href="/user-login"
           >
             <Icon
               id="UserIcon"
@@ -66,15 +66,17 @@ function Menu({ items }: Props) {
             <p class="text-sm">
               <span>
                 OLÁ {user.value ? `${user.value.email}` : "registrar"} |{" "}
-                <a href={user.value ? "/logout" : "/login"}>
+                <a href={user.value ? "/logout" : "/user-login"}>
                   {user.value ? "sair" : "entrar"}
                 </a>
               </span>
             </p>
           </a>
 
-          <a href="/account" class="pl-16 uppercase text-sm">Minha Conta</a>
-          <a href="/account#/orders" class="pl-16 uppercase text-sm">
+          <a href="/user-myaccount" class="pl-16 uppercase text-sm">
+            Minha Conta
+          </a>
+          <a href="/user-orders" class="pl-16 uppercase text-sm">
             Meus Pedidos
           </a>
         </li>

@@ -14,7 +14,7 @@ function NotLoggedIn() {
         role="button"
         class="p-0.5 m-1"
       >
-        <a href="/login" class="w-9 h-9">
+        <a href="/user-login" class="w-9 h-9">
           <SellbieIcon />
         </a>
       </div>

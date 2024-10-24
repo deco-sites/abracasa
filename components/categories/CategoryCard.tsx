@@ -18,7 +18,7 @@ export default function CategoryCard({ image, label, href }: Props) {
       href={href}
       class="flex flex-col gap-3 items-center justify-center h-full"
     >
-      <figure class="flex items-center justify-center rounded-md w-full h-[120px] md:h-full p-1.5 md:p-2.5">
+      <figure class="flex items-center justify-center rounded-md w-full h-[120px] md:h-full p-1.5 md:p-[5px]">
         <Image
           src={image.url}
           alt={image.alt}
@@ -29,7 +29,7 @@ export default function CategoryCard({ image, label, href }: Props) {
         />
       </figure>
 
-      <span class="text-gray-base w-full text-center text-[13px] lg:text-sm text-[#7A7A7A] capitalize min-h-[45px]">
+      <span class="text-gray-base w-full text-center text-[13px] lg:text-sm text-[#7A7A7A] capitalize min-h-[45px] tracking-[0.84px]">
         {label}
       </span>
     </a>

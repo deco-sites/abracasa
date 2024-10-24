@@ -83,7 +83,7 @@ function Result({
             </aside>
           )}
           <div class="flex flex-col gap-4">
-            <span class="text-[13px] text-[#828282] leading-[27px] font-normal text-end md:text-start">
+            <span class="text-[13px] lg:text-xs text-[#828282] leading-[27px] font-normal text-end md:text-start">
               {pageInfo.records} produtos
             </span>
 

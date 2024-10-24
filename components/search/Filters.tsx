@@ -110,8 +110,9 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
                   {translations[filter.label] || filter.label}
                 </span>
                 <Icon
-                  id="ChevronDown"
-                  size={24}
+                  id="ChevronDownFilter"
+                  width={15}
+                  height={9}
                   strokeWidth={2}
                   loading="lazy"
                 />
