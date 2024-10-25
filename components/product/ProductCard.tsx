@@ -294,7 +294,7 @@ function ProductCard(
                     <div class="flex justify-between items-center">
                       {(listPrice ?? 0) > (price ?? 0) && (
                         <div
-                          class={`line-through text-[#A4A2A2] text-xs leading-[9.9px] lg:leading-7 ${l?.basics?.oldPriceSize === "Normal"
+                          class={`line-through text-[#A4A2A2] text-xs leading-[9.9px] lg:leading-[15px] ${l?.basics?.oldPriceSize === "Normal"
                             ? "lg:text-xl"
                             : ""
                             }`}
@@ -314,7 +314,7 @@ function ProductCard(
                       </div>
                       <div class="flex items-center gap-[6px]">
                         {(listPrice ?? 0) > (price ?? 0) && (
-                          <span class="text-[#E31010] font-semibold text-[10px] hidden lg:block">
+                          <span class="text-[#E31010] font-semibold text-[10px] lg:text-[11px] lg:leading-[18px] hidden lg:block">
                             R$ {Math.round((listPrice ?? 0) - (price ?? 0))} OFF
                           </span>
                         )}
@@ -329,7 +329,7 @@ function ProductCard(
                     </div>
                   </div>
                   {installments && (
-                    <p class="flex text-xs leading-[9.9px] text-black">
+                    <p class="flex text-xs leading-[9.9px] lg:leading-[15px] text-black">
                       {installments?.replace("sem juros", "s/ juros").replace(
                         ".",
                         ",",
