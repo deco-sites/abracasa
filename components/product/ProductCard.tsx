@@ -156,19 +156,19 @@ function ProductCard(
         >
           {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
             (
-              <div class="flex items-center justify-center bg-dimgray rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-white py-3 px-[4.61px] lg:min-w-[96px] text-nowrap h-[18.54px]">
+              <div class="flex items-center justify-center bg-dimgray rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-white py-1 lg:py-3 px-[4.61px] lg:min-w-[96px] text-nowrap h-[18.54px]">
                 pronta entrega
               </div>
             )}
 
           {additionalProperty.find((item) => item.value === "Exclusivo") && (
-            <div class="flex items-center justify-center bg-white rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-dimgray py-3 px-[4.61px] lg:min-w-[61px] text-nowrap h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-dimgray py-1 lg:py-3 px-[4.61px] lg:min-w-[61px] text-nowrap h-[18.54px]">
               exclusivo
             </div>
           )}
 
           {product.isSimilarTo && product.isSimilarTo.length > 0 && (
-            <div class="flex items-center justify-center bg-white rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-dimgray py-3 px-[4.61px] lg:min-w-[66px] text-nowrap h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-dimgray py-1 lg:py-3 px-[4.61px] lg:min-w-[66px] text-nowrap h-[18.54px]">
               +{product.isSimilarTo.length} {product.isSimilarTo.length === 1 ? 'cor' : 'cores'}
             </div>
           )}
@@ -319,7 +319,7 @@ function ProductCard(
                           </span>
                         )}
                         {((listPrice ?? 0) - (price ?? 0) > 0) && (
-                          <div class="flex items-center justify-center bg-[#E31010] rounded text-xs font-bold leading-[18px] text-white p-2 w-10 h-[18px]">
+                          <div class="flex items-center justify-center bg-[#E31010] rounded font-bold leading-[18px] text-white p-2 w-10 h-4 lg:h-[18px] text-[10px] lg:text-[11px]">
                             -{Math.round(
                               ((listPrice! - price!) * 100) / listPrice!,
                             )}%

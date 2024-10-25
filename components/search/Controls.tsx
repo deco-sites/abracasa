@@ -69,8 +69,8 @@ export default function SearchControls(
       <div class="flex w-full sm:h-full sm:border-t sm:border-base-200">
         <div class="flex flex-col justify-between xl:container xl:max-w-[85%] h-full w-full sm:flex-row sm:mb-0 sm:p-0 sm:gap-4">
           {/* Mobile Filters */}
-          <div class="flex lg:hidden flex-row items-start justify-between border-b border-base-200 gap-2 sm:border-none pb-4 w-full">
-            <div class="flex flex-1 items-center gap-2">
+          <div class="flex lg:hidden flex-row items-start gap-2 border-b border-base-200 sm:border-none pb-4 w-full">
+            <div class="flex items-center gap-2">
               <Button
                 hasBtnClass={false}
                 class={displayFilter

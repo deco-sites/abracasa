@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   /* Allow changing font family via CMS */
   html {
     font-family: var(--font-family);
@@ -19,8 +18,8 @@
   }
 
   /** Remove default styles from input[type=number] */
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
@@ -37,34 +36,55 @@
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
-  
+
   .scrollbar::-webkit-scrollbar {
     width: 6px;
     height: 6px;
   }
-  
+
   .scrollbar::-webkit-scrollbar-track {
     border-radius: 100vh;
     background: #f4f4f4;
   }
-  
+
   .scrollbar::-webkit-scrollbar-thumb {
     background: #555555;
     border-radius: 100vh;
   }
 
   .move-to-up {
-    animation: move-to-up .4s ease;
+    animation: move-to-up 0.4s ease;
   }
 
   .box {
-    animation: shimmer .3s linear infinite;
+    animation: shimmer 0.3s linear infinite;
     background-size: 400%;
-    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 30%, #d9d9d9 45%, #d9d9d9 50%, #f2f2f2 60%, #f2f2f2 100%);
+    background-image: linear-gradient(
+      to right,
+      #f2f2f2 0%,
+      #f2f2f2 30%,
+      #d9d9d9 45%,
+      #d9d9d9 50%,
+      #f2f2f2 60%,
+      #f2f2f2 100%
+    );
   }
 
   .overlay {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .OrderPlp {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2
+      url("data:image/svg+xml,%3Csvg width='15' height='9' viewBox='0 0 15 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41571 7.07295L1.9646 0.259095L0.706665 0.259095L7.41571 8.6454L14.1248 0.259094L12.8668 0.259094L7.41571 7.07295Z' fill='%238E8E93'/%3E%3C/svg%3E%0A")
+      95.5% 50% no-repeat;
   }
 
   @media (min-width: 1280px) {
@@ -75,16 +95,16 @@
 }
 
 .group:disabled .group-disabled\:animate-progress {
-  animation: progress-frame ease normal
+  animation: progress-frame ease normal;
 }
 
 @keyframes progress-frame {
   0% {
-    --dot-progress: 0%
+    --dot-progress: 0%;
   }
 
   to {
-    --dot-progress: 100%
+    --dot-progress: 100%;
   }
 }
 
