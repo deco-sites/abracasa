@@ -1,5 +1,6 @@
 import { h } from "preact";
 import { useSignal } from "@preact/signals";
+import { asset } from "$fresh/runtime.ts";
 
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
@@ -14,15 +15,19 @@ export interface Props {
   files: (ImageObject | VideoObject)[];
   width: number;
   height: number;
+  showMadeiraLogo?: boolean;
 }
 
-export default function PrincipalImages(
-  { files, width: WIDTH, height: HEIGHT }: Props,
-) {
+export default function PrincipalImages({
+  files,
+  width: WIDTH,
+  height: HEIGHT,
+  showMadeiraLogo,
+}: Props) {
   const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
   const handleMouseMove = (
-    event: h.JSX.TargetedMouseEvent<HTMLImageElement>,
+    event: h.JSX.TargetedMouseEvent<HTMLImageElement>
   ) => {
     if (self.window.innerWidth < 1024) return;
 
@@ -41,7 +46,7 @@ export default function PrincipalImages(
   };
 
   const handleMouseLeave = (
-    event: h.JSX.TargetedMouseEvent<HTMLImageElement>,
+    event: h.JSX.TargetedMouseEvent<HTMLImageElement>
   ) => {
     const image = event.currentTarget;
 
@@ -59,12 +64,9 @@ export default function PrincipalImages(
       <Slider class="carousel carousel-center gap-6 w-[90vw] sm:w-[40vw]">
         {files?.map((item, index) => {
           return (
-            <Slider.Item
-              index={index}
-              class="carousel-item w-full"
-            >
-              {item["@type"] === "ImageObject"
-                ? (
+            <Slider.Item index={index} class="carousel-item w-full relative">
+              {item["@type"] === "ImageObject" ? (
+                <>
                   <img
                     id={`item-${index}`}
                     class="w-full duration-100 cursor-pointer"
@@ -87,28 +89,40 @@ export default function PrincipalImages(
                     preload={index === 0 ? "true" : "false"}
                     loading={index === 0 ? "eager" : "lazy"}
                   />
-                )
-                : (
-                  <iframe
-                    id={`item-${index}`}
-                    src={item.contentUrl!}
-                    width="100%"
-                    height="100%"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    alt={item.alternateName}
-                    sizes="(max-width: 640px) 100vw, 40vw"
-                    class="w-full h-full duration-100 cursor-pointer z-[5]"
-                    style={{
-                      aspectRatio: ASPECT_RATIO,
-                      transition: "transform 0.3s ease",
-                    }}
-                    onClick={() => {
-                      activedIndex.value = index;
-                      isModalOpened.value = true;
-                    }}
-                    loading="lazy"
-                  />
-                )}
+                  {showMadeiraLogo && index === 0 && (
+                    <div class="absolute flex flex-col gap-1 z-10 top-2 right-1.5">
+                      <img
+                        src={asset("/image/madeira_natural.png")}
+                        width={110}
+                        height={110}
+                        alt="Logo Madeira Natural"
+                        loading="lazy"
+                        class="w-[90px] md:w-[110px]"
+                      />
+                    </div>
+                  )}
+                </>
+              ) : (
+                <iframe
+                  id={`item-${index}`}
+                  src={item.contentUrl!}
+                  width="100%"
+                  height="100%"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  alt={item.alternateName}
+                  sizes="(max-width: 640px) 100vw, 40vw"
+                  class="w-full h-full duration-100 cursor-pointer z-[5]"
+                  style={{
+                    aspectRatio: ASPECT_RATIO,
+                    transition: "transform 0.3s ease",
+                  }}
+                  onClick={() => {
+                    activedIndex.value = index;
+                    isModalOpened.value = true;
+                  }}
+                  loading="lazy"
+                />
+              )}
             </Slider.Item>
           );
         })}
@@ -141,30 +155,28 @@ export default function PrincipalImages(
                   index={index}
                   class="carousel-item w-full h-full justify-center items-center"
                 >
-                  {item["@type"] === "ImageObject"
-                    ? (
-                      <Image
-                        style={{ aspectRatio: `${700} / ${700}` }}
-                        src={item.url!}
+                  {item["@type"] === "ImageObject" ? (
+                    <Image
+                      style={{ aspectRatio: `${700} / ${700}` }}
+                      src={item.url!}
+                      alt={item.alternateName}
+                      width={720}
+                      height={700}
+                      class="h-full w-auto"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div class="w-full h-full inline-block">
+                      <iframe
+                        src={item.contentUrl!}
                         alt={item.alternateName}
-                        width={720}
-                        height={700}
-                        class="h-full w-auto"
+                        width="100%"
+                        height="100%"
+                        class="h-full w-full aspect-video"
                         loading="lazy"
                       />
-                    )
-                    : (
-                      <div class="w-full h-full inline-block">
-                        <iframe
-                          src={item.contentUrl!}
-                          alt={item.alternateName}
-                          width="100%"
-                          height="100%"
-                          class="h-full w-full aspect-video"
-                          loading="lazy"
-                        />
-                      </div>
-                    )}
+                    </div>
+                  )}
                 </Slider.Item>
               ))}
             </Slider>

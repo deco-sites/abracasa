@@ -71,7 +71,6 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
     files.splice(1, 0, video);
   }
 
-  console.log(additionalProperty, "adicionall")
   return (
     <>
       <div class="lg:ml-6 px-0 my-4 max-w-[98vw] sm:max-w-full">
@@ -81,7 +80,9 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
       <div id={id} class="grid grid-flow-row sm:grid-flow-col lg:gap-6">
         {/* Image Slider */}
         <div class="relative order-1 sm:order-2 mx-auto">
-          <ProductImageZoom files={files} width={width} height={height} />
+          <ProductImageZoom files={files} width={width} height={height} showMadeiraLogo={additionalProperty?.some((property) =>
+            property.value?.includes("Madeira Natural")
+          )} />
 
           {additionalProperty?.some((property) =>
             property.value?.includes("Atelie Casa")
@@ -94,20 +95,6 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
                   alt="Logo Ateliê Cadabra"
                   loading="lazy"
                   class="w-[90px] md:w-[145px]"
-                />
-              </div>
-            )}
-          {additionalProperty?.some((property) =>
-            property.value?.includes("Madeira Natural")
-          ) && (
-              <div class="absolute flex flex-col gap-1 z-10 top-2 right-1.5">
-                <img
-                  src={asset("/image/madeira_natural.png")}
-                  width={110}
-                  height={110}
-                  alt="Logo Madeira Natural"
-                  loading="lazy"
-                  class="w-[90px] md:w-[110px]"
                 />
               </div>
             )}
