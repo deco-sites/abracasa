@@ -22,8 +22,8 @@ export default function CategoryCard({ image, label, href }: Props) {
         <Image
           src={image.url}
           alt={image.alt}
-          width={image.width ?? 170}
-          height={image.height ?? 170}
+          width={image.width ?? 150}
+          height={image.height ?? 150}
           loading="lazy"
           decoding="async"
         />

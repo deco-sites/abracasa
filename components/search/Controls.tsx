@@ -88,7 +88,7 @@ export default function SearchControls(
               )}
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-5">
+            <div class="flex flex-col sm:flex-row gap-5 w-full max-w-[260px]">
               <PromptDelivery />
             </div>
           </div>
