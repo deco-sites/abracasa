@@ -10,6 +10,7 @@ import type { Product, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import { AppContext } from "apps/vtex/mod.ts";
+import Breadcrumb from "deco-sites/abracasa/components/ui/Breadcrumb.tsx";
 
 export interface Layout {
   /**
@@ -62,7 +63,11 @@ function Result({
     <div id="PLP" class="flex flex-col gap-1">
       <SearchTitle productsCount={pageInfo.records} />
 
-      <div class="px-4 sm:py-10">
+      <div class="px-4 sm:py-10 sm:pt-[30px]">
+        <div class="container lg:max-w-[85%]">
+          <Breadcrumb itemListElement={breadcrumb.itemListElement} />
+        </div>
+
         <SearchControls
           sortOptions={sortOptions}
           filters={filters}
@@ -71,14 +76,14 @@ function Result({
           isCategoriesFilterActive={isCategoriesFilterActive}
         />
 
-        <div class="flex flex-row mt-4 container lg:max-w-[85%] justify-center">
+        <div class="flex flex-row mt-[18px] lg:mt-2 container lg:max-w-[85%] justify-center">
           {layout?.variant === "aside" && filters.length > 0 && (
             <aside class="hidden sm:block w-min min-w-[250px]">
               <Filters filters={filters} />
             </aside>
           )}
-          <div class="flex flex-col gap-6">
-            <span class="text-sm text-[#828282] leading-[27px] font-normal text-end md:text-start">
+          <div class="flex flex-col gap-4">
+            <span class="text-[11px] lg:text-[13px] lg:text-xs text-[#828282] leading-[27px] font-normal text-end md:text-start">
               {pageInfo.records} produtos
             </span>
 
@@ -147,8 +152,8 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
       return fetchedProducts?.products?.filter((item) =>
         item.productID !==
-          products.find((product) => extractSimilarLabel(product) === label)
-            ?.productID
+        products.find((product) => extractSimilarLabel(product) === label)
+          ?.productID
       ) || [];
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);

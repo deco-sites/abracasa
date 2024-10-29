@@ -15,7 +15,7 @@ export default function MobileSortButton({ sortOptions }: Props) {
     <>
       <Button
         hasBtnClass={false}
-        class="flex items-center justify-center text-black bg-[#f2f2f2] text-[15px] w-full max-w-[80px] h-[30px] p-1"
+        class="flex items-center justify-center text-black bg-[#f2f2f2] text-[15px] lg:text-[13px] w-full max-w-[80px] py-[6px] px-[13px]"
         onClick={() => setOpen(true)}
       >
         Ordenar

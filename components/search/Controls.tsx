@@ -8,6 +8,8 @@ import Drawer from "$store/components/ui/Drawer.tsx";
 import PromptDelivery from "$store/components/search/PromptDelivery.tsx";
 import { useSignal } from "@preact/signals";
 import type { ProductListingPage } from "apps/commerce/types.ts";
+import { useEffect } from "preact/hooks";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 
 export type Props =
   & Pick<ProductListingPage, "filters" | "breadcrumb" | "sortOptions">
@@ -20,13 +22,20 @@ export default function SearchControls(
   { filters, displayFilter, sortOptions, isCategoriesFilterActive }: Props,
 ) {
   const open = useSignal(false);
+  const currentUrl = useSignal("");
 
+  useEffect(() => {
+    if (IS_BROWSER) {
+      currentUrl.value = globalThis?.location?.href;
+    }
+  }, []);
+
+  console.log(currentUrl, "cleanando");
   const removeSort = () => {
-    const currentUrl = new URL(globalThis?.location?.href);
+    const cleanUrl = new URL(currentUrl.value);
+    cleanUrl.search = "";
 
-    currentUrl.search = "";
-
-    globalThis.location.href = currentUrl.toString();
+    globalThis.location.href = cleanUrl.toString();
   };
 
   return (
@@ -57,15 +66,15 @@ export default function SearchControls(
         </>
       }
     >
-      <div class="flex w-full sm:h-full sm:border-b sm:border-base-200">
-        <div class="flex flex-col justify-between xl:container xl:max-w-[85%] h-full w-full p-4 mb-4 sm:flex-row sm:mb-0 sm:p-0 sm:gap-4">
+      <div class="flex w-full sm:h-full sm:border-t sm:border-base-200">
+        <div class="flex flex-col justify-between xl:container xl:max-w-[85%] h-full w-full sm:flex-row sm:mb-0 sm:p-0 sm:gap-4">
           {/* Mobile Filters */}
-          <div class="flex lg:hidden flex-row items-start justify-between border-b border-base-200 gap-4 sm:border-none pb-4 w-full">
-            <div class="flex flex-1 items-center gap-2.5">
+          <div class="flex lg:hidden flex-row items-start gap-2 border-b border-base-200 sm:border-none pb-4 w-full">
+            <div class="flex items-center gap-2">
               <Button
                 hasBtnClass={false}
                 class={displayFilter
-                  ? "flex items-center justify-center text-black bg-[#f2f2f2] text-[15px] w-full max-w-[80px] h-[30px] p-1"
+                  ? "flex items-center justify-center text-black bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-[6px] px-[13px]"
                   : "sm:hidden"}
                 onClick={() => {
                   open.value = true;
@@ -79,26 +88,29 @@ export default function SearchControls(
               )}
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-5">
+            <div class="flex flex-col sm:flex-row gap-5 w-full max-w-[260px]">
               <PromptDelivery />
             </div>
           </div>
 
           {/* Desktop Filters */}
-          <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-12 w-full">
-            <div class="flex items-center gap-2">
+          <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-12 mt-[86px] w-full">
+            <div class="flex items-center gap-4">
               <Filters
                 filters={filters}
                 isCategoriesFilterActive={isCategoriesFilterActive}
               />
 
-              <button
-                aria-label="limpar filtros"
-                onClick={removeSort}
-                class="text-sm leading-[22px] text-firebrick font-normal"
-              >
-                Limpar filtros
-              </button>
+              {currentUrl.value && new URL(currentUrl.value).search !== "" &&
+                (
+                  <button
+                    aria-label="limpar filtros"
+                    onClick={removeSort}
+                    class="text-[15px] leading-[22px] text-[#494949] font-normal"
+                  >
+                    Limpar filtros
+                  </button>
+                )}
             </div>
 
             <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[315px]">
