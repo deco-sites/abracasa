@@ -84,7 +84,7 @@
     appearance: none;
     background: #f2f2f2
       url("data:image/svg+xml,%3Csvg width='15' height='9' viewBox='0 0 15 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41571 7.07295L1.9646 0.259095L0.706665 0.259095L7.41571 8.6454L14.1248 0.259094L12.8668 0.259094L7.41571 7.07295Z' fill='%238E8E93'/%3E%3C/svg%3E%0A")
-      95.5% 50% no-repeat;
+      85.5% 50% no-repeat;
   }
 
   @media (min-width: 1280px) {

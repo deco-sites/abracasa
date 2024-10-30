@@ -82,7 +82,7 @@ function Sort(
       name="sort"
       aria-label="sort options"
       onInput={applySort}
-      class="OrderPlp w-[145px] h-full rounded-[2px] text-base-content text-[13px] cursor-pointer outline-none px-0.5 py-[6px] lg:px-[13px] lg:p-[15px] lg:pb-[13px]"
+      class="OrderPlp w-[145px] h-full rounded-[2px] text-base-content text-[13px] cursor-pointer outline-none px-0.5 py-[6px] lg:w-full lg:max-w-[134px] lg:px-[13px] lg:p-[15px] lg:pb-[13px]"
     >
       <option value="" hidden class="text-[25px]">
         Ordenar
