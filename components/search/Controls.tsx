@@ -30,13 +30,13 @@ export default function SearchControls(
     }
   }, []);
 
-  console.log(currentUrl, "cleanando");
   const removeSort = () => {
     const cleanUrl = new URL(currentUrl.value);
     cleanUrl.search = "";
 
     globalThis.location.href = cleanUrl.toString();
   };
+
 
   return (
     <Drawer
@@ -74,7 +74,7 @@ export default function SearchControls(
               <Button
                 hasBtnClass={false}
                 class={displayFilter
-                  ? "flex items-center justify-center text-black bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-[6px] px-[13px]"
+                  ? "flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"
                   : "sm:hidden"}
                 onClick={() => {
                   open.value = true;
@@ -88,7 +88,7 @@ export default function SearchControls(
               )}
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-5 w-full max-w-[260px]">
+            <div class="flex flex-col sm:flex-row gap-5 w-full max-w-[169px]">
               <PromptDelivery />
             </div>
           </div>
@@ -101,19 +101,19 @@ export default function SearchControls(
                 isCategoriesFilterActive={isCategoriesFilterActive}
               />
 
-              {currentUrl.value && new URL(currentUrl.value).search !== "" &&
+              {currentUrl.value && new URL(currentUrl.value).search !== "" && !new URL(currentUrl.value).searchParams.has("readyDelivery") &&
                 (
                   <button
                     aria-label="limpar filtros"
                     onClick={removeSort}
-                    class="text-[15px] leading-[22px] text-[#494949] font-normal"
+                    class="text-[15px] lg:text-[13px] leading-[22px] text-[#494949] font-normal"
                   >
                     Limpar filtros
                   </button>
                 )}
             </div>
 
-            <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[315px]">
+            <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[339px]">
               <PromptDelivery />
 
               {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
