@@ -186,6 +186,19 @@ function ProductCard(
               />
             </div>
           )}
+        {additionalProperty?.some((property) =>
+          property.value?.includes("Abra Friday")
+        ) && (
+            <div class="absolute flex flex-col gap-1 z-10 bottom-3 right-3">
+              <img
+                src={asset("/image/abra_friday.png")}
+                width={55}
+                height={55}
+                alt="Logo Abra Friday"
+                loading="lazy"
+              />
+            </div>
+          )}
         {/* Product Images */}
         <a
           href={url && relative(url)}
