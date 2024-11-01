@@ -51,6 +51,8 @@ export type AvailableIcons =
   | "Payment"
   | "Phone"
   | "Pix"
+  | "VideoIcon"
+  | "ImageGallery"
   | "Plus"
   | "QuestionMarkCircle"
   | "Return"
