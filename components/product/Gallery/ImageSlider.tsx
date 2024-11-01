@@ -80,22 +80,24 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
       <div id={id} class="grid grid-flow-row sm:grid-flow-col lg:gap-6">
         {/* Image Slider */}
         <div class="relative order-1 sm:order-2 mx-auto">
-          <ProductImageZoom files={files} width={width} height={height} />
+          <ProductImageZoom files={files} width={width} height={height} showMadeiraLogo={additionalProperty?.some((property) =>
+            property.value?.includes("Madeira Natural")
+          )} />
 
           {additionalProperty?.some((property) =>
             property.value?.includes("Atelie Casa")
           ) && (
-            <div class="absolute flex flex-col gap-1 z-10 top-2 left-1.5">
-              <img
-                src={asset("/image/logo_atelie_abracasa_large.png")}
-                width={145}
-                height={145}
-                alt="Logo Ateliê Cadabra"
-                loading="lazy"
-                class="w-[90px] md:w-[145px]"
-              />
-            </div>
-          )}
+              <div class="absolute flex flex-col gap-1 z-10 top-2 left-1.5">
+                <img
+                  src={asset("/image/logo_atelie_abracasa_large.png")}
+                  width={145}
+                  height={145}
+                  alt="Logo Ateliê Cadabra"
+                  loading="lazy"
+                  class="w-[90px] md:w-[145px]"
+                />
+              </div>
+            )}
 
           {hasVideo && props.device === "mobile" && <MobileVideoPlay />}
 
@@ -166,75 +168,75 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
         {/* Desktop Dots */}
         {props.device === "tablet" || props.device === "desktop" && (
-              <div
-                id="pdp-vertical-carousel"
-                class="hidden sm:flex flex-col items-center gap-2 order-1 border-r sm:border-[#DFDFDF]/60 pr-6 relative"
+          <div
+            id="pdp-vertical-carousel"
+            class="hidden sm:flex flex-col items-center gap-2 order-1 border-r sm:border-[#DFDFDF]/60 pr-6 relative"
+          >
+            {files.length >= 6 && (
+              <Slider.PrevButton
+                class="no-animation"
+                disabled
               >
-                {files.length >= 6 && (
-                  <Slider.PrevButton
-                    class="no-animation"
-                    disabled
-                  >
-                    <Icon size={32} id="ChevronUp" strokeWidth={1.75} />
-                  </Slider.PrevButton>
-                )}
-
-                <Slider
-                  id="pdp-vertical-carousel"
-                  class="carousel carousel-vertical px-0 max-h-[555px] gap-4"
-                >
-                  {files.map((item, index) => (
-                    <Slider.Item
-                      id="pdp-vertical-carousel"
-                      index={index}
-                      class="carousel-item w-[98px] relative"
-                    >
-                      <Slider.Dot index={index}>
-                        {item["@type"] === "ImageObject"
-                          ? (
-                            <Image
-                              style={{ aspectRatio: 1 }}
-                              class="group-disabled:border-base-300 border"
-                              width={98}
-                              height={98}
-                              src={item.url!}
-                              alt={item.alternateName}
-                            />
-                          )
-                          : (
-                            <div class="flex items-center justify-center w-full relative">
-                              <Image
-                                style={{ aspectRatio: 1 }}
-                                src={images[0].url!}
-                                alt={images[0].alternateName}
-                                width={98}
-                                height={98}
-                                class="group-disabled:border-base-300 border"
-                              />
-                              <Icon id="VideoPlay" size={36} class="absolute" />
-                            </div>
-                          )}
-                      </Slider.Dot>
-                    </Slider.Item>
-                  ))}
-                </Slider>
-
-                {files.length >= 6 && (
-                  <Slider.NextButton
-                    class="no-animation"
-                    disabled={files.length < 6}
-                  >
-                    <Icon size={32} id="ChevronDown" strokeWidth={1.75} />
-                  </Slider.NextButton>
-                )}
-
-                <SliderJS
-                  rootId="pdp-vertical-carousel"
-                  scroll="smooth"
-                  orientation="vertical"
-                />
-              </div>
+                <Icon size={32} id="ChevronUp" strokeWidth={1.75} />
+              </Slider.PrevButton>
             )}
+
+            <Slider
+              id="pdp-vertical-carousel"
+              class="carousel carousel-vertical px-0 max-h-[555px] gap-4"
+            >
+              {files.map((item, index) => (
+                <Slider.Item
+                  id="pdp-vertical-carousel"
+                  index={index}
+                  class="carousel-item w-[98px] relative"
+                >
+                  <Slider.Dot index={index}>
+                    {item["@type"] === "ImageObject"
+                      ? (
+                        <Image
+                          style={{ aspectRatio: 1 }}
+                          class="group-disabled:border-base-300 border"
+                          width={98}
+                          height={98}
+                          src={item.url!}
+                          alt={item.alternateName}
+                        />
+                      )
+                      : (
+                        <div class="flex items-center justify-center w-full relative">
+                          <Image
+                            style={{ aspectRatio: 1 }}
+                            src={images[0].url!}
+                            alt={images[0].alternateName}
+                            width={98}
+                            height={98}
+                            class="group-disabled:border-base-300 border"
+                          />
+                          <Icon id="VideoPlay" size={36} class="absolute" />
+                        </div>
+                      )}
+                  </Slider.Dot>
+                </Slider.Item>
+              ))}
+            </Slider>
+
+            {files.length >= 6 && (
+              <Slider.NextButton
+                class="no-animation"
+                disabled={files.length < 6}
+              >
+                <Icon size={32} id="ChevronDown" strokeWidth={1.75} />
+              </Slider.NextButton>
+            )}
+
+            <SliderJS
+              rootId="pdp-vertical-carousel"
+              scroll="smooth"
+              orientation="vertical"
+            />
+          </div>
+        )}
 
         <SliderJS rootId={id} scroll="smooth" />
       </div>
