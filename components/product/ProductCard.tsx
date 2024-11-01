@@ -196,6 +196,7 @@ function ProductCard(
                 height={55}
                 alt="Logo Abra Friday"
                 loading="lazy"
+                class="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px]"
               />
             </div>
           )}
