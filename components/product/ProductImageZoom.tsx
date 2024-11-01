@@ -90,14 +90,14 @@ export default function PrincipalImages({
                     loading={index === 0 ? "eager" : "lazy"}
                   />
                   {showMadeiraLogo && index === 0 && (
-                    <div class="absolute flex flex-col gap-1 z-10 top-2 right-1.5">
+                    <div class="absolute flex flex-col gap-1 z-10 top-4 right-4">
                       <img
                         src={asset("/image/madeira_natural.png")}
-                        width={110}
-                        height={110}
+                        width={80}
+                        height={80}
                         alt="Logo Madeira Natural"
                         loading="lazy"
-                        class="w-[90px] md:w-[110px]"
+                        class="w-[80px]"
                       />
                     </div>
                   )}
