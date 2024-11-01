@@ -56,6 +56,8 @@ function Header({
         header?.classList.toggle("overlay", !scrollY);
       }
 
+      header?.classList.toggle("top-0", scrollY);
+
       header?.setAttribute("data-scrolling", scrollY.toString());
     });
   }

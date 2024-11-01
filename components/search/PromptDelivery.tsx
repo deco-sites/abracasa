@@ -1,4 +1,4 @@
-import Icon from "$store/components/ui/Icon.tsx";
+// import Icon from "$store/components/ui/Icon.tsx";
 
 const SORT_QUERY_PARAM = "readyDelivery";
 
@@ -19,7 +19,7 @@ export default function PromptDelivery() {
     <button
       aria-label="filtrar por prontas entregas"
       onClick={applySort}
-      class="flex items-center gap-2"
+      class="flex items-center gap-2 bg-[#f2f2f2] py-[8px] px-[13px] lg:p-[15px] lg:pb-[13px] lg:w-full lg:max-w-[193px]"
     >
       <div
         type="checkbox"
@@ -27,13 +27,14 @@ export default function PromptDelivery() {
       />
       <div class="w-[13px] h-[13px] border border-gray-400 rounded-sm flex justify-center items-center">
         <div
-          class={`${
-            self?.location?.href?.includes("readyDelivery") && "bg-dimgray"
-          } w-[13px] h-[13px] rounded-sm`}
+          class={`${self?.location?.href?.includes("readyDelivery") && "bg-dimgray"
+            } w-[13px] h-[13px] rounded-sm`}
         />
       </div>
-      <Icon id="Clock" width={32} height={25} fill="none" />
-      <span class="leading-[22px] text-dimgray text-base">Pronta Entrega</span>
+      {/* <Icon id="Clock" width={32} height={25} fill="none" /> */}
+      <span class="leading-[22px] text-[#555555] text-[15px] lg:text-[13px] w-full font-sans">
+        Pronta Entrega
+      </span>
     </button>
   );
 }

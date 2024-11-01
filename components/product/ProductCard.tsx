@@ -117,13 +117,11 @@ function ProductCard(
   return (
     <div
       id={id}
-      class={`card card-compact group w-full border border-[#D9D9D9] rounded-none ${
-        align === "center" ? "text-center" : "text-start"
-      } ${l?.onMouseOver?.showCardShadow ? "lg:hover:card-bordered" : ""}
-        ${
-        l?.onMouseOver?.card === "Move up" &&
+      class={`card card-compact group w-full border border-[#D9D9D9] rounded-none ${align === "center" ? "text-center" : "text-start"
+        } ${l?.onMouseOver?.showCardShadow ? "lg:hover:card-bordered" : ""}
+        ${l?.onMouseOver?.card === "Move up" &&
         "duration-500 transition-translate ease-in-out lg:hover:-translate-y-2"
-      }
+        }
       ${isPLP && "min-h-full"}
       `}
       data-deco="view-product"
@@ -151,44 +149,43 @@ function ProductCard(
       >
         {/* Flags */}
         <div
-          class={`inline-flex items-center scrollbar-none overflow-x-auto gap-1.5 absolute top-2 z-10 max-w-full ${
-            l?.elementsPositions?.favoriteIcon === "Top left"
-              ? "right-1 md:right-2"
-              : "left-1 md:left-2 pr-2 sm:pr-0"
-          }`}
+          class={`inline-flex items-center scrollbar-none overflow-x-auto gap-[2px] lg:gap-1.5 absolute top-2 z-10 max-w-full ${l?.elementsPositions?.favoriteIcon === "Top left"
+            ? "right-1 md:right-2"
+            : "left-1 md:left-2 pr-2 sm:pr-0"
+            }`}
         >
           {additionalProperty.find((item) => item.value === "Pronta Entrega") &&
             (
-              <div class="flex items-center justify-center bg-dimgray rounded-md text-xs leading-[12.57px] text-white py-3 px-[4.61px] min-w-[96px] text-nowrap h-[18.54px]">
+              <div class="flex items-center justify-center bg-dimgray rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-white py-1 lg:py-3 px-[4.61px] lg:min-w-[96px] text-nowrap h-[18.54px]">
                 pronta entrega
               </div>
             )}
 
           {additionalProperty.find((item) => item.value === "Exclusivo") && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] min-w-[61px] text-nowrap h-[18.54px]">
+            <div class="flex items-center justify-center bg-white rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-dimgray py-1 lg:py-3 px-[4.61px] lg:min-w-[61px] text-nowrap h-[18.54px]">
               exclusivo
             </div>
           )}
 
           {product.isSimilarTo && product.isSimilarTo.length > 0 && (
-            <div class="flex items-center justify-center bg-white rounded-md text-xs leading-[12.57px] text-dimgray py-3 px-[4.61px] min-w-[66px] text-nowrap h-[18.54px]">
-              +{product.isSimilarTo.length} cores
+            <div class="flex items-center justify-center bg-white rounded-[1.9px] lg:rounded-[3.29px] text-[11px] leading-[12.57px] text-dimgray py-1 lg:py-3 px-[4.61px] lg:min-w-[66px] text-nowrap h-[18.54px]">
+              +{product.isSimilarTo.length} {product.isSimilarTo.length === 1 ? 'cor' : 'cores'}
             </div>
           )}
         </div>
         {additionalProperty?.some((property) =>
           property.value?.includes("Atelie Casa")
         ) && (
-          <div class="absolute flex flex-col gap-1 z-10 bottom-2 left-1.5">
-            <img
-              src={asset("/image/logo_atelie_abracasa.svg")}
-              width={18}
-              height={18}
-              alt="Logo Ateliê Cadabra"
-              loading="lazy"
-            />
-          </div>
-        )}
+            <div class="absolute flex flex-col gap-1 z-10 bottom-2 left-1.5">
+              <img
+                src={asset("/image/logo_atelie_abracasa.svg")}
+                width={18}
+                height={18}
+                alt="Logo Ateliê Cadabra"
+                loading="lazy"
+              />
+            </div>
+          )}
         {/* Product Images */}
         <a
           href={url && relative(url)}
@@ -200,11 +197,10 @@ function ProductCard(
             alt={front.alternateName}
             width={WIDTH}
             height={HEIGHT}
-            class={`bg-base-100 col-span-full row-span-full w-full ${
-              l?.onMouseOver?.image == "Zoom image"
-                ? "duration-100 transition-scale scale-100 lg:group-hover:scale-125"
-                : ""
-            }`}
+            class={`bg-base-100 col-span-full row-span-full w-full ${l?.onMouseOver?.image == "Zoom image"
+              ? "duration-100 transition-scale scale-100 lg:group-hover:scale-125"
+              : ""
+              }`}
             sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -212,25 +208,24 @@ function ProductCard(
           />
           {(!l?.onMouseOver?.image ||
             l?.onMouseOver?.image == "Change image") && (
-            <Image
-              src={back?.url ?? front.url!}
-              alt={back?.alternateName ?? front.alternateName}
-              width={WIDTH}
-              height={HEIGHT}
-              class="block bg-base-100 col-span-full row-span-full transition-opacity w-full opacity-0 group-hover:opacity-100"
-              sizes="(max-width: 640px) 50vw, 20vw"
-              loading="lazy"
-              decoding="async"
-            />
-          )}
+              <Image
+                src={back?.url ?? front.url!}
+                alt={back?.alternateName ?? front.alternateName}
+                width={WIDTH}
+                height={HEIGHT}
+                class="block bg-base-100 col-span-full row-span-full transition-opacity w-full opacity-0 group-hover:opacity-100"
+                sizes="(max-width: 640px) 50vw, 20vw"
+                loading="lazy"
+                decoding="async"
+              />
+            )}
         </a>
         <figcaption
           class={`
-          absolute bottom-1 left-0 w-full flex flex-col gap-3 p-2 ${
-            l?.onMouseOver?.showSkuSelector || l?.onMouseOver?.showCta
+          absolute bottom-1 left-0 w-full flex flex-col gap-3 p-2 ${l?.onMouseOver?.showSkuSelector || l?.onMouseOver?.showCta
               ? "transition-opacity opacity-0 lg:group-hover:opacity-100"
               : "lg:hidden"
-          }`}
+            }`}
         >
           {/* SKU Selector */}
           {l?.onMouseOver?.showSkuSelector && (
@@ -246,23 +241,22 @@ function ProductCard(
         {/* SKU Selector */}
         {(!l?.elementsPositions?.skuSelector ||
           l?.elementsPositions?.skuSelector === "Top") && (
-          <>
-            {l?.hide?.skuSelector ? "" : (
-              <ul
-                class={`flex items-center gap-2 w-full overflow-auto p-3 ${
-                  align === "center" ? "justify-center" : "justify-start"
-                } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
-              >
-                {skuSelector}
-              </ul>
-            )}
-          </>
-        )}
+            <>
+              {l?.hide?.skuSelector ? "" : (
+                <ul
+                  class={`flex items-center gap-2 w-full overflow-auto p-3 ${align === "center" ? "justify-center" : "justify-start"
+                    } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
+                >
+                  {skuSelector}
+                </ul>
+              )}
+            </>
+          )}
 
         {l?.hide?.productName && l?.hide?.productDescription ? "" : (
           <a
             href={url && relative(url)}
-            class="flex flex-col gap-0 lg:px-1.5"
+            class="flex flex-col gap-0 lg:px-1.5 min-h-[55.41px]"
           >
             {l?.hide?.productName ? "" : (
               <h2
@@ -285,38 +279,61 @@ function ProductCard(
           href={url && relative(url)}
           class="flex items-center justify-between w-full h-full gap-2 lg:px-1.5"
         >
-          <div class="flex flex-col">
+          <div class="flex flex-col w-full">
             {l?.hide?.allPrices
               ? ""
               : (
                 <div class="flex flex-col leading-[15px]">
                   <div
-                    class={`flex flex-col gap-0 ${
-                      l?.basics?.oldPriceSize === "Normal"
-                        ? "lg:flex-row lg:gap-2"
-                        : ""
-                    } ${
-                      align === "center" ? "justify-center" : "justify-start"
-                    }`}
+                    class={`flex flex-col gap-0 ${l?.basics?.oldPriceSize === "Normal"
+                      ? "lg:flex-row lg:gap-2"
+                      : ""
+                      } ${align === "center" ? "justify-center" : "justify-start"
+                      }`}
                   >
-                    {(listPrice ?? 0) > (price ?? 0) && (
-                      <div
-                        class={`line-through text-[#A4A2A2] text-xs ${
-                          l?.basics?.oldPriceSize === "Normal"
+                    <div class="flex justify-between items-center">
+                      {(listPrice ?? 0) > (price ?? 0) && (
+                        <div
+                          class={`line-through text-[#A4A2A2] text-xs leading-[9.9px] lg:leading-[15px] ${l?.basics?.oldPriceSize === "Normal"
                             ? "lg:text-xl"
                             : ""
-                        }`}
-                      >
-                        {formatPrice(listPrice, offers?.priceCurrency)}
+                            }`}
+                        >
+                          {formatPrice(listPrice, offers?.priceCurrency)}
+                        </div>
+                      )}
+                      {(listPrice ?? 0) > (price ?? 0) && (
+                        <span class="text-[#E31010] font-semibold text-[10px] leading-[9px] lg:hidden">
+                          R$ {Math.round((listPrice ?? 0) - (price ?? 0))} OFF
+                        </span>
+                      )}
+                    </div>
+                    <div class="flex items-center justify-between my-[4px] lg:my-0">
+                      <div class="text-black font-bold text-sm leading-[15px] lg:my-0">
+                        {formatPrice(price, offers?.priceCurrency)}
                       </div>
-                    )}
-                    <div class="text-black font-bold text-sm">
-                      {formatPrice(price, offers?.priceCurrency)}
+                      <div class="flex items-center gap-[6px]">
+                        {(listPrice ?? 0) > (price ?? 0) && (
+                          <span class="text-[#E31010] font-semibold text-[10px] lg:text-[11px] lg:leading-[18px] hidden lg:block">
+                            R$ {Math.round((listPrice ?? 0) - (price ?? 0))} OFF
+                          </span>
+                        )}
+                        {((listPrice ?? 0) - (price ?? 0) > 0) && (
+                          <div class="flex items-center justify-center bg-[#E31010] rounded font-bold leading-[18px] text-white p-2 w-10 h-4 lg:h-[18px] text-[10px] lg:text-[11px]">
+                            -{Math.round(
+                              ((listPrice! - price!) * 100) / listPrice!,
+                            )}%
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                   {installments && (
-                    <p class="flex text-xs leading-[15px] text-black">
-                      {installments?.replace(".", ",")}
+                    <p class="flex text-xs leading-[9.9px] lg:leading-[15px] text-black">
+                      {installments?.replace("sem juros", "s/ juros").replace(
+                        ".",
+                        ",",
+                      )}
                     </p>
                   )}
                 </div>
@@ -324,19 +341,6 @@ function ProductCard(
           </div>
 
           {/* Discount Flags */}
-          <div class="flex flex-col lg:flex-row lg:gap-1 text-[11px] sm:text-xs leading-[18px] items-end">
-            {(listPrice ?? 0) > (price ?? 0) && (
-              <span class="text-[#E31010] font-semibold">
-                R$ {Math.round((listPrice ?? 0) - (price ?? 0))} OFF
-              </span>
-            )}
-
-            {((listPrice ?? 0) - (price ?? 0) > 0) && (
-              <div class="flex items-center justify-center bg-[#E31010] rounded text-xs font-bold leading-[18px] text-white p-2 w-10 h-[18px]">
-                -{Math.round(((listPrice! - price!) * 100) / listPrice!)}%
-              </div>
-            )}
-          </div>
         </a>
 
         {/* SKU Selector */}
@@ -344,9 +348,8 @@ function ProductCard(
           <>
             {l?.hide?.skuSelector ? "" : (
               <ul
-                class={`flex items-center gap-2 w-full ${
-                  align === "center" ? "justify-center" : "justify-start"
-                } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
+                class={`flex items-center gap-2 w-full ${align === "center" ? "justify-center" : "justify-start"
+                  } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
               >
                 {skuSelector}
               </ul>
@@ -357,9 +360,8 @@ function ProductCard(
         {!l?.hide?.cta
           ? (
             <div
-              class={`flex-auto flex items-end ${
-                l?.onMouseOver?.showCta ? "lg:hidden" : ""
-              }`}
+              class={`flex-auto flex items-end ${l?.onMouseOver?.showCta ? "lg:hidden" : ""
+                }`}
             >
               {cta}
             </div>
