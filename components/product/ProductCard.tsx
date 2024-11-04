@@ -189,7 +189,7 @@ function ProductCard(
         {additionalProperty?.some((property) =>
           property.value?.includes("Abra Friday")
         ) && (
-            <div class="absolute flex flex-col gap-1 z-10 bottom-3 right-3">
+            <div class="absolute flex flex-col gap-1 z-10 bottom-2 right-2">
               <img
                 src={asset("/image/abra_friday.png")}
                 width={55}
