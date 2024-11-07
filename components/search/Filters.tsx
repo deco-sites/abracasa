@@ -12,6 +12,7 @@ import { parseRange } from "apps/commerce/utils/filters.ts";
 interface Props {
   filters: ProductListingPage["filters"];
   isCategoriesFilterActive?: boolean;
+  hiddenFilters?: string[];
 }
 
 const isToggle = (filter: Filter): filter is FilterToggle =>
@@ -68,7 +69,7 @@ function FilterValues({ key, values }: FilterToggle) {
   );
 }
 
-function Filters({ filters, isCategoriesFilterActive }: Props) {
+function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Props) {
   const excludedKeys = [
     "Brands",
     "PriceRanges",
@@ -97,6 +98,9 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
         )
         .map((filter) => {
           if (!filter.values || filter.values.length === 0) return null;
+          if (hiddenFilters.includes(filter.label.toLowerCase())) {
+            return null;
+          }
 
           return (
             <li class="flex flex-col gap-4 dropdown dropdown-end">
