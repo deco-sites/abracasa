@@ -16,10 +16,11 @@ export type Props =
   & {
     displayFilter?: boolean;
     isCategoriesFilterActive?: boolean;
+    hiddenFilters?: string[];
   };
 
 export default function SearchControls(
-  { filters, displayFilter, sortOptions, isCategoriesFilterActive }: Props,
+  { filters, displayFilter, sortOptions, isCategoriesFilterActive, hiddenFilters = [] }: Props,
 ) {
   const open = useSignal(false);
   const currentUrl = useSignal("");
@@ -36,7 +37,6 @@ export default function SearchControls(
 
     globalThis.location.href = cleanUrl.toString();
   };
-
 
   return (
     <Drawer
@@ -60,6 +60,7 @@ export default function SearchControls(
               <MobileFilters
                 filters={filters}
                 isCategoriesFilterActive={isCategoriesFilterActive}
+                hiddenFilters={hiddenFilters}
               />
             </div>
           </div>
@@ -75,7 +76,7 @@ export default function SearchControls(
                 hasBtnClass={false}
                 class={displayFilter
                   ? "flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"
-                  : "sm:hidden"}
+                  : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"}
                 onClick={() => {
                   open.value = true;
                 }}
@@ -99,6 +100,7 @@ export default function SearchControls(
               <Filters
                 filters={filters}
                 isCategoriesFilterActive={isCategoriesFilterActive}
+                hiddenFilters={hiddenFilters}
               />
 
               {currentUrl.value && new URL(currentUrl.value).search !== "" && !new URL(currentUrl.value).searchParams.has("readyDelivery") &&

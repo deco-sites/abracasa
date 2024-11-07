@@ -11,6 +11,7 @@ import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalytic
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import { AppContext } from "apps/vtex/mod.ts";
 import Breadcrumb from "deco-sites/abracasa/components/ui/Breadcrumb.tsx";
+import { hidden } from "std/fmt/colors.ts";
 
 export interface Layout {
   /**
@@ -30,6 +31,7 @@ export interface Props {
   cardLayout?: CardLayout;
 
   isCategoriesFilterActive?: boolean;
+  hiddenFilters?: string[];
 
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
@@ -50,10 +52,10 @@ function Result({
   cardLayout,
   startingPage = 0,
   isCategoriesFilterActive = false,
+  hiddenFilters = [],
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo.recordPerPage || products.length;
-
   const id = useId();
 
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
@@ -74,6 +76,7 @@ function Result({
           breadcrumb={breadcrumb}
           displayFilter={layout?.variant === "drawer"}
           isCategoriesFilterActive={isCategoriesFilterActive}
+          hiddenFilters={hiddenFilters}
         />
 
         <div class="flex flex-row mt-[18px] lg:mt-2 container lg:max-w-[85%] justify-center">

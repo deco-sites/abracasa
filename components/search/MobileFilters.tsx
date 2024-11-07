@@ -12,6 +12,7 @@ import { parseRange } from "apps/commerce/utils/filters.ts";
 interface Props {
   filters: ProductListingPage["filters"];
   isCategoriesFilterActive?: boolean;
+  hiddenFilters?: string[];
 }
 
 const isToggle = (filter: Filter): filter is FilterToggle =>
@@ -63,7 +64,7 @@ function FilterValues({ key, values }: FilterToggle) {
   );
 }
 
-function Filters({ filters, isCategoriesFilterActive }: Props) {
+function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Props) {
   const excludedKeys = isCategoriesFilterActive
     ? ["PriceRanges", "SITE ANTIGO"]
     : ["Brands", "PriceRanges", "Departments", "Categories", "SITE ANTIGO"];
@@ -81,7 +82,9 @@ function Filters({ filters, isCategoriesFilterActive }: Props) {
         .filter((item) => !excludedKeys.includes(item.key))
         .map((filter) => {
           if (!filter.values || filter.values.length === 0) return null;
-
+          if (hiddenFilters.includes(filter.label)) {
+            return null;
+          }
           return (
             <div class="collapse rounded-none">
               <input
