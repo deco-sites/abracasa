@@ -1,5 +1,5 @@
 import { useUser } from "apps/vtex/hooks/useUser.ts";
-import Icon from "site/components/ui/Icon.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { IS_BROWSER } from "$fresh/runtime.ts";

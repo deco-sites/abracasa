@@ -10,7 +10,7 @@ import type { Product, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import { AppContext } from "apps/vtex/mod.ts";
-import Breadcrumb from "site/components/ui/Breadcrumb.tsx";
+import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import { hidden } from "std/fmt/colors.ts";
 
 export interface Layout {

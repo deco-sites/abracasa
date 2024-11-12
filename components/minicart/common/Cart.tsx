@@ -7,7 +7,7 @@ import { AnalyticsItem } from "apps/commerce/types.ts";
 import CartItem, { Item, Props as ItemProps } from "./CartItem.tsx";
 import Coupon, { Props as CouponProps } from "./Coupon.tsx";
 import Shipping from "./Shipping.tsx";
-import Icon from "site/components/ui/Icon.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 
 interface Props {
   items: Item[];

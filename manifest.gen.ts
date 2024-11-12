@@ -116,8 +116,7 @@ const manifest = {
     "site/sections/Layout/GridItem.tsx": $$$$$$34,
     "site/sections/Links/LinkTree.tsx": $$$$$$35,
     "site/sections/Links/Shortcuts.tsx": $$$$$$36,
-    "site/sections/Miscellaneous/AdaptativeBenefits.tsx":
-      $$$$$$37,
+    "site/sections/Miscellaneous/AdaptativeBenefits.tsx": $$$$$$37,
     "site/sections/Miscellaneous/CampaignPopup.tsx": $$$$$$38,
     "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$39,
     "site/sections/Miscellaneous/CookieConsent.tsx": $$$$$$40,
