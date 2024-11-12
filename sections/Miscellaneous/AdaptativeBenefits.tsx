@@ -2,8 +2,8 @@ import { RichText } from "apps/admin/widgets.ts";
 import { useDevice } from "deco/hooks/useDevice.ts";
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
-import Icon from "deco-sites/abracasa/components/ui/Icon.tsx";
-import { useId } from "deco-sites/abracasa/sdk/useId.ts";
+import Icon from "site/components/ui/Icon.tsx";
+import { useId } from "site/sdk/useId.ts";
 
 /**
  * @title {{{title}}}

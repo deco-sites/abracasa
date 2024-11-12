@@ -14,7 +14,7 @@ import QuickReview from "./QuickReview.tsx";
 import AugmentedReality from "./AugmentedReality.tsx";
 import CTA from "./CTA.tsx";
 import PhysicalStoresButton from "$store/islands/PhysicalStoresButton.tsx";
-import ArButton from "deco-sites/abracasa/components/product/ArButton.tsx";
+import ArButton from "site/components/product/ArButton.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;

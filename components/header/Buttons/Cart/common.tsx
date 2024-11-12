@@ -2,7 +2,7 @@ import Button from "$store/components/ui/Button.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { AnalyticsItem } from "apps/commerce/types.ts";
-import Icon from "deco-sites/abracasa/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 
 interface Props {
   loading: boolean;

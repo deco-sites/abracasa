@@ -5,7 +5,7 @@ import ProductImageZoom from "$store/islands/ProductImageZoom.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import Image from "apps/website/components/Image.tsx";
-import MobileVideoPlay from "deco-sites/abracasa/components/ui/MobileVideoPlay.tsx";
+import MobileVideoPlay from "site/components/ui/MobileVideoPlay.tsx";
 import { FnContext } from "deco/types.ts";
 import type {
   ImageObject,

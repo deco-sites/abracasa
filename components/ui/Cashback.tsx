@@ -1,5 +1,5 @@
-import SellbieIcon from "deco-sites/abracasa/components/ui/SellbieIcon.tsx";
-import { formatPrice } from "deco-sites/abracasa/sdk/format.ts";
+import SellbieIcon from "site/components/ui/SellbieIcon.tsx";
+import { formatPrice } from "site/sdk/format.ts";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 import { invoke } from "$store/runtime.ts";
 import { useSignal } from "@preact/signals";
@@ -56,7 +56,7 @@ function SellbieCashback() {
     async function getUserCashback() {
       if (!user.value?.taxID) return;
 
-      const cashbackValue = await invoke["deco-sites/abracasa"].loaders.sellbie
+      const cashbackValue = await invoke["site"].loaders.sellbie
         ["get-cashback"]({
           cpf: user.value.taxID,
         });

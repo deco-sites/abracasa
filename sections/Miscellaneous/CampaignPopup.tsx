@@ -1,6 +1,6 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Icon from "deco-sites/abracasa/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import { useScript } from "deco/hooks/useScript.ts";
 import { getCookies } from "std/http/cookie.ts";
 

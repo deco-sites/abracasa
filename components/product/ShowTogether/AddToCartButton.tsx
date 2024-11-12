@@ -1,9 +1,9 @@
-import Button from "deco-sites/abracasa/components/ui/Button.tsx";
-import { sendEvent } from "deco-sites/abracasa/sdk/analytics.tsx";
+import Button from "site/components/ui/Button.tsx";
+import { sendEvent } from "site/sdk/analytics.tsx";
 import { useCallback } from "preact/hooks";
 import { useSignal } from "@preact/signals";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
-import { useUI } from "deco-sites/abracasa/sdk/useUI.ts";
+import { useUI } from "site/sdk/useUI.ts";
 
 interface Options {
   sku: string;
