@@ -73,7 +73,7 @@ function Menu({ items }: Props) {
             </p>
           </a>
 
-          <a href="/user-myaccount" class="pl-16 uppercase text-sm">
+          <a href={`${user.value ? '/user-myaccount' : 'user-login'}`} class="pl-16 uppercase text-sm">
             Minha Conta
           </a>
           <a href="/user-orders" class="pl-16 uppercase text-sm">
