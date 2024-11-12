@@ -22,29 +22,33 @@ function VariantSelector({ product }: Props) {
       return [key, Object.fromEntries(sortedValues)];
     });
 
+
   return (
     <ul className="flex flex-col gap-4 max-w-[60%]">
-      {sortedPossibilities.map(([name, values]) => (
-        <li className="flex flex-col gap-2" key={name}>
-          <span className="text-sm">{name}</span>
-          <ul className="grid grid-cols-3 items-center gap-x-1.5 gap-y-3">
-            {Object.entries(values).map(([value, link]) => (
-              <li key={value}>
-                <button f-partial={link} f-client-nav>
-                  <Avatar
-                    content={value}
-                    variant={link === url
-                      ? "active"
-                      : link
-                      ? "default"
-                      : "disabled"}
-                  />
-                </button>
-              </li>
-            ))}
-          </ul>
-        </li>
-      ))}
+      {sortedPossibilities.map(([name, values]) => {
+        if (name === "Estimated Date Arrival") return null;
+        return (
+          <li className="flex flex-col gap-2" key={name}>
+            <span className="text-sm">{name}</span>
+            <ul className="grid grid-cols-3 items-center gap-x-1.5 gap-y-3">
+              {Object.entries(values).map(([value, link]) => (
+                <li key={value}>
+                  <button f-partial={link} f-client-nav>
+                    <Avatar
+                      content={value}
+                      variant={link === url
+                        ? "active"
+                        : link
+                          ? "default"
+                          : "disabled"}
+                    />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </li>
+        )
+      })}
     </ul>
   );
 }
