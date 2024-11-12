@@ -1,7 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
-import { useId } from "deco-sites/abracasa/sdk/useId.ts";
+import { useId } from "$store/sdk/useId.ts";
 import Image from "apps/website/components/Image.tsx";
 
 export interface Props {

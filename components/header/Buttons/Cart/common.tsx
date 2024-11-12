@@ -2,7 +2,7 @@ import Button from "$store/components/ui/Button.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { AnalyticsItem } from "apps/commerce/types.ts";
-import Icon from "deco-sites/abracasa/components/ui/Icon.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 
 interface Props {
   loading: boolean;
@@ -26,9 +26,8 @@ function CartButton({ loading, currency, total, items }: Props) {
   return (
     <div class="indicator">
       <span
-        class={`indicator-item badge badge-secondary badge-sm bg-firebrick text-white border-none ${
-          totalItems === 0 ? "hidden" : ""
-        }`}
+        class={`indicator-item badge badge-secondary badge-sm bg-firebrick text-white border-none ${totalItems === 0 ? "hidden" : ""
+          }`}
       >
         {totalItems > 9 ? "9+" : totalItems}
       </span>

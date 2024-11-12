@@ -1,0 +1,1 @@
+{"data":{"slug":{"param":"slug","__resolveType":"website/functions/requestToParam.ts"},"similars":true,"__resolveType":"vtex/loaders/legacy/productDetailsPage.ts"},"extensions":[{"__resolveType":"site/loaders/extensions/productSimilarsColors.ts","similarsColors":true}],"__resolveType":"commerce/loaders/product/extensions/detailsPage.ts"}

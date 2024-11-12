@@ -1,7 +1,7 @@
-import Icon from "deco-sites/abracasa/components/ui/Icon.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 import SuggestionCard from "$store/components/product/SuggestionCard.tsx";
-import { formatPrice } from "deco-sites/abracasa/sdk/format.ts";
-import { useOffer } from "deco-sites/abracasa/sdk/useOffer.ts";
+import { formatPrice } from "$store/sdk/format.ts";
+import { useOffer } from "$store/sdk/useOffer.ts";
 import AddToCartButton from "$store/islands/ShowTogether/AddToCartButton.tsx";
 import type { Product, ProductDetailsPage } from "apps/commerce/types.ts";
 

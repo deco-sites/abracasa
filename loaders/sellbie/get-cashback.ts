@@ -16,7 +16,7 @@ async function fetchAuthToken(
   ctx: AppContext,
 ): Promise<string | null> {
   try {
-    const response = await ctx.invoke["deco-sites/abracasa"].loaders.sellbie
+    const response = await ctx.invoke["site"].loaders.sellbie
       ["get-auth-token"]();
     return response?.resultado?.accessToken || null;
   } catch (error) {

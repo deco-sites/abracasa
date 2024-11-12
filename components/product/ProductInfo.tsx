@@ -14,7 +14,7 @@ import QuickReview from "./QuickReview.tsx";
 import AugmentedReality from "./AugmentedReality.tsx";
 import CTA from "./CTA.tsx";
 import PhysicalStoresButton from "$store/islands/PhysicalStoresButton.tsx";
-import ArButton from "deco-sites/abracasa/components/product/ArButton.tsx";
+import ArButton from "$store/components/product/ArButton.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -104,8 +104,8 @@ function ProductInfo({ page, layout }: Props) {
                 {layout?.name === "concat"
                   ? `${isVariantOf?.name} ${name}`
                   : layout?.name === "productGroup"
-                  ? isVariantOf?.name
-                  : name}
+                    ? isVariantOf?.name
+                    : name}
               </span>
             </h1>
           </div>
