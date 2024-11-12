@@ -142,6 +142,16 @@ const storesData = [
       "https://bit.ly/3wPOLjp",
     ],
   },
+  {
+    "className": "sp-lar-center",
+    "title": "Lar Center - SP",
+    "local":
+      "Av. Otto Baumgart, 500 - Vila Guilherme, São Paulo - SP, 02049-000 Lar Center - São Paulo - SP",
+    "phone": "(11) 91687-2226",
+    "links": [
+      "https://bit.ly/3YeDK8R",
+    ],
+  },
 ];
 
 export default storesData;
