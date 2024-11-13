@@ -113,25 +113,28 @@ export default function ProductDetails({ page, weight, length, width, height, at
               </div>
 
               <ul class="flex flex-col w-full gap-1">
-                {additionalInfos?.map((item, index) => (<li key={index} className="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
-                  <span className="font-bold w-full">{item.name}</span>
+                {additionalInfos?.map((item, index) => {
+                  if (item.name === "Tamanho") return null;
+                  return (<li key={index} className="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
+                    <span className="font-bold w-full">{item.name}</span>
 
-                  {item?.name?.includes("Materiais") && (<div className="w-full text-end leading-relaxed tracking-wide" dangerouslySetInnerHTML={{
-                    __html: item?.value?.replace(/\r?\n/g, "<br />") || "",
-                  }} />)}
+                    {item?.name?.includes("Materiais") && (<div className="w-full text-end leading-relaxed tracking-wide" dangerouslySetInnerHTML={{
+                      __html: item?.value?.replace(/\r?\n/g, "<br />") || "",
+                    }} />)}
 
-                  {item?.value?.includes("Abrir manual") && (<div className="text-crimson text-end w-full" dangerouslySetInnerHTML={{
-                    __html: item.value.replace("?", ""),
-                  }} />)}
+                    {item?.value?.includes("Abrir manual") && (<div className="text-crimson text-end w-full" dangerouslySetInnerHTML={{
+                      __html: item.value.replace("?", ""),
+                    }} />)}
 
-                  {!item?.name?.includes("Materiais") &&
-                    !item?.name?.includes("Limpeza e cuidados") &&
-                    !item?.value?.includes("Abrir manual") && (<span className={`${item.name === "Entrega"
-                      ? "text-justify"
-                      : "text-end"} w-full`}>
-                      {item.value}
-                    </span>)}
-                </li>))}
+                    {!item?.name?.includes("Materiais") &&
+                      !item?.name?.includes("Limpeza e cuidados") &&
+                      !item?.value?.includes("Abrir manual") && (<span className={`${item.name === "Entrega"
+                        ? "text-justify"
+                        : "text-end"} w-full`}>
+                        {item.value}
+                      </span>)}
+                  </li>)
+                })}
 
                 {weight && (<li class="flex items-center justify-between border-b border-b-[#f2f2f2] last:border-none pb-1 gap-8">
                   <span class="font-bold">Peso</span>
