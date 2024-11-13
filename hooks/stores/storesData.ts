@@ -31,7 +31,7 @@ const storesData = [
   },
   {
     "className": "SP Tatuape",
-    "title": "TATUAPÉ - SP",
+    "title": "Analia Franco - SP",
     "local":
       "Endereço: Rua Emilia Marengo 305 e 309 - Tatuapé, São Paulo - SP, 03336-000",
     "phone": "(11) 96840-2748",
