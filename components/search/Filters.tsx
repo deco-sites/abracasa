@@ -97,7 +97,7 @@ function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Prop
             : !excludedKeys.concat("Designers").includes(item.key)
         )
         .map((filter) => {
-          if (!filter.values || filter.values.length === 0) return null;
+          // if (!filter.values || filter.values.length === 0) return null;
           if (hiddenFilters.includes(filter.label.toLowerCase())) {
             return null;
           }
