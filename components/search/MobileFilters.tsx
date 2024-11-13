@@ -82,7 +82,7 @@ function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Prop
         .filter((item) => !excludedKeys.includes(item.key))
         .map((filter) => {
           if (!filter.values || filter.values.length === 0) return null;
-          if (hiddenFilters.includes(filter.label)) {
+          if (hiddenFilters.includes(filter.label.toLowerCase())) {
             return null;
           }
           return (
