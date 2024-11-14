@@ -143,7 +143,7 @@ const storesData = [
     ],
   },
   {
-    "className": "sp-lar-center",
+    "className": "SP Lar Center",
     "title": "Lar Center - SP",
     "local":
       "Av. Otto Baumgart, 500 - Vila Guilherme, São Paulo - SP, 02049-000 Lar Center - São Paulo - SP",
