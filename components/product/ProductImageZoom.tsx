@@ -59,10 +59,16 @@ export default function PrincipalImages({
   const isModalOpened = useSignal(false);
   const activedIndex = useSignal(0);
 
+  const heroLabel = files.find((label) => label.name === "hero");
+  const adjustedFiles = heroLabel
+    ? [files[0], heroLabel, ...files.filter((item) => item !== heroLabel).slice(1)]
+    : files;
+
+
   return (
     <>
       <Slider class="carousel carousel-center gap-6 w-[90vw] sm:w-[40vw]">
-        {files?.map((item, index) => {
+        {adjustedFiles?.map((item, index) => {
           return (
             <Slider.Item index={index} class="carousel-item w-full relative">
               {item["@type"] === "ImageObject" ? (
