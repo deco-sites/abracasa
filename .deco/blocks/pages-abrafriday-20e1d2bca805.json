@@ -41,7 +41,8 @@
         "sort": "",
         "count": 48,
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
-        "filters": "dynamic"
+        "filters": "dynamic",
+        "fq": "H:201"
       },
       "layout": {
         "columns": {
