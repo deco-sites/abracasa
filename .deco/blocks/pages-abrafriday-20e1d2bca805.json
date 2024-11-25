@@ -38,7 +38,7 @@
     },
     {
       "page": {
-        "sort": "orders:desc",
+        "sort": "release:desc",
         "count": 48,
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
         "selectedFacets": [
@@ -46,7 +46,8 @@
             "value": "201",
             "key": "productClusterIds"
           }
-        ]
+        ],
+        "fuzzy": "enabled"
       },
       "layout": {
         "columns": {
