@@ -82,48 +82,6 @@
           }
         },
         {
-          "alt": "Toques Essenciais",
-          "href": "/campanha/toques-essenciais",
-          "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/02412dba-e757-4418-bda9-9bb744c7ac08/casa_toques_essenciais_banner_mobile_767x942_3.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/e639046d-fcae-44b3-8e92-43c0bf61fd33/casa_toques_essenciais_banner_desktop_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Sofá Pluma",
-          "href": "/campanha/sofa-pluma",
-          "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/febdca0b-6e48-47e7-b7c9-b486303eaf31/casa_sofa_pluma_banner_mobile_767x942_.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/5fab7b8d-9372-4c73-854e-3a1fea01a3f2/casa_sofa_pluma_banner_desktop_1920x713_3.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Quarto Noga",
-          "href": "/campanha/quarto-adulto-noga",
-          "mobile": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/72e639ce-dc50-43d9-bb02-3163039ac0a3",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/dc0a55a4-6117-4700-993c-699398136c97",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Ateliê",
           "href": "/campanha/atelie-casa",
           "mobile": {
