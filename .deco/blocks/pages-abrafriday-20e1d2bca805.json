@@ -38,7 +38,7 @@
     },
     {
       "page": {
-        "sort": "",
+        "sort": "orders:desc",
         "count": 48,
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
         "fuzzy": "automatic",
