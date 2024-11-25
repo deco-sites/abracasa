@@ -38,10 +38,9 @@
     },
     {
       "page": {
-        "sort": "orders:desc",
+        "sort": "",
         "count": 48,
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-        "fuzzy": "automatic",
         "selectedFacets": [
           {
             "value": "201",
