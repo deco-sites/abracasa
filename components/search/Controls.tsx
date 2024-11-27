@@ -14,13 +14,14 @@ import { IS_BROWSER } from "$fresh/runtime.ts";
 export type Props =
   & Pick<ProductListingPage, "filters" | "breadcrumb" | "sortOptions">
   & {
+    sortParam?: "legacy" | "intelligent";
     displayFilter?: boolean;
     isCategoriesFilterActive?: boolean;
     hiddenFilters?: string[];
   };
 
 export default function SearchControls(
-  { filters, displayFilter, sortOptions, isCategoriesFilterActive, hiddenFilters = [] }: Props,
+  { filters, sortParam, displayFilter, sortOptions, isCategoriesFilterActive, hiddenFilters = [] }: Props,
 ) {
   const open = useSignal(false);
   const currentUrl = useSignal("");
@@ -118,7 +119,7 @@ export default function SearchControls(
             <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[339px]">
               <PromptDelivery />
 
-              {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
+              {sortOptions.length > 0 && <Sort sortParam={sortParam} sortOptions={sortOptions} />}
             </div>
           </div>
         </div>

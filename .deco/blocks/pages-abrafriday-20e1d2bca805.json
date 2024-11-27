@@ -115,7 +115,8 @@
         "quantidade de portas",
         "quantidade de lugares"
       ],
-      "isCategoriesFilterActive": true
+      "isCategoriesFilterActive": true,
+      "sortParam": "intelligent"
     },
     {
       "__resolveType": "Footer - 01"
