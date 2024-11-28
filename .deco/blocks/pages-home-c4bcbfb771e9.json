@@ -122,12 +122,26 @@
       "__resolveType": "site/sections/Miscellaneous/AdaptativeBenefits.tsx"
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
+        "hoursToShowPopupAgain": 0,
+        "popup": {
+          "description": "Abra Friday",
+          "link": "https://www.abracasa.com.br/campanha/abra-friday",
+          "target": "_self",
+          "source": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/961c9cc5-8bea-42a9-ac1d-2056c449cc26/casa_popup_abra_friday.gif"
+        }
+      }
+    },
+    {
       "__resolveType": "Departments"
     },
     {
       "__resolveType": "ProductShelf - Abracasa"
     },
     {
+      "__resolveType": "website/sections/Rendering/Deferred.tsx",
       "display": true,
       "behavior": {
         "type": "intersection",
@@ -305,10 +319,10 @@
         {
           "__resolveType": "SectionText - Abracasa"
         }
-      ],
-      "__resolveType": "website/sections/Rendering/Deferred.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx",
       "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
       "title": "Cookies",
       "layout": {
@@ -322,8 +336,7 @@
       "buttons": {
         "allowText": "Aceitar",
         "cancelText": "Fechar"
-      },
-      "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
+      }
     },
     {
       "__resolveType": "Footer - 01"
