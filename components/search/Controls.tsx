@@ -11,18 +11,24 @@ import type { ProductListingPage } from "apps/commerce/types.ts";
 import { useEffect } from "preact/hooks";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-export type Props =
-  & Pick<ProductListingPage, "filters" | "breadcrumb" | "sortOptions">
-  & {
-    sortParam?: "legacy" | "intelligent";
-    displayFilter?: boolean;
-    isCategoriesFilterActive?: boolean;
-    hiddenFilters?: string[];
-  };
+export type Props = Pick<
+  ProductListingPage,
+  "filters" | "breadcrumb" | "sortOptions"
+> & {
+  sortParam?: "legacy" | "intelligent";
+  displayFilter?: boolean;
+  isCategoriesFilterActive?: boolean;
+  hiddenFilters?: string[];
+};
 
-export default function SearchControls(
-  { filters, sortParam, displayFilter, sortOptions, isCategoriesFilterActive, hiddenFilters = [] }: Props,
-) {
+export default function SearchControls({
+  filters,
+  sortParam,
+  displayFilter,
+  sortOptions,
+  isCategoriesFilterActive,
+  hiddenFilters = [],
+}: Props) {
   const open = useSignal(false);
   const currentUrl = useSignal("");
 
@@ -43,17 +49,18 @@ export default function SearchControls(
     <Drawer
       loading="lazy"
       open={open.value}
-      onClose={() => open.value = false}
+      onClose={() => (open.value = false)}
       aside={
         <>
           <div class="bg-base-100 flex flex-col h-full divide-y overflow-y-hidden w-[75%]">
             <div class="flex justify-between items-center">
               <h1 class="px-4 py-3">
-                <span class="font-bold text-2xl text-firebrick">
-                  Filtrar
-                </span>
+                <span class="font-bold text-2xl text-firebrick">Filtrar</span>
               </h1>
-              <Button class="btn btn-ghost" onClick={() => open.value = false}>
+              <Button
+                class="btn btn-ghost"
+                onClick={() => (open.value = false)}
+              >
                 <Icon id="XMark" size={24} strokeWidth={2} />
               </Button>
             </div>
@@ -75,9 +82,11 @@ export default function SearchControls(
             <div class="flex items-center gap-2">
               <Button
                 hasBtnClass={false}
-                class={displayFilter
-                  ? "flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"
-                  : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"}
+                class={
+                  displayFilter
+                    ? "flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"
+                    : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"
+                }
                 onClick={() => {
                   open.value = true;
                 }}
@@ -104,8 +113,15 @@ export default function SearchControls(
                 hiddenFilters={hiddenFilters}
               />
 
-              {currentUrl.value && new URL(currentUrl.value).search !== "" && !new URL(currentUrl.value).searchParams.has("readyDelivery") &&
-                (
+              {currentUrl.value &&
+                new URL(currentUrl.value).search !== "" &&
+                (!new URL(currentUrl.value).searchParams.has("readyDelivery") &&
+                  ((() => {
+                    const searchParams = new URL(currentUrl.value).searchParams;
+                    let paramCount = 0;
+                    searchParams.forEach(() => paramCount++);
+                    return paramCount > 1 || !searchParams.has("page");
+                  })())) && (
                   <button
                     aria-label="limpar filtros"
                     onClick={removeSort}
@@ -114,12 +130,16 @@ export default function SearchControls(
                     Limpar filtros
                   </button>
                 )}
+
+
             </div>
 
             <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[339px]">
               <PromptDelivery />
 
-              {sortOptions.length > 0 && <Sort sortParam={sortParam} sortOptions={sortOptions} />}
+              {sortOptions.length > 0 && (
+                <Sort sortParam={sortParam} sortOptions={sortOptions} />
+              )}
             </div>
           </div>
         </div>
