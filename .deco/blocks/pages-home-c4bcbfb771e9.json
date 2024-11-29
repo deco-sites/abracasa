@@ -7,7 +7,10 @@
       "__resolveType": "website/sections/Seo/Seo.tsx"
     },
     {
-      "__resolveType": "Campaign - 10"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Campaign - 10"
+      }
     },
     {
       "__resolveType": "Header - 01"
@@ -104,6 +107,16 @@
       "interval": 10
     },
     {
+      "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
+      "hoursToShowPopupAgain": 0,
+      "popup": {
+        "description": "Abra Friday",
+        "link": "https://www.abracasa.com.br/campanha/abra-friday",
+        "target": "_self",
+        "source": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/961c9cc5-8bea-42a9-ac1d-2056c449cc26/casa_popup_abra_friday.gif"
+      }
+    },
+    {
       "__resolveType": "site/sections/Miscellaneous/AdaptativeBenefits.tsx",
       "benefits": [
         {
@@ -123,16 +136,6 @@
           "content": "<p>Frota própria e as melhores transportadoras do país.</p>"
         }
       ]
-    },
-    {
-      "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
-      "hoursToShowPopupAgain": 0,
-      "popup": {
-        "description": "Abra Friday",
-        "link": "https://www.abracasa.com.br/campanha/abra-friday",
-        "target": "_self",
-        "source": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/961c9cc5-8bea-42a9-ac1d-2056c449cc26/casa_popup_abra_friday.gif"
-      }
     },
     {
       "__resolveType": "Departments"
