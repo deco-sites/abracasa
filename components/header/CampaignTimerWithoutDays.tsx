@@ -144,7 +144,7 @@ function CampaignTimerWithoutDays({
           >
             <div class="flex items-center justify-center gap-4 lg:gap-16 w-auto xl:min-w-[1180px]">
               {image.mobile && image.desktop && (
-                <div class="flex">
+                <div class="flex ">
                   <Picture preload={image.lcp}>
                     <Source
                       media="(max-width: 476px)"
