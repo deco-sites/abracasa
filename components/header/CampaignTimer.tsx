@@ -180,7 +180,7 @@ function CampaignTimer({
             style={{ background: `${backgroundHex}` }}
             class="text-black w-full min-h-[90px] justify-center items-center text-center flex md:py-3 px-4 xl:px-0"
           >
-            <div class="flex items-center justify-center gap-4 lg:gap-16 w-auto xl:min-w-[1180px] ">
+            <div class="flex items-center justify-center gap-4 lg:gap-16 w-auto xl:min-w-[1180px]">
               {image.mobile && image.desktop && (
                 <div class="flex">
                   <Picture preload={image.lcp}>
