@@ -12,9 +12,16 @@
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Campaign - 10"
+      }
+    },
+    {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
@@ -24,10 +31,10 @@
           },
           "matcher": "/*"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx",
       "categories": [
         {
           "href": "/moveis/sofa/sofa-tradicional",
@@ -53,10 +60,10 @@
           },
           "label": "Sofá Cama"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "OrderByTopSaleDESC",
         "count": 48,
@@ -115,13 +122,12 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "startingPage": 1
     },
     {
+      "__resolveType": "site/sections/Content/SectionText.tsx",
       "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sofás</span></p>",
-      "description": "<main class=\"main-content\"><section class=\"section-seo-text\"><div class=\"container\"><p>O sofá é o protagonista da sua sala de estar e na Abra Casa você encontra o modelo certo para o seu estilo e necessidade. Cada modelo tem o seu diferencial, mas todos compartilham a mesma essência: o conforto. Seja para receber a família ou passar maratonando séries, o seu novo sofá está aqui! São modelos retráteis, tradicionais, de 2 ou 3 lugares, e claro, os sofás cama não poderiam ficar de fora.</p></div></section></main>",
-      "__resolveType": "site/sections/Content/SectionText.tsx"
+      "description": "<main class=\"main-content\"><section class=\"section-seo-text\"><div class=\"container\"><p>O sofá é o protagonista da sua sala de estar e na Abra Casa você encontra o modelo certo para o seu estilo e necessidade. Cada modelo tem o seu diferencial, mas todos compartilham a mesma essência: o conforto. Seja para receber a família ou passar maratonando séries, o seu novo sofá está aqui! São modelos retráteis, tradicionais, de 2 ou 3 lugares, e claro, os sofás cama não poderiam ficar de fora.</p></div></section></main>"
     },
     {
       "__resolveType": "Footer - 01"
