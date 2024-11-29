@@ -1,5 +1,5 @@
 import { useId } from "preact/hooks";
-import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 import CampaignTimerWithoutDays from "./CampaignTimerWithoutDays.tsx";
@@ -35,12 +35,12 @@ export interface Props {
      * @title Text
      * @default Time left for a campaign to end wth a link
      */
-    mobile?: HTMLWidget;
+    mobile?: RichText;
     /**
      * @title Text
      * @default Time left for a campaign to end wth a link
      */
-    desktop?: HTMLWidget;
+    desktop?: RichText;
   };
 
   /**
