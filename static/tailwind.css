@@ -4850,9 +4850,6 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[100\%\] {
   max-width: 100%;
 }
-.max-w-\[1000px\] {
-  max-width: 1000px;
-}
 .max-w-\[104px\] {
   max-width: 104px;
 }
@@ -8151,10 +8148,6 @@ details.collapse summary::-webkit-details-marker {
     justify-content: space-between;
   }
 
-  .md\:gap-0 {
-    gap: 0px;
-  }
-
   .md\:gap-10 {
     gap: 2.5rem;
   }
@@ -8179,22 +8172,12 @@ details.collapse summary::-webkit-details-marker {
     gap: 1.5rem;
   }
 
-  .md\:border-x {
-    border-left-width: 1px;
-    border-right-width: 1px;
-  }
-
   .md\:border-t {
     border-top-width: 1px;
   }
 
   .md\:border-none {
     border-style: none;
-  }
-
-  .md\:border-white {
-    --tw-border-opacity: 1;
-    border-color: rgb(255 255 255 / var(--tw-border-opacity));
   }
 
   .md\:p-0 {
@@ -8279,6 +8262,11 @@ details.collapse summary::-webkit-details-marker {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .group:hover .md\:group-hover\:bottom-6 {
@@ -8927,6 +8915,10 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:w-auto {
     width: auto;
+  }
+
+  .xl\:min-w-\[1180px\] {
+    min-width: 1180px;
   }
 
   .xl\:max-w-\[580px\] {

@@ -7,7 +7,10 @@ import Navbar from "./Navbar.tsx";
 import { type FnContext, type SectionProps } from "@deco/deco";
 import { useScript } from "@deco/deco/hooks";
 export type TAlert = HTMLWidget;
+import type { Props as CampaignTimerProps } from "$store/components/header/CampaignTimer.tsx";
+import CampaignTimer from "$store/components/header/CampaignTimer.tsx";
 export interface Props {
+    campaignTimer?: CampaignTimerProps;
     /** @title Search Bar */
     searchbar?: Omit<SearchbarProps, "platform">;
     /**
@@ -21,7 +24,7 @@ export interface Props {
         alt: string;
     };
 }
-function Header({ searchbar, navItems, logo, device, isHomePage, }: SectionProps<typeof loader>) {
+function Header({ campaignTimer, searchbar, navItems, logo, device, isHomePage, }: SectionProps<typeof loader>) {
     const platform = usePlatform();
     const items = navItems ?? [];
     function handleScroll() {
@@ -45,17 +48,18 @@ function Header({ searchbar, navItems, logo, device, isHomePage, }: SectionProps
         });
     }
     return (<>
-      <header class={!isHomePage ? "h-24 xl:h-[126px]" : ""}>
-        <Drawers menu={{ items }} platform={platform}>
-          <div data-scrolling="false" data-isHome={isHomePage ? "true" : "false"} id="nav" class={`font-sans fixed w-full z-[9999999] transition duration-200 ease-in group/nav data-[scrolling='true']:h-[56px] data-[scrolling='true']:xl:h-[75px] ${isHomePage
-            ? "overlay xl:hover:bg-base-100 xl:hover:text-gray-dark text-white"
-            : "bg-base-100 text-gray-dark border-b"}`}>
-            <Navbar items={items} searchbar={searchbar && { ...searchbar }} logo={logo} device={device}/>
-          </div>
-        </Drawers>
-      </header>
+        {campaignTimer && <CampaignTimer {...campaignTimer} />}
+        <header class={!isHomePage ? "h-24 xl:h-[126px]" : ""}>
+            <Drawers menu={{ items }} platform={platform}>
+                <div data-scrolling="false" data-isHome={isHomePage ? "true" : "false"} id="nav" class={`font-sans fixed w-full z-[9999999] transition duration-200 ease-in group/nav data-[scrolling='true']:h-[56px] data-[scrolling='true']:xl:h-[75px] ${isHomePage
+                    ? "overlay xl:hover:bg-base-100 xl:hover:text-gray-dark text-white"
+                    : "bg-base-100 text-gray-dark border-b"}`}>
+                    <Navbar items={items} searchbar={searchbar && { ...searchbar }} logo={logo} device={device} />
+                </div>
+            </Drawers>
+        </header>
 
-      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(handleScroll) }}/>
+        <script type="module" dangerouslySetInnerHTML={{ __html: useScript(handleScroll) }} />
     </>);
 }
 export const loader = (props: Props, req: Request, ctx: FnContext) => {
