@@ -9,10 +9,7 @@
       "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Campaign - 10"
-      }
+      "__resolveType": "Campaign - 10"
     },
     {
       "__resolveType": "Topbar1"
