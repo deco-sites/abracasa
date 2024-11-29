@@ -101,6 +101,7 @@
       "__resolveType": "site/sections/Images/Carousel.tsx"
     },
     {
+      "__resolveType": "site/sections/Miscellaneous/AdaptativeBenefits.tsx",
       "benefits": [
         {
           "title": "Cashback",
@@ -118,8 +119,7 @@
           "title": "Entrega",
           "content": "<p>Frota própria e as melhores transportadoras do país.</p>"
         }
-      ],
-      "__resolveType": "site/sections/Miscellaneous/AdaptativeBenefits.tsx"
+      ]
     },
     {
       "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
