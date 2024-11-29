@@ -10,6 +10,7 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
           "alt": "Abra Friday",
@@ -97,8 +98,7 @@
         }
       ],
       "preload": true,
-      "interval": 10,
-      "__resolveType": "site/sections/Images/Carousel.tsx"
+      "interval": 10
     },
     {
       "__resolveType": "site/sections/Miscellaneous/AdaptativeBenefits.tsx",

@@ -1,0 +1,14 @@
+{
+  "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx",
+  "text": "<p><span style=\"color: #000000; font-size: 13px\">Até 70% OFF na Abra Friday! Aproveite as últimas horas.</span></p>",
+  "backgroundHex": "#828282",
+  "expiresAt": "2024-11-30T02:59:00.000Z",
+  "link": {
+    "text": "Aproveite",
+    "href": "/campanha/abra-friday",
+    "backgroundHexButton": "#C0C0C0"
+  },
+  "layout": {
+    "textPosition": "Before counter"
+  }
+}
