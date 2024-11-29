@@ -10,5 +10,10 @@
   },
   "layout": {
     "textPosition": "Before counter"
+  },
+  "labels": {
+    "hours": "Horas",
+    "minutes": "Min",
+    "seconds": "Seg"
   }
 }
