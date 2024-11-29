@@ -36,12 +36,12 @@ export interface Props {
   text?: {
     /**
      * @title Text
-     * @default Time left for a campaign to end wth a link
+     * @default Time left for a campaign to end with a link
      */
     mobile?: HTML;
     /**
      * @title Text
-     * @default Time left for a campaign to end wth a link
+     * @default Time left for a campaign to end with a link
      */
     desktop?: HTML;
   };
