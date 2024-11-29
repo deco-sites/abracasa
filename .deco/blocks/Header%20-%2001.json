@@ -1,1 +1,541 @@
-{"cart":{"freeShippingObjectiveQuantity":600},"logo":{"alt":"Store Logo","src":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMzQuNjY3IiBoZWlnaHQ9IjIzNC4xNTMiPjxkZWZzPjxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImEiPjxwYXRoIGQ9Ik0wIDE3NS42MTVoMTc2VjBIMHoiLz48L2NsaXBQYXRoPjwvZGVmcz48cGF0aCBkPSJNMCAyMzQuMTUzaDIzNC42NjdWMEgweiIgZmlsbD0iI2FiMDAzMyIvPjxwYXRoIGQ9Ik05Mi40NjIgMTE2LjgzbDEwLjAxOSAzNi44OTVoNy40M2wtMTMuNjI1LTUwLjk3N2gtNy42NDVsLTEzLjYyOCA1MC45NzdoNy40MjV6TTIwNS41MiAxMTYuODNsMTAuMDIgMzYuODk1aDcuNDNsLTEzLjYyMy01MC45NzdoLTcuNjU0bC0xMy42MiA1MC45NzdoNy40M3pNMTg1Ljg5IDE1My43MjVsLTkuMTUxLTE4Ljc4OGgtOC4wMjRsOC41NjkgMTguNzg4ek0xMTkuODM3IDEwMi44MjdIMTEyLjZ2NTAuODk4aDcuMjM4eiIgZmlsbD0iI2ZmZiIvPjxnIGNsaXAtcGF0aD0idXJsKCNhKSIgdHJhbnNmb3JtPSJtYXRyaXgoMS4zMzMzMyAwIDAgLTEuMzMzMzMgMCAyMzQuMTUzKSI+PHBhdGggZD0iTTEwMy43IDc5Ljk1di4wOTVjNC4xNzggMS45ODMgNS4yODQgNS4wMyA1LjI4NCA4LjIxMiAwIDYuMDAxLTMuNjI2IDEwLjIzOC0xMC42MzQgMTAuMjM4aC02LjE4NFY5My4zNGg1LjU4N2MzLjkyNyAwIDUuNzkxLTIuNTIgNS43OTEtNS40NjYgMC0zLjAwNC0xLjg2NC01LjQ1NC01Ljc5LTUuNDU0aC01LjU4OHYtNS4xNjZoNi4wOWM0LjAyOCAwIDUuODM2LTIuNzI4IDUuODM2LTUuNzM0IDAtMi45OTItMS44MDgtNS43NDItNS44MzYtNS43NDJoLTYuMDl2LTUuNDU3aDcuMzk0YzUuMzkyIDAgOS45NzUgNC4yMzcgOS45NzUgMTAuODMzIDAgMy44NS0xLjkwOSA3LjgyNi01LjgzNiA4Ljc5Nk0xMTguNTg5IDk4LjQ5NWgtNS40MTZWNjAuMzIxaDUuNDE2ek0xMzQuNDggOTUuOTc2Yy0xLjkxMyAxLjc2NC00LjI4IDIuNTItNy4zMDYgMi41MmgtNi4yOTlWOTMuMzRoNi4yNDljMS44NTkgMCAyLjk3Ny0uMzcxIDMuOTc3LTEuMTY4IDEuMTE1LS44NjcgMS44MS0yLjM3OCAxLjgxLTQuMzUgMC0zLjIyLTIuMDA4LTYuMDY4LTYuMDktNi4wNjhoLTUuOTQ1di01LjE0Mmg0LjQwN3YuMDA3czMuOTEtLjA1OCA1LjgxOC42MzVjNC40MjcgMS40NzYgNi45NTMgNS42MzIgNi45NTMgMTAuNTY5IDAgMy40MTktMS41NTUgNi4zMjUtMy41NzQgOC4xNTJNOTIuNzU2IDQzLjkwOGMtMS45ODYgMC0zLjE3My0uOTY4LTMuMTczLTIuNTg2IDAtMS4yOTcuODktMi42OCAzLjM5NS0yLjY4IDIuMjc3IDAgMy44ODcuMjQ1IDMuODg3IDMuMzk4djEuODY4em0uMzU5IDcuNDNjMy40ODcgMCA1LjA0LTEuMzEzIDUuMDQtNC4yNTZ2LTkuNjE1bC0xLjMwNy4wMjN2MS4wODJsLTEuMjA0LS42MDNjLS44MzItLjQxOC0xLjM4LS42OTMtMy4wMjUtLjY5My0yLjUyOCAwLTQuMTYgMS41MjgtNC4xNiAzLjg5NSAwIDEuNzI3Ljk4OCAzLjc0MiAzLjc3NiAzLjc0Mmg0LjYzdjIuMzQ5YzAgMi43MDgtMi42MjUgMi43MDgtMy42MTQgMi43MDgtMS4xMjYgMC0yLjA0NC0uMTc1LTIuNzQyLS44NTQtLjQwMy4zMzMtLjYyNi41Mi0xLjAyNi44NTQuODM4LjkzIDEuOTUyIDEuMzY5IDMuNjMyIDEuMzY5TTE2MS43NzMgNDMuODUyYy0xLjk4OCAwLTMuMTc2LS45NjYtMy4xNzYtMi41ODYgMC0xLjI5NS44OTMtMi42NzggMy4zOTUtMi42NzggMi4yNzYgMCAzLjg4OC4yNDMgMy44ODggMy4zOTh2MS44NjZ6bS4zNTYgNy40MzNjMy40ODggMCA1LjA0MS0xLjMxNCA1LjA0MS00LjI1N3YtOS42MTRjLS41MTguMDA2LS43OTkuMDEtMS4zMDguMDJ2MS4wODVsLTEuMjAzLS42MDRjLS44MzMtLjQxNy0xLjM4LS42OTYtMy4wMjQtLjY5Ni0yLjUyOSAwLTQuMTYzIDEuNTMyLTQuMTYzIDMuODk4IDAgMS43MjcuOTg4IDMuNzQ1IDMuNzggMy43NDVoNC42Mjh2Mi4zNDVjMCAyLjcwOC0yLjYyNCAyLjcwOC0zLjYxMiAyLjcwOC0xLjEyNyAwLTIuMDQ2LS4xNzctMi43NDYtLjg1My0uNDAzLjMzNi0uNjIzLjUyLTEuMDIzLjg1MS44MzYuOTMgMS45NSAxLjM3MiAzLjYzIDEuMzcyTTU2LjI3NSA0NC4yOTNjMCA0LjQxMiAyLjA4IDcuMDQ4IDUuNTY0IDcuMDQ4IDEuNzc3IDAgMy4wODYtLjkxNCAzLjk2MS0xLjg0M2wtLjk4OS0uOTY1Yy0uODE5LjgwNS0xLjgwNyAxLjI1Ny0yLjg2IDEuMjU3LTIuMDAyIDAtNC4zODgtLjk1NC00LjM4OC01LjQ5NyAwLTQuNTIgMi4zODYtNS40NyA0LjM4Ny01LjQ3IDEuMDU0IDAgMi4wNC40NTQgMi44NiAxLjI2bC45OS0uOTY1Yy0uODc1LS45My0yLjE4My0xLjg0Mi0zLjk2LTEuODQyLTMuNDg1IDAtNS41NjUgMi42MjMtNS41NjUgNy4wMTdNMTMyLjI1OCA0MS4zNWMwIC45MjYtLjQxNCAyLjA2OC0yLjM5IDIuMjU1bC0yLjQ3LjI0Yy0yLjA4Ny4xOS0zLjMzIDEuNTIzLTMuMzMgMy41NjcgMCAyLjQ2MSAxLjY2IDMuOTI4IDQuNDM3IDMuOTI4IDEuNzYyIDAgMy4xNDMtLjQ3MyA0LjQwOC0xLjQ0Ni0uMzI2LS40MTctLjUxNC0uNjU3LS44MjctMS4wNi0uODkzLjU5MS0yLjA0OCAxLjEzNy0zLjU4MSAxLjEzNy0yLjg0MiAwLTMuMTQ4LTEuODA5LTMuMTQ4LTIuNTg2IDAtLjQ2NC4xODMtMS45OTYgMi41MzYtMi4xOTdsMi4zMS0uMThjMi4yMi0uMTYgMy4zNDQtMS40NCAzLjM0NC0zLjgwNSAwLTIuODk5LTIuNy0zLjkyNy01LjAxNS0zLjkyNy0xLjg2MiAwLTMuNTQ2LjcxLTUuMDQyIDIuMDMxLjM2My4zOTIuNTY1LjYwOC45MTQuOTgzIDEuMjU2LTEuMTA3IDIuNjIyLTEuNjQ2IDQuMzQ4LTEuNjQ2IDIuMTMgMCAzLjUwNiAxLjA2MSAzLjUwNiAyLjcwNiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4="},"alerts":["<p><strong>10% de cashback</strong> em todo o site! <a data-mce-href=\"https://www.abracasa.com.br/institucional/perguntas-frequentes\" href=\"https://www.abracasa.com.br/institucional/perguntas-frequentes\" title=\"Abrir perguntas frequentes\" data-mce-selected=\"inline-boundary\">Confira aqui﻿</a></p>"],"navItems":{"items":[{"url":"/moveis","name":"MÓVEIS","@type":"SiteNavigationElement","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/9862f20b-c88a-420b-affb-5c412df69b9a","@type":"ImageObject"}],"children":[{"url":"/moveis/cadeiras-bancos-e-banquetas","name":"Cadeiras e Bancos","@type":"SiteNavigationElement","image":[],"children":[{"url":"/moveis/cadeiras-bancos-e-banquetas/cadeiras","name":"Cadeiras","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/cadeiras-bancos-e-banquetas/cadeiras-de-escritorio","name":"Cadeiras de Escritório","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/cadeiras-bancos-e-banquetas/cadeiras-infantis","name":"Cadeiras Infantis","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/cadeiras-bancos-e-banquetas/bancos-e-banquetas","name":"Bancos e Banquetas","@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/moveis/mesas","name":"Mesas","@type":"SiteNavigationElement","image":[],"children":[{"url":"/moveis/mesas/mesa-de-canto-e-lateral","name":"Mesa de Canto e Lateral","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/mesas/mesa-de-centro","name":"Mesa de Centro","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/mesas/mesa-de-jantar","name":"Mesa de Jantar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/mesas/conjunto-mesa-e-cadeira","name":"Conjunto Mesa e Cadeira","@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/moveis/camas","name":"Camas","@type":"SiteNavigationElement","image":[],"children":[{"url":"/moveis/camas/bicama","name":"Bicama","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/camas/cama-auxiliar","name":"Cama Auxiliar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/camas/cama-solteiro","name":"Cama Solteiro","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/camas/cabeceiras","name":"Cabeceiras","@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/moveis/office","name":"Office","@type":"SiteNavigationElement","image":[],"children":[{"url":"/moveis/office/cadeira-de-escritorio","name":"Cadeira de Escritório","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/office/conjunto-office","name":"Conjunto Office","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/office/gaveteiros","name":"Gaveteiros","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/office/estantes","name":"Estantes","@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/moveis/comoda","name":"Cômoda","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/colchoes","name":"Colchões","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/poltronas","name":"Poltronas","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/guarda-roupas","name":"Guarda-Roupas","@type":"SiteNavigationElement","image":[],"children":[{"@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/moveis/estantes-e-racks","name":"Racks","@type":"SiteNavigationElement","image":[],"children":[{"url":"/moveis/estantes-e-racks/racks-e-buffets","name":"Racks e Buffets","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/estantes-e-racks/estantes","name":"Estantes","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/estantes-e-racks/aparadores","name":"Aparadores","@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/moveis/infantil","name":"Infantil","@type":"SiteNavigationElement","image":[],"children":[{"url":"/moveis/infantil/bercos","name":"Berço","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/infantil/kit-quarto","name":"Kit Quarto","@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/moveis/sofa","name":"Sofás","@type":"SiteNavigationElement","image":[],"children":[{"url":"/moveis/sofa/sofa-cama","name":"Sofá Cama","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/sofa/sofa-retratil","name":"Sofá Retrátil","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/moveis/sofa/sofa-tradicional","name":"Sofá Tradicional","@type":"SiteNavigationElement","image":[],"children":[]}]}]},{"url":"/decoracao","name":"DECORAÇÃO","@type":"SiteNavigationElement","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/9db69d5d-158c-404f-8187-16fe525bb8cf","@type":"ImageObject"}],"children":[{"url":"/decoracao/adornos","name":"Adornos","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/decoracao/almofadas","name":"Almofadas","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/decoracao/cabideiros-e-prateleiras","name":"Cabideiros e prateleiras","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/decoracao/cestos","name":"Cestos","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/decoracao/espelhos","name":"Espelhos","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/decoracao/luminarias","name":"Luminárias","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/decoracao/mantas","name":"Mantas","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/decoracao/organizadores","name":"Organizadores","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/decoracao/tapetes","name":"Tapetes","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/decoracao/vasos-e-cachepots","name":"Vasos e Cachepots","@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/ambientes","name":"AMBIENTES","@type":"SiteNavigationElement","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/9ce24188-e4ec-4591-bdf9-b39256c1bee2","@type":"ImageObject"}],"children":[{"url":"/ambientes/bar","name":"Bar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/ambientes/escritorio","name":"Escritório","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/ambientes/sala-de-estar","name":"Sala de Estar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/ambientes/sala-de-jantar","name":"Sala de Jantar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/ambientes/varanda-e-area-externa","name":"Varanda e Área Externa","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/ambientes/quarto","name":"Quarto","@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/designers","name":"DESIGNERS","@type":"SiteNavigationElement","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/edc192a6-d443-4793-b25f-47dd0fba8ae7"}],"children":[{"url":"/designers","name":"Ver todos os designers","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/designers/charles---ray-eames","name":"Charles & Ray Eames","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/designers/george-nelson","name":"George Nelson","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/designers/hakim-hazim","name":"Hakim Hazim","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/designers/ligia-koehler","name":"Ligia Koehler","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/designers/martin-eisler","name":"Martin Eisler","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/designers/menu","name":"Menu","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/designers/atelie-casa","name":"Ateliê Casa","@type":"SiteNavigationElement","image":[],"children":[]}]},{"url":"/off","name":"OFF","@type":"SiteNavigationElement","image":[],"children":[]}],"__resolveType":"commerce/loaders/navbar.ts"},"products":[],"searchbar":{"name":"q","action":"/s","loader":{"data":{"count":25,"__resolveType":"vtex/loaders/intelligentSearch/suggestions.ts"},"__resolveType":"resolved"},"placeholder":"Buscar"},"suggestions":{"products":[],"searches":[]},"__resolveType":"site/sections/Header/Header.tsx","campaignTimer":{"text":{"mobile":"<center><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\">CUPOM: FRETE50</span></strong></span></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0); font-size: 8pt;\" data-mce-style=\"color: rgb(0, 0, 0); font-size: 8pt;\">em compras acima de R$499 (exceto RJ e SP)</span></p></center>","desktop":"<center><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\"><strong><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\">CUPOM: FRETE50</span></strong></span></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0); font-size: 10pt;\" data-mce-style=\"color: rgb(0, 0, 0); font-size: 10pt;\">em compras acima de R$499 (exceto RJ e SP)</span></p></center>"},"image":{"alt":"50% Frete Image","lcp":false,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/c5bdbb90-c23a-451e-a4b6-be12741e1260","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/adf070a3-8be4-494e-bc2c-04e20a4d672a"},"textHex":"#000000","expiresAt":"2024-04-08T20:00:00.000Z","hiddenDays":true,"backgroundHex":"#C0C0C0","hiddenNumbers":true,"hiddenCampaignTimer":true}}
+{
+  "cart": {
+    "freeShippingObjectiveQuantity": 600
+  },
+  "logo": {
+    "alt": "Store Logo",
+    "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMzQuNjY3IiBoZWlnaHQ9IjIzNC4xNTMiPjxkZWZzPjxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImEiPjxwYXRoIGQ9Ik0wIDE3NS42MTVoMTc2VjBIMHoiLz48L2NsaXBQYXRoPjwvZGVmcz48cGF0aCBkPSJNMCAyMzQuMTUzaDIzNC42NjdWMEgweiIgZmlsbD0iI2FiMDAzMyIvPjxwYXRoIGQ9Ik05Mi40NjIgMTE2LjgzbDEwLjAxOSAzNi44OTVoNy40M2wtMTMuNjI1LTUwLjk3N2gtNy42NDVsLTEzLjYyOCA1MC45NzdoNy40MjV6TTIwNS41MiAxMTYuODNsMTAuMDIgMzYuODk1aDcuNDNsLTEzLjYyMy01MC45NzdoLTcuNjU0bC0xMy42MiA1MC45NzdoNy40M3pNMTg1Ljg5IDE1My43MjVsLTkuMTUxLTE4Ljc4OGgtOC4wMjRsOC41NjkgMTguNzg4ek0xMTkuODM3IDEwMi44MjdIMTEyLjZ2NTAuODk4aDcuMjM4eiIgZmlsbD0iI2ZmZiIvPjxnIGNsaXAtcGF0aD0idXJsKCNhKSIgdHJhbnNmb3JtPSJtYXRyaXgoMS4zMzMzMyAwIDAgLTEuMzMzMzMgMCAyMzQuMTUzKSI+PHBhdGggZD0iTTEwMy43IDc5Ljk1di4wOTVjNC4xNzggMS45ODMgNS4yODQgNS4wMyA1LjI4NCA4LjIxMiAwIDYuMDAxLTMuNjI2IDEwLjIzOC0xMC42MzQgMTAuMjM4aC02LjE4NFY5My4zNGg1LjU4N2MzLjkyNyAwIDUuNzkxLTIuNTIgNS43OTEtNS40NjYgMC0zLjAwNC0xLjg2NC01LjQ1NC01Ljc5LTUuNDU0aC01LjU4OHYtNS4xNjZoNi4wOWM0LjAyOCAwIDUuODM2LTIuNzI4IDUuODM2LTUuNzM0IDAtMi45OTItMS44MDgtNS43NDItNS44MzYtNS43NDJoLTYuMDl2LTUuNDU3aDcuMzk0YzUuMzkyIDAgOS45NzUgNC4yMzcgOS45NzUgMTAuODMzIDAgMy44NS0xLjkwOSA3LjgyNi01LjgzNiA4Ljc5Nk0xMTguNTg5IDk4LjQ5NWgtNS40MTZWNjAuMzIxaDUuNDE2ek0xMzQuNDggOTUuOTc2Yy0xLjkxMyAxLjc2NC00LjI4IDIuNTItNy4zMDYgMi41MmgtNi4yOTlWOTMuMzRoNi4yNDljMS44NTkgMCAyLjk3Ny0uMzcxIDMuOTc3LTEuMTY4IDEuMTE1LS44NjcgMS44MS0yLjM3OCAxLjgxLTQuMzUgMC0zLjIyLTIuMDA4LTYuMDY4LTYuMDktNi4wNjhoLTUuOTQ1di01LjE0Mmg0LjQwN3YuMDA3czMuOTEtLjA1OCA1LjgxOC42MzVjNC40MjcgMS40NzYgNi45NTMgNS42MzIgNi45NTMgMTAuNTY5IDAgMy40MTktMS41NTUgNi4zMjUtMy41NzQgOC4xNTJNOTIuNzU2IDQzLjkwOGMtMS45ODYgMC0zLjE3My0uOTY4LTMuMTczLTIuNTg2IDAtMS4yOTcuODktMi42OCAzLjM5NS0yLjY4IDIuMjc3IDAgMy44ODcuMjQ1IDMuODg3IDMuMzk4djEuODY4em0uMzU5IDcuNDNjMy40ODcgMCA1LjA0LTEuMzEzIDUuMDQtNC4yNTZ2LTkuNjE1bC0xLjMwNy4wMjN2MS4wODJsLTEuMjA0LS42MDNjLS44MzItLjQxOC0xLjM4LS42OTMtMy4wMjUtLjY5My0yLjUyOCAwLTQuMTYgMS41MjgtNC4xNiAzLjg5NSAwIDEuNzI3Ljk4OCAzLjc0MiAzLjc3NiAzLjc0Mmg0LjYzdjIuMzQ5YzAgMi43MDgtMi42MjUgMi43MDgtMy42MTQgMi43MDgtMS4xMjYgMC0yLjA0NC0uMTc1LTIuNzQyLS44NTQtLjQwMy4zMzMtLjYyNi41Mi0xLjAyNi44NTQuODM4LjkzIDEuOTUyIDEuMzY5IDMuNjMyIDEuMzY5TTE2MS43NzMgNDMuODUyYy0xLjk4OCAwLTMuMTc2LS45NjYtMy4xNzYtMi41ODYgMC0xLjI5NS44OTMtMi42NzggMy4zOTUtMi42NzggMi4yNzYgMCAzLjg4OC4yNDMgMy44ODggMy4zOTh2MS44NjZ6bS4zNTYgNy40MzNjMy40ODggMCA1LjA0MS0xLjMxNCA1LjA0MS00LjI1N3YtOS42MTRjLS41MTguMDA2LS43OTkuMDEtMS4zMDguMDJ2MS4wODVsLTEuMjAzLS42MDRjLS44MzMtLjQxNy0xLjM4LS42OTYtMy4wMjQtLjY5Ni0yLjUyOSAwLTQuMTYzIDEuNTMyLTQuMTYzIDMuODk4IDAgMS43MjcuOTg4IDMuNzQ1IDMuNzggMy43NDVoNC42Mjh2Mi4zNDVjMCAyLjcwOC0yLjYyNCAyLjcwOC0zLjYxMiAyLjcwOC0xLjEyNyAwLTIuMDQ2LS4xNzctMi43NDYtLjg1My0uNDAzLjMzNi0uNjIzLjUyLTEuMDIzLjg1MS44MzYuOTMgMS45NSAxLjM3MiAzLjYzIDEuMzcyTTU2LjI3NSA0NC4yOTNjMCA0LjQxMiAyLjA4IDcuMDQ4IDUuNTY0IDcuMDQ4IDEuNzc3IDAgMy4wODYtLjkxNCAzLjk2MS0xLjg0M2wtLjk4OS0uOTY1Yy0uODE5LjgwNS0xLjgwNyAxLjI1Ny0yLjg2IDEuMjU3LTIuMDAyIDAtNC4zODgtLjk1NC00LjM4OC01LjQ5NyAwLTQuNTIgMi4zODYtNS40NyA0LjM4Ny01LjQ3IDEuMDU0IDAgMi4wNC40NTQgMi44NiAxLjI2bC45OS0uOTY1Yy0uODc1LS45My0yLjE4My0xLjg0Mi0zLjk2LTEuODQyLTMuNDg1IDAtNS41NjUgMi42MjMtNS41NjUgNy4wMTdNMTMyLjI1OCA0MS4zNWMwIC45MjYtLjQxNCAyLjA2OC0yLjM5IDIuMjU1bC0yLjQ3LjI0Yy0yLjA4Ny4xOS0zLjMzIDEuNTIzLTMuMzMgMy41NjcgMCAyLjQ2MSAxLjY2IDMuOTI4IDQuNDM3IDMuOTI4IDEuNzYyIDAgMy4xNDMtLjQ3MyA0LjQwOC0xLjQ0Ni0uMzI2LS40MTctLjUxNC0uNjU3LS44MjctMS4wNi0uODkzLjU5MS0yLjA0OCAxLjEzNy0zLjU4MSAxLjEzNy0yLjg0MiAwLTMuMTQ4LTEuODA5LTMuMTQ4LTIuNTg2IDAtLjQ2NC4xODMtMS45OTYgMi41MzYtMi4xOTdsMi4zMS0uMThjMi4yMi0uMTYgMy4zNDQtMS40NCAzLjM0NC0zLjgwNSAwLTIuODk5LTIuNy0zLjkyNy01LjAxNS0zLjkyNy0xLjg2MiAwLTMuNTQ2LjcxLTUuMDQyIDIuMDMxLjM2My4zOTIuNTY1LjYwOC45MTQuOTgzIDEuMjU2LTEuMTA3IDIuNjIyLTEuNjQ2IDQuMzQ4LTEuNjQ2IDIuMTMgMCAzLjUwNiAxLjA2MSAzLjUwNiAyLjcwNiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4="
+  },
+  "alerts": [
+    "<p><strong>10% de cashback</strong> em todo o site! <a data-mce-href=\"https://www.abracasa.com.br/institucional/perguntas-frequentes\" href=\"https://www.abracasa.com.br/institucional/perguntas-frequentes\" title=\"Abrir perguntas frequentes\" data-mce-selected=\"inline-boundary\">Confira aqui﻿</a></p>"
+  ],
+  "navItems": {
+    "items": [
+      {
+        "url": "/moveis",
+        "name": "MÓVEIS",
+        "@type": "SiteNavigationElement",
+        "image": [
+          {
+            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/9862f20b-c88a-420b-affb-5c412df69b9a",
+            "@type": "ImageObject"
+          }
+        ],
+        "children": [
+          {
+            "url": "/moveis/cadeiras-bancos-e-banquetas",
+            "name": "Cadeiras e Bancos",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": [
+              {
+                "url": "/moveis/cadeiras-bancos-e-banquetas/cadeiras",
+                "name": "Cadeiras",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/cadeiras-bancos-e-banquetas/cadeiras-de-escritorio",
+                "name": "Cadeiras de Escritório",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/cadeiras-bancos-e-banquetas/cadeiras-infantis",
+                "name": "Cadeiras Infantis",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/cadeiras-bancos-e-banquetas/bancos-e-banquetas",
+                "name": "Bancos e Banquetas",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "url": "/moveis/mesas",
+            "name": "Mesas",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": [
+              {
+                "url": "/moveis/mesas/mesa-de-canto-e-lateral",
+                "name": "Mesa de Canto e Lateral",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/mesas/mesa-de-centro",
+                "name": "Mesa de Centro",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/mesas/mesa-de-jantar",
+                "name": "Mesa de Jantar",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/mesas/conjunto-mesa-e-cadeira",
+                "name": "Conjunto Mesa e Cadeira",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "url": "/moveis/camas",
+            "name": "Camas",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": [
+              {
+                "url": "/moveis/camas/bicama",
+                "name": "Bicama",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/camas/cama-auxiliar",
+                "name": "Cama Auxiliar",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/camas/cama-solteiro",
+                "name": "Cama Solteiro",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/camas/cabeceiras",
+                "name": "Cabeceiras",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "url": "/moveis/office",
+            "name": "Office",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": [
+              {
+                "url": "/moveis/office/cadeira-de-escritorio",
+                "name": "Cadeira de Escritório",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/office/conjunto-office",
+                "name": "Conjunto Office",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/office/gaveteiros",
+                "name": "Gaveteiros",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/office/estantes",
+                "name": "Estantes",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "url": "/moveis/comoda",
+            "name": "Cômoda",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/moveis/colchoes",
+            "name": "Colchões",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/moveis/poltronas",
+            "name": "Poltronas",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/moveis/guarda-roupas",
+            "name": "Guarda-Roupas",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": [
+              {
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "url": "/moveis/estantes-e-racks",
+            "name": "Racks",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": [
+              {
+                "url": "/moveis/estantes-e-racks/racks-e-buffets",
+                "name": "Racks e Buffets",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/estantes-e-racks/estantes",
+                "name": "Estantes",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/estantes-e-racks/aparadores",
+                "name": "Aparadores",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "url": "/moveis/infantil",
+            "name": "Infantil",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": [
+              {
+                "url": "/moveis/infantil/bercos",
+                "name": "Berço",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/infantil/kit-quarto",
+                "name": "Kit Quarto",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "url": "/moveis/sofa",
+            "name": "Sofás",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": [
+              {
+                "url": "/moveis/sofa/sofa-cama",
+                "name": "Sofá Cama",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/sofa/sofa-retratil",
+                "name": "Sofá Retrátil",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
+                "url": "/moveis/sofa/sofa-tradicional",
+                "name": "Sofá Tradicional",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "url": "/decoracao",
+        "name": "DECORAÇÃO",
+        "@type": "SiteNavigationElement",
+        "image": [
+          {
+            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/9db69d5d-158c-404f-8187-16fe525bb8cf",
+            "@type": "ImageObject"
+          }
+        ],
+        "children": [
+          {
+            "url": "/decoracao/adornos",
+            "name": "Adornos",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/decoracao/almofadas",
+            "name": "Almofadas",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/decoracao/cabideiros-e-prateleiras",
+            "name": "Cabideiros e prateleiras",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/decoracao/cestos",
+            "name": "Cestos",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/decoracao/espelhos",
+            "name": "Espelhos",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/decoracao/luminarias",
+            "name": "Luminárias",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/decoracao/mantas",
+            "name": "Mantas",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/decoracao/organizadores",
+            "name": "Organizadores",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/decoracao/tapetes",
+            "name": "Tapetes",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/decoracao/vasos-e-cachepots",
+            "name": "Vasos e Cachepots",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "url": "/ambientes",
+        "name": "AMBIENTES",
+        "@type": "SiteNavigationElement",
+        "image": [
+          {
+            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/9ce24188-e4ec-4591-bdf9-b39256c1bee2",
+            "@type": "ImageObject"
+          }
+        ],
+        "children": [
+          {
+            "url": "/ambientes/bar",
+            "name": "Bar",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/ambientes/escritorio",
+            "name": "Escritório",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/ambientes/sala-de-estar",
+            "name": "Sala de Estar",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/ambientes/sala-de-jantar",
+            "name": "Sala de Jantar",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/ambientes/varanda-e-area-externa",
+            "name": "Varanda e Área Externa",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/ambientes/quarto",
+            "name": "Quarto",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "url": "/designers",
+        "name": "DESIGNERS",
+        "@type": "SiteNavigationElement",
+        "image": [
+          {
+            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/edc192a6-d443-4793-b25f-47dd0fba8ae7"
+          }
+        ],
+        "children": [
+          {
+            "url": "/designers",
+            "name": "Ver todos os designers",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/designers/charles---ray-eames",
+            "name": "Charles & Ray Eames",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/designers/george-nelson",
+            "name": "George Nelson",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/designers/hakim-hazim",
+            "name": "Hakim Hazim",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/designers/ligia-koehler",
+            "name": "Ligia Koehler",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/designers/martin-eisler",
+            "name": "Martin Eisler",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/designers/menu",
+            "name": "Menu",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
+            "url": "/designers/atelie-casa",
+            "name": "Ateliê Casa",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "url": "/off",
+        "name": "OFF",
+        "@type": "SiteNavigationElement",
+        "image": [],
+        "children": []
+      }
+    ],
+    "__resolveType": "commerce/loaders/navbar.ts"
+  },
+  "products": [],
+  "searchbar": {
+    "name": "q",
+    "action": "/s",
+    "loader": {
+      "data": {
+        "count": 25,
+        "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
+      },
+      "__resolveType": "resolved"
+    },
+    "placeholder": "Buscar"
+  },
+  "suggestions": {
+    "products": [],
+    "searches": []
+  },
+  "__resolveType": "site/sections/Header/Header.tsx",
+  "campaignTimer": {
+    "text": {
+      "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 0, 0); font-size: 13px\">Últimas horas com até </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">70% OFF</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\"> na Abra Friday!</span></p>",
+      "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 0, 0); font-size: 13px\">Últimas horas com até </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">70% OFF</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\"> na Abra Friday!</span></p>"
+    },
+    "image": {
+      "alt": "50% Frete Image",
+      "lcp": false
+    },
+    "textHex": "#000000",
+    "expiresAt": "2024-11-30T02:59:00.000Z",
+    "hiddenDays": true,
+    "backgroundHex": "#C0C0C0",
+    "hiddenNumbers": false,
+    "hiddenCampaignTimer": false,
+    "link": {
+      "backgroundHexButton": "#C0C0C0",
+      "text": "<p>Aproveite</p>",
+      "href": "/campanha/abra-friday"
+    },
+    "hiddenButton": false
+  }
+}

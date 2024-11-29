@@ -14,12 +14,6 @@
       "titleTemplate": "Abra Friday"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Campaign - 10"
-      }
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
@@ -35,12 +29,12 @@
       ]
     },
     {
-      "html": "<p style=\"text-align: center\"><br></p>",
-      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p style=\"text-align: center\"><br></p>"
     },
     {
-      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
-      "html": "<p></p>"
+      "html": "<p></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
     },
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",

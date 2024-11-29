@@ -1,9 +1,9 @@
 import { useId } from "preact/hooks";
-import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget, RichText, RichText as HTML } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 export interface Props {
-  image?: {
+  image: {
     /** @description desktop otimized image */
     desktop?: ImageWidget;
     /** @description mobile otimized image */
@@ -33,13 +33,14 @@ export interface Props {
      * @title Text
      * @default Time left for a campaign to end wth a link
      */
-    mobile?: HTMLWidget;
+    mobile?: HTML;
     /**
      * @title Text
      * @default Time left for a campaign to end wth a link
      */
-    desktop?: HTMLWidget;
+    desktop?: HTML;
   };
+  link?: Button;
 
   /**
    * @format color
@@ -53,6 +54,25 @@ export interface Props {
   textHex?: string;
   hiddenCampaignTimer?: boolean;
   hiddenNumbers?: boolean;
+  hiddenButton?: boolean;
+}
+
+interface Button {
+  /**
+   * @format color
+   * @default #C0C0C0
+   */
+  backgroundHexButton?: string;
+  /**
+   * @title Link Text
+   * @default button
+   */
+  text: RichText;
+  /**
+   * @title Link href
+   * @default #
+   */
+  href: string;
 }
 
 const snippet = (expiresAt: string, rootId: string) => {
@@ -105,37 +125,38 @@ function CampaignTimerWithoutDays({
   expiresAt = `${new Date()}`,
   labels,
   text,
+  link,
   hiddenCampaignTimer,
   textHex,
   backgroundHex,
   hiddenNumbers,
+  hiddenButton = false,
 }: Props) {
   const id = useId();
 
   return (
     <>
-      {!hiddenCampaignTimer && text && image && (
+      {!hiddenCampaignTimer && (
         <>
           <div
-            id="campaign-timer"
             style={{ background: `${backgroundHex}` }}
             class="text-black w-full min-h-[90px] justify-center items-center text-center flex md:py-3 px-4 xl:px-0"
           >
-            <div class="flex items-center justify-between gap-4 md:gap-0 max-w-[1000px] w-full">
-              {image && (
+            <div class="flex items-center justify-center gap-4 lg:gap-16 w-auto xl:min-w-[1180px]">
+              {image.mobile && image.desktop && (
                 <div class="flex">
                   <Picture preload={image.lcp}>
                     <Source
                       media="(max-width: 476px)"
                       fetchPriority={image.lcp ? "high" : "auto"}
-                      src={image.mobile ?? ""}
-                      width={220}
-                      height={70}
+                      src={image.mobile}
+                      width={168}
+                      height={142}
                     />
                     <Source
                       media="(min-width: 768px)"
                       fetchPriority={image.lcp ? "high" : "auto"}
-                      src={image.desktop ?? ""}
+                      src={image.desktop}
                       width={220}
                       height={70}
                     />
@@ -149,7 +170,7 @@ function CampaignTimerWithoutDays({
                 </div>
               )}
               {text && (
-                <div class="flex max-w-full lg:max-w-[420px] xl:max-w-[580px] text-center px-1 sm:px-6 md:px-8 md:border-x md:border-white">
+                <div class="flex max-w-full lg:max-w-[420px] xl:max-w-[580px] text-center px-1 sm:px-6 md:px-8 xl:px-0">
                   <div class="text-[10px] sm:text-sm xl:text-xl leading-tight tracking-tighter block lg:hidden">
                     <span
                       dangerouslySetInnerHTML={{
@@ -173,6 +194,8 @@ function CampaignTimerWithoutDays({
                 class={`${hiddenNumbers && "opacity-0"} flex items-center h-20`}
               >
                 <div class="flex flex-col items-center justify-center text-center sm:gap-1 min-w-full">
+                  {/* <h1 class="text-sm md:text-xl font-bold">Termina em:</h1> */}
+
                   <div id={`${id}::expired`} class="hidden h-full text-center">
                     <span class="flex items-center text-sm sm:text-2xl h-full">
                       {labels?.expired || "Expired!"}
@@ -215,6 +238,18 @@ function CampaignTimerWithoutDays({
                   </div>
                 </div>
               </div>
+              {!hiddenButton && (
+                <a
+                  style={{
+                    background: `${link?.backgroundHexButton}`,
+                  }}
+                  class="btn border-0"
+                  aria-label={link?.text}
+                  href={link?.href}
+                  dangerouslySetInnerHTML={{ __html: link?.text ?? "" }}
+                >
+                </a>
+              )}
             </div>
           </div>
           <script
