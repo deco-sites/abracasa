@@ -16,12 +16,12 @@
           "alt": "Abra Friday",
           "href": "https://www.abracasa.com.br/campanha/abra-friday",
           "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/08474e93-c4ca-446b-8363-325b52a0a76a/casa_abra_friday_banner_mobile_767x942_2.jpg",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/e3d7990b-3167-4688-a957-4db4b1dfcf3a/casa_abra_friday_banner_mobile_767x942_2.gif",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/7bee523b-6b0d-4c21-b4c0-bf86e2eba571/casa_abra_friday_banner_desktop_1920x713_2.jpg",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/fee5ee70-3424-448f-be49-019872540b11/casa_abra_friday_banner_desktop_1920x713_2.gif",
             "width": 1920,
             "height": 713
           }
