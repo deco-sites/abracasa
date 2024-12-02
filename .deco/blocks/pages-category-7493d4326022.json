@@ -1,1 +1,46 @@
-{"name":"Category","path":"/*","sections":[{"jsonLD":{"__resolveType":"PLP Intelligent Loader"},"__resolveType":"commerce/sections/Seo/SeoPLPV2.tsx"},{"__resolveType":"Topbar1"},{"__resolveType":"Header - 01"},{"page":{"__resolveType":"PLP Intelligent Loader"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"Product Card Layout - 01"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx","unindexedDomain":false}
+{
+  "name": "Category",
+  "path": "/*",
+  "sections": [
+    {
+      "jsonLD": {
+        "__resolveType": "PLP Intelligent Loader"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx"
+    },
+    {
+      "__resolveType": "Topbar1"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "page": {
+        "__resolveType": "PLP Intelligent Loader"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "Product Card Layout - 01"
+      },
+      "startingPage": 1
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "unindexedDomain": false
+}
