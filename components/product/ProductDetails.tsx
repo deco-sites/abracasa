@@ -73,6 +73,8 @@ export default function ProductDetails({ page, weight, length, width, height, at
   const measurementImage = images?.find((item) => item.name === "medidas");
   const description = product?.description || product?.isVariantOf?.description;
   const hasAtelieFlag = additionalProperty?.some((property) => property.value?.includes("Atelie Casa"));
+
+  console.log(weight, length, width, "to recebdno aqui, vem algum valor?")
   return (<>
     {!isDesktop && (<>
       <div class="lg:hidden border-y w-full flex items-center justify-center py-6 mt-7 px-4">
@@ -308,9 +310,12 @@ export default function ProductDetails({ page, weight, length, width, height, at
 }
 export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
   const skuId = props.page?.product.sku || props.page?.product.productID;
+  console.log(skuId, "ta vindo o skuid certo ?")
   const isKit = props.page?.product?.additionalProperty?.some((item) => item.value === "Kit Quarto" || item.value === "Conjunto Mesa e Cadeira");
   const VTEXAPIAPPKEY = await props?.appKey?.get?.();
   const VTEXAPIAPPTOKEN = await props?.appToken?.get?.();
+  console.log(VTEXAPIAPPKEY, "api key");
+  console.log(VTEXAPIAPPTOKEN, "api token aq")
   if (skuId && VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null && !isKit) {
     const data = await fetchSafe(`https://abracasa.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit/${skuId}`, {
       headers: {
@@ -318,6 +323,7 @@ export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
         "X-VTEX-API-AppToken": VTEXAPIAPPTOKEN,
       },
     }).then((data) => data.json()) as APIResponse;
+    console.log(data, "vem oq")
     if (data) {
       return {
         ...props,
