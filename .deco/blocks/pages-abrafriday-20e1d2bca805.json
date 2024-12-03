@@ -39,13 +39,14 @@
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
-        "sort": "release:desc",
+        "sort": "price:desc",
         "count": 48,
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+        "fuzzy": "automatic",
         "selectedFacets": [
           {
-            "value": "201",
-            "key": "productClusterIds"
+            "key": "productClusterIds",
+            "value": "201"
           }
         ]
       },
