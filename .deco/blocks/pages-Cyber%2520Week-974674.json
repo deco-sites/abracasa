@@ -20,8 +20,8 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b90eeca9-575e-43c1-be67-0f305c896253/casa_sofa_pluma_banner_especial_mobile_800x400.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/825013ff-5664-4e67-96c9-af3db6b1e424/casa_sofa_pluma_banner_especial_desktop_1800x220.png"
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/098ae94a-ac71-4590-b6df-3cb88f7ee8b0/casa_cyber_week_banner_especial_mobile_800x400.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/cad1116a-70f2-46ed-b302-67d6968baf8e/casa_cyber_week_banner_especial_desktop_1800x220.png"
           },
           "matcher": "/*"
         }
