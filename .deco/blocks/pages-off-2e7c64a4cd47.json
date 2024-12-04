@@ -1,1 +1,99 @@
-{"name":"Off","path":"/off","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Topbar1"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"mobile":"https://abracasa.vteximg.com.br/arquivos/ids/184803/banner_categorias_OFF.jpg?v=638207090893700000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/184803/banner_categorias_OFF.jpg?v=638207090893700000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"page":{"sort":"OrderByTopSaleDESC","term":"off ","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Off",
+  "path": "/off",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Topbar1"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b33e6e6d-4b22-4c8d-8967-6b8218f36064/casa_off_especial_mobile_800x400.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/49b7ab15-cc5b-4b92-8913-bd64c5ddb8b3/casa_off_especial_desktop_1800x220.png"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "term": "off ",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
