@@ -41,29 +41,15 @@
           }
         },
         {
-          "alt": "Abra Friday - Poltronas",
-          "href": "https://www.abracasa.com.br/moveis/poltronas",
+          "alt": "Off",
+          "href": "https://www.abracasa.com.br/off",
           "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/ba440bcc-abfb-4dda-9a6d-39a62f9d52fc/casa_abra_friday_banner_poltrona_mobile_767x942_2.jpg",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/f6557b54-82fc-4281-89ca-4954835db1c4/casa_banner_mobile_off_2024.gif",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/6a37a484-4bcf-44f7-a179-17044413d8aa/casa_abra_friday_banner_poltrona_desktop_1920x713_2-(1).jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Cadeiras de Madeira - Abra Friday",
-          "href": "/campanha/cadeiras-de-madeira",
-          "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/47f3b3dd-a097-4c09-be75-9ea6162f2ad7/casa_banner_mobile_cadeiras_madeira.png",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/2caa5995-1cfb-4dba-9fe1-4932de71f98b/casa_banner_desk_cadeiras_madeira_2.png",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/534ce57c-cbcb-402d-b46c-8150d59e6175/casa_banner_desktop_off_2024.gif",
             "width": 1920,
             "height": 713
           }
