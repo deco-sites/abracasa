@@ -24,7 +24,6 @@ import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $NewsletterForm from "./islands/NewsletterForm.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
 import * as $PhysicalStoresButton from "./islands/PhysicalStoresButton.tsx";
-import * as $ProductDetails from "./islands/ProductDetails.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
 import * as $ProxyIframe from "./islands/ProxyIframe.tsx";
 import * as $SearchControls from "./islands/SearchControls.tsx";
@@ -62,7 +61,6 @@ const manifest = {
     "./islands/NewsletterForm.tsx": $NewsletterForm,
     "./islands/OutOfStock.tsx": $OutOfStock,
     "./islands/PhysicalStoresButton.tsx": $PhysicalStoresButton,
-    "./islands/ProductDetails.tsx": $ProductDetails,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
     "./islands/ProxyIframe.tsx": $ProxyIframe,
     "./islands/SearchControls.tsx": $SearchControls,

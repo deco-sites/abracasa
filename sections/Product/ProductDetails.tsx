@@ -1,4 +1,4 @@
-export { default, loader } from "$store/islands/ProductDetails.tsx";
+export { default, loader } from "$store/components/product/ProductDetails.tsx";
 
 export function LoadingFallback() {
   return (

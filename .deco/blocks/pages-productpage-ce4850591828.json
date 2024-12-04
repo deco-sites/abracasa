@@ -1,1 +1,136 @@
-{"name":"Product Page","path":"/:slug/p","sections":[{"jsonLD":{"__resolveType":"PDP Loader"},"__resolveType":"commerce/sections/Seo/SeoPDPV2.tsx"},{"__resolveType":"Topbar1"},{"__resolveType":"Header - 01"},{"__resolveType":"Product Details - Gallery Slider "},{"__resolveType":"ShowTogether"},{"page":{"__resolveType":"PDP Loader"},"appKey":{"name":"VTEXAPPKEY","encrypted":"49b0cc73908eb5e03bc142dd83070536e55d416fa4a247c6299a5c8a4f608050","__resolveType":"website/loaders/secret.ts"},"appToken":{"name":"VTEXAPPTOKEN","encrypted":"dd64c3ca602d8ea8136e535d3573735b81c99f8b068c3afad9e870d6e86143657bba0f20bec0beba1e9bd41bc8502e249f5da3c41c6bae9bbac6c633dd4a60d717411ea2330491fe431e6e519fe6b8a4e3ab32c8e2685ba794cf0a010438f5afeefed0e22241a85df25305b3082b32ada885a6aefbd20707d95bccca1c1d6717eca7cafab4ed2ae415802fb7e78ace8c","__resolveType":"website/loaders/secret.ts"},"atelieImage":{"alt":"Banner Ateliê","link":"/campanha/atelie-casa","mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/4b78ae07-c41d-4d85-a87e-28a707a95418"},"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/6fe41465-ee2f-439a-b000-f897b91fe7dd"},"description":"Logo Ateliê"},"__resolveType":"site/sections/Product/ProductDetails.tsx"},{"title":"Produtos similares","layout":{"headerfontSize":"Normal","headerAlignment":"center"},"products":{"slug":{"param":"slug","__resolveType":"website/functions/requestToParam.ts"},"count":10,"crossSelling":"similars","__resolveType":"vtex/loaders/legacy/relatedProductsLoader.ts"},"cardLayout":{"hide":{"allPrices":false,"skuSelector":true,"installments":false,"productDescription":true},"basics":{"ctaText":"ADICIONAR AO CARRINHO","oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCardShadow":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"}},"__resolveType":"site/sections/Product/ProductShelf.tsx"},{"title":"Quem viu, viu também","layout":{"headerfontSize":"Normal","headerAlignment":"center"},"products":{"slug":{"param":"slug","__resolveType":"website/functions/requestToParam.ts"},"count":10,"crossSelling":"whosawalsosaw","__resolveType":"vtex/loaders/legacy/relatedProductsLoader.ts"},"cardLayout":{"hide":{"allPrices":false,"skuSelector":true,"installments":false,"productDescription":true},"basics":{"ctaText":"ADICIONAR AO CARRINHO","oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCardShadow":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"}},"__resolveType":"site/sections/Product/ProductShelf.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx","unindexedDomain":false}
+{
+  "name": "Product Page",
+  "path": "/:slug/p",
+  "sections": [
+    {
+      "jsonLD": {
+        "__resolveType": "PDP Loader"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx"
+    },
+    {
+      "__resolveType": "Topbar1"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "Product Details - Gallery Slider "
+    },
+    {
+      "__resolveType": "ShowTogether"
+    },
+    {
+      "page": {
+        "__resolveType": "PDP Loader"
+      },
+      "appKey": {
+        "name": "VTEXAPPKEY",
+        "encrypted": "4fe045a39afbe54a0685719b4eb79764b58b01def26feb027f1ece9a49bc67ff",
+        "__resolveType": "website/loaders/secret.ts"
+      },
+      "appToken": {
+        "name": "VTEXAPPTOKEN",
+        "encrypted": "54f98b274d67c1fdf5d7d7328bf778ceb9f8066839c810cb91ad9e70c4be5e199bfb3a2469694b63c7e2d59a443cc61fca1ed197df2329ba8ddaf5bfa54cf00a2925a5db4b778fb044ffa26e7597238ba892823c8097781c86bfff9ebe20a582a50c62284c017b497f6a4595967056d56d210feb905a227ecb9be38cfb6a985c4bef06178d870777fd2bc53d2d5f0d1f",
+        "__resolveType": "website/loaders/secret.ts"
+      },
+      "atelieImage": {
+        "alt": "Banner Ateliê",
+        "link": "/campanha/atelie-casa",
+        "mobile": {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/4b78ae07-c41d-4d85-a87e-28a707a95418"
+        },
+        "desktop": {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/6fe41465-ee2f-439a-b000-f897b91fe7dd"
+        },
+        "description": "Logo Ateliê"
+      },
+      "__resolveType": "site/sections/Product/ProductDetails.tsx"
+    },
+    {
+      "title": "Produtos similares",
+      "layout": {
+        "headerfontSize": "Normal",
+        "headerAlignment": "center"
+      },
+      "products": {
+        "slug": {
+          "param": "slug",
+          "__resolveType": "website/functions/requestToParam.ts"
+        },
+        "count": 10,
+        "crossSelling": "similars",
+        "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
+      },
+      "cardLayout": {
+        "hide": {
+          "allPrices": false,
+          "skuSelector": true,
+          "installments": false,
+          "productDescription": true
+        },
+        "basics": {
+          "ctaText": "ADICIONAR AO CARRINHO",
+          "oldPriceSize": "Small",
+          "contentAlignment": "Left"
+        },
+        "onMouseOver": {
+          "card": "None",
+          "image": "Change image",
+          "showCardShadow": false,
+          "showFavoriteIcon": true
+        },
+        "elementsPositions": {
+          "skuSelector": "Top",
+          "favoriteIcon": "Top right"
+        }
+      },
+      "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    {
+      "title": "Quem viu, viu também",
+      "layout": {
+        "headerfontSize": "Normal",
+        "headerAlignment": "center"
+      },
+      "products": {
+        "slug": {
+          "param": "slug",
+          "__resolveType": "website/functions/requestToParam.ts"
+        },
+        "count": 10,
+        "crossSelling": "whosawalsosaw",
+        "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
+      },
+      "cardLayout": {
+        "hide": {
+          "allPrices": false,
+          "skuSelector": true,
+          "installments": false,
+          "productDescription": true
+        },
+        "basics": {
+          "ctaText": "ADICIONAR AO CARRINHO",
+          "oldPriceSize": "Small",
+          "contentAlignment": "Left"
+        },
+        "onMouseOver": {
+          "card": "None",
+          "image": "Change image",
+          "showCardShadow": false,
+          "showFavoriteIcon": true
+        },
+        "elementsPositions": {
+          "skuSelector": "Top",
+          "favoriteIcon": "Top right"
+        }
+      },
+      "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "unindexedDomain": false
+}
