@@ -43,7 +43,7 @@
         "desktop": {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/6fe41465-ee2f-439a-b000-f897b91fe7dd"
         },
-        "description": "Logo Ateliê"
+        "description": "Logo Ateliê "
       },
       "__resolveType": "site/sections/Product/ProductDetails.tsx"
     },
