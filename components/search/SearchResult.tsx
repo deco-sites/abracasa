@@ -27,6 +27,7 @@ export interface Layout {
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
+  sortParam?: "legacy" | "intelligent";
   layout?: Layout;
   cardLayout?: CardLayout;
 
@@ -48,6 +49,7 @@ function NotFound() {
 
 function Result({
   page,
+  sortParam = "legacy",
   layout,
   cardLayout,
   startingPage = 0,
@@ -61,6 +63,7 @@ function Result({
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
 
+
   return (
     <div id="PLP" class="flex flex-col gap-1">
       <SearchTitle productsCount={pageInfo.records} />
@@ -71,6 +74,7 @@ function Result({
         </div>
 
         <SearchControls
+          sortParam={sortParam}
           sortOptions={sortOptions}
           filters={filters}
           breadcrumb={breadcrumb}
