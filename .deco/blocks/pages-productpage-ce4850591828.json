@@ -31,7 +31,7 @@
       },
       "appToken": {
         "name": "VTEXAPPTOKEN",
-        "encrypted": "dd64c3ca602d8ea8136e535d3573735b81c99f8b068c3afad9e870d6e86143657bba0f20bec0beba1e9bd41bc8502e249f5da3c41c6bae9bbac6c633dd4a60d717411ea2330491fe431e6e519fe6b8a4e3ab32c8e2685ba794cf0a010438f5afeefed0e22241a85df25305b3082b32ada885a6aefbd20707d95bccca1c1d6717eca7cafab4ed2ae415802fb7e78ace8c",
+        "encrypted": "3bf7ca71ef43363df4849b00eaee75db1fc330d3704bd385a661f48f488fe283f8c58fbd78178faa2830c567b61702d7924ce8ec806f48e0f263878b658dcb1b",
         "__resolveType": "website/loaders/secret.ts"
       },
       "atelieImage": {
