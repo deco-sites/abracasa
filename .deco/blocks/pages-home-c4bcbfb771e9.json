@@ -101,16 +101,6 @@
       "interval": 10
     },
     {
-      "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
-      "hoursToShowPopupAgain": 0,
-      "popup": {
-        "description": "Abra Friday",
-        "link": "https://www.abracasa.com.br/campanha/abra-friday",
-        "target": "_self",
-        "source": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/961c9cc5-8bea-42a9-ac1d-2056c449cc26/casa_popup_abra_friday.gif"
-      }
-    },
-    {
       "__resolveType": "site/sections/Miscellaneous/AdaptativeBenefits.tsx",
       "benefits": [
         {
