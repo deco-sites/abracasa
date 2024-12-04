@@ -26,12 +26,12 @@
       },
       "appKey": {
         "name": "VTEXAPPKEY",
-        "encrypted": "4c1a8b75c3768ef0c878443be39aa972413a7a20566745ba5760d8133851d40d",
+        "encrypted": "f6f2ccf888ee33e403f1d5a83f850229eee2f8503f2e4ae0ae6d844f194cfdb4",
         "__resolveType": "website/loaders/secret.ts"
       },
       "appToken": {
         "name": "VTEXAPPTOKEN",
-        "encrypted": "b3d92117b3e41e8cdcd6314604fd7e41456f95d1e28fc8b7a0dc7d6331011b7b2c7e2f29c879ac7ae159697e43f399c92e50579f5039185ccbeaa595690db6a4cf7d693a71d84e9ccf63555dd879f56238e73c0be87d21f562fa67c497ed5ad0bfc32210ee8059389e7f51d909a93238fc02bc993e78f7e8b315a0c88de1f6f6818eaafe7d679e1f3652b65b8671fe1e",
+        "encrypted": "ae87204ea0c618034030512398d7bb40a1b7c852f4b626a748e42bee5027cd7b8973855f4b4b7ce4d954ce0a4525b9f67c3edddcffab5e6e4ed45b95ee3af485994db23742a7f87623cf1dcca3c881d0ea427677b20eb7587692c31307b7a0e50db873bb2158a811d01ca3ada68855122c6473d956521e778cff4f018411c5b70eaa118073a713180dbec1effa3c772c",
         "__resolveType": "website/loaders/secret.ts"
       },
       "atelieImage": {
