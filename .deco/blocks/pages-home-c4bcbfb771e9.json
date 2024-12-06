@@ -87,16 +87,13 @@
       "interval": 10
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
-        "hoursToShowPopupAgain": 0,
-        "popup": {
-          "description": "Abra Friday",
-          "link": "https://www.abracasa.com.br/campanha/abra-friday",
-          "target": "_self",
-          "source": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/7279099d-74b3-4325-b53c-725e9f501f9c/casa_popup_abra_friday_voltou.gif"
-        }
+      "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
+      "hoursToShowPopupAgain": 0,
+      "popup": {
+        "description": "Abra Friday",
+        "link": "https://www.abracasa.com.br/campanha/abra-friday",
+        "target": "_self",
+        "source": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/7279099d-74b3-4325-b53c-725e9f501f9c/casa_popup_abra_friday_voltou.gif"
       }
     },
     {
