@@ -518,15 +518,14 @@
   "__resolveType": "site/sections/Header/Header.tsx",
   "campaignTimer": {
     "text": {
-      "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 0, 0); font-size: 13px\">Últimas </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">24 horas</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\"> com até </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">70% OFF</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\"> na Abra Friday!</span></p>",
-      "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 0, 0); font-size: 13px\">Últimas </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">24 horas</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\"> com até </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">70% OFF</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\"> na Abra Friday!</span></p>"
+      "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 0, 0); font-size: 13px\">Abra Friday </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">VOLTOU</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\"> com até </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">70% OFF</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">!</span></p>",
+      "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 0, 0); font-size: 13px\">Abra Friday </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">VOLTOU</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\"> com até </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">70% OFF</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">!</span></p>"
     },
     "image": {
-      "alt": "50% Frete Image",
+      "alt": "Abra Friday",
       "lcp": false
     },
     "textHex": "#000000",
-    "expiresAt": "2024-12-04T13:00:00.000Z",
     "hiddenDays": true,
     "backgroundHex": "#C0C0C0",
     "hiddenNumbers": false,
@@ -536,6 +535,7 @@
       "text": "<p>Aproveite</p>",
       "href": "/campanha/abra-friday"
     },
-    "hiddenButton": false
+    "hiddenButton": false,
+    "expiresAt": "2024-12-09T13:00:00.000Z"
   }
 }
