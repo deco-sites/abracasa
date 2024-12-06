@@ -20,8 +20,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/a8ff7c30-9913-483b-a853-2af2c1604097/casa_abra_friday_banner_especial_SOFAS_mobile_800x400.jpg",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/bfa139ad-2f92-4f9a-8862-282f0487d840/casa_abra_friday_banner_especial_sofas_desktop_1800x220.jpg"
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/4313dd15-bff5-468e-b77c-39fb73440395/casa_banner_colecao_especial_sala_de_estar_mobile_800x400.jpg",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/04b082ea-458b-4f27-ba1e-84dab1524a6b/casa_banner_colecao_especial_sala_de_estar_desktop_1800x220.jpg"
           },
           "matcher": "/*"
         }

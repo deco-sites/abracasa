@@ -14,14 +14,14 @@
       "images": [
         {
           "alt": "Cyber Week",
-          "href": "/campanha/cyberweek",
+          "href": "/campanha/abrafriday",
           "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/dfdbf393-d607-47f4-8c46-ed24bb1bb11e/casa_cyber_week_banner_home_principal_mobile_767x942_02.gif",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/bd401da7-a8ef-4fd9-8195-d39c16d308d8/casa_abra_friday_banner_mobile_767x942_2.gif",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/dd2bb28f-1912-4850-8152-bc32c29b4fd3/casa_cyber_week_banner_home_principal_desktop_1920x713_02.gif",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/3c7cdb05-4afc-4d2a-a790-e6f6787c968d/casa_abra_friday_banner_desktop_1920x713_2.gif",
             "width": 1920,
             "height": 713
           }
