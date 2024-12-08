@@ -22,7 +22,13 @@ export default function NewsletterForm({ title, subtitle }: Props) {
 
       const name = (e.currentTarget.elements.namedItem("name") as RadioNodeList)
         ?.value;
-
+      dataLayer.push(
+        {
+          event:"newsletter",
+          email:email,
+          name:name
+        }
+      )
       await invoke.vtex.actions.newsletter.subscribe({ email, name });
     } finally {
       loading.value = false;
@@ -64,6 +70,7 @@ export default function NewsletterForm({ title, subtitle }: Props) {
                 ? (
                   <button
                     type="submit"
+                    id="newsletter"
                     class="border border-solid border-[#B9154C] min-w-[140px] min-h-[32px] bg-[#2C2C2C] px-4 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-[#B9154C]focus:ring-opacity-50"
                   >
                     Enviar
