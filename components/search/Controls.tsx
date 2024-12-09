@@ -115,18 +115,18 @@ export default function SearchControls({
               {currentUrl.value &&
                 new URL(currentUrl.value).search !== "" &&
                 (!new URL(currentUrl.value).searchParams.has("readyDelivery") &&
-                  !new URL(currentUrl.value).searchParams.has("page") &&
                   ((() => {
                     const searchParams = new URL(currentUrl.value).searchParams;
-                    let hasValidFilters = false;
+                    let paramCount = 0;
 
                     searchParams.forEach((_, key) => {
-                      if (key !== "_gl") {
-                        hasValidFilters = true;
+                      if (key !== "_gl" && key !== "page") {
+                        paramCount++;
                       }
+
                     });
 
-                    return hasValidFilters;
+                    return paramCount > 0;
                   })())) && (
                   <button
                     aria-label="limpar filtros"
