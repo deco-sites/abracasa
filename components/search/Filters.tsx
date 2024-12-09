@@ -98,9 +98,11 @@ function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Prop
         )
         .map((filter) => {
           if (!filter.values || filter.values.length === 0) return null;
-          if (hiddenFilters.includes(filter.label.toLowerCase())) {
+          const translatedLabel = translations[filter.label] || filter.label;
+          if (hiddenFilters.includes(translatedLabel.toLowerCase())) {
             return null;
           }
+          console.log(translatedLabel, "vem como")
 
           return (
             <li class="flex flex-col gap-4 dropdown dropdown-end">
