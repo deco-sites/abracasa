@@ -31,6 +31,17 @@ function ValueItem(
 }
 
 function FilterValues({ key, values }: FilterToggle) {
+
+  const excludedFilterValues = [
+    "George Nelson",
+    "Charles & Ray Eames",
+    "Hakim Hazim",
+    "Ligia Koehler",
+    "Martin Eisler",
+    "Menu",
+    "Ateliê Casa"
+  ]
+
   return (
     <ul
       style={{
@@ -40,6 +51,7 @@ function FilterValues({ key, values }: FilterToggle) {
     >
       {values.map((item) => {
         const { url, selected, value } = item;
+        if (excludedFilterValues.includes(item.label)) return null;
 
         if (key === "tamanho") {
           return (
