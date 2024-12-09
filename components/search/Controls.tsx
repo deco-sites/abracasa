@@ -112,15 +112,21 @@ export default function SearchControls({
                 isCategoriesFilterActive={isCategoriesFilterActive}
                 hiddenFilters={hiddenFilters}
               />
-
               {currentUrl.value &&
                 new URL(currentUrl.value).search !== "" &&
                 (!new URL(currentUrl.value).searchParams.has("readyDelivery") &&
+                  !new URL(currentUrl.value).searchParams.has("page") &&
                   ((() => {
                     const searchParams = new URL(currentUrl.value).searchParams;
-                    let paramCount = 0;
-                    searchParams.forEach(() => paramCount++);
-                    return paramCount > 1 || !searchParams.has("page");
+                    let hasValidFilters = false;
+
+                    searchParams.forEach((_, key) => {
+                      if (key !== "_gl") {
+                        hasValidFilters = true;
+                      }
+                    });
+
+                    return hasValidFilters;
                   })())) && (
                   <button
                     aria-label="limpar filtros"
@@ -130,6 +136,7 @@ export default function SearchControls({
                     Limpar filtros
                   </button>
                 )}
+
 
 
             </div>
