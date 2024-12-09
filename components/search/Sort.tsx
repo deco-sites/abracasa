@@ -2,26 +2,34 @@ import { useMemo } from "preact/hooks";
 import { ProductListingPage } from "apps/commerce/types.ts";
 import type { JSX } from "preact";
 
-const SORT_QUERY_PARAM = "O";
+const SORT_QUERY_PARAM_LEGACY = "O";
+const SORT_QUERY_PARAM_INTELLIGENT = "sort";
 
-const useSort = () =>
+const useSort = (sortParam?: "legacy" | "intelligent") =>
   useMemo(() => {
     const urlSearchParams = new URLSearchParams(globalThis.location?.search);
-    return urlSearchParams.get(SORT_QUERY_PARAM) ?? "";
-  }, []);
+    const queryParam = sortParam === "intelligent"
+      ? SORT_QUERY_PARAM_INTELLIGENT
+      : SORT_QUERY_PARAM_LEGACY;
 
-// TODO: Replace with "search utils"
-const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>) => {
+    return urlSearchParams.get(queryParam) ?? "";
+  }, [sortParam]);
+
+const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>, sortParam?: "legacy" | "intelligent") => {
   const urlSearchParams = new URLSearchParams(globalThis.location.search);
 
-  // const isCampaign = globalThis?.location?.href?.includes("campanha");
-  const sortValue = SORT_QUERY_PARAM;
+  const queryParam = sortParam === "intelligent"
+    ? SORT_QUERY_PARAM_INTELLIGENT
+    : SORT_QUERY_PARAM_LEGACY;
 
-  urlSearchParams.set(sortValue, e.currentTarget.value);
+  urlSearchParams.set(queryParam, e.currentTarget.value);
   globalThis.location.search = urlSearchParams.toString();
 };
 
-export type Props = Pick<ProductListingPage, "sortOptions">;
+export type Props = Pick<ProductListingPage, "sortOptions"> & {
+  sortParam?: "legacy" | "intelligent";
+  isMobile?: boolean;
+};
 
 // TODO: move this to the loader
 const portugueseMappings = {
@@ -36,9 +44,9 @@ const portugueseMappings = {
 };
 
 function Sort(
-  { sortOptions, isMobile = false }: Props & { isMobile?: boolean },
+  { sortParam = "legacy", sortOptions, isMobile = false }: Props & { isMobile?: boolean },
 ) {
-  const sort = useSort();
+  const sort = useSort(sortParam);
 
   const filteredSortOptions = sortOptions.filter(
     ({ label }) =>
@@ -48,8 +56,11 @@ function Sort(
   if (isMobile) {
     const applySortOnMobile = (value: string) => {
       const urlSearchParams = new URLSearchParams(window.location.search);
+      const queryParam = sortParam === "intelligent"
+        ? SORT_QUERY_PARAM_INTELLIGENT
+        : SORT_QUERY_PARAM_LEGACY;
 
-      urlSearchParams.set(SORT_QUERY_PARAM, value);
+      urlSearchParams.set(queryParam, value);
       window.location.search = urlSearchParams.toString();
     };
 
@@ -81,7 +92,7 @@ function Sort(
       id="sort"
       name="sort"
       aria-label="sort options"
-      onInput={applySort}
+      onInput={(e) => applySort(e, sortParam)}
       class="OrderPlp w-[145px] h-full rounded-[2px] text-base-content text-[13px] cursor-pointer outline-none px-0.5 py-[6px] lg:w-full lg:max-w-[134px] lg:px-[13px] lg:p-[15px] lg:pb-[13px]"
     >
       <option value="" hidden class="text-[25px]">

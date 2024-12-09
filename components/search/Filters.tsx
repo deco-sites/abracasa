@@ -70,16 +70,6 @@ function FilterValues({ key, values }: FilterToggle) {
 }
 
 function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Props) {
-  const excludedKeys = [
-    "Brands",
-    "PriceRanges",
-    "Departments",
-    "Categories",
-    "SITE ANTIGO",
-    "produtossimilares",
-    "price",
-    "brand",
-  ];
 
   const translations: Record<string, string> = {
     "Categories": "Categorias",
@@ -92,12 +82,10 @@ function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Prop
       {filters
         .filter(isToggle)
         .filter((item) =>
-          !isCategoriesFilterActive
-            ? !excludedKeys.includes(item.key)
-            : !excludedKeys.concat("Designers").includes(item.key)
+          !isCategoriesFilterActive || item.label === "Categoria"
         )
         .map((filter) => {
-          // if (!filter.values || filter.values.length === 0) return null;
+          if (!filter.values || filter.values.length === 0) return null;
           if (hiddenFilters.includes(filter.label.toLowerCase())) {
             return null;
           }
