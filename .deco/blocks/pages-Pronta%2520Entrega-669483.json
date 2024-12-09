@@ -1,40 +1,54 @@
 {
-  "name": "Off",
-  "path": "/off",
+  "name": "Pronta Entrega",
+  "path": "/campanha/pronta-entrega",
   "sections": [
     {
+      "title": "Abra Week",
       "jsonLD": {
         "sort": "OrderByPriceDESC",
         "count": 12,
         "filters": "dynamic",
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
-    },
-    {
-      "__resolveType": "Topbar1"
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "titleTemplate": "Abra Friday"
     },
     {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b33e6e6d-4b22-4c8d-8967-6b8218f36064/casa_off_especial_mobile_800x400.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/49b7ab15-cc5b-4b92-8913-bd64c5ddb8b3/casa_off_especial_desktop_1800x220.png"
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/cda007cb-b887-48f0-abee-7157b2f34977/casa_pronta_entrega_banner_especial_mobile_800x400.jpg",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/449a1838-e124-454d-aef8-4aa0dd4f2a0e/casa_pronta_entrega_banner_especial_desktop_1800x220.jpg"
           },
           "matcher": "/*"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p style=\"text-align: center\"><br></p>"
+    },
+    {
+      "html": "<p></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
-        "sort": "OrderByTopSaleDESC",
-        "term": "off ",
+        "sort": "price:desc",
         "count": 48,
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+        "fuzzy": "automatic",
+        "selectedFacets": [
+          {
+            "key": "productClusterIds",
+            "value": "401"
+          }
+        ]
       },
       "layout": {
         "columns": {
@@ -89,19 +103,28 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": [
-        "móveis",
-        "decoração",
-        "ambientes",
-        "designers",
-        "marcas"
+        "densidade da espuma",
+        "espelho",
+        "manual de montagem (guarda-roupa)",
+        "manual de montagem (cômoda)",
+        "manual de montagem (berço)",
+        "dimensão e peso: cadeira",
+        "faixa de altura",
+        "faixa de comp. / larg.",
+        "tamanho",
+        "quantidade de portas",
+        "quantidade de lugares"
       ],
-      "isCategoriesFilterActive": false
+      "isCategoriesFilterActive": true,
+      "sortParam": "intelligent"
     },
     {
       "__resolveType": "Footer - 01"
     }
   ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
   "__resolveType": "website/pages/Page.tsx"
 }
