@@ -39,7 +39,7 @@
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
-        "sort": "price:desc",
+        "sort": "orders:desc",
         "count": 48,
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
         "fuzzy": "automatic",
