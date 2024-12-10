@@ -1,0 +1,30 @@
+{
+  "__resolveType": "site/sections/Header/Header.tsx",
+  "campaignTimer": {
+    "image": {},
+    "text": {
+      "mobile": "Time left for a campaign to end with a link",
+      "desktop": "Time left for a campaign to end with a link"
+    },
+    "link": {
+      "backgroundHexButton": "#C0C0C0",
+      "text": "button",
+      "href": "#"
+    },
+    "backgroundHex": "#C0C0C0",
+    "textHex": "#C0C0C0"
+  },
+  "searchbar": {
+    "placeholder": "What are you looking for?",
+    "action": "/s",
+    "name": "q",
+    "loader": {
+      "data": {
+        "searches": [],
+        "products": []
+      },
+      "__resolveType": "resolved"
+    }
+  },
+  "navItems": []
+}
