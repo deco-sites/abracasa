@@ -3,7 +3,7 @@
   "path": "/campanha/pronta-entrega",
   "sections": [
     {
-      "title": "Abra Week",
+      "title": "Pronta Entrega",
       "jsonLD": {
         "sort": "OrderByPriceDESC",
         "count": 12,
@@ -11,7 +11,7 @@
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
-      "titleTemplate": "Abra Friday"
+      "titleTemplate": "Pronta Entrega"
     },
     {
       "__resolveType": "Header - 01"
