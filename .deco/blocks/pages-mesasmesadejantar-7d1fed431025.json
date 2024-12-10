@@ -1,1 +1,166 @@
-{"name":"Mesas Mesa de Jantar ","path":"/moveis/mesas/mesa-de-jantar","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"Banner","mobile":"https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"categories":[{"href":"/moveis/mesas/conjunto-mesa-e-cadeira","image":{"alt":"CONJUNTO MESA E CADEIRA ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182615/conjunto-mesa-cadeira-06-12.png?v=638059357940870000"},"label":"Conj. Mesa e Cadeira"},{"href":"/moveis/mesas/mesa-de-jantar","image":{"alt":"MESA DE JANTAR ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182624/mesa-jantar-06.12.png?v=638059361119170000"},"label":"Mesa de Jantar"},{"href":"/moveis/mesas/mesa-de-trabalho-e-escrivaninhas","image":{"alt":"MESA DE TRABALHO E ESCRIVANINHA ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182625/mesa-trabalho-escrivaninha-06.12.png?v=638059361585100000"},"label":"Mesa de Trabalho e Escrivaninha"},{"href":"/moveis/mesas/mesa-de-canto-e-lateral","image":{"alt":"MESA DE CANTO E LATERAL ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182620/mesa-canto-lateral-06.12.png?v=638059359867630000"},"label":"Mesa de Canto e Lateral"},{"href":"/moveis/mesas/mesa-de-centro","image":{"alt":"MESA DE CENTRO","url":"https://abracasa.vteximg.com.br/arquivos/ids/182621/mesa-centro-06.12.png?v=638059360305470000"},"label":"Mesa de Centro"},{"href":"/moveis/mesas/mesa-para-area-externa","image":{"alt":"MESA PARA ÁREA EXTERNA ","url":"https://abracasa.vteximg.com.br/arquivos/ids/184439/mesa-para-area-externa-180x180.jpg?v=638191440126070000"},"label":"Mesa para Área Externa"},{"href":"/moveis/mesas/mesa-infantil","image":{"alt":"MESA INFANTIL ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182610/mesa-infantil-06.12.png?v=638059353674230000"},"label":"Mesa Infantil"}],"__resolveType":"site/sections/Category/CategoryShelf.tsx"},{"page":{"sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"title":"<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Mesas&nbsp;</span></p>","description":"<p class=\"title-section\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">A sua nova mesa está na Abra Casa! Seja para reunir a família na hora das refeições ou para te auxiliar no home office, nós temos mesas com desenhos exclusivos, com diferentes acabamentos e formatos para você. Desde as queridas mesas de jantar Square – redondas ou quadradas - até as mesas de cabeceira e mesas de canto.&nbsp;</span></p>","__resolveType":"site/sections/Content/SectionText.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Mesas Mesa de Jantar ",
+  "path": "/moveis/mesas/mesa-de-jantar",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "Banner",
+            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000",
+            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "categories": [
+        {
+          "href": "/moveis/mesas/conjunto-mesa-e-cadeira",
+          "image": {
+            "alt": "CONJUNTO MESA E CADEIRA ",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182615/conjunto-mesa-cadeira-06-12.png?v=638059357940870000"
+          },
+          "label": "Conj. Mesa e Cadeira"
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-jantar",
+          "image": {
+            "alt": "MESA DE JANTAR ",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182624/mesa-jantar-06.12.png?v=638059361119170000"
+          },
+          "label": "Mesa de Jantar"
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-trabalho-e-escrivaninhas",
+          "image": {
+            "alt": "MESA DE TRABALHO E ESCRIVANINHA ",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182625/mesa-trabalho-escrivaninha-06.12.png?v=638059361585100000"
+          },
+          "label": "Mesa de Trabalho e Escrivaninha"
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-canto-e-lateral",
+          "image": {
+            "alt": "MESA DE CANTO E LATERAL ",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182620/mesa-canto-lateral-06.12.png?v=638059359867630000"
+          },
+          "label": "Mesa de Canto e Lateral"
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-centro",
+          "image": {
+            "alt": "MESA DE CENTRO",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182621/mesa-centro-06.12.png?v=638059360305470000"
+          },
+          "label": "Mesa de Centro"
+        },
+        {
+          "href": "/moveis/mesas/mesa-para-area-externa",
+          "image": {
+            "alt": "MESA PARA ÁREA EXTERNA ",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/184439/mesa-para-area-externa-180x180.jpg?v=638191440126070000"
+          },
+          "label": "Mesa para Área Externa"
+        },
+        {
+          "href": "/moveis/mesas/mesa-infantil",
+          "image": {
+            "alt": "MESA INFANTIL ",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182610/mesa-infantil-06.12.png?v=638059353674230000"
+          },
+          "label": "Mesa Infantil"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        "marcas",
+        "quantidade de lugares"
+      ]
+    },
+    {
+      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Mesas&nbsp;</span></p>",
+      "description": "<p class=\"title-section\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">A sua nova mesa está na Abra Casa! Seja para reunir a família na hora das refeições ou para te auxiliar no home office, nós temos mesas com desenhos exclusivos, com diferentes acabamentos e formatos para você. Desde as queridas mesas de jantar Square – redondas ou quadradas - até as mesas de cabeceira e mesas de canto.&nbsp;</span></p>",
+      "__resolveType": "site/sections/Content/SectionText.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
