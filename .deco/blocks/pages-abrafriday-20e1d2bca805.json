@@ -3,7 +3,7 @@
   "path": "/campanha/abra-friday",
   "sections": [
     {
-      "title": "Abra Week",
+      "title": "Abra Friday",
       "jsonLD": {
         "sort": "OrderByPriceDESC",
         "count": 12,
