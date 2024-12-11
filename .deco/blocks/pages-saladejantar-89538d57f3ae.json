@@ -19,8 +19,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/178928/casa_banner_especial_desk_casa-abra_sala-de-jantar_1800x220.jpg?v=637813277695230000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/178928/casa_banner_especial_desk_casa-abra_sala-de-jantar_1800x220.jpg?v=637813277695230000"
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/ada0ac59-e34c-4f99-bf6d-6d9546043522/casa_banner_especial_mobile_salajantar_800x400.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/6c896ca3-0f06-4082-9be5-11d32e9e0613/casa_banner_especial_desk_salajantar_1800x220.png"
           },
           "matcher": "/*"
         },
