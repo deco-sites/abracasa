@@ -1,1 +1,107 @@
-{"name":"Sala de Jantar ","path":"/ambientes/sala-de-jantar","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"Banner","mobile":"https://abracasa.vteximg.com.br/arquivos/ids/178928/casa_banner_especial_desk_casa-abra_sala-de-jantar_1800x220.jpg?v=637813277695230000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/178928/casa_banner_especial_desk_casa-abra_sala-de-jantar_1800x220.jpg?v=637813277695230000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"page":{"sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"title":"<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sala de jantar&nbsp;</span></p>","description":"<p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Na Abra Casa você deixa a sua sala de jantar mais completa! Preparamos diversos tipos e tamanhos de conjuntos de mesas e cadeiras para deixar esse momento ainda mais confortável. E se você prefere montar o seu conjunto do seu jeito, é só escolher. São mesas redondas ou quadradas, com tampos em madeira ou de vidro, cadeiras estofadas ou de polipropileno, para todos os tamanhos de casas e famílias.&nbsp;</span></p>","__resolveType":"site/sections/Content/SectionText.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Sala de Jantar ",
+  "path": "/ambientes/sala-de-jantar",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "Banner",
+            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/178928/casa_banner_especial_desk_casa-abra_sala-de-jantar_1800x220.jpg?v=637813277695230000",
+            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/178928/casa_banner_especial_desk_casa-abra_sala-de-jantar_1800x220.jpg?v=637813277695230000"
+          },
+          "matcher": "/*"
+        },
+        {
+          "image": {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/6c896ca3-0f06-4082-9be5-11d32e9e0613/casa_banner_especial_desk_salajantar_1800x220.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/ada0ac59-e34c-4f99-bf6d-6d9546043522/casa_banner_especial_mobile_salajantar_800x400.png"
+          }
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx"
+    },
+    {
+      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sala de jantar&nbsp;</span></p>",
+      "description": "<p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Na Abra Casa você deixa a sua sala de jantar mais completa! Preparamos diversos tipos e tamanhos de conjuntos de mesas e cadeiras para deixar esse momento ainda mais confortável. E se você prefere montar o seu conjunto do seu jeito, é só escolher. São mesas redondas ou quadradas, com tampos em madeira ou de vidro, cadeiras estofadas ou de polipropileno, para todos os tamanhos de casas e famílias.&nbsp;</span></p>",
+      "__resolveType": "site/sections/Content/SectionText.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
