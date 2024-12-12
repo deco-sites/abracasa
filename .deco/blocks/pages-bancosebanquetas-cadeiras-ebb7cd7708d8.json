@@ -131,7 +131,11 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        "marcas",
+        "características"
+      ]
     },
     {
       "title": "<p><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Cadeiras</span></p>",
