@@ -1,1 +1,152 @@
-{"name":"Bancos e Banquetas / Cad Infan","path":"/moveis/cadeiras-bancos-e-banquetas/cadeiras-infantis","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"Banner","mobile":"https://abracasa.vteximg.com.br/arquivos/ids/170397/casa_banner_cadeira.png?v=637514099801370000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/170397/casa_banner_cadeira.png?v=637514099801370000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"categories":[{"href":"/moveis/cadeiras-bancos-e-banquetas/cadeiras-de-escritorio","image":{"alt":"CADEIRA DE ESCRITÓRIO","url":"https://abracasa.vteximg.com.br/arquivos/ids/182613/cadeira-escritorio-06.12.png?v=638059355450430000"},"label":"Cadeira de Escritório"},{"href":"/moveis/cadeiras-bancos-e-banquetas/cadeiras","image":{"alt":"CADEIRAS","url":"https://abracasa.vteximg.com.br/arquivos/ids/181853/thumb-categoria-cadeira-180-180.jpg?v=637987619831130000"},"label":"Cadeiras"},{"href":"/moveis/cadeiras-bancos-e-banquetas/bancos-e-banquetas","image":{"alt":"BANCOS E BANQUETAS","url":"https://abracasa.vteximg.com.br/arquivos/ids/182612/bancos-banquetas-06.12.png?v=638059354413100000"},"label":"Bancos e Banquetas"},{"href":"/moveis/cadeiras-bancos-e-banquetas/cadeiras-infantis","image":{"alt":"CADEIRAS INFANTIS","url":"https://abracasa.vteximg.com.br/arquivos/ids/182614/cadeiras-infantis-06.12.png?v=638059355904400000"},"label":"Cadeiras Infantis"},{"href":"/moveis/cadeiras-bancos-e-banquetas/area-externa","image":{"alt":"ÁREA EXTERNA","url":"https://abracasa.vteximg.com.br/arquivos/ids/185173/area-externa%20(1).jpg?v=638231243346870000"},"label":"Área Externa"}],"__resolveType":"site/sections/Category/CategoryShelf.tsx"},{"page":{"sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"title":"<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Cadeiras infantis&nbsp;</span></p>","description":"<p class=\"title-section\" style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Conforto</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As cadeiras infantis são projetadas com almofadas acolchoadas e ajustes para garantir o conforto das crianças durante os deslocamentos. Elas permitem que as crianças se sentem ou deitem-se de forma adequada, evitando desconforto e proporcionando uma experiência agradável.</span></p><p class=\"title-section\" style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Desenvolvimento correto</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As cadeiras infantis são projetadas levando em consideração o estágio de desenvolvimento das crianças. Elas fornecem suporte adequado para a coluna vertebral e a cabeça, ajudando a manter uma postura correta e promovendo um desenvolvimento saudável.</span></p><p class=\"title-section\" style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Durabilidade</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As cadeiras infantis são construídas para serem duráveis e resistirem ao uso diário. Elas são feitas com materiais de alta qualidade que podem suportar impactos e o desgaste com o tempo, garantindo que a cadeira infantil dure por muitos anos.&nbsp;</span><br></p>","__resolveType":"site/sections/Content/SectionText.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Bancos e Banquetas / Cad Infan",
+  "path": "/moveis/cadeiras-bancos-e-banquetas/cadeiras-infantis",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "Banner",
+            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/170397/casa_banner_cadeira.png?v=637514099801370000",
+            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/170397/casa_banner_cadeira.png?v=637514099801370000"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "categories": [
+        {
+          "href": "/moveis/cadeiras-bancos-e-banquetas/cadeiras-de-escritorio",
+          "image": {
+            "alt": "CADEIRA DE ESCRITÓRIO",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182613/cadeira-escritorio-06.12.png?v=638059355450430000"
+          },
+          "label": "Cadeira de Escritório"
+        },
+        {
+          "href": "/moveis/cadeiras-bancos-e-banquetas/cadeiras",
+          "image": {
+            "alt": "CADEIRAS",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181853/thumb-categoria-cadeira-180-180.jpg?v=637987619831130000"
+          },
+          "label": "Cadeiras"
+        },
+        {
+          "href": "/moveis/cadeiras-bancos-e-banquetas/bancos-e-banquetas",
+          "image": {
+            "alt": "BANCOS E BANQUETAS",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182612/bancos-banquetas-06.12.png?v=638059354413100000"
+          },
+          "label": "Bancos e Banquetas"
+        },
+        {
+          "href": "/moveis/cadeiras-bancos-e-banquetas/cadeiras-infantis",
+          "image": {
+            "alt": "CADEIRAS INFANTIS",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182614/cadeiras-infantis-06.12.png?v=638059355904400000"
+          },
+          "label": "Cadeiras Infantis"
+        },
+        {
+          "href": "/moveis/cadeiras-bancos-e-banquetas/area-externa",
+          "image": {
+            "alt": "ÁREA EXTERNA",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/185173/area-externa%20(1).jpg?v=638231243346870000"
+          },
+          "label": "Área Externa"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        "marcas",
+        "departamentos",
+        "características",
+        "tipo de base"
+      ]
+    },
+    {
+      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Cadeiras infantis&nbsp;</span></p>",
+      "description": "<p class=\"title-section\" style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Conforto</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As cadeiras infantis são projetadas com almofadas acolchoadas e ajustes para garantir o conforto das crianças durante os deslocamentos. Elas permitem que as crianças se sentem ou deitem-se de forma adequada, evitando desconforto e proporcionando uma experiência agradável.</span></p><p class=\"title-section\" style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Desenvolvimento correto</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As cadeiras infantis são projetadas levando em consideração o estágio de desenvolvimento das crianças. Elas fornecem suporte adequado para a coluna vertebral e a cabeça, ajudando a manter uma postura correta e promovendo um desenvolvimento saudável.</span></p><p class=\"title-section\" style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Durabilidade</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As cadeiras infantis são construídas para serem duráveis e resistirem ao uso diário. Elas são feitas com materiais de alta qualidade que podem suportar impactos e o desgaste com o tempo, garantindo que a cadeira infantil dure por muitos anos.&nbsp;</span><br></p>",
+      "__resolveType": "site/sections/Content/SectionText.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
