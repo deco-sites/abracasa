@@ -39,7 +39,11 @@ function FilterValues({ key, values }: FilterToggle) {
     "Ligia Koehler",
     "Martin Eisler",
     "Menu",
-    "Ateliê Casa"
+    "Ateliê Casa",
+    "Cadeiras (Site Antigo)",
+    "Poltronas (Site Antigo)",
+    "Mesas (Site Antigo)",
+    "Site Antigo Banquetas"
   ]
 
   return (
@@ -102,7 +106,6 @@ function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Prop
           if (hiddenFilters.includes(translatedLabel.toLowerCase())) {
             return null;
           }
-          console.log(translatedLabel, "vem como")
 
           return (
             <li class="flex flex-col gap-4 dropdown dropdown-end">
