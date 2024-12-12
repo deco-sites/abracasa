@@ -131,7 +131,10 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "startingPage": 1
+      "startingPage": 1,
+      "hiddenFilters": [
+        "marcas"
+      ]
     },
     {
       "__resolveType": "TextAbraCasa"
