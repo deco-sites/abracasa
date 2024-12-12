@@ -133,7 +133,8 @@
       },
       "startingPage": 1,
       "hiddenFilters": [
-        "marcas"
+        "marcas",
+        "departamentos"
       ]
     },
     {
