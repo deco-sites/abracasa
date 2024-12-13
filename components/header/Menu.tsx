@@ -54,7 +54,7 @@ function Menu({ items }: Props) {
         <li class="flex flex-col gap-4 pb-2">
           <a
             class="flex items-center gap-4 px-4"
-            href="/login?ReturnUrl=%2F_secure%2Faccount "
+            href="/user-login "
           >
             <Icon
               id="UserIcon"
@@ -66,7 +66,7 @@ function Menu({ items }: Props) {
             <p class="text-sm">
               <span>
                 OLÁ {user.value ? `${user.value.email}` : "registrar"} |{" "}
-                <a href={user.value ? "/logout" : "/login?ReturnUrl=%2F_secure%2Faccount "}>
+                <a href={user.value ? "/logout" : "/user-login "}>
                   {user.value ? "sair" : "entrar"}
                 </a>
               </span>
