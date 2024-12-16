@@ -13,20 +13,6 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "alt": "Abra Friday",
-          "href": "/campanha/abra-friday",
-          "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/86c0cbde-0578-4b1e-8669-9b012941a457/casa_abra_friday_banner_mobile_767x942_2-(1).gif",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/3c7cdb05-4afc-4d2a-a790-e6f6787c968d/casa_abra_friday_banner_desktop_1920x713_2.gif",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Sofá Cama",
           "href": "https://www.abracasa.com.br/moveis/sofa/sofa-cama",
           "mobile": {
@@ -36,6 +22,20 @@
           },
           "desktop": {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/6026c4ef-3321-44e4-8bc9-e313f8f77f3d/casa_sofa_cama_banner_home_principal_desktop_1920x713.gif",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Abra Friday",
+          "href": "/campanha/abra-friday",
+          "mobile": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/86c0cbde-0578-4b1e-8669-9b012941a457/casa_abra_friday_banner_mobile_767x942_2-(1).gif",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/3c7cdb05-4afc-4d2a-a790-e6f6787c968d/casa_abra_friday_banner_desktop_1920x713_2.gif",
             "width": 1920,
             "height": 713
           }
@@ -99,16 +99,6 @@
       ],
       "preload": true,
       "interval": 10
-    },
-    {
-      "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
-      "hoursToShowPopupAgain": 0,
-      "popup": {
-        "description": "Abra Friday",
-        "link": "https://www.abracasa.com.br/campanha/abra-friday",
-        "target": "_self",
-        "source": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/7279099d-74b3-4325-b53c-725e9f501f9c/casa_popup_abra_friday_voltou.gif"
-      }
     },
     {
       "__resolveType": "site/sections/Miscellaneous/AdaptativeBenefits.tsx",
