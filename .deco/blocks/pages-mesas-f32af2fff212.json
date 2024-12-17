@@ -12,12 +12,6 @@
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "CampaignPopup - Frete SP"
-      }
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
@@ -153,7 +147,11 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "startingPage": 1
+      "startingPage": 1,
+      "hiddenFilters": [
+        "departamentos",
+        "marcas"
+      ]
     },
     {
       "__resolveType": "site/sections/Content/SectionText.tsx",
