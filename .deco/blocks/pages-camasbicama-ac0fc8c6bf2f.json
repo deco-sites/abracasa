@@ -1,1 +1,108 @@
-{"name":"Camas Bicama ","path":"/moveis/camas/bicama","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"Banner","mobile":"https://abracasa.vteximg.com.br/arquivos/ids/184440/banner_categorias_cama_23.jpg?v=638191441147300000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/184440/banner_categorias_cama_23.jpg?v=638191441147300000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"page":{"sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"title":"<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Bicama ﻿</span></span></p>","description":"<p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Economia de espaço&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">A bicama é uma solução inteligente para otimizar o espaço em quartos pequenos ou ambientes com restrições de espaço.&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Ela oferece duas camas em uma, com uma cama principal e uma cama auxiliar que pode ser guardada sob a cama principal quando não está em uso.&nbsp;</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Otimização do espaço&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Uma bicama aproveita o espaço do seu quarto. Ela ocupa uma área compacta, permitindo que você tenha duas camas sem ocupar muito espaço. Isso é particularmente útil em ambientes com espaço limitado.&nbsp;</span></p>","__resolveType":"site/sections/Content/SectionText.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Camas Bicama ",
+  "path": "/moveis/camas/bicama",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "Banner",
+            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184440/banner_categorias_cama_23.jpg?v=638191441147300000",
+            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184440/banner_categorias_cama_23.jpg?v=638191441147300000"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        "departamentos",
+        "marcas",
+        "tamanho",
+        "modelo",
+        "produtossimilares"
+      ]
+    },
+    {
+      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Bicama ﻿</span></span></p>",
+      "description": "<p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Economia de espaço&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">A bicama é uma solução inteligente para otimizar o espaço em quartos pequenos ou ambientes com restrições de espaço.&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Ela oferece duas camas em uma, com uma cama principal e uma cama auxiliar que pode ser guardada sob a cama principal quando não está em uso.&nbsp;</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Otimização do espaço&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Uma bicama aproveita o espaço do seu quarto. Ela ocupa uma área compacta, permitindo que você tenha duas camas sem ocupar muito espaço. Isso é particularmente útil em ambientes com espaço limitado.&nbsp;</span></p>",
+      "__resolveType": "site/sections/Content/SectionText.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
