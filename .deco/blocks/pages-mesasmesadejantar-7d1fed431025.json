@@ -150,7 +150,8 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": [
         "marcas",
-        "quantidade de lugares"
+        "quantidade de lugares",
+        "departamentos"
       ]
     },
     {
