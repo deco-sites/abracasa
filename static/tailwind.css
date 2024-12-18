@@ -4452,9 +4452,6 @@ details.collapse summary::-webkit-details-marker {
 .h-\[34px\] {
   height: 34px;
 }
-.h-\[35px\] {
-  height: 35px;
-}
 .h-\[36px\] {
   height: 36px;
 }
@@ -4719,9 +4716,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[35\%\] {
   width: 35%;
-}
-.w-\[35px\] {
-  width: 35px;
 }
 .w-\[363px\] {
   width: 363px;
@@ -8383,10 +8377,6 @@ details.collapse summary::-webkit-details-marker {
     height: 18px;
   }
 
-  .lg\:h-\[55px\] {
-    height: 55px;
-  }
-
   .lg\:h-auto {
     height: auto;
   }
@@ -8441,10 +8431,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-\[440px\] {
     width: 440px;
-  }
-
-  .lg\:w-\[55px\] {
-    width: 55px;
   }
 
   .lg\:w-full {
