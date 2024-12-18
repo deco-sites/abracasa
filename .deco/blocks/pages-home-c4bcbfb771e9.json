@@ -13,6 +13,20 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
+          "alt": "Pronta Entrega",
+          "href": "https://www.abracasa.com.br/campanha/pronta-entrega",
+          "mobile": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/14fb3ed6-ca08-4c8c-b557-b2a80181cf54/casa_pronta_entrega_banner_mobile_767x942_3.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/e01ef8c2-b06a-4371-a113-98ce4601dde1/casa_pronta_entrega_banner_desktop_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Sofá Cama",
           "href": "https://www.abracasa.com.br/moveis/sofa/sofa-cama",
           "mobile": {
@@ -36,20 +50,6 @@
           },
           "desktop": {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/ce09e10a-bb9e-431f-b12c-0c618c4e7888/casa_banner_home_principal_desktop_salajantar_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Pronta Entrega",
-          "href": "https://www.abracasa.com.br/campanha/pronta-entrega",
-          "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/14fb3ed6-ca08-4c8c-b557-b2a80181cf54/casa_pronta_entrega_banner_mobile_767x942_3.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/e01ef8c2-b06a-4371-a113-98ce4601dde1/casa_pronta_entrega_banner_desktop_1920x713.jpg",
             "width": 1920,
             "height": 713
           }
