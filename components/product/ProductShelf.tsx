@@ -39,7 +39,7 @@ function ProductShelf({
   }
 
   return (
-    <div class="w-full container py-8 flex flex-col gap-12 lg:gap-16 lg:py-10 relative lg:max-w-[85%]">
+    <div id="4017801744-0" class="w-full container py-8 flex flex-col gap-12 lg:gap-16 lg:py-10 relative lg:max-w-[85%]">
       <Header
         title={title || ""}
         description={description || ""}
@@ -124,8 +124,8 @@ export const loader = async (props: Props, _req: Request, ctx: AppContext) => {
 
       return fetchedProducts?.products?.filter((item) =>
         item.productID !==
-          products.find((product) => extractSimilarLabel(product) === label)
-            ?.productID
+        products.find((product) => extractSimilarLabel(product) === label)
+          ?.productID
       ) || [];
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);
