@@ -23,7 +23,7 @@ export default function DoubleBanners({ images, preload }: Props) {
   if (!images || images.length === 0) return null;
 
   return (
-    <div class="grid sm:grid-cols-2 items-center justify-between w-full gap-6 my-4">
+    <div id="3997875152-00" class="grid sm:grid-cols-2 items-center justify-between w-full gap-6 my-4">
       {images?.map((item) => (
         <a
           href={item.link ?? "#"}
