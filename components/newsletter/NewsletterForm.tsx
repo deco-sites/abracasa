@@ -24,12 +24,17 @@ export default function NewsletterForm({ title, subtitle }: Props) {
         ?.value;
       dataLayer.push(
         {
-          event:"newsletter",
-          email:email,
-          name:name
+          event: "newsletter",
+          email: email,
+          name: name
         }
       )
-      await invoke.vtex.actions.newsletter.subscribe({ email, name });
+      const status = "true";
+      await invoke.vtex.actions.masterdata.createDocument({
+        data: { email, status },
+        acronym: "NW",
+      });
+      // await invoke.vtex.actions.newsletter.subscribe({ email, name });
     } finally {
       loading.value = false;
       isSubmitted.value = true;

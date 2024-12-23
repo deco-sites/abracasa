@@ -35,8 +35,12 @@ function Newsletter(
 
       const email =
         (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
-
-      await invoke.vtex.actions.newsletter.subscribe({ email });
+      const status = "true";
+      await invoke.vtex.actions.masterdata.createDocument({
+        data: { email, status },
+        acronym: "NW",
+      });
+      // await invoke.vtex.actions.newsletter.subscribe({ email });
     } finally {
       loading.value = false;
     }
@@ -44,11 +48,10 @@ function Newsletter(
 
   return (
     <div
-      class={`flex ${
-        tiled
+      class={`flex ${tiled
           ? "flex-col gap-4 lg:flex-row lg:w-full lg:justify-between"
           : "flex-col gap-4"
-      }`}
+        }`}
     >
       <div class="flex flex-col gap-4">
         {content?.title && (
