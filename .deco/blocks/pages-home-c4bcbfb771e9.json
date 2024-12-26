@@ -27,6 +27,20 @@
           }
         },
         {
+          "alt": "Sale",
+          "href": "https://www.abracasa.com.br/campanha/sale",
+          "mobile": {
+            "image": "https://data.decoassets.com/abracasa/0b688faf-4303-4bca-9681-8dd9d5c6265d/casa_banner_home_principal_mobile_SALE_salajantar_767x942.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://data.decoassets.com/abracasa/e7155bba-bc5d-4474-8651-6e9040690f19/casa_banner_home_principal_desktop_SALE_salajantar_1920x713_RGB.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Pronta Entrega",
           "href": "https://www.abracasa.com.br/campanha/pronta-entrega",
           "mobile": {
