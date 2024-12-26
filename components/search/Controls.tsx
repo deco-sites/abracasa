@@ -95,7 +95,7 @@ export default function SearchControls({
               </Button>
 
               {sortOptions.length > 0 && (
-                <MobileSortButton sortOptions={sortOptions} />
+                <MobileSortButton sortParam={sortParam} sortOptions={sortOptions} />
               )}
             </div>
 

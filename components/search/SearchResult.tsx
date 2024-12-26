@@ -143,7 +143,6 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   };
 
   const products = props.page?.products || [];
-
   const extractSimilarLabel = (item: Product) =>
     item.isVariantOf?.additionalProperty.find((aP) =>
       aP.name === "ProdutosSimilares"

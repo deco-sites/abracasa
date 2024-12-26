@@ -6,9 +6,11 @@ import MobileSort from "$store/components/search/MobileSort.tsx";
 
 import { ProductListingPage } from "apps/commerce/types.ts";
 
-export type Props = Pick<ProductListingPage, "sortOptions">;
+export type Props = Pick<ProductListingPage, "sortOptions"> & {
+  sortParam?: "legacy" | "intelligent";
+};
 
-export default function MobileSortButton({ sortOptions }: Props) {
+export default function MobileSortButton({ sortOptions, sortParam }: Props) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -21,7 +23,7 @@ export default function MobileSortButton({ sortOptions }: Props) {
         Ordenar
       </Button>
 
-      {open && <MobileSort sortOptions={sortOptions} setOpen={setOpen} />}
+      {open && <MobileSort sortParam={sortParam} sortOptions={sortOptions} setOpen={setOpen} />}
     </>
   );
 }
