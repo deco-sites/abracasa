@@ -69,20 +69,6 @@
           }
         },
         {
-          "alt": "Sala de Jantar",
-          "href": "https://www.abracasa.com.br/ambientes/sala-de-jantar",
-          "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b3abf987-18e5-478e-a7a8-c5a31b948f84/casa_banner_home_principal_mobile_salajantar_767x942.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/ce09e10a-bb9e-431f-b12c-0c618c4e7888/casa_banner_home_principal_desktop_salajantar_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Off",
           "href": "https://www.abracasa.com.br/off",
           "mobile": {
