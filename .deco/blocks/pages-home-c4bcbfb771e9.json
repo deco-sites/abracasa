@@ -154,12 +154,12 @@
             {
               "alt": "Banner Secundário - Sofás",
               "link": "https://www.abracasa.com.br/moveis/sofa",
-              "image": "https://data.decoassets.com/abracasa/a1e606f2-9aad-4086-9e73-0bb182460678/casa_banners_home_secund_linha1_sale_sofas_992x560.jpg"
+              "image": "https://data.decoassets.com/abracasa/cbddb866-f77b-4a63-8136-4ca5d5ab646b/casa_banners_home_secund_linha1_sale_sofas_992x560.jpg"
             },
             {
               "alt": "Banner Poltrona Costela",
               "link": "https://www.abracasa.com.br/campanha/poltrona-costela",
-              "image": "https://data.decoassets.com/abracasa/d303c27a-0965-4215-bbab-7e229def43de/casa_banners_home_secund_linha1_sale_poltrona-costela_992x560.jpg"
+              "image": "https://data.decoassets.com/abracasa/91a2c078-1d15-49c4-863f-004286da90ff/casa_banners_home_secund_linha1_sale_poltrona-costela_992x560.jpg"
             }
           ],
           "__resolveType": "site/sections/Images/DoubleBanners.tsx"
