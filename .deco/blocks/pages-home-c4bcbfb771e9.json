@@ -309,13 +309,23 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Social/InstagramPosts.tsx",
+      "facebookToken": "IGAAIJjni2GWtBZAE1rQ09yR0tDcG5FNW8xTDVXYS1QZAm03ZAThzcTlEOHBMRlJYUDczYTVMMUw4U2hsbDY0WkF1ZA0tINnA3Y1VTMjhvc2NqUDBZAMWFsZAjJtR3VtZAV9kT1o0M2VOSjAyUWFnZAXlQcGlid0h2OTNIcXJNTzl3RDZA5ZAwZDZD",
+      "title": "Abra Casa no Instagram",
+      "layout": {
+        "headerAlignment": "center",
+        "numberOfPosts": 4
+      },
+      "description": "<p style=\"text-align: center\">Inspire-se com ideias para decorar seu lar e fique por dentro das novidades e promoções. Confira mais no nosso Insta!<br><br>Quer ver o seu cantinho por lá e aqui no nosso perfil?<br>Poste uma foto com os seus móveis Abra Casa, marcando a <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/abracadabraoficial/\"><strong>@abracasadesign</strong></a>, e deixe sua criatividade brilhar aqui na nossa home!</p>"
+    },
+    {
       "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx",
-      "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
       "title": "Cookies",
       "layout": {
         "content": "Piled up",
         "position": "Left"
       },
+      "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
       "policy": {
         "link": "/",
         "text": "Saiba mais sobre nossas políticas de privacidade"
