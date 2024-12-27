@@ -1,1 +1,138 @@
-{"name":"Office Gaveteiros ","path":"/moveis/office/gaveteiros","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"Banner","mobile":"https://abracasa.vteximg.com.br/arquivos/ids/184441/banner_categorias_office_23.jpg?v=638191441536900000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/184441/banner_categorias_office_23.jpg?v=638191441536900000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"categories":[{"href":"/moveis/office/conjunto-office","image":{"alt":"CONJUNTO OFFICE ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182616/conjunto-office-06.12.png?v=638059358265000000"},"label":"CONJUNTO OFFICE  "},{"href":"/moveis/office/cadeira-de-escritorio","image":{"alt":"CADEIRA DE ESCRITÓRIO ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182613/cadeira-escritorio-06.12.png?v=638059355450430000"},"label":"CADEIRA DE ESCRITÓRIO "},{"href":"/moveis/mesas/mesa-de-trabalho-e-escrivaninhas","image":{"alt":"MESAS DE ESCRITÓRIO ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182622/mesa-escritorio-06.12.png?v=638059360670670000"},"label":"MESAS DE ESCRITÓRIO "},{"href":"/moveis/office/gaveteiros","image":{"alt":"GAVETEIROS ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182618/gaveteiro-06.12.png?v=638059359420500000"},"label":"GAVETEIROS "}],"__resolveType":"site/sections/Category/CategoryShelf.tsx"},{"page":{"sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"title":"<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Gaveteiros&nbsp;</span></p>","description":"<p>Ter um gaveteiro no seu espaço de trabalho oferece praticidade, organização e acesso rápido aos seus itens essenciais. Ele otimiza o espaço, mantém tudo organizado e melhora a eficiência do seu trabalho.&nbsp;</p><p class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Organização</span></p><p>Um gaveteiro é uma solução eficiente para organizar e armazenar uma variedade de itens. Ele oferece várias gavetas que podem ser usadas para categorizar e guardar documentos, papéis, materiais de escritório, suprimentos, eletrônicos e muito mais. Com um gaveteiro, você pode manter tudo em seu devido lugar e facilmente encontrar o que precisa quando precisar.&nbsp;</p><p class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Portabilidade</span></p><p>A maioria dos gaveteiros possui rodinhas ou rodízios, o que facilita sua movimentação pelo ambiente de trabalho. Isso significa que você pode movê-lo conforme necessário para reorganizar seu espaço ou ter acesso rápido aos itens armazenados. A portabilidade do gaveteiro oferece flexibilidade e praticidade.</p><p class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Estética e design</span></p><p>Os gaveteiros estão disponíveis em uma variedade de designs, estilos e materiais para complementar a estética do seu espaço de trabalho. Você pode escolher entre diferentes opções, como gaveteiros de madeira, metálicos, coloridos ou neutros, para combinar com a decoração existente e criar um ambiente profissional e agradável.</p><p class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Durabilidade</span></p><p>Os gaveteiros são projetados para serem duráveis e resistentes ao uso diário. Eles são construídos com materiais de qualidade e componentes robustos, garantindo que possam suportar o manuseio frequente e o peso dos itens armazenados ao longo do tempo.&nbsp;</p>","__resolveType":"site/sections/Content/SectionText.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Office Gaveteiros ",
+  "path": "/moveis/office/gaveteiros",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "Banner",
+            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184441/banner_categorias_office_23.jpg?v=638191441536900000",
+            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184441/banner_categorias_office_23.jpg?v=638191441536900000"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "categories": [
+        {
+          "href": "/moveis/office/conjunto-office",
+          "image": {
+            "alt": "CONJUNTO OFFICE ",
+            "url": "https://data.decoassets.com/abracasa/ebe59889-c46e-4c0f-b4bb-bf294a44bee7/office.png"
+          },
+          "label": "CONJUNTO OFFICE  "
+        },
+        {
+          "href": "/moveis/office/cadeira-de-escritorio",
+          "image": {
+            "alt": "CADEIRA DE ESCRITÓRIO ",
+            "url": "https://data.decoassets.com/abracasa/678023b5-b780-4cc1-9e07-bfa2bcb6c5dc/cadeira-de-escritorio.png"
+          },
+          "label": "CADEIRA DE ESCRITÓRIO "
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-trabalho-e-escrivaninhas",
+          "image": {
+            "alt": "MESAS DE ESCRITÓRIO ",
+            "url": "https://data.decoassets.com/abracasa/19606953-0dfc-4c17-a73f-e13d30ea66d2/mesa-de-trabalho-e-escrivaninha.png"
+          },
+          "label": "MESAS DE ESCRITÓRIO "
+        },
+        {
+          "href": "/moveis/office/gaveteiros",
+          "image": {
+            "alt": "GAVETEIROS ",
+            "url": "https://data.decoassets.com/abracasa/152c3cbf-83d1-48db-a394-bfe7100aca83/gaveteiro.png"
+          },
+          "label": "GAVETEIROS "
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx"
+    },
+    {
+      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Gaveteiros&nbsp;</span></p>",
+      "description": "<p>Ter um gaveteiro no seu espaço de trabalho oferece praticidade, organização e acesso rápido aos seus itens essenciais. Ele otimiza o espaço, mantém tudo organizado e melhora a eficiência do seu trabalho.&nbsp;</p><p class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Organização</span></p><p>Um gaveteiro é uma solução eficiente para organizar e armazenar uma variedade de itens. Ele oferece várias gavetas que podem ser usadas para categorizar e guardar documentos, papéis, materiais de escritório, suprimentos, eletrônicos e muito mais. Com um gaveteiro, você pode manter tudo em seu devido lugar e facilmente encontrar o que precisa quando precisar.&nbsp;</p><p class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Portabilidade</span></p><p>A maioria dos gaveteiros possui rodinhas ou rodízios, o que facilita sua movimentação pelo ambiente de trabalho. Isso significa que você pode movê-lo conforme necessário para reorganizar seu espaço ou ter acesso rápido aos itens armazenados. A portabilidade do gaveteiro oferece flexibilidade e praticidade.</p><p class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Estética e design</span></p><p>Os gaveteiros estão disponíveis em uma variedade de designs, estilos e materiais para complementar a estética do seu espaço de trabalho. Você pode escolher entre diferentes opções, como gaveteiros de madeira, metálicos, coloridos ou neutros, para combinar com a decoração existente e criar um ambiente profissional e agradável.</p><p class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Durabilidade</span></p><p>Os gaveteiros são projetados para serem duráveis e resistentes ao uso diário. Eles são construídos com materiais de qualidade e componentes robustos, garantindo que possam suportar o manuseio frequente e o peso dos itens armazenados ao longo do tempo.&nbsp;</p>",
+      "__resolveType": "site/sections/Content/SectionText.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
