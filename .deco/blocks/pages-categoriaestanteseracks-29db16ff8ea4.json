@@ -115,7 +115,11 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        "departamentos",
+        "marcas"
+      ]
     },
     {
       "title": "<p class=\"title-section\"><span style=\"color: rgb(85, 85, 85); font-size: 24pt;\" data-mce-style=\"color: rgb(85, 85, 85); font-size: 24pt;\">Estantes e Racks</span></p>",
