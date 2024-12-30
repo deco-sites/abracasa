@@ -176,7 +176,8 @@
       "startingPage": 1,
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": [
-        "marcas"
+        "marcas",
+        "departamentos"
       ]
     },
     {
