@@ -118,7 +118,7 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": [
         "marcas",
-        null
+        "departamentos"
       ]
     },
     {
