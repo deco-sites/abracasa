@@ -39,7 +39,11 @@
       },
       "cardLayout": {
         "__resolveType": "Product Card Layout - 01"
-      }
+      },
+      "hiddenFilters": [
+        "departamentos",
+        "marcas"
+      ]
     },
     {
       "__resolveType": "site/sections/Content/SectionText.tsx",
