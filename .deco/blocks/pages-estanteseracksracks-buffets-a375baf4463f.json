@@ -118,8 +118,9 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": [
         "marcas",
-        "produtossimilares",
-        "departamentos"
+        "produtosSimilares",
+        "departamentos",
+        "preços"
       ]
     },
     {
