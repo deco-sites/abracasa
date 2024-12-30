@@ -123,7 +123,11 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        "marcas",
+        "departamentos"
+      ]
     },
     {
       "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Gaveteiros&nbsp;</span></p>",
