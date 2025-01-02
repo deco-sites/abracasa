@@ -95,7 +95,8 @@
       "startingPage": 1,
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": "Acabamento",
-      "isCategoriesFilterActive": true
+      "isCategoriesFilterActive": true,
+      "sortParam": "intelligent"
     },
     {
       "__resolveType": "Footer - 01"
