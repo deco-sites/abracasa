@@ -17,8 +17,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/500246be-d8be-4239-adb1-6b1b83201e91/casa_abra_friday_banner_especial_POLTRONA_mobile_800x400.jpg",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/228ba923-bc99-47e7-8021-5875bf2825ba/casa_abra_friday_banner_especial_poltrona_desktop_1800x220.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/85de6d65-9ebf-4cd5-a243-464fdc3d2c9d/casa_poltronas_banner_especial_mobile_800x400.jpg",
+            "desktop": "https://data.decoassets.com/abracasa/5970b946-4519-4fef-b414-7f843a259ab6/casa_poltronas_banner_especial_desktop_1800x220.jpg"
           },
           "matcher": "/*"
         }
@@ -39,7 +39,11 @@
       },
       "cardLayout": {
         "__resolveType": "Product Card Layout - 01"
-      }
+      },
+      "hiddenFilters": [
+        "departamentos",
+        "marcas"
+      ]
     },
     {
       "__resolveType": "site/sections/Content/SectionText.tsx",

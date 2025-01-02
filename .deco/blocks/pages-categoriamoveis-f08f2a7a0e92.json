@@ -36,7 +36,7 @@
           "href": "/moveis/poltronas",
           "image": {
             "alt": "Poltronas",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181856/thumb-categoria-poltrona-180-180.jpg?v=637987620800530000"
+            "url": "https://data.decoassets.com/abracasa/953c2b4b-edd3-4fc2-810b-95f52381f9cc/poltronas.png"
           },
           "label": "Poltronas"
         },
@@ -44,7 +44,7 @@
           "href": "/moveis/mesas",
           "image": {
             "alt": "Mesas",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181857/thumb-categoria-mesa-180-180.jpg?v=637987621014400000"
+            "url": "https://data.decoassets.com/abracasa/ee2ace2a-71fe-4f61-aa10-0a5adb6d711c/mesas.png"
           },
           "label": "Mesas"
         },
@@ -52,7 +52,7 @@
           "href": "/moveis/office",
           "image": {
             "alt": "Office",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181858/thumb-categoria-office-180-180.jpg?v=637987621838330000"
+            "url": "https://data.decoassets.com/abracasa/ebe59889-c46e-4c0f-b4bb-bf294a44bee7/office.png"
           },
           "label": "Office"
         },
@@ -60,7 +60,7 @@
           "href": "/moveis/sofa",
           "image": {
             "alt": "Sofás",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181850/thumb-categoria-sofatradicional-180-180.jpg?v=637987622312830000"
+            "url": "https://data.decoassets.com/abracasa/08294104-9a67-40ec-9011-09d17d7e28b4/sofas.png"
           },
           "label": "Sofás"
         },
@@ -68,7 +68,7 @@
           "href": "/moveis/cadeiras-bancos-e-banquetas",
           "image": {
             "alt": "Cadeiras e Bancos ",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181853/thumb-categoria-cadeira-180-180.jpg?v=637987619831130000"
+            "url": "https://data.decoassets.com/abracasa/3596acca-2fa9-407e-b2bd-12a60f59687c/c-adeiras.png"
           },
           "label": "Cadeiras e Bancos"
         },
@@ -76,7 +76,7 @@
           "href": "/moveis/guarda-roupas",
           "image": {
             "alt": "Guarda-roupa",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181854/thumb-categoria-guardaroupa-180-180.jpg?v=637987620047570000"
+            "url": "https://data.decoassets.com/abracasa/f70545eb-8299-4f2b-b353-cf06a12b9995/guarda-roupas.png"
           },
           "label": "Guarda-roupa"
         },
@@ -84,7 +84,7 @@
           "href": "/moveis/estantes-e-racks",
           "image": {
             "alt": "Racks e Estantes",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181855/thumb-categoria-rack180-180.jpg?v=637987620288200000"
+            "url": "https://data.decoassets.com/abracasa/9891c8a5-251c-44bc-9ecf-274f4eda6a18/racks-e-estantes.png"
           },
           "label": "Racks e Estantes"
         },
@@ -92,7 +92,7 @@
           "href": "/moveis/comoda",
           "image": {
             "alt": "Cômodas",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182638/comodas-06.12.png?v=638059486896600000"
+            "url": "https://data.decoassets.com/abracasa/564e25c5-0336-4174-ad03-e7bc488f0e00/comodas.png"
           },
           "label": "Cômodas"
         },
@@ -100,7 +100,7 @@
           "href": "/moveis/cama",
           "image": {
             "alt": "Camas",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/182974/cama_%C3%ADcone_categoria_novo.jpg?v=638083752638230000"
+            "url": "https://data.decoassets.com/abracasa/034ad2a7-086f-418a-8545-c96ff39010ac/camas.png"
           },
           "label": "Camas"
         },
@@ -108,7 +108,7 @@
           "href": "/moveis/colchoes",
           "image": {
             "alt": "Colchões",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/170442/colchao_180x180.png?v=637517601796170000"
+            "url": "https://data.decoassets.com/abracasa/547c9e84-6c02-4c6b-9a65-92d38f3775b0/colchoes.png"
           },
           "label": "Colchões"
         }
@@ -176,7 +176,8 @@
       "startingPage": 1,
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": [
-        "marcas"
+        "marcas",
+        "departamentos"
       ]
     },
     {

@@ -13,6 +13,34 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
+          "alt": "Sale",
+          "href": "https://www.abracasa.com.br/campanha/sale",
+          "mobile": {
+            "image": "https://data.decoassets.com/abracasa/8eee091f-b96c-47a4-96e9-c1e8862cc0a6/casa_sale_banner_mobile_767x942.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://data.decoassets.com/abracasa/8f64e4cb-c2dc-40a5-acaf-f04a00a78831/casa_sale_banner_desktop_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Sale sala de jantar",
+          "href": "https://www.abracasa.com.br/campanha/sala-de-jantar",
+          "mobile": {
+            "image": "https://data.decoassets.com/abracasa/0b688faf-4303-4bca-9681-8dd9d5c6265d/casa_banner_home_principal_mobile_SALE_salajantar_767x942.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://data.decoassets.com/abracasa/e7155bba-bc5d-4474-8651-6e9040690f19/casa_banner_home_principal_desktop_SALE_salajantar_1920x713_RGB.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Pronta Entrega",
           "href": "https://www.abracasa.com.br/campanha/pronta-entrega",
           "mobile": {
@@ -36,20 +64,6 @@
           },
           "desktop": {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/6026c4ef-3321-44e4-8bc9-e313f8f77f3d/casa_sofa_cama_banner_home_principal_desktop_1920x713.gif",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Sala de Jantar",
-          "href": "https://www.abracasa.com.br/ambientes/sala-de-jantar",
-          "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b3abf987-18e5-478e-a7a8-c5a31b948f84/casa_banner_home_principal_mobile_salajantar_767x942.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/ce09e10a-bb9e-431f-b12c-0c618c4e7888/casa_banner_home_principal_desktop_salajantar_1920x713.jpg",
             "width": 1920,
             "height": 713
           }
@@ -124,14 +138,14 @@
         {
           "images": [
             {
-              "alt": "Banner Sala de Jantar",
-              "link": "https://www.abracasa.com.br/campanha/sala-de-jantar",
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/011df1a2-139c-4529-9e37-f54f1389d891/casa_banners_home_secund_linha1_992x560_SALA_DE_JANTAR.jpg"
+              "alt": "Banner Secundário - Sofás",
+              "link": "https://www.abracasa.com.br/moveis/sofa",
+              "image": "https://data.decoassets.com/abracasa/cbddb866-f77b-4a63-8136-4ca5d5ab646b/casa_banners_home_secund_linha1_sale_sofas_992x560.jpg"
             },
             {
               "alt": "Banner Poltrona Costela",
               "link": "https://www.abracasa.com.br/campanha/poltrona-costela",
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/8f86761e-7037-42ba-8191-054db605e471/casa_banners_home_secund_linha1_992x560_POLTRONA.jpg"
+              "image": "https://data.decoassets.com/abracasa/91a2c078-1d15-49c4-863f-004286da90ff/casa_banners_home_secund_linha1_sale_poltrona-costela_992x560.jpg"
             }
           ],
           "__resolveType": "site/sections/Images/DoubleBanners.tsx"
@@ -295,13 +309,23 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Social/InstagramPosts.tsx",
+      "facebookToken": "IGAAIJjni2GWtBZAE1rQ09yR0tDcG5FNW8xTDVXYS1QZAm03ZAThzcTlEOHBMRlJYUDczYTVMMUw4U2hsbDY0WkF1ZA0tINnA3Y1VTMjhvc2NqUDBZAMWFsZAjJtR3VtZAV9kT1o0M2VOSjAyUWFnZAXlQcGlid0h2OTNIcXJNTzl3RDZA5ZAwZDZD",
+      "title": "Abra Casa no Instagram",
+      "layout": {
+        "headerAlignment": "center",
+        "numberOfPosts": 4
+      },
+      "description": "<p style=\"text-align: center\">Inspire-se com ideias para decorar seu lar e fique por dentro das novidades e promoções. Confira mais no nosso Insta!<br><br>Quer ver o seu cantinho por lá e aqui no nosso perfil?<br>Poste uma foto com os seus móveis Abra Casa, marcando a <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/abracadabraoficial/\"><strong>@abracasadesign</strong></a>, e deixe sua criatividade brilhar aqui na nossa home!</p>"
+    },
+    {
       "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx",
-      "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
       "title": "Cookies",
       "layout": {
         "content": "Piled up",
         "position": "Left"
       },
+      "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
       "policy": {
         "link": "/",
         "text": "Saiba mais sobre nossas políticas de privacidade"

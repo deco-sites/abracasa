@@ -33,7 +33,7 @@
           "href": "/moveis/sofa/sofa-tradicional",
           "image": {
             "alt": "Sofá Tradicional",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181850/thumb-categoria-sofatradicional-180-180.jpg?v=637987622312830000"
+            "url": "https://data.decoassets.com/abracasa/08294104-9a67-40ec-9011-09d17d7e28b4/sofas.png"
           },
           "label": "Sofá Tradicional"
         },
@@ -41,7 +41,7 @@
           "href": "/moveis/sofa/sofa-retratil",
           "image": {
             "alt": "Sofá Retrátil",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181851/thumb-categoria-sofaretratil-180-180.jpg?v=637987589813800000"
+            "url": "https://data.decoassets.com/abracasa/69bff3bb-cb1c-4689-9a2d-18876b23f074/sofa-retratil.png"
           },
           "label": "Sofá Retrátil"
         },
@@ -49,7 +49,7 @@
           "href": "/moveis/sofa/sofa-cama",
           "image": {
             "alt": "Sofá Cama",
-            "url": "https://abracasa.vteximg.com.br/arquivos/ids/181852/thumb-categoria-sofa-cama-180-180.jpg?v=637987590138070000"
+            "url": "https://data.decoassets.com/abracasa/9f8b8461-12c6-41c7-bc21-981389e481ea/sofa-cama.png"
           },
           "label": "Sofá Cama"
         }
@@ -115,7 +115,11 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        "marcas",
+        "departamentos"
+      ]
     },
     {
       "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sofá-cama&nbsp;</span></p>",

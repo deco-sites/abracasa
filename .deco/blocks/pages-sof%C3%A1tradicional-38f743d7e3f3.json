@@ -1,1 +1,134 @@
-{"name":"Sofá Tradicional ","path":"/moveis/sofa/sofa-tradicional","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"Banner","mobile":"https://abracasa.vteximg.com.br/arquivos/ids/182846/casa_banner_especial_desk_sofa_1800x220.png?v=638073289806500000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/182846/casa_banner_especial_desk_sofa_1800x220.png?v=638073289806500000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"categories":[{"href":"/moveis/sofa/sofa-tradicional","image":{"alt":"Sofá Tradicional","url":"https://abracasa.vteximg.com.br/arquivos/ids/181850/thumb-categoria-sofatradicional-180-180.jpg?v=637987622312830000"},"label":"Sofá Tradicional"},{"href":"/moveis/sofa/sofa-retratil","image":{"alt":"Sofá Retrátil","url":"https://abracasa.vteximg.com.br/arquivos/ids/181851/thumb-categoria-sofaretratil-180-180.jpg?v=637987589813800000"},"label":"Sofá Retrátil"},{"href":"/moveis/sofa/sofa-cama","image":{"alt":"Sofá Cama","url":"https://abracasa.vteximg.com.br/arquivos/ids/181852/thumb-categoria-sofa-cama-180-180.jpg?v=637987590138070000"},"label":"Sofá Cama"}],"__resolveType":"site/sections/Category/CategoryShelf.tsx"},{"page":{"sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"title":"<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sofá Tradicional&nbsp;</span></p>","description":"<main class=\"main-content\"><section class=\"section-seo-text\"><div class=\"container\"><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais são uma escolha popular para aqueles que preferem um estilo clássico e atemporal em sua decoração. Eles oferecem conforto e elegância, complementando diversos estilos de interiores.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">O Sofá do seu estilo</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais são uma escolha popular para ambientes mais formais, como salas de estar clássicas, salas de estar tradicionais ou escritórios elegantes. Eles trazem um ar de sofisticação e elegância para o espaço.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Design clássico</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais costumam apresentar um design clássico e atemporal. Eles possuem linhas elegantes, curvas suaves e detalhes ornamentados.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Estrutura e materiais</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais são geralmente construídos com uma estrutura de madeira resistente. A madeira pode ser exposta ou coberta com estofamento. O estofamento é feito de tecidos como veludo, couro, linho ou algodão.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Estofamento acolhedor</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais geralmente têm um estofamento acolhedor e confortável. Os assentos e encostos são estofados com espuma ou materiais semelhantes para proporcionar um suporte suave.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Durabilidade</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais são conhecidos por sua durabilidade e longevidade. Eles são projetados para resistir ao uso diário e permanecer em bom estado por muitos anos.&nbsp;</span></p></div></section></main>","__resolveType":"site/sections/Content/SectionText.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Sofá Tradicional ",
+  "path": "/moveis/sofa/sofa-tradicional",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "Banner",
+            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/182846/casa_banner_especial_desk_sofa_1800x220.png?v=638073289806500000",
+            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/182846/casa_banner_especial_desk_sofa_1800x220.png?v=638073289806500000"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "categories": [
+        {
+          "href": "/moveis/sofa/sofa-tradicional",
+          "image": {
+            "alt": "Sofá Tradicional",
+            "url": "https://data.decoassets.com/abracasa/08294104-9a67-40ec-9011-09d17d7e28b4/sofas.png"
+          },
+          "label": "Sofá Tradicional"
+        },
+        {
+          "href": "/moveis/sofa/sofa-retratil",
+          "image": {
+            "alt": "Sofá Retrátil",
+            "url": "https://data.decoassets.com/abracasa/69bff3bb-cb1c-4689-9a2d-18876b23f074/sofa-retratil.png"
+          },
+          "label": "Sofá Retrátil"
+        },
+        {
+          "href": "/moveis/sofa/sofa-cama",
+          "image": {
+            "alt": "Sofá Cama",
+            "url": "https://data.decoassets.com/abracasa/9f8b8461-12c6-41c7-bc21-981389e481ea/sofa-cama.png"
+          },
+          "label": "Sofá Cama"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        "marcas",
+        "departamentos"
+      ]
+    },
+    {
+      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sofá Tradicional&nbsp;</span></p>",
+      "description": "<main class=\"main-content\"><section class=\"section-seo-text\"><div class=\"container\"><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais são uma escolha popular para aqueles que preferem um estilo clássico e atemporal em sua decoração. Eles oferecem conforto e elegância, complementando diversos estilos de interiores.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">O Sofá do seu estilo</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais são uma escolha popular para ambientes mais formais, como salas de estar clássicas, salas de estar tradicionais ou escritórios elegantes. Eles trazem um ar de sofisticação e elegância para o espaço.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Design clássico</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais costumam apresentar um design clássico e atemporal. Eles possuem linhas elegantes, curvas suaves e detalhes ornamentados.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Estrutura e materiais</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais são geralmente construídos com uma estrutura de madeira resistente. A madeira pode ser exposta ou coberta com estofamento. O estofamento é feito de tecidos como veludo, couro, linho ou algodão.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Estofamento acolhedor</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais geralmente têm um estofamento acolhedor e confortável. Os assentos e encostos são estofados com espuma ou materiais semelhantes para proporcionar um suporte suave.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Durabilidade</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás tradicionais são conhecidos por sua durabilidade e longevidade. Eles são projetados para resistir ao uso diário e permanecer em bom estado por muitos anos.&nbsp;</span></p></div></section></main>",
+      "__resolveType": "site/sections/Content/SectionText.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

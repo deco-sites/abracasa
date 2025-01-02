@@ -1,1 +1,176 @@
-{"name":"Categoria Decoração ","path":"/decoracao","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Topbar1"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"Banner De Decorações ","mobile":"https://abracasa.vteximg.com.br/arquivos/ids/184798/banner_categorias_decor.jpg?v=638207055552330000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/184798/banner_categorias_decor.jpg?v=638207055552330000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"categories":[{"href":"/decoracao/adornos","image":{"alt":"Adornos","url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/7b576d30-3f7b-4000-9f5b-5939f5fe0b15"},"label":"Adornos"},{"href":"/decoracao/almofadas","image":{"alt":"Almofadas","url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/8cd60202-ab5f-4175-a2e0-3c976742636b"},"label":"Almofadas"},{"href":"/decoracao/cabideiros-e-prateleiras","image":{"alt":"Cabideiros e Prateleitas","url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/dd9b4e59-16cb-4a5d-b2fd-4f859fe3c70b"},"label":"Cabideiros e Prateleitas"},{"href":"/decoracao/cestos","image":{"alt":"Cestos","url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/d87f2e9c-31b7-41bd-abee-6e2b21061f12"},"label":"Cestos"},{"href":"/decoracao/luminarias","image":{"alt":"Luminárias","url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/7bf7129b-8bdb-418f-a716-d001943e468e"},"label":"Luminárias"},{"href":"/decoracao/mantas","image":{"alt":"Mantas","url":"https://abracasa.vteximg.com.br/arquivos/ids/170382/casa_banner_site_decoracao_icones_180x180_manta.png?v=637511842294530000"},"label":"Mantas"},{"href":"/decoracao/organizadores","image":{"alt":"Organizadores","url":"https://abracasa.vteximg.com.br/arquivos/ids/170383/casa_banner_site_decoracao_icones_180x180_organizador.png?v=637511842714970000"},"label":"Organizadores"},{"href":"/decoracao/tapetes","image":{"alt":"Tapetes","url":"https://abracasa.vteximg.com.br/arquivos/ids/170386/casa_banner_site_decoracao_icones_180x180_tapete.png?v=637511843636800000"},"label":"Tapetes"},{"href":"/decoracao/vasos-e-cachepots","image":{"alt":"Vasos e Cachepots","url":"https://abracasa.vteximg.com.br/arquivos/ids/170439/cachepot_180x180.jpg?v=637517590523400000"},"label":"Vasos e Cachepots"}],"__resolveType":"site/sections/Category/CategoryShelf.tsx"},{"page":{"sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Categoria Decoração ",
+  "path": "/decoracao",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Topbar1"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "Banner De Decorações ",
+            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184798/banner_categorias_decor.jpg?v=638207055552330000",
+            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184798/banner_categorias_decor.jpg?v=638207055552330000"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "categories": [
+        {
+          "href": "/decoracao/adornos",
+          "image": {
+            "alt": "Adornos",
+            "url": "https://data.decoassets.com/abracasa/d754936c-cb0e-43d1-95d7-4b12e0447585/adornos.png"
+          },
+          "label": "Adornos"
+        },
+        {
+          "href": "/decoracao/almofadas",
+          "image": {
+            "alt": "Almofadas",
+            "url": "https://data.decoassets.com/abracasa/05aae6ff-790f-4f9c-bfff-dc2ce5333643/almofadas.png"
+          },
+          "label": "Almofadas"
+        },
+        {
+          "href": "/decoracao/cabideiros-e-prateleiras",
+          "image": {
+            "alt": "Cabideiros e Prateleitas",
+            "url": "https://data.decoassets.com/abracasa/ca1946f6-6bf6-49e2-8d3b-a3ed43a8ddaa/cabideiros-e-prateleiras.png"
+          },
+          "label": "Cabideiros e Prateleitas"
+        },
+        {
+          "href": "/decoracao/cestos",
+          "image": {
+            "alt": "Cestos",
+            "url": "https://data.decoassets.com/abracasa/c9eb5582-5aee-4750-9343-b9aaa6c7ee37/cestos.png"
+          },
+          "label": "Cestos"
+        },
+        {
+          "href": "/decoracao/luminarias",
+          "image": {
+            "alt": "Luminárias",
+            "url": "https://data.decoassets.com/abracasa/4ea39e63-b364-4eeb-b1b1-b02f3c695004/luminarias.png"
+          },
+          "label": "Luminárias"
+        },
+        {
+          "href": "/decoracao/mantas",
+          "image": {
+            "alt": "Mantas",
+            "url": "https://data.decoassets.com/abracasa/4e9ca377-1835-4c58-94cf-f2a188fc6ac2/mantas.png"
+          },
+          "label": "Mantas"
+        },
+        {
+          "href": "/decoracao/organizadores",
+          "image": {
+            "alt": "Organizadores",
+            "url": "https://data.decoassets.com/abracasa/ab67b956-8419-4b8c-bff0-65c659800daf/organizadores.png"
+          },
+          "label": "Organizadores"
+        },
+        {
+          "href": "/decoracao/tapetes",
+          "image": {
+            "alt": "Tapetes",
+            "url": "https://abracasa.vteximg.com.br/arquivos/ids/170386/casa_banner_site_decoracao_icones_180x180_tapete.png?v=637511843636800000"
+          },
+          "label": "Tapetes"
+        },
+        {
+          "href": "/decoracao/vasos-e-cachepots",
+          "image": {
+            "alt": "Vasos e Cachepots",
+            "url": "https://data.decoassets.com/abracasa/7e2e9251-29e9-44ca-8fa0-f2babe225202/vasos-e-cachepos.png"
+          },
+          "label": "Vasos e Cachepots"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

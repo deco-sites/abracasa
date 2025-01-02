@@ -1,1 +1,162 @@
-{"name":"Mesas Mesa Para Area Externa ","path":"/moveis/mesas/mesa-para-area-externa","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"Banner","mobile":"https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"categories":[{"href":"/moveis/mesas/conjunto-mesa-e-cadeira","image":{"alt":"Conj. Mesa e Cadeira","url":"https://abracasa.vteximg.com.br/arquivos/ids/182615/conjunto-mesa-cadeira-06-12.png?v=638059357940870000"},"label":"Conj. Mesa e Cadeira"},{"href":"/moveis/mesas/mesa-de-jantar","image":{"alt":"Mesa de Jantar","url":"https://abracasa.vteximg.com.br/arquivos/ids/182624/mesa-jantar-06.12.png?v=638059361119170000"},"label":"Mesa de Jantar"},{"href":"/moveis/mesas/mesa-de-trabalho-e-escrivaninhas","image":{"alt":"Mesa de Trabalho e Escrivaninha","url":"https://abracasa.vteximg.com.br/arquivos/ids/182625/mesa-trabalho-escrivaninha-06.12.png?v=638059361585100000"},"label":"Mesa de Trabalho e Escrivaninha"},{"href":"/moveis/mesas/mesa-de-canto-e-lateral","image":{"alt":"Mesa de Canto e Lateral","url":"https://abracasa.vteximg.com.br/arquivos/ids/182620/mesa-canto-lateral-06.12.png?v=638059359867630000"},"label":"Mesa de Canto e Lateral"},{"href":"/moveis/mesas/mesa-de-centro","image":{"alt":"Mesa de Centro","url":"https://abracasa.vteximg.com.br/arquivos/ids/182621/mesa-centro-06.12.png?v=638059360305470000"},"label":"Mesa de Centro"},{"href":"/moveis/mesas/mesa-para-area-externa","image":{"alt":"Mesa para Área Externa","url":"https://abracasa.vteximg.com.br/arquivos/ids/184439/mesa-para-area-externa-180x180.jpg?v=638191440126070000"},"label":"Mesa para Área Externa"},{"href":"/moveis/mesas/mesa-infantil","image":{"alt":"Mesa Infantil","url":"https://abracasa.vteximg.com.br/arquivos/ids/182610/mesa-infantil-06.12.png?v=638059353674230000"},"label":"Mesa Infantil"}],"__resolveType":"site/sections/Category/CategoryShelf.tsx"},{"page":{"sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"title":"<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Mesa de Área Externa&nbsp;</span></p>","description":"<p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Espaço para entretenimento&nbsp;</span></p><p class=\"title-section\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Uma mesa de área externa proporciona um espaço dedicado para entretenimento ao ar livre. É um local perfeito para realizar refeições ao ar livre, organizar churrascos, festas ou simplesmente aproveitar momentos de lazer com familiares e amigos. Ter uma mesa de área externa cria um ambiente acolhedor e convidativo para desfrutar do ar livre.&nbsp;</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Durabilidade e resistência&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As mesas de área externa são projetadas para resistir às condições climáticas externas. Elas são construídas com materiais duráveis e resistentes, como madeira tratada, alumínio, aço inoxidável ou plástico resistente. Essa resistência permite que a mesa suporte a exposição ao sol, chuva, vento e outras condições climáticas, mantendo sua funcionalidade e aparência ao longo do tempo.&nbsp;</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Fácil manutenção&nbsp;</span></p><p class=\"title-section\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As mesas de área externa geralmente requerem pouca manutenção. Os materiais utilizados são projetados para serem fáceis de limpar e resistir a manchas, corrosão e desgaste. A maioria das mesas pode ser limpa com água e sabão suave, o que facilita a manutenção regular e a conservação da sua aparência.&nbsp;</span><br></p>","__resolveType":"site/sections/Content/SectionText.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Mesas Mesa Para Area Externa ",
+  "path": "/moveis/mesas/mesa-para-area-externa",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "Banner",
+            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000",
+            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "categories": [
+        {
+          "href": "/moveis/mesas/conjunto-mesa-e-cadeira",
+          "image": {
+            "alt": "Conj. Mesa e Cadeira",
+            "url": "https://data.decoassets.com/abracasa/2a7fb4d1-5d90-48b4-8c14-82ceae2749d0/conjunto-mesa-e-cadeira.png"
+          },
+          "label": "Conj. Mesa e Cadeira"
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-jantar",
+          "image": {
+            "alt": "Mesa de Jantar",
+            "url": "https://data.decoassets.com/abracasa/ee2ace2a-71fe-4f61-aa10-0a5adb6d711c/mesas.png"
+          },
+          "label": "Mesa de Jantar"
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-trabalho-e-escrivaninhas",
+          "image": {
+            "alt": "Mesa de Trabalho e Escrivaninha",
+            "url": "https://data.decoassets.com/abracasa/19606953-0dfc-4c17-a73f-e13d30ea66d2/mesa-de-trabalho-e-escrivaninha.png"
+          },
+          "label": "Mesa de Trabalho e Escrivaninha"
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-canto-e-lateral",
+          "image": {
+            "alt": "Mesa de Canto e Lateral",
+            "url": "https://data.decoassets.com/abracasa/5cff9548-23c2-420c-9968-cf6cf272f8d2/mesa-de-canto-e-lateral.png"
+          },
+          "label": "Mesa de Canto e Lateral"
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-centro",
+          "image": {
+            "alt": "Mesa de Centro",
+            "url": "https://data.decoassets.com/abracasa/d612661c-5734-46cf-b9ff-7a908b1a8a22/mesa-de-centro.png"
+          },
+          "label": "Mesa de Centro"
+        },
+        {
+          "href": "/moveis/mesas/mesa-para-area-externa",
+          "image": {
+            "alt": "Mesa para Área Externa",
+            "url": "https://data.decoassets.com/abracasa/d0605ff9-c4ad-40d0-8cea-32724288e628/mesa-para-area-externa.png"
+          },
+          "label": "Mesa para Área Externa"
+        },
+        {
+          "href": "/moveis/mesas/mesa-infantil",
+          "image": {
+            "alt": "Mesa Infantil",
+            "url": "https://data.decoassets.com/abracasa/1c74a3e4-9db1-4708-b2e7-53621f6c37c1/mesa-infantil.png"
+          },
+          "label": "Mesa Infantil"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx"
+    },
+    {
+      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Mesa de Área Externa&nbsp;</span></p>",
+      "description": "<p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Espaço para entretenimento&nbsp;</span></p><p class=\"title-section\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Uma mesa de área externa proporciona um espaço dedicado para entretenimento ao ar livre. É um local perfeito para realizar refeições ao ar livre, organizar churrascos, festas ou simplesmente aproveitar momentos de lazer com familiares e amigos. Ter uma mesa de área externa cria um ambiente acolhedor e convidativo para desfrutar do ar livre.&nbsp;</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Durabilidade e resistência&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As mesas de área externa são projetadas para resistir às condições climáticas externas. Elas são construídas com materiais duráveis e resistentes, como madeira tratada, alumínio, aço inoxidável ou plástico resistente. Essa resistência permite que a mesa suporte a exposição ao sol, chuva, vento e outras condições climáticas, mantendo sua funcionalidade e aparência ao longo do tempo.&nbsp;</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Fácil manutenção&nbsp;</span></p><p class=\"title-section\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As mesas de área externa geralmente requerem pouca manutenção. Os materiais utilizados são projetados para serem fáceis de limpar e resistir a manchas, corrosão e desgaste. A maioria das mesas pode ser limpa com água e sabão suave, o que facilita a manutenção regular e a conservação da sua aparência.&nbsp;</span><br></p>",
+      "__resolveType": "site/sections/Content/SectionText.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -1,1 +1,143 @@
-{"name":"Office Estantes ","path":"/moveis/office/estantes","sections":[{"jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"Banner","mobile":"https://abracasa.vteximg.com.br/arquivos/ids/184441/banner_categorias_office_23.jpg?v=638191441536900000","desktop":"https://abracasa.vteximg.com.br/arquivos/ids/184441/banner_categorias_office_23.jpg?v=638191441536900000"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"categories":[{"href":"/moveis/office/conjunto-office","image":{"alt":"CONJUNTO OFFICE ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182616/conjunto-office-06.12.png?v=638059358265000000"},"label":"CONJUNTO OFFICE  "},{"href":"/moveis/office/cadeira-de-escritorio","image":{"alt":"CADEIRA DE ESCRITÓRIO ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182613/cadeira-escritorio-06.12.png?v=638059355450430000"},"label":"CADEIRA DE ESCRITÓRIO "},{"href":"/moveis/mesas/mesa-de-trabalho-e-escrivaninhas","image":{"alt":"MESAS DE ESCRITÓRIO ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182622/mesa-escritorio-06.12.png?v=638059360670670000"},"label":"MESAS DE ESCRITÓRIO "},{"href":"/moveis/office/gaveteiros","image":{"alt":"GAVETEIROS ","url":"https://abracasa.vteximg.com.br/arquivos/ids/182618/gaveteiro-06.12.png?v=638059359420500000"},"label":"GAVETEIROS "}],"__resolveType":"site/sections/Category/CategoryShelf.tsx"},{"page":{"sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx"},{"title":"<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Office&nbsp;</span></p>","description":"<p>Na Abra Casa você encontra tudo para um home office completo e muito confortável! Separamos alguns conjuntos office para você não precisar se preocupar com nada na hora de montar o seu escritório. Mas se você gosta de construir o ambiente do seu jeito, temos uma seleção muito especial de cadeiras para escritório - giratórias e ergométricas -, gaveteiros, estantes, mesas, bancadas e mais!&nbsp;</p>","__resolveType":"site/sections/Content/SectionText.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Office Estantes ",
+  "path": "/moveis/office/estantes",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "Banner",
+            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184441/banner_categorias_office_23.jpg?v=638191441536900000",
+            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184441/banner_categorias_office_23.jpg?v=638191441536900000"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "categories": [
+        {
+          "href": "/moveis/office/conjunto-office",
+          "image": {
+            "alt": "Conjunto Office",
+            "url": "https://data.decoassets.com/abracasa/ebe59889-c46e-4c0f-b4bb-bf294a44bee7/office.png"
+          },
+          "label": "Conjunto Office"
+        },
+        {
+          "href": "/moveis/office/cadeira-de-escritorio",
+          "image": {
+            "alt": "Cadeira de Escritório",
+            "url": "https://data.decoassets.com/abracasa/678023b5-b780-4cc1-9e07-bfa2bcb6c5dc/cadeira-de-escritorio.png"
+          },
+          "label": "Cadeira de Escritório"
+        },
+        {
+          "href": "/moveis/mesas/mesa-de-trabalho-e-escrivaninhas",
+          "image": {
+            "alt": "Mesa de Escritório",
+            "url": "https://data.decoassets.com/abracasa/19606953-0dfc-4c17-a73f-e13d30ea66d2/mesa-de-trabalho-e-escrivaninha.png"
+          },
+          "label": "Mesa de Escritório"
+        },
+        {
+          "href": "/moveis/office/gaveteiros",
+          "image": {
+            "alt": "Gaveteiros",
+            "url": "https://data.decoassets.com/abracasa/152c3cbf-83d1-48db-a394-bfe7100aca83/gaveteiro.png"
+          },
+          "label": "Gaveteiros"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        null,
+        "departamentos",
+        "marcas"
+      ]
+    },
+    {
+      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Office&nbsp;</span></p>",
+      "description": "<p>Na Abra Casa você encontra tudo para um home office completo e muito confortável! Separamos alguns conjuntos office para você não precisar se preocupar com nada na hora de montar o seu escritório. Mas se você gosta de construir o ambiente do seu jeito, temos uma seleção muito especial de cadeiras para escritório - giratórias e ergométricas -, gaveteiros, estantes, mesas, bancadas e mais!&nbsp;</p>",
+      "__resolveType": "site/sections/Content/SectionText.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
