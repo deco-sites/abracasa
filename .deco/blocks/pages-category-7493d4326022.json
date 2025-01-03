@@ -39,7 +39,9 @@
       "hiddenFilters": [
         "cor",
         "preço",
-        "produtossimilares"
+        "produtossimilares",
+        "tamanho",
+        "quantidade de lugares"
       ]
     },
     {
