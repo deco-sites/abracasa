@@ -35,7 +35,12 @@
         },
         "__resolveType": "Product Card Layout - 01"
       },
-      "startingPage": 1
+      "startingPage": 1,
+      "hiddenFilters": [
+        "cor",
+        "preço",
+        "produtossimilares"
+      ]
     },
     {
       "__resolveType": "Footer - 01"
