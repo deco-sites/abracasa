@@ -17,7 +17,6 @@ const useSort = (sortParam?: "legacy" | "intelligent") =>
 
 const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>, sortParam?: "legacy" | "intelligent") => {
   const urlSearchParams = new URLSearchParams(globalThis.location.search);
-
   const queryParam = sortParam === "intelligent"
     ? SORT_QUERY_PARAM_INTELLIGENT
     : SORT_QUERY_PARAM_LEGACY;
@@ -44,7 +43,7 @@ const portugueseMappings = {
 };
 
 function Sort(
-  { sortParam = "legacy", sortOptions, isMobile = false }: Props & { isMobile?: boolean },
+  { sortParam, sortOptions, isMobile = false }: Props & { isMobile?: boolean },
 ) {
   const sort = useSort(sortParam);
 
@@ -56,6 +55,7 @@ function Sort(
   if (isMobile) {
     const applySortOnMobile = (value: string) => {
       const urlSearchParams = new URLSearchParams(window.location.search);
+
       const queryParam = sortParam === "intelligent"
         ? SORT_QUERY_PARAM_INTELLIGENT
         : SORT_QUERY_PARAM_LEGACY;

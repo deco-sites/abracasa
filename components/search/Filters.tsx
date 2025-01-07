@@ -97,6 +97,7 @@ function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Prop
     <ul class="flex flex-wrap flex-row gap-3">
       {filters
         .filter(isToggle)
+        .filter((item) => item.label !== "Departments")
         .filter((item) =>
           !isCategoriesFilterActive || item.label === "Categoria"
         )
