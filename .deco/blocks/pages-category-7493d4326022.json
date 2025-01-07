@@ -41,7 +41,9 @@
         "preço",
         "produtossimilares",
         "tamanho",
-        "quantidade de lugares"
+        "quantidade de lugares",
+        "marca",
+        "características"
       ]
     },
     {
