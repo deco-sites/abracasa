@@ -33,27 +33,55 @@ export default function ProductMatcher({ page, suggestions }: Props) {
   const product = page.product;
   const { price: definitivePrice, seller } = useOffer(product.offers);
 
-  const secondProduct = suggestions[0];
-  const { price: secondPrice, seller: secondSeller } = useOffer(
-    secondProduct.offers,
-  );
-
-  const isChecked = true;
-
+  // Calculate total price including all products
   const totalPrice = (definitivePrice ?? 0) +
-    (isChecked ? (secondPrice ?? 0) : 0);
+    suggestions.reduce((sum, suggestion) => {
+      const { price } = useOffer(suggestion.offers);
+      return sum + (price ?? 0);
+    }, 0);
+
   const installmentPrice = totalPrice / 8;
+
+  // Prepare products for cart
+  const cartProducts = [
+    {
+      seller,
+      discount: 0,
+      productGroupId: product.isVariantOf?.productGroupID ?? "",
+      name: product.name ?? "",
+      price: definitivePrice!,
+      quantity: 1,
+      sku: product.sku,
+    },
+    ...suggestions.map((suggestion) => {
+      const { price: suggestionPrice, seller: suggestionSeller } = useOffer(
+        suggestion.offers
+      );
+      return {
+        seller: suggestionSeller,
+        quantity: 1,
+        discount: 0,
+        productGroupId: suggestion.isVariantOf?.productGroupID ?? "",
+        name: suggestion.name ?? "",
+        price: suggestionPrice!,
+        sku: suggestion.sku,
+      };
+    }),
+  ];
 
   return (
     <div class="flex flex-col xl:flex-row container max-w-[1200px] items-center w-full px-2 xl:px-0 xl:gap-8 my-8">
       <div class="flex flex-col xl:flex-row items-center justify-start border border-gray-dark xl:border-none rounded-xl px-1 xl:px-0 xl:gap-8">
         <ProductCard product={product} />
 
-        <div class="btn btn-circle btn-outline text-gray-950 hover:text-gray-950 hover:bg-transparent">
-          <Icon id="Plus" width={12} height={12} strokeWidth={3} />
-        </div>
-
-        <ProductCard product={secondProduct} />
+        {suggestions.map((suggestion) => (
+          <div key={suggestion.productID} class="flex flex-col xl:flex-row items-center">
+            <div class="btn btn-circle btn-outline text-gray-950 hover:text-gray-950 hover:bg-transparent">
+              <Icon id="Plus" width={12} height={12} strokeWidth={3} />
+            </div>
+            <ProductCard product={suggestion} />
+          </div>
+        ))}
 
         <div class="btn btn-circle btn-outline text-gray-950 hover:text-gray-950 hover:bg-transparent mb-2 xl:mb-0">
           =
@@ -62,10 +90,10 @@ export default function ProductMatcher({ page, suggestions }: Props) {
 
       <div class="flex flex-col items-center xl:items-start gap-1 mt-4 xl:mt-0">
         <p>
-          {isChecked ? "Compre os 2 produtos por:" : "Compre um 1 produto por:"}
+          {`Compre os ${suggestions.length + 1} produtos por:`}
         </p>
         <span class="font-bold leading-[22px]">
-          {formatPrice(totalPrice, secondProduct.offers!.priceCurrency!)}
+          {formatPrice(totalPrice, product.offers!.priceCurrency!)}
         </span>
         <span class="flex">
           <div class="text-sm leading-[22px]">
@@ -73,35 +101,14 @@ export default function ProductMatcher({ page, suggestions }: Props) {
             <span class="font-bold text-lg">
               {formatPrice(
                 installmentPrice,
-                secondProduct.offers!.priceCurrency!,
+                product.offers!.priceCurrency!,
               )}
             </span>{"  "}
             s/juros
           </div>
         </span>
 
-        <AddToCartButton
-          products={[
-            {
-              seller,
-              discount: 0,
-              productGroupId: product.isVariantOf?.productGroupID ?? "",
-              name: product.name ?? "",
-              price: definitivePrice!,
-              quantity: 1,
-              sku: product.sku,
-            },
-            {
-              seller: secondSeller,
-              quantity: 1,
-              discount: 0,
-              productGroupId: secondProduct.isVariantOf?.productGroupID ?? "",
-              name: secondProduct.name ?? "",
-              price: secondPrice!,
-              sku: secondProduct.sku,
-            },
-          ]}
-        />
+        <AddToCartButton products={cartProducts} />
       </div>
     </div>
   );
