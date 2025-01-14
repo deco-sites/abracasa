@@ -44,7 +44,8 @@
         "quantidade de lugares",
         "marca",
         "características"
-      ]
+      ],
+      "sortParam": "intelligent"
     },
     {
       "__resolveType": "Footer - 01"
