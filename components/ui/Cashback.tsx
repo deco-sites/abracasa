@@ -10,6 +10,7 @@ import type { CashbackAPIResponse } from "$store/loaders/sellbie/get-cashback.ts
 function NotLoggedIn() {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [isHome, setIsHome] = useState(false);
 
   useEffect(() => {
     const header = document.getElementById("nav");
@@ -30,6 +31,9 @@ function NotLoggedIn() {
           }
         }
       };
+
+      const headerHome = header.getAttribute("data-ishome");
+      setIsHome(headerHome === "true");
 
       const observer = new MutationObserver(observerCallback);
       observer.observe(header, { attributes: true });
@@ -55,7 +59,7 @@ function NotLoggedIn() {
         className="p-0.5 m-1"
       >
         <a href="/user-login" className="w-9 h-9">
-          {isHovered || isScrolling ? <SellbieGrayIcon /> : <SellbieIcon />}
+          {!isHome || isHovered || isScrolling ? <SellbieGrayIcon /> : <SellbieIcon />}
         </a>
       </div>
 
