@@ -1,1 +1,114 @@
-{"name":"Campanha Ateliê Casa","path":"/campanha/atelie-casa","sections":[{"title":"Ateliê Casa","jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx","titleTemplate":"Ateliê Casa"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"mobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/22106f87-58ca-48a1-ae89-7f8d26d3085f/casa_banner_especial_mobile_800x400_atelie.png","desktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/c3bffe0a-7851-41f8-bf22-2c87635415f0/casa_banner_especial_desk_1800x220_atelie.png"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"html":"<p style=\"text-align: center\"><br></p>","__resolveType":"site/sections/Cashback/HTMLContent.tsx"},{"html":"<p></p>","__resolveType":"site/sections/Cashback/HTMLContent.tsx"},{"page":{"fq":"H:450","sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx","isCategoriesFilterActive":true},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Campanha Ateliê Casa",
+  "path": "/campanha/atelie-casa",
+  "sections": [
+    {
+      "title": "Ateliê Casa",
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "titleTemplate": "Ateliê Casa"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/22106f87-58ca-48a1-ae89-7f8d26d3085f/casa_banner_especial_mobile_800x400_atelie.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/c3bffe0a-7851-41f8-bf22-2c87635415f0/casa_banner_especial_desk_1800x220_atelie.png"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "html": "<p style=\"text-align: center\"><br></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+    },
+    {
+      "html": "<p></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+    },
+    {
+      "page": {
+        "sort": "price:desc",
+        "count": 48,
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+        "fuzzy": "automatic",
+        "selectedFacets": [
+          {
+            "key": "productClusterIds",
+            "value": "450"
+          }
+        ]
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "isCategoriesFilterActive": true,
+      "sortParam": "intelligent"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

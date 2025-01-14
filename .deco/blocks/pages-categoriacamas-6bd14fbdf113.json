@@ -29,9 +29,7 @@
     },
     {
       "page": {
-        "sort": "OrderByTopSaleDESC",
-        "count": 48,
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+        "__resolveType": "PLP Intelligent Loader"
       },
       "layout": {
         "columns": {
@@ -90,8 +88,11 @@
       "hiddenFilters": [
         "departamentos",
         "marcas",
-        "modelo"
-      ]
+        "modelo",
+        "produtossimilares",
+        "marca"
+      ],
+      "sortParam": "intelligent"
     },
     {
       "__resolveType": "Footer - 01"
