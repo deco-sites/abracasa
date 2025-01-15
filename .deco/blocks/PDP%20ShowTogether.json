@@ -1,1 +1,10 @@
-{"slug":{"param":"slug","__resolveType":"website/functions/requestToParam.ts"},"count":1,"crossSelling":"showtogether","__resolveType":"vtex/loaders/legacy/relatedProductsLoader.ts","hideUnavailableItems":true}
+{
+  "slug": {
+    "param": "slug",
+    "__resolveType": "website/functions/requestToParam.ts"
+  },
+  "count": 5,
+  "crossSelling": "showtogether",
+  "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts",
+  "hideUnavailableItems": true
+}
