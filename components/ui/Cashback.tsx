@@ -1,27 +1,71 @@
 import SellbieIcon from "$store/components/ui/SellbieIcon.tsx";
+import SellbieGrayIcon from "$store/components/ui/SellbieGrayIcon.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 import { invoke } from "$store/runtime.ts";
 import { useSignal } from "@preact/signals";
-import { useEffect } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import type { CashbackAPIResponse } from "$store/loaders/sellbie/get-cashback.ts";
 
 function NotLoggedIn() {
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHome, setIsHome] = useState(false);
+
+  useEffect(() => {
+    const header = document.getElementById("nav");
+
+    if (header) {
+      let previousValue = header.getAttribute("data-scrolling");
+
+      const observerCallback: MutationCallback = (mutationsList: MutationRecord[]) => {
+        // deno-lint-ignore prefer-const
+        for (let mutation of mutationsList) {
+          if (mutation.type === "attributes" && mutation.attributeName === "data-scrolling") {
+            const currentValue = header.getAttribute("data-scrolling");
+
+            if (currentValue !== previousValue) {
+              setIsScrolling(currentValue === "true");
+              previousValue = currentValue;
+            }
+          }
+        }
+      };
+
+      const headerHome = header.getAttribute("data-ishome");
+      setIsHome(headerHome === "true");
+
+      const observer = new MutationObserver(observerCallback);
+      observer.observe(header, { attributes: true });
+
+      const handleMouseOver = () => setIsHovered(true);
+      const handleMouseLeave = () => setIsHovered(false);
+      header.addEventListener("mouseover", handleMouseOver);
+      header.addEventListener("mouseleave", handleMouseLeave);
+
+      return () => {
+        observer.disconnect();
+        header.removeEventListener("mouseover", handleMouseOver);
+        header.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    }
+  }, []);
+
   return (
-    <div class="dropdown dropdown-hover">
+    <div className="dropdown dropdown-hover">
       <div
         tabIndex={0}
         role="button"
-        class="p-0.5 m-1"
+        className="p-0.5 m-1"
       >
-        <a href="/user-login " class="w-9 h-9">
-          <SellbieIcon />
+        <a href="/user-login" className="w-9 h-9">
+          {!isHome || isHovered || isScrolling ? <SellbieGrayIcon /> : <SellbieIcon />}
         </a>
       </div>
 
       <div
         tabIndex={0}
-        class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-60 -translate-x-1/2 left-1/2"
+        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-60 -translate-x-1/2 left-1/2"
       >
         <span>Você precisa estar logado!</span>
       </div>
