@@ -36,11 +36,9 @@ function ProductGallery({ products, layout, offset }: Props) {
 
   return (
     <div
-      class={`grid ${
-        mobile ?? "grid-cols-1"
-      } gap-2 items-start justify-center ${
-        desktop ?? "xl:grid-cols-4"
-      } lg:grid-cols-3 lg:gap-8`}
+      class={`grid ${mobile ?? "grid-cols-1"
+        } gap-2 items-start justify-center ${desktop ?? "xl:grid-cols-4"
+        } lg:grid-cols-3 lg:gap-8`}
     >
       {products?.map((product, index) => (
         <ProductCard

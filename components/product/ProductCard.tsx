@@ -22,6 +22,7 @@ export interface Layout {
   hide?: {
     productName?: boolean;
     productDescription?: boolean;
+    productWithoutDiscount?: boolean;
     allPrices?: boolean;
     installments?: boolean;
     skuSelector?: boolean;
@@ -78,6 +79,7 @@ function ProductCard(
   const [front, second] = images ?? [];
   const back = images?.find((item) => item.name === "dois") ?? second;
   const { listPrice, price, seller, installments } = useOffer(offers);
+
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
 

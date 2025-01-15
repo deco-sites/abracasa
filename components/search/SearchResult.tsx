@@ -57,12 +57,20 @@ function Result({
   hiddenFilters = [],
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
-  const perPage = pageInfo.recordPerPage || products.length;
+
+  const filteredProducts = cardLayout?.hide?.productWithoutDiscount
+    ? products?.filter((product) => {
+      const { listPrice, price } = useOffer(product.offers);
+
+      return (listPrice ?? 0) > (price ?? 0);
+    })
+    : products;
+
+  const perPage = pageInfo.recordPerPage || filteredProducts.length;
   const id = useId();
 
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
-
 
   return (
     <div id="PLP" class="flex flex-col gap-1">
@@ -96,7 +104,7 @@ function Result({
 
             <div class="flex-grow" id={id}>
               <ProductGallery
-                products={products}
+                products={filteredProducts}
                 offset={offset}
                 layout={{ card: cardLayout, columns: layout?.columns }}
               />

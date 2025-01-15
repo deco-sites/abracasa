@@ -32,7 +32,7 @@
     {
       "page": {
         "sort": "OrderByTopSaleDESC",
-        "term": "off ",
+        "term": "off",
         "count": 48,
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
@@ -48,7 +48,8 @@
         "layout": {
           "hide": {
             "skuSelector": true,
-            "productDescription": true
+            "productDescription": true,
+            "productWithoutDiscount": true
           },
           "show": {
             "cta": true,
