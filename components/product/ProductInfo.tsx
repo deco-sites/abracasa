@@ -11,7 +11,7 @@ import ProductSelector from "./ProductVariantSelector.tsx";
 import Similars from "./Similars.tsx";
 import ReviewsScript from "./ReviewsScript.tsx";
 import QuickReview from "./QuickReview.tsx";
-import AugmentedReality from "./AugmentedReality.tsx";
+// import AugmentedReality from "./AugmentedReality.tsx";
 import CTA from "./CTA.tsx";
 import PhysicalStoresButton from "$store/islands/PhysicalStoresButton.tsx";
 import ArButton from "$store/components/product/ArButton.tsx";
@@ -235,7 +235,7 @@ function ProductInfo({ page, layout }: Props) {
         </div>
       )}
 
-      <AugmentedReality />
+      {/* <AugmentedReality /> */}
 
       <CTA
         eventParams={{ items: [eventItem] }}
