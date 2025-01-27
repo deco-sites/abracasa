@@ -151,6 +151,13 @@
                 "children": []
               },
               {
+                "url": "/moveis/mesas/mesa-de-trabalho-e-escrivaninhas",
+                "name": "Escrivaninhas",
+                "@type": "SiteNavigationElement",
+                "image": [],
+                "children": []
+              },
+              {
                 "url": "/moveis/office/gaveteiros",
                 "name": "Gaveteiros",
                 "@type": "SiteNavigationElement",
