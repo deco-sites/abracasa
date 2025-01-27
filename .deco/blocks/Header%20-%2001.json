@@ -93,13 +93,6 @@
                 "children": []
               },
               {
-                "url": "/moveis/mesas/mesa-de-trabalho-e-escrivaninhas",
-                "name": "Mesa de Trabalho",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
                 "url": "/moveis/mesas/mesa-para-area-externa",
                 "name": "Mesa para Área Externa",
                 "@type": "SiteNavigationElement",
