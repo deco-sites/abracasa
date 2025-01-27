@@ -100,13 +100,6 @@
                 "children": []
               },
               {
-                "url": "/moveis/mesas/mesa-infantil",
-                "name": "Mesa Infantil",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
                 "url": "/moveis/mesas/mesa-para-area-externa",
                 "name": "Mesa para Área Externa",
                 "@type": "SiteNavigationElement",
