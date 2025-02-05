@@ -19,8 +19,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://data.decoassets.com/abracasa/655eb591-c731-4c8c-86e9-e329fa9173d7/casa_sale_banner_especial_mobile_800x400.jpg",
-            "desktop": "https://data.decoassets.com/abracasa/47b2866e-0eb9-4b4b-a21d-0d44cdd2cf99/casa_sale_banner_especial_desktop_1800x220.png"
+            "mobile": "https://data.decoassets.com/abracasa/85afb587-578f-4c9a-883c-37e265bbd833/casa_sale_banner_especial_mobile_800x400-(1).jpg",
+            "desktop": "https://data.decoassets.com/abracasa/d4ab61bd-0c05-4b37-a7f4-d0362e3d0141/casa_sale_banner_especial_desktop_1800x220.jpg"
           },
           "matcher": "/*"
         }
