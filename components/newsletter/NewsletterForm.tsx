@@ -46,39 +46,39 @@ export default function NewsletterForm({ title, subtitle }: Props) {
       {!isSubmitted.value
         ? (
           <>
-            <h1 class="text-xl font-bold my-0 mt-1.5">
-              {title ?? "Receba novidades, ofertas e conteúdos exclusivos!"}
+            <h1 class="text-2xl font-normal my-0 mt-1.5">
+              {title ?? "Newsletter"}
             </h1>
 
-            <p class="text-xs mb-4">
+            <p class="text-lg my-[14px] my:mb-6 font-light">
               {subtitle ??
-                "Enviaremos por e-mail novidades e promoções exclusivas"}
+                "Cadastre-se e receba novidades, ofertas e conteúdos exclusivos."}
             </p>
 
             <form
               onSubmit={handleSubmit}
-              class="w-full h-full flex flex-col lg:flex-row items-center justify-center gap-7 pb-5"
+              class="w-full max-w-[440px] h-full flex flex-col items-center justify-center pb-5"
             >
               <input
                 name="name"
                 type="text"
                 placeholder="Seu nome"
-                class="border border-gray-200 min-w-[320px] min-h-[32px] text-xs px-4 focus:outline-none focus:border-white text-black"
+                class="border-b border-[#D9D9D9] w-full min-h-[50px] text-base font-light focus:outline-none focus:border-white text-[#555555] bg-transparent"
               />
               <input
                 name="email"
                 type="email"
                 placeholder="Seu e-mail"
-                class="border border-gray-200 min-w-[320px] min-h-[32px] text-xs px-4 focus:outline-none focus:border-white text-black"
+                class="mt-8 mb-6 border-b border-[#D9D9D9] w-full min-h-[50px] text-base font-light focus:outline-none focus:border-white text-[#555555] bg-transparent"
               />
               {!loading.value
                 ? (
                   <button
                     type="submit"
                     id="newsletter"
-                    class="border border-solid border-[#B9154C] min-w-[140px] min-h-[32px] bg-[#2C2C2C] px-4 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-[#B9154C]focus:ring-opacity-50"
+                    class="btn bg-white hover:bg-dimgray hover:text-white w-full border border-solid border-[#555555] text-[#555555] min-w-[140px] min-h-[48px] px-4 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#B9154C]focus:ring-opacity-50 tracking-[0.1em]"
                   >
-                    Enviar
+                    CADASTRAR
                   </button>
                 )
                 : <span class="loading loading-spinner loading-md" />}

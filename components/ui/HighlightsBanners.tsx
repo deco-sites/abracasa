@@ -16,8 +16,8 @@ export interface Props {
     };
 
     link?: string;
-    description: string;
-    subDescription: string;
+    description?: string;
+    subDescription?: string;
   }>;
 }
 
@@ -53,15 +53,16 @@ export default function CategoryList({ title, cards, interval }: Props) {
 
   return (
     <section class="flex flex-col flex-grow w-full h-full items-center justify-center bg-white pt-8 pb-12">
-      <div class="flex items-center justify-center text-center mb-6">
-        <h2 class="text-2xl lg:text-4xl font-normal text-dimgray lg:leading-[49px]">
+      {title && <div class="w-full container max-w-[850px] lg:max-w-[83%] text-left mb-[14px] px-5 lg:px-0">
+        <h2 class="text-2xl font-normal text-dimgray lg:leading-[49px]">
           {title}
         </h2>
       </div>
+      }
 
       <div
         id={id}
-        class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] container max-w-[850px] xl:max-w-[82%] h-full px-2 lg:px-0"
+        class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] container lg:max-w-[83%] h-full pl-6 sm:pl-0"
       >
         <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6 h-full">
           {cards?.map((card, index) => (
@@ -72,9 +73,8 @@ export default function CategoryList({ title, cards, interval }: Props) {
               <div class="flex flex-col w-full h-full">
                 <a href={card.link}>
                   <Image
-                    class={`${
-                      card.image.isBorder ? "rounded-full" : "rounded-none"
-                    }`}
+                    class={`${card.image.isBorder ? "rounded-full" : "rounded-none"
+                      }`}
                     src={card.image.icon}
                     alt={card.image.alt}
                     width={500}
@@ -85,7 +85,7 @@ export default function CategoryList({ title, cards, interval }: Props) {
                   />
                 </a>
 
-                <div class="flex flex-col w-full h-full mt-2 text-base leading-[22px]">
+                {card.description && <div class="flex flex-col w-full h-full mt-2 text-base leading-[22px]">
                   <h3 class="text-lg font-semibold text-start">
                     {card.description}
                   </h3>
@@ -94,12 +94,13 @@ export default function CategoryList({ title, cards, interval }: Props) {
                     {card.subDescription}
                   </p>
                 </div>
+                }
               </div>
             </Slider.Item>
           ))}
         </Slider>
 
-        <Buttons />
+        {cards?.length && cards?.length > 3 && <Buttons />}
 
         {/* <Dots cards={cards} interval={interval} /> */}
 

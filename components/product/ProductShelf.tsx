@@ -19,7 +19,7 @@ export interface Props {
   description?: string;
   layout?: {
     headerAlignment?: "center" | "left";
-    headerfontSize?: "Normal" | "Large";
+    headerfontSize?: "Small" | "Normal" | "Large";
   };
   cardLayout?: cardLayout;
 }
@@ -39,17 +39,17 @@ function ProductShelf({
   }
 
   return (
-    <div id="4017801744-0" class="w-full container py-8 flex flex-col gap-12 lg:gap-16 lg:py-10 relative lg:max-w-[85%]">
+    <div id="4017801744-0" class="w-full container py-8 flex flex-col gap-3 lg:gap-4 lg:py-10 relative lg:max-w-[85%]">
       <Header
         title={title || ""}
         description={description || ""}
-        fontSize={layout?.headerfontSize || "Large"}
-        alignment={layout?.headerAlignment || "center"}
+        fontSize={layout?.headerfontSize || "Small"}
+        alignment={layout?.headerAlignment || "left"}
       />
 
       <div
         id={id}
-        class="grid grid-cols-[48px_1fr_48px] px-2 sm:px-5"
+        class="grid grid-cols-[48px_1fr_48px] pl-6 sm:px-0"
       >
         <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar gap-6 col-span-full row-start-2 row-end-5 pb-2">
           {products?.map((product, index) => (
@@ -69,14 +69,14 @@ function ProductShelf({
         </Slider>
 
         <>
-          <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
-            <Slider.PrevButton class="btn btn-circle btn-outline absolute right-1/2 bg-base-100">
-              <Icon size={24} id="ChevronLeft" strokeWidth={3} />
+          <div class="hidden sm:block z-10 col-start-1 row-start-3 absolute right-11 top-[38px]">
+            <Slider.PrevButton class="btn !w-8 !h-8 !min-h-8 btn-circle btn-outline bg-base-100">
+              <Icon class="rotate-180" size={16} id="ChevronRight" strokeWidth={3} />
             </Slider.PrevButton>
           </div>
-          <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
-            <Slider.NextButton class="btn btn-circle btn-outline absolute left-1/2 bg-base-100">
-              <Icon size={24} id="ChevronRight" strokeWidth={3} />
+          <div class="hidden sm:block z-10 col-start-3 row-start-3 absolute right-0 top-[38px]">
+            <Slider.NextButton class="btn !w-8 !h-8 !min-h-8 btn-circle btn-outline bg-base-100">
+              <Icon size={16} id="ChevronRight" strokeWidth={3} />
             </Slider.NextButton>
           </div>
         </>
