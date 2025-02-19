@@ -22,11 +22,25 @@
                   "start": "2024-02-28T20:00:00.000Z",
                   "__resolveType": "website/matchers/date.ts"
                 },
+<<<<<<< HEAD
                 "value": { "__resolveType": "Header - 01" }
               },
               {
                 "rule": { "__resolveType": "website/matchers/always.ts" },
                 "value": { "__resolveType": "Header - 01" }
+=======
+                "value": {
+                  "__resolveType": "Header - 01"
+                }
+              },
+              {
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
+                "value": {
+                  "__resolveType": "Header - 01"
+                }
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
               }
             ],
             "__resolveType": "website/flags/multivariate/section.ts"
@@ -385,13 +399,27 @@
               "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
             },
             "layout": {
+<<<<<<< HEAD
               "columns": { "mobile": 2, "desktop": 4 },
+=======
+              "columns": {
+                "mobile": 2,
+                "desktop": 4
+              },
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
               "variant": "drawer",
               "pagination": "show-more"
             },
             "cardLayout": {
               "layout": {
+<<<<<<< HEAD
                 "hide": { "skuSelector": true, "productDescription": true },
+=======
+                "hide": {
+                  "skuSelector": true,
+                  "productDescription": true
+                },
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
                 "show": {
                   "cta": true,
                   "allPrices": true,
@@ -437,11 +465,19 @@
           {
             "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
             "title": "Cookies",
+<<<<<<< HEAD
             "layout": { "content": "Piled up", "position": "Left" },
+=======
+            "layout": {
+              "content": "Piled up",
+              "position": "Left"
+            },
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
             "policy": {
               "link": "/",
               "text": "Saiba mais sobre nossas políticas de privacidade"
             },
+<<<<<<< HEAD
             "buttons": { "allowText": "Aceitar", "cancelText": "Fechar" },
             "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
           },
@@ -450,6 +486,23 @@
       },
       {
         "rule": { "__resolveType": "website/matchers/always.ts" },
+=======
+            "buttons": {
+              "allowText": "Aceitar",
+              "cancelText": "Fechar"
+            },
+            "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
+          },
+          {
+            "__resolveType": "Footer - 01"
+          }
+        ]
+      },
+      {
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
         "value": [
           {
             "noIndexing": false,
@@ -463,11 +516,25 @@
                   "start": "2024-02-28T20:00:00.000Z",
                   "__resolveType": "website/matchers/date.ts"
                 },
+<<<<<<< HEAD
                 "value": { "__resolveType": "Header - 01" }
               },
               {
                 "rule": { "__resolveType": "website/matchers/always.ts" },
                 "value": { "__resolveType": "Header - 01" }
+=======
+                "value": {
+                  "__resolveType": "Header - 01"
+                }
+              },
+              {
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
+                "value": {
+                  "__resolveType": "Header - 01"
+                }
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
               }
             ],
             "__resolveType": "website/flags/multivariate/section.ts"
@@ -492,7 +559,11 @@
               "title": "Confira tudo o que preparamos",
               "target": "_self"
             },
+<<<<<<< HEAD
             "description": "<p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\"><span class=\"TextRun SCXW229824890 BCX0\" lang=\"PT-BR\" xml:lang=\"PT-BR\" data-contrast=\"none\"><span class=\"NormalTextRun SCXW229824890 BCX0\">Ambientes </span><span class=\"NormalTextRun SCXW229824890 BCX0\">que</span><span class=\"NormalTextRun SCXW229824890 BCX0\"> reflete</span><span class=\"NormalTextRun SCXW229824890 BCX0\">m</span> <span class=\"NormalTextRun SCXW229824890 BCX0\">o </span><span class=\"NormalTextRun SCXW229824890 BCX0\">equilíbrio entre funcionalidade e estética. Do minimalismo moderno às linhas clássicas, </span><span class=\"NormalTextRun SCXW229824890 BCX0\">a</span> </span><strong><span class=\"TextRun SCXW229824890 BCX0\" lang=\"PT-BR\" xml:lang=\"PT-BR\" data-contrast=\"none\"><span class=\"NormalTextRun SCXW229824890 BCX0\">Coleção 2024</span></span></strong><span class=\"TextRun SCXW229824890 BCX0\" lang=\"PT-BR\" xml:lang=\"PT-BR\" data-contrast=\"none\"> <span class=\"NormalTextRun SCXW229824890 BCX0\">oferece uma experiência única</span><span class=\"NormalTextRun SCXW229824890 BCX0\">,</span> <span class=\"NormalTextRun SCXW229824890 BCX0\">cada curva, cada textura, foi pensada para criar uma atmosfera que reflete </span><span class=\"NormalTextRun SCXW229824890 BCX0\">o melhor do design </span></span><span class=\"TextRun SCXW229824890 BCX0\" lang=\"PT-PT\" xml:lang=\"PT-PT\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW229824890 BCX0\">para ser</span></span><span class=\"TextRun SCXW229824890 BCX0\" lang=\"PT-PT\" xml:lang=\"PT-PT\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW229824890 BCX0\"> <strong>a expressão do seu lar</strong></span></span><span class=\"TextRun SCXW229824890 BCX0\" lang=\"PT-BR\" xml:lang=\"PT-BR\" data-contrast=\"none\"><span class=\"NormalTextRun SCXW229824890 BCX0\">.&nbsp;</span></span></span></p>",
+=======
+            "description": "<p><span style=\"font-size: 12pt\">Ambientes que refletem o equilíbrio entre funcionalidade e estética. Do minimalismo moderno às linhas clássicas, a </span><strong><span style=\"font-size: 12pt\">Coleção 2024</span></strong><span style=\"font-size: 12pt\"> oferece uma experiência única, cada curva, cada textura, foi pensada para criar uma atmosfera que reflete o melhor do design para ser </span><strong><span style=\"font-size: 12pt\">a expressão do seu lar</span></strong><span style=\"font-size: 12pt\">.&nbsp;</span></p>",
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
             "__resolveType": "site/sections/Content/ImageAndTextHero.tsx",
             "backgroundColor": "#ebeae4",
             "mediaDevicePosition": "md:flex-row",
@@ -824,13 +895,27 @@
               "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
             },
             "layout": {
+<<<<<<< HEAD
               "columns": { "mobile": 2, "desktop": 4 },
+=======
+              "columns": {
+                "mobile": 2,
+                "desktop": 4
+              },
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
               "variant": "drawer",
               "pagination": "show-more"
             },
             "cardLayout": {
               "layout": {
+<<<<<<< HEAD
                 "hide": { "skuSelector": true, "productDescription": true },
+=======
+                "hide": {
+                  "skuSelector": true,
+                  "productDescription": true
+                },
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
                 "show": {
                   "cta": true,
                   "allPrices": true,
@@ -876,19 +961,42 @@
           {
             "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
             "title": "Cookies",
+<<<<<<< HEAD
             "layout": { "content": "Piled up", "position": "Left" },
+=======
+            "layout": {
+              "content": "Piled up",
+              "position": "Left"
+            },
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
             "policy": {
               "link": "/",
               "text": "Saiba mais sobre nossas políticas de privacidade"
             },
+<<<<<<< HEAD
             "buttons": { "allowText": "Aceitar", "cancelText": "Fechar" },
             "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
           },
           { "__resolveType": "Footer - 01" }
+=======
+            "buttons": {
+              "allowText": "Aceitar",
+              "cancelText": "Fechar"
+            },
+            "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
+          },
+          {
+            "__resolveType": "Footer - 01"
+          }
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
         ]
       }
     ],
     "__resolveType": "website/flags/multivariate.ts"
   },
   "__resolveType": "website/pages/Page.tsx"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 68252dd358531c02e0403435d757dd744b4d630f
