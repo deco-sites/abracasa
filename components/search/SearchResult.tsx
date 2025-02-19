@@ -11,7 +11,7 @@ import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalytic
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import { AppContext } from "apps/vtex/mod.ts";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
-import { hidden } from "std/fmt/colors.ts";
+// import { hidden } from "std/fmt/colors.ts";
 
 export interface Layout {
   /**
@@ -62,7 +62,6 @@ function Result({
 
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
-
 
   return (
     <div id="PLP" class="flex flex-col gap-1">
@@ -158,8 +157,8 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
       return fetchedProducts?.products?.filter((item) =>
         item.productID !==
-        products.find((product) => extractSimilarLabel(product) === label)
-          ?.productID
+          products.find((product) => extractSimilarLabel(product) === label)
+            ?.productID
       ) || [];
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);

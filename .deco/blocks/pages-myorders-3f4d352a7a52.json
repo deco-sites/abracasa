@@ -1,1 +1,29 @@
-{"name":"My Orders","path":"/user-orders","sections":[{"__resolveType":"Header - 01"},{"src":"/_secure/account#/orders","minHeight":800,"__resolveType":"site/sections/ProxyIframe.tsx","LinksAcceptables":["https://www.abracasa.com.br/account","https://www.abracasa.com.br/account#/","https://www.abracasa.com.br/_secure/account#/profile","https://www.abracasa.com.br/_secure/account#/cashback","https://www.abracasa.com.br/_secure/","https://www.abracasa.com.br/_secure/account","https://www.abracasa.com.br/_secure/account#/","https://www.abracasa.com.br/_secure","https://www.abracasa.com.br/_secure/account#/cards","https://www.abracasa.com.br/_secure/account#/addresses","https://www.abracasa.com.br/_secure/account#/authentication","https://www.abracasa.com.br/_secure/account#/orders"]},{"__resolveType":"SectionNewsletter - Abracasa"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "My Orders",
+  "path": "/user-orders",
+  "sections": [
+    { "__resolveType": "Header - 01" },
+    {
+      "src": "/_secure/account#/orders",
+      "minHeight": 800,
+      "__resolveType": "site/sections/ProxyIframe.tsx",
+      "LinksAcceptables": [
+        "https://www.abracasa.com.br/account",
+        "https://www.abracasa.com.br/account#/",
+        "https://www.abracasa.com.br/_secure/account#/profile",
+        "https://www.abracasa.com.br/_secure/account#/cashback",
+        "https://www.abracasa.com.br/_secure/",
+        "https://www.abracasa.com.br/_secure/account",
+        "https://www.abracasa.com.br/_secure/account#/",
+        "https://www.abracasa.com.br/_secure",
+        "https://www.abracasa.com.br/_secure/account#/cards",
+        "https://www.abracasa.com.br/_secure/account#/addresses",
+        "https://www.abracasa.com.br/_secure/account#/authentication",
+        "https://www.abracasa.com.br/_secure/account#/orders"
+      ]
+    },
+    { "__resolveType": "SectionNewsletter - Abracasa" },
+    { "__resolveType": "Footer - 01" }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

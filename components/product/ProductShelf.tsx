@@ -39,7 +39,10 @@ function ProductShelf({
   }
 
   return (
-    <div id="4017801744-0" class="w-full container py-8 flex flex-col gap-3 lg:gap-4 lg:py-10 relative lg:max-w-[85%]">
+    <div
+      id="4017801744-0"
+      class="w-full container py-8 flex flex-col gap-3 lg:gap-4 lg:py-10 relative lg:max-w-[85%]"
+    >
       <Header
         title={title || ""}
         description={description || ""}
@@ -71,7 +74,12 @@ function ProductShelf({
         <>
           <div class="hidden sm:block z-10 col-start-1 row-start-3 absolute right-11 top-[38px]">
             <Slider.PrevButton class="btn !w-8 !h-8 !min-h-8 btn-circle btn-outline bg-base-100">
-              <Icon class="rotate-180" size={16} id="ChevronRight" strokeWidth={3} />
+              <Icon
+                class="rotate-180"
+                size={16}
+                id="ChevronRight"
+                strokeWidth={3}
+              />
             </Slider.PrevButton>
           </div>
           <div class="hidden sm:block z-10 col-start-3 row-start-3 absolute right-0 top-[38px]">
@@ -124,8 +132,8 @@ export const loader = async (props: Props, _req: Request, ctx: AppContext) => {
 
       return fetchedProducts?.products?.filter((item) =>
         item.productID !==
-        products.find((product) => extractSimilarLabel(product) === label)
-          ?.productID
+          products.find((product) => extractSimilarLabel(product) === label)
+            ?.productID
       ) || [];
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);

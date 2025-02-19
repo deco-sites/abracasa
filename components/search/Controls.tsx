@@ -11,15 +11,17 @@ import type { ProductListingPage } from "apps/commerce/types.ts";
 import { useEffect } from "preact/hooks";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-export type Props = Pick<
-  ProductListingPage,
-  "filters" | "breadcrumb" | "sortOptions"
-> & {
-  sortParam?: "legacy" | "intelligent";
-  displayFilter?: boolean;
-  isCategoriesFilterActive?: boolean;
-  hiddenFilters?: string[];
-};
+export type Props =
+  & Pick<
+    ProductListingPage,
+    "filters" | "breadcrumb" | "sortOptions"
+  >
+  & {
+    sortParam?: "legacy" | "intelligent";
+    displayFilter?: boolean;
+    isCategoriesFilterActive?: boolean;
+    hiddenFilters?: string[];
+  };
 
 export default function SearchControls({
   filters,
@@ -82,11 +84,9 @@ export default function SearchControls({
             <div class="flex items-center gap-2">
               <Button
                 hasBtnClass={false}
-                class={
-                  displayFilter
-                    ? "flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"
-                    : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"
-                }
+                class={displayFilter
+                  ? "flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"
+                  : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"}
                 onClick={() => {
                   open.value = true;
                 }}
@@ -95,7 +95,10 @@ export default function SearchControls({
               </Button>
 
               {sortOptions.length > 0 && (
-                <MobileSortButton sortParam={sortParam} sortOptions={sortOptions} />
+                <MobileSortButton
+                  sortParam={sortParam}
+                  sortOptions={sortOptions}
+                />
               )}
             </div>
 
@@ -123,11 +126,11 @@ export default function SearchControls({
                       if (key !== "_gl" && key !== "page") {
                         paramCount++;
                       }
-
                     });
 
                     return paramCount > 0;
-                  })())) && (
+                  })())) &&
+                (
                   <button
                     aria-label="limpar filtros"
                     onClick={removeSort}
@@ -136,9 +139,6 @@ export default function SearchControls({
                     Limpar filtros
                   </button>
                 )}
-
-
-
             </div>
 
             <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[339px]">

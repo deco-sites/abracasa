@@ -1,1 +1,34 @@
-{"name":"Search","path":"/s","sections":[{"type":"website","__resolveType":"website/sections/Seo/Seo.tsx","titleTemplate":"%s","descriptionTemplate":"%s"},{"__resolveType":"Header - 01"},{"page":{"__resolveType":"Search Loader"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer"},"cardLayout":{"hide":{"skuSelector":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image"},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"}},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx","isCategoriesFilterActive":true},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Search",
+  "path": "/s",
+  "sections": [
+    {
+      "type": "website",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "titleTemplate": "%s",
+      "descriptionTemplate": "%s"
+    },
+    { "__resolveType": "Header - 01" },
+    {
+      "page": { "__resolveType": "Search Loader" },
+      "layout": {
+        "columns": { "mobile": 2, "desktop": 4 },
+        "variant": "drawer"
+      },
+      "cardLayout": {
+        "hide": { "skuSelector": true, "productDescription": true },
+        "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+        "onMouseOver": { "card": "None", "image": "Change image" },
+        "elementsPositions": {
+          "skuSelector": "Top",
+          "favoriteIcon": "Top right"
+        }
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "isCategoriesFilterActive": true
+    },
+    { "__resolveType": "Footer - 01" }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

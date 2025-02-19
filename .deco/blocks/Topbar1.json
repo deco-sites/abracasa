@@ -1,1 +1,5 @@
-{"text":"<p><span style=\"color: rgb(85, 85, 85); font-size: 11pt\">10% de Cashback em todas as compras!</span></p>","__resolveType":"site/sections/Header/Topbar.tsx","backgroundColor":"#d9d9d9"}
+{
+  "text": "<p><span style=\"color: rgb(85, 85, 85); font-size: 11pt\">10% de Cashback em todas as compras!</span></p>",
+  "__resolveType": "site/sections/Header/Topbar.tsx",
+  "backgroundColor": "#d9d9d9"
+}

@@ -18,10 +18,15 @@ function NotLoggedIn() {
     if (header) {
       let previousValue = header.getAttribute("data-scrolling");
 
-      const observerCallback: MutationCallback = (mutationsList: MutationRecord[]) => {
+      const observerCallback: MutationCallback = (
+        mutationsList: MutationRecord[],
+      ) => {
         // deno-lint-ignore prefer-const
         for (let mutation of mutationsList) {
-          if (mutation.type === "attributes" && mutation.attributeName === "data-scrolling") {
+          if (
+            mutation.type === "attributes" &&
+            mutation.attributeName === "data-scrolling"
+          ) {
             const currentValue = header.getAttribute("data-scrolling");
 
             if (currentValue !== previousValue) {
@@ -59,7 +64,9 @@ function NotLoggedIn() {
         className="p-0.5 m-1"
       >
         <a href="/user-login" className="w-9 h-9">
-          {!isHome || isHovered || isScrolling ? <SellbieGrayIcon /> : <SellbieIcon />}
+          {!isHome || isHovered || isScrolling
+            ? <SellbieGrayIcon />
+            : <SellbieIcon />}
         </a>
       </div>
 
@@ -101,9 +108,9 @@ function SellbieCashback() {
       if (!user.value?.taxID) return;
 
       const cashbackValue = await invoke["site"].loaders.sellbie
-      ["get-cashback"]({
-        cpf: user.value.taxID,
-      });
+        ["get-cashback"]({
+          cpf: user.value.taxID,
+        });
 
       if (cashbackValue) {
         cashback.value = cashbackValue;

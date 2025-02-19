@@ -31,7 +31,6 @@ function ValueItem(
 }
 
 function FilterValues({ key, values }: FilterToggle) {
-
   const excludedFilterValues = [
     "George Nelson",
     "Charles & Ray Eames",
@@ -43,8 +42,8 @@ function FilterValues({ key, values }: FilterToggle) {
     "Cadeiras (Site Antigo)",
     "Poltronas (Site Antigo)",
     "Mesas (Site Antigo)",
-    "Site Antigo Banquetas"
-  ]
+    "Site Antigo Banquetas",
+  ];
 
   return (
     <ul
@@ -85,8 +84,9 @@ function FilterValues({ key, values }: FilterToggle) {
   );
 }
 
-function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Props) {
-
+function Filters(
+  { filters, isCategoriesFilterActive, hiddenFilters = [] }: Props,
+) {
   const translations: Record<string, string> = {
     "Categories": "Categorias",
     "Departments": "Departamentos",

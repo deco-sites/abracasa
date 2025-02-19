@@ -12,7 +12,7 @@ export default function NewsletterForm({ title, subtitle }: Props) {
   const isSubmitted = useSignal(false);
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
-    e.preventDefault();
+    e.currentTarget?.preventDefault();
 
     try {
       loading.value = true;
@@ -26,9 +26,9 @@ export default function NewsletterForm({ title, subtitle }: Props) {
         {
           event: "newsletter",
           email: email,
-          name: name
-        }
-      )
+          name: name,
+        },
+      );
       const status = "true";
       await invoke.vtex.actions.masterdata.createDocument({
         data: { email, status },

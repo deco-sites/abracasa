@@ -1,1 +1,21 @@
-{"layout":{"variation":"With border","headerAlignment":"center"},"benefits":[{"icon":"Truck","label":"ENTREGA","description":"Frota própria e as melhoras transportadoras do país para entregar o seu pedido sempre dentro do prazo! Saiba mais"},{"icon":"Exchange","label":"TROCA","description":"A troca é simples! Entenda todas as condições da nossa Política de Troca. Saiba mais"},{"icon":"Payment","label":"PAGAMENTO","description":"8x s/ juros em todos os cartões de crédito (parcela min. R$ 100,00), boleto e transferência bancária!"}],"__resolveType":"site/sections/Content/Benefits.tsx"}
+{
+  "layout": { "variation": "With border", "headerAlignment": "center" },
+  "benefits": [
+    {
+      "icon": "Truck",
+      "label": "ENTREGA",
+      "description": "Frota própria e as melhoras transportadoras do país para entregar o seu pedido sempre dentro do prazo! Saiba mais"
+    },
+    {
+      "icon": "Exchange",
+      "label": "TROCA",
+      "description": "A troca é simples! Entenda todas as condições da nossa Política de Troca. Saiba mais"
+    },
+    {
+      "icon": "Payment",
+      "label": "PAGAMENTO",
+      "description": "8x s/ juros em todos os cartões de crédito (parcela min. R$ 100,00), boleto e transferência bancária!"
+    }
+  ],
+  "__resolveType": "site/sections/Content/Benefits.tsx"
+}

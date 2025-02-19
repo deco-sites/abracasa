@@ -105,11 +105,9 @@ function Shipping({ shippingValue, setShippingValue }: Props) {
                 maxLength={8}
                 value={cep}
                 onChange={(e) => {
-                  if (e.target instanceof HTMLInputElement) {
-                    const newValue = e.target.value;
-                    setCep(newValue);
-                  }
+                  setCep(e.currentTarget.value);
                 }}
+
                 placeholder={"Adicione o seu frete"}
               />
             </div>

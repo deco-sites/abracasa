@@ -53,12 +53,13 @@ export default function CategoryList({ title, cards, interval }: Props) {
 
   return (
     <section class="flex flex-col flex-grow w-full h-full items-center justify-center bg-white pt-8 pb-12">
-      {title && <div class="w-full container max-w-[850px] lg:max-w-[83%] text-left mb-[14px] px-5 lg:px-0">
-        <h2 class="text-2xl font-normal text-dimgray lg:leading-[49px]">
-          {title}
-        </h2>
-      </div>
-      }
+      {title && (
+        <div class="w-full container max-w-[850px] lg:max-w-[83%] text-left mb-[14px] px-5 lg:px-0">
+          <h2 class="text-2xl font-normal text-dimgray lg:leading-[49px]">
+            {title}
+          </h2>
+        </div>
+      )}
 
       <div
         id={id}
@@ -73,8 +74,9 @@ export default function CategoryList({ title, cards, interval }: Props) {
               <div class="flex flex-col w-full h-full">
                 <a href={card.link}>
                   <Image
-                    class={`${card.image.isBorder ? "rounded-full" : "rounded-none"
-                      }`}
+                    class={`${
+                      card.image.isBorder ? "rounded-full" : "rounded-none"
+                    }`}
                     src={card.image.icon}
                     alt={card.image.alt}
                     width={500}
@@ -85,16 +87,17 @@ export default function CategoryList({ title, cards, interval }: Props) {
                   />
                 </a>
 
-                {card.description && <div class="flex flex-col w-full h-full mt-2 text-base leading-[22px]">
-                  <h3 class="text-lg font-semibold text-start">
-                    {card.description}
-                  </h3>
+                {card.description && (
+                  <div class="flex flex-col w-full h-full mt-2 text-base leading-[22px]">
+                    <h3 class="text-lg font-semibold text-start">
+                      {card.description}
+                    </h3>
 
-                  <p class="text-base font-normal text-start">
-                    {card.subDescription}
-                  </p>
-                </div>
-                }
+                    <p class="text-base font-normal text-start">
+                      {card.subDescription}
+                    </p>
+                  </div>
+                )}
               </div>
             </Slider.Item>
           ))}

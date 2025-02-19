@@ -28,7 +28,7 @@ function Newsletter(
   const loading = useSignal(false);
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
-    e.preventDefault();
+    e.currentTarget?.preventDefault();
 
     try {
       loading.value = true;

@@ -1,1 +1,10 @@
-{"popup":{"link":"https://www.abracasa.com.br/campanha/semana-do-cliente","source":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b0832930-d56e-4d5f-8e65-f7a0fc4e4320/popup_semana_cliente.gif","target":"_blank","description":"Abracasa Popup"},"__resolveType":"site/sections/Miscellaneous/CampaignPopup.tsx","hoursToShowPopupAgain":0}
+{
+  "popup": {
+    "link": "https://www.abracasa.com.br/campanha/semana-do-cliente",
+    "source": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b0832930-d56e-4d5f-8e65-f7a0fc4e4320/popup_semana_cliente.gif",
+    "target": "_blank",
+    "description": "Abracasa Popup"
+  },
+  "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
+  "hoursToShowPopupAgain": 0
+}
