@@ -73,10 +73,24 @@ function Menu({ items }: Props) {
             </p>
           </a>
 
-          <a href={`${user.value ? '/user-myaccount' : 'login?ReturnUrl=%2F_secure%2Faccount '}`} class="pl-16 uppercase text-sm">
+          <a
+            href={`${
+              user.value
+                ? "/user-myaccount"
+                : "login?ReturnUrl=%2F_secure%2Faccount "
+            }`}
+            class="pl-16 uppercase text-sm"
+          >
             Minha Conta
           </a>
-          <a href={`${user.value ? '/user-orders' : 'login?ReturnUrl=%2F_secure%2Faccount '}`} class="pl-16 uppercase text-sm">
+          <a
+            href={`${
+              user.value
+                ? "/user-orders"
+                : "login?ReturnUrl=%2F_secure%2Faccount "
+            }`}
+            class="pl-16 uppercase text-sm"
+          >
             Meus Pedidos
           </a>
         </li>

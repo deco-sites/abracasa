@@ -1,1 +1,70 @@
-{"cards":[{"link":"/moveis/poltronas","image":{"alt":"POLTRONAS","icon":"https://abracasa.vteximg.com.br/arquivos/ids/184027/casa_banners_destaques2023_poltrona.jpg?v=638179687221300000"},"description":"POLTRONAS","subDescription":"Modernas, clássicas, em linho ou madeira. Escolha a que mais combina com você!"},{"link":"/Moveis/Sofa","image":{"alt":"SOFÁS","icon":"https://abracasa.vteximg.com.br/arquivos/ids/184051/casa_banners_destaques2023_sofas.jpg?v=638180362944870000"},"description":"SOFÁS","subDescription":"Modelos que garantem conforto e qualidade sem abrir mão do design."},{"link":"/moveis/office","image":{"alt":"KIT HOME OFFICE ","icon":"https://abracasa.vteximg.com.br/arquivos/ids/184028/casa_banners_destaques2023_escritorio.jpg?v=638179687458430000"},"description":"KIT HOME OFFICE ","subDescription":"Conjuntos que vão trazer charme e comodidade para trabalhar de casa!"},{"link":"/moveis/mesas","image":{"alt":"MESAS","icon":"https://abracasa.vteximg.com.br/arquivos/ids/184029/casa_banners_destaques2023_mesas.jpg?v=638179687876670000"},"description":"MESAS","subDescription":"Confira as nossas linhas de mesas de centro, de canto, de jantar e muito mais. "},{"link":"/moveis/mesas/conjunto-mesa-e-cadeira","image":{"alt":"CONJUNTO MESA E CADEIRA ","icon":"https://abracasa.vteximg.com.br/arquivos/ids/184274/casa_banners_destaques2023_mesas_cadeiras-alteração.jpg?v=638187378194870000"},"description":"CONJUNTO MESA E CADEIRA ","subDescription":"Conjuntos prontinhos de mesas e cadeiras para você escolher! "},{"link":"/moveis/cadeiras","image":{"alt":"CADEIRAS ","icon":"https://abracasa.vteximg.com.br/arquivos/ids/184031/casa_banners_destaques2023_cadeiras.jpg?v=638179688461800000"},"description":"CADEIRAS ","subDescription":"Cadeiras para jantar, relaxar, ou ler um livro.. qual combina mais com você?"},{"link":"/decoracao","image":{"alt":"DECORAÇÃO ","icon":"https://abracasa.vteximg.com.br/arquivos/ids/184032/casa_banners_destaques2023_deco.jpg?v=638179688703600000"},"description":"DECORAÇÃO ","subDescription":"Puffs, velas, cestos, vasos.. decoração para deixar a sua casa com a sua cara! "}],"title":"Nossos Destaques","interval":10,"__resolveType":"site/sections/Content/HighlightsBanners.tsx"}
+{
+  "cards": [
+    {
+      "link": "/moveis/poltronas",
+      "image": {
+        "alt": "POLTRONAS",
+        "icon": "https://abracasa.vteximg.com.br/arquivos/ids/184027/casa_banners_destaques2023_poltrona.jpg?v=638179687221300000"
+      },
+      "description": "POLTRONAS",
+      "subDescription": "Modernas, clássicas, em linho ou madeira. Escolha a que mais combina com você!"
+    },
+    {
+      "link": "/Moveis/Sofa",
+      "image": {
+        "alt": "SOFÁS",
+        "icon": "https://abracasa.vteximg.com.br/arquivos/ids/184051/casa_banners_destaques2023_sofas.jpg?v=638180362944870000"
+      },
+      "description": "SOFÁS",
+      "subDescription": "Modelos que garantem conforto e qualidade sem abrir mão do design."
+    },
+    {
+      "link": "/moveis/office",
+      "image": {
+        "alt": "KIT HOME OFFICE ",
+        "icon": "https://abracasa.vteximg.com.br/arquivos/ids/184028/casa_banners_destaques2023_escritorio.jpg?v=638179687458430000"
+      },
+      "description": "KIT HOME OFFICE ",
+      "subDescription": "Conjuntos que vão trazer charme e comodidade para trabalhar de casa!"
+    },
+    {
+      "link": "/moveis/mesas",
+      "image": {
+        "alt": "MESAS",
+        "icon": "https://abracasa.vteximg.com.br/arquivos/ids/184029/casa_banners_destaques2023_mesas.jpg?v=638179687876670000"
+      },
+      "description": "MESAS",
+      "subDescription": "Confira as nossas linhas de mesas de centro, de canto, de jantar e muito mais. "
+    },
+    {
+      "link": "/moveis/mesas/conjunto-mesa-e-cadeira",
+      "image": {
+        "alt": "CONJUNTO MESA E CADEIRA ",
+        "icon": "https://abracasa.vteximg.com.br/arquivos/ids/184274/casa_banners_destaques2023_mesas_cadeiras-alteração.jpg?v=638187378194870000"
+      },
+      "description": "CONJUNTO MESA E CADEIRA ",
+      "subDescription": "Conjuntos prontinhos de mesas e cadeiras para você escolher! "
+    },
+    {
+      "link": "/moveis/cadeiras",
+      "image": {
+        "alt": "CADEIRAS ",
+        "icon": "https://abracasa.vteximg.com.br/arquivos/ids/184031/casa_banners_destaques2023_cadeiras.jpg?v=638179688461800000"
+      },
+      "description": "CADEIRAS ",
+      "subDescription": "Cadeiras para jantar, relaxar, ou ler um livro.. qual combina mais com você?"
+    },
+    {
+      "link": "/decoracao",
+      "image": {
+        "alt": "DECORAÇÃO ",
+        "icon": "https://abracasa.vteximg.com.br/arquivos/ids/184032/casa_banners_destaques2023_deco.jpg?v=638179688703600000"
+      },
+      "description": "DECORAÇÃO ",
+      "subDescription": "Puffs, velas, cestos, vasos.. decoração para deixar a sua casa com a sua cara! "
+    }
+  ],
+  "title": "Nossos Destaques",
+  "interval": 10,
+  "__resolveType": "site/sections/Content/HighlightsBanners.tsx"
+}

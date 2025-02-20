@@ -9,7 +9,9 @@ export type Props = Pick<ProductListingPage, "sortOptions"> & {
 };
 
 export default function MobileSort(
-  { sortOptions, sortParam, setOpen }: Props & { setOpen: StateUpdater<boolean> },
+  { sortOptions, sortParam, setOpen }: Props & {
+    setOpen: StateUpdater<boolean>;
+  },
 ) {
   const modalRef = useRef<HTMLDivElement | null>(null);
 
@@ -41,7 +43,11 @@ export default function MobileSort(
         class="block w-full fixed bottom-0 left-0 z-[99999999] h-[45%] bg-white border-t move-to-up"
       >
         <div class="flex flex-col gap-4 items-center justify-center w-full h-full overflow-y-scroll py-1">
-          <Sort sortParam={sortParam} sortOptions={sortOptions} isMobile={true} />
+          <Sort
+            sortParam={sortParam}
+            sortOptions={sortOptions}
+            isMobile={true}
+          />
         </div>
       </div>
     </>

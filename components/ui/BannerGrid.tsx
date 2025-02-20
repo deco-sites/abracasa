@@ -47,6 +47,10 @@ export interface Props {
     /** @default none */
     desktop?: BorderRadius;
   };
+  /**
+   * @description Turn true to banner gets full width
+   */
+  fullWidth?: boolean;
   banners: Banner[];
 }
 
@@ -86,7 +90,7 @@ const RADIUS_DESKTOP = {
 };
 
 const DEFAULT_PROPS: Props = {
-  title: "Summer bags",
+  title: "",
   banners: [
     {
       alt: "a",
@@ -113,6 +117,7 @@ const DEFAULT_PROPS: Props = {
     mobile: 2,
     desktop: 2,
   },
+  fullWidth: false,
 };
 
 export default function BannnerGrid(props: Props) {
@@ -120,11 +125,14 @@ export default function BannnerGrid(props: Props) {
     title,
     itemsPerLine,
     borderRadius,
+    fullWidth,
     banners = [],
   } = { ...DEFAULT_PROPS, ...props };
 
   return (
-    <section class="container w-full px-4 md:px-0 mx-auto">
+    <section
+      class={`${fullWidth ? "" : "container px-4 md:px-0"} w-full mx-auto`}
+    >
       {title &&
         (
           <div class="py-6 md:py-0 md:pb-[40px] flex items-center mt-6">
@@ -151,8 +159,8 @@ export default function BannnerGrid(props: Props) {
               <Source
                 media="(max-width: 767px)"
                 src={srcMobile}
-                width={100}
-                height={100}
+                width={376}
+                height={340}
               />
               <Source
                 media="(min-width: 768px)"

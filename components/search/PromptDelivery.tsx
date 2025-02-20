@@ -27,8 +27,9 @@ export default function PromptDelivery() {
       />
       <div class="w-[13px] h-[13px] border border-gray-400 rounded-sm flex justify-center items-center">
         <div
-          class={`${self?.location?.href?.includes("readyDelivery") && "bg-dimgray"
-            } w-[13px] h-[13px] rounded-sm`}
+          class={`${
+            self?.location?.href?.includes("readyDelivery") && "bg-dimgray"
+          } w-[13px] h-[13px] rounded-sm`}
         />
       </div>
       {/* <Icon id="Clock" width={32} height={25} fill="none" /> */}

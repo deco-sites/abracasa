@@ -50,7 +50,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
   const hasVideo = videos.length > 0;
   if (hasVideo) {
     const videoModifiedUrl = new URL(
-      videos?.[0].contentUrl ?? ""
+      videos?.[0].contentUrl ?? "",
     ).searchParams.get("v");
     const video: VideoObject = {
       "@type": "VideoObject",
@@ -64,7 +64,11 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
 
   const heroLabel = files.find((label) => label.name === "hero");
   const adjustedFiles = heroLabel
-    ? [files[0], heroLabel, ...files.filter((item) => item !== heroLabel).slice(1)]
+    ? [
+      files[0],
+      heroLabel,
+      ...files.filter((item) => item !== heroLabel).slice(1),
+    ]
     : files;
 
   return (
@@ -88,17 +92,17 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
           {additionalProperty?.some((property) =>
             property.value?.includes("Atelie Casa")
           ) && (
-              <div class="absolute flex flex-col gap-1 z-10 top-2 left-1.5">
-                <img
-                  src={asset("/image/logo_atelie_abracasa_large.png")}
-                  width={145}
-                  height={145}
-                  alt="Logo Ateliê Cadabra"
-                  loading="lazy"
-                  class="w-[90px] md:w-[145px]"
-                />
-              </div>
-            )}
+            <div class="absolute flex flex-col gap-1 z-10 top-2 left-1.5">
+              <img
+                src={asset("/image/logo_atelie_abracasa_large.png")}
+                width={145}
+                height={145}
+                alt="Logo Ateliê Cadabra"
+                loading="lazy"
+                class="w-[90px] md:w-[145px]"
+              />
+            </div>
+          )}
 
           {hasVideo && props.device === "mobile" && <MobileVideoPlay />}
 
@@ -191,28 +195,30 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
                     class="carousel-item w-[98px] relative"
                   >
                     <Slider.Dot index={index}>
-                      {item["@type"] === "ImageObject" ? (
-                        <Image
-                          style={{ aspectRatio: 1 }}
-                          class="group-disabled:border-base-300 border"
-                          width={98}
-                          height={98}
-                          src={item.url!}
-                          alt={item.alternateName}
-                        />
-                      ) : (
-                        <div class="flex items-center justify-center w-full relative">
+                      {item["@type"] === "ImageObject"
+                        ? (
                           <Image
                             style={{ aspectRatio: 1 }}
-                            src={images[0].url!}
-                            alt={images[0].alternateName}
+                            class="group-disabled:border-base-300 border"
                             width={98}
                             height={98}
-                            class="group-disabled:border-base-300 border"
+                            src={item.url!}
+                            alt={item.alternateName}
                           />
-                          <Icon id="VideoPlay" size={36} class="absolute" />
-                        </div>
-                      )}
+                        )
+                        : (
+                          <div class="flex items-center justify-center w-full relative">
+                            <Image
+                              style={{ aspectRatio: 1 }}
+                              src={images[0].url!}
+                              alt={images[0].alternateName}
+                              width={98}
+                              height={98}
+                              class="group-disabled:border-base-300 border"
+                            />
+                            <Icon id="VideoPlay" size={36} class="absolute" />
+                          </div>
+                        )}
                     </Slider.Dot>
                   </Slider.Item>
                 ))}

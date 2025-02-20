@@ -15,7 +15,7 @@ export default function FooterItems(
     <>
       {sections.length > 0 && (
         <ul
-          class={`flex flex-col md:flex-row gap-6 md:gap-12 lg:gap-28 ${
+          class={`flex flex-col md:flex-row gap-6 md:gap-12 lg:gap-28 text-black ${
             justify && "md:justify-between"
           }`}
         >

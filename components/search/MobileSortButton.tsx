@@ -23,7 +23,13 @@ export default function MobileSortButton({ sortOptions, sortParam }: Props) {
         Ordenar
       </Button>
 
-      {open && <MobileSort sortParam={sortParam} sortOptions={sortOptions} setOpen={setOpen} />}
+      {open && (
+        <MobileSort
+          sortParam={sortParam}
+          sortOptions={sortOptions}
+          setOpen={setOpen}
+        />
+      )}
     </>
   );
 }

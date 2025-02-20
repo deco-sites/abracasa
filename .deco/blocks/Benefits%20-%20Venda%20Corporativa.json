@@ -1,1 +1,26 @@
-{"layout":{"variation":"With border"},"benefits":[{"icon":"Design","label":"DESIGN ACESSÍVEL","description":"O equilíbrio perfeito entre estética e custo para montar seus ambientes"},{"icon":"Products","label":"PRODUTOS DE QUALIDADE","description":"Móveis especiais feitos com materiais de alta qualidade e durabilidade"},{"icon":"Attendance","label":"ATENDIMENTO PERSONALIZADO","description":"Sinta-se em casa! Nossa equipe está pronta para te atender de maneira ágil e eficaz"},{"icon":"Practicality","label":"PRATICIDADE","description":"Soluções rápidas e práticas para transformar os seus ambientes"}],"__resolveType":"site/sections/Content/Benefits.tsx"}
+{
+  "layout": { "variation": "With border" },
+  "benefits": [
+    {
+      "icon": "Design",
+      "label": "DESIGN ACESSÍVEL",
+      "description": "O equilíbrio perfeito entre estética e custo para montar seus ambientes"
+    },
+    {
+      "icon": "Products",
+      "label": "PRODUTOS DE QUALIDADE",
+      "description": "Móveis especiais feitos com materiais de alta qualidade e durabilidade"
+    },
+    {
+      "icon": "Attendance",
+      "label": "ATENDIMENTO PERSONALIZADO",
+      "description": "Sinta-se em casa! Nossa equipe está pronta para te atender de maneira ágil e eficaz"
+    },
+    {
+      "icon": "Practicality",
+      "label": "PRATICIDADE",
+      "description": "Soluções rápidas e práticas para transformar os seus ambientes"
+    }
+  ],
+  "__resolveType": "site/sections/Content/Benefits.tsx"
+}

@@ -1,1 +1,11 @@
-{"data":{"sort":"","count":24,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"extensions":[{"__resolveType":"vtex/loaders/product/extensions/listingPage.ts"}],"__resolveType":"commerce/loaders/product/extensions/listingPage.ts"}
+{
+  "data": {
+    "sort": "",
+    "count": 24,
+    "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+  },
+  "extensions": [
+    { "__resolveType": "vtex/loaders/product/extensions/listingPage.ts" }
+  ],
+  "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"
+}

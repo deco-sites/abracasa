@@ -1,1 +1,15 @@
-{"images":[{"alt":"Banner","link":"/campanha/sofa-cama","image":"https://abracasa.vteximg.com.br/arquivos/ids/187338/casa_banner_sec_sofacama_992x560.jpg?v=638367003240500000"},{"alt":"Banner","link":"/campanha/poltrona-costela","image":"https://abracasa.vteximg.com.br/arquivos/ids/187339/casa_banner_sec_mobile_costela_992x560 (1).jpg?v=638367003686130000"}],"__resolveType":"site/sections/Images/DoubleBanners.tsx"}
+{
+  "images": [
+    {
+      "alt": "Banner",
+      "link": "/campanha/sofa-cama",
+      "image": "https://abracasa.vteximg.com.br/arquivos/ids/187338/casa_banner_sec_sofacama_992x560.jpg?v=638367003240500000"
+    },
+    {
+      "alt": "Banner",
+      "link": "/campanha/poltrona-costela",
+      "image": "https://abracasa.vteximg.com.br/arquivos/ids/187339/casa_banner_sec_mobile_costela_992x560 (1).jpg?v=638367003686130000"
+    }
+  ],
+  "__resolveType": "site/sections/Images/DoubleBanners.tsx"
+}

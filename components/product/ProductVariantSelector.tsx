@@ -22,7 +22,6 @@ function VariantSelector({ product }: Props) {
       return [key, Object.fromEntries(sortedValues)];
     });
 
-
   return (
     <ul className="flex flex-col gap-4 max-w-[60%]">
       {sortedPossibilities.map(([name, values]) => {
@@ -39,15 +38,15 @@ function VariantSelector({ product }: Props) {
                       variant={link === url
                         ? "active"
                         : link
-                          ? "default"
-                          : "disabled"}
+                        ? "default"
+                        : "disabled"}
                     />
                   </button>
                 </li>
               ))}
             </ul>
           </li>
-        )
+        );
       })}
     </ul>
   );

@@ -1,1 +1,8 @@
-{"redirect":{"to":"https://www.abracasa.com.br/_secure/account#/cashback","from":"/meu-cashback","type":"temporary"},"__resolveType":"website/loaders/redirect.ts"}
+{
+  "redirect": {
+    "to": "https://www.abracasa.com.br/_secure/account#/cashback",
+    "from": "/meu-cashback",
+    "type": "temporary"
+  },
+  "__resolveType": "website/loaders/redirect.ts"
+}

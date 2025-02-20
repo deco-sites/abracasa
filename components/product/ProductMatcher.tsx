@@ -55,7 +55,7 @@ export default function ProductMatcher({ page, suggestions }: Props) {
     },
     ...suggestions.map((suggestion) => {
       const { price: suggestionPrice, seller: suggestionSeller } = useOffer(
-        suggestion.offers
+        suggestion.offers,
       );
       return {
         seller: suggestionSeller,
@@ -75,7 +75,10 @@ export default function ProductMatcher({ page, suggestions }: Props) {
         <ProductCard product={product} />
 
         {suggestions.map((suggestion) => (
-          <div key={suggestion.productID} class="flex flex-col xl:flex-row items-center">
+          <div
+            key={suggestion.productID}
+            class="flex flex-col xl:flex-row items-center"
+          >
             <div class="btn btn-circle btn-outline text-gray-950 hover:text-gray-950 hover:bg-transparent">
               <Icon id="Plus" width={12} height={12} strokeWidth={3} />
             </div>

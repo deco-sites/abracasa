@@ -64,8 +64,9 @@ function FilterValues({ key, values }: FilterToggle) {
   );
 }
 
-function Filters({ filters, isCategoriesFilterActive, hiddenFilters = [] }: Props) {
-
+function Filters(
+  { filters, isCategoriesFilterActive, hiddenFilters = [] }: Props,
+) {
   const translations: Record<string, string> = {
     "Categories": "Categorias",
     "Departments": "Departamentos",
