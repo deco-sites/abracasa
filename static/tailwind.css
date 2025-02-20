@@ -9145,10 +9145,6 @@ details.collapse summary::-webkit-details-marker {
     max-width: 85%;
   }
 
-  .\32xl\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .\32xl\:flex-wrap {
     flex-wrap: wrap;
   }

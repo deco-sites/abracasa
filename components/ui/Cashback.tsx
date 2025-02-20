@@ -63,7 +63,7 @@ function NotLoggedIn() {
         role="button"
         className="p-0.5 m-1"
       >
-        <a href="/user-login" className="w-9 h-9">
+        <a href="/user-login" className="w-10 h-10">
           {!isHome || isHovered || isScrolling
             ? <SellbieGrayIcon />
             : <SellbieIcon />}
@@ -108,9 +108,9 @@ function SellbieCashback() {
       if (!user.value?.taxID) return;
 
       const cashbackValue = await invoke["site"].loaders.sellbie
-        ["get-cashback"]({
-          cpf: user.value.taxID,
-        });
+      ["get-cashback"]({
+        cpf: user.value.taxID,
+      });
 
       if (cashbackValue) {
         cashback.value = cashbackValue;

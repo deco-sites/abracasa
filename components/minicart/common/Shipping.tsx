@@ -107,7 +107,6 @@ function Shipping({ shippingValue, setShippingValue }: Props) {
                 onChange={(e) => {
                   setCep(e.currentTarget.value);
                 }}
-
                 placeholder={"Adicione o seu frete"}
               />
             </div>

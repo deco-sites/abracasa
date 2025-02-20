@@ -52,7 +52,7 @@ function HeroBannerGrid({ title, mainImage, imageItems }: Props) {
             class="hidden lg:block"
           />
         </a>
-        <ul class="grid grid-cols-2 grid-rows-3 gap-x-5 gap-y-4 lg:grid-cols-3 2xl:grid-cols-5 lg:grid-rows-2 lg:gap-x-[14px] lg:gap-y-3 px-5 mt-[18px] lg:mt-0">
+        <ul class="grid grid-cols-2 grid-rows-3 gap-x-5 gap-y-4 lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-[14px] lg:gap-y-3 px-5 mt-[18px] lg:mt-0">
           {imageItems?.map((img) => (
             <li class="sm:flex justify-center">
               <a href={img?.href}>
