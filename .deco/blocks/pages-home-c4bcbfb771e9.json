@@ -16,12 +16,12 @@
           "alt": "Sale",
           "href": "https://www.abracasa.com.br/campanha/sale",
           "mobile": {
-            "image": "https://data.decoassets.com/abracasa/73393765-6541-43b3-bd4c-906e2649a1f3/casa_sale_banner_mobile_767x942-(1).jpg",
+            "image": "https://data.decoassets.com/abracasa/3198f0ee-233b-4960-b898-1665214bc92e/48_casa_sale_banner_mobile.gif",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://data.decoassets.com/abracasa/263f52df-60f3-41e5-a8ed-86639b8ba48f/casa_sale_banner_desktop_1920x713-(1).jpg",
+            "image": "https://data.decoassets.com/abracasa/2eb64ead-c611-4ba6-8d3e-50f7efaa373e/48h_casa_sale_banner_desktop.gif",
             "width": 1920,
             "height": 713
           }
