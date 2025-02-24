@@ -27,7 +27,7 @@ interface Props {
 
 function HeroBannerGrid({ title, mainImage, imageItems }: Props) {
   return (
-    <div class="mb-10 lg:mx-auto lg:max-w-[83%] ">
+    <div class="mb-10 lg:mx-auto lg:max-w-[85%] ">
       <span class="font-sans text-2xl text-dimgray mb-5 px-4 lg:px-0 lg:mb-[14px] block">
         {title}
       </span>

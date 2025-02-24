@@ -54,7 +54,7 @@ export default function CategoryList({ title, cards, interval }: Props) {
   return (
     <section class="flex flex-col flex-grow w-full h-full items-center justify-center bg-white pt-8 pb-12">
       {title && (
-        <div class="w-full container max-w-[850px] lg:max-w-[83%] text-left mb-[14px] px-5 lg:px-0">
+        <div class="w-full container max-w-[850px] lg:max-w-[85%] text-left mb-[14px] px-5 lg:px-0">
           <h2 class="text-2xl font-normal text-dimgray lg:leading-[49px]">
             {title}
           </h2>
@@ -63,7 +63,7 @@ export default function CategoryList({ title, cards, interval }: Props) {
 
       <div
         id={id}
-        class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] container lg:max-w-[83%] h-full pl-6 sm:pl-0"
+        class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] container lg:max-w-[85%] h-full pl-6 sm:pl-0"
       >
         <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6 h-full">
           {cards?.map((card, index) => (
@@ -74,9 +74,8 @@ export default function CategoryList({ title, cards, interval }: Props) {
               <div class="flex flex-col w-full h-full">
                 <a href={card.link}>
                   <Image
-                    class={`${
-                      card.image.isBorder ? "rounded-full" : "rounded-none"
-                    }`}
+                    class={`${card.image.isBorder ? "rounded-full" : "rounded-none"
+                      }`}
                     src={card.image.icon}
                     alt={card.image.alt}
                     width={500}

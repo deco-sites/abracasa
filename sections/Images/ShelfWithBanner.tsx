@@ -41,15 +41,6 @@ function ShelfWithBanner({
           height={bannerImage.image.height ?? 462}
           loading="lazy"
           decoding="async"
-          class="w-[65%] lg:hidden"
-        />
-        <Image
-          src={bannerImage.image.src}
-          alt={bannerImage.image.alt}
-          width={bannerImage.image.width ?? 410}
-          height={bannerImage.image.height ?? 462}
-          loading="lazy"
-          decoding="async"
           class="hidden lg:block"
         />
         <ProductShelf
@@ -58,6 +49,7 @@ function ShelfWithBanner({
           layout={layout}
           cardLayout={cardLayout}
           shelfWithBanner={true}
+          bannerImage={bannerImage}
         />
       </div>
     </div>

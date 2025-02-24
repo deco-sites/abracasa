@@ -12,6 +12,17 @@ import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { AppContext } from "apps/vtex/mod.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
+
+interface BannerImage {
+  image: {
+    src: ImageWidget;
+    alt: string;
+    width?: number;
+    height?: number;
+  };
+}
 
 export interface Props {
   products: Product[] | null;
@@ -23,6 +34,7 @@ export interface Props {
   };
   cardLayout?: cardLayout;
   shelfWithBanner?: boolean;
+  bannerImage?: BannerImage;
 }
 
 function ProductShelf({
@@ -32,6 +44,7 @@ function ProductShelf({
   layout,
   cardLayout,
   shelfWithBanner = false,
+  bannerImage,
 }: Props) {
   const id = useId();
   const platform = usePlatform();
@@ -43,9 +56,8 @@ function ProductShelf({
   return (
     <div
       id="4017801744-0"
-      class={`w-full container ${
-        shelfWithBanner ? "" : "py-8 lg:gap-4 lg:py-10"
-      } flex flex-col gap-3 relative lg:max-w-[85%]`}
+      class={`w-full container ${shelfWithBanner ? "" : "py-8 lg:gap-4 lg:py-10"
+        } flex flex-col gap-3 relative lg:max-w-[85%]`}
     >
       <Header
         title={title || ""}
@@ -56,12 +68,30 @@ function ProductShelf({
 
       <div
         id={id}
-        class="grid grid-cols-[48px_1fr_48px] pl-6 sm:px-0"
+        class={`grid grid-cols-[48px_1fr_48px] ${shelfWithBanner ? '' : 'pl-6 sm:px-0'}`}
       >
         <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar gap-6 col-span-full row-start-2 row-end-5 pb-2">
+          {shelfWithBanner && bannerImage && (
+            <Slider.Item
+              index={0}
+              class="carousel-item w-[252px] lg:hidden lg:w-[292px]"
+            >
+              <div class="flex items-center justify-center h-full">
+                <Image
+                  src={bannerImage.image.src}
+                  alt={bannerImage.image.alt}
+                  width={bannerImage.image.width ?? 410}
+                  height={bannerImage.image.height ?? 462}
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full"
+                />
+              </div>
+            </Slider.Item>
+          )}
           {products?.map((product, index) => (
             <Slider.Item
-              index={index}
+              index={shelfWithBanner && bannerImage ? index + 1 : index}
               class="carousel-item w-[252px] lg:w-[292px]"
             >
               <ProductCard
@@ -77,9 +107,8 @@ function ProductShelf({
 
         <>
           <div
-            class={`hidden sm:block z-10 col-start-1 row-start-3 absolute right-11 ${
-              shelfWithBanner ? "top-[-38px]" : "top-[38px]"
-            }`}
+            class={`hidden sm:block z-10 col-start-1 row-start-3 absolute right-11 ${shelfWithBanner ? "top-[-38px]" : "top-[38px]"
+              }`}
           >
             <Slider.PrevButton class="btn !w-8 !h-8 !min-h-8 btn-circle btn-outline bg-base-100">
               <Icon
@@ -91,9 +120,8 @@ function ProductShelf({
             </Slider.PrevButton>
           </div>
           <div
-            class={`hidden sm:block z-10 col-start-3 row-start-3 absolute right-0 ${
-              shelfWithBanner ? "top-[-38px]" : "top-[38px]"
-            }`}
+            class={`hidden sm:block z-10 col-start-3 row-start-3 absolute right-0 ${shelfWithBanner ? "top-[-38px]" : "top-[38px]"
+              }`}
           >
             <Slider.NextButton class="btn !w-8 !h-8 !min-h-8 btn-circle btn-outline bg-base-100">
               <Icon size={16} id="ChevronRight" strokeWidth={3} />
@@ -144,8 +172,8 @@ export const loader = async (props: Props, _req: Request, ctx: AppContext) => {
 
       return fetchedProducts?.products?.filter((item) =>
         item.productID !==
-          products.find((product) => extractSimilarLabel(product) === label)
-            ?.productID
+        products.find((product) => extractSimilarLabel(product) === label)
+          ?.productID
       ) || [];
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);

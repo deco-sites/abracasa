@@ -27,7 +27,7 @@ function MeetStores({ title, images, cta }: Props) {
 
   return (
     <div id={id} class="bg-[#F6F6F6] pt-[27px] pb-16 lg:py-[50px]">
-      <div class="container lg:max-w-[82%] flex flex-col">
+      <div class="container lg:max-w-[85%] flex flex-col">
         <span class="font-sans text-[#4F4F4F] px-[18px] lg:px-0 mb-6 lg:mb-[30px] text-2xl">
           {title}
         </span>
@@ -57,7 +57,7 @@ function MeetStores({ title, images, cta }: Props) {
         <SliderJS rootId={id} />
         {/* Desktop view */}
         <div class="hidden lg:block">
-          <ul class="flex gap-4 items-center justify-center 2xl:justify-between 2xl:flex-wrap">
+          <ul class="flex gap-4 items-center justify-center lg:justify-normal 2xl:justify-between 2xl:flex-wrap">
             {images?.map((img) => (
               <li key={img.src ?? img.href}>
                 <a href={img.href}>
