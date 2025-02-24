@@ -33,7 +33,9 @@ export interface Props {
     headerfontSize?: "Small" | "Normal" | "Large";
   };
   cardLayout?: cardLayout;
+  /** @hide true */
   shelfWithBanner?: boolean;
+  /** @hide true */
   bannerImage?: BannerImage;
 }
 
