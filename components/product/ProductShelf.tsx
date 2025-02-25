@@ -18,6 +18,7 @@ import Image from "apps/website/components/Image.tsx";
 interface BannerImage {
   image: {
     src: ImageWidget;
+    srcMobile: ImageWidget;
     alt: string;
     width?: number;
     height?: number;
@@ -33,9 +34,7 @@ export interface Props {
     headerfontSize?: "Small" | "Normal" | "Large";
   };
   cardLayout?: cardLayout;
-  /** @hide true */
   shelfWithBanner?: boolean;
-  /** @hide true */
   bannerImage?: BannerImage;
 }
 
@@ -80,7 +79,7 @@ function ProductShelf({
             >
               <div class="flex items-center justify-center h-full">
                 <Image
-                  src={bannerImage.image.src}
+                  src={bannerImage.image.srcMobile}
                   alt={bannerImage.image.alt}
                   width={bannerImage.image.width ?? 410}
                   height={bannerImage.image.height ?? 462}

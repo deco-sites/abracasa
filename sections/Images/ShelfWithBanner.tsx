@@ -14,6 +14,7 @@ interface Props extends Omit<ProductShelfProps, "products"> {
 interface BannerImage {
   image: {
     src: ImageWidget;
+    srcMobile: ImageWidget;
     alt: string;
     width?: number;
     height?: number;

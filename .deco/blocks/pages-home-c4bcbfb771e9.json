@@ -273,7 +273,8 @@
             "bannerImage": {
               "image": {
                 "src": "https://data.decoassets.com/abracasa/41f3ff7b-c6dc-4e46-9255-0c5bd07d702a/396854168_18374065189068476_6802182373929524710_n-1.png",
-                "alt": "Design assinado"
+                "alt": "Design assinado",
+                "srcMobile": "https://data.decoassets.com/abracasa/122d3437-fa45-45a8-9100-4ce1c425e300/446fa54d-0c37-482a-ba90-237548a72cf7.png"
               }
             },
             "shelfBannerTitle": "Design assinado"
