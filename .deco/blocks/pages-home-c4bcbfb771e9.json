@@ -153,21 +153,21 @@
           "__resolveType": "site/sections/Content/HighlightsBanners.tsx",
           "cards": [
             {
-              "link": "/moveis/poltronas",
+              "link": "/campanha/moveis-de-madeira",
               "image": {
                 "alt": "Madeira",
                 "icon": "https://data.decoassets.com/abracasa/96478725-63de-479e-a39e-ccb202924111/39f776ee-c8a5-49a1-a334-1aa0172b349c.jpg"
               }
             },
             {
-              "link": "/Moveis/Sofa",
+              "link": "/campanha/linha-chico",
               "image": {
-                "alt": "Chico",
+                "alt": "Linha Chico",
                 "icon": "https://data.decoassets.com/abracasa/2d7c667d-196d-4bf7-9f20-387e36918eb6/Colecao-Teste-C.png"
               }
             },
             {
-              "link": "/moveis/office",
+              "link": "/campanha/design-acessivel",
               "image": {
                 "alt": "Acessível",
                 "icon": "https://data.decoassets.com/abracasa/44c507a6-6408-4ace-8552-1de55f6fb9a6/Colecao-Teste-B.png"
@@ -185,7 +185,7 @@
             "mainImage": {
               "src": "https://data.decoassets.com/abracasa/19d7cf32-f5ef-4a73-9854-7074a009dd7c/Group-1652.png",
               "srcMobile": "https://data.decoassets.com/abracasa/a47d9224-12ac-4556-97af-96f9c42a95b9/Atelie.png",
-              "href": "/"
+              "href": "/campanha/atelie-casa"
             },
             "imageItems": [
               {
@@ -240,9 +240,7 @@
                 "srcMobile": "https://data.decoassets.com/abracasa/0ef930a9-b66f-4a4f-867f-ed47483847fc/banner-costela.png",
                 "srcDesktop": "https://data.decoassets.com/abracasa/72f126c9-ac56-4c37-a1ac-b2cb9232cd58/Banner-desk-coltela.png",
                 "alt": "banner-costela",
-                "href": "/",
-                "widthDesktop": 1441,
-                "heightDesktop": 618
+                "href": "/campanha/poltrona-costela"
               }
             ],
             "borderRadius": {
