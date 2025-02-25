@@ -6,7 +6,11 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
  */
 export interface Banner {
   srcMobile: ImageWidget;
+  widthMobile?: number;
+  heightMobile?: number;
   srcDesktop?: ImageWidget;
+  widthDesktop?: number;
+  heightDesktop?: number;
   /**
    * @description Image alt text
    */
@@ -144,29 +148,27 @@ export default function BannnerGrid(props: Props) {
           </div>
         )}
       <div
-        class={`grid gap-4 md:gap-6 ${
-          MOBILE_COLUMNS[itemsPerLine?.mobile ?? 2]
-        } ${DESKTOP_COLUMNS[itemsPerLine?.desktop ?? 4]}`}
+        class={`grid gap-4 md:gap-6 ${MOBILE_COLUMNS[itemsPerLine?.mobile ?? 2]
+          } ${DESKTOP_COLUMNS[itemsPerLine?.desktop ?? 4]}`}
       >
-        {banners.map(({ href, srcMobile, srcDesktop, alt }) => (
+        {banners.map(({ href, srcMobile, widthMobile, heightMobile, srcDesktop, widthDesktop, heightDesktop, alt }) => (
           <a
             href={href}
-            class={`overflow-hidden ${
-              RADIUS_MOBILE[borderRadius.mobile ?? "none"]
-            } ${RADIUS_DESKTOP[borderRadius.desktop ?? "none"]} `}
+            class={`overflow-hidden ${RADIUS_MOBILE[borderRadius.mobile ?? "none"]
+              } ${RADIUS_DESKTOP[borderRadius.desktop ?? "none"]} `}
           >
             <Picture>
               <Source
                 media="(max-width: 767px)"
                 src={srcMobile}
-                width={376}
-                height={340}
+                width={widthMobile ?? 376}
+                height={heightMobile ?? 340}
               />
               <Source
                 media="(min-width: 768px)"
                 src={srcDesktop ? srcDesktop : srcMobile}
-                width={250}
-                height={250}
+                width={widthDesktop ?? 250}
+                height={heightDesktop ?? 250}
               />
               <img
                 class="w-full"
