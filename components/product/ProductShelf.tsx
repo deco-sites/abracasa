@@ -12,6 +12,20 @@ import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { AppContext } from "apps/vtex/mod.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
+
+interface BannerImage {
+  image: {
+    src: ImageWidget;
+    width?: number;
+    height?: number;
+    srcMobile: ImageWidget;
+    widthMobile?: number;
+    heightMobile?: number;
+    alt: string;
+  };
+}
 
 export interface Props {
   products: Product[] | null;
@@ -19,9 +33,11 @@ export interface Props {
   description?: string;
   layout?: {
     headerAlignment?: "center" | "left";
-    headerfontSize?: "Normal" | "Large";
+    headerfontSize?: "Small" | "Normal" | "Large";
   };
   cardLayout?: cardLayout;
+  shelfWithBanner?: boolean;
+  bannerImage?: BannerImage;
 }
 
 function ProductShelf({
@@ -30,6 +46,8 @@ function ProductShelf({
   description,
   layout,
   cardLayout,
+  shelfWithBanner = false,
+  bannerImage,
 }: Props) {
   const id = useId();
   const platform = usePlatform();
@@ -39,22 +57,47 @@ function ProductShelf({
   }
 
   return (
-    <div id="4017801744-0" class="w-full container py-8 flex flex-col gap-12 lg:gap-16 lg:py-10 relative lg:max-w-[85%]">
+    <div
+      id="4017801744-0"
+      class={`w-full container ${shelfWithBanner ? "" : "py-8 lg:gap-4 lg:py-10"
+        } flex flex-col gap-3 relative lg:max-w-[85%]`}
+    >
       <Header
         title={title || ""}
         description={description || ""}
-        fontSize={layout?.headerfontSize || "Large"}
-        alignment={layout?.headerAlignment || "center"}
+        fontSize={layout?.headerfontSize || "Small"}
+        alignment={layout?.headerAlignment || "left"}
       />
 
       <div
         id={id}
-        class="grid grid-cols-[48px_1fr_48px] px-2 sm:px-5"
+        class={`grid grid-cols-[48px_1fr_48px] ${shelfWithBanner ? '' : 'pl-6 sm:px-0'}`}
       >
         <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar gap-6 col-span-full row-start-2 row-end-5 pb-2">
+          {shelfWithBanner && bannerImage && (
+            <Slider.Item
+              index={0}
+              class="carousel-item lg:hidden lg:w-[292px]"
+            >
+              <div class="flex items-center justify-center h-full">
+                <Image
+                  src={bannerImage.image.srcMobile}
+                  alt={bannerImage.image.alt}
+                  width={bannerImage.image.widthMobile ?? 410}
+                  height={bannerImage.image.heightMobile ?? 462}
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full"
+                  style={{
+                    maxHeight: `${bannerImage.image.heightMobile ? bannerImage.image.heightMobile : '462'}px`
+                  }}
+                />
+              </div>
+            </Slider.Item>
+          )}
           {products?.map((product, index) => (
             <Slider.Item
-              index={index}
+              index={shelfWithBanner && bannerImage ? index + 1 : index}
               class="carousel-item w-[252px] lg:w-[292px]"
             >
               <ProductCard
@@ -69,14 +112,25 @@ function ProductShelf({
         </Slider>
 
         <>
-          <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
-            <Slider.PrevButton class="btn btn-circle btn-outline absolute right-1/2 bg-base-100">
-              <Icon size={24} id="ChevronLeft" strokeWidth={3} />
+          <div
+            class={`hidden sm:block z-10 col-start-1 row-start-3 absolute right-11 ${shelfWithBanner ? "top-[-38px]" : "top-[38px]"
+              }`}
+          >
+            <Slider.PrevButton class="btn !w-8 !h-8 !min-h-8 btn-circle btn-outline bg-base-100">
+              <Icon
+                class="rotate-180"
+                size={16}
+                id="ChevronRight"
+                strokeWidth={3}
+              />
             </Slider.PrevButton>
           </div>
-          <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
-            <Slider.NextButton class="btn btn-circle btn-outline absolute left-1/2 bg-base-100">
-              <Icon size={24} id="ChevronRight" strokeWidth={3} />
+          <div
+            class={`hidden sm:block z-10 col-start-3 row-start-3 absolute right-0 ${shelfWithBanner ? "top-[-38px]" : "top-[38px]"
+              }`}
+          >
+            <Slider.NextButton class="btn !w-8 !h-8 !min-h-8 btn-circle btn-outline bg-base-100">
+              <Icon size={16} id="ChevronRight" strokeWidth={3} />
             </Slider.NextButton>
           </div>
         </>

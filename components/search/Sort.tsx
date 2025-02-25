@@ -15,7 +15,10 @@ const useSort = (sortParam?: "legacy" | "intelligent") =>
     return urlSearchParams.get(queryParam) ?? "";
   }, [sortParam]);
 
-const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>, sortParam?: "legacy" | "intelligent") => {
+const applySort = (
+  e: JSX.TargetedEvent<HTMLSelectElement, Event>,
+  sortParam?: "legacy" | "intelligent",
+) => {
   const urlSearchParams = new URLSearchParams(globalThis.location.search);
   const queryParam = sortParam === "intelligent"
     ? SORT_QUERY_PARAM_INTELLIGENT
@@ -77,8 +80,9 @@ function Sort(
             selected={value === sort}
             onClick={() => applySortOnMobile(value)}
             aria-label={`ordenar por ${label}`}
-            class={`${value === sort && "text-firebrick font-bold"
-              } text-center`}
+            class={`${
+              value === sort && "text-firebrick font-bold"
+            } text-center`}
           >
             {label}
           </button>
@@ -97,7 +101,6 @@ function Sort(
     >
       <option value="" hidden class="text-[25px]">
         Ordenar
-
       </option>
       {filteredSortOptions?.map(({ value, label }) => ({
         value,

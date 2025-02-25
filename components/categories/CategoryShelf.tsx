@@ -22,8 +22,9 @@ function CategoryShelf({
   return (
     <div
       id={id}
-      class={`${hasManyItems && "lg:place-items-center"
-        } group container w-full sm:w-[1180px] flex-row grid grid-cols-[48px_1fr_48px] grid-rows-[48px_1fr_48px_1fr] px-5 lg:px-0 mb-2 lg:mb-[25px]`}
+      class={`${
+        hasManyItems && "lg:place-items-center"
+      } group container w-full sm:w-[1180px] flex-row grid grid-cols-[48px_1fr_48px] grid-rows-[48px_1fr_48px_1fr] px-5 lg:px-0 mb-2 lg:mb-[25px]`}
     >
       <Slider class="carousel carousel-center snap-mandatory scroll-smooth sm:snap-end gap-6 md:gap-12 col-span-full row-start-2 row-end-5 lg:mt-8">
         {categories?.map((category, index) => (

@@ -1,1 +1,18 @@
-{"title":"Os mais vendidos","layout":{"headerfontSize":"Large","headerAlignment":"center"},"products":{"props":{"sort":"","count":12},"__resolveType":"vtex/loaders/legacy/productList.ts"},"cardLayout":{"__resolveType":"Product Card Layout - 01"},"__resolveType":"site/sections/Product/ProductShelf.tsx"}
+{
+  "title": "Mais vendidos",
+  "layout": {
+    "headerfontSize": "Small",
+    "headerAlignment": "left"
+  },
+  "products": {
+    "props": {
+      "sort": "",
+      "count": 12
+    },
+    "__resolveType": "vtex/loaders/legacy/productList.ts"
+  },
+  "cardLayout": {
+    "__resolveType": "Product Card Layout - 01"
+  },
+  "__resolveType": "site/sections/Product/ProductShelf.tsx"
+}

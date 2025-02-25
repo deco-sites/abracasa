@@ -150,169 +150,174 @@
       },
       "sections": [
         {
-          "images": [
-            {
-              "alt": "Banner Secundário - Sofás",
-              "link": "https://www.abracasa.com.br/moveis/sofa",
-              "image": "https://data.decoassets.com/abracasa/cbddb866-f77b-4a63-8136-4ca5d5ab646b/casa_banners_home_secund_linha1_sale_sofas_992x560.jpg"
-            },
-            {
-              "alt": "Banner Poltrona Costela",
-              "link": "https://www.abracasa.com.br/campanha/poltrona-costela",
-              "image": "https://data.decoassets.com/abracasa/91a2c078-1d15-49c4-863f-004286da90ff/casa_banners_home_secund_linha1_sale_poltrona-costela_992x560.jpg"
-            }
-          ],
-          "__resolveType": "site/sections/Images/DoubleBanners.tsx"
-        },
-        {
+          "__resolveType": "site/sections/Content/HighlightsBanners.tsx",
           "cards": [
             {
               "link": "/moveis/poltronas",
               "image": {
-                "alt": "POLTRONAS",
-                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/658ad679-dc4b-4014-a1c3-31b5d42d55d5/poltronas.png"
-              },
-              "description": "POLTRONAS",
-              "subDescription": "Modernas e clássicas, em linho ou madeira. Escolha a que mais combina com você!"
+                "alt": "Madeira",
+                "icon": "https://data.decoassets.com/abracasa/96478725-63de-479e-a39e-ccb202924111/39f776ee-c8a5-49a1-a334-1aa0172b349c.jpg"
+              }
             },
             {
               "link": "/Moveis/Sofa",
               "image": {
-                "alt": "SOFÁS",
-                "icon": "https://data.decoassets.com/abracasa/d15c8369-c789-4f09-9306-9df195dbff18/sofas.png"
-              },
-              "description": "SOFÁS",
-              "subDescription": "Modelos que garantem conforto e qualidade sem abrir mão do design."
+                "alt": "Chico",
+                "icon": "https://data.decoassets.com/abracasa/2d7c667d-196d-4bf7-9f20-387e36918eb6/Colecao-Teste-C.png"
+              }
             },
             {
               "link": "/moveis/office",
               "image": {
-                "alt": "KIT HOME OFFICE ",
-                "icon": "https://abracasa.vteximg.com.br/arquivos/ids/184028/casa_banners_destaques2023_escritorio.jpg?v=638179687458430000"
-              },
-              "description": "KIT HOME OFFICE ",
-              "subDescription": "Conjuntos que vão trazer charme e comodidade para trabalhar de casa!"
-            },
-            {
-              "link": "/moveis/mesas",
-              "image": {
-                "alt": "MESAS",
-                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/9690c8a6-065d-4444-8546-12197d3dcff9/mesas.png"
-              },
-              "description": "MESAS",
-              "subDescription": "Confira as nossas linhas de mesas de centro, de canto, de jantar e muito mais. "
-            },
-            {
-              "link": "/moveis/mesas/conjunto-mesa-e-cadeira",
-              "image": {
-                "alt": "CONJUNTO MESA E CADEIRA ",
-                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/5a3a4106-784e-4713-940a-ffcc698adcf5/mesa-e-cadeira.png"
-              },
-              "description": "CONJUNTO MESA E CADEIRA ",
-              "subDescription": "Conjuntos prontinhos de mesas e cadeiras para você escolher! "
-            },
-            {
-              "link": "/moveis/cadeiras",
-              "image": {
-                "alt": "CADEIRAS ",
-                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/5a1bd021-9fa8-4a89-8ae6-a6bc65488633/cadeiras.png"
-              },
-              "description": "CADEIRAS ",
-              "subDescription": "Cadeiras para jantar, relaxar, ou ler um livro.. qual combina mais com você?"
-            },
-            {
-              "link": "/decoracao",
-              "image": {
-                "alt": "DECORAÇÃO ",
-                "icon": "https://data.decoassets.com/abracasa/73421184-d52d-40a8-b3db-6431852e701c/decoracao.png"
-              },
-              "description": "DECORAÇÃO ",
-              "subDescription": "Puffs, velas, cestos, vasos. Decoração para deixar a sua casa com a sua cara! "
+                "alt": "Acessível",
+                "icon": "https://data.decoassets.com/abracasa/44c507a6-6408-4ace-8552-1de55f6fb9a6/Colecao-Teste-B.png"
+              }
             }
           ],
-          "title": "Nossos Destaques",
-          "interval": 10,
-          "__resolveType": "site/sections/Content/HighlightsBanners.tsx"
+          "title": "Confira nossas coleções",
+          "interval": 10
         },
         {
-          "__resolveType": "DoubleBanners 02 - Abracasa"
+          "__resolveType": "website/sections/Rendering/Lazy.tsx",
+          "section": {
+            "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
+            "title": "Design exclusivo",
+            "mainImage": {
+              "src": "https://data.decoassets.com/abracasa/19d7cf32-f5ef-4a73-9854-7074a009dd7c/Group-1652.png",
+              "srcMobile": "https://data.decoassets.com/abracasa/a47d9224-12ac-4556-97af-96f9c42a95b9/Atelie.png",
+              "href": "/"
+            },
+            "imageItems": [
+              {
+                "src": "https://data.decoassets.com/abracasa/227c8801-0b10-4004-a7ab-aee5973af43a/Poltronas.png",
+                "srcMobile": "https://data.decoassets.com/abracasa/c973a0c0-de5a-4cf9-8613-a19c0de5888d/Poltronas.png",
+                "href": "/",
+                "alt": "Poltronas"
+              },
+              {
+                "src": "https://data.decoassets.com/abracasa/9ce0696f-312b-425b-9e91-274d73a66e68/Sofas.png",
+                "srcMobile": "https://data.decoassets.com/abracasa/51eb239d-c70d-48fc-b45c-7f97411d3e99/Sofas.png",
+                "alt": "Sofás",
+                "href": "/"
+              },
+              {
+                "src": "https://data.decoassets.com/abracasa/0c4d628a-c6f9-4c4c-b3d6-9fb824f88503/Home-Office.png",
+                "srcMobile": "https://data.decoassets.com/abracasa/56c9f179-434b-4659-bf19-1c90275d0caf/Home-Office.png",
+                "alt": "Gancho de parede",
+                "href": "/"
+              },
+              {
+                "src": "https://data.decoassets.com/abracasa/667fbea5-ff21-4e2f-adbc-dcf899b95d2f/Mesa-e-Cadeira.png",
+                "srcMobile": "https://data.decoassets.com/abracasa/2cae14fa-31a3-4ac7-bd97-cd0ae4135fd8/Mesa-e-Cadeira.png",
+                "alt": "Cadeiras",
+                "href": "/"
+              },
+              {
+                "src": "https://data.decoassets.com/abracasa/36ae855c-7df6-420e-a9ae-c438cd4baea6/Cadeias.png",
+                "srcMobile": "https://data.decoassets.com/abracasa/328daaa0-e0b6-47de-9a0b-e97dce00361d/Home-Office.png",
+                "alt": "Buffet Chico",
+                "href": "/"
+              },
+              {
+                "src": "https://data.decoassets.com/abracasa/cb738593-30ce-479d-aabe-810710137277/Mesas.png",
+                "srcMobile": "https://data.decoassets.com/abracasa/20db5644-d5be-4627-9002-7f095b328e62/Mesa-e-Cadeira.png",
+                "alt": "Cadeira",
+                "href": "/"
+              }
+            ]
+          }
         },
         {
-          "__resolveType": "Benefits - Abracasa"
+          "__resolveType": "website/sections/Rendering/Lazy.tsx",
+          "section": {
+            "__resolveType": "site/sections/Images/BannerGrid.tsx",
+            "itemsPerLine": {
+              "desktop": 1,
+              "mobile": 1
+            },
+            "banners": [
+              {
+                "srcMobile": "https://data.decoassets.com/abracasa/0ef930a9-b66f-4a4f-867f-ed47483847fc/banner-costela.png",
+                "srcDesktop": "https://data.decoassets.com/abracasa/72f126c9-ac56-4c37-a1ac-b2cb9232cd58/Banner-desk-coltela.png",
+                "alt": "banner-costela",
+                "href": "/"
+              }
+            ],
+            "borderRadius": {
+              "mobile": "none",
+              "desktop": "none"
+            },
+            "fullWidth": true
+          }
         },
         {
-          "__resolveType": "ProductShelf - Design Assinado"
+          "__resolveType": "website/sections/Rendering/Lazy.tsx",
+          "section": {
+            "__resolveType": "site/sections/Images/ShelfWithBanner.tsx",
+            "products": {
+              "__resolveType": "vtex/loaders/legacy/productList.ts",
+              "props": {
+                "sort": "OrderByTopSaleDESC",
+                "collection": "430",
+                "count": 20
+              }
+            },
+            "title": "Design assinado",
+            "layout": {
+              "headerAlignment": "left",
+              "headerfontSize": "Small"
+            },
+            "cardLayout": {
+              "__resolveType": "Product Card Layout - 01"
+            },
+            "bannerImage": {
+              "image": {
+                "src": "https://data.decoassets.com/abracasa/41f3ff7b-c6dc-4e46-9255-0c5bd07d702a/396854168_18374065189068476_6802182373929524710_n-1.png",
+                "alt": "Design assinado",
+                "srcMobile": "https://data.decoassets.com/abracasa/251ee37f-4754-4529-9bc3-0f2c9cea7890/Frame-1667.png",
+                "widthMobile": 273,
+                "heightMobile": 455
+              }
+            },
+            "shelfBannerTitle": "Design assinado"
+          }
         },
         {
-          "subTitle": "Siga a Abra Casa",
-          "socialMedia": [
-            {
-              "link": "https://www.facebook.com/abracasa",
-              "Image": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTcuNDE0IDI4aC0zLjg0M2ExLjE2NSAxLjE2NSAwIDAxLTEuMTY1LTEuMTY0di04LjY3aC0yLjI0MkExLjE2NiAxLjE2NiAwIDAxOSAxNy4wMDR2LTMuNzE1YzAtLjY0Mi41MjItMS4xNjQgMS4xNjQtMS4xNjRoMi4yNDJ2LTEuODZjMC0xLjg0NS41OC0zLjQxNCAxLjY3NS00LjUzOEMxNS4xODEgNC41OTYgMTYuNzIgNCAxOC41MyA0bDIuOTMuMDA1Yy42NDIgMCAxLjE2My41MjMgMS4xNjMgMS4xNjR2My40NDljMCAuNjQyLS41MjIgMS4xNjQtMS4xNjQgMS4xNjRoLTEuOTczYy0uNjAyIDAtLjc1NS4xMjEtLjc4OC4xNTgtLjA1NC4wNjItLjExOS4yMzUtLjExOS43MTR2MS40N2gyLjczMmExLjE2OCAxLjE2OCAwIDAxMS4xNzUgMS4xNjVsLS4wMDIgMy43MTRjMCAuNjQyLS41MjIgMS4xNjQtMS4xNjQgMS4xNjRoLTIuNzR2OC42NjljMCAuNjQyLS41MjMgMS4xNjQtMS4xNjUgMS4xNjR6bS0zLjYtMS40MDdoMy4zNTd2LTkuMDU2YzAtLjQyOS4zNS0uNzc3Ljc3Ny0uNzc3aDMuMTI4bC4wMDItMy4yM2gtMy4xM2EuNzc4Ljc3OCAwIDAxLS43NzctLjc3NnYtMi4xYzAtLjU1LjA1Ni0xLjE3NS40NzEtMS42NDUuNTAxLS41NjggMS4yOTEtLjYzMyAxLjg0Mi0uNjMzaDEuNzMxVjUuNDFsLTIuNjg4LS4wMDRjLTIuOTA3IDAtNC43MTQgMS44NjEtNC43MTQgNC44NTd2Mi40OWEuNzc4Ljc3OCAwIDAxLS43NzcuNzc3aC0yLjYyOXYzLjIyOWgyLjYzYy40MjggMCAuNzc2LjM0OC43NzYuNzc3djkuMDU2em03LjY0My0yMS4xODF6IiBmaWxsPSIjODI4MjgyIi8+PC9zdmc+Cg==",
-              "label": "Facebook",
-              "hrefImage": "https://www.facebook.com/abracasa",
-              "titleImage": "Facebook Abra Casa ",
-              "description": "Ir para o facebook",
-              "diretionalLink": "https://www.facebook.com/abracasa",
-              "descriptionImage": "Facebook Abra Casa "
-            },
-            {
-              "link": "https://twitter.com/abracasa",
-              "Image": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMjggOC42MjNjLTEuNTEuMDctMS40NzcuMDY0LTEuNjQ3LjA3OWwuODk0LTIuNTU0cy0yLjc5MSAxLjAyNy0zLjQ5OSAxLjIxYy0xLjg1OC0xLjY3LTQuNjItMS43NDMtNi41OTQtLjUzLTEuNjE3Ljk5NC0yLjQ4NSAyLjcwMS0yLjE5NiA0LjY5Ny0zLjE0Ny0uNDM3LTUuNzk4LTEuOTI5LTcuODkyLTQuNDQ0bC0uNjYyLS43OTUtLjQ5NS45MDljLS42MjUgMS4xNDgtLjgzMyAyLjQ2LS41ODUgMy42OTYuMTAyLjUwNy4yNzUuOTkuNTE1IDEuNDQzbC0uNTY4LS4yMi0uMDY3Ljk0OWMtLjA2OS45NjQuMjUyIDIuMDkuODU4IDMuMDEuMTcxLjI2LjM5LjU0NC42Ny44MjVsLS4yOTQtLjA0NS4zNTggMS4wODdjLjQ3IDEuNDI5IDEuNDQ4IDIuNTM0IDIuNzE3IDMuMTQ5LTEuMjY3LjUzOC0yLjI5Ljg4LTMuOTczIDEuNDM0TDQgMjMuMDNsMS40MjIuNzc4Yy41NDIuMjk2IDIuNDU4IDEuMjg2IDQuMzUxIDEuNTgzIDQuMjA4LjY2IDguOTQ1LjEyMyAxMi4xMzQtMi43NSAyLjY4Ny0yLjQxOSAzLjU2OC01Ljg2IDMuMzg1LTkuNDQyLS4wMjctLjU0Mi4xMjEtMS4wNi40MTgtMS40NTcuNTk2LS43OTUgMi4yODYtMy4xMTIgMi4yOS0zLjExOHpNMjQuNTg2IDEwLjljLS40OTQuNjYtLjc0MSAxLjUwMi0uNjk3IDIuMzcxLjE4NSAzLjYxMy0uNzk4IDYuNDE0LTIuOTIxIDguMzI2LTIuNDgxIDIuMjM0LTYuNDgyIDMuMTExLTEwLjk3NyAyLjQwNi0uODE0LS4xMjctMS42NTYtLjQxMy0yLjM1Mi0uNjk5IDEuNDEtLjQ4NSAyLjUtLjkxOCA0LjI2LTEuNzVsMi40NTYtMS4xNjMtMi43MTItLjE3NGMtMS4yOTktLjA4My0yLjM4LS43MTItMy4wNDUtMS43MzQuMzUzLS4wMjEuNjkzLS4wNzggMS4wMzItLjE3M2wyLjU4Ni0uNzItMi42MDgtLjYzOWEzLjg4NCAzLjg4NCAwIDAxLTIuMzcyLTEuNjUgMy45NzkgMy45NzkgMCAwMS0uNTE0LTEuMTM0Yy4yNjEuMDcuNTY2LjEyIDEuMDU4LjE2OWwyLjQxMy4yMzgtMS45MTItMS40OTJjLTEuMzc4LTEuMDc0LTEuOTMtMi42OS0xLjUyNS00LjI0MiA0LjMgNC40NjEgOS4zNSA0LjEyNiA5Ljg1OCA0LjI0NC0uMTEyLTEuMDg3LS4xMTQtMS4wOS0uMTQ0LTEuMTkzLS42NS0yLjMwMS43NzYtMy40NyAxLjQyLTMuODY1IDEuMzQzLS44MjYgMy40NzctLjk1IDQuOTU0LjQxLjMyLjI5NC43NTEuNDEgMS4xNTUuMzEuMzYzLS4wOS42Ni0uMTg2Ljk1MS0uMjlsLS42MDYgMS43MzJoLjc3NGwtLjUzMi43MTJ6IiBmaWxsPSIjODI4MjgyIi8+PC9zdmc+Cg==",
-              "label": "Twitter",
-              "titleImage": "Twitter Abra Casa ",
-              "description": "Ir para o Twitter",
-              "diretionalLink": "https://twitter.com/abracasa",
-              "descriptionImage": "Twitter Abra Casa "
-            },
-            {
-              "link": "https://www.instagram.com/abracasadesign/",
-              "Image": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMjEuNTAzIDRIMTAuNDk3QTYuNTA0IDYuNTA0IDAgMDA0IDEwLjQ5N3YxMS4wMDdBNi41MDQgNi41MDQgMCAwMDEwLjQ5NyAyOGgxMS4wMDdBNi41MDQgNi41MDQgMCAwMDI4IDIxLjUwNFYxMC40OTdBNi41MDQgNi41MDQgMCAwMDIxLjUwMyA0em01LjA5IDE3LjUwNGE1LjA5NSA1LjA5NSAwIDAxLTUuMDkgNS4wODlIMTAuNDk3YTUuMDk1IDUuMDk1IDAgMDEtNS4wOS01LjA5VjEwLjQ5OGE1LjA5NSA1LjA5NSAwIDAxNS4wOS01LjA5aDExLjAwN2E1LjA5NSA1LjA5NSAwIDAxNS4wODkgNS4wOXYxMS4wMDd6IiBmaWxsPSIjODI4MjgyIi8+PHBhdGggZD0iTTE2IDkuNDM4QTYuNTcgNi41NyAwIDAwOS40MzggMTYgNi41NyA2LjU3IDAgMDAxNiAyMi41NjIgNi41NyA2LjU3IDAgMDAyMi41NjIgMTYgNi41NyA2LjU3IDAgMDAxNiA5LjQzN3ptMCAxMS43MTdBNS4xNjEgNS4xNjEgMCAwMTEwLjg0NSAxNiA1LjE2MSA1LjE2MSAwIDAxMTYgMTAuODQ1IDUuMTYxIDUuMTYxIDAgMDEyMS4xNTUgMTYgNS4xNjEgNS4xNjEgMCAwMTE2IDIxLjE1NXpNMjIuNzIgNy4xMDdjLTEuMDcgMC0xLjk0Ljg3LTEuOTQgMS45MzkgMCAxLjA3Ljg3IDEuOTQgMS45NCAxLjk0IDEuMDY5IDAgMS45MzktLjg3IDEuOTM5LTEuOTQgMC0xLjA3LS44Ny0xLjk0LTEuOTQtMS45NHptMCAyLjQ3MWEuNTMzLjUzMyAwIDExMC0xLjA2Ni41MzMuNTMzIDAgMDEwIDEuMDY2eiIgZmlsbD0iIzgyODI4MiIvPjwvc3ZnPgo=",
-              "label": "Instagram",
-              "titleImage": "Instagram Abra Casa ",
-              "description": "Ir para o Instagram",
-              "diretionalLink": "https://www.instagram.com/abracasadesign/",
-              "descriptionImage": "Instagram Abra Casa "
-            },
-            {
-              "link": "https://www.youtube.com/c/abracasadesign",
-              "Image": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTkuNjk0IDE1LjAxNWwtNS4zMDItMi45MDFhLjk2NS45NjUgMCAwMC0uOTY0LjAxNi45NjUuOTY1IDAgMDAtLjQ3OC44Mzh2NS43NTNjMCAuMzQ1LjE3OC42NTguNDc1LjgzNWEuOTcxLjk3MSAwIDAwLjk2LjAyMmw1LjMwMy0yLjg1MWEuOTc0Ljk3NCAwIDAwLjAwNi0xLjcxMnptLTUuMzM3IDIuOTgydi00LjNsMy45NjMgMi4xNjktMy45NjMgMi4xM3oiIGZpbGw9IiM4MjgyODIiLz48cGF0aCBkPSJNMjcuODIzIDExLjI5di0uMDFjLS4wMjEtLjE5NC0uMjIzLTEuOTEyLTEuMDU5LTIuNzg2LS45NjUtMS4wMjgtMi4wNi0xLjE1My0yLjU4Ni0xLjIxM2E2LjM4MSA2LjM4MSAwIDAxLS4xMi0uMDE0bC0uMDQxLS4wMDRDMjAuODQ0IDcuMDMyIDE2LjA1MiA3IDE2LjAwNCA3aC0uMDA4Yy0uMDQ4IDAtNC44NC4wMzItOC4wNDEuMjYzbC0uMDQzLjAwNC0uMTEyLjAxNGMtLjUyLjA2LTEuNjAzLjE4NS0yLjU3MiAxLjI1LS43OTUuODY0LTEuMDI1IDIuNTQ2LTEuMDQ5IDIuNzM1bC0uMDAyLjAyNEM0LjE2OSAxMS4zNyA0IDEzLjI4NCA0IDE1LjIwNXYxLjc5NmMwIDEuOTIxLjE3IDMuODM1LjE3NyAzLjkxNnYuMDEyYy4wMjEuMTkuMjIzIDEuODc3IDEuMDU1IDIuNzUuOTA4Ljk5NCAyLjA1NSAxLjEyNiAyLjY3MyAxLjE5Ny4wOTcuMDEuMTgyLjAyLjIzOS4wM2wuMDU1LjAwOGMxLjgzMi4xNzQgNy41NzYuMjYgNy44Mi4yNjRoLjAxNGMuMDQ4IDAgNC44NC0uMDMyIDguMDEyLS4yNjNsLjA0Mi0uMDA0LjEzNS0uMDE1Yy41MTctLjA1NSAxLjU5NS0uMTcgMi41NS0xLjIyLjc5NS0uODY1IDEuMDI1LTIuNTQ2IDEuMDQ5LTIuNzM1bC4wMDItLjAyNEMyNy44MyAyMC44MzUgMjggMTguOTIxIDI4IDE3di0xLjc5NmMwLTEuOTItLjE3LTMuODM0LS4xNzctMy45MTV6bS0xLjIzIDUuNzExYzAgMS43NzgtLjE1NSAzLjYxLS4xNyAzLjc3OC0uMDYuNDYzLS4zMDIgMS41MjctLjY5IDEuOTQ4LS41OTcuNjU3LTEuMjExLjcyMy0xLjY2Ljc3YTcuNjY0IDcuNjY0IDAgMDAtLjE1LjAxN2MtMy4wNjguMjIyLTcuNjc5LjI1Ni03Ljg5MS4yNTctLjIzOC0uMDAzLTUuODk4LS4wOS03LjY3NC0uMjU1YTYuMDYzIDYuMDYzIDAgMDAtLjI5My0uMDM4Yy0uNTI2LS4wNi0xLjI0NS0uMTQyLTEuNzk5LS43NTFsLS4wMTMtLjAxNGMtLjM4LS4zOTctLjYxNi0xLjM5Mi0uNjc2LTEuOTI5LS4wMTEtLjEyNy0uMTctMS45OC0uMTctMy43ODN2LTEuNzk2YzAtMS43NzYuMTU0LTMuNjA1LjE3LTMuNzc2LjA3LS41NDYuMzE4LTEuNTQ1LjY5LTEuOTUuNjE1LS42NzcgMS4yNjUtLjc1MiAxLjY5NC0uODAxbC4xMTUtLjAxNGMzLjExMy0uMjIzIDcuNzU3LS4yNTYgNy45MjQtLjI1OC4xNjYuMDAyIDQuODA5LjAzNSA3Ljg5NS4yNThsLjEyMy4wMTVjLjQ0Mi4wNSAxLjExLjEyNiAxLjcyMy43OGwuMDA2LjAwNmMuMzguMzk3LjYxNiAxLjQwOS42NzYgMS45NTcuMDEuMTIuMTcgMS45NzcuMTcgMy43ODN2MS43OTZ6IiBmaWxsPSIjODI4MjgyIi8+PC9zdmc+Cg==",
-              "label": "Youtube",
-              "titleImage": "Youtube Abra Casa ",
-              "description": "Ir para o Youtube",
-              "diretionalLink": "https://www.youtube.com/c/abracasadesign",
-              "descriptionImage": "Youtube Abra Casa "
-            },
-            {
-              "link": "https://open.spotify.com/user/j24peozyzjzovcm14pjrm670u?si=3GKIwaQeSl-Q5UqYZLkqmg&nd=1",
-              "Image": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMjQuNDg1IDcuNTE1QTExLjkyMiAxMS45MjIgMCAwMDE2IDRhMTEuOTIyIDExLjkyMiAwIDAwLTguNDg1IDMuNTE1QTExLjkyMSAxMS45MjEgMCAwMDQgMTZjMCAzLjIwNSAxLjI0OCA2LjIxOSAzLjUxNSA4LjQ4NUExMS45MjIgMTEuOTIyIDAgMDAxNiAyOGMzLjIwNSAwIDYuMjE5LTEuMjQ4IDguNDg1LTMuNTE1QTExLjkyMSAxMS45MjEgMCAwMDI4IDE2YzAtMy4yMDUtMS4yNDgtNi4yMTktMy41MTUtOC40ODV6TTE2IDI2LjU5NEMxMC4xNTkgMjYuNTk0IDUuNDA2IDIxLjg0IDUuNDA2IDE2IDUuNDA2IDEwLjE1OSAxMC4xNiA1LjQwNiAxNiA1LjQwNmM1Ljg0MSAwIDEwLjU5NCA0Ljc1MyAxMC41OTQgMTAuNTk0IDAgNS44NDEtNC43NTMgMTAuNTk0LTEwLjU5NCAxMC41OTR6IiBmaWxsPSIjODI4MjgyIi8+PHBhdGggZD0iTTI0LjExMyAxMy4zOWEyNS4wNzEgMjUuMDcxIDAgMDAtMTAuMzM1LTIuMjA0Yy0xLjc5IDAtMy41NzcuMTg4LTUuMzEyLjU2YS43MDMuNzAzIDAgMTAuMjk0IDEuMzc0IDI0LjAxOSAyNC4wMTkgMCAwMTUuMDE4LS41MjhjMy40IDAgNi42ODMuNyA5Ljc1OSAyLjA4MWEuNzAxLjcwMSAwIDAwLjkzLS4zNTRjLjE1OC0uMzU0IDAtLjc3LS4zNTQtLjkyOXpNMjEuMTkzIDIwLjAxNWExNy44ODQgMTcuODg0IDAgMDAtNy40MTYtMS41OTJjLTEuMzc1IDAtMi43NDUuMTU1LTQuMDczLjQ2MmEuNzAzLjcwMyAwIDEwLjMxNiAxLjM3IDE2LjcxIDE2LjcxIDAgMDEzLjc1OC0uNDI2YzIuMzgzIDAgNC42ODMuNDk0IDYuODM2IDEuNDY3YS43MDMuNzAzIDAgMTAuNTgtMS4yODF6TTIyLjY3NiAxNi42NWEyMS41MzMgMjEuNTMzIDAgMDAtOC44OTgtMS45MDNjLTEuNTg2IDAtMy4xNjguMTcyLTQuNzAzLjUxYS43MDMuNzAzIDAgMTAuMzAzIDEuMzc0IDIwLjQyMSAyMC40MjEgMCAwMTQuNC0uNDc4YzIuODk5IDAgNS42OTkuNTk5IDguMzIgMS43NzlhLjcuNyAwIDAwLjkzLS4zNTMuNzAzLjcwMyAwIDAwLS4zNTItLjkzeiIgZmlsbD0iIzgyODI4MiIvPjwvc3ZnPgo=",
-              "label": "Spotify",
-              "titleImage": "Spotify Abra Casa ",
-              "description": "Ir para o Spotify",
-              "diretionalLink": "#",
-              "descriptionImage": "Spotify Abra Casa "
-            },
-            {
-              "link": "https://br.pinterest.com/abracasadesign/",
-              "Image": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNOC41MzIgMTcuOTgzbC44MTQuNTMzLjMwOC0xLjE1NWMuNTQ1LTIuMDMuNDg3LTEuOTQuNTQxLTIuMTY2LS4wMjItLjEyNy0uNTk1LTEuNjUyLS4xOTYtMy41MDZsLjAwOC0uMDQzYy41NDYtMy42MDQgNi41NzctNC41ODQgOS4zNzgtMi4yNCAxLjIwOCAxLjAxMiAxLjY2MiAyLjUzIDEuMzE0IDQuMzktLjI1IDEuMzM3LS42ODcgMi4zMzMtMS4zNzQgMy4xMzYtLjk0OSAxLjEwOS0yLjE0MiAxLjE5OS0yLjg0OS44MTMtLjI2My0uMTQzLS44NDYtLjU3NC0uNTc1LTEuNDc5LjM4Ni0xLjI5NCAxLjA4NC0zLjI0NCAxLjE2Ny00LjY1Ny4wNzQtMS4yNi0uNjg2LTIuMjg1LTEuODktMi41NTEtMS4zNDItLjI5Ny0yLjg4OS40MjctMy41NTcgMi4xMTctLjQ4MiAxLjIxNS0uNDggMi40NzguMDA0IDMuODYuMDE1LjM0LS4zMzEgMS42MjUtLjYxMSAyLjY2Mi0uODQ2IDMuMTM1LTIuMDA0IDcuNDI3LS44NzYgOS42MTNsLjM1Ni42OS42NTItLjQyNGMxLjg2LTEuMjEgMi45NDctNC43MjggMy41NDMtNi45MiAxLjU2OSAxLjE2IDMuNzkxIDEuMjU5IDUuOTkuMTg1IDMuNTI5LTEuNzI0IDUuODgzLTUuODM2IDQuNzA0LTEwLjQxNi0xLjMxNS01LjEwMy02LjQxOC03LjA4MS0xMS41NTctNi4yMzYtNC4yMzYuNjk2LTYuOTMgMy40NC03LjY0NiA2LjgyMy0uNjAzIDIuODU0LjM0MiA1LjY1NSAyLjM1MiA2Ljk3MXptLS45NzctNi42OGMuNjQtMy4wMjIgMy4wNjktNS4xNjMgNi41LTUuNzI3IDQuMTE5LS42NzggOC43OTkuNjY4IDkuOTY2IDUuMiAxLjA4IDQuMTkyLTEuMjk1IDcuNTAxLTMuOTYgOC44MDItMS42MzMuNzk4LTMuODU0IDEuMDM1LTUuMTg3LS42OTVsLS44Ny0xLjEyOC0uMzY2IDEuMzc2Yy0uNDg0IDEuODE2LTEuMjY3IDQuODk4LTIuNTI1IDYuNTQ2LS4yNDctMi4wMzguNjcyLTUuNDQyIDEuMjU4LTcuNjEzLjU2LTIuMDc0Ljc3OS0yLjkzNi41OTItMy40NjEtLjM3OS0xLjA2Mi0uMzktMi4wMTQtLjAzNS0yLjkxLjM5Ny0xLjAwNCAxLjI0NC0xLjQxOCAxLjk0Ni0xLjI2My4yNTQuMDU2LjgzOS4yNzYuNzkgMS4wOTctLjA3IDEuMjE0LS43NDggMy4xMjYtMS4xMSA0LjMzNy0uMzggMS4yNzIuMTEgMi40OTUgMS4yNSAzLjExNiAxLjI4LjY5NyAzLjIwMi40ODcgNC41ODktMS4xMzQuODU0LS45OTggMS4zOS0yLjIwMiAxLjY4OC0zLjc5LjIzLTEuMjI4LjE3NS0yLjM1Ny0uMTYyLTMuMzU3YTUuMjQ1IDUuMjQ1IDAgMDAtMS42MzItMi4zN0MxNi42NiA1LjI5IDkuMzU5IDYuNjg2IDguNjIxIDExLjQxNGMtLjI2MyAxLjIzNi0uMjIgMi41MjIuMTI3IDMuODI3LS4wNTYuMjQ1LS4xMzUuNTU4LS4yMTkuODgtLjk3OC0xLjE1LTEuMzY3LTIuOTU4LS45NzQtNC44MTh6IiBmaWxsPSIjODI4MjgyIi8+PC9zdmc+Cg==",
-              "label": "Pinterest",
-              "titleImage": "Pinterest Abra Casa",
-              "description": "Ir para o Pinterest",
-              "diretionalLink": "https://br.pinterest.com/abracasadesign/",
-              "descriptionImage": "Pinterest Abra Casa"
-            }
-          ],
-          "__resolveType": "site/sections/Content/PartnerShips.tsx"
-        },
-        {
+          "__resolveType": "site/sections/Social/InstagramPosts.tsx",
           "title": "Abra Casa no Instagram",
           "layout": {
             "numberOfPosts": 4,
             "headerAlignment": "center"
           },
           "description": "<p style=\"text-align: center\">Quer ver o seu cantinho por lá e aqui na home?<br>Poste uma foto com os seus móveis Abra Casa, marcando a <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/abracadabraoficial/\"><strong>@abracasadesign</strong></a>, e num passe de mágica você aparecerá por aqui!</p>",
-          "__resolveType": "site/sections/Social/InstagramPosts.tsx",
           "facebookToken": "IGQWRQNjBlMjFHbF8xVGxVNkJGdGdDNThHbGxzTEZAkRENoYzV2MGR0SDRNTUs3SjBadVVtN0FWazZAtWjdUTzQzeVBXcldENXVBaDJhWHpkSGhIaDRLamdCRW04RFZArYkFlUUVrYzBmZATdHWTBDQkpZAdlZAiWDdwWXcZD"
+        },
+        {
+          "__resolveType": "website/sections/Rendering/Lazy.tsx",
+          "section": {
+            "__resolveType": "site/sections/Social/MeetStores.tsx",
+            "title": "Conheça nossas lojas:",
+            "images": [
+              {
+                "src": "https://data.decoassets.com/abracasa/e94e480b-a715-490a-94df-f5da8d30b0ec/WhatsApp-Image-2024-01-26-at-11.00-1.png",
+                "srcMobile": "https://data.decoassets.com/abracasa/37424979-c46f-4cd4-89f8-bef051084349/WhatsApp-Image-2024-01-26-at-11.00-1.png",
+                "href": "/institucional/nossas-lojas"
+              },
+              {
+                "src": "https://data.decoassets.com/abracasa/d38d48a1-d1cb-4ae5-a417-fbb024b378f8/WhatsApp-Image-2024-01-26-at-11.00-3.png",
+                "srcMobile": "https://data.decoassets.com/abracasa/d38d48a1-d1cb-4ae5-a417-fbb024b378f8/WhatsApp-Image-2024-01-26-at-11.00-3.png",
+                "href": "/institucional/nossas-lojas"
+              },
+              {
+                "src": "https://data.decoassets.com/abracasa/1c374fd7-c31b-465f-90f5-681073ee161b/WhatsApp-Image-2024-01-26-at-11.00-2.png",
+                "srcMobile": "https://data.decoassets.com/abracasa/1c374fd7-c31b-465f-90f5-681073ee161b/WhatsApp-Image-2024-01-26-at-11.00-2.png",
+                "href": "/institucional/nossas-lojas"
+              }
+            ],
+            "cta": {
+              "href": "/institucional/nossas-lojas"
+            }
+          }
         },
         {
           "__resolveType": "SectionNewsletter - Abracasa"
@@ -321,16 +326,6 @@
           "__resolveType": "SectionText - Abracasa"
         }
       ]
-    },
-    {
-      "__resolveType": "site/sections/Social/InstagramPosts.tsx",
-      "facebookToken": "IGAAIJjni2GWtBZAE1rQ09yR0tDcG5FNW8xTDVXYS1QZAm03ZAThzcTlEOHBMRlJYUDczYTVMMUw4U2hsbDY0WkF1ZA0tINnA3Y1VTMjhvc2NqUDBZAMWFsZAjJtR3VtZAV9kT1o0M2VOSjAyUWFnZAXlQcGlid0h2OTNIcXJNTzl3RDZA5ZAwZDZD",
-      "title": "Abra Casa no Instagram",
-      "layout": {
-        "headerAlignment": "center",
-        "numberOfPosts": 4
-      },
-      "description": "<p style=\"text-align: center\">Inspire-se com ideias para decorar seu lar e fique por dentro das novidades e promoções. Confira mais no nosso Insta!<br><br>Quer ver o seu cantinho por lá e aqui no nosso perfil?<br>Poste uma foto com os seus móveis Abra Casa, marcando a <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/abracadabraoficial/\"><strong>@abracasadesign</strong></a>, e deixe sua criatividade brilhar aqui na nossa home!</p>"
     },
     {
       "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx",

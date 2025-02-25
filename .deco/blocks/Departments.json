@@ -1,1 +1,77 @@
-{"departments":[{"link":"/moveis/poltronas","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/d77603ab-5b34-43a8-be22-2363931d5702/Layer-0-1.png","label":"POLTRONAS","width":80,"height":70,"loading":"lazy","description":"Poltronas"},{"link":"/moveis/cadeiras-bancos-e-banquetas/cadeiras","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/47427fbf-1a1b-4448-a17b-bc7ef3d8433e","label":"CADEIRAS","width":50,"height":70,"loading":"lazy","description":"Cadeiras"},{"link":"/moveis/sofa","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/3f6eeb10-36e3-459b-9a17-8bf44a7eb222/thumb-sofa-home-1-(2).png","label":"SOFÁS","width":140,"height":59,"loading":"lazy","description":"Sofás"},{"link":"/moveis/mesas","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b82a67f6-da6e-4cd2-b548-03e8c3d00c46/Layer-4-1-(1).png","label":"MESAS","width":157,"height":60,"loading":"lazy","description":"Mesas"},{"link":"/moveis/guarda-roupas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/ef99a290-2c06-44d6-bd38-6a8325a7447c","label":"GUARDA-ROUPAS","width":45,"height":80,"loading":"lazy","description":"Guarda-Roupas"},{"link":"/moveis/mesas/conjunto-mesa-e-cadeira","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/7bdd8d1e-02c6-4045-87a3-8b1f66b75139","label":"CONJ. MESA E CADEIRA","width":110,"height":70,"loading":"lazy","description":"Conj. Mesa e Cadeira"},{"link":"/moveis/office/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/1a1814a3-9d19-491d-b57b-d87f539e2e25","label":"OFFICE","width":76,"height":80,"loading":"lazy","description":"Office"},{"link":"/decoracao","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/53321403-a23f-49ee-866a-c36c86742a05","label":"DECORAÇÃO","width":29,"height":74,"loading":"lazy","description":"Decoração"}],"__resolveType":"site/sections/Content/Departments.tsx"}
+{
+  "departments": [
+    {
+      "link": "/moveis/poltronas",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/d77603ab-5b34-43a8-be22-2363931d5702/Layer-0-1.png",
+      "label": "POLTRONAS",
+      "width": 80,
+      "height": 70,
+      "loading": "lazy",
+      "description": "Poltronas"
+    },
+    {
+      "link": "/moveis/cadeiras-bancos-e-banquetas/cadeiras",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/47427fbf-1a1b-4448-a17b-bc7ef3d8433e",
+      "label": "CADEIRAS",
+      "width": 50,
+      "height": 70,
+      "loading": "lazy",
+      "description": "Cadeiras"
+    },
+    {
+      "link": "/moveis/sofa",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/3f6eeb10-36e3-459b-9a17-8bf44a7eb222/thumb-sofa-home-1-(2).png",
+      "label": "SOFÁS",
+      "width": 140,
+      "height": 59,
+      "loading": "lazy",
+      "description": "Sofás"
+    },
+    {
+      "link": "/moveis/mesas",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b82a67f6-da6e-4cd2-b548-03e8c3d00c46/Layer-4-1-(1).png",
+      "label": "MESAS",
+      "width": 157,
+      "height": 60,
+      "loading": "lazy",
+      "description": "Mesas"
+    },
+    {
+      "link": "/moveis/guarda-roupas",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/ef99a290-2c06-44d6-bd38-6a8325a7447c",
+      "label": "GUARDA-ROUPAS",
+      "width": 45,
+      "height": 80,
+      "loading": "lazy",
+      "description": "Guarda-Roupas"
+    },
+    {
+      "link": "/moveis/mesas/conjunto-mesa-e-cadeira",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/7bdd8d1e-02c6-4045-87a3-8b1f66b75139",
+      "label": "CONJ. MESA E CADEIRA",
+      "width": 110,
+      "height": 70,
+      "loading": "lazy",
+      "description": "Conj. Mesa e Cadeira"
+    },
+    {
+      "link": "/moveis/office/",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/1a1814a3-9d19-491d-b57b-d87f539e2e25",
+      "label": "OFFICE",
+      "width": 76,
+      "height": 80,
+      "loading": "lazy",
+      "description": "Office"
+    },
+    {
+      "link": "/decoracao",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/53321403-a23f-49ee-866a-c36c86742a05",
+      "label": "DECORAÇÃO",
+      "width": 29,
+      "height": 74,
+      "loading": "lazy",
+      "description": "Decoração"
+    }
+  ],
+  "__resolveType": "site/sections/Content/Departments.tsx"
+}

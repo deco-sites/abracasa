@@ -1,1 +1,94 @@
-{"name":"Sofá Pluma","path":"/campanha/sofa-pluma","sections":[{"title":"Sofá Pluma","jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx","titleTemplate":"Sofá Pluma"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"mobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b90eeca9-575e-43c1-be67-0f305c896253/casa_sofa_pluma_banner_especial_mobile_800x400.png","desktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/825013ff-5664-4e67-96c9-af3db6b1e424/casa_sofa_pluma_banner_especial_desktop_1800x220.png"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"html":"<p style=\"text-align: center\"><br></p>","__resolveType":"site/sections/Cashback/HTMLContent.tsx"},{"html":"<p></p>","__resolveType":"site/sections/Cashback/HTMLContent.tsx"},{"page":{"fq":"H:548","sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx","isCategoriesFilterActive":true},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Sofá Pluma",
+  "path": "/campanha/sofa-pluma",
+  "sections": [
+    {
+      "title": "Sofá Pluma",
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "titleTemplate": "Sofá Pluma"
+    },
+    { "__resolveType": "Header - 01" },
+    {
+      "banners": [
+        {
+          "image": {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b90eeca9-575e-43c1-be67-0f305c896253/casa_sofa_pluma_banner_especial_mobile_800x400.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/825013ff-5664-4e67-96c9-af3db6b1e424/casa_sofa_pluma_banner_especial_desktop_1800x220.png"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "html": "<p style=\"text-align: center\"><br></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+    },
+    {
+      "html": "<p></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+    },
+    {
+      "page": {
+        "fq": "H:548",
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": { "mobile": 2, "desktop": 4 },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": { "skuSelector": true, "productDescription": true },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "isCategoriesFilterActive": true
+    },
+    { "__resolveType": "Footer - 01" }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

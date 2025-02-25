@@ -43,20 +43,22 @@ function NavItem(
             )}
 
             <ul
-              class={`flex ${!hasChildren
+              class={`flex ${
+                !hasChildren
                   ? "flex-col flex-wrap gap-x-[90px] max-h-[270px]"
                   : "flex-wrap flex-col gap-8 h-[400px] py-2 justify-between flex-1"
-                }`}
+              }`}
             >
               {children.map((node) => (
                 <li>
                   <div class="flex flex-col">
                     <a
                       href={node.url}
-                      class={`text-gray-dark text-sm ${hasChildren
+                      class={`text-gray-dark text-sm ${
+                        hasChildren
                           ? "font-semibold"
                           : "hover:text-firebrick transition-colors duration-100 ease-in tracking-[0.5px] leading-[180%]"
-                        }`}
+                      }`}
                     >
                       <span>{node.name}</span>
                     </a>

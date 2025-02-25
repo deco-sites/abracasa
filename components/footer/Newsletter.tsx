@@ -28,7 +28,7 @@ function Newsletter(
   const loading = useSignal(false);
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
-    e.preventDefault();
+    e.currentTarget?.preventDefault();
 
     try {
       loading.value = true;
@@ -48,10 +48,11 @@ function Newsletter(
 
   return (
     <div
-      class={`flex ${tiled
+      class={`flex ${
+        tiled
           ? "flex-col gap-4 lg:flex-row lg:w-full lg:justify-between"
           : "flex-col gap-4"
-        }`}
+      }`}
     >
       <div class="flex flex-col gap-4">
         {content?.title && (

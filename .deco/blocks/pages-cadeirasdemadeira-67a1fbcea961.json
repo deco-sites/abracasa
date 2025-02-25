@@ -1,1 +1,94 @@
-{"name":"Cadeiras de Madeira","path":"/campanha/cadeiras-de-madeira","sections":[{"title":"Cadeiras de Madeira","jsonLD":{"sort":"OrderByPriceDESC","count":12,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx","titleTemplate":"Cadeiras de Madeira"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"mobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/1a863749-fd29-4624-8ee9-fddf9eae6a57/casa_banner_especial_mobile_cadeiras_800x400.png","desktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/039010c5-fa86-4e17-a28e-03dd017de977/casa_banner_especial_desk_cadeiras_1800x220.png"},"matcher":"/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"html":"<p style=\"text-align: center\"><br></p>","__resolveType":"site/sections/Cashback/HTMLContent.tsx"},{"html":"<p></p>","__resolveType":"site/sections/Cashback/HTMLContent.tsx"},{"page":{"fq":"H:547","sort":"OrderByTopSaleDESC","count":48,"__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"layout":{"columns":{"mobile":2,"desktop":4},"variant":"drawer","pagination":"show-more"},"cardLayout":{"layout":{"hide":{"skuSelector":true,"productDescription":true},"show":{"cta":true,"allPrices":true,"productName":true,"skuSelector":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Small","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":false,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":true},"elementsPositions":{"skuSelector":"Top","favoriteIcon":"Top right"},"backgroundAndBorder":{"shadow":"None","bgColor":"Transparent","borderColor":"Transparent","borderRadius":"None"}},"products":{"term":"a","count":2,"__resolveType":"vtex/loaders/legacy/productList.ts"},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"startingPage":1,"__resolveType":"site/sections/Product/SearchResult.tsx","isCategoriesFilterActive":true},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Cadeiras de Madeira",
+  "path": "/campanha/cadeiras-de-madeira",
+  "sections": [
+    {
+      "title": "Cadeiras de Madeira",
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "titleTemplate": "Cadeiras de Madeira"
+    },
+    { "__resolveType": "Header - 01" },
+    {
+      "banners": [
+        {
+          "image": {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/1a863749-fd29-4624-8ee9-fddf9eae6a57/casa_banner_especial_mobile_cadeiras_800x400.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/039010c5-fa86-4e17-a28e-03dd017de977/casa_banner_especial_desk_cadeiras_1800x220.png"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "html": "<p style=\"text-align: center\"><br></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+    },
+    {
+      "html": "<p></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+    },
+    {
+      "page": {
+        "fq": "H:547",
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": { "mobile": 2, "desktop": 4 },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": { "skuSelector": true, "productDescription": true },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "isCategoriesFilterActive": true
+    },
+    { "__resolveType": "Footer - 01" }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
