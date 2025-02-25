@@ -14,10 +14,12 @@ interface Props extends Omit<ProductShelfProps, "products"> {
 interface BannerImage {
   image: {
     src: ImageWidget;
-    srcMobile: ImageWidget;
-    alt: string;
     width?: number;
     height?: number;
+    srcMobile: ImageWidget;
+    widthMobile?: number;
+    heightMobile?: number;
+    alt: string;
   };
 }
 

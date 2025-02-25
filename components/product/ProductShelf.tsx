@@ -18,10 +18,12 @@ import Image from "apps/website/components/Image.tsx";
 interface BannerImage {
   image: {
     src: ImageWidget;
-    srcMobile: ImageWidget;
-    alt: string;
     width?: number;
     height?: number;
+    srcMobile: ImageWidget;
+    widthMobile?: number;
+    heightMobile?: number;
+    alt: string;
   };
 }
 
@@ -75,17 +77,20 @@ function ProductShelf({
           {shelfWithBanner && bannerImage && (
             <Slider.Item
               index={0}
-              class="carousel-item w-[252px] lg:hidden lg:w-[292px]"
+              class="carousel-item lg:hidden lg:w-[292px]"
             >
               <div class="flex items-center justify-center h-full">
                 <Image
                   src={bannerImage.image.srcMobile}
                   alt={bannerImage.image.alt}
-                  width={bannerImage.image.width ?? 410}
-                  height={bannerImage.image.height ?? 462}
+                  width={bannerImage.image.widthMobile ?? 410}
+                  height={bannerImage.image.heightMobile ?? 462}
                   loading="lazy"
                   decoding="async"
                   class="w-full h-full"
+                  style={{
+                    maxHeight: `${bannerImage.image.heightMobile ? bannerImage.image.heightMobile : '462'}px`
+                  }}
                 />
               </div>
             </Slider.Item>
