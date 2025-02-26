@@ -30,6 +30,13 @@
             "mobile": "https://data.decoassets.com/abracasa/d8680deb-de7f-46b8-8e22-fcaf8ee5de98/casa_banner_home_secund_especial_mobile_poltrona_800x400.png"
           },
           "matcher": "/*"
+        },
+        {
+          "image": {
+            "desktop": "https://data.decoassets.com/abracasa/d6237ea2-5554-4aab-a39e-e601160ff831/casa_banner_home_secund_especial_desk_poltrona_1800x220.png",
+            "mobile": "https://data.decoassets.com/abracasa/d8680deb-de7f-46b8-8e22-fcaf8ee5de98/casa_banner_home_secund_especial_mobile_poltrona_800x400.png"
+          },
+          "matcher": "/*"
         }
       ],
       "__resolveType": "site/sections/Category/CategoryBanner.tsx"
