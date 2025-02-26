@@ -36,7 +36,7 @@ function ShelfWithBanner({
       <h1 class="text-[#555555]  text-2xl font-sans font-normal mb-[14px]">
         {shelfBannerTitle}
       </h1>
-      <div class="flex gap-4">
+      <div class="flex">
         <Image
           src={bannerImage.image.src}
           alt={bannerImage.image.alt}
@@ -44,7 +44,7 @@ function ShelfWithBanner({
           height={bannerImage.image.height ?? 462}
           loading="lazy"
           decoding="async"
-          class="hidden lg:block"
+          class="hidden lg:block mr-4"
         />
         <ProductShelf
           products={products}
