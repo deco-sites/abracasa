@@ -18,16 +18,8 @@
       "banners": [
         {
           "image": {
-            "alt": "Poltrona Costela",
-            "mobile": "https://data.decoassets.com/abracasa/426621e6-a42c-40ab-ad39-57ca5ec17c78/casa_banner_especial_mobile_salajantar_poltrona_costela_800x400.jpg",
-            "desktop": "https://data.decoassets.com/abracasa/40713a25-9af5-4d49-8251-0d15f034e6a6/casa_banner_especial_desk_sale_poltrona_costela_1800x220.jpg"
-          },
-          "matcher": "/*"
-        },
-        {
-          "image": {
-            "desktop": "https://data.decoassets.com/abracasa/d6237ea2-5554-4aab-a39e-e601160ff831/casa_banner_home_secund_especial_desk_poltrona_1800x220.png",
-            "mobile": "https://data.decoassets.com/abracasa/d8680deb-de7f-46b8-8e22-fcaf8ee5de98/casa_banner_home_secund_especial_mobile_poltrona_800x400.png"
+            "mobile": "https://data.decoassets.com/abracasa/d8680deb-de7f-46b8-8e22-fcaf8ee5de98/casa_banner_home_secund_especial_mobile_poltrona_800x400.png",
+            "desktop": "https://data.decoassets.com/abracasa/d6237ea2-5554-4aab-a39e-e601160ff831/casa_banner_home_secund_especial_desk_poltrona_1800x220.png"
           },
           "matcher": "/*"
         },
