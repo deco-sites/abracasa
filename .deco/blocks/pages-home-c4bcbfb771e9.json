@@ -13,20 +13,6 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "alt": "Sale",
-          "href": "https://www.abracasa.com.br/campanha/sale",
-          "mobile": {
-            "image": "https://data.decoassets.com/abracasa/3198f0ee-233b-4960-b898-1665214bc92e/48_casa_sale_banner_mobile.gif",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://data.decoassets.com/abracasa/2eb64ead-c611-4ba6-8d3e-50f7efaa373e/48h_casa_sale_banner_desktop.gif",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Sale sala de jantar",
           "href": "https://www.abracasa.com.br/campanha/sala-de-jantar",
           "mobile": {
