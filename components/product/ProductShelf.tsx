@@ -73,11 +73,11 @@ function ProductShelf({
         id={id}
         class={`grid grid-cols-[48px_1fr_48px] ${shelfWithBanner ? '' : 'pl-6 sm:px-0'}`}
       >
-        <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar gap-6 col-span-full row-start-2 row-end-5 pb-2">
+        <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar col-span-full row-start-2 row-end-5 pb-2">
           {shelfWithBanner && bannerImage && (
             <Slider.Item
               index={0}
-              class="carousel-item lg:hidden lg:w-[292px]"
+              class="carousel-item lg:hidden lg:w-[292px] mr-6"
             >
               <div class="flex items-center justify-center h-full">
                 <Image
@@ -98,7 +98,7 @@ function ProductShelf({
           {products?.map((product, index) => (
             <Slider.Item
               index={shelfWithBanner && bannerImage ? index + 1 : index}
-              class="carousel-item w-[252px] lg:w-[292px]"
+              class={`carousel-item w-[252px] lg:w-[292px] ${index !== products.length - 1 ? 'mr-6' : ''}`}
             >
               <ProductCard
                 product={product}
