@@ -13,15 +13,29 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "alt": "Home Office",
-          "href": "https://www.abracasa.com.br/campanha/escrivaninhas",
+          "alt": "Sofá Cama",
+          "href": "https://www.abracasa.com.br/moveis/sofa/sofa-cama",
           "mobile": {
-            "image": "https://data.decoassets.com/abracasa/5870f17b-cd57-431e-bbd5-2387a9898c93/casa_escrivaninhas_banner_mobile_767x942.jpg",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/27609cee-d4fd-4f1f-9dc1-4dbbc44f4a45/casa_sofa_cama_mobile_767x942.gif",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://data.decoassets.com/abracasa/a5bebae7-c782-4c6b-a30c-ba32308bf27e/casa_escrivaninhas_banner_desktop_1920x713px.jpg",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/6026c4ef-3321-44e4-8bc9-e313f8f77f3d/casa_sofa_cama_banner_home_principal_desktop_1920x713.gif",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Ateliê",
+          "href": "/campanha/atelie-casa",
+          "mobile": {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/52bf5e43-458b-4a61-bb11-077aca0bea9e",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/3ed26f73-e2ed-4aee-a6be-8a49535587c5",
             "width": 1920,
             "height": 713
           }
@@ -41,15 +55,15 @@
           }
         },
         {
-          "alt": "Sofá Cama",
-          "href": "https://www.abracasa.com.br/moveis/sofa/sofa-cama",
+          "alt": "Home Office",
+          "href": "https://www.abracasa.com.br/campanha/escrivaninhas",
           "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/27609cee-d4fd-4f1f-9dc1-4dbbc44f4a45/casa_sofa_cama_mobile_767x942.gif",
+            "image": "https://data.decoassets.com/abracasa/5870f17b-cd57-431e-bbd5-2387a9898c93/casa_escrivaninhas_banner_mobile_767x942.jpg",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/6026c4ef-3321-44e4-8bc9-e313f8f77f3d/casa_sofa_cama_banner_home_principal_desktop_1920x713.gif",
+            "image": "https://data.decoassets.com/abracasa/a5bebae7-c782-4c6b-a30c-ba32308bf27e/casa_escrivaninhas_banner_desktop_1920x713px.jpg",
             "width": 1920,
             "height": 713
           }
@@ -64,20 +78,6 @@
           },
           "desktop": {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/534ce57c-cbcb-402d-b46c-8150d59e6175/casa_banner_desktop_off_2024.gif",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Ateliê",
-          "href": "/campanha/atelie-casa",
-          "mobile": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/52bf5e43-458b-4a61-bb11-077aca0bea9e",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/3ed26f73-e2ed-4aee-a6be-8a49535587c5",
             "width": 1920,
             "height": 713
           }
