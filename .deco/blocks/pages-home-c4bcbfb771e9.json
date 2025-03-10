@@ -13,6 +13,20 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
+          "alt": "Semana do Consumidor",
+          "href": "https://www.abracasa.com.br/campanha/semana-do-consumidor",
+          "mobile": {
+            "image": "https://data.decoassets.com/abracasa/fc709b47-eedd-447b-9d25-0f40db51df77/casa_consumidor_banner_mobile_.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://data.decoassets.com/abracasa/804a9351-9d10-4026-b8ec-9e50f7789359/casa_consumidor_banner_desktop_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Sofá Cama",
           "href": "https://www.abracasa.com.br/moveis/sofa/sofa-cama",
           "mobile": {
