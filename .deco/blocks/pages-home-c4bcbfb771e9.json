@@ -122,6 +122,12 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "CampaignPopup - Frete SP"
+      }
+    },
+    {
       "__resolveType": "Departments"
     },
     {
