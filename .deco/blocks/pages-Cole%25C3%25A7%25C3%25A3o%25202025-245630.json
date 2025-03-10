@@ -59,7 +59,10 @@
             "desktop": "https://data.decoassets.com/abracasa/7f0ece74-0f08-4be9-9376-c9b9f6e1cf16/Vertical-Mesa-Athos-Final-1-(1).png"
           }
         ],
-        "titleMobile": "<p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">Uma expressão </span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">de arte através</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">da paixão pelo design.</span></p>"
+        "titleMobile": "<p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">Uma expressão </span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">de arte através</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">da paixão pelo design.</span></p>",
+        "button": {
+          "title": "Confira a coleção"
+        }
       }
     },
     {
@@ -190,6 +193,28 @@
           "mobile": "https://data.decoassets.com/abracasa/46f80346-eb8d-4506-918d-dd04743546b8/Horizontal-Apt-Botafogo-1.png"
         },
         "finalText": "Um jeito leve de se sentir em casa."
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "layout": {
+          "headerfontSize": "Small",
+          "headerAlignment": "left"
+        },
+        "products": {
+          "props": {
+            "sort": "",
+            "count": 12,
+            "collection": "553"
+          },
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "cardLayout": {
+          "__resolveType": "Product Card Layout - 01"
+        },
+        "title": "Coleção 2025"
       }
     },
     {
