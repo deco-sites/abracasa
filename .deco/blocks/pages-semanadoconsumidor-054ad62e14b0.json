@@ -18,8 +18,8 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/36860294-af4a-4c31-8d07-c9b687260b99",
-            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/bd0f7715-2b7a-4dd4-955a-b84fbadac6f3"
+            "mobile": "https://data.decoassets.com/abracasa/6df927d8-0ef9-4c34-bf3c-a93b284c053f/casa_consumidor_2_banner_especial_mobile_800x400.jpg",
+            "desktop": "https://data.decoassets.com/abracasa/801944aa-b4f1-49d2-b5a7-d03a1284df6c/casa_consumidor_banner_especial_desktop_1800x2202.jpg"
           },
           "matcher": "/*"
         }
