@@ -213,7 +213,11 @@
           "marcas",
           "encomenda",
           "departments",
-          "brands"
+          "brands",
+          "moveis",
+          "decoração",
+          "ambientes",
+          "móveis"
         ],
         "layout": {
           "variant": "drawer",
