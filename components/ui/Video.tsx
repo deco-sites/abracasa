@@ -49,11 +49,10 @@ export default function Video(
   if (content.type === "Youtube") {
     return (
       <div
-        class={`container overflow-hidden relative w-full ${
-          content.hasContainer
+        class={`overflow-hidden relative w-full ${content.hasContainer
             ? "max-w-[375px] md:max-w-[560px] h-[193px] md:h-[297px] px-4"
             : ""
-        }`}
+          }`}
       >
         <iframe
           width={content.width || "560"}

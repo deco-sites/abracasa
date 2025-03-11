@@ -15,5 +15,8 @@
   "cardLayout": {
     "__resolveType": "Product Card Layout - 01"
   },
-  "__resolveType": "site/sections/Product/ProductShelf.tsx"
+  "__resolveType": "site/sections/Product/ProductShelf.tsx",
+  "bannerImage": {
+    "image": {}
+  }
 }

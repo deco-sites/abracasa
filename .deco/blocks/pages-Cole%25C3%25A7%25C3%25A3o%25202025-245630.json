@@ -1,0 +1,260 @@
+{
+  "name": "Coleção 2025",
+  "path": "/colecao-2025",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header - 01"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/Video.tsx",
+        "video": {
+          "content": {
+            "link": "https://www.youtube.com/embed/6U-WwfFxSQk?si=-yfyoibu8xQFqUsN",
+            "type": "Youtube",
+            "hasContainer": false,
+            "height": "605"
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
+        "title": "<p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 100pt\">design</span></p><p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 100pt\">contemporâneo</span></p>",
+        "image": [
+          {
+            "desktop": "https://data.decoassets.com/abracasa/0ffbe777-126e-4e11-b2bf-992102b18496/Vert-Secundario-Maggiolina-1.png",
+            "mobile": "https://data.decoassets.com/abracasa/42b5b2b1-60e9-4d72-a1cc-c3812822e670/Vert-Secundario-Maggiolina-1-(1).png"
+          },
+          {
+            "desktop": "https://data.decoassets.com/abracasa/cb206dda-7c7a-431d-8205-7c4a0329bc79/Horizontal-Rack-Chico---Quadro-e-Mesa-1.png",
+            "mobile": "https://data.decoassets.com/abracasa/cb206dda-7c7a-431d-8205-7c4a0329bc79/Horizontal-Rack-Chico---Quadro-e-Mesa-1.png"
+          },
+          {
+            "desktop": "https://data.decoassets.com/abracasa/3596604b-2c10-44dc-8221-a787d0f80b70/Horizontal-Sofa-Week---Luminaria-1.png",
+            "mobile": "https://data.decoassets.com/abracasa/3596604b-2c10-44dc-8221-a787d0f80b70/Horizontal-Sofa-Week---Luminaria-1.png"
+          }
+        ],
+        "titleMobile": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 31pt\">design</span></p><p style=\"text-align: right\"><span style=\"color: #212121; font-size: 31pt\">contemporâneo</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ColectionHero.tsx",
+        "title": "<p><span style=\"color: #212121; font-size: 31pt\">Uma expressão </span></p><p><span style=\"color: #212121; font-size: 31pt\">de arte através</span></p><p><span style=\"color: #212121; font-size: 31pt\">da paixão pelo design.</span></p>",
+        "image": [
+          {
+            "desktop": "https://data.decoassets.com/abracasa/65f9bc4e-04a8-43b4-83b0-c07054905444/Vertical-Secundario-Sofa-Ming-1.png",
+            "mobile": "https://data.decoassets.com/abracasa/9f07219c-f115-460e-8bc2-ca486466a76b/Vertical-Secundario-Sofa-Ming-1-(1).png"
+          },
+          {
+            "mobile": "https://data.decoassets.com/abracasa/a4ae281c-15f7-4670-bb1d-e6e0b4b07a32/Vertical-Mesa-Athos-Final-1.png",
+            "desktop": "https://data.decoassets.com/abracasa/7f0ece74-0f08-4be9-9376-c9b9f6e1cf16/Vertical-Mesa-Athos-Final-1-(1).png"
+          }
+        ],
+        "titleMobile": "<p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">Uma expressão </span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">de arte através</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">da paixão pelo design.</span></p>",
+        "button": {
+          "title": "Confira a coleção",
+          "link": "#PLP",
+          "target": "_self"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
+        "title": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 100pt\">conforto</span></p>",
+        "titleMobile": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 31pt\">conforto</span></p>",
+        "image": [
+          {
+            "desktop": "https://data.decoassets.com/abracasa/d8e3c2bd-68eb-477c-be7a-cbd9ee58de04/Horizontal-Mesa-Athos-Final-1.png",
+            "mobile": "https://data.decoassets.com/abracasa/d8e3c2bd-68eb-477c-be7a-cbd9ee58de04/Horizontal-Mesa-Athos-Final-1.png"
+          },
+          {
+            "desktop": "https://data.decoassets.com/abracasa/43775dd6-90f4-4a03-8b3e-af395bbaf655/Horizontal-Mesa-Athos-Final-2.png",
+            "mobile": "https://data.decoassets.com/abracasa/43775dd6-90f4-4a03-8b3e-af395bbaf655/Horizontal-Mesa-Athos-Final-2.png"
+          },
+          {
+            "desktop": "https://data.decoassets.com/abracasa/39fbde93-42f5-4061-80a9-007e1825571a/Vertical-Secundario-Sofa-Ming-1.png",
+            "mobile": "https://data.decoassets.com/abracasa/39fbde93-42f5-4061-80a9-007e1825571a/Vertical-Secundario-Sofa-Ming-1.png"
+          }
+        ],
+        "mainImage": {
+          "0": "h",
+          "1": "t",
+          "2": "t",
+          "3": "p",
+          "4": "s",
+          "5": ":",
+          "6": "/",
+          "7": "/",
+          "8": "d",
+          "9": "a",
+          "10": "t",
+          "11": "a",
+          "12": ".",
+          "13": "d",
+          "14": "e",
+          "15": "c",
+          "16": "o",
+          "17": "a",
+          "18": "s",
+          "19": "s",
+          "20": "e",
+          "21": "t",
+          "22": "s",
+          "23": ".",
+          "24": "c",
+          "25": "o",
+          "26": "m",
+          "27": "/",
+          "28": "a",
+          "29": "b",
+          "30": "r",
+          "31": "a",
+          "32": "c",
+          "33": "a",
+          "34": "s",
+          "35": "a",
+          "36": "/",
+          "37": "4",
+          "38": "6",
+          "39": "f",
+          "40": "8",
+          "41": "0",
+          "42": "3",
+          "43": "4",
+          "44": "6",
+          "45": "-",
+          "46": "e",
+          "47": "b",
+          "48": "8",
+          "49": "d",
+          "50": "-",
+          "51": "4",
+          "52": "5",
+          "53": "0",
+          "54": "6",
+          "55": "-",
+          "56": "9",
+          "57": "1",
+          "58": "8",
+          "59": "d",
+          "60": "-",
+          "61": "d",
+          "62": "d",
+          "63": "0",
+          "64": "4",
+          "65": "7",
+          "66": "4",
+          "67": "3",
+          "68": "5",
+          "69": "4",
+          "70": "6",
+          "71": "b",
+          "72": "8",
+          "73": "/",
+          "74": "H",
+          "75": "o",
+          "76": "r",
+          "77": "i",
+          "78": "z",
+          "79": "o",
+          "80": "n",
+          "81": "t",
+          "82": "a",
+          "83": "l",
+          "84": "-",
+          "85": "A",
+          "86": "p",
+          "87": "t",
+          "88": "-",
+          "89": "B",
+          "90": "o",
+          "91": "t",
+          "92": "a",
+          "93": "f",
+          "94": "o",
+          "95": "g",
+          "96": "o",
+          "97": "-",
+          "98": "1",
+          "99": ".",
+          "100": "p",
+          "101": "n",
+          "102": "g",
+          "desktop": "https://data.decoassets.com/abracasa/46f80346-eb8d-4506-918d-dd04743546b8/Horizontal-Apt-Botafogo-1.png",
+          "mobile": "https://data.decoassets.com/abracasa/46f80346-eb8d-4506-918d-dd04743546b8/Horizontal-Apt-Botafogo-1.png"
+        },
+        "finalText": "Um jeito leve de se sentir em casa."
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
+          "sort": "OrderByPriceASC",
+          "filters": "dynamic",
+          "fq": "H:553",
+          "count": 48
+        },
+        "hiddenFilters": [
+          "designers",
+          "marcas",
+          "encomenda",
+          "departments",
+          "brands",
+          "moveis",
+          "decoração",
+          "ambientes",
+          "móveis"
+        ],
+        "layout": {
+          "variant": "drawer",
+          "columns": {
+            "mobile": 2,
+            "desktop": 4
+          }
+        },
+        "cardLayout": {
+          "basics": {
+            "contentAlignment": "Left",
+            "oldPriceSize": "Small"
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "hide": {
+            "productDescription": true,
+            "skuSelector": true
+          },
+          "onMouseOver": {
+            "image": "Change image",
+            "card": "None"
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer - 01"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
