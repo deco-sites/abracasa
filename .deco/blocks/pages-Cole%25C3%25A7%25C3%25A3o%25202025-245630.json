@@ -61,7 +61,9 @@
         ],
         "titleMobile": "<p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">Uma expressão </span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">de arte através</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">da paixão pelo design.</span></p>",
         "button": {
-          "title": "Confira a coleção"
+          "title": "Confira a coleção",
+          "link": "#PLP",
+          "target": "_self"
         }
       }
     },
@@ -204,11 +206,38 @@
           "sort": "OrderByPriceASC",
           "filters": "dynamic",
           "fq": "H:553",
-          "count": 20
+          "count": 48
         },
         "hiddenFilters": [
-          "designers"
-        ]
+          "designers",
+          "marcas",
+          "encomenda"
+        ],
+        "layout": {
+          "variant": "drawer",
+          "columns": {
+            "mobile": 2,
+            "desktop": 4
+          }
+        },
+        "cardLayout": {
+          "basics": {
+            "contentAlignment": "Left",
+            "oldPriceSize": "Small"
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "hide": {
+            "productDescription": true,
+            "skuSelector": true
+          },
+          "onMouseOver": {
+            "image": "Change image",
+            "card": "None"
+          }
+        }
       }
     },
     {

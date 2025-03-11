@@ -96,7 +96,7 @@ function HeroTitleImages({ title, titleMobile, image, mainImage, finalText }: Pr
                                 height={186}
                                 loading="lazy"
                                 decoding="async"
-                                class="lg:hidden" />
+                                class="lg:hidden w-full" />
                         </>
 
                         {finalText && <span class="text-2xl font-normal text-[#212121] text-center" dangerouslySetInnerHTML={{ __html: finalText }} />}
