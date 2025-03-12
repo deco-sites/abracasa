@@ -14,7 +14,7 @@
         "__resolveType": "site/sections/Content/Video.tsx",
         "video": {
           "content": {
-            "link": "https://www.youtube.com/embed/6U-WwfFxSQk?si=-yfyoibu8xQFqUsN",
+            "link": "https://www.youtube.com/embed/c5PIbUFGMpk?si=OiaIDIs6wQa1NQUm",
             "type": "Youtube",
             "hasContainer": false,
             "height": "605"
