@@ -13,6 +13,34 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
+          "alt": "Coleção 2025",
+          "href": "https://www.abracasa.com.br/colecao-2025",
+          "mobile": {
+            "image": "https://data.decoassets.com/abracasa/7e6fd5b6-8ba2-4ddd-a4b5-fc05814cb3dc/casa_colecao-2025_banner_mobile_767x942px.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://data.decoassets.com/abracasa/464200f0-1b2f-4ba3-b38c-ced3f06b8ce5/casa_colecao2025_banner_desktop_1920x713px.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Coleção 2025 - Racks",
+          "href": "https://www.abracasa.com.br/colecao-2025",
+          "mobile": {
+            "image": "https://data.decoassets.com/abracasa/40ab8959-6d5b-433d-a55a-6b16be06198a/casa_colecao-2025_racks_banner_mobile_767x942px.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://data.decoassets.com/abracasa/e19e462e-e4ad-4bb8-ba4e-860c7697454f/casa_colecao2025_rack_chico_banner_desktop_1920x713px-(1).jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Semana do Consumidor",
           "href": "https://www.abracasa.com.br/campanha/semana-do-consumidor",
           "mobile": {
