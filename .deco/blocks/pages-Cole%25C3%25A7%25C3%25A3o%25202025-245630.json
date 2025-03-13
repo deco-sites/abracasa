@@ -14,10 +14,10 @@
         "__resolveType": "site/sections/Content/Video.tsx",
         "video": {
           "content": {
-            "link": "https://www.youtube.com/embed/c5PIbUFGMpk?si=OiaIDIs6wQa1NQUm",
-            "type": "Youtube",
             "hasContainer": false,
-            "height": "605"
+            "type": "Video",
+            "video": "https://data.decoassets.com/abracasa/9f4e4664-9414-4189-abf4-8bb3c9455984/casa_site_colecao_2025_1920x1080.mp4",
+            "autoplay": true
           }
         }
       }
