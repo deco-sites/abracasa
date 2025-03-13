@@ -156,17 +156,17 @@
               }
             },
             {
-              "link": "/campanha/linha-chico",
+              "link": "/campanha/sala-de-jantar",
               "image": {
                 "alt": "Linha Chico",
-                "icon": "https://data.decoassets.com/abracasa/2d7c667d-196d-4bf7-9f20-387e36918eb6/Colecao-Teste-C.png"
+                "icon": "https://data.decoassets.com/abracasa/af27b28d-6b30-46c7-bf2c-a25dbdfe6ec2/casa_banner_secundario_jantar_colecao_2025.png"
               }
             },
             {
-              "link": "/campanha/design-acessivel",
+              "link": "https://www.abracasa.com.br/moveis/sofa",
               "image": {
                 "alt": "Acessível",
-                "icon": "https://data.decoassets.com/abracasa/44c507a6-6408-4ace-8552-1de55f6fb9a6/Colecao-Teste-B.png"
+                "icon": "https://data.decoassets.com/abracasa/881b18ad-e66a-4b7d-bb35-460e8a7b4eee/casa_banner_secundario_sofas_colecao_2025.png"
               }
             }
           ],
