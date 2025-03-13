@@ -149,10 +149,10 @@
           "__resolveType": "site/sections/Content/HighlightsBanners.tsx",
           "cards": [
             {
-              "link": "/campanha/moveis-de-madeira",
+              "link": "https://www.abracasa.com.br/moveis/poltronas",
               "image": {
                 "alt": "Madeira",
-                "icon": "https://data.decoassets.com/abracasa/96478725-63de-479e-a39e-ccb202924111/39f776ee-c8a5-49a1-a334-1aa0172b349c.jpg"
+                "icon": "https://data.decoassets.com/abracasa/ea081b62-a1f3-40d8-bb24-c703bd92cf09/casa_banner_secundario_poltronas_colecao_2025.png"
               }
             },
             {
