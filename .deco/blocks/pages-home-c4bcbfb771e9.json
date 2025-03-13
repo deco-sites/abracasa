@@ -97,20 +97,6 @@
           }
         },
         {
-          "alt": "Home Office",
-          "href": "https://www.abracasa.com.br/campanha/escrivaninhas",
-          "mobile": {
-            "image": "https://data.decoassets.com/abracasa/5870f17b-cd57-431e-bbd5-2387a9898c93/casa_escrivaninhas_banner_mobile_767x942.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://data.decoassets.com/abracasa/a5bebae7-c782-4c6b-a30c-ba32308bf27e/casa_escrivaninhas_banner_desktop_1920x713px.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Off",
           "href": "https://www.abracasa.com.br/off",
           "mobile": {
