@@ -19,8 +19,8 @@
         {
           "image": {
             "alt": "Campanha Sala de Jantar",
-            "mobile": "https://data.decoassets.com/abracasa/faccb730-77d5-43ba-b24a-78f3b64a1b5e/casa_banner_especial_mobile_salajantar_800x400.jpg",
-            "desktop": "https://data.decoassets.com/abracasa/8f4f35d6-083c-4062-85da-6ac93fca4b5a/casa_banner_especial_desk_salajantar_1800x220.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/747bb325-5336-4adc-b82a-2a63b38bd740/casa_colecao_jantar_banner_especial_mobile_800x400.jpg",
+            "desktop": "https://data.decoassets.com/abracasa/2e4179a4-4b4e-4903-a6cb-942325852b5e/casa_coleca_jantar_banner_especial_desktop_1800x220.jpg"
           },
           "matcher": "/*"
         }
