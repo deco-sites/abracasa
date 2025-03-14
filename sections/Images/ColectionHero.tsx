@@ -27,9 +27,9 @@ interface Props {
 function ColectionHero({ title, titleMobile, button, image }: Props) {
     return (
         <div class="mt-[72px] lg:mt-[172px] relative">
-            <div class="max-w-[1210px] mx-auto">
+            <div class="max-w-[1210px] mx-auto font-inter">
                 <div class="flex flex-col gap-7 lg:mx-7 xl:mx-0">
-                    <h2 class="font-semibold mx-6 lg:mx-0 hidden lg:block" dangerouslySetInnerHTML={{ __html: title ?? '' }} />
+                    <h2 class="font-semibold mx-6 lg:mx-0 hidden lg:block leading-[1.2] tracking-wider" dangerouslySetInnerHTML={{ __html: title ?? '' }} />
                     <h2 class="font-semibold mx-6 lg:mx-0 lg:hidden" dangerouslySetInnerHTML={{ __html: titleMobile ?? '' }} />
                     {button && (
                         <a

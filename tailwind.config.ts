@@ -11,6 +11,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Noto Sans"],
+        inter: ["Inter"],
       },
       colors: {
         "firebrick": "#ab0033",

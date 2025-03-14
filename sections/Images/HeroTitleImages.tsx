@@ -25,21 +25,21 @@ interface Props {
     mainImage?: {
         desktop?: LiveImage;
         mobile?: LiveImage;
-    }
-    finalText?: string;
+        finalText?: string;
+    }[]
 }
 
-function HeroTitleImages({ title, titleMobile, image, mainImage, finalText }: Props) {
+function HeroTitleImages({ title, titleMobile, image, mainImage = [] }: Props) {
     const id = useId();
 
     return (
         <div id={id} class="mt-[72px] lg:mt-[172px]">
-            <div class="max-w-[1210px] mx-auto">
-                <div class="flex flex-col">
+            <div class="max-w-[1196px] mx-auto">
+                <div class="flex flex-col font-inter">
                     <h1 class="leading-[1] font-semibold hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px]" dangerouslySetInnerHTML={{ __html: title ?? '' }} />
                     <h1 class="mx-6 leading-[1] font-semibold mb-7 lg:mb-[66px] lg:hidden" dangerouslySetInnerHTML={{ __html: titleMobile ?? '' }} />
                     {/* Desktop view */}
-                    <ul class="hidden lg:flex justify-center gap-4 mx-6 xl:mx-0">
+                    <ul class="hidden lg:flex gap-[18px] mx-6 xl:mx-0">
                         {image?.map((img) => (
                             <li>
                                 <a href={img.link}>
@@ -78,30 +78,32 @@ function HeroTitleImages({ title, titleMobile, image, mainImage, finalText }: Pr
                     </Slider>
                     <SliderJS rootId={id} />
 
-                    {mainImage && <div class="flex flex-col justify-center items-center gap-7 lg:gap-16 mb-[77px] lg:mb-[94px] mt-7 lg:mt-[48px]">
-                        <>
-                            <Image
-                                src={mainImage.desktop ?? ''}
-                                alt={finalText}
-                                width={1210}
-                                height={591}
-                                loading="lazy"
-                                decoding="async"
-                                class="hidden lg:block" />
+                    {Array.isArray(mainImage) && mainImage.map((main) => (
+                        <div class="flex flex-col justify-center items-center gap-7 lg:gap-16 mb-6 mt-7 lg:mt-[48px]">
+                            <>
+                                <Image
+                                    src={main.desktop ?? ''}
+                                    alt={main.finalText}
+                                    width={1210}
+                                    height={591}
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="hidden lg:block" />
 
-                            <Image
-                                src={mainImage.mobile ?? ''}
-                                alt={finalText}
-                                width={376}
-                                height={186}
-                                loading="lazy"
-                                decoding="async"
-                                class="lg:hidden w-full" />
-                        </>
+                                <Image
+                                    src={main.mobile ?? ''}
+                                    alt={main.finalText}
+                                    width={376}
+                                    height={186}
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="lg:hidden w-full" />
+                            </>
 
-                        {finalText && <span class="text-2xl font-normal text-[#212121] text-center" dangerouslySetInnerHTML={{ __html: finalText }} />}
-                    </div>
-                    }
+                            {main.finalText && <span class="text-2xl font-normal text-[#212121] text-center" dangerouslySetInnerHTML={{ __html: main.finalText }} />}
+                        </div>
+                    ))}
+
                 </div>
             </div>
         </div>

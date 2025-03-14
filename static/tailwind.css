@@ -1854,6 +1854,42 @@ html {
   line-height: 1rem;
   color: var(--fallback-bc,oklch(var(--bc)/0.6));
 }
+.swap {
+  position: relative;
+  display: inline-grid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  place-content: center;
+  cursor: pointer;
+}
+.swap > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-property: transform, opacity;
+}
+.swap input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.swap .swap-on,
+.swap .swap-indeterminate,
+.swap input:indeterminate ~ .swap-on {
+  opacity: 0;
+}
+.swap input:checked ~ .swap-off,
+.swap-active .swap-off,
+.swap input:indeterminate ~ .swap-off {
+  opacity: 0;
+}
+.swap input:checked ~ .swap-on,
+.swap-active .swap-on,
+.swap input:indeterminate ~ .swap-indeterminate {
+  opacity: 1;
+}
 .tabs {
   display: grid;
   align-items: flex-end;
@@ -4288,9 +4324,6 @@ details.collapse summary::-webkit-details-marker {
 .mb-\[6px\] {
   margin-bottom: 6px;
 }
-.mb-\[77px\] {
-  margin-bottom: 77px;
-}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -4918,6 +4951,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[1190px\] {
   max-width: 1190px;
 }
+.max-w-\[1196px\] {
+  max-width: 1196px;
+}
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
@@ -5365,6 +5401,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[16px\] {
   gap: 16px;
+}
+.gap-\[18px\] {
+  gap: 18px;
 }
 .gap-\[2px\] {
   gap: 2px;
@@ -6254,6 +6293,9 @@ details.collapse summary::-webkit-details-marker {
 .align-middle {
   vertical-align: middle;
 }
+.font-inter {
+  font-family: Inter;
+}
 .font-sans {
   font-family: Noto Sans;
 }
@@ -6376,6 +6418,9 @@ details.collapse summary::-webkit-details-marker {
 .leading-\[1\.125rem\] {
   line-height: 1.125rem;
 }
+.leading-\[1\.2\] {
+  line-height: 1.2;
+}
 .leading-\[10px\] {
   line-height: 10px;
 }
@@ -6477,6 +6522,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
@@ -8472,10 +8520,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mb-\[66px\] {
     margin-bottom: 66px;
-  }
-
-  .lg\:mb-\[94px\] {
-    margin-bottom: 94px;
   }
 
   .lg\:ml-2 {
