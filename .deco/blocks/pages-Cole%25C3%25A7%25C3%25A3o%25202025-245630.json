@@ -61,7 +61,7 @@
             "desktop": "https://data.decoassets.com/abracasa/02413ce5-c9cf-4610-95e9-629d457594db/Vertical-Mesa-Athos-Final-1.jpg"
           }
         ],
-        "titleMobile": "<p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">Uma expressão </span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">de arte através</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 28pt\">da paixão pelo design.</span></p>",
+        "titleMobile": "<p><span style=\"color: rgb(33, 33, 33); font-size: 24pt\">Uma expressão</span><br></p><p><span style=\"color: rgb(33, 33, 33); font-size: 24pt\">de arte através</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 24pt\">da paixão pelo design.</span></p>",
         "button": {
           "title": "Confira a coleção",
           "link": "#PLP",
@@ -73,7 +73,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
-        "title": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 100pt\">conforto</span></p>",
+        "title": "<p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 80pt\">conforto</span></p>",
         "titleMobile": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 31pt\">conforto</span></p>",
         "image": [
           {
