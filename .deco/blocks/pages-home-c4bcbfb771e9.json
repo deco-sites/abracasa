@@ -41,6 +41,20 @@
           }
         },
         {
+          "alt": "Poltrona Costela Dark",
+          "href": "https://www.abracasa.com.br/campanha/poltrona-costela",
+          "mobile": {
+            "image": "https://data.decoassets.com/abracasa/c1e11227-9ec1-4a87-a94a-4a23e357505f/casa_DARK_banner_mobile_767x942.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://data.decoassets.com/abracasa/42604579-6b7a-4425-9c66-ff340a16fc86/casa_DARK_banner_desktop_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Sofá Cama",
           "href": "https://www.abracasa.com.br/moveis/sofa/sofa-cama",
           "mobile": {
