@@ -36,7 +36,7 @@
     {
       "page": {
         "fq": "H:300",
-        "sort": "",
+        "sort": "OrderByReleaseDateDESC",
         "count": 48,
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
