@@ -18,8 +18,8 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://data.decoassets.com/abracasa/d8680deb-de7f-46b8-8e22-fcaf8ee5de98/casa_banner_home_secund_especial_mobile_poltrona_800x400.png",
-            "desktop": "https://data.decoassets.com/abracasa/d6237ea2-5554-4aab-a39e-e601160ff831/casa_banner_home_secund_especial_desk_poltrona_1800x220.png"
+            "mobile": "https://data.decoassets.com/abracasa/6584ffe8-113c-4df6-a90f-8311789b5155/casa_dark_banner_especial_mobile_800x400.2.jpg",
+            "desktop": "https://data.decoassets.com/abracasa/feb3a842-6f84-428d-af98-3928aed91280/casa_dark_banner_especial_desktop_1800x2202.jpg"
           },
           "matcher": "/*"
         },
