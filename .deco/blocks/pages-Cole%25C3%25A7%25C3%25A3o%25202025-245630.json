@@ -28,7 +28,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
-        "title": "<p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 100pt\">design</span></p><p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 100pt\">contemporâneo</span></p>",
+        "title": "<p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 80pt\">design</span></p><p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 80pt\">contemporâneo</span></p>",
         "image": [
           {
             "desktop": "https://data.decoassets.com/abracasa/0b5e4552-a941-4c47-9020-3a3c2811ce8d/_MG_5073-Aprimorado-NR-1.jpg",
@@ -50,7 +50,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/ColectionHero.tsx",
-        "title": "<p><span style=\"color: #212121; font-size: 31pt\">Uma expressão </span></p><p><span style=\"color: #212121; font-size: 31pt\">de arte através</span></p><p><span style=\"color: #212121; font-size: 31pt\">da paixão pelo design.</span></p>",
+        "title": "<p><span style=\"color: rgb(33, 33, 33); font-size: 31pt\">Uma expressão</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 31pt\">de arte através</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 31pt\">da paixão pelo design.</span></p>",
         "image": [
           {
             "desktop": "https://data.decoassets.com/abracasa/a322bcac-768c-4d9d-be01-f6af86ae9d7f/_MG_3001-Aprimorado-NR-1.jpg",
