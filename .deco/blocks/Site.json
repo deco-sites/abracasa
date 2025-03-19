@@ -22,13 +22,6 @@
   },
   "global": [
     {
-      "__resolveType": "website/sections/Analytics/Analytics.tsx",
-      "trackingIds": [
-        "GTM-KS9HHK"
-      ],
-      "dangerouslyRunOnMainThread": true
-    },
-    {
       "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
     },
     {
