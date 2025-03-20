@@ -237,8 +237,8 @@
             },
             "banners": [
               {
-                "srcMobile": "https://data.decoassets.com/abracasa/d8680deb-de7f-46b8-8e22-fcaf8ee5de98/casa_banner_home_secund_especial_mobile_poltrona_800x400.png",
-                "srcDesktop": "https://data.decoassets.com/abracasa/74c2fd84-e650-4732-9960-816c3373bca6/casa_banner_secundario_costela.jpg",
+                "srcMobile": "https://assets.decocache.com/abracasa/ed528e9e-f4c3-4d0e-8589-16994c11d205/casa_banner_secundario_costela_376x340.jpg",
+                "srcDesktop": "https://assets.decocache.com/abracasa/aa3d04e9-dcb0-4e36-a4c8-915e73b501c6/casa_banner_secundario_costela-(1).jpg",
                 "alt": "banner-costela",
                 "href": "/campanha/poltrona-costela",
                 "widthDesktop": 1441,
