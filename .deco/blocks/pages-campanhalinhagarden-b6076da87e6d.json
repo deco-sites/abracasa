@@ -11,13 +11,15 @@
       },
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
     },
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "banners": [
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/c1428d9d-cf5f-404d-acd5-5501c936d2dc",
+            "mobile": "https://assets.decocache.com/abracasa/8deec8f0-518b-490c-a436-1bb5a2f97a72/1742561572491-c1428d9d-cf5f-404d-acd5-5501c936d2dc",
             "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/187413/casa_banner_especial_desk_garden_1800x220.jpg?v=638374072395530000"
           },
           "matcher": "/*"
@@ -31,16 +33,27 @@
         "count": 48,
         "fuzzy": "automatic",
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-        "selectedFacets": [{ "key": "productClusterIds", "value": "538" }]
+        "selectedFacets": [
+          {
+            "key": "productClusterIds",
+            "value": "538"
+          }
+        ]
       },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer",
         "pagination": "show-more"
       },
       "cardLayout": {
         "layout": {
-          "hide": { "skuSelector": true, "productDescription": true },
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
           "show": {
             "cta": true,
             "allPrices": true,
@@ -49,7 +62,10 @@
             "installments": true,
             "productDescription": true
           },
-          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
           "onMouseOver": {
             "card": "None",
             "image": "Change image",
@@ -80,7 +96,9 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }

@@ -11,9 +11,14 @@
       },
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
     },
-    { "__resolveType": "Header - 01" },
     {
-      "stats": { "align": "center", "items": [] },
+      "__resolveType": "Header - 01"
+    },
+    {
+      "stats": {
+        "align": "center",
+        "items": []
+      },
       "title": "<p style=\"line-height: 1.3; text-align: center;\" data-mce-style=\"line-height: 1.3; text-align: center;\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\"><span style=\"color: rgb(230, 126, 35);\" data-mce-style=\"color: rgb(230, 126, 35);\">Cash</span><strong><span style=\"color: rgb(230, 126, 35);\" data-mce-style=\"color: rgb(230, 126, 35);\">back</span><br></strong></span></p><p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\">﻿</span></p>",
       "bgColor": "#f5f5f5",
       "sections": [
@@ -33,7 +38,7 @@
               "choose": {
                 "width": 600,
                 "height": 200,
-                "content": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1330/b7a88cad-e763-4e80-ad5d-7911205174ed",
+                "content": "https://assets.decocache.com/abracasa/282dd976-0cf0-48bb-ac52-06facd27b15a/1742561370667-b7a88cad-e763-4e80-ad5d-7911205174ed",
                 "description": "Imagem de Teste"
               }
             }
@@ -52,7 +57,7 @@
               "choose": {
                 "width": 600,
                 "height": 300,
-                "content": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1330/cb3f155a-8407-4fc9-88b1-57bae0b829f9",
+                "content": "https://assets.decocache.com/abracasa/8fc5a8b5-a44a-4bdd-9f40-657f213686b8/1742561373227-cb3f155a-8407-4fc9-88b1-57bae0b829f9",
                 "description": "Imagem Cashback"
               }
             }
@@ -66,7 +71,9 @@
       ],
       "__resolveType": "site/sections/Cashback/Cashback.tsx"
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }

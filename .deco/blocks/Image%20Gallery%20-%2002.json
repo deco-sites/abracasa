@@ -1,26 +1,29 @@
 {
   "title": "New collections",
-  "layout": { "desktop": "Asymmetric", "headerAlignment": "left" },
+  "layout": {
+    "desktop": "Asymmetric",
+    "headerAlignment": "left"
+  },
   "banners": [
     {
       "alt": "Fashion",
       "href": "/",
-      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5703060b-d1f6-4dc2-898a-ccefeefd2eab"
+      "srcMobile": "https://assets.decocache.com/abracasa/5b04c08c-3347-41d6-9a1a-ea0a15c70700/1742561540334-5703060b-d1f6-4dc2-898a-ccefeefd2eab"
     },
     {
       "alt": "Fashion",
       "href": "/",
-      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3210eea1-5437-4f19-8327-8b8fa4edfc45"
+      "srcMobile": "https://assets.decocache.com/abracasa/8f56c499-4145-4afc-a41f-148104f81e09/1742561477203-3210eea1-5437-4f19-8327-8b8fa4edfc45"
     },
     {
       "alt": "Fashion",
       "href": "/",
-      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1e6250d4-f9d2-4185-b8a6-b0e8a8fed4a7"
+      "srcMobile": "https://assets.decocache.com/abracasa/ffb0ea3f-a910-4ddb-bf92-faf4aa58f741/1742561479005-1e6250d4-f9d2-4185-b8a6-b0e8a8fed4a7"
     },
     {
       "alt": "Fashion",
       "href": "/",
-      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/a8d36df6-4b96-4421-bb6c-de0fe1478e06"
+      "srcMobile": "https://assets.decocache.com/abracasa/84474cfa-978d-499a-86c4-0c7907a72c34/1742561480971-a8d36df6-4b96-4421-bb6c-de0fe1478e06"
     }
   ],
   "description": "Discover the collections of the season",

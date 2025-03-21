@@ -6,10 +6,10 @@
         "href": "#",
         "type": "Image",
         "mobile": {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/c4408279-8e69-49c9-b804-0d3e632397b5"
+          "image": "https://assets.decocache.com/abracasa/9f395135-edea-4e99-8b3b-9d0280ad8aac/1742561534021-c4408279-8e69-49c9-b804-0d3e632397b5"
         },
         "desktop": {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/ad1e2f13-97d6-4778-b408-b3d400b7d8ec"
+          "image": "https://assets.decocache.com/abracasa/152f0238-8e6f-4839-a7a9-7a87b9dc29eb/1742561535991-ad1e2f13-97d6-4778-b408-b3d400b7d8ec"
         }
       }
     },
@@ -21,10 +21,10 @@
         "type": "Video",
         "muted": true,
         "mobile": {
-          "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/0ec3bc06-9539-4ac4-a468-3d39908566a5"
+          "video": "https://assets.decocache.com/abracasa/837391de-8c94-4497-a6fb-6ddb86fb61bf/1742561538659-0ec3bc06-9539-4ac4-a468-3d39908566a5"
         },
         "desktop": {
-          "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/0ec3bc06-9539-4ac4-a468-3d39908566a5"
+          "video": "https://assets.decocache.com/abracasa/837391de-8c94-4497-a6fb-6ddb86fb61bf/1742561538659-0ec3bc06-9539-4ac4-a468-3d39908566a5"
         },
         "autoplay": true
       }

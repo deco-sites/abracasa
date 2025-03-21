@@ -13,13 +13,15 @@
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
       "titleTemplate": "Lançamento Sofás"
     },
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "banners": [
         {
           "image": {
-            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/5ba365b0-115b-4f7e-9610-d2173775ebb0",
-            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/688c40a9-8aa0-4080-9bd6-6807e7729647"
+            "mobile": "https://assets.decocache.com/abracasa/5b06d8b4-b97d-4511-8874-018fc3d89689/1742561450974-5ba365b0-115b-4f7e-9610-d2173775ebb0",
+            "desktop": "https://assets.decocache.com/abracasa/221650d9-984a-41f0-9307-d3debc19cfdf/1742561452722-688c40a9-8aa0-4080-9bd6-6807e7729647"
           },
           "matcher": "/*"
         }
@@ -42,13 +44,19 @@
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer",
         "pagination": "show-more"
       },
       "cardLayout": {
         "layout": {
-          "hide": { "skuSelector": true, "productDescription": true },
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
           "show": {
             "cta": true,
             "allPrices": true,
@@ -57,7 +65,10 @@
             "installments": true,
             "productDescription": true
           },
-          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
           "onMouseOver": {
             "card": "None",
             "image": "Change image",
@@ -88,7 +99,9 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }

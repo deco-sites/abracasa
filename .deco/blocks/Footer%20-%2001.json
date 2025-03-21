@@ -1,6 +1,6 @@
 {
   "logo": {
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/79a5eab5-4a2c-4bf5-a424-ff6f141a430c",
+    "image": "https://assets.decocache.com/abracasa/d3bd56b0-ac2a-4757-b7a0-64d7f2341a1b/1742561347978-79a5eab5-4a2c-4bf5-a424-ff6f141a430c",
     "description": "O estilo pensado para você"
   },
   "techs": {
@@ -71,43 +71,43 @@
   "payments": {
     "items": [
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/79ad0241-1034-4565-949b-bd33a2312577",
+        "image": "https://assets.decocache.com/abracasa/9dad955e-1c33-4096-8d8a-93688ded4ac0/1742561349687-79ad0241-1034-4565-949b-bd33a2312577",
         "width": 24,
         "height": 13,
         "description": "Mastercard"
       },
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/742454c3-b774-49df-92a2-5af647477f6c",
+        "image": "https://assets.decocache.com/abracasa/83a54505-22e2-4e16-8c23-7a6df4b5b4c5/1742561351124-742454c3-b774-49df-92a2-5af647477f6c",
         "width": 33,
         "height": 10,
         "description": "Visa"
       },
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/3229bbe0-d0b4-45b1-937e-e77bdc24c87a",
+        "image": "https://assets.decocache.com/abracasa/7e6c1697-b48e-4953-8471-c8c37c585898/1742561352526-3229bbe0-d0b4-45b1-937e-e77bdc24c87a",
         "width": 27,
         "height": 20,
         "description": "Amex"
       },
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/5bca538a-4f96-4e0d-ad88-8842c8d82afe",
+        "image": "https://assets.decocache.com/abracasa/439ed219-671e-4984-a669-1d31bdd114bf/1742561354598-5bca538a-4f96-4e0d-ad88-8842c8d82afe",
         "width": 28,
         "height": 16,
         "description": "Aura"
       },
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/a027aadd-8625-4448-97cd-a85cb6bfed4e",
+        "image": "https://assets.decocache.com/abracasa/ccaf51b2-bd54-433b-ba2b-ea3b070b3137/1742561356404-a027aadd-8625-4448-97cd-a85cb6bfed4e",
         "width": 26,
         "height": 13,
         "description": "Elo"
       },
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/1212063a-487e-496a-8d38-e0e012769d14",
+        "image": "https://assets.decocache.com/abracasa/7dd478e1-3e4c-4e48-ac58-eba933d44a02/1742561357472-1212063a-487e-496a-8d38-e0e012769d14",
         "width": 22,
         "height": 18,
         "description": "Diners"
       },
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/4c705ef0-b621-46df-8edb-3ec55f7fee4f",
+        "image": "https://assets.decocache.com/abracasa/f8fb0910-0690-4ee6-8ab2-ff62d1860974/1742561359019-4c705ef0-b621-46df-8edb-3ec55f7fee4f",
         "width": 22,
         "height": 15,
         "description": "Boleto"
@@ -211,13 +211,13 @@
     "items": [
       {
         "link": "http://secure.vtex.com/?an=abracasa",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/50096b29-7ace-4964-9b49-80c9339074d0",
+        "image": "https://assets.decocache.com/abracasa/d51eccce-6caa-4191-a273-989512667243/1742561360392-50096b29-7ace-4964-9b49-80c9339074d0",
         "target": "_blank",
         "description": "Vtex PCI"
       },
       {
         "link": "https://www.ebit.com.br/abra-cadabra",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/5d365399-77a1-4767-afbd-5e1757c9b56b",
+        "image": "https://assets.decocache.com/abracasa/604c4c4a-d207-4415-85fe-4632257e4faa/1742561361748-5d365399-77a1-4767-afbd-5e1757c9b56b",
         "target": "_blank",
         "description": "Ico"
       }

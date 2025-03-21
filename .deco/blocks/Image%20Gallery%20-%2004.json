@@ -1,27 +1,30 @@
 {
   "title": "etset",
-  "layout": { "desktop": "Symmetrical", "headerAlignment": "left" },
+  "layout": {
+    "desktop": "Symmetrical",
+    "headerAlignment": "left"
+  },
   "banners": [
     {
       "alt": "Fashion",
       "href": "/",
-      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/29dbf8d4-90c3-43f7-9b6b-4c6bda5e7835",
-      "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/f7b0094f-b8f6-4806-bd43-4f4482958960"
+      "srcMobile": "https://assets.decocache.com/abracasa/a5feccfa-f804-4f03-ab1d-24bf82e0ee6f/1742561474938-29dbf8d4-90c3-43f7-9b6b-4c6bda5e7835",
+      "srcDesktop": "https://assets.decocache.com/abracasa/243ef761-384c-4ec1-8e88-6cffe5e31867/1742561562351-f7b0094f-b8f6-4806-bd43-4f4482958960"
     },
     {
       "alt": "Fashion",
       "href": "/",
-      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3210eea1-5437-4f19-8327-8b8fa4edfc45"
+      "srcMobile": "https://assets.decocache.com/abracasa/8f56c499-4145-4afc-a41f-148104f81e09/1742561477203-3210eea1-5437-4f19-8327-8b8fa4edfc45"
     },
     {
       "alt": "Fashion",
       "href": "/",
-      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1e6250d4-f9d2-4185-b8a6-b0e8a8fed4a7"
+      "srcMobile": "https://assets.decocache.com/abracasa/ffb0ea3f-a910-4ddb-bf92-faf4aa58f741/1742561479005-1e6250d4-f9d2-4185-b8a6-b0e8a8fed4a7"
     },
     {
       "alt": "Fashion",
       "href": "/",
-      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/a8d36df6-4b96-4421-bb6c-de0fe1478e06"
+      "srcMobile": "https://assets.decocache.com/abracasa/84474cfa-978d-499a-86c4-0c7907a72c34/1742561480971-a8d36df6-4b96-4421-bb6c-de0fe1478e06"
     }
   ],
   "description": "Discover the collections of the season",
