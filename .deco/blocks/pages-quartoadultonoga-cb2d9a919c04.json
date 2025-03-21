@@ -13,13 +13,15 @@
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
       "titleTemplate": "Quarto Adulto Noga"
     },
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "banners": [
         {
           "image": {
-            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/92cb5dc6-c290-4411-ad3f-48ceb69acfad",
-            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/be4ce7ab-c059-4129-a0e6-af7fe4a084ce"
+            "mobile": "https://assets.decocache.com/abracasa/8efad34c-df85-4550-90da-a900c9ca6eca/1742561574303-92cb5dc6-c290-4411-ad3f-48ceb69acfad",
+            "desktop": "https://assets.decocache.com/abracasa/92fac03f-f3d3-41b5-a9f7-ba49e73ffaf5/1742561576077-be4ce7ab-c059-4129-a0e6-af7fe4a084ce"
           },
           "matcher": "/*"
         }
@@ -60,7 +62,9 @@
           }
         },
         {
-          "rule": { "__resolveType": "website/matchers/always.ts" },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          },
           "value": {
             "video": {
               "content": {
@@ -85,13 +89,19 @@
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer",
         "pagination": "show-more"
       },
       "cardLayout": {
         "layout": {
-          "hide": { "skuSelector": true, "productDescription": true },
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
           "show": {
             "cta": true,
             "allPrices": true,
@@ -100,7 +110,10 @@
             "installments": true,
             "productDescription": true
           },
-          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
           "onMouseOver": {
             "card": "None",
             "image": "Change image",
@@ -131,7 +144,9 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }

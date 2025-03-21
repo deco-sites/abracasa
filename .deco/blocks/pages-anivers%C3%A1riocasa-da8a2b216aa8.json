@@ -11,14 +11,16 @@
       },
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
     },
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "banners": [
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/b4d1ae02-58e1-4cb0-b092-8642f6f5f574",
-            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/a3eef8e4-c082-4294-961a-33f2167744de"
+            "mobile": "https://assets.decocache.com/abracasa/1d06fdfc-19a9-49f9-bc2c-adaf19ef8187/1742561585346-b4d1ae02-58e1-4cb0-b092-8642f6f5f574",
+            "desktop": "https://assets.decocache.com/abracasa/be7e32bf-1572-4fe6-9255-96d77dfaf9e6/1742561587140-a3eef8e4-c082-4294-961a-33f2167744de"
           },
           "matcher": "/*"
         }
@@ -34,13 +36,19 @@
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer",
         "pagination": "show-more"
       },
       "cardLayout": {
         "layout": {
-          "hide": { "skuSelector": true, "productDescription": true },
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
           "show": {
             "cta": true,
             "allPrices": true,
@@ -49,7 +57,10 @@
             "installments": true,
             "productDescription": true
           },
-          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
           "onMouseOver": {
             "card": "None",
             "image": "Change image",
@@ -80,7 +91,9 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx",
   "unindexedDomain": false

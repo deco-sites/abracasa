@@ -1,24 +1,39 @@
 {
-  "link": { "href": "/feminino", "text": "Take a look" },
+  "link": {
+    "href": "/feminino",
+    "text": "Take a look"
+  },
   "pins": [
     {
       "link": "/feminino",
       "label": "Glasses",
-      "mobile": { "x": 12, "y": 59 },
-      "desktop": { "x": 7, "y": 60 }
+      "mobile": {
+        "x": 12,
+        "y": 59
+      },
+      "desktop": {
+        "x": 7,
+        "y": 60
+      }
     },
     {
       "link": "/feminino",
       "label": "Bag",
-      "mobile": { "x": 30, "y": 30 },
-      "desktop": { "x": 30, "y": 30 }
+      "mobile": {
+        "x": 30,
+        "y": 30
+      },
+      "desktop": {
+        "x": 30,
+        "y": 30
+      }
     }
   ],
   "text": "Introducing our stunning Spring Clothes Collection! Step into a world of vibrant colors, fresh designs, and delightful styles that capture the essence of the season. Embrace the blooming flowers and the gentle breeze with our carefully curated selection of springtime fashion.",
   "image": {
-    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/cc607cfa-b7b9-4f0e-b9af-579458d2fdc6",
+    "mobile": "https://assets.decocache.com/abracasa/c3aa04f0-bfdd-4a6e-aa96-4b673d6633b7/1742561408627-cc607cfa-b7b9-4f0e-b9af-579458d2fdc6",
     "altText": "a",
-    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/39d61abb-5b29-4de8-86e4-325d21d7fdb7"
+    "desktop": "https://assets.decocache.com/abracasa/9f25fe21-1279-445b-94a0-48d535b55397/1742561412337-39d61abb-5b29-4de8-86e4-325d21d7fdb7"
   },
   "title": "Spring collection",
   "__resolveType": "site/sections/Images/ShoppableBanner.tsx"

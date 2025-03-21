@@ -1,39 +1,42 @@
 {
   "title": "Testimonials",
-  "layout": { "variation": "Grid", "headerAlignment": "center" },
+  "layout": {
+    "variation": "Grid",
+    "headerAlignment": "center"
+  },
   "description": "Take a look at what our customers are saying",
   "testimonials": [
     {
       "text": "Love shopping at Fashion! Quality products, exceptional service. Hassle-free returns and free shipping. My go-to for stylish fashion!",
       "user": {
         "name": "Rafael Crespo",
-        "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/6a595043-fb5b-43b4-b6dd-bd3154e4e595"
+        "avatar": "https://assets.decocache.com/abracasa/e0a27af1-1cf9-46d2-adf0-9385f062ea7c/1742561400585-6a595043-fb5b-43b4-b6dd-bd3154e4e595"
       },
       "image": {
         "alt": "deco",
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/d0a79cf6-6825-4624-884c-f30bda6c3daf"
+        "src": "https://assets.decocache.com/abracasa/eb8f6412-c07d-4f32-8bb0-2f91d3eace48/1742561401733-d0a79cf6-6825-4624-884c-f30bda6c3daf"
       }
     },
     {
       "text": "Thrilled with my first Fashion purchase. Seamless process, prompt delivery with free shipping. Exceeded expectations in style and quality!",
       "user": {
         "name": "Tiago Gimenes",
-        "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/850df7f9-120e-4155-ae79-c76e737535ee"
+        "avatar": "https://assets.decocache.com/abracasa/7b28794e-170f-4b33-b8e8-2be73108c2f1/1742561402840-850df7f9-120e-4155-ae79-c76e737535ee"
       },
       "image": {
         "alt": "deco",
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/9dc5dddc-f8b5-4f70-847b-1f91b84ad7dc"
+        "src": "https://assets.decocache.com/abracasa/b556533e-30dc-4a5d-b31b-582842b107dd/1742561404094-9dc5dddc-f8b5-4f70-847b-1f91b84ad7dc"
       }
     },
     {
       "text": "Fashion is my favorite online retailer. On-trend selection, exceptional quality. Easy returns and 24/7 online support. A delightful shopping experience!",
       "user": {
         "name": "Maria Luiza Aires",
-        "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/8327a46f-bb4e-4ae8-8cf2-963d530d3066"
+        "avatar": "https://assets.decocache.com/abracasa/12315ecf-6d60-46e7-aca2-c14fdff7ead0/1742561405228-8327a46f-bb4e-4ae8-8cf2-963d530d3066"
       },
       "image": {
         "alt": "deco",
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ca4c79ea-5bd9-42d3-a60a-07c99c5f45c4"
+        "src": "https://assets.decocache.com/abracasa/74e8d88a-520a-424a-9fc4-e84cc180c7ed/1742561406362-ca4c79ea-5bd9-42d3-a60a-07c99c5f45c4"
       }
     }
   ],

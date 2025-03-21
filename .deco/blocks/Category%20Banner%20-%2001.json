@@ -2,8 +2,8 @@
   "banners": [
     {
       "image": {
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/91102b71-4832-486a-b683-5f7b06f649af",
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ec597b6a-dcf1-48ca-a99d-95b3c6304f96"
+        "mobile": "https://assets.decocache.com/abracasa/14f2518a-12d4-454c-97e8-2479ea04d7f7/1742561559800-91102b71-4832-486a-b683-5f7b06f649af",
+        "desktop": "https://assets.decocache.com/abracasa/a9ca8ff0-61c1-4216-9fde-1bd07398c4bb/1742561561027-ec597b6a-dcf1-48ca-a99d-95b3c6304f96"
       },
       "title": "Woman",
       "matcher": "/feminino/*",
@@ -11,8 +11,8 @@
     },
     {
       "image": {
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/91102b71-4832-486a-b683-5f7b06f649af",
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ec597b6a-dcf1-48ca-a99d-95b3c6304f96"
+        "mobile": "https://assets.decocache.com/abracasa/14f2518a-12d4-454c-97e8-2479ea04d7f7/1742561559800-91102b71-4832-486a-b683-5f7b06f649af",
+        "desktop": "https://assets.decocache.com/abracasa/a9ca8ff0-61c1-4216-9fde-1bd07398c4bb/1742561561027-ec597b6a-dcf1-48ca-a99d-95b3c6304f96"
       },
       "title": "Woman",
       "matcher": "/*",

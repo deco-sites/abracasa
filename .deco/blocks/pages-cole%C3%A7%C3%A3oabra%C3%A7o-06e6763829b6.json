@@ -11,14 +11,16 @@
       },
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
     },
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "banners": [
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/6ff723c9-d048-48bc-bdb4-ac2b98f9dfd8",
-            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/40a7456f-f81b-4e89-9974-8fb4aac843a4"
+            "mobile": "https://assets.decocache.com/abracasa/c508da72-dedc-419a-bbc3-8c555538c0e7/1742561496541-6ff723c9-d048-48bc-bdb4-ac2b98f9dfd8",
+            "desktop": "https://assets.decocache.com/abracasa/cde534da-15a0-47d9-9fad-81ca274bf82d/1742561498902-40a7456f-f81b-4e89-9974-8fb4aac843a4"
           },
           "matcher": "/*"
         }
@@ -31,16 +33,27 @@
         "count": 48,
         "fuzzy": "automatic",
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-        "selectedFacets": [{ "key": "productClusterIds", "value": "444" }]
+        "selectedFacets": [
+          {
+            "key": "productClusterIds",
+            "value": "444"
+          }
+        ]
       },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer",
         "pagination": "show-more"
       },
       "cardLayout": {
         "layout": {
-          "hide": { "skuSelector": true, "productDescription": true },
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
           "show": {
             "cta": true,
             "allPrices": true,
@@ -49,7 +62,10 @@
             "installments": true,
             "productDescription": true
           },
-          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
           "onMouseOver": {
             "card": "None",
             "image": "Change image",
@@ -80,7 +96,9 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx",
   "unindexedDomain": false

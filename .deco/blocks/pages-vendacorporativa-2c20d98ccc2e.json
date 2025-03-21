@@ -22,18 +22,24 @@
                   "start": "2024-02-28T20:00:00.000Z",
                   "__resolveType": "website/matchers/date.ts"
                 },
-                "value": { "__resolveType": "Header - 01" }
+                "value": {
+                  "__resolveType": "Header - 01"
+                }
               },
               {
-                "rule": { "__resolveType": "website/matchers/always.ts" },
-                "value": { "__resolveType": "Header - 01" }
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
+                "value": {
+                  "__resolveType": "Header - 01"
+                }
               }
             ],
             "__resolveType": "website/flags/multivariate/section.ts"
           },
           {
             "aside": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/4034908b-f048-45e2-9e88-85246ee6949c",
+              "image": "https://assets.decocache.com/abracasa/8aa6d65b-b1c2-45c8-893c-0072044c2597/1742561514524-4034908b-f048-45e2-9e88-85246ee6949c",
               "width": 1280,
               "height": 600,
               "description": "Banner Representativo"
@@ -57,7 +63,7 @@
           },
           {
             "aside": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/5b8dcb41-0f86-4135-a5a9-49f4d91305a7",
+              "image": "https://assets.decocache.com/abracasa/60d3ec91-ad11-4a1b-a404-a6ad7fc72a27/1742561516114-5b8dcb41-0f86-4135-a5a9-49f4d91305a7",
               "width": 1280,
               "height": 600,
               "description": "Banner Representativo"
@@ -192,7 +198,7 @@
               "113": "8",
               "content": {
                 "type": "Video",
-                "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/20b1790f-01dd-4edc-bdbb-f6cd958845a6",
+                "video": "https://assets.decocache.com/abracasa/afb11ea1-3514-4eb9-b01a-7abadfeaae88/1742561518478-20b1790f-01dd-4edc-bdbb-f6cd958845a6",
                 "width": 1280,
                 "height": 600,
                 "preload": false,
@@ -205,18 +211,20 @@
             "controls": true,
             "__resolveType": "site/sections/Content/Video.tsx"
           },
-          { "__resolveType": "Benefits - Venda Corporativa" },
+          {
+            "__resolveType": "Benefits - Venda Corporativa"
+          },
           {
             "image": {
               "alt": "Banner",
               "href": "#",
               "mobile": {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/0f567e6a-b995-4955-a1bb-0e188a3679ce",
+                "image": "https://assets.decocache.com/abracasa/85f3f182-c5a5-47d2-b9f1-127b45706cea/1742561521291-0f567e6a-b995-4955-a1bb-0e188a3679ce",
                 "width": 1920,
                 "height": 900
               },
               "desktop": {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/0f567e6a-b995-4955-a1bb-0e188a3679ce"
+                "image": "https://assets.decocache.com/abracasa/85f3f182-c5a5-47d2-b9f1-127b45706cea/1742561521291-0f567e6a-b995-4955-a1bb-0e188a3679ce"
               }
             },
             "button": {
@@ -230,19 +238,29 @@
           {
             "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
             "title": "Cookies",
-            "layout": { "content": "Piled up", "position": "Left" },
+            "layout": {
+              "content": "Piled up",
+              "position": "Left"
+            },
             "policy": {
               "link": "/",
               "text": "Saiba mais sobre nossas políticas de privacidade"
             },
-            "buttons": { "allowText": "Aceitar", "cancelText": "Fechar" },
+            "buttons": {
+              "allowText": "Aceitar",
+              "cancelText": "Fechar"
+            },
             "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
           },
-          { "__resolveType": "Footer - 01" }
+          {
+            "__resolveType": "Footer - 01"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
           {
             "noIndexing": false,
@@ -256,18 +274,24 @@
                   "start": "2024-02-28T20:00:00.000Z",
                   "__resolveType": "website/matchers/date.ts"
                 },
-                "value": { "__resolveType": "Header - 01" }
+                "value": {
+                  "__resolveType": "Header - 01"
+                }
               },
               {
-                "rule": { "__resolveType": "website/matchers/always.ts" },
-                "value": { "__resolveType": "Header - 01" }
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
+                "value": {
+                  "__resolveType": "Header - 01"
+                }
               }
             ],
             "__resolveType": "website/flags/multivariate/section.ts"
           },
           {
             "aside": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/eed16473-261e-422d-a8c0-3a3a842e3a4f",
+              "image": "https://assets.decocache.com/abracasa/5f388220-ec09-4be2-81fd-1f16209ab9c1/1742561523299-eed16473-261e-422d-a8c0-3a3a842e3a4f",
               "width": 1280,
               "height": 600,
               "description": "Banner Representativo"
@@ -294,7 +318,7 @@
           },
           {
             "aside": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/fb2cf93f-6fdd-4392-99cc-1caf3211ae91",
+              "image": "https://assets.decocache.com/abracasa/0b216d46-6cdc-44f2-95c9-32594263f25c/1742561525290-fb2cf93f-6fdd-4392-99cc-1caf3211ae91",
               "width": 1280,
               "height": 600,
               "description": "Banner Representativo"
@@ -315,7 +339,7 @@
             "video": {
               "content": {
                 "type": "Video",
-                "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/20b1790f-01dd-4edc-bdbb-f6cd958845a6",
+                "video": "https://assets.decocache.com/abracasa/afb11ea1-3514-4eb9-b01a-7abadfeaae88/1742561518478-20b1790f-01dd-4edc-bdbb-f6cd958845a6",
                 "width": 1280,
                 "height": 600,
                 "preload": false,
@@ -325,16 +349,18 @@
             },
             "__resolveType": "site/sections/Content/Video.tsx"
           },
-          { "__resolveType": "Benefits - Venda Corporativa" },
+          {
+            "__resolveType": "Benefits - Venda Corporativa"
+          },
           {
             "image": {
               "alt": "Banner",
               "href": "#",
               "mobile": {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/0f567e6a-b995-4955-a1bb-0e188a3679ce"
+                "image": "https://assets.decocache.com/abracasa/85f3f182-c5a5-47d2-b9f1-127b45706cea/1742561521291-0f567e6a-b995-4955-a1bb-0e188a3679ce"
               },
               "desktop": {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/0f567e6a-b995-4955-a1bb-0e188a3679ce"
+                "image": "https://assets.decocache.com/abracasa/85f3f182-c5a5-47d2-b9f1-127b45706cea/1742561521291-0f567e6a-b995-4955-a1bb-0e188a3679ce"
               }
             },
             "button": {
@@ -348,15 +374,23 @@
           {
             "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
             "title": "Cookies",
-            "layout": { "content": "Piled up", "position": "Left" },
+            "layout": {
+              "content": "Piled up",
+              "position": "Left"
+            },
             "policy": {
               "link": "/",
               "text": "Saiba mais sobre nossas políticas de privacidade"
             },
-            "buttons": { "allowText": "Aceitar", "cancelText": "Fechar" },
+            "buttons": {
+              "allowText": "Aceitar",
+              "cancelText": "Fechar"
+            },
             "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
           },
-          { "__resolveType": "Footer - 01" }
+          {
+            "__resolveType": "Footer - 01"
+          }
         ]
       }
     ],

@@ -4,13 +4,17 @@
   "sections": {
     "variants": [
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
           {
             "noIndexing": false,
             "__resolveType": "website/sections/Seo/Seo.tsx"
           },
-          { "__resolveType": "Header - 01" },
+          {
+            "__resolveType": "Header - 01"
+          },
           {
             "banners": [
               {
@@ -21,10 +25,10 @@
                   "type": "Video",
                   "muted": true,
                   "mobile": {
-                    "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/20a41cb9-1036-4cae-85d6-5d11db62968a"
+                    "video": "https://assets.decocache.com/abracasa/13ec3990-03ff-43f0-b3ad-8b8da870108e/1742561415128-20a41cb9-1036-4cae-85d6-5d11db62968a"
                   },
                   "desktop": {
-                    "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/76280264-e647-4d1a-92e5-e4ad8dea35cc"
+                    "video": "https://assets.decocache.com/abracasa/61f85d52-5fe3-4d4c-a71b-bc2010054fae/1742561417036-76280264-e647-4d1a-92e5-e4ad8dea35cc"
                   },
                   "autoplay": true
                 }
@@ -186,7 +190,7 @@
                     "148": "0",
                     "149": "0",
                     "150": "0",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/7048eee1-bbb2-4144-9554-49404948fff1"
+                    "image": "https://assets.decocache.com/abracasa/0e5efef9-4715-4531-9910-7277670b6e79/1742561419025-7048eee1-bbb2-4144-9554-49404948fff1"
                   },
                   "desktop": {
                     "0": "h",
@@ -313,7 +317,7 @@
                     "121": "0",
                     "122": "0",
                     "123": "0",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/623a9d9d-2a7e-4ac5-85c9-52b740b1cd17"
+                    "image": "https://assets.decocache.com/abracasa/299329c3-779c-43ca-92ae-c31ea69d1024/1742561420901-623a9d9d-2a7e-4ac5-85c9-52b740b1cd17"
                   }
                 }
               },
@@ -474,7 +478,7 @@
                     "148": "0",
                     "149": "0",
                     "150": "0",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/3c0b1180-be3e-46a7-996b-a96c7c97a010"
+                    "image": "https://assets.decocache.com/abracasa/429b5d32-7bed-4cb1-bf23-753c64c395ab/1742561422988-3c0b1180-be3e-46a7-996b-a96c7c97a010"
                   },
                   "desktop": {
                     "0": "h",
@@ -601,7 +605,7 @@
                     "121": "0",
                     "122": "0",
                     "123": "0",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/308d458f-9bcb-47f5-ad06-c61205f39acd"
+                    "image": "https://assets.decocache.com/abracasa/ba7ba568-ae41-4980-bca3-43938577b14c/1742561424820-308d458f-9bcb-47f5-ad06-c61205f39acd"
                   }
                 }
               },
@@ -762,7 +766,7 @@
                     "148": "0",
                     "149": "0",
                     "150": "0",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/0244cf8c-942e-4075-964d-a6165ffa253f"
+                    "image": "https://assets.decocache.com/abracasa/37880497-56f0-4325-8bb5-d8ce25dc51f1/1742561426743-0244cf8c-942e-4075-964d-a6165ffa253f"
                   },
                   "desktop": {
                     "0": "h",
@@ -889,7 +893,7 @@
                     "121": "0",
                     "122": "0",
                     "123": "0",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/a0041a7f-4feb-4726-8aac-5a9e531e69d4"
+                    "image": "https://assets.decocache.com/abracasa/34b45f0f-0e34-4ee8-8582-8742b08724d4/1742561428794-a0041a7f-4feb-4726-8aac-5a9e531e69d4"
                   }
                 }
               },
@@ -1394,42 +1398,42 @@
             "departments": [
               {
                 "link": "/moveis/poltronas",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/203efbf4-945c-4efd-b8d3-d0f1a9cd92d4",
+                "image": "https://assets.decocache.com/abracasa/df8a7db7-c84b-4a81-bda1-9ee9d5ee370d/1742561430839-203efbf4-945c-4efd-b8d3-d0f1a9cd92d4",
                 "label": "POLTRONAS",
                 "loading": "lazy",
                 "description": "Imagem de uma poltrona"
               },
               {
                 "link": "/moveis/cadeiras-bancos-e-banquetas/cadeiras",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/36ca05e5-16c0-4d73-b5cc-e60ade4f6612",
+                "image": "https://assets.decocache.com/abracasa/727b3736-4bd5-4d04-b2a1-5d5e9e58b622/1742561432642-36ca05e5-16c0-4d73-b5cc-e60ade4f6612",
                 "label": "CADEIRAS",
                 "loading": "lazy",
                 "description": "Imagem de uma cadeira"
               },
               {
                 "link": "/moveis/sofa",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/53d363bf-9826-46c9-8ffe-5c3009825a06",
+                "image": "https://assets.decocache.com/abracasa/e785bd5d-9697-47ab-9428-358ee9839489/1742561434227-53d363bf-9826-46c9-8ffe-5c3009825a06",
                 "label": "SOFÁS",
                 "loading": "lazy",
                 "description": "Imagem de um sofá"
               },
               {
                 "link": "/moveis/mesas",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/efedb22a-9315-4d7e-af03-9dc7976f72fd",
+                "image": "https://assets.decocache.com/abracasa/126f4e20-3010-4bae-acdb-f073bf65496d/1742561435995-efedb22a-9315-4d7e-af03-9dc7976f72fd",
                 "label": "MESAS",
                 "loading": "lazy",
                 "description": "Imagem de uma mesa"
               },
               {
                 "link": "/moveis/office",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/0697a6e0-4c4a-46ce-8fc1-a9fd11b028e5",
+                "image": "https://assets.decocache.com/abracasa/62786951-ad13-4f46-9527-f442991bf369/1742561437462-0697a6e0-4c4a-46ce-8fc1-a9fd11b028e5",
                 "label": "OFFICE",
                 "loading": "lazy",
                 "description": "Imagem de um escritório"
               },
               {
                 "link": "/off",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/ee9cfef2-41a7-4c0a-9357-afb8363ce4df",
+                "image": "https://assets.decocache.com/abracasa/cb704a6f-a3c7-4ecb-8ea7-5b087c7884a6/1742561438946-ee9cfef2-41a7-4c0a-9357-afb8363ce4df",
                 "label": "OFF",
                 "loading": "lazy",
                 "description": "Imagem de desconto"
@@ -1437,30 +1441,43 @@
             ],
             "__resolveType": "site/sections/Content/Departments.tsx"
           },
-          { "__resolveType": "ProductShelf - Abracasa" },
+          {
+            "__resolveType": "ProductShelf - Abracasa"
+          },
           {
             "display": true,
-            "behavior": { "type": "intersection", "payload": "100px" },
+            "behavior": {
+              "type": "intersection",
+              "payload": "100px"
+            },
             "sections": [
               {
                 "images": [
                   {
                     "alt": "Banner",
                     "link": "https://www.abracasa.com.br/moveis/sofa",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/6b7fd3a1-c6d6-4006-b8d6-33da4646ce2d"
+                    "image": "https://assets.decocache.com/abracasa/96e4702b-9a8e-49a3-bebc-8440724ae6f3/1742561440414-6b7fd3a1-c6d6-4006-b8d6-33da4646ce2d"
                   },
                   {
                     "alt": "Banner",
                     "link": "https://www.abracasa.com.br/campanha/poltrona-costela",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/68c55681-5603-4b3a-9c55-6d59943582e8"
+                    "image": "https://assets.decocache.com/abracasa/d4a2ebe3-c622-49e1-bc65-5f56d72e45c8/1742561442148-68c55681-5603-4b3a-9c55-6d59943582e8"
                   }
                 ],
                 "__resolveType": "site/sections/Images/DoubleBanners.tsx"
               },
-              { "__resolveType": "HighlightsBanners - Abracasa" },
-              { "__resolveType": "DoubleBanners 02 - Abracasa" },
-              { "__resolveType": "Benefits - Abracasa" },
-              { "__resolveType": "ProductShelf - Design Assinado" },
+              {
+                "__resolveType": "HighlightsBanners - Abracasa"
+              },
+              {
+                "__resolveType": "DoubleBanners 02 - Abracasa"
+              },
+              {
+                "__resolveType": "Benefits - Abracasa"
+              },
+              {
+                "__resolveType": "ProductShelf - Design Assinado"
+              },
               {
                 "subTitle": "Siga a Abra Casa",
                 "socialMedia": [
@@ -1522,23 +1539,35 @@
                 ],
                 "__resolveType": "site/sections/Content/PartnerShips.tsx"
               },
-              { "__resolveType": "SectionNewsletter - Abracasa" },
-              { "__resolveType": "SectionText - Abracasa" }
+              {
+                "__resolveType": "SectionNewsletter - Abracasa"
+              },
+              {
+                "__resolveType": "SectionText - Abracasa"
+              }
             ],
             "__resolveType": "website/sections/Rendering/Deferred.tsx"
           },
           {
             "text": "<p>Utilizamos cookies para personalizar anúncios e melhorar sua experiência no site.</p>",
             "title": "Cookies",
-            "layout": { "content": "Piled up", "position": "Left" },
+            "layout": {
+              "content": "Piled up",
+              "position": "Left"
+            },
             "policy": {
               "link": "/",
               "text": "Saiba mais sobre nossas políticas de privacidade"
             },
-            "buttons": { "allowText": "Aceitar", "cancelText": "Fechar" },
+            "buttons": {
+              "allowText": "Aceitar",
+              "cancelText": "Fechar"
+            },
             "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
           },
-          { "__resolveType": "Footer - 01" }
+          {
+            "__resolveType": "Footer - 01"
+          }
         ]
       }
     ],
