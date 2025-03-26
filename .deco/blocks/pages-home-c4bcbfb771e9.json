@@ -44,12 +44,12 @@
           "alt": "Poltrona Costela Dark",
           "href": "https://www.abracasa.com.br/campanha/poltrona-costela",
           "mobile": {
-            "image": "https://data.decoassets.com/abracasa/c1e11227-9ec1-4a87-a94a-4a23e357505f/casa_DARK_banner_mobile_767x942.jpg",
+            "image": "https://assets.decocache.com/abracasa/383558bf-2443-4133-8da5-50d25450e2cc/casa_novapoltronacostela_banner_desktop_1920x713px.jpg",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://data.decoassets.com/abracasa/42604579-6b7a-4425-9c66-ff340a16fc86/casa_DARK_banner_desktop_1920x713.jpg",
+            "image": "https://assets.decocache.com/abracasa/07c33d25-d65c-4981-8ffe-086f30655aba/casa_novapoltronacostela_banner_desktop_1920x713.jpg",
             "width": 1920,
             "height": 713
           }
