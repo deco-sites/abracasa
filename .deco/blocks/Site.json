@@ -22,6 +22,12 @@
   },
   "global": [
     {
+      "__resolveType": "website/sections/Analytics/Analytics.tsx",
+      "trackingIds": [
+        "GTM-KNSPM599"
+      ]
+    },
+    {
       "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
     },
     {
