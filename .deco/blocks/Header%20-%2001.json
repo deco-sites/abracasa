@@ -487,13 +487,6 @@
             "children": []
           },
           {
-            "url": "/designers/menu",
-            "name": "Menu",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
             "url": "/designers/atelie-casa",
             "name": "Ateliê Casa",
             "@type": "SiteNavigationElement",
