@@ -27,6 +27,20 @@
           }
         },
         {
+          "alt": "Abra Week Sofás",
+          "href": "https://www.abracasa.com.br/moveis/sofa",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/2d84c36d-de80-4898-ac37-b3a62df49c99/casa_banner_mobile_sofas_abraweek.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/86fd3782-a7d2-47e5-97e8-a0c851436dcc/casa_banner_desk_sofas_abraweek_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Coleção 2025",
           "href": "https://www.abracasa.com.br/colecao-2025",
           "mobile": {
