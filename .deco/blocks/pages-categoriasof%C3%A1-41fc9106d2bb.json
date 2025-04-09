@@ -20,8 +20,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://data.decoassets.com/abracasa/b0715d17-9b5e-4452-ba93-9aa59bcd6cfb/casa_colecao_sofas_banner_especial_mobile_800x400.jpg",
-            "desktop": "https://data.decoassets.com/abracasa/c9acef9c-59bb-40ca-ac86-e503efb4c194/casa_colecao_sofas_banner_especial_desktop_1800x220.jpg"
+            "mobile": "https://assets.decocache.com/abracasa/0c5d4da4-98c7-49b0-8acb-cafe902531f1/casa_banner_especial_sofas_mobile_abraweek_800x400.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/58869250-03b4-4f6e-a51a-c2954721c2ee/casa_banner_especial_sofas_desk_abraweek_1800x220.jpg"
           },
           "matcher": "/*"
         }
