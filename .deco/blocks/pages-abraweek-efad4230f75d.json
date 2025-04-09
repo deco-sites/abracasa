@@ -13,13 +13,15 @@
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
       "titleTemplate": "Abra Week"
     },
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "banners": [
         {
           "image": {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/9eebc77a-eeca-4542-9aab-de3731be03ae/casa_banner_especial_mobile_abraweek_800x400.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/69f9b046-e95c-448b-8afd-08f718322927/casa_banner_especial_desk_abraweek_1800x220.png"
+            "mobile": "https://assets.decocache.com/abracasa/dfbbaa7c-b321-46ba-8a90-afc3a65abbd0/casa_banner_especial_mobile_abraweek_800x400.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/80ef76a2-fe50-403a-88e1-7bd131d3850a/casa_banner_especial_desk_abraweek_1800x220.jpg"
           },
           "matcher": "/*"
         }
@@ -42,13 +44,19 @@
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer",
         "pagination": "show-more"
       },
       "cardLayout": {
         "layout": {
-          "hide": { "skuSelector": true, "productDescription": true },
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
           "show": {
             "cta": true,
             "allPrices": true,
@@ -57,7 +65,10 @@
             "installments": true,
             "productDescription": true
           },
-          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
           "onMouseOver": {
             "card": "None",
             "image": "Change image",
@@ -88,7 +99,9 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }
