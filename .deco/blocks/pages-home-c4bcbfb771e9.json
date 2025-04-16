@@ -13,7 +13,7 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "alt": "Abra Week",
+          "alt": "Abra Week ",
           "href": "https://www.abracasa.com.br/campanha/abra-week",
           "mobile": {
             "image": "https://assets.decocache.com/abracasa/9e2a97b4-10c3-4f7e-90c2-7ce5da49f392/casa_banner_mobile_abraweek-(1).jpg",
@@ -97,7 +97,7 @@
           }
         },
         {
-          "alt": "Pronta Entrega",
+          "alt": "Pronta Entrega Banner",
           "href": "https://www.abracasa.com.br/campanha/pronta-entrega",
           "mobile": {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/14fb3ed6-ca08-4c8c-b557-b2a80181cf54/casa_pronta_entrega_banner_mobile_767x942_3.jpg",
