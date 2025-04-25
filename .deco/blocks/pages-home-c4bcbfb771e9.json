@@ -129,6 +129,16 @@
       "interval": 10
     },
     {
+      "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
+      "hoursToShowPopupAgain": 0,
+      "popup": {
+        "source": "https://assets.decocache.com/abracasa/d7c24f25-3f88-432f-8c90-d0f45815e8c2/popup_abraweek_800x800.jpg",
+        "link": "https://www.abracasa.com.br/campanha/abra-week",
+        "description": "Abra Week",
+        "target": "_self"
+      }
+    },
+    {
       "__resolveType": "site/sections/Miscellaneous/AdaptativeBenefits.tsx",
       "benefits": [
         {
