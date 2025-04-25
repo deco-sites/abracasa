@@ -534,13 +534,13 @@
       "desktop": "https://assets.decocache.com/abracasa/5e50d62f-e6cd-4df2-9c0f-32bcca35d76f/casa_assinatura_abraweek_cronometro.png",
       "mobile": "https://assets.decocache.com/abracasa/5e50d62f-e6cd-4df2-9c0f-32bcca35d76f/casa_assinatura_abraweek_cronometro.png"
     },
-    "textHex": "#ffffff",
+    "textHex": "#000000",
     "hiddenDays": true,
-    "backgroundHex": "#222222",
+    "backgroundHex": "#c0c0c0",
     "hiddenNumbers": true,
     "hiddenCampaignTimer": true,
     "link": {
-      "backgroundHexButton": "#222222",
+      "backgroundHexButton": "#c0c0c0",
       "text": "<p>Aproveite</p>",
       "href": "/campanha/abra-friday"
     },
