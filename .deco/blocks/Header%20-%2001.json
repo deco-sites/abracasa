@@ -525,7 +525,7 @@
   "__resolveType": "site/sections/Header/Header.tsx",
   "campaignTimer": {
     "text": {
-      "mobile": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">Últimos dias </span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">de Abra Week com até </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">70% OFF</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">!6</span></p>",
+      "mobile": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">Últimos dias </span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">de Abra Week com até </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">60% OFF</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">!</span></p>",
       "desktop": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">Últimos dias </span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">de Abra Week com até </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">60% OFF</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 13px\">!</span></p>"
     },
     "image": {
