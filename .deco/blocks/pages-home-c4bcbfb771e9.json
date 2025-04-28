@@ -13,34 +13,6 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "alt": "Abra Week ",
-          "href": "https://www.abracasa.com.br/campanha/abra-week",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/45ce3ada-185b-444f-b326-baaf0da5d0f9/casa_banner_mobile_abraweek-(3).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/4032466f-40aa-4207-b17c-dc72fd7c598a/casa_banner_desk_abraweek_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Abra Week Sofás",
-          "href": "https://www.abracasa.com.br/moveis/sofa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/2d84c36d-de80-4898-ac37-b3a62df49c99/casa_banner_mobile_sofas_abraweek.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/86fd3782-a7d2-47e5-97e8-a0c851436dcc/casa_banner_desk_sofas_abraweek_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Coleção 2025",
           "href": "https://www.abracasa.com.br/colecao-2025",
           "mobile": {
@@ -50,6 +22,20 @@
           },
           "desktop": {
             "image": "https://data.decoassets.com/abracasa/464200f0-1b2f-4ba3-b38c-ced3f06b8ce5/casa_colecao2025_banner_desktop_1920x713px.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Coleção 2025",
+          "href": "https://www.abracasa.com.br/moveis/estantes-e-racks/racks-e-buffets",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/c7e78b41-bbd6-42c9-88c8-46a30e537e11/casa_colecao-2025_racks_banner_mobile_767x942px-(2).jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/c02f3817-b497-4a7f-ba25-7bdb666cf201/casa_colecao2025_rack_chico_banner_desktop_1920x713px-(3).jpg",
             "width": 1920,
             "height": 713
           }
