@@ -19,8 +19,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184812/banner_categorias_rack.jpg?v=638210614490400000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184812/banner_categorias_rack.jpg?v=638210614490400000"
+            "mobile": "https://assets.decocache.com/abracasa/54c73048-df90-430a-8942-965f3d7b3a5c/casa_colecao25_racks_banner_especial_mobile_800x400.png",
+            "desktop": "https://assets.decocache.com/abracasa/d5eab2c0-3983-41ae-a634-eb2695698673/casa_colecao25_racks_banner_especial_desktop_1800x220.jpg"
           },
           "matcher": "/*"
         }
