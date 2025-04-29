@@ -14,20 +14,6 @@
       "images": [
         {
           "alt": "Coleção 2025",
-          "href": "https://www.abracasa.com.br/campanha/abra-week",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/d87a6b4e-c3c4-47f6-97a0-6d675e178dcf/casa_banner_mobile_abraweek-(4).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/a9c872a2-3a4f-44d9-abcf-47f00666f8c8/casa_banner_desk_abraweek_1920x713-(1).jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Coleção 2025",
           "href": "https://www.abracasa.com.br/colecao-2025",
           "mobile": {
             "image": "https://data.decoassets.com/abracasa/7e6fd5b6-8ba2-4ddd-a4b5-fc05814cb3dc/casa_colecao-2025_banner_mobile_767x942px.jpg",
@@ -41,7 +27,7 @@
           }
         },
         {
-          "alt": "Coleção 2025",
+          "alt": "Coleção 2025 - Racks",
           "href": "https://www.abracasa.com.br/moveis/estantes-e-racks/racks-e-buffets",
           "mobile": {
             "image": "https://assets.decocache.com/abracasa/c7e78b41-bbd6-42c9-88c8-46a30e537e11/casa_colecao-2025_racks_banner_mobile_767x942px-(2).jpg",
