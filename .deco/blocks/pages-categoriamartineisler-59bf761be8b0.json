@@ -20,10 +20,6 @@
         "__resolveType": "site/sections/Category/CategoryBanner.tsx",
         "banners": [
           {
-            "image": {},
-            "matcher": "/*"
-          },
-          {
             "image": {
               "desktop": "https://assets.decocache.com/abracasa/51419e67-fe50-49df-b705-610b3fa4c526/casa_banner_especial_desk_martin_1800x220.jpg",
               "mobile": "https://assets.decocache.com/abracasa/7c420641-411e-4fc7-a7a7-8face573e444/casa_banner_especial_mobile_martin_800x400.png"
