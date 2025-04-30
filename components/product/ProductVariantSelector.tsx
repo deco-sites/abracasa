@@ -26,6 +26,7 @@ function VariantSelector({ product }: Props) {
     <ul className="flex flex-col gap-4 max-w-[60%]">
       {sortedPossibilities.map(([name, values]) => {
         if (name === "Estimated Date Arrival") return null;
+        if (name === "Modal Type") return null;
         return (
           <li className="flex flex-col gap-2" key={name}>
             <span className="text-sm">{name}</span>
@@ -38,8 +39,8 @@ function VariantSelector({ product }: Props) {
                       variant={link === url
                         ? "active"
                         : link
-                        ? "default"
-                        : "disabled"}
+                          ? "default"
+                          : "disabled"}
                     />
                   </button>
                 </li>
