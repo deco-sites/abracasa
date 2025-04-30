@@ -17,8 +17,10 @@
         "@type": "SiteNavigationElement",
         "image": [
           {
-            "url": "https://assets.decocache.com/abracasa/ebd25fd7-6dc5-45cc-af7b-06a36750d6d1/1742561380108-9862f20b-c88a-420b-affb-5c412df69b9a",
-            "@type": "ImageObject"
+            "url": "https://assets.decocache.com/abracasa/20ac3066-4c26-4149-9ddf-1823a63c4cc6/casa_banner_menu_moveis.jpg",
+            "@type": "ImageObject",
+            "video": null,
+            "image": null
           }
         ],
         "children": [
@@ -302,8 +304,10 @@
         "@type": "SiteNavigationElement",
         "image": [
           {
-            "url": "https://assets.decocache.com/abracasa/0f08375d-b29a-4ab5-a0e2-407e194d5c9f/1742561381556-9db69d5d-158c-404f-8187-16fe525bb8cf",
-            "@type": "ImageObject"
+            "url": "https://assets.decocache.com/abracasa/b8e359a5-23cc-4554-a3d3-7c33871716c9/casa_banner_menu_decoracao.jpg",
+            "@type": "ImageObject",
+            "video": null,
+            "image": null
           }
         ],
         "children": [
@@ -385,8 +389,10 @@
         "@type": "SiteNavigationElement",
         "image": [
           {
-            "url": "https://assets.decocache.com/abracasa/b84c07a8-465f-43b2-8a69-e3b7d1f65379/1742561383053-9ce24188-e4ec-4591-bdf9-b39256c1bee2",
-            "@type": "ImageObject"
+            "url": "https://assets.decocache.com/abracasa/74b5246a-ef91-4641-ad76-4a31d2ee3712/casa_banner_menu_ambiente.jpg",
+            "@type": "ImageObject",
+            "video": null,
+            "image": null
           }
         ],
         "children": [
@@ -440,7 +446,9 @@
         "@type": "SiteNavigationElement",
         "image": [
           {
-            "url": "https://assets.decocache.com/abracasa/df4e86c3-bc2e-4f18-a7d6-36a4830b6236/1742561384463-edc192a6-d443-4793-b25f-47dd0fba8ae7"
+            "url": "https://assets.decocache.com/abracasa/ca773802-622c-4284-8479-8b7abac9bcb8/casa_banner_menu_designers.jpg",
+            "video": null,
+            "image": null
           }
         ],
         "children": [
