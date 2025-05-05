@@ -181,7 +181,7 @@
           "__resolveType": "website/sections/Rendering/Lazy.tsx",
           "section": {
             "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
-            "title": "Design exclusivo",
+            "title": "Ateliê Casa",
             "mainImage": {
               "src": "https://data.decoassets.com/abracasa/19d7cf32-f5ef-4a73-9854-7074a009dd7c/Group-1652.png",
               "srcMobile": "https://data.decoassets.com/abracasa/a47d9224-12ac-4556-97af-96f9c42a95b9/Atelie.png",
