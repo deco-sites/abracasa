@@ -38,7 +38,7 @@
     },
     {
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
-      "html": "<p style=\"text-align: center\"><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">Ateliê Casa</span></strong><br><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Desenvolvidos pela designer e arquiteta Sol Libman,</span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">em colaboração com a sua equipe, os produtos de mobiliário são exclusivos e expressam a essência e identidade da Abra Casa</span>.</p>"
+      "html": "<p style=\"text-align: center\"><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 17pt\">Ateliê Casa</span></strong><span style=\"font-size: 17pt\"><br></span><span style=\"color: rgb(119, 120, 122); font-size: 17pt\"><br></span></p><p></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Desenvolvidos pela designer e arquiteta Sol Libman,</span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">em colaboração com a sua equipe, os produtos de mobiliário são exclusivos e expressam a essência e identidade da Abra Casa</span>.</p>"
     },
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
