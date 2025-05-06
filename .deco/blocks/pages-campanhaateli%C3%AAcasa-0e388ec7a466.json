@@ -29,7 +29,7 @@
       "__resolveType": "site/sections/Category/CategoryBanner.tsx"
     },
     {
-      "html": "<p style=\"text-align: center\"><br></p>",
+      "html": "<p></p>",
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
     },
     {
@@ -37,6 +37,11 @@
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
     },
     {
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p style=\"text-align: center\"><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">Ateliê Casa</span></strong><br><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Desenvolvidos pela designer e arquiteta Sol Libman,</span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">em colaboração com a sua equipe, os produtos de mobiliário são exclusivos e expressam a essência e identidade da Abra Casa</span>.</p>"
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "price:desc",
         "count": 48,
@@ -102,7 +107,6 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true,
       "sortParam": "intelligent"
     },
