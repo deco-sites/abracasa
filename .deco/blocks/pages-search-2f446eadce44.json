@@ -8,17 +8,43 @@
       "titleTemplate": "%s",
       "descriptionTemplate": "%s"
     },
-    { "__resolveType": "Header - 01" },
     {
-      "page": { "__resolveType": "Search Loader" },
+      "__resolveType": "Header - 01"
+    },
+    {
+      "page": {
+        "__resolveType": "commerce/loaders/product/extensions/listingPage.ts",
+        "data": {
+          "sort": "OrderByTopSaleDESC",
+          "count": 24,
+          "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+        },
+        "extensions": [
+          {
+            "__resolveType": "vtex/loaders/product/extensions/listingPage.ts"
+          }
+        ]
+      },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer"
       },
       "cardLayout": {
-        "hide": { "skuSelector": true, "productDescription": true },
-        "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
-        "onMouseOver": { "card": "None", "image": "Change image" },
+        "hide": {
+          "skuSelector": true,
+          "productDescription": true
+        },
+        "basics": {
+          "oldPriceSize": "Small",
+          "contentAlignment": "Left"
+        },
+        "onMouseOver": {
+          "card": "None",
+          "image": "Change image"
+        },
         "elementsPositions": {
           "skuSelector": "Top",
           "favoriteIcon": "Top right"
@@ -28,7 +54,9 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }
