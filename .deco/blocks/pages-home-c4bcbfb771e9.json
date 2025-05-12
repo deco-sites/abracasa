@@ -183,8 +183,8 @@
             "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
             "title": "Ateliê Casa",
             "mainImage": {
-              "src": "https://data.decoassets.com/abracasa/19d7cf32-f5ef-4a73-9854-7074a009dd7c/Group-1652.png",
-              "srcMobile": "https://data.decoassets.com/abracasa/a47d9224-12ac-4556-97af-96f9c42a95b9/Atelie.png",
+              "src": "https://assets.decocache.com/abracasa/bf3bedb4-1ae1-4e4f-9609-d45a609ac7e3/banner_designerexclusivo_800x924.jpg",
+              "srcMobile": "https://assets.decocache.com/abracasa/bf3bedb4-1ae1-4e4f-9609-d45a609ac7e3/banner_designerexclusivo_800x924.jpg",
               "href": "/campanha/atelie-casa"
             },
             "imageItems": [
