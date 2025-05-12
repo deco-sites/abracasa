@@ -152,6 +152,16 @@ const storesData = [
       "https://bit.ly/3YeDK8R",
     ],
   },
+  {
+    "className": "SP Analia Franco",
+    "title": "Anália Franco - SP",
+    "local":
+      "Rua Emília Marengo 305 - Anália Franco, São Paulo - SP, 03336-000",
+    "phone": "(11) 96840-2748",
+    "links": [
+      "https://bit.ly/4kk4RZB",
+    ],
+  },
 ];
 
 export default storesData;
