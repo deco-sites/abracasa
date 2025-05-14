@@ -8,8 +8,12 @@
       "titleTemplate": "%s | Deco.cx",
       "descriptionTemplate": "%s | Deco.cx"
     },
-    { "__resolveType": "Header - 01" },
-    { "__resolveType": "InstitutionalMenu - Abracasa" },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "InstitutionalMenu - Abracasa"
+    },
     {
       "cards": [
         {
@@ -18,49 +22,14 @@
           "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521971093039"
         },
         {
+          "titleStore": "LAR CENTER - SP",
+          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Av. Otto Baumgart, 500 - Vila Guilherme, São Paulo - SP, 02049-000</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5511964986764\" href=\"https://api.whatsapp.com/send?phone=5511964986764\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone: (11) 91687-2226&nbsp;</span></a></p>",
+          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5511916872226"
+        },
+        {
           "titleStore": "COPACABANA",
           "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Av. N.S. de Copacabana 1137 - A - Copacabana - Rio de Janeiro - RJ</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521998630486\" href=\"https://api.whatsapp.com/send?phone=5521998630486\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(21) 3496-0585&nbsp;/&nbsp;(21) 99863-0486﻿</span></a></p>",
           "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521998630486"
-        },
-        {
-          "titleStore": "RIO SUL",
-          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Rio Sul - Rua Lauro Muller, 116 LJ 76G – 4º Piso</span><br><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">T<a data-mce-href=\"https://api.whatsapp.com/send?phone=5521997874278\" href=\"https://api.whatsapp.com/send?phone=5521997874278\" style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">elefone:&nbsp;(21) 2275-5776&nbsp;/&nbsp;(21) 99787-4278﻿</a></span></p>",
-          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521997874278"
-        },
-        {
-          "titleStore": "ICARAÍ ",
-          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Rua Gavião Peixoto, 68. Icaraí, Niterói</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971174540\" href=\"https://api.whatsapp.com/send?phone=5521971174540\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(21) 3620-0200&nbsp;/&nbsp;(21) 97117-4540﻿</span></a></p>",
-          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521971174540"
-        },
-        {
-          "titleStore": "SHOPPING TIJUCA",
-          "description": "<p><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521997223184\" href=\"https://api.whatsapp.com/send?phone=5521997223184\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Avenida Maracanã , 987 - bloco 4 - loja 35 (Subsolo) - Shopping Tijuca</span></a><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521997223184\" href=\"https://api.whatsapp.com/send?phone=5521997223184\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(21) 3172-4678&nbsp;/&nbsp;(21) 99722-3184</span></a></p>",
-          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521997223184"
-        },
-        {
-          "titleStore": "VIA PARQUE ",
-          "description": "<p><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971096391\" href=\"https://api.whatsapp.com/send?phone=5521971096391\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Avenida Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro - RJ, 22.775-003</span></a><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971096391\" href=\"https://api.whatsapp.com/send?phone=5521971096391\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Shopping Via Parque - 1.125 B1</span></a><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971096391\" href=\"https://api.whatsapp.com/send?phone=5521971096391\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(21) 3042-0008&nbsp;/&nbsp;(21) 97109-6391</span></a></p>",
-          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521971096391"
-        },
-        {
-          "titleStore": "RECREIO SHOPPING",
-          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Av. das Américas, 19019, loja 203 FGHI – 2º piso</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971097308\" href=\"https://api.whatsapp.com/send?phone=5521971097308\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(21) 3030-5397&nbsp;/&nbsp;(21) 97109-7308﻿</span></a></p>",
-          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521971097308"
-        },
-        {
-          "titleStore": "PINHEIROS - SP ",
-          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Rua Teodoro Sampaio, 1312 - Pinheiros</span><br><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">(estacionamento privado na R. Francisco Leitão, 591)</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5511930636723\" href=\"https://api.whatsapp.com/send?phone=5511930636723\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">São Paulo - SP, 05406-100. Telefone:&nbsp;(11) 93063-6723﻿</span></a></p>",
-          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5511930636723"
-        },
-        {
-          "titleStore": "BARRA SHOPPING",
-          "description": "<p>Endereço: Avenida das Américas, 4.666 - Barra da Tijuca, Rio de Janeiro - RJ, 22640-102.</p><p>Barra Shopping - Nível Lagoa Loja 122B</p><div class=\"container-phones\"><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971136523\" href=\"https://api.whatsapp.com/send?phone=5521971136523\" data-mce-selected=\"inline-boundary\">Telefone:&nbsp;(21) 3349-6416&nbsp;/&nbsp;(21) 97113-6523﻿</a></div>",
-          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521971136523"
-        },
-        {
-          "titleStore": "ANÁLIA FRANCO - SP ",
-          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Rua Emília Marengo 305 - Anália Franco, São Paulo - SP, 03336-000</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5511968402748\" href=\"https://api.whatsapp.com/send?phone=5511968402748\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(11) 96840-2748﻿</span></a></p>",
-          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5511968402748"
         },
         {
           "titleStore": "VILA NOVA CONCEIÇÃO - SP",
@@ -68,15 +37,52 @@
           "linkWhatsapp": "https://api.whatsapp.com/send?phone=5511964986764"
         },
         {
-          "titleStore": "LAR CENTER - SP",
-          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Av. Otto Baumgart, 500 - Vila Guilherme, São Paulo - SP, 02049-000</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5511964986764\" href=\"https://api.whatsapp.com/send?phone=5511964986764\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone: (11) 91687-2226&nbsp;</span></a></p>",
-          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5511916872226"
+          "titleStore": "RIO SUL",
+          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Rio Sul - Rua Lauro Muller, 116 LJ 76G – 4º Piso</span><br><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">T<a data-mce-href=\"https://api.whatsapp.com/send?phone=5521997874278\" href=\"https://api.whatsapp.com/send?phone=5521997874278\" style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">elefone:&nbsp;(21) 2275-5776&nbsp;/&nbsp;(21) 99787-4278﻿</a></span></p>",
+          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521997874278"
+        },
+        {
+          "titleStore": "ANÁLIA FRANCO - SP ",
+          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Rua Emília Marengo 305 - Anália Franco, São Paulo - SP, 03336-000</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5511968402748\" href=\"https://api.whatsapp.com/send?phone=5511968402748\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(11) 96840-2748﻿</span></a></p>",
+          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5511968402748"
+        },
+        {
+          "titleStore": "ICARAÍ ",
+          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Rua Gavião Peixoto, 68. Icaraí, Niterói</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971174540\" href=\"https://api.whatsapp.com/send?phone=5521971174540\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(21) 3620-0200&nbsp;/&nbsp;(21) 97117-4540﻿</span></a></p>",
+          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521971174540"
+        },
+        {
+          "titleStore": "PINHEIROS - SP ",
+          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Rua Teodoro Sampaio, 1312 - Pinheiros</span><br><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">(estacionamento privado na R. Francisco Leitão, 591)</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5511930636723\" href=\"https://api.whatsapp.com/send?phone=5511930636723\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">São Paulo - SP, 05406-100. Telefone:&nbsp;(11) 93063-6723﻿</span></a></p>",
+          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5511930636723"
+        },
+        {
+          "titleStore": "SHOPPING TIJUCA",
+          "description": "<p><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521997223184\" href=\"https://api.whatsapp.com/send?phone=5521997223184\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Avenida Maracanã , 987 - bloco 4 - loja 35 (Subsolo) - Shopping Tijuca</span></a><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521997223184\" href=\"https://api.whatsapp.com/send?phone=5521997223184\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(21) 3172-4678&nbsp;/&nbsp;(21) 99722-3184</span></a></p>",
+          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521997223184"
+        },
+        {
+          "titleStore": "RECREIO SHOPPING",
+          "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Av. das Américas, 19019, loja 203 FGHI – 2º piso</span><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971097308\" href=\"https://api.whatsapp.com/send?phone=5521971097308\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(21) 3030-5397&nbsp;/&nbsp;(21) 97109-7308﻿</span></a></p>",
+          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521971097308"
+        },
+        {
+          "titleStore": "VIA PARQUE ",
+          "description": "<p><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971096391\" href=\"https://api.whatsapp.com/send?phone=5521971096391\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Endereço: Avenida Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro - RJ, 22.775-003</span></a><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971096391\" href=\"https://api.whatsapp.com/send?phone=5521971096391\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Shopping Via Parque - 1.125 B1</span></a><br><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971096391\" href=\"https://api.whatsapp.com/send?phone=5521971096391\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Telefone:&nbsp;(21) 3042-0008&nbsp;/&nbsp;(21) 97109-6391</span></a></p>",
+          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521971096391"
+        },
+        {
+          "titleStore": "BARRA SHOPPING",
+          "description": "<p>Endereço: Avenida das Américas, 4.666 - Barra da Tijuca, Rio de Janeiro - RJ, 22640-102.</p><p>Barra Shopping - Nível Lagoa Loja 122B</p><div class=\"container-phones\"><a data-mce-href=\"https://api.whatsapp.com/send?phone=5521971136523\" href=\"https://api.whatsapp.com/send?phone=5521971136523\" data-mce-selected=\"inline-boundary\">Telefone:&nbsp;(21) 3349-6416&nbsp;/&nbsp;(21) 97113-6523﻿</a></div>",
+          "linkWhatsapp": "https://api.whatsapp.com/send?phone=5521971136523"
         }
       ],
       "title": "Nossas Lojas ",
       "__resolveType": "site/sections/Content/OurStores.tsx"
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }
