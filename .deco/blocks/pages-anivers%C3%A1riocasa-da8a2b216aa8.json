@@ -30,7 +30,7 @@
     {
       "page": {
         "fq": "H:523",
-        "sort": "",
+        "sort": "OrderByTopSaleDESC",
         "count": 48,
         "filters": "dynamic",
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
