@@ -31,7 +31,7 @@
     },
     {
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
-      "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">CHARLES &amp; RAY EAMES</span></strong><br><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Pioneiros do design industrial</span><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p><span style=\"font-size: 14pt\"> </span><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">O casal Eames criou móveis icônicos e inovadores, combinando funcionalidade, conforto e estética atemporal, como a clássica poltrona Charles Eames. pela designer e arquiteta Sol Libman, em colaboração com a sua equipe, os produtos de mobiliário são exclusivos e expressam a essência e identidade da Abra Casa</span>.</p>"
+      "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">CHARLES &amp; RAY EAMES</span></strong><br><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Pioneiros do design industrial</span><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">O casal Eames criou móveis icônicos e inovadores, combinando funcionalidade, conforto e estética atemporal, como a clássica poltrona Charles Eames. </span></p>"
     },
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
