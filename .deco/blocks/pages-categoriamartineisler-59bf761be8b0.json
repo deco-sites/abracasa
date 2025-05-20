@@ -30,6 +30,10 @@
       }
     },
     {
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">MARTIN EISLER </span></strong><br><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Nascido no ano de 1913 em Viena, na Áustria, o cenógrafo e arquiteto Martin Eisler é conhecido mundialmente graças a seus traços curvilíneos e de linhas elegantes. Ele é o criador da Poltrona Costela, que se trata de uma poltrona com estrutura de metal e ripas, que se assemelham a uma costela, originando seu nome. Além disso, recebe um fofo encosto e assento, formando uma peça que traduz conforto e estilo. </span></p>"
+    },
+    {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "OrderByTopSaleDESC",
