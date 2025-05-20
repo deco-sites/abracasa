@@ -30,6 +30,10 @@
       }
     },
     {
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">LIGIA KOEHLER </span></strong><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Designer brasileira </span><span style=\"color: rgb(119, 120, 122)\"><br><br><br></span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Koehler se destaca pelo trabalho em projetos de interiores e mobiliário, combinando elementos tradicionais e contemporâneos para criar peças de design inovadoras e funcionais. </span></p>"
+    },
+    {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "OrderByTopSaleDESC",
