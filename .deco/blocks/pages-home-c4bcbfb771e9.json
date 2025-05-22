@@ -290,7 +290,9 @@
               "image": {
                 "src": "https://assets.decocache.com/abracasa/b386220d-69a3-46db-b96c-df3546ebc782/banner_designer_assinado_800x924-(1).jpg",
                 "alt": "Design assinado",
-                "srcMobile": "https://assets.decocache.com/abracasa/2cb14a67-de9b-405d-9480-be91272343f4/banner_designer_assinado_mobile.273X455.jpg"
+                "srcMobile": "https://assets.decocache.com/abracasa/2cb14a67-de9b-405d-9480-be91272343f4/banner_designer_assinado_mobile.273X455.jpg",
+                "heightMobile": 435,
+                "widthMobile": 262
               }
             },
             "shelfBannerTitle": "Design assinado"
