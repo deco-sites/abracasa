@@ -8,59 +8,222 @@
       "titleTemplate": "%s | Deco.cx",
       "descriptionTemplate": "%s | Deco.cx"
     },
-    { "__resolveType": "Header - 01" },
-    { "__resolveType": "InstitutionalMenu - Abracasa" },
     {
-      "texts": [
-        {
-          "text": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\"><br data-mce-bogus=\"1\"></span></p><p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">Quem Somos</span></p>"
-        }
-      ],
-      "images": [
-        {
-          "image": "https://abracasa.vteximg.com.br/arquivos/ids/170240/banner-quem-somos.jpg?v=637499407047130000",
-          "description": "image"
-        }
-      ],
-      "textAndImage": [
-        {
-          "texts": [
-            {
-              "text": "<p style=\"line-height: 1.33;\" data-mce-style=\"line-height: 1.33;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.35;\" data-mce-style=\"line-height: 1.35;\"><span style=\"font-size: 27pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 27pt; color: rgb(85, 85, 85);\">Quem Somos</span></p>"
-            }
-          ],
-          "images": [
-            {
-              "image": "https://abracasa.vteximg.com.br/arquivos/ids/170240/banner-quem-somos.jpg?v=637499407047130000",
-              "description": "Image"
-            }
-          ]
-        },
-        {
-          "texts": [
-            {
-              "text": "<p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">A Abra Casa foi criada pelos mesmos fundadores da Abra Cadabra, uma das líderes e referência do segmento de móveis e artigos de decoração desde 1984. Oferecemos toda comodidade e atendimento personalizado através da nossa loja virtual ou em uma de nossas lojas localizadas no Rio de Janeiro e em São Paulo, disponibilizando para nossos clientes toda estrutura que só uma empresa tradicional no mercado pode oferecer.&nbsp;</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\"><br data-mce-bogus=\"1\"></span></p>"
-            }
-          ],
-          "images": [
-            {
-              "image": "https://abracasa.vteximg.com.br/arquivos/ids/170241/banner-quem-somos2.jpg?v=637499407698700000",
-              "description": "image"
-            }
-          ]
-        },
-        {
-          "texts": [
-            {
-              "text": "<p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Nós temos o orgulho de poder apresentar aos nossos clientes, diversos projetos premiados por designers renomados internacionalmente, além de peças únicas Exclusivas Abra Casa: Armários, camas, cômodas e racks, que fazem toda a diferença na decoração da sua casa! Você encontrará uma variedade extensa de produtos feitos com materiais de qualidade a preços acessíveis, como: cadeiras, poltronas, mesas, luminárias, móveis para o quarto e sala, móveis para escritório, além de ambientes prontos que criam uma atmosfera agradável e sofisticada.</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Boas compras!&nbsp;</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p>"
-            }
-          ],
-          "images": []
-        }
-      ],
-      "__resolveType": "site/sections/Content/TextAndImage.tsx"
+      "__resolveType": "Header - 01"
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/SimpleBanner.tsx",
+        "desktopImage": {
+          "src": "https://assets.decocache.com/abracasa/a042cd39-e009-43df-9179-f1158df5c1d5/Group-1758.png"
+        },
+        "mobileImage": {
+          "src": "https://assets.decocache.com/abracasa/a042cd39-e009-43df-9179-f1158df5c1d5/Group-1758.png"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/TimelineSlider.tsx",
+        "title": "<p><strong><span style=\"color: #212121\">Temos 40 anos de história no mercado mobiliário brasileiro.&nbsp;</span></strong></p><p></p><p><span style=\"color: #626262\">Começamos com a Abra Cadabra, oferecendo móveis infantis com foco em segurança <br>e criatividade. Evoluímos para a Abra Casa, expandindo nossa oferta para atender todas <br>as necessidades da família, com móveis para todas as idades e estilos.&nbsp;</span></p>",
+        "timeItems": [
+          {
+            "date": 1985,
+            "text": "<p><strong><span style=\"color: #212121\">Início de tudo</span></strong></p><p><span style=\"color: #626262\">Primeira loja Abra </span></p><p><span style=\"color: #626262\">Cadabra no Méier</span></p>"
+          },
+          {
+            "date": 1992,
+            "text": "<p><strong><span style=\"color: #212121\">Expansão <br>5 lojas próprias</span></strong></p><p><span style=\"color: #626262\">Copacabana <br>Tijuca<br>Méier<br>Madureira<br>Casa Shopping</span></p>"
+          },
+          {
+            "date": 2001,
+            "text": "<p><strong><span style=\"color: #212121\">Abertura de mais<br>3 lojas próprias <br>no Rio de Janeiro</span></strong><span><br></span><span style=\"color: #626262\">Niterói<br>Nova América<br>Via Parque</span></p>"
+          },
+          {
+            "date": 2005,
+            "text": "<p><strong><span style=\"color: #212121\">1º E-commerce</span></strong><span><br></span><span style=\"color: #626262\">Pioneiros na </span></p><p><span style=\"color: #626262\">implementação de</span></p><p><span style=\"color: #626262\">vendas online no<br>setor mobiliário</span></p>"
+          },
+          {
+            "date": 2006,
+            "text": "<p><strong><span style=\"color: #212121\">Texto aqui</span></strong></p><p><span style=\"color: #626262\">Texto mais</span></p><p><span style=\"color: #626262\">Texto mais 2 aqui</span></p>"
+          },
+          {
+            "date": 2007,
+            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+          },
+          {
+            "date": 2008,
+            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+          },
+          {
+            "date": 2009,
+            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+          },
+          {
+            "date": 2010,
+            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+          },
+          {
+            "date": 2016,
+            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "InstitutionalMenu - Abracasa"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Content/TextAndImage.tsx",
+            "texts": [
+              {
+                "text": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\"><br data-mce-bogus=\"1\"></span></p><p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">Quem Somos</span></p>"
+              }
+            ],
+            "images": [
+              {
+                "image": "https://abracasa.vteximg.com.br/arquivos/ids/170240/banner-quem-somos.jpg?v=637499407047130000",
+                "description": "image"
+              }
+            ],
+            "textAndImage": [
+              {
+                "texts": [
+                  {
+                    "text": "<p style=\"line-height: 1.33;\" data-mce-style=\"line-height: 1.33;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.35;\" data-mce-style=\"line-height: 1.35;\"><span style=\"font-size: 27pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 27pt; color: rgb(85, 85, 85);\">Quem Somos</span></p>"
+                  }
+                ],
+                "images": [
+                  {
+                    "image": "https://abracasa.vteximg.com.br/arquivos/ids/170240/banner-quem-somos.jpg?v=637499407047130000",
+                    "description": "Image"
+                  }
+                ]
+              },
+              {
+                "texts": [
+                  {
+                    "text": "<p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">A Abra Casa foi criada pelos mesmos fundadores da Abra Cadabra, uma das líderes e referência do segmento de móveis e artigos de decoração desde 1984. Oferecemos toda comodidade e atendimento personalizado através da nossa loja virtual ou em uma de nossas lojas localizadas no Rio de Janeiro e em São Paulo, disponibilizando para nossos clientes toda estrutura que só uma empresa tradicional no mercado pode oferecer.&nbsp;</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\"><br data-mce-bogus=\"1\"></span></p>"
+                  }
+                ],
+                "images": [
+                  {
+                    "image": "https://abracasa.vteximg.com.br/arquivos/ids/170241/banner-quem-somos2.jpg?v=637499407698700000",
+                    "description": "image"
+                  }
+                ]
+              },
+              {
+                "texts": [
+                  {
+                    "text": "<p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Nós temos o orgulho de poder apresentar aos nossos clientes, diversos projetos premiados por designers renomados internacionalmente, além de peças únicas Exclusivas Abra Casa: Armários, camas, cômodas e racks, que fazem toda a diferença na decoração da sua casa! Você encontrará uma variedade extensa de produtos feitos com materiais de qualidade a preços acessíveis, como: cadeiras, poltronas, mesas, luminárias, móveis para o quarto e sala, móveis para escritório, além de ambientes prontos que criam uma atmosfera agradável e sofisticada.</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Boas compras!&nbsp;</span></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.5;\" data-mce-style=\"line-height: 1.5;\"><br data-mce-bogus=\"1\"></p>"
+                  }
+                ],
+                "images": []
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ColectionHero.tsx",
+        "title": "<p><strong><span style=\"color: #212121\">Somos apaixonados pelo design.</span></strong></p><p></p><p><span style=\"color: #626262\">Buscamos o equilíbrio perfeito entre estética e custo. Acreditamos que a nossa casa imprime a nossa personalidade e tem o poder de nos inspirar e encantar.&nbsp;</span></p>",
+        "titleMobile": "<p><strong><span style=\"color: #212121\">Somos apaixonados pelo design.</span></strong></p><p></p><p><span style=\"color: #626262\">Buscamos o equilíbrio perfeito entre estética e custo. Acreditamos que a nossa casa imprime a nossa personalidade e tem o poder de nos inspirar e encantar.&nbsp;</span></p>",
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/61db66de-5a51-46da-82fa-616852c6765b/_MG_3001-Aprimorado-NR-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/91c3fc34-c5d0-45d6-93fe-8439f7e923ee/Vertical-Secundario-Sofa-Ming-1-(2).png",
+            "link": "/"
+          },
+          {
+            "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3428/31812c37-0719-4707-b182-3114d6acd67d"
+          }
+        ],
+        "limitTitleText": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/630c3a4e-135c-4da4-956e-3463eb0d547e/IMG_1737-1(1)-2.png",
+            "mobile": "https://assets.decocache.com/abracasa/4cf8b2fe-f3db-48c3-bb40-bd2811df6bd1/Vert-Secundario-Maggiolina-3.png"
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/23deeacc-17d7-4872-b43d-9a9782cbb2f6/_MG_9805-Enhanced-NR-1.png",
+            "mobile": "https://assets.decocache.com/abracasa/23deeacc-17d7-4872-b43d-9a9782cbb2f6/_MG_9805-Enhanced-NR-1.png"
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/52af24c0-f5aa-4f85-a00d-fe58451939fa/IMG_1737-1(1)-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/52af24c0-f5aa-4f85-a00d-fe58451939fa/IMG_1737-1(1)-1.jpg"
+          }
+        ],
+        "title": "<p style=\"text-align: justify\"><strong><span style=\"color: #212121\">Nosso design é pensado para se manter <br>relevante e elegante ao longo dos anos.</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"></p><p style=\"text-align: justify\"><span style=\"color: #626262\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos produtos </span></p><p style=\"text-align: justify\"><span style=\"color: #626262\">e o design atemporal. Hoje, contamos com 15 lojas divididas entre o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
+        "titleMobile": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Nosso design é pensado </span></strong></p><p><strong><span style=\"color: rgb(33, 33, 33)\">para se manter relevante e</span></strong></p><p><strong><span style=\"color: rgb(33, 33, 33)\">elegante ao longo dos anos.</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos produtos e o design atemporal. Hoje, contamos com 15 lojas divididas entre o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
+        "justifyCenter": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/CommentsSlider.tsx",
+        "items": [
+          {
+            "textContent": "<p><span style=\"color: rgb(33, 33, 33)\">“Comecei minha jornada no comércio buscando parcerias e pensando até em abrir algo na área de alimentação, mas foi no setor de móveis que encontrei meu caminho. Após um ano de experiência, iniciei minha trajetória solo com a Abra Cadabra, no Méier, focada em móveis infantis. Sempre tive como princípio tentar ser razoável e respeitoso com todos ao meu redor. Desde o início, contei com o apoio da Sol, minha irmã, que trouxe um toque especial à loja, junto à Denise, minha esposa, que esteve envolvida na parte de decoração desde os primeiros passos, junto a colaboradores incríveis. O crescimento da empresa foi natural, sem metas rígidas, mas sempre tentando buscar a ética, transparência e valorizando as relações humanas. Com o tempo, nasceu a Abra Casa, refletindo a mesma essência. Hoje, filhos, sobrinhos, amigos e colaboradores antigos e novos se empenham para manter vivo esse DNA de humildade, respeito, verdade, brincadeira e alegria, que sustenta nossas relações com clientes, fornecedores e toda a rede que nos cerca.”</span></p><p></p><p></p><p></p><p></p><p></p><p><strong><span style=\"color: rgb(33, 33, 33)\">GILBERTO LIBMAN</span></strong><span style=\"color: rgb(33, 33, 33)\"><br>Fundador</span></p>"
+          },
+          {
+            "textContent": "<p><span style=\"color: rgb(33, 33, 33)\">“Comecei minha jornada no comércio buscando parcerias e pensando até em abrir algo na área de alimentação, mas foi no setor de móveis que encontrei meu caminho. Após um ano de experiência, iniciei minha trajetória solo com a Abra Cadabra, no Méier, focada em móveis infantis. Sempre tive como princípio tentar ser razoável e respeitoso com todos ao meu redor. Desde o início, contei com o apoio da Sol, minha irmã, que trouxe um toque especial à loja, junto à Denise, minha esposa, que esteve envolvida na parte de decoração desde os primeiros passos, junto a colaboradores incríveis. O crescimento da empresa foi natural, sem metas rígidas, mas sempre tentando buscar a ética, transparência e valorizando as relações humanas. Com o tempo, nasceu a Abra Casa, refletindo a mesma essência. Hoje, filhos, sobrinhos, amigos e colaboradores antigos e novos se empenham para manter vivo esse DNA de humildade, respeito, verdade, brincadeira e alegria, que sustenta nossas relações com clientes, fornecedores e toda a rede que nos cerca.”</span></p><p></p><p><strong><span style=\"color: rgb(33, 33, 33)\">GILBERTO LIBMAN</span></strong><span style=\"color: rgb(33, 33, 33)\"><br>Fundador</span></p>"
+          },
+          {
+            "textContent": "<p><span style=\"color: rgb(33, 33, 33)\">“Comecei minha jornada no comércio buscando parcerias e pensando até em abrir algo na área de alimentação, mas foi no setor de móveis que encontrei meu caminho. Após um ano de experiência, iniciei minha trajetória solo com a Abra Cadabra, no Méier, focada em móveis infantis. Sempre tive como princípio tentar ser razoável e respeitoso com todos ao meu redor. Desde o início, contei com o apoio da Sol, minha irmã, que trouxe um toque especial à loja, junto à Denise, minha esposa, que esteve envolvida na parte de decoração desde os primeiros passos, junto a colaboradores incríveis. O crescimento da empresa foi natural, sem metas rígidas, mas sempre tentando buscar a ética, transparência e valorizando as relações humanas. Com o tempo, nasceu a Abra Casa, refletindo a mesma essência. Hoje, filhos, sobrinhos, amigos e colaboradores antigos e novos se empenham para manter vivo esse DNA de humildade, respeito, verdade, brincadeira e alegria, que sustenta nossas relações com clientes, fornecedores e toda a rede que nos cerca.”</span></p><p></p><p><strong><span style=\"color: rgb(33, 33, 33)\">GILBERTO LIBMAN</span></strong><span style=\"color: rgb(33, 33, 33)\"><br>Fundador</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroSimple.tsx",
+        "image": {
+          "desktopSrc": "https://assets.decocache.com/abracasa/6a64c1da-259a-4d38-bbbc-96a7d6643f4f/image.jpg",
+          "mobileSrc": "https://assets.decocache.com/abracasa/973e98e5-92ab-423b-b41f-345bafa57721/image-(1).jpg"
+        },
+        "subTitle": "NOSSO DESIGN PARA VOCÊ",
+        "title": "Ateliê Casa",
+        "textContent": "<p><span style=\"color: #626262\">Nossos designers criam linhas de Design exclusivas desenvolvidas pelo nosso Ateliê. Desenvolvidos pela designer e arquiteta Sol Libman, em colaboração com a sua equipe, os produtos de mobiliário são exclusivos e expressam a essência e identidade da Abra Casa.</span></p>",
+        "button": {
+          "buttonText": "CONFIRA A COLEÇÃO >",
+          "buttonLink": "/"
+        }
+      }
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }

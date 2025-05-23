@@ -9,6 +9,8 @@ interface Props {
     title?: RichText;
     /** @description Mobile title */
     titleMobile?: RichText;
+    /** @description Turn this option true to make text fix on center justified */
+    justifyCenter: boolean;
     image: {
         /** @description desktop otimized image */
         desktop?: LiveImage;
@@ -29,15 +31,15 @@ interface Props {
     }[]
 }
 
-function HeroTitleImages({ title, titleMobile, image, mainImage = [] }: Props) {
+function HeroTitleImages({ title, titleMobile, justifyCenter, image, mainImage = [] }: Props) {
     const id = useId();
 
     return (
         <div id={id} class="mt-[72px] lg:mt-[172px]">
             <div class="max-w-[1196px] mx-auto">
                 <div class="flex flex-col font-inter">
-                    <h1 class="leading-[1] font-semibold hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px]" dangerouslySetInnerHTML={{ __html: title ?? '' }} />
-                    <h1 class="mx-6 leading-[1] font-semibold mb-7 lg:mb-[66px] lg:hidden" dangerouslySetInnerHTML={{ __html: titleMobile ?? '' }} />
+                    <h1 class={`sliderP leading-[1] font-semibold hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${justifyCenter ? 'max-w-[782px] !font-light tracking-wider !mx-auto mb-[51px] lg:mb-[154px]' : ''}`} dangerouslySetInnerHTML={{ __html: title ?? '' }} />
+                    <h1 class={`sliderP mx-6 leading-[1] font-semibold mb-7 lg:mb-[66px] lg:hidden ${justifyCenter ? 'max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px]' : ''}`} dangerouslySetInnerHTML={{ __html: titleMobile ?? '' }} />
                     {/* Desktop view */}
                     <ul class="hidden lg:flex gap-[18px] mx-6 xl:mx-0">
                         {image?.map((img) => (
@@ -110,4 +112,12 @@ function HeroTitleImages({ title, titleMobile, image, mainImage = [] }: Props) {
     )
 }
 
-export default HeroTitleImages
+export default HeroTitleImages;
+
+export function LoadingFallback() {
+    return (
+        <div style={{ height: "650px" }} class="flex justify-center items-center">
+            <span class="loading loading-spinner" />
+        </div>
+    );
+}
