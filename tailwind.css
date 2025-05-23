@@ -33,6 +33,14 @@
 }
 
 @layer utilities {
+  .sliderP p {
+    min-height: 8px;
+  }
+
+  .sliderP strong {
+    font-weight: 600;
+  }
+
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
