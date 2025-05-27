@@ -28,6 +28,11 @@
       "__resolveType": "site/sections/Category/CategoryBanner.tsx"
     },
     {
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p style=\"text-align: center\"><br><br><strong><span style=\"font-size: 24pt\">Aniversário 40 anos</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span>Estamos comemorando 40 anos de história no mercado mobiliário brasileiro.&nbsp; Começamos com a Abra Cadabra, oferecendo móveis infantis com foco em segurança e criatividade. Evoluímos para a Abra Casa, expandindo nossa oferta para atender todas as necessidades da família, com móveis para todas as idades e estilos.</span><span style=\"color: rgb(0, 0, 0); font-size: 12pt\">&nbsp;</span></p><p style=\"text-align: center\"></p>"
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "fq": "H:523",
         "sort": "OrderByTopSaleDESC",
@@ -88,7 +93,6 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
     {
