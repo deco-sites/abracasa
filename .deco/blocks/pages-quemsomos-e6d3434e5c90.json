@@ -19,7 +19,9 @@
           "src": "https://assets.decocache.com/abracasa/a042cd39-e009-43df-9179-f1158df5c1d5/Group-1758.png"
         },
         "mobileImage": {
-          "src": "https://assets.decocache.com/abracasa/a042cd39-e009-43df-9179-f1158df5c1d5/Group-1758.png"
+          "src": "https://assets.decocache.com/abracasa/39a89355-5c39-4412-9e2d-657371950d90/64697824-c355-4910-89ee-8adbbd94b223.jpg",
+          "width": 375,
+          "height": 460
         }
       }
     },
@@ -27,7 +29,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Content/TimelineSlider.tsx",
-        "title": "<p><strong><span style=\"color: #212121\">Temos 40 anos de história no mercado mobiliário brasileiro.&nbsp;</span></strong></p><p></p><p><span style=\"color: #626262\">Começamos com a Abra Cadabra, oferecendo móveis infantis com foco em segurança <br>e criatividade. Evoluímos para a Abra Casa, expandindo nossa oferta para atender todas <br>as necessidades da família, com móveis para todas as idades e estilos.&nbsp;</span></p>",
+        "title": "<p><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Temos 40 anos de história no mercado mobiliário brasileiro.&nbsp;</span></strong></p><p></p><p><span style=\"color: rgb(98, 98, 98)\">Começamos com a Abra Cadabra, oferecendo móveis infantis com foco em segurança <br>e criatividade. Evoluímos para a Abra Casa, expandindo nossa oferta para atender todas <br>as necessidades da família, com móveis para todas as idades e estilos.&nbsp;</span></p>",
         "timeItems": [
           {
             "date": 1985,
@@ -47,29 +49,62 @@
           },
           {
             "date": 2006,
-            "text": "<p><strong><span style=\"color: #212121\">Texto aqui</span></strong></p><p><span style=\"color: #626262\">Texto mais</span></p><p><span style=\"color: #626262\">Texto mais 2 aqui</span></p>"
+            "text": "<p><strong><span style=\"color: rgb(98, 98, 98)\">Criação Berço Zapa</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">Um dos primeiros berços multifuncionais do mercado</span></p>"
           },
           {
             "date": 2007,
-            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+            "text": "<p><strong><span style=\"color: #626262\">Expansão com mais 4 lojas próprias Abra Cadabra</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">Rio Sul</span></p><p style=\"text-align: start\"><span style=\"color: #626262\">Norte Shopping</span></p><p style=\"text-align: start\"><span style=\"color: #626262\">Shopping Grande Rio</span></p><p style=\"text-align: start\"><span style=\"color: #626262\">West Shopping</span></p>"
           },
           {
             "date": 2008,
-            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+            "text": "<p><strong><span style=\"color: #626262\">Criação da marca Abra Casa</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">Começamos o sonho de atender toda a família</span></p>"
           },
           {
             "date": 2009,
-            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+            "text": "<p><strong><span style=\"color: #626262\">Criação Berço Mali</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">Líder de vendas desde o lançamento<br></span></p>"
           },
           {
             "date": 2010,
-            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+            "text": "<p><strong><span style=\"color: rgb(98, 98, 98); font-size: 12pt\">Criação Bicama Zuka e Rack Casé</span></strong></p>"
           },
           {
             "date": 2016,
-            "text": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Texto aqui</span></strong></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais</span></p><p><span style=\"color: rgb(98, 98, 98)\">Texto mais 2 aqui</span></p>"
+            "text": "<p><strong><span style=\"color: #626262\">Releitura da Poltrona Costela</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">A poltrona mais vendida e desejada pelos nossos clientes</span></p>"
+          },
+          {
+            "text": "<p><strong><span style=\"color: #626262\">Linha Cria</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">Lançamento de enxoval de berço e cama com estampas exclusivas para Abra Cadabra</span></p>",
+            "date": 2018
+          },
+          {
+            "date": 2019,
+            "text": "<p><strong><span style=\"color: #626262\">Novo Centro de Distribuição 8 mil m²</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">Criação Cadeira Lala</span></p>"
+          },
+          {
+            "date": 2020,
+            "text": "<p><strong><span style=\"color: #626262\">Criação Linha modo</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">Itens decoração assinados pela Designer Fernanda Sampaio</span></p>"
+          },
+          {
+            "text": "<p><strong><span style=\"color: #626262\">Inauguração da primeira loja Abra Casa em São Paulo, Pinheiros</span></strong></p>",
+            "date": 2021
+          },
+          {
+            "text": "<p><strong><span style=\"color: #626262\">Criação Poltrona Lalá e Rack Chico</span></strong></p>",
+            "date": 2022
+          },
+          {
+            "text": "<p><strong><span style=\"color: #626262\">Criação Cadeira Ribs pelo Designer Hakim Hazim</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">Expansão de mais 2 lojas próprias em São Paulo</span></p>",
+            "date": 2023
+          },
+          {
+            "date": 2024,
+            "text": "<p><strong><span style=\"color: #626262\">Total de 4 lojas próprias em São Paulo</span></strong></p>"
+          },
+          {
+            "date": 2025,
+            "text": "<p><strong><span style=\"color: #626262\">15 lojas próprias em todo Brasil</span></strong></p><p style=\"text-align: start\"><strong><span style=\"color: #626262\">2 e-commerces</span></strong></p><p style=\"text-align: start\"><strong><span style=\"color: #626262\">+70 produtos desenhados pelo nosso Ateliê</span></strong></p><p style=\"text-align: start\"><span style=\"color: #626262\">&nbsp;</span></p><p style=\"text-align: start\"><strong><span style=\"color: #626262\">40 anos e continua...</span></strong></p>"
           }
-        ]
+        ],
+        "titleMobile": "<p><strong><span style=\"color: rgb(33, 33, 33); font-size: 12pt\">Temos 40 anos de história</span></strong></p><p><strong><span style=\"color: rgb(33, 33, 33); font-size: 12pt\">no mercado mobiliário brasileiro.&nbsp;</span></strong></p><p></p><p><span style=\"color: rgb(98, 98, 98); font-size: 10pt\">Começamos com a Abra Cadabra, oferecendo móveis infantis com foco em segurança e criatividade. Evoluímos para a Abra Casa, expandindo nossa oferta para atender todas as necessidades da família, com móveis para todas as idades e estilos.&nbsp;</span></p>"
       }
     },
     {
@@ -149,8 +184,8 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/ColectionHero.tsx",
-        "title": "<p><strong><span style=\"color: #212121\">Somos apaixonados pelo design.</span></strong></p><p></p><p><span style=\"color: #626262\">Buscamos o equilíbrio perfeito entre estética e custo. Acreditamos que a nossa casa imprime a nossa personalidade e tem o poder de nos inspirar e encantar.&nbsp;</span></p>",
-        "titleMobile": "<p><strong><span style=\"color: #212121\">Somos apaixonados pelo design.</span></strong></p><p></p><p><span style=\"color: #626262\">Buscamos o equilíbrio perfeito entre estética e custo. Acreditamos que a nossa casa imprime a nossa personalidade e tem o poder de nos inspirar e encantar.&nbsp;</span></p>",
+        "title": "<p><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Somos apaixonados pelo design.</span></strong></p><p></p><p></p><p><span style=\"color: rgb(98, 98, 98)\">Buscamos o equilíbrio perfeito entre estética e custo. Acreditamos que a nossa casa imprime a nossa personalidade e tem o poder de nos inspirar e encantar.&nbsp;</span></p>",
+        "titleMobile": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Somos apaixonados pelo design.</span></strong></p><p></p><p><span style=\"color: rgb(98, 98, 98); font-size: 10pt\">Buscamos o equilíbrio perfeito entre estética e custo. Acreditamos que a nossa casa imprime a nossa personalidade e tem o poder de nos inspirar e encantar.&nbsp;</span></p>",
         "image": [
           {
             "desktop": "https://assets.decocache.com/abracasa/61db66de-5a51-46da-82fa-616852c6765b/_MG_3001-Aprimorado-NR-1.jpg",
@@ -182,7 +217,7 @@
             "mobile": "https://assets.decocache.com/abracasa/52af24c0-f5aa-4f85-a00d-fe58451939fa/IMG_1737-1(1)-1.jpg"
           }
         ],
-        "title": "<p style=\"text-align: justify\"><strong><span style=\"color: #212121\">Nosso design é pensado para se manter <br>relevante e elegante ao longo dos anos.</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"></p><p style=\"text-align: justify\"><span style=\"color: #626262\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos produtos </span></p><p style=\"text-align: justify\"><span style=\"color: #626262\">e o design atemporal. Hoje, contamos com 15 lojas divididas entre o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
+        "title": "<p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Nosso design é pensado para se manter <br>relevante e elegante ao longo dos anos.</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos produtos</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">e o design atemporal. Hoje, contamos com 15 lojas divididas entre o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
         "titleMobile": "<p><strong><span style=\"color: rgb(33, 33, 33)\">Nosso design é pensado </span></strong></p><p><strong><span style=\"color: rgb(33, 33, 33)\">para se manter relevante e</span></strong></p><p><strong><span style=\"color: rgb(33, 33, 33)\">elegante ao longo dos anos.</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos produtos e o design atemporal. Hoje, contamos com 15 lojas divididas entre o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
         "justifyCenter": true
       }
@@ -193,7 +228,7 @@
         "__resolveType": "site/sections/Content/CommentsSlider.tsx",
         "items": [
           {
-            "textContent": "<p><span style=\"color: rgb(33, 33, 33)\">“Comecei minha jornada no comércio buscando parcerias e pensando até em abrir algo na área de alimentação, mas foi no setor de móveis que encontrei meu caminho. Após um ano de experiência, iniciei minha trajetória solo com a Abra Cadabra, no Méier, focada em móveis infantis. Sempre tive como princípio tentar ser razoável e respeitoso com todos ao meu redor. Desde o início, contei com o apoio da Sol, minha irmã, que trouxe um toque especial à loja, junto à Denise, minha esposa, que esteve envolvida na parte de decoração desde os primeiros passos, junto a colaboradores incríveis. O crescimento da empresa foi natural, sem metas rígidas, mas sempre tentando buscar a ética, transparência e valorizando as relações humanas. Com o tempo, nasceu a Abra Casa, refletindo a mesma essência. Hoje, filhos, sobrinhos, amigos e colaboradores antigos e novos se empenham para manter vivo esse DNA de humildade, respeito, verdade, brincadeira e alegria, que sustenta nossas relações com clientes, fornecedores e toda a rede que nos cerca.”</span></p><p></p><p></p><p></p><p></p><p></p><p><strong><span style=\"color: rgb(33, 33, 33)\">GILBERTO LIBMAN</span></strong><span style=\"color: rgb(33, 33, 33)\"><br>Fundador</span></p>"
+            "textContent": "<p><span style=\"color: rgb(33, 33, 33)\">“Comecei minha jornada no comércio buscando parcerias e pensando até em abrir algo na área de alimentação, mas foi no setor de móveis que encontrei meu caminho. Após um ano de experiência, iniciei minha trajetória solo com a Abra Cadabra, no Méier, focada em móveis infantis. Sempre tive como princípio tentar ser razoável e respeitoso com todos ao meu redor. Desde o início, contei com o apoio da Sol, minha irmã, que trouxe um toque especial à loja, junto à Denise, minha esposa, que esteve envolvida na parte de decoração desde os primeiros passos, junto a colaboradores incríveis. O crescimento da empresa foi natural, sem metas rígidas, mas sempre tentando buscar a ética, transparência e valorizando as relações humanas. Com o tempo, nasceu a Abra Casa, refletindo a mesma essência. Hoje, filhos, sobrinhos, amigos e colaboradores antigos e novos se empenham para manter vivo esse DNA de humildade, respeito, verdade, brincadeira e alegria, que sustenta nossas relações com clientes, fornecedores e toda a rede que nos cerca.”</span></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p><strong><span style=\"color: rgb(33, 33, 33)\">GILBERTO LIBMAN</span></strong><span style=\"color: rgb(33, 33, 33)\"><br>Fundador</span></p>"
           },
           {
             "textContent": "<p><span style=\"color: rgb(33, 33, 33)\">“Comecei minha jornada no comércio buscando parcerias e pensando até em abrir algo na área de alimentação, mas foi no setor de móveis que encontrei meu caminho. Após um ano de experiência, iniciei minha trajetória solo com a Abra Cadabra, no Méier, focada em móveis infantis. Sempre tive como princípio tentar ser razoável e respeitoso com todos ao meu redor. Desde o início, contei com o apoio da Sol, minha irmã, que trouxe um toque especial à loja, junto à Denise, minha esposa, que esteve envolvida na parte de decoração desde os primeiros passos, junto a colaboradores incríveis. O crescimento da empresa foi natural, sem metas rígidas, mas sempre tentando buscar a ética, transparência e valorizando as relações humanas. Com o tempo, nasceu a Abra Casa, refletindo a mesma essência. Hoje, filhos, sobrinhos, amigos e colaboradores antigos e novos se empenham para manter vivo esse DNA de humildade, respeito, verdade, brincadeira e alegria, que sustenta nossas relações com clientes, fornecedores e toda a rede que nos cerca.”</span></p><p></p><p><strong><span style=\"color: rgb(33, 33, 33)\">GILBERTO LIBMAN</span></strong><span style=\"color: rgb(33, 33, 33)\"><br>Fundador</span></p>"

@@ -48,7 +48,7 @@ function ColectionHero({ limitTitleText, title, titleMobile, button, image }: Pr
                     )}
                     <ul class="flex flex-col lg:flex-row items-center gap-7">
                         {image?.map((img, index) => (
-                            <li class={`${index === 1 ? 'xl:absolute xl:right-0 xl:top-0' : ''}`}>
+                            <li class={`${index === 1 ? `xl:absolute ${img.video ? 'xl:top-[-65px] xl:right-[3%]' : 'xl:right-0 xl:top-0 '}` : ''}`}>
                                 {img.video ? <><Video
                                     src={img.video}
                                     width={588}

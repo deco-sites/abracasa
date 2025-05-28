@@ -16,7 +16,7 @@ function CommentsSlider({ items }: Props) {
     const id = useId();
 
     return (
-        <div class="bg-[#F3F3EF] mt-[99px] md:mt-[170px] pt-[110px] md:pt-[84px] pb-[92px] relative px-6 md:px-0" id={id}>
+        <div class="bg-[#F3F3EF] mt-[99px] md:mt-[170px] pt-[45px] md:pt-[84px] pb-[66px] md:pb-[92px] relative px-6 md:px-0" id={id}>
             <div class="max-w-[1196px] mx-auto relative flex flex-col md:items-center md:justify-center">
                 <div class="flex w-full gap-4 max-lg:mb-7 justify-end md:justify-between md:absolute left-0 top-2/4 md:translate-y-[-50%]">
                     <Slider.PrevButton class="btn btn-circle btn-outline max-lg:!w-8 max-lg:!h-8 max-lg:!min-w-8 max-lg:!min-h-8 bg-transparent">

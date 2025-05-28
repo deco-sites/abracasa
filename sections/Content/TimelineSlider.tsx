@@ -12,18 +12,20 @@ interface TimeText {
 
 interface Props {
     title?: RichText;
+    titleMobile?: RichText;
     timeItems?: TimeText[];
 }
 
-function TimelineSlider({ title, timeItems }: Props) {
+function TimelineSlider({ title, titleMobile, timeItems }: Props) {
     const id = useId();
     return (
         <div>
             <div id={id} class="max-w-[1196px] mx-auto flex flex-col gap-[49px] md:gap-32">
-                <span class="sliderP mt-[51px] md:mt-[126px] max-w-[782px] max-lg:mx-6 mx-auto" dangerouslySetInnerHTML={{ __html: title ?? '' }} />
+                <span class="sliderP mt-[51px] md:mt-[126px] max-w-[782px] max-lg:mx-6 mx-auto font-inter hidden md:block" dangerouslySetInnerHTML={{ __html: title ?? '' }} />
+                <span class="sliderP mt-[51px] md:mt-[126px] max-w-[782px] max-lg:mx-6 mx-auto font-inter md:hidden" dangerouslySetInnerHTML={{ __html: titleMobile ?? '' }} />
 
                 <div class="flex flex-col">
-                    <div class="flex w-full gap-4 md:gap-8 max-lg:mb-7 mb-[40px] justify-end mr-6 md:mr-0">
+                    <div class="flex w-full gap-4 md:gap-8 max-lg:mb-7 mb-[40px] justify-end md:mr-0 px-6 md:px-0">
                         <Slider.PrevButton class="btn btn-circle btn-outline max-lg:!w-8 max-lg:!h-8 max-lg:!min-w-8 max-lg:!min-h-8 bg-transparent border-[#30303033]">
                             <Icon size={20} id="ChevronLeft" strokeWidth={3} />
                         </Slider.PrevButton>
@@ -32,7 +34,7 @@ function TimelineSlider({ title, timeItems }: Props) {
                         </Slider.NextButton>
                     </div>
                     <img
-                        class="object-cover w-full pl-6 mb-[38px] hidden md:block"
+                        class="object-cover w-full mb-[38px] hidden md:block"
                         src={asset("/image/timeline.png")}
                         width={1194}
                         height={12}
@@ -47,7 +49,7 @@ function TimelineSlider({ title, timeItems }: Props) {
                         alt="Barra linha do tempo"
                         loading="lazy"
                     />
-                    <Slider class="carousel carousel-center snap-mandatory scroll-smooth sm:snap-end gap-12 md:gap-[100px] col-span-full row-start-2 row-end-5 ml-[48px] lg:ml-[55px]">
+                    <Slider class="carousel carousel-center md:carousel-end snap-mandatory scroll-smooth sm:snap-end gap-12 md:gap-[105px] col-span-full row-start-2 row-end-5 ml-[48px] lg:ml-[80px]">
                         {timeItems?.map((item, index) => (
                             <Slider.Item
                                 index={index}
