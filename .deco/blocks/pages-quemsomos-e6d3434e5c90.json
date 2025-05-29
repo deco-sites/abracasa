@@ -255,7 +255,7 @@
         "textContent": "<p><span style=\"color: #626262\">Nossos designers criam linhas de Design exclusivas desenvolvidas pelo nosso Ateliê. Desenvolvidos pela designer e arquiteta Sol Libman, em colaboração com a sua equipe, os produtos de mobiliário são exclusivos e expressam a essência e identidade da Abra Casa.</span></p>",
         "button": {
           "buttonText": "CONFIRA A COLEÇÃO >",
-          "buttonLink": "/"
+          "buttonLink": "https://www.abracasa.com.br/designers/atelie-casa"
         }
       }
     },
