@@ -9,7 +9,9 @@
         "filters": "dynamic",
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "title": "Aniversário Casa",
+      "titleTemplate": "Aniversário Casa"
     },
     {
       "__resolveType": "Header - 01"
