@@ -3,7 +3,7 @@
   "path": "/campanha/poltrona-maggiolina",
   "sections": [
     {
-      "title": "Quarto Zuka",
+      "title": "Poltrona Maggiolina",
       "jsonLD": {
         "sort": "OrderByPriceDESC",
         "count": 12,
@@ -11,7 +11,7 @@
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
-      "titleTemplate": "Quarto Zuka"
+      "titleTemplate": "Poltrona Maggiolina"
     },
     {
       "__resolveType": "Header - 01"
