@@ -44,12 +44,12 @@
           "alt": "Coleção 2025",
           "href": "https://www.abracasa.com.br/colecao-2025",
           "mobile": {
-            "image": "https://data.decoassets.com/abracasa/7e6fd5b6-8ba2-4ddd-a4b5-fc05814cb3dc/casa_colecao-2025_banner_mobile_767x942px.jpg",
+            "image": "https://assets.decocache.com/abracasa/63b70c04-6a4d-4818-b729-1dab17378a1b/casa_colecao-2025_banner_mobile_767x942px-(1).jpg",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://data.decoassets.com/abracasa/464200f0-1b2f-4ba3-b38c-ced3f06b8ce5/casa_colecao2025_banner_desktop_1920x713px.jpg",
+            "image": "https://assets.decocache.com/abracasa/13eb078d-23e3-4cd0-ad1f-7137d8917e08/casa_colecao2025_banner_desktop_1920x713px-(1).jpg",
             "width": 1920,
             "height": 713
           }
