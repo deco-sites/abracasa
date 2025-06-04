@@ -22,8 +22,8 @@
         {
           "image": {
             "alt": "Banner De Ambientes ",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184445/banner_categorias_designers_23.jpg?v=638191447954600000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184445/banner_categorias_designers_23.jpg?v=638191447954600000"
+            "mobile": "https://assets.decocache.com/abracasa/fc75af59-a3de-451f-a9ee-b539d962bb7d/casa_banner_especial_mobile_todosdesigners_800x400.png",
+            "desktop": "https://assets.decocache.com/abracasa/ef50ec64-d400-42a9-9c2f-58372baf42ab/casa_banner_especial_desk_todosdesigner_1800x220.jpg"
           },
           "matcher": "/*"
         }
