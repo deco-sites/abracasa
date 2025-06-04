@@ -21,8 +21,8 @@
         "banners": [
           {
             "image": {
-              "desktop": "https://assets.decocache.com/abracasa/51419e67-fe50-49df-b705-610b3fa4c526/casa_banner_especial_desk_martin_1800x220.jpg",
-              "mobile": "https://assets.decocache.com/abracasa/7c420641-411e-4fc7-a7a7-8face573e444/casa_banner_especial_mobile_martin_800x400.png"
+              "desktop": "https://assets.decocache.com/abracasa/b5ae2557-6855-4849-990f-c7309a719496/casa_banner_especial_desk_martin_1800x220-(2).jpg",
+              "mobile": "https://assets.decocache.com/abracasa/a206fc93-ee20-45e7-8843-feb45a678db5/casa_banner_especial_mobile_martin_800x400-(2).png"
             },
             "matcher": "/*"
           }
