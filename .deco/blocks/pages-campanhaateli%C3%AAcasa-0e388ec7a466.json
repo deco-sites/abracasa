@@ -20,8 +20,8 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/22106f87-58ca-48a1-ae89-7f8d26d3085f/casa_banner_especial_mobile_800x400_atelie.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/c3bffe0a-7851-41f8-bf22-2c87635415f0/casa_banner_especial_desk_1800x220_atelie.png"
+            "mobile": "https://assets.decocache.com/abracasa/a4720aef-a9aa-4960-8faa-6737f261cc73/casa_banner_especial_mobile_ateliecasa_800x400.png",
+            "desktop": "https://assets.decocache.com/abracasa/703a66e9-8066-409d-bc1f-4b25ea3b845d/casa_banner_especial_desk_atelie_1800x220.jpg"
           },
           "matcher": "/*"
         }
