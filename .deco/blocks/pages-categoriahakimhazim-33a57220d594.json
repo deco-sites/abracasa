@@ -21,8 +21,8 @@
         "banners": [
           {
             "image": {
-              "desktop": "https://assets.decocache.com/abracasa/d435c883-236a-47e1-9e84-a415cc3653ff/casa_banner_especial_desk_hakim-hazim_1800x220.jpg",
-              "mobile": "https://assets.decocache.com/abracasa/ecfafded-247d-4363-bc80-e924c12e1182/casa_banner_especial_mobile_hakim-hazim_800x400.png"
+              "desktop": "https://assets.decocache.com/abracasa/6c74f376-0d42-47f4-af5d-bf0872069ed5/casa_banner_especial_desk_hakim-hazim_1800x220-(1).jpg",
+              "mobile": "https://assets.decocache.com/abracasa/ef686f36-9ce3-4905-bac5-8f576b223299/casa_banner_especial_mobile_hakim-hazim_800x400-(1).png"
             },
             "matcher": "/*"
           }
