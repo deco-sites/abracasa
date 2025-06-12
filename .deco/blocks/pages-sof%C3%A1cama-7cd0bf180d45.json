@@ -19,7 +19,7 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/2ce82b77-c134-4de8-8426-839f5ed14f5a/casa_banner_especial_mobile_sofacama_800x400.png",
+            "mobile": "https://assets.decocache.com/abracasa/5b5d9ab8-4136-4f7c-b052-79ecfcf7b91a/casa_colecao_banner_especial_mobile_800x400-(1).jpg",
             "desktop": "https://assets.decocache.com/abracasa/5e710c52-6f05-40b7-83cb-f634f0b3e061/CASA_C_2.jpg"
           },
           "matcher": "/*"
