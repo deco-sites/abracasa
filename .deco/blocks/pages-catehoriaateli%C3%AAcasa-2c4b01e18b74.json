@@ -15,6 +15,22 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+        "banners": [
+          {
+            "image": {
+              "desktop": "https://assets.decocache.com/abracasa/93e261d4-d99f-424d-8bcd-341475841427/casa_banner_especial_desk_atelie_1800x220.jpg",
+              "mobile": "https://assets.decocache.com/abracasa/de3fc2ef-77eb-4590-8d23-14c3f5f1c344/casa_banner_especial_mobile_ateliecasa_800x400.png"
+            },
+            "matcher": "/*",
+            "title": "Ateliê Casa"
+          }
+        ]
+      }
+    },
+    {
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
       "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">Ateliê Casa</span></strong><br><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Desenvolvidos pela designer e arquiteta Sol Libman,</span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">em colaboração com a sua equipe, os produtos de mobiliário são exclusivos e expressam a essência e identidade da Abra Casa</span>.</p>"
     },
