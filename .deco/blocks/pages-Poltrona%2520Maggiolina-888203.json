@@ -17,7 +17,16 @@
       "__resolveType": "Header - 01"
     },
     {
-      "banners": [],
+      "banners": [
+        {
+          "image": {
+            "desktop": "https://assets.decocache.com/abracasa/482dbf69-4ecf-4b54-b014-81559839dc4e/casa_banner_especial_desktop_maggiolina_1800x220.png",
+            "mobile": "https://assets.decocache.com/abracasa/70048d44-a4c9-42d3-8d24-ca41eeec54b3/casa_banner_especial_mobile_maggiolina_800x400.png"
+          },
+          "matcher": "/*",
+          "title": "Poltrona Maggiolina"
+        }
+      ],
       "__resolveType": "site/sections/Category/CategoryBanner.tsx"
     },
     {
