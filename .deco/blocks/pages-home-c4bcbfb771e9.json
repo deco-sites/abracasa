@@ -13,20 +13,6 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "alt": "Aniversario Casa",
-          "href": "https://www.abracasa.com.br/campanha/aniversario-casa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/dad63b18-aea0-44a9-9b5a-3b971ccad957/casa_banner_mobile_40anos-(1).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/245ca1a5-a6dc-4090-9c9a-5bad9e3ed562/casa_banner_desktop_40anos_1920x713.png",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Poltrona Maggiolina",
           "href": "https://www.abracasa.com.br/campanha/poltrona-maggiolina",
           "mobile": {
@@ -36,6 +22,20 @@
           },
           "desktop": {
             "image": "https://assets.decocache.com/abracasa/d8d8d2a0-c776-45f2-aada-e1ef7e3a454b/casa_banner_desktop_maggiolina_1920x713-(1).jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Aniversario Casa",
+          "href": "https://www.abracasa.com.br/campanha/aniversario-casa",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/dad63b18-aea0-44a9-9b5a-3b971ccad957/casa_banner_mobile_40anos-(1).jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/245ca1a5-a6dc-4090-9c9a-5bad9e3ed562/casa_banner_desktop_40anos_1920x713.png",
             "width": 1920,
             "height": 713
           }
