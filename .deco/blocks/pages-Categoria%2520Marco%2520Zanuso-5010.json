@@ -23,7 +23,7 @@
     },
     {
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
-      "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">GEORGE NELSON </span></strong><br></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Designer e arquiteto americano</span><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Nelson foi um dos fundadores do modernismo nos Estados Unidos, que ajudou a definir o estilo e a estética do mobiliário do século XX.</span></p>"
+      "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\"> MARCO ZANUSO</span></strong><br></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Designer</span><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><span style=\"font-size: 12pt\">Marco foi um influente designer e arquiteto italiano</span></p><p style=\"text-align: center\"><span style=\"font-size: 12pt\">que se destacou por unir inovação, tecnologia e estética moderna em móveis e objetos do cotidiano.</span></p>"
     },
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
