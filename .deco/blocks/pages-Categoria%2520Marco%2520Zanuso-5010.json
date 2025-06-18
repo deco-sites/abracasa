@@ -1,0 +1,95 @@
+{
+  "name": "Categoria Marco Zanuso",
+  "path": "/designers/marco-zanuso",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+        "banners": []
+      }
+    },
+    {
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">GEORGE NELSON </span></strong><br></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Designer e arquiteto americano</span><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Nelson foi um dos fundadores do modernismo nos Estados Unidos, que ajudou a definir o estilo e a estética do mobiliário do século XX.</span></p>"
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
+        "fq": "H:554"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
