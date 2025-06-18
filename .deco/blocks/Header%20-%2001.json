@@ -460,6 +460,13 @@
             "children": []
           },
           {
+            "url": "/designers/atelie-casa",
+            "name": "Ateliê Casa",
+            "@type": "SiteNavigationElement",
+            "image": [],
+            "children": []
+          },
+          {
             "url": "/designers/charles---ray-eames",
             "name": "Charles & Ray Eames",
             "@type": "SiteNavigationElement",
@@ -468,10 +475,10 @@
           },
           {
             "url": "/designers/george-nelson",
-            "name": "George Nelson",
             "@type": "SiteNavigationElement",
             "image": [],
-            "children": []
+            "children": [],
+            "name": "George Nelson"
           },
           {
             "url": "/designers/hakim-hazim",
@@ -488,15 +495,15 @@
             "children": []
           },
           {
-            "url": "/designers/martin-eisler",
-            "name": "Martin Eisler",
+            "url": "/designers/marco-zanuso",
+            "name": "Marco Zanuso",
             "@type": "SiteNavigationElement",
             "image": [],
             "children": []
           },
           {
-            "url": "/designers/atelie-casa",
-            "name": "Ateliê Casa",
+            "url": "/designers/martin-eisler",
+            "name": "Martin Eisler",
             "@type": "SiteNavigationElement",
             "image": [],
             "children": []
