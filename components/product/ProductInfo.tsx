@@ -100,7 +100,7 @@ function ProductInfo({ page, layout }: Props) {
             </div>
 
             <h1>
-              <span class="font-medium text-[22px] leading-7 capitalize">
+              <span class="font-medium text-[22px] leading-7">
                 {layout?.name === "concat"
                   ? `${isVariantOf?.name} ${name}`
                   : layout?.name === "productGroup"

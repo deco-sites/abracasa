@@ -6,38 +6,74 @@ export interface Props {
     titleStore: string;
     linkWhatsapp: string;
     description: HTMLWidget;
+    state: "RJ" | "SP";
   }[];
 }
 
-export default function OurStores({ cards }: Props) {
-  return (
-    <div class="max-w-[1190px] w-full h-full flex flex-col items-start mx-auto my-10 lg:my-16 px-8 lg:px-0">
-      <div class="flex flex-col items-start gap-4 justify-start w-full h-full">
-        <p class="text-4xl text-[#555555]">
-          Nossas Lojas
-        </p>
+export default function OurStores({ title, cards }: Props) {
+  const cardsRJ = cards.filter((card) => card.state === "RJ");
+  const cardsSP = cards.filter((card) => card.state === "SP");
 
-        <div class="grid sm:grid-cols-2 w-full h-full items-start justify-start gap-5">
-          {cards?.map((card) => (
-            <div class="w-full max-w-[500px] h-full flex flex-col">
-              <div class="w-full h-full flex">
+  return (
+    <div class="max-w-[1190px] w-full mx-auto my-10 lg:my-16 px-8 lg:px-0">
+      <p class="text-4xl text-[#555555] mb-6">{title}</p>
+
+      <div class="flex flex-col lg:flex-row w-full gap-10">
+        <div class="flex-1 flex flex-col gap-4">
+          {cardsRJ.map((card) => (
+            <div class="flex flex-col">
+              <div class="flex items-center gap-2">
                 <a
-                  class="w-full h-full flex"
                   href={card.linkWhatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center"
                 >
-                  <p class="text-start text-[#6D6E71] text-[13px] leading-[16px] font-bold pt-2 pr-1">
+                  <p class="text-start text-[#6D6E71] text-[13px] leading-[16px] font-bold">
                     {card.titleStore}
                   </p>
                   <img
-                    class="w-[30px] h-[30px] object-cover"
                     src="https://novaabracasa.vteximg.com.br/arquivos/logo_whatsapp.png?v=637278521548700000"
-                    width={30}
-                    height={30}
+                    width={20}
+                    height={20}
                     alt="Logo do Whatsapp"
+                    class="w-[20px] h-[20px] ml-1"
                   />
                 </a>
               </div>
-              <div class="w-full h-full">
+              <div>
+                <p
+                  class="text-[#6D6E71] text-[13px] leading-[16px]"
+                  dangerouslySetInnerHTML={{ __html: card.description }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div class="flex-1 flex flex-col gap-4">
+          {cardsSP.map((card) => (
+            <div class="flex flex-col">
+              <div class="flex items-center gap-2">
+                <a
+                  href={card.linkWhatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center"
+                >
+                  <p class="text-start text-[#6D6E71] text-[13px] leading-[16px] font-bold">
+                    {card.titleStore}
+                  </p>
+                  <img
+                    src="https://novaabracasa.vteximg.com.br/arquivos/logo_whatsapp.png?v=637278521548700000"
+                    width={20}
+                    height={20}
+                    alt="Logo do Whatsapp"
+                    class="w-[20px] h-[20px] ml-1"
+                  />
+                </a>
+              </div>
+              <div>
                 <p
                   class="text-[#6D6E71] text-[13px] leading-[16px]"
                   dangerouslySetInnerHTML={{ __html: card.description }}
