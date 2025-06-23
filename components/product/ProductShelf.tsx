@@ -87,8 +87,9 @@ function ProductShelf({
                   height={bannerImage.image.heightMobile ?? 462}
                   loading="lazy"
                   decoding="async"
-                  class="w-full h-full"
+                  class="w-full h-full "
                   style={{
+                    maxWidth: `${bannerImage.image.widthMobile ? bannerImage.image.widthMobile : '410'}px`,
                     maxHeight: `${bannerImage.image.heightMobile ? bannerImage.image.heightMobile : '462'}px`
                   }}
                 />
