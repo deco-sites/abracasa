@@ -18,7 +18,24 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Category/CategoryBanner.tsx",
-        "banners": []
+        "banners": [
+          {
+            "image": {
+              "desktop": "https://assets.decocache.com/abracasa/13f3781e-0364-4c5e-989f-730c5dc61b1d/casa_banner_especial_desk_marco_1800x220.1.jpg",
+              "mobile": "https://assets.decocache.com/abracasa/be352398-6b70-4008-966c-42c90d238044/casa_banner_especial_mobile_marco_800x400.jpg"
+            },
+            "matcher": "/*",
+            "title": "Marco Zanuso"
+          },
+          {
+            "image": {
+              "desktop": "https://assets.decocache.com/abracasa/13f3781e-0364-4c5e-989f-730c5dc61b1d/casa_banner_especial_desk_marco_1800x220.1.jpg",
+              "mobile": "https://assets.decocache.com/abracasa/be352398-6b70-4008-966c-42c90d238044/casa_banner_especial_mobile_marco_800x400.jpg"
+            },
+            "matcher": "/*",
+            "title": "Marco Zanuso"
+          }
+        ]
       }
     },
     {
