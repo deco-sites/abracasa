@@ -516,6 +516,15 @@
         "@type": "SiteNavigationElement",
         "image": [],
         "children": []
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "image": null
+          }
+        ],
+        "image": null
       }
     ],
     "__resolveType": "commerce/loaders/navbar.ts"
