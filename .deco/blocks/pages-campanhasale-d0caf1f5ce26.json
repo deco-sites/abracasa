@@ -28,7 +28,8 @@
           "image": {
             "desktop": "https://assets.decocache.com/abracasa/73cf0858-8cb0-40a0-8a79-c6a38c158eae/casa_sale_banner_especial_desktop_1800x220.jpg",
             "mobile": "https://assets.decocache.com/abracasa/af5b99c1-b2e6-4eb2-99d7-a5921cbb4d1b/casa_sale_banner_especial_mobile_800x400.jpg"
-          }
+          },
+          "matcher": "/*"
         }
       ],
       "__resolveType": "site/sections/Category/CategoryBanner.tsx"
