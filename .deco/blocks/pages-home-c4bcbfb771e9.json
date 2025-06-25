@@ -27,6 +27,20 @@
           }
         },
         {
+          "alt": "Sale Abracasa",
+          "href": "https://www.abracasa.com.br/campanha/sala-casa",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/5a4305e3-cab1-4957-910e-9e7b99565110/casa_banner_mobile_sale_jun_25_767x942.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/5fe62d08-8767-475c-82ac-947183a4a3b2/casa_banner_desktop_sale_jun_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Aniversario Casa",
           "href": "https://www.abracasa.com.br/campanha/aniversario-casa",
           "mobile": {
