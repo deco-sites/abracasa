@@ -4601,6 +4601,9 @@ details.collapse summary::-webkit-details-marker {
 .h-\[56px\] {
   height: 56px;
 }
+.h-\[59px\] {
+  height: 59px;
+}
 .h-\[5px\] {
   height: 5px;
 }
@@ -4636,6 +4639,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-h-\[156px\] {
   max-height: 156px;
+}
+.max-h-\[20px\] {
+  max-height: 20px;
 }
 .max-h-\[215px\] {
   max-height: 215px;
@@ -5036,6 +5042,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[220px\] {
   max-width: 220px;
 }
+.max-w-\[261px\] {
+  max-width: 261px;
+}
 .max-w-\[2px\] {
   max-width: 2px;
 }
@@ -5044,6 +5053,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[310px\] {
   max-width: 310px;
+}
+.max-w-\[31px\] {
+  max-width: 31px;
 }
 .max-w-\[331px\] {
   max-width: 331px;
@@ -5344,6 +5356,9 @@ details.collapse summary::-webkit-details-marker {
 .grid-rows-none {
   grid-template-rows: none;
 }
+.\!flex-row {
+  flex-direction: row !important;
+}
 .flex-row {
   flex-direction: row;
 }
@@ -5478,6 +5493,10 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[6px\] {
   gap: 6px;
+}
+.\!gap-x-\[13px\] {
+  -moz-column-gap: 13px !important;
+       column-gap: 13px !important;
 }
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
@@ -5919,10 +5938,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-\[\#b9154c\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 21 76 / var(--tw-bg-opacity));
-}
 .bg-\[\#d9d9d9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
@@ -6283,6 +6298,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-8 {
   padding-bottom: 2rem;
 }
+.pb-\[14px\] {
+  padding-bottom: 14px;
+}
 .pb-\[15px\] {
   padding-bottom: 15px;
 }
@@ -6534,6 +6552,9 @@ details.collapse summary::-webkit-details-marker {
 .leading-\[15px\] {
   line-height: 15px;
 }
+.leading-\[16\.8px\] {
+  line-height: 16.8px;
+}
 .leading-\[16px\] {
   line-height: 16px;
 }
@@ -6554,6 +6575,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .leading-\[20px\] {
   line-height: 20px;
+}
+.leading-\[22\.4px\] {
+  line-height: 22.4px;
 }
 .leading-\[22px\] {
   line-height: 22px;
@@ -6661,6 +6685,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-text-opacity: 1;
   color: rgb(85 85 85 / var(--tw-text-opacity));
 }
+.text-\[\#585858\] {
+  --tw-text-opacity: 1;
+  color: rgb(88 88 88 / var(--tw-text-opacity));
+}
 .text-\[\#667781\] {
   --tw-text-opacity: 1;
   color: rgb(102 119 129 / var(--tw-text-opacity));
@@ -6691,6 +6719,14 @@ details.collapse summary::-webkit-details-marker {
 .text-\[\#A4A2A2\] {
   --tw-text-opacity: 1;
   color: rgb(164 162 162 / var(--tw-text-opacity));
+}
+.text-\[\#A5A5A5\] {
+  --tw-text-opacity: 1;
+  color: rgb(165 165 165 / var(--tw-text-opacity));
+}
+.text-\[\#A7A7A7\] {
+  --tw-text-opacity: 1;
+  color: rgb(167 167 167 / var(--tw-text-opacity));
 }
 .text-\[\#E31010\] {
   --tw-text-opacity: 1;
@@ -7021,6 +7057,23 @@ details.collapse summary::-webkit-details-marker {
   -webkit-appearance: textfield;
      -moz-appearance: textfield;
           appearance: textfield;
+}
+
+.collapse-plus > .collapse-title:after {
+  position: absolute;
+  display: block;
+  height: 0.5rem;
+  font-size: large;
+  font-weight: 400;
+  width: 0.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 300ms;
+  top: 0.9rem;
+  inset-inline-end: 1.4rem;
+  content: "+";
+  pointer-events: none;
 }
 
 .group:disabled .group-disabled\:animate-progress {

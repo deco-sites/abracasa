@@ -1,27 +1,28 @@
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 import Icon from "$store/components/ui/Icon.tsx";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import { MenuProps } from "deco-sites/abracasa/components/header/Header.tsx";
 
 export interface Props {
-  items: SiteNavigationElement[];
+  items: MenuProps[];
 }
 
-function MenuItem({ item }: { item: SiteNavigationElement }) {
+function MenuItem({ item }: { item: MenuProps }) {
   const component = item?.children?.length
     ? (
-      <div class="collapse collapse-arrow">
+      <div class="collapse collapse-plus">
         <input type="checkbox" />
-        <div class="collapse-title min-h-0 p-0 py-2.5 font-bold text-xs px-4 flex items-center justify-between text-black hover:text-[#b9154c] duration-300 transition-colors">
+        <div class="collapse-title min-h-0 p-0 py-2.5 font-bold text-sm px-4 flex items-center justify-between text-[#585858] hover:text-[#b9154c] duration-300 transition-colors">
           {item.name}
         </div>
         <div class="collapse-content px-0">
-          <div class="px-0 bg-[#b9154c] py-2">
+          <div class="px-0 pb-2">
+            <a class="pb-[14px] pl-4 text-[#A5A5A5] font-bold text-[12px]" href={item.url}>+ Ver Tudo</a>
             {item.children?.map(({ name, url }) => (
               <ul class="pl-4 gap-1">
                 <li>
                   <a
                     href={url}
-                    class="w-full block font-normal text-sm text-white py-0.5 leading-[48px] hover:font-bold"
+                    class="w-full block font-normal text-sm text-[#585858] py-0.5 leading-[48px] hover:font-bold"
                   >
                     {name}
                   </a>
@@ -41,6 +42,24 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
         {item.name}
       </a>
     );
+    if (item.activeStyle && item?.children?.length) {
+      return (
+        <div>
+         {item.children?.map(({ name, url }) => (
+              <ul class="pl-4 gap-1">
+                <li>
+                  <a
+                    href={url}
+                    class="w-full block font-semibold text-sm text-[#585858] py-0.5 leading-[48px] hover:font-bold"
+                  >
+                    {name}
+                  </a>
+                </li>
+              </ul>
+            ))}
+        </div>
+      )
+    }
 
   return component;
 }
@@ -63,12 +82,13 @@ function Menu({ items }: Props) {
               alt="User icon"
               class="group-hover:text-firebrick"
             />
-            <p class="text-sm">
+            <p class="text-sm font-semibold">
               <span>
-                OLÁ {user.value ? `${user.value.email}` : "registrar"} |{" "}
                 <a href={user.value ? "/logout" : "/user-login "}>
-                  {user.value ? "sair" : "entrar"}
+                  {user.value ? "Sair " : "Entrar "}
                 </a>
+                ou {" "}
+                {user.value ? `${user.value.email}` : "Registrar"}
               </span>
             </p>
           </a>
@@ -79,7 +99,7 @@ function Menu({ items }: Props) {
                 ? "/user-myaccount"
                 : "login?ReturnUrl=%2F_secure%2Faccount "
             }`}
-            class="pl-16 uppercase text-sm"
+            class="pl-16 uppercase text-sm font-light text-[#585858]"
           >
             Minha Conta
           </a>
@@ -89,7 +109,7 @@ function Menu({ items }: Props) {
                 ? "/user-orders"
                 : "login?ReturnUrl=%2F_secure%2Faccount "
             }`}
-            class="pl-16 uppercase text-sm"
+            class="pl-16 uppercase text-sm font-light text-[#585858]"
           >
             Meus Pedidos
           </a>
@@ -106,22 +126,6 @@ function Menu({ items }: Props) {
           </a>
         </li> */
         }
-
-        <li class="border-y">
-          <a
-            class="flex items-center gap-4 px-4 py-3"
-            href="/institucional/nossas-lojas"
-          >
-            <Icon
-              id="OurStores"
-              width={32}
-              height={32}
-              alt="Store icon"
-              class="group-hover:text-firebrick"
-            />
-            <span class="text-sm">Nossas lojas</span>
-          </a>
-        </li>
       </ul>
 
       <ul class="flex-grow flex flex-col">
