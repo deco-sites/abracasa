@@ -13,6 +13,34 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
+          "alt": "Sale Abracasa",
+          "href": "https://www.abracasa.com.br/campanha/sale",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/5a4305e3-cab1-4957-910e-9e7b99565110/casa_banner_mobile_sale_jun_25_767x942.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/5fe62d08-8767-475c-82ac-947183a4a3b2/casa_banner_desktop_sale_jun_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Sale Casa - Sofá",
+          "href": "https://www.abracasa.com.br/moveis/sofa",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/a5074e9b-a9bb-4697-80c6-f0a208d7bc48/casa__abra_week_banner_sofa_mobile_767x972_2.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/bb0e5108-4053-4b60-b51a-06a5838ecf08/casa__abra_week_banner_sofa_desk_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Poltrona Maggiolina",
           "href": "https://www.abracasa.com.br/campanha/poltrona-maggiolina",
           "mobile": {
@@ -36,20 +64,6 @@
           },
           "desktop": {
             "image": "https://assets.decocache.com/abracasa/245ca1a5-a6dc-4090-9c9a-5bad9e3ed562/casa_banner_desktop_40anos_1920x713.png",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Aniversario Casa - Sofá",
-          "href": "https://www.abracasa.com.br/moveis/sofa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/4e8a52b4-17fc-4e84-86a3-d7cb279f6610/casa_banner_mobile_sofas_40anos_767x942.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/2dffda03-c127-4042-9aac-a5c9f008f62f/casa_banner_desktop_sofas_40anos_1920x713_3.jpg",
             "width": 1920,
             "height": 713
           }
