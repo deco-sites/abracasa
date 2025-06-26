@@ -2,7 +2,6 @@ import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
 import Cart from "$store/components/minicart/Cart.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { ComponentChildren } from "preact";
@@ -20,7 +19,7 @@ export interface Props {
 }
 
 const Aside = (
-  { title, onClose, children, isMinicart = false, isMenu = false }: {
+  { onClose, children, isMinicart = false, isMenu = false }: {
     title: ComponentChildren;
     onClose?: () => void;
     children: ComponentChildren;
@@ -33,17 +32,10 @@ const Aside = (
       isMenu && "w-[75%]"
     } ${isMinicart && "lg:w-[300px]"}`}
   >
-    <div class="flex justify-between items-center px-4 py-3">
-      <h1>
-        {title}
-      </h1>
+    <div class="flex justify-end items-center px-4 py-3 h-[59px]">
       {onClose && (
-        <Button hasBtnClass={false} onClick={onClose}>
-          <Icon
-            id={(isMinicart || isMenu) ? "ChevronRight" : "XMark"}
-            size={24}
-            strokeWidth={2}
-          />
+        <Button class="text-[#585858] font-normal" hasBtnClass={false} onClick={onClose}>
+          X
         </Button>
       )}
     </div>

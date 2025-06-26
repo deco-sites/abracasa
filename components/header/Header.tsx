@@ -2,13 +2,52 @@ import type { Props as SearchbarProps } from "$store/components/search/Searchbar
 import Drawers from "$store/islands/Header/Drawers.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import type { ImageObject } from "apps/commerce/types.ts";
 import Navbar from "./Navbar.tsx";
 import { type FnContext, type SectionProps } from "@deco/deco";
 import { useScript } from "@deco/deco/hooks";
 export type TAlert = HTMLWidget;
 import type { Props as CampaignTimerProps } from "$store/components/header/CampaignTimer.tsx";
 import CampaignTimer from "$store/components/header/CampaignTimer.tsx";
+
+export interface MenuItemProps {
+  /**
+   * @ignore
+   */
+  "@type": "SiteNavigationElement";
+  image?: ImageObject[] | null;
+  itemMenuImage?: ImageWidget;
+  /** The name of the item. */
+  name?: string;
+  /** URL of the item. */
+  url?: string;
+   /** Description of the item. */
+  description?: string;
+    /**
+   * @description an second style option to menu (+MAIS example)
+   */
+  activeStyle?: boolean;
+}
+export interface MenuProps extends MenuItemProps {
+  children?: Array<
+    MenuItemProps & {
+      children?: Array<
+        MenuItemProps & {
+          children?: Array<
+            MenuItemProps & {
+              children?: Array<
+                MenuItemProps & {
+                  children?: MenuItemProps[];
+                }
+              >;
+            }
+          >;
+        }
+      >;
+    }
+  >;
+}
+
 export interface Props {
   campaignTimer?: CampaignTimerProps;
   /** @title Search Bar */
@@ -17,7 +56,7 @@ export interface Props {
    * @title Navigation items
    * @description Navigation items used both on mobile and desktop menus
    */
-  navItems?: SiteNavigationElement[] | null;
+  navItems?: MenuProps[] | null;
   /** @title Logo */
   logo?: {
     src: ImageWidget;

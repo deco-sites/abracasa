@@ -9,517 +9,6 @@
   "alerts": [
     "<p><strong>10% de cashback</strong> em todo o site! <a data-mce-href=\"https://www.abracasa.com.br/institucional/perguntas-frequentes\" href=\"https://www.abracasa.com.br/institucional/perguntas-frequentes\" title=\"Abrir perguntas frequentes\" data-mce-selected=\"inline-boundary\">Confira aqui﻿</a></p>"
   ],
-  "navItems": {
-    "items": [
-      {
-        "url": "/moveis",
-        "name": "MÓVEIS",
-        "@type": "SiteNavigationElement",
-        "image": [
-          {
-            "url": "https://assets.decocache.com/abracasa/20ac3066-4c26-4149-9ddf-1823a63c4cc6/casa_banner_menu_moveis.jpg",
-            "@type": "ImageObject",
-            "video": null,
-            "image": null
-          }
-        ],
-        "children": [
-          {
-            "url": "/moveis/cadeiras-bancos-e-banquetas",
-            "name": "Cadeiras e Bancos",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": [
-              {
-                "url": "/moveis/cadeiras-bancos-e-banquetas/cadeiras",
-                "name": "Cadeiras",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/cadeiras-bancos-e-banquetas/cadeiras-de-escritorio",
-                "name": "Cadeiras de Escritório",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/cadeiras-bancos-e-banquetas/cadeiras-infantis",
-                "name": "Cadeiras Infantis",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/cadeiras-bancos-e-banquetas/bancos-e-banquetas",
-                "name": "Bancos e Banquetas",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              }
-            ]
-          },
-          {
-            "url": "/moveis/mesas",
-            "name": "Mesas",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": [
-              {
-                "url": "/moveis/mesas/mesa-de-canto-e-lateral",
-                "name": "Mesa de Canto e Lateral",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/mesas/mesa-de-centro",
-                "name": "Mesa de Centro",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/mesas/mesa-de-jantar",
-                "name": "Mesa de Jantar",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/mesas/conjunto-mesa-e-cadeira",
-                "name": "Conjunto Mesa e Cadeira",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/mesas/mesa-para-area-externa",
-                "name": "Mesa para Área Externa",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              }
-            ]
-          },
-          {
-            "url": "/moveis/camas",
-            "name": "Camas",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": [
-              {
-                "url": "/moveis/camas/bicama",
-                "name": "Bicama",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/camas/cama-auxiliar",
-                "name": "Cama Auxiliar",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/camas/cama-solteiro",
-                "name": "Cama Solteiro",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/camas/cabeceiras",
-                "name": "Cabeceiras",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              }
-            ]
-          },
-          {
-            "url": "/moveis/office",
-            "name": "Office",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": [
-              {
-                "url": "/moveis/office/cadeira-de-escritorio",
-                "name": "Cadeira de Escritório",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/office/conjunto-office",
-                "name": "Conjunto Office",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/mesas/mesa-de-trabalho-e-escrivaninhas",
-                "name": "Mesa de Trabalho e Escrivaninhas",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/office/gaveteiros",
-                "name": "Gaveteiros",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/office/estantes",
-                "name": "Estantes",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              }
-            ]
-          },
-          {
-            "url": "/moveis/comoda",
-            "name": "Cômoda",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/moveis/colchoes",
-            "name": "Colchões",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/moveis/poltronas",
-            "name": "Poltronas",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/moveis/guarda-roupas",
-            "name": "Guarda-Roupas",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": [
-              {
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              }
-            ]
-          },
-          {
-            "url": "/moveis/estantes-e-racks",
-            "name": "Racks",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": [
-              {
-                "url": "/moveis/estantes-e-racks/racks-e-buffets",
-                "name": "Racks e Buffets",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/estantes-e-racks/estantes",
-                "name": "Estantes",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/estantes-e-racks/aparadores",
-                "name": "Aparadores",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              }
-            ]
-          },
-          {
-            "url": "/moveis/infantil",
-            "name": "Infantil",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": [
-              {
-                "url": "/moveis/infantil/bercos",
-                "name": "Berço",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/infantil/kit-quarto",
-                "name": "Kit Quarto",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              }
-            ]
-          },
-          {
-            "url": "/moveis/sofa",
-            "name": "Sofás",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": [
-              {
-                "url": "/moveis/sofa/sofa-cama",
-                "name": "Sofá Cama",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/sofa/sofa-retratil",
-                "name": "Sofá Retrátil",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              },
-              {
-                "url": "/moveis/sofa/sofa-tradicional",
-                "name": "Sofá Fixo",
-                "@type": "SiteNavigationElement",
-                "image": [],
-                "children": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "url": "/decoracao",
-        "name": "DECORAÇÃO",
-        "@type": "SiteNavigationElement",
-        "image": [
-          {
-            "url": "https://assets.decocache.com/abracasa/b8e359a5-23cc-4554-a3d3-7c33871716c9/casa_banner_menu_decoracao.jpg",
-            "@type": "ImageObject",
-            "video": null,
-            "image": null
-          }
-        ],
-        "children": [
-          {
-            "url": "/decoracao/adornos",
-            "name": "Adornos",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/decoracao/almofadas",
-            "name": "Almofadas",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/decoracao/cabideiros-e-prateleiras",
-            "name": "Cabideiros e prateleiras",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/decoracao/cestos",
-            "name": "Cestos",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/decoracao/espelhos",
-            "name": "Espelhos",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/decoracao/luminarias",
-            "name": "Luminárias",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/decoracao/mantas",
-            "name": "Mantas",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/decoracao/organizadores",
-            "name": "Organizadores",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/decoracao/tapetes",
-            "name": "Tapetes",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/decoracao/vasos-e-cachepots",
-            "name": "Vasos e Cachepots",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          }
-        ]
-      },
-      {
-        "url": "/ambientes",
-        "name": "AMBIENTES",
-        "@type": "SiteNavigationElement",
-        "image": [
-          {
-            "url": "https://assets.decocache.com/abracasa/74b5246a-ef91-4641-ad76-4a31d2ee3712/casa_banner_menu_ambiente.jpg",
-            "@type": "ImageObject",
-            "video": null,
-            "image": null
-          }
-        ],
-        "children": [
-          {
-            "url": "/ambientes/bar",
-            "name": "Bar",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/ambientes/escritorio",
-            "name": "Escritório",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/ambientes/sala-de-estar",
-            "name": "Sala de Estar",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/ambientes/sala-de-jantar",
-            "name": "Sala de Jantar",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/ambientes/varanda-e-area-externa",
-            "name": "Varanda e Área Externa",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/ambientes/quarto",
-            "name": "Quarto",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          }
-        ]
-      },
-      {
-        "url": "/designers",
-        "name": "DESIGNERS",
-        "@type": "SiteNavigationElement",
-        "image": [
-          {
-            "url": "https://assets.decocache.com/abracasa/ca773802-622c-4284-8479-8b7abac9bcb8/casa_banner_menu_designers.jpg",
-            "video": null,
-            "image": null
-          }
-        ],
-        "children": [
-          {
-            "url": "/designers",
-            "name": "Ver todos os designers",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/designers/atelie-casa",
-            "name": "Ateliê Casa",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/designers/charles---ray-eames",
-            "name": "Charles & Ray Eames",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/designers/george-nelson",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": [],
-            "name": "George Nelson"
-          },
-          {
-            "url": "/designers/hakim-hazim",
-            "name": "Hakim Hazim",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/designers/ligia-koehler",
-            "name": "Ligia Koehler",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/designers/marco-zanuso",
-            "name": "Marco Zanuso",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          },
-          {
-            "url": "/designers/martin-eisler",
-            "name": "Martin Eisler",
-            "@type": "SiteNavigationElement",
-            "image": [],
-            "children": []
-          }
-        ]
-      },
-      {
-        "url": "/off",
-        "name": "OFF",
-        "@type": "SiteNavigationElement",
-        "image": [],
-        "children": []
-      }
-    ],
-    "__resolveType": "commerce/loaders/navbar.ts"
-  },
   "products": [],
   "searchbar": {
     "name": "q",
@@ -560,5 +49,562 @@
     },
     "hiddenButton": false,
     "expiresAt": "2025-04-25T13:00:00.000Z"
-  }
+  },
+  "navItems": [
+    {
+      "children": [
+        {
+          "url": "/moveis/cadeiras-bancos-e-banquetas",
+          "name": "Cadeiras e Bancos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/moveis/cadeiras-bancos-e-banquetas/cadeiras",
+              "name": "Cadeiras",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/cadeiras-bancos-e-banquetas/cadeiras-de-escritorio",
+              "name": "Cadeiras de Escritório",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/cadeiras-bancos-e-banquetas/cadeiras-infantis",
+              "name": "Cadeiras Infantis",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/cadeiras-bancos-e-banquetas/bancos-e-banquetas",
+              "name": "Bancos e Banquetas",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "url": "/moveis/mesas",
+          "name": "Mesas",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/moveis/mesas/mesa-de-canto-e-lateral",
+              "name": "Mesa de Canto e Lateral",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/mesas/mesa-de-centro",
+              "name": "Mesa de Centro",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/mesas/mesa-de-jantar",
+              "name": "Mesa de Jantar",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/mesas/conjunto-mesa-e-cadeira",
+              "name": "Conjunto Mesa e Cadeira",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/mesas/mesa-para-area-externa",
+              "name": "Mesa para Área Externa",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "url": "/moveis/camas",
+          "name": "Camas",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/moveis/camas/bicama",
+              "name": "Bicama",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/camas/cama-auxiliar",
+              "name": "Cama Auxiliar",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/camas/cama-solteiro",
+              "name": "Cama Solteiro",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/camas/cabeceiras",
+              "name": "Cabeceiras",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "url": "/moveis/office",
+          "name": "Office",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/moveis/office/cadeira-de-escritorio",
+              "name": "Cadeira de Escritório",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/office/conjunto-office",
+              "name": "Conjunto Office",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/mesas/mesa-de-trabalho-e-escrivaninhas",
+              "name": "Mesa de Trabalho e Escrivaninhas",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/office/gaveteiros",
+              "name": "Gaveteiros",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/office/estantes",
+              "name": "Estantes",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "url": "/moveis/comoda",
+          "name": "Cômoda",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/moveis/colchoes",
+          "name": "Colchões",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/moveis/poltronas",
+          "name": "Poltronas",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/moveis/guarda-roupas",
+          "name": "Guarda-Roupas",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "url": "/moveis/estantes-e-racks",
+          "name": "Racks",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/moveis/estantes-e-racks/racks-e-buffets",
+              "name": "Racks e Buffets",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/estantes-e-racks/estantes",
+              "name": "Estantes",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/estantes-e-racks/aparadores",
+              "name": "Aparadores",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "url": "/moveis/infantil",
+          "name": "Infantil",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/moveis/infantil/bercos",
+              "name": "Berço",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/infantil/kit-quarto",
+              "name": "Kit Quarto",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "url": "/moveis/sofa",
+          "name": "Sofás",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/moveis/sofa/sofa-cama",
+              "name": "Sofá Cama",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/sofa/sofa-retratil",
+              "name": "Sofá Retrátil",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/moveis/sofa/sofa-tradicional",
+              "name": "Sofá Fixo",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        }
+      ],
+      "image": [
+        {
+          "url": "https://assets.decocache.com/abracasa/20ac3066-4c26-4149-9ddf-1823a63c4cc6/casa_banner_menu_moveis.jpg",
+          "@type": "ImageObject",
+          "video": null,
+          "image": null
+        }
+      ],
+      "url": "/moveis",
+      "name": "MÓVEIS",
+      "@type": "SiteNavigationElement"
+    },
+    {
+      "children": [
+        {
+          "url": "/decoracao/adornos",
+          "name": "Adornos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/decoracao/almofadas",
+          "name": "Almofadas",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/decoracao/cabideiros-e-prateleiras",
+          "name": "Cabideiros e prateleiras",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/decoracao/cestos",
+          "name": "Cestos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/decoracao/espelhos",
+          "name": "Espelhos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/decoracao/luminarias",
+          "name": "Luminárias",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/decoracao/mantas",
+          "name": "Mantas",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/decoracao/organizadores",
+          "name": "Organizadores",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/decoracao/tapetes",
+          "name": "Tapetes",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/decoracao/vasos-e-cachepots",
+          "name": "Vasos e Cachepots",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        }
+      ],
+      "image": [
+        {
+          "url": "https://assets.decocache.com/abracasa/b8e359a5-23cc-4554-a3d3-7c33871716c9/casa_banner_menu_decoracao.jpg",
+          "@type": "ImageObject",
+          "video": null,
+          "image": null
+        }
+      ],
+      "url": "/decoracao",
+      "name": "DECORAÇÃO",
+      "@type": "SiteNavigationElement"
+    },
+    {
+      "children": [
+        {
+          "url": "/ambientes/bar",
+          "name": "Bar",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/ambientes/escritorio",
+          "name": "Escritório",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/ambientes/sala-de-estar",
+          "name": "Sala de Estar",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/ambientes/sala-de-jantar",
+          "name": "Sala de Jantar",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/ambientes/varanda-e-area-externa",
+          "name": "Varanda e Área Externa",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/ambientes/quarto",
+          "name": "Quarto",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        }
+      ],
+      "image": [
+        {
+          "url": "https://assets.decocache.com/abracasa/74b5246a-ef91-4641-ad76-4a31d2ee3712/casa_banner_menu_ambiente.jpg",
+          "@type": "ImageObject",
+          "video": null,
+          "image": null
+        }
+      ],
+      "url": "/ambientes",
+      "name": "AMBIENTES",
+      "@type": "SiteNavigationElement"
+    },
+    {
+      "children": [
+        {
+          "url": "/designers",
+          "name": "Ver todos os designers",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/designers/atelie-casa",
+          "name": "Ateliê Casa",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/designers/charles---ray-eames",
+          "name": "Charles & Ray Eames",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/designers/george-nelson",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [],
+          "name": "George Nelson"
+        },
+        {
+          "url": "/designers/hakim-hazim",
+          "name": "Hakim Hazim",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/designers/ligia-koehler",
+          "name": "Ligia Koehler",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/designers/marco-zanuso",
+          "name": "Marco Zanuso",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        },
+        {
+          "url": "/designers/martin-eisler",
+          "name": "Martin Eisler",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
+        }
+      ],
+      "image": [
+        {
+          "url": "https://assets.decocache.com/abracasa/ca773802-622c-4284-8479-8b7abac9bcb8/casa_banner_menu_designers.jpg",
+          "video": null,
+          "image": null
+        }
+      ],
+      "url": "/designers",
+      "name": "DESIGNERS",
+      "@type": "SiteNavigationElement"
+    },
+    {
+      "url": "/off",
+      "name": "OFF",
+      "@type": "SiteNavigationElement",
+      "image": [],
+      "children": []
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "name": "Cashback",
+          "image": null,
+          "itemMenuImage": "https://assets.decocache.com/abracasa/3d6d3dbf-a6d3-463b-90dd-f969fdd32c7c/Layer_1.svg",
+          "description": "Receba 10% de volta em todas as compras  e use seu crédito na próxima compra.",
+          "activeStyle": true,
+          "url": "/_secure/account#/cashback"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Coleções",
+          "itemMenuImage": "https://assets.decocache.com/abracasa/18a0c4a3-67a0-4f93-9a99-870907774296/Layer_1-(1).svg",
+          "description": "Conheça nossas coleções e renove seu espaço com lançamentos exclusivos.",
+          "activeStyle": true
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Ateliê Casa",
+          "itemMenuImage": "https://assets.decocache.com/abracasa/950f1bbe-4148-4867-b863-0a310a3504ca/Layer_1-(2).svg",
+          "description": "Produtos autorais criados pela  Abra Casa, encontrados somente aqui.",
+          "activeStyle": true
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Vendas Corporativas ",
+          "itemMenuImage": "https://assets.decocache.com/abracasa/adff6974-113d-4a67-a328-892fcfd1c7d7/layer_1-(3).svg",
+          "description": "Soluções em design e atendimento personalizado para o seu escritório.",
+          "activeStyle": true
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Nossas Lojas",
+          "itemMenuImage": "https://assets.decocache.com/abracasa/f3e4aea6-6677-4110-b8c3-139fdd5491f0/Layer_1-(4).svg",
+          "url": "/institucional/nossas-lojas",
+          "description": "Encontre a Abra Casa mais próxima e viva uma experiência única em nossas lojas.",
+          "activeStyle": true
+        }
+      ],
+      "image": null,
+      "name": "+MAIS",
+      "activeStyle": true
+    }
+  ]
 }
