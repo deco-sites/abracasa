@@ -20,8 +20,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://assets.decocache.com/abracasa/4d4e50ed-675c-4ce6-bbd1-870105036c85/casa_banner_especial_sofas_mobile_40-anos_800x400.jpg",
-            "desktop": "https://assets.decocache.com/abracasa/81957d74-1056-4c82-93df-d4889fca907b/casa_banner_especial_sofas_desk_40-anos_1800x220.jpg"
+            "mobile": "https://assets.decocache.com/abracasa/d18c4af4-684c-4c04-af5b-a24cd6f10adf/casa_sale_sofas_banner_especial_mobile_800x400.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/db96ba29-b801-4737-935c-dde32e8e5b5f/casa_sale_sofas_banner_especial_desktop_1800x220.jpg"
           },
           "matcher": "/*"
         }
