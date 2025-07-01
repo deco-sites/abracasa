@@ -20,8 +20,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/170397/casa_banner_cadeira.png?v=637514099801370000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/170397/casa_banner_cadeira.png?v=637514099801370000"
+            "mobile": "https://assets.decocache.com/abracasa/efcba341-d802-41e5-97cf-0f9ed917a460/casa_cadeiras_banner_especial_mobile_800x400.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/e6087c3c-4004-4b4f-beb4-a2a96d7e3e11/casa_cadeiras_banner_especial_desk_1800x220.jpg"
           },
           "matcher": "/*"
         }
