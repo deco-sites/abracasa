@@ -60,14 +60,6 @@
             "url": "https://data.decoassets.com/abracasa/b0204914-852e-4d43-9842-f48e522d0007/cadeiras-infantis.png"
           },
           "label": "Cadeiras Infantis"
-        },
-        {
-          "href": "/moveis/cadeiras-bancos-e-banquetas/cadeiras",
-          "image": {
-            "alt": "Área Externa",
-            "url": "https://data.decoassets.com/abracasa/005ffbb0-64bb-468e-8059-659fd55c8e6d/area-externa.png"
-          },
-          "label": "Área Externa"
         }
       ],
       "__resolveType": "site/sections/Category/CategoryShelf.tsx"
