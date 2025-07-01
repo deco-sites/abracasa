@@ -11,18 +11,18 @@ function MenuItem({ item }: { item: MenuProps }) {
     ? (
       <div class="collapse collapse-plus">
         <input type="checkbox" />
-        <div class="collapse-title min-h-0 p-0 py-2.5 font-bold text-sm px-4 flex items-center justify-between text-[#585858] hover:text-[#b9154c] duration-300 transition-colors">
+        <div class="collapse-title min-h-0 p-0 font-bold text-sm px-4 flex items-center justify-between text-[#585858] hover:text-[#b9154c] duration-300 transition-colors">
           {item.name}
         </div>
-        <div class="collapse-content px-0">
-          <div class="px-0 pb-2">
-            <a class="pb-[14px] pl-4 text-[#A5A5A5] font-bold text-[12px]" href={item.url}>+ Ver Tudo</a>
+        <div class="collapse-content !p-0">
+          <div class="px-0 flex flex-col gap-3">
+            <a class="pl-4 text-[#A5A5A5] font-bold text-[12px]" href={item.url}>+ Ver Tudo</a>
             {item.children?.map(({ name, url }) => (
               <ul class="pl-4 gap-1">
-                <li>
+                <li class="max-h-5">
                   <a
                     href={url}
-                    class="w-full block font-normal text-sm text-[#585858] py-0.5 leading-[48px] hover:font-bold"
+                    class="w-full block font-normal text-sm text-[#585858] leading-[20x] hover:font-bold"
                   >
                     {name}
                   </a>
@@ -37,20 +37,20 @@ function MenuItem({ item }: { item: MenuProps }) {
       <a
         href={item.url}
         title={item.name}
-        class="px-4 pt-2.5 text-xs font-bold text-[#b9154c] leading-[46px]"
+        class="px-4 pt-2.5 text-xs font-bold text-[#b9154c] leading-[60px]"
       >
         {item.name}
       </a>
     );
     if (item.activeStyle && item?.children?.length) {
       return (
-        <div>
+        <div class="pt-[50px] border-t">
          {item.children?.map(({ name, url }) => (
-              <ul class="pl-4 gap-1">
+              <ul class="pl-4 pb-3">
                 <li>
                   <a
                     href={url}
-                    class="w-full block font-semibold text-sm text-[#585858] py-0.5 leading-[48px] hover:font-bold"
+                    class="w-full block font-semibold text-sm text-[#585858] leading-[20px] hover:font-bold"
                   >
                     {name}
                   </a>
@@ -68,9 +68,9 @@ function Menu({ items }: Props) {
   const { user } = useUser();
 
   return (
-    <div class="flex flex-col h-full max-h-full overflow-y-scroll">
-      <ul class="flex flex-col py-2 gap-2">
-        <li class="flex flex-col gap-4 pb-2">
+    <div class="flex flex-col h-full max-h-full overflow-y-auto">
+      <ul class="flex flex-col pt-3 pb-[30px] gap-2">
+        <li class="flex flex-col gap-3">
           <a
             class="flex items-center gap-4 px-4"
             href="/user-login "

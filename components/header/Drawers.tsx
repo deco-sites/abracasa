@@ -32,7 +32,7 @@ const Aside = (
       isMenu && "w-[75%]"
     } ${isMinicart && "lg:w-[300px]"}`}
   >
-    <div class="flex justify-end items-center px-4 py-3 h-[59px]">
+    <div class="flex justify-end items-center px-4 py-3 h-[59px] bg-[#FBFBFB]">
       {onClose && (
         <Button class="text-[#585858] font-normal" hasBtnClass={false} onClick={onClose}>
           X
