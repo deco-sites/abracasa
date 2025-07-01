@@ -19,8 +19,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/170397/casa_banner_cadeira.png?v=637514099801370000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/170397/casa_banner_cadeira.png?v=637514099801370000"
+            "mobile": "https://assets.decocache.com/abracasa/25e710b6-e304-4a3d-9114-9ff80b94e693/casa_banquetas_banner_especial_mobile_800x400.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/904de7c9-60bf-4276-a93c-794939233a4c/casa_banquetas_banner_especial_desk_1800x220.jpg"
           },
           "matcher": "/*"
         }
