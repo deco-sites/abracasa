@@ -1,7 +1,7 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Drawers from "$store/islands/Header/Drawers.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
-import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import type { HTMLWidget, ImageWidget, RichText } from "apps/admin/widgets.ts";
 import type { ImageObject } from "apps/commerce/types.ts";
 import Navbar from "./Navbar.tsx";
 import { type FnContext, type SectionProps } from "@deco/deco";
@@ -22,7 +22,7 @@ export interface MenuItemProps {
   /** URL of the item. */
   url?: string;
    /** Description of the item. */
-  description?: string;
+  description?: RichText;
     /**
    * @description an second style option to menu (+MAIS example)
    */

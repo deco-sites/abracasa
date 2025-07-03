@@ -564,7 +564,7 @@
           "name": "Cashback",
           "image": null,
           "itemMenuImage": "https://assets.decocache.com/abracasa/3d6d3dbf-a6d3-463b-90dd-f969fdd32c7c/Layer_1.svg",
-          "description": "Receba 10% de volta em todas as compras  e use seu crédito na próxima compra.",
+          "description": "<p style=\"text-align: center\">Ganhe 10% de volta para </p><p style=\"text-align: center\">usar na próxima compra.</p>",
           "activeStyle": true,
           "url": "/_secure/account#/cashback"
         },
@@ -573,7 +573,7 @@
           "image": null,
           "name": "Coleções",
           "itemMenuImage": "https://assets.decocache.com/abracasa/18a0c4a3-67a0-4f93-9a99-870907774296/Layer_1-(1).svg",
-          "description": "Conheça nossas coleções e renove seu espaço com lançamentos exclusivos.",
+          "description": "<p style=\"text-align: center\">Renove seu espaço com </p><p style=\"text-align: center\">nossos lançamentos exclusivos.</p>",
           "activeStyle": true
         },
         {
@@ -581,7 +581,7 @@
           "image": null,
           "name": "Ateliê Casa",
           "itemMenuImage": "https://assets.decocache.com/abracasa/950f1bbe-4148-4867-b863-0a310a3504ca/Layer_1-(2).svg",
-          "description": "Produtos autorais criados pela  Abra Casa, encontrados somente aqui.",
+          "description": "<p style=\"text-align: center\">Produtos autorais criados por </p><p style=\"text-align: center\">nossos designers da Abra Casa.</p>",
           "activeStyle": true
         },
         {
@@ -589,7 +589,7 @@
           "image": null,
           "name": "Vendas Corporativas ",
           "itemMenuImage": "https://assets.decocache.com/abracasa/adff6974-113d-4a67-a328-892fcfd1c7d7/layer_1-(3).svg",
-          "description": "Soluções em design e atendimento personalizado para o seu escritório.",
+          "description": "<p style=\"text-align: center\">Design e atendimento personalizado </p><p style=\"text-align: center\">para o seu ambiente corporativo.</p>",
           "activeStyle": true
         },
         {
@@ -598,7 +598,7 @@
           "name": "Nossas Lojas",
           "itemMenuImage": "https://assets.decocache.com/abracasa/f3e4aea6-6677-4110-b8c3-139fdd5491f0/Layer_1-(4).svg",
           "url": "/institucional/nossas-lojas",
-          "description": "Encontre a Abra Casa mais próxima e viva uma experiência única em nossas lojas.",
+          "description": "<p style=\"text-align: center\">Encontre a Abra Casa mais próxima</p><p style=\"text-align: center\"> e viva uma experiência única.</p>",
           "activeStyle": true
         }
       ],

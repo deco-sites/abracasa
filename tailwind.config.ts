@@ -26,6 +26,9 @@ export default {
         "gray-48": "#7A7A7A",
         "light-shade-gray": "#E6E6E6",
       },
+      screens: {
+        "xl2": "1439px"
+      }
     },
   },
 };
