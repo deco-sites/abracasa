@@ -12,9 +12,9 @@ interface Props {
         alt?: string;
     }
     subTitle?: string;
-    letterSpacingSubTitle: number;
+    letterSpacingSubTitle?: number;
     title?: string;
-    letterSpacingTitle: number;
+    letterSpacingTitle?: number;
     textContent?: RichText;
     button?: {
         buttonText?: string;
