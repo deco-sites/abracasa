@@ -29,7 +29,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Content/TimelineSlider.tsx",
-        "title": "<p><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Temos 40 anos de história no mercado mobiliário brasileiro.&nbsp;</span></strong></p><p></p><p><span style=\"color: rgb(98, 98, 98)\">Começamos com a Abra Cadabra, oferecendo móveis infantis com foco em segurança <br>e criatividade. Evoluímos para a Abra Casa, expandindo nossa oferta para atender todas <br>as necessidades da família, com móveis para todas as idades e estilos.&nbsp;</span></p>",
+        "title": "<p><strong><span style=\"color: rgb(33, 33, 33); font-size: 20pt\">Temos 40 anos de história no mercado mobiliário brasileiro.&nbsp;</span></strong></p><p></p><p><span style=\"color: rgb(98, 98, 98)\">Começamos com a Abra Cadabra, oferecendo móveis infantis com foco em segurança <br>e criatividade. Evoluímos para a Abra Casa, expandindo nossa oferta para atender todas <br>as necessidades da família, com móveis para todas as idades e estilos.&nbsp;</span></p>",
         "timeItems": [
           {
             "date": 1985,
@@ -184,7 +184,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/ColectionHero.tsx",
-        "title": "<p><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Somos apaixonados pelo design.</span></strong></p><p></p><p></p><p><span style=\"color: rgb(98, 98, 98)\">Buscamos o equilíbrio perfeito entre estética e custo. Acreditamos que a nossa casa imprime a nossa personalidade e tem o poder de nos inspirar e encantar.&nbsp;</span></p><p></p><p></p><p></p>",
+        "title": "<p><strong><span style=\"color: rgb(33, 33, 33); font-size: 20pt\">Somos apaixonados pelo design.</span></strong></p><p></p><p></p><p><span style=\"color: rgb(98, 98, 98)\">Buscamos o equilíbrio perfeito entre estética e custo. Acreditamos que a nossa casa imprime a nossa personalidade e tem o poder de nos inspirar e encantar.&nbsp;</span></p><p></p><p></p><p></p>",
         "titleMobile": "<p><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">Somos apaixonados pelo design.</span></strong></p><p></p><p><span style=\"color: rgb(98, 98, 98); font-size: 10pt\">Buscamos o equilíbrio perfeito entre estética e custo. Acreditamos que a nossa casa imprime a nossa personalidade e tem o poder de nos inspirar e encantar.&nbsp;</span></p>",
         "image": [
           {
@@ -196,7 +196,8 @@
             "video": "https://assets.decocache.com/abracasa/50ee3a00-5b64-4822-b60e-4580c9689397/1000X1500---CONCEITUAL-40-ANOS-CASA-(1).mp4"
           }
         ],
-        "limitTitleText": true
+        "limitTitleText": true,
+        "lineHeightTitle": 1.4
       }
     },
     {
@@ -219,7 +220,9 @@
         ],
         "title": "<p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Nosso design é pensado para se manter</span></strong></p><p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">relevante e elegante ao longo dos anos.</span></strong></p><p style=\"text-align: justify\"></p><p style=\"text-align: center\"></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">produtos e o design atemporal. Hoje, contamos com 15 lojas divididas entre</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
         "titleMobile": "<p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">Nosso design é pensado</span></strong></p><p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">para se manter relevante e</span></strong></p><p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">elegante ao longo dos anos.</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"></p><p><span style=\"color: rgb(98, 98, 98)\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos produtos e o design atemporal. Hoje, contamos com 15 lojas divididas entre o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
-        "justifyCenter": true
+        "justifyCenter": true,
+        "lineHeightTitle": 1.4,
+        "lineHeightTitleMobile": 1.4
       }
     },
     {
