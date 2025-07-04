@@ -119,7 +119,8 @@
     {
       "items": [
         {
-          "label": "Quem somos"
+          "label": "Quem somos",
+          "href": "/institucional/quem-somos"
         },
         {
           "href": "/institucional/nossas-lojas",
