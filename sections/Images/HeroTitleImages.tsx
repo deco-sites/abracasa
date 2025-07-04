@@ -7,8 +7,12 @@ import Image from "apps/website/components/Image.tsx";
 interface Props {
     /** @description Desktop title */
     title?: RichText;
+    /** @description Line Height of the text */
+    lineHeightTitle?: number;
     /** @description Mobile title */
     titleMobile?: RichText;
+    /** @description Line Height of the text */
+    lineHeightTitleMobile?: number;
     /** @description Turn this option true to make text fix on center justified */
     justifyCenter: boolean;
     image: {
@@ -31,15 +35,17 @@ interface Props {
     }[]
 }
 
-function HeroTitleImages({ title, titleMobile, justifyCenter, image, mainImage = [] }: Props) {
+function HeroTitleImages({ title, lineHeightTitle, titleMobile, lineHeightTitleMobile, justifyCenter, image, mainImage = [] }: Props) {
     const id = useId();
 
     return (
         <div id={id} class="mt-[72px] lg:mt-[172px]">
             <div class="max-w-[1196px] mx-auto">
                 <div class="flex flex-col font-inter">
-                    <h1 class={`sliderP leading-[1] font-semibold hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${justifyCenter ? 'max-w-[782px] !font-light tracking-wider !mx-auto mb-[51px] lg:mb-[154px] leading-6' : ''}`} dangerouslySetInnerHTML={{ __html: title ?? '' }} />
-                    <h1 class={`sliderP mx-6 leading-[1] font-semibold mb-7 lg:mb-[66px] lg:hidden ${justifyCenter ? 'max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6' : ''}`} dangerouslySetInnerHTML={{ __html: titleMobile ?? '' }} />
+                    <h1 class={`sliderP leading-[1] font-semibold hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${justifyCenter ? 'max-w-[782px] !font-light tracking-wider !mx-auto mb-[51px] lg:mb-[154px] leading-6' : ''}`} dangerouslySetInnerHTML={{ __html: title ?? '' }}
+                     style={{lineHeight: lineHeightTitle || "" }} />
+                    <h1 class={`sliderP mx-6 leading-[1] font-semibold mb-7 lg:mb-[66px] lg:hidden ${justifyCenter ? 'max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6' : ''}`} dangerouslySetInnerHTML={{ __html: titleMobile ?? '' }}
+                    style={{lineHeight: lineHeightTitleMobile || "" }}  />
                     {/* Desktop view */}
                     <ul class="hidden lg:flex gap-[18px] mx-6 xl:mx-0">
                         {image?.map((img) => (
