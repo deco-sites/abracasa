@@ -23,7 +23,7 @@ function NavItem({ item }: { item: MenuProps }) {
       {children && children.length > 0 && (
         <div
           class={`absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start border-t border-b-2 border-base-200 w-screen gap-16 ${
-            item.activeStyle ? "py-[28px] px-[40px] min-h-[181px] items-center" : "py-4 px-8"
+            item.activeStyle ? "py-[28px] min-h-[181px] items-center" : "py-4 px-8"
           } mt-[120px] group-data-[scrolling='true']/nav:mt-[75px]`}
           style={{
             top: "0px",
@@ -44,7 +44,7 @@ function NavItem({ item }: { item: MenuProps }) {
           <ul
             class={`flex ${
               item.activeStyle
-                ? "w-full justify-between !flex-row flex-nowrap !gap-x-[0px]"
+                ? "w-full justify-center !flex-row flex-nowrap !gap-x-[0px]"
                 : ""
             } 
               ${
@@ -56,7 +56,7 @@ function NavItem({ item }: { item: MenuProps }) {
             {children.map((node) => (
               <li
                 class={`${
-                  node.activeStyle ? "flex justify-center xl2:min-w-[261px] min-h-[140px]" : ""
+                  node.activeStyle ? "flex justify-center min-w-[261px] min-h-[140px]" : ""
                 }`}
               >
                 <div class={"flex flex-col justify-center"}>

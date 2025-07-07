@@ -4970,6 +4970,9 @@ details.collapse summary::-webkit-details-marker {
 .min-w-\[250px\] {
   min-width: 250px;
 }
+.min-w-\[261px\] {
+  min-width: 261px;
+}
 .min-w-\[35vw\] {
   min-width: 35vw;
 }
@@ -6198,10 +6201,6 @@ details.collapse summary::-webkit-details-marker {
 .px-\[4\.61px\] {
   padding-left: 4.61px;
   padding-right: 4.61px;
-}
-.px-\[40px\] {
-  padding-left: 40px;
-  padding-right: 40px;
 }
 .py-0 {
   padding-top: 0px;
@@ -9578,13 +9577,6 @@ details.collapse summary::-webkit-details-marker {
 
   .data-\[scrolling\=\'true\'\]\:xl\:h-\[75px\][data-scrolling='true'] {
     height: 75px;
-  }
-}
-
-@media (min-width: 1439px) {
-
-  .xl2\:min-w-\[261px\] {
-    min-width: 261px;
   }
 }
 
