@@ -39,12 +39,6 @@ export interface Props {
 }
 
 function NotFound() {
-
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    'event': 'page_not_found',
-  });
-
   return (
     <div class="w-full flex flex-col justify-center items-center gap-2 py-10">
       <span>Ops! não existe nenhum produto disponível para essa busca.</span>
