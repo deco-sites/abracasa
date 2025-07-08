@@ -39,6 +39,12 @@ export interface Props {
 }
 
 function NotFound() {
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'event': 'page_not_found',
+  });
+
   return (
     <div class="w-full flex flex-col justify-center items-center gap-2 py-10">
       <span>Ops! não existe nenhum produto disponível para essa busca.</span>
@@ -157,8 +163,8 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
       return fetchedProducts?.products?.filter((item) =>
         item.productID !==
-          products.find((product) => extractSimilarLabel(product) === label)
-            ?.productID
+        products.find((product) => extractSimilarLabel(product) === label)
+          ?.productID
       ) || [];
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);
