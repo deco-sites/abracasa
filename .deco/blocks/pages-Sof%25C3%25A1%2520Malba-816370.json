@@ -3,7 +3,7 @@
   "path": "/campanha/sofa-malba",
   "sections": [
     {
-      "title": "Abra Week",
+      "title": "Sofá Malba",
       "jsonLD": {
         "sort": "OrderByPriceDESC",
         "count": 12,
@@ -11,7 +11,7 @@
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
-      "titleTemplate": "Abra Week"
+      "titleTemplate": "Sofá Malba"
     },
     {
       "__resolveType": "Header - 01"
