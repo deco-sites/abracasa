@@ -41,6 +41,20 @@
           }
         },
         {
+          "alt": "Sofá Malba",
+          "href": "https://www.abracasa.com.br/campanha/sofa-malba",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/c4c0876b-a6c4-4dc0-8df3-7c0a90619db9/casa_banner_mobile_malba_767x942_02-(1).jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/19a07579-ca1f-4ed1-b45f-1060092a8977/casa_banner_desktop_malba_1920x713_02-(1).jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Poltrona Maggiolina",
           "href": "https://www.abracasa.com.br/campanha/poltrona-maggiolina",
           "mobile": {
