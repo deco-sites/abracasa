@@ -44,7 +44,7 @@ function NavItem({ item }: { item: MenuProps }) {
           <ul
             class={`flex ${
               item.activeStyle
-                ? "w-full justify-center !flex-row flex-nowrap !gap-x-[0px]"
+                ? "w-full justify-evenly !flex-row flex-nowrap !gap-x-[0px]"
                 : ""
             } 
               ${
@@ -56,7 +56,7 @@ function NavItem({ item }: { item: MenuProps }) {
             {children.map((node) => (
               <li
                 class={`${
-                  node.activeStyle ? "flex justify-center min-w-[261px] min-h-[140px]" : ""
+                  node.activeStyle ? "flex justify-center min-h-[140px]" : ""
                 }`}
               >
                 <div class={"flex flex-col justify-center"}>
@@ -86,7 +86,7 @@ function NavItem({ item }: { item: MenuProps }) {
                     >
                       {node.name}
                     </span>
-                    <p
+                    <div
                       class={`${
                         node.activeStyle
                           ? "font-normal text-[#A7A7A7] text-[11px] leading-[16.8px] text-center align-middle"
@@ -95,7 +95,7 @@ function NavItem({ item }: { item: MenuProps }) {
                       dangerouslySetInnerHTML={{
                         __html: node.description ?? "",
                       }}
-                    ></p>
+                    />
                   </a>
 
                   {hasChildren && (
