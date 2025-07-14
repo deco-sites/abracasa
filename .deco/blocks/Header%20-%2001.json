@@ -571,10 +571,11 @@
         {
           "children": [],
           "image": null,
-          "name": "Coleções",
+          "name": "Sale",
           "itemMenuImage": "https://assets.decocache.com/abracasa/18a0c4a3-67a0-4f93-9a99-870907774296/Layer_1-(1).svg",
-          "description": "<p style=\"text-align: center\">Renove seu espaço com </p><p style=\"text-align: center\">nossos lançamentos exclusivos.</p>",
-          "activeStyle": true
+          "description": "<p style=\"text-align: center\">SALE</p><p style=\"text-align: center\">descontos de até 50%.</p>",
+          "activeStyle": true,
+          "url": "https://www.abracasa.com.br/campanha/sale"
         },
         {
           "children": [],
@@ -582,7 +583,8 @@
           "name": "Ateliê Casa",
           "itemMenuImage": "https://assets.decocache.com/abracasa/950f1bbe-4148-4867-b863-0a310a3504ca/Layer_1-(2).svg",
           "description": "<p style=\"text-align: center\">Produtos autorais criados por </p><p style=\"text-align: center\">nossos designers da Abra Casa.</p>",
-          "activeStyle": true
+          "activeStyle": true,
+          "url": "https://www.abracasa.com.br/campanha/atelie-casa"
         },
         {
           "children": [],
@@ -590,7 +592,8 @@
           "name": "Vendas Corporativas ",
           "itemMenuImage": "https://assets.decocache.com/abracasa/adff6974-113d-4a67-a328-892fcfd1c7d7/layer_1-(3).svg",
           "description": "<p style=\"text-align: center\">Design e atendimento personalizado </p><p style=\"text-align: center\">para o seu ambiente corporativo.</p>",
-          "activeStyle": true
+          "activeStyle": true,
+          "url": "https://www.abracasa.com.br/venda-corporativa"
         },
         {
           "children": [],
