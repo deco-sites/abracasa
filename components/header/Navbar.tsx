@@ -1,5 +1,4 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
 import { MenuButton, SearchButton } from "$store/islands/Header/Buttons.tsx";
 import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
 import Searchbar from "$store/islands/Header/Searchbar.tsx";
@@ -121,20 +120,6 @@ function Navbar(
           </div>
 
           <div class="flex items-center justify-between gap-7 w-full">
-            <a
-              class="inline-flex items-center gap-1 text-xs"
-              href="/institucional/nossas-lojas"
-              aria-label="Log in"
-            >
-              <Icon
-                id="OurStores"
-                width={32}
-                height={32}
-                alt="Store icon"
-              />
-              <span class="tracking-[0.05em]">Lojas</span>
-            </a>
-
             <SellbieCashback />
 
             {platform === "vtex" && <CartButtonVTEX />}

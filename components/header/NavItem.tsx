@@ -1,14 +1,12 @@
 import Image from "apps/website/components/Image.tsx";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import { MenuProps } from "deco-sites/abracasa/components/header/Header.tsx";
 
-function NavItem(
-  { item }: { item: SiteNavigationElement },
-) {
+function NavItem({ item }: { item: MenuProps }) {
   const { url, name, children } = item;
   const image = item?.image?.[0];
 
-  const hasChildren = children?.some((node) =>
-    node.children && node.children.length > 0
+  const hasChildren = children?.some(
+    (node) => node.children && node.children.length > 0
   );
 
   return (
@@ -17,81 +15,118 @@ function NavItem(
         href={url}
         class="flex items-center justify-center h-[118px] group-data-[scrolling='true']/nav:h-[75px]"
       >
-        <span class="flex items-center justify-center group-hover:text-firebrick text-sm leading-[22px] tracking-[0.12em] h-full font-medium">
+        <span class="cursor-pointer flex items-center justify-center group-hover:text-firebrick text-sm leading-[22px] tracking-[0.12em] h-full font-medium">
           {name}
         </span>
       </a>
 
-      {children && children.length > 0 &&
-        (
-          <div
-            class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start border-t border-b-2 border-base-200 w-screen py-4 px-8 gap-16 mt-[120px] group-data-[scrolling='true']/nav:mt-[75px]"
-            style={{
-              top: "0px",
-              left: "0px",
-            }}
-          >
-            {image?.url && (
-              <Image
-                src={image.url}
-                alt={image.alternateName}
-                width={320}
-                height={320}
-                loading="lazy"
-                class="rounded-lg"
-              />
-            )}
+      {children && children.length > 0 && (
+        <div
+          class={`absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start border-t border-b-2 border-base-200 w-screen gap-16 ${
+            item.activeStyle ? "py-[28px] min-h-[181px] items-center" : "py-4 px-8"
+          } mt-[120px] group-data-[scrolling='true']/nav:mt-[75px]`}
+          style={{
+            top: "0px",
+            left: "0px",
+          }}
+        >
+          {image?.url && (
+            <Image
+              src={image.url}
+              alt={image.alternateName}
+              width={320}
+              height={320}
+              loading="lazy"
+              class="rounded-lg"
+            />
+          )}
 
-            <ul
-              class={`flex ${
+          <ul
+            class={`flex ${
+              item.activeStyle
+                ? "w-full justify-evenly !flex-row flex-nowrap !gap-x-[0px]"
+                : ""
+            } 
+              ${
                 !hasChildren
                   ? "flex-col flex-wrap gap-x-[90px] max-h-[270px]"
                   : "flex-wrap flex-col gap-8 h-[400px] py-2 justify-between flex-1"
               }`}
-            >
-              {children.map((node) => (
-                <li>
-                  <div class="flex flex-col">
-                    <a
-                      href={node.url}
-                      class={`text-gray-dark text-sm ${
+          >
+            {children.map((node) => (
+              <li
+                class={`${
+                  node.activeStyle ? "flex justify-center min-h-[140px]" : ""
+                }`}
+              >
+                <div class={"flex flex-col justify-center"}>
+                  <a
+                    href={node.url}
+                    class={`text-gray-dark !text-xs
+                      ${node.activeStyle ? "flex flex-col items-center" : ""}
+                      ${
                         hasChildren
                           ? "font-semibold"
                           : "hover:text-firebrick transition-colors duration-100 ease-in tracking-[0.5px] leading-[180%]"
                       }`}
-                    >
-                      <span>{node.name}</span>
-                    </a>
-
-                    {hasChildren && (
-                      <a
-                        href={node.url}
-                        class="text-gray-light text-xs font-semibold"
-                      >
-                        + Ver tudo
-                      </a>
+                  >
+                    {node.itemMenuImage && (
+                      <img
+                        class="max-w-[31px] max-h-[20px] w-full h-full"
+                        src={node.itemMenuImage}
+                        alt={node.name}
+                      />
                     )}
-                  </div>
+                    <span
+                      class={`${
+                        node.activeStyle
+                          ? "mt-[15px] mb-2 text-black font-normal text-base leading-[22.4px] tracking-[0.5px] text-center align-middle"
+                          : ""
+                      }`}
+                    >
+                      {node.name}
+                    </span>
+                    <div
+                      class={`${
+                        node.activeStyle
+                          ? "font-normal text-[#A7A7A7] text-[11px] leading-[16.8px] text-center align-middle"
+                          : ""
+                      }`}
+                      dangerouslySetInnerHTML={{
+                        __html: node.description ?? "",
+                      }}
+                    />
+                  </a>
 
-                  <ul class="flex flex-col gap-1 mt-2">
-                    {node.children?.map((leaf) => (
-                      <li>
-                        <a
-                          class="text-gray-dark hover:text-firebrick transition-colors duration-100 ease-in"
-                          href={leaf.url}
-                        >
-                          <span class="text-[13px] tracking-[0.5px] leading-[180%]">
-                            {leaf.name}
-                          </span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+                  {hasChildren && (
+                    <a
+                      href={node.url}
+                      class="text-gray-light text-xs font-semibold"
+                    >
+                      + Ver tudo
+                    </a>
+                  )}
+                </div>
+
+                <ul class="flex flex-col gap-1 mt-2">
+                  {node.children?.map((leaf) => (
+                    <li>
+                      <a
+                        class="text-gray-dark hover:text-firebrick transition-colors duration-100 ease-in"
+                        href={leaf.url}
+                      >
+                        <span class="text-[13px] tracking-[0.5px] leading-[180%]">
+                          {leaf.name}
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </li>
   );
 }
