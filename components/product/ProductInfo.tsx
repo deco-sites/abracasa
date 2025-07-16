@@ -15,6 +15,7 @@ import QuickReview from "./QuickReview.tsx";
 import CTA from "./CTA.tsx";
 import PhysicalStoresButton from "$store/islands/PhysicalStoresButton.tsx";
 import ArButton from "$store/components/product/ArButton.tsx";
+import AddToCartRedirectButton from "$store/islands/AddToCartRedirectButton.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -195,12 +196,12 @@ function ProductInfo({ page, layout }: Props) {
             <>
               {platform === "vtex" && (
                 <>
-                  <a
-                    href={`/checkout/cart/add?sku=${skuId}&qty=1&seller=${seller}&redirect=true&sc=1`}
-                    class="flex items-center justify-center h-[66px] w-full bg-dimgray hover:bg-black/70 font-bold text-white uppercase text-[18px] leading-[25px]"
-                  >
-                    Comprar
-                  </a>
+                  <AddToCartRedirectButton
+                  seller={seller}
+                  productID={productID}
+                  skuId={skuId}
+                  eventParams={{ items: [eventItem] }}
+                />
                 </>
               )}
             </>
