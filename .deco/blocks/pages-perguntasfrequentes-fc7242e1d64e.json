@@ -15,7 +15,17 @@
       "__resolveType": "InstitutionalMenu - Abracasa"
     },
     {
-      "__resolveType": "site/sections/Content/Form.tsx"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Content/Form.tsx"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "title": "<p><span style=\"color: rgb(85, 85, 85); font-size: 28pt\">Perguntas Frequentes</span></p>",

@@ -19,8 +19,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184801/banner_categorias_mesas.jpg?v=638207075465470000"
+            "mobile": "https://assets.decocache.com/abracasa/8394ea0c-6f56-4235-ba17-fb202810a92e/casa_banner_especial_mobile_externo_800x400.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/7b91a6ab-3575-4eb7-b14e-489f67a53a97/casa_banner_especial_desk_externo_1800x220.jpg"
           },
           "matcher": "/*"
         }
