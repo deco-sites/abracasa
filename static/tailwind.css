@@ -6364,6 +6364,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-\[66px\] {
   padding-bottom: 66px;
 }
+.pb-\[7px\] {
+  padding-bottom: 7px;
+}
 .pl-1 {
   padding-left: 0.25rem;
 }
@@ -8768,6 +8771,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:pb-\[40px\] {
     padding-bottom: 40px;
+  }
+
+  .md\:pb-\[6px\] {
+    padding-bottom: 6px;
   }
 
   .md\:pb-\[92px\] {

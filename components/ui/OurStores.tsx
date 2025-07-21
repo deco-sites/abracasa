@@ -114,35 +114,37 @@ export default function OurStores(
                 rel="noopener noreferrer"
                 class={"w-full cursor-pointe"}
               >
-                <div class="flex flex-col justify-center gap-1 border border-[#B1B1B1] py-4 px-[22px] md:py-[18px] md:px-[26px] lg:w-[420px] min-h-[120px] md:min-h-[146px]">
+                <div class="flex flex-col justify-center border border-[#B1B1B1] py-4 px-[22px] md:py-[18px] md:px-[26px] lg:w-[420px] min-h-[120px] md:min-h-[146px]">
                   <strong
                     style={{ fontFamily: "'Inter', sans-serif" }}
-                    class="block font-semibold uppercase text-[#585858]"
+                    class="block font-semibold uppercase text-[#585858] pb-[7px] md:pb-[6px]"
                   >
                     {store.titleStore}
                   </strong>
-                  <div
-                    style={{ fontFamily: "'Inter', sans-serif" }}
-                    class="text-[#585858] font-light text-xs md:text-sm"
-                    dangerouslySetInnerHTML={{
-                      __html: store.description,
-                    }}
-                  />
-                  <div
-                    style={{ fontFamily: "'Inter', sans-serif" }}
-                    class="flex gap-1 items-center flex-wrap max-w-full text-xs md:text-sm text-[#585858] font-light"
-                  >
-                    {store.telephone && (
-                      <>
-                        <p class=" whitespace-nowrap">
-                          Telefone: {formatPhone(store.telephone)}
-                        </p>
-                        <span class="hidden sm:inline">/</span>
-                      </>
-                    )}
-                    <p class=" whitespace-nowrap">
-                      Whatsapp: {formatPhone(store.whatsapp)}
-                    </p>
+                  <div>
+                    <div
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                      class="text-[#585858] font-light text-xs md:text-sm"
+                      dangerouslySetInnerHTML={{
+                        __html: store.description,
+                      }}
+                    />
+                    <div
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                      class="flex gap-1 items-center flex-wrap max-w-full text-xs md:text-sm text-[#585858] font-light"
+                    >
+                      {store.telephone && (
+                        <>
+                          <p class=" whitespace-nowrap">
+                            Telefone: {formatPhone(store.telephone)}
+                          </p>
+                          <span class="hidden sm:inline">/</span>
+                        </>
+                      )}
+                      <p class=" whitespace-nowrap">
+                        Whatsapp: {formatPhone(store.whatsapp)}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </a>
