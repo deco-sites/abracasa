@@ -47,6 +47,9 @@
           {
             "defer": true,
             "__resolveType": "analytics/loaders/DecoAnalyticsScript.ts"
+          },
+          {
+            "__resolveType": "analytics/loaders/OneDollarScript.ts"
           }
         ],
         "includePlausible": true
