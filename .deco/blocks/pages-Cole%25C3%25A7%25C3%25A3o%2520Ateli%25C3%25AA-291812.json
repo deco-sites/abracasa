@@ -13,6 +13,23 @@
       "section": {
         "__resolveType": "Header - 01"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroContentImage.tsx",
+        "image": {
+          "src": "https://assets.decocache.com/abracasa/e68b32b3-6801-4942-9de8-5a395f2ea845/Rectangle-203.png",
+          "desktopWidth": 822,
+          "desktopHeight": 576
+        },
+        "logo": "https://assets.decocache.com/abracasa/14f6de6d-cd56-4591-b60b-4d408d3f70ee/ABRA_ATELIE_LOGO-01-1.png",
+        "text": "<p><span>Ateliê Casa é o que acreditamos e buscamos para a nossa marca carioca.&nbsp;<br></span><strong><span>Um jeito leve de ocupar os espaços.</span></strong></p>",
+        "button": {
+          "buttonText": "confira os produtos",
+          "buttonLink": "#"
+        }
+      }
     }
   ],
   "seo": {
