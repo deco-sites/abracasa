@@ -30,6 +30,24 @@
           "buttonLink": "#"
         }
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageTextGrid.tsx",
+        "images": [
+          {
+            "src": "https://assets.decocache.com/abracasa/1428e6f1-c99c-4367-931e-9621a23f37f2/FOTO_04-1.png"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/bc842656-67f7-4e05-87de-c7a38c8b6fbb/_MG_3317-Aprimorado-NR-1.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/a83954d2-52c2-41e9-b7c7-dfeb98d50566/quadro_rocha_735x1095cm-1.png"
+          }
+        ],
+        "text": "<p><span>Nos inspiramos na cidade onde vivemos, nas </span><strong><span>linhas retas e curvas das paisagens</span></strong><span>, na amplitude de nossas praias e no modo descontraído de levar a vida.&nbsp;<br><br>Gostamos da arte e da cultura do nosso povo e da forma calorosa de se relacionar.</span></p>"
+      }
     }
   ],
   "seo": {
