@@ -48,6 +48,28 @@
         ],
         "text": "<p><span>Nos inspiramos na cidade onde vivemos, nas </span><strong><span>linhas retas e curvas das paisagens</span></strong><span>, na amplitude de nossas praias e no modo descontraído de levar a vida.&nbsp;<br><br>Gostamos da arte e da cultura do nosso povo e da forma calorosa de se relacionar.</span></p>"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageVideo.tsx",
+        "media": {
+          "image": "https://assets.decocache.com/abracasa/a82c8de6-1804-4518-8f63-cafc7202db6e/Group-1779.png",
+          "video": "https://assets.decocache.com/abracasa/837391de-8c94-4497-a6fb-6ddb86fb61bf/1742561538659-0ec3bc06-9539-4ac4-a468-3d39908566a5"
+        },
+        "text": {
+          "textMobile": {
+            "content": "<p style=\"text-align: justify\"><span>Olhamos para dentro, mas também estamos sempre</span><br><span>em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do </span><br><span>design escandinavo, que atravessa o tempo. </span><br><span>Viajamos em busca de expandir o olhar, mas</span><br><span> retornamos sempre para a nossa essência.</span></p>",
+            "textAlignment": "justify"
+          },
+          "textDesktop": {
+            "content": "<p>Olhamos para dentro, mas também estamos sempre em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do design escandinavo, que atravessa o tempo. <br>Viajamos em busca de expandir o olhar, mas retornamos sempre para a nossa essência.</p>",
+            "position": "left",
+            "textAlignment": "justify",
+            "gap": 100
+          }
+        }
+      }
     }
   ],
   "seo": {
