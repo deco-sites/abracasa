@@ -59,15 +59,19 @@
         },
         "text": {
           "textMobile": {
-            "content": "<p style=\"text-align: justify\"><span>Olhamos para dentro, mas também estamos sempre</span><br><span>em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do </span><br><span>design escandinavo, que atravessa o tempo. </span><br><span>Viajamos em busca de expandir o olhar, mas</span><br><span> retornamos sempre para a nossa essência.</span></p>",
-            "textAlignment": "justify"
+            "content": "<p style=\"text-align: justify\">Olhamos para dentro, mas também estamos sempre<br>em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do <br>design escandinavo, que atravessa o tempo. <br>Viajamos em busca de expandir o olhar, mas<br> retornamos sempre para a nossa essência.</p>",
+            "textAlignment": "justify",
+            "position": "left"
           },
           "textDesktop": {
-            "content": "<p>Olhamos para dentro, mas também estamos sempre em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do design escandinavo, que atravessa o tempo. <br>Viajamos em busca de expandir o olhar, mas retornamos sempre para a nossa essência.</p>",
-            "position": "left",
+            "content": "<p style=\"text-align: justify\">Olhamos para dentro, mas também estamos sempre em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do design escandinavo, que atravessa o tempo. <br>Viajamos em busca de expandir o olhar, mas retornamos sempre para a nossa essência.</p>",
             "textAlignment": "justify",
-            "gap": 100
+            "gap": 100,
+            "position": "left"
           }
+        },
+        "gap": {
+          "mobile": 58
         }
       }
     }

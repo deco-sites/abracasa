@@ -47,7 +47,7 @@ export interface VideoProps {
 
 export interface TextProps {
     content: RichText;
-    /** @title Alinhamento do bloco em relação à mídia */
+    /** @title Alinhamento do texto em relação à mídia */
     position?: "left" | "right" | "center";
     /** @title  Espaçamento entre linhas (ex: 1.5 ou 24 para 24px) */
     lineHeight?: number;
@@ -63,13 +63,12 @@ export interface ImageVideoProps {
     };
 }
 
-const divPositionOptions = {
-    left: "justify-start",
-    right: "justify-end",
-    center: "justify-center",
-};
+const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
+    const {
+        textDesktop = null,
+        textMobile = null,
+    } = text;
 
-const ImageVideo = ({ media, text }: ImageVideoProps) => {
     return (
         <div class={"w-full mt-[60px] lg:mt-[119px]"}>
             <div class={"flex justify-center font-inter"}>
@@ -102,20 +101,28 @@ const ImageVideo = ({ media, text }: ImageVideoProps) => {
                         : media.type !== "image" && "video" in media
                         ? (
                             <div
-                                class={"flex flex-col gap-[58px] md:gap-[129px]"}
+                                class={`flex flex-col gap-[58px] lg:gap-[129px]`}
                             >
-                                <span
-                                    dangerouslySetInnerHTML={{
-                                        __html: text?.textDesktop?.content ??
-                                            "",
-                                    }}
-                                    className={` hidden lg:block  lg:w-full lg:max-w-[770px] text-[#626262] `}
+                                <div
                                     style={{
-                                        lineHeight: `${
-                                            text?.textDesktop?.lineHeight ?? 26
-                                        }px`,
+                                        justifyContent: textDesktop?.position,
                                     }}
-                                />
+                                    class={"w-full flex"}
+                                >
+                                    <span
+                                        dangerouslySetInnerHTML={{
+                                            __html: textDesktop?.content ??
+                                                "",
+                                        }}
+                                        className={` hidden lg:block lg:w-full lg:max-w-[770px] text-[#626262] `}
+                                        style={{
+                                            lineHeight: `${
+                                                textDesktop?.lineHeight ??
+                                                    26
+                                            }px`,
+                                        }}
+                                    />
+                                </div>
                                 <Video
                                     src={media.video}
                                     width={media.width ?? 1194}
@@ -130,18 +137,26 @@ const ImageVideo = ({ media, text }: ImageVideoProps) => {
                                     controls={true}
                                     class=" md:hidden h-[185px] object-fill"
                                 />
-                                <span
-                                    dangerouslySetInnerHTML={{
-                                        __html: text?.textDesktop?.content ??
-                                            "",
-                                    }}
-                                    className={`block lg:hidden w-full text-sm text-left md:text-center text-[#626262] `}
+                                <div
                                     style={{
-                                        lineHeight: `${
-                                            text?.textDesktop?.lineHeight ?? 20
-                                        }px`,
+                                        justifyContent: textMobile?.position,
                                     }}
-                                />
+                                    className={`w-full flex lg:hidden`}
+                                >
+                                    <span
+                                        dangerouslySetInnerHTML={{
+                                            __html: textMobile?.content ??
+                                                "",
+                                        }}
+                                        className={`block lg:hidden  w-full md:w-[400px] text-sm text-[#626262] `}
+                                        style={{
+                                            lineHeight: `${
+                                                textMobile?.lineHeight ??
+                                                    20
+                                            }px`,
+                                        }}
+                                    />
+                                </div>
                             </div>
                         )
                         : <div>Tipo de mídia não suportado</div>}
