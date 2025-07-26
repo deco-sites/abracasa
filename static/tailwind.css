@@ -4427,6 +4427,9 @@ details.collapse summary::-webkit-details-marker {
 .mt-\[120px\] {
   margin-top: 120px;
 }
+.mt-\[149px\] {
+  margin-top: 149px;
+}
 .mt-\[15px\] {
   margin-top: 15px;
 }
@@ -4439,11 +4442,20 @@ details.collapse summary::-webkit-details-marker {
 .mt-\[51px\] {
   margin-top: 51px;
 }
+.mt-\[55px\] {
+  margin-top: 55px;
+}
 .mt-\[5px\] {
   margin-top: 5px;
 }
+.mt-\[60px\] {
+  margin-top: 60px;
+}
 .mt-\[72px\] {
   margin-top: 72px;
+}
+.mt-\[77px\] {
+  margin-top: 77px;
 }
 .mt-\[86px\] {
   margin-top: 86px;
@@ -4546,6 +4558,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[18\.54px\] {
   height: 18.54px;
+}
+.h-\[185px\] {
+  height: 185px;
 }
 .h-\[18px\] {
   height: 18px;
@@ -4679,6 +4694,9 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[40px\] {
   max-height: 40px;
 }
+.max-h-\[415px\] {
+  max-height: 415px;
+}
 .max-h-\[50\%\] {
   max-height: 50%;
 }
@@ -4720,6 +4738,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-h-\[181px\] {
   min-height: 181px;
+}
+.min-h-\[190px\] {
+  min-height: 190px;
 }
 .min-h-\[205px\] {
   min-height: 205px;
@@ -4952,6 +4973,9 @@ details.collapse summary::-webkit-details-marker {
 .w-screen {
   width: 100vw;
 }
+.min-w-0 {
+  min-width: 0px;
+}
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -5048,6 +5072,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[139px\] {
   max-width: 139px;
 }
+.max-w-\[1440px\] {
+  max-width: 1440px;
+}
 .max-w-\[156px\] {
   max-width: 156px;
 }
@@ -5083,6 +5110,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[360px\] {
   max-width: 360px;
+}
+.max-w-\[371px\] {
+  max-width: 371px;
 }
 .max-w-\[375px\] {
   max-width: 375px;
@@ -5296,6 +5326,9 @@ details.collapse summary::-webkit-details-marker {
 .grid-flow-col-dense {
   grid-auto-flow: column dense;
 }
+.auto-rows-\[92px\] {
+  grid-auto-rows: 92px;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -5505,6 +5538,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[4px\] {
   gap: 4px;
+}
+.gap-\[58px\] {
+  gap: 58px;
 }
 .gap-\[6px\] {
   gap: 6px;
@@ -6465,6 +6501,9 @@ details.collapse summary::-webkit-details-marker {
 .text-\[16px\] {
   font-size: 16px;
 }
+.text-\[17px\] {
+  font-size: 17px;
+}
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -6717,6 +6756,10 @@ details.collapse summary::-webkit-details-marker {
 .text-\[\#585858\] {
   --tw-text-opacity: 1;
   color: rgb(88 88 88 / var(--tw-text-opacity));
+}
+.text-\[\#626262\] {
+  --tw-text-opacity: 1;
+  color: rgb(98 98 98 / var(--tw-text-opacity));
 }
 .text-\[\#667781\] {
   --tw-text-opacity: 1;
@@ -8425,6 +8468,10 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 1.75rem;
   }
 
+  .md\:mb-\[42px\] {
+    margin-bottom: 42px;
+  }
+
   .md\:mb-\[45px\] {
     margin-bottom: 45px;
   }
@@ -8465,8 +8512,16 @@ details.collapse summary::-webkit-details-marker {
     height: 297px;
   }
 
+  .md\:h-\[450px\] {
+    height: 450px;
+  }
+
   .md\:h-\[586px\] {
     height: 586px;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:h-full {
@@ -8509,8 +8564,20 @@ details.collapse summary::-webkit-details-marker {
     min-width: 26%;
   }
 
+  .md\:min-w-\[270px\] {
+    min-width: 270px;
+  }
+
+  .md\:min-w-\[300px\] {
+    min-width: 300px;
+  }
+
   .md\:max-w-\[300px\] {
     max-width: 300px;
+  }
+
+  .md\:max-w-\[345px\] {
+    max-width: 345px;
   }
 
   .md\:max-w-\[440px\] {
@@ -8542,6 +8609,10 @@ details.collapse summary::-webkit-details-marker {
     --tw-scale-x: 30%;
     --tw-scale-y: 30%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:auto-rows-\[200px\] {
+    grid-auto-rows: 200px;
   }
 
   .md\:grid-cols-3 {
@@ -8608,6 +8679,10 @@ details.collapse summary::-webkit-details-marker {
     gap: 8rem;
   }
 
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
   .md\:gap-6 {
     gap: 1.5rem;
   }
@@ -8622,6 +8697,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:gap-\[117px\] {
     gap: 117px;
+  }
+
+  .md\:gap-\[129px\] {
+    gap: 129px;
   }
 
   .md\:border-t {
@@ -8648,6 +8727,11 @@ details.collapse summary::-webkit-details-marker {
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:px-\[106px\] {
+    padding-left: 106px;
+    padding-right: 106px;
   }
 
   .md\:py-0 {
@@ -8688,6 +8772,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:pb-\[92px\] {
     padding-bottom: 92px;
+  }
+
+  .md\:pl-\[124px\] {
+    padding-left: 124px;
   }
 
   .md\:pt-1 {
@@ -8866,6 +8954,10 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 2rem;
   }
 
+  .lg\:mt-\[119px\] {
+    margin-top: 119px;
+  }
+
   .lg\:mt-\[172px\] {
     margin-top: 172px;
   }
@@ -8876,6 +8968,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mt-\[53px\] {
     margin-top: 53px;
+  }
+
+  .lg\:mt-\[86px\] {
+    margin-top: 86px;
   }
 
   .lg\:block {
@@ -8906,8 +9002,16 @@ details.collapse summary::-webkit-details-marker {
     height: 18px;
   }
 
+  .lg\:h-\[674px\] {
+    height: 674px;
+  }
+
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:max-h-\[206px\] {
+    max-height: 206px;
   }
 
   .lg\:max-h-\[600px\] {
@@ -8998,12 +9102,32 @@ details.collapse summary::-webkit-details-marker {
     max-width: 193px;
   }
 
+  .lg\:max-w-\[206px\] {
+    max-width: 206px;
+  }
+
   .lg\:max-w-\[290px\] {
     max-width: 290px;
   }
 
+  .lg\:max-w-\[356px\] {
+    max-width: 356px;
+  }
+
+  .lg\:max-w-\[371px\] {
+    max-width: 371px;
+  }
+
   .lg\:max-w-\[420px\] {
     max-width: 420px;
+  }
+
+  .lg\:max-w-\[709px\] {
+    max-width: 709px;
+  }
+
+  .lg\:max-w-\[770px\] {
+    max-width: 770px;
   }
 
   .lg\:max-w-\[80\%\] {
@@ -9164,6 +9288,14 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:gap-\[106px\] {
+    gap: 106px;
+  }
+
+  .lg\:gap-\[143px\] {
+    gap: 143px;
   }
 
   .lg\:gap-x-\[14px\] {
@@ -9477,6 +9609,10 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:w-\[32\%\] {
     width: 32%;
+  }
+
+  .xl\:w-\[822px\] {
+    width: 822px;
   }
 
   .xl\:w-auto {

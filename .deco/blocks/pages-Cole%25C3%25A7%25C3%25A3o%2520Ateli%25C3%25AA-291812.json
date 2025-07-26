@@ -1,0 +1,79 @@
+{
+  "name": "Coleção Ateliê",
+  "path": "/colecao-atelie",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/sections/Seo/Seo.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header - 01"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroContentImage.tsx",
+        "image": {
+          "src": "https://assets.decocache.com/abracasa/e68b32b3-6801-4942-9de8-5a395f2ea845/Rectangle-203.png",
+          "desktopWidth": 822,
+          "desktopHeight": 576
+        },
+        "logo": "https://assets.decocache.com/abracasa/14f6de6d-cd56-4591-b60b-4d408d3f70ee/ABRA_ATELIE_LOGO-01-1.png",
+        "text": "<p><span>Ateliê Casa é o que acreditamos e buscamos para a nossa marca carioca.&nbsp;<br></span><strong><span>Um jeito leve de ocupar os espaços.</span></strong></p>",
+        "button": {
+          "buttonText": "confira os produtos",
+          "buttonLink": "#"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageTextGrid.tsx",
+        "images": [
+          {
+            "src": "https://assets.decocache.com/abracasa/1428e6f1-c99c-4367-931e-9621a23f37f2/FOTO_04-1.png"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/bc842656-67f7-4e05-87de-c7a38c8b6fbb/_MG_3317-Aprimorado-NR-1.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/a83954d2-52c2-41e9-b7c7-dfeb98d50566/quadro_rocha_735x1095cm-1.png"
+          }
+        ],
+        "text": "<p><span>Nos inspiramos na cidade onde vivemos, nas </span><strong><span>linhas retas e curvas das paisagens</span></strong><span>, na amplitude de nossas praias e no modo descontraído de levar a vida.&nbsp;<br><br>Gostamos da arte e da cultura do nosso povo e da forma calorosa de se relacionar.</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageVideo.tsx",
+        "media": {
+          "image": "https://assets.decocache.com/abracasa/a82c8de6-1804-4518-8f63-cafc7202db6e/Group-1779.png",
+          "video": "https://assets.decocache.com/abracasa/837391de-8c94-4497-a6fb-6ddb86fb61bf/1742561538659-0ec3bc06-9539-4ac4-a468-3d39908566a5"
+        },
+        "text": {
+          "textMobile": {
+            "content": "<p style=\"text-align: justify\"><span>Olhamos para dentro, mas também estamos sempre</span><br><span>em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do </span><br><span>design escandinavo, que atravessa o tempo. </span><br><span>Viajamos em busca de expandir o olhar, mas</span><br><span> retornamos sempre para a nossa essência.</span></p>",
+            "textAlignment": "justify"
+          },
+          "textDesktop": {
+            "content": "<p>Olhamos para dentro, mas também estamos sempre em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do design escandinavo, que atravessa o tempo. <br>Viajamos em busca de expandir o olhar, mas retornamos sempre para a nossa essência.</p>",
+            "position": "left",
+            "textAlignment": "justify",
+            "gap": 100
+          }
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
