@@ -26,9 +26,9 @@ const HeroContentImage = (
     return (
         <div class="mt-[55px] lg:mt-[86px] relative w-full">
             <div class="flex justify-center">
-                <div class="w-full max-w-[1440px] flex flex-col lg:flex-row  px-6  lg:pl-[106px] lg:px-0 gap-[51px] lg:gap-[143px]">
+                <div class="w-full max-w-[1440px] flex flex-col lg:flex-row lg:pl-[106px] px-0 gap-[51px] lg:gap-[143px]">
                     {/* Coluna do conteúdo */}
-                    <div class="w-full lg:max-w-[371px]">
+                    <div class="w-full lg:max-w-[371px] px-6 lg:px-0">
                         <div
                             class={"flex justify-between flex-row-reverse items-center lg:items-start lg:flex-col lg:justify-center gap-[23px] lg:gap-0"}
                         >
@@ -83,7 +83,7 @@ const HeroContentImage = (
                         />
                     </div>
                     <div
-                        class={"flex lg:hidden justify-center items-center"}
+                        class={"flex lg:hidden justify-center items-center px-6 lg:px-0"}
                     >
                         <a
                             target="_blank"
