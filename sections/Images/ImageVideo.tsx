@@ -73,7 +73,7 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
         <div class={"w-full mt-[60px] lg:mt-[119px]"}>
             <div class={"flex justify-center font-inter"}>
                 <div
-                    class={"w-full max-w-[1440px] px-6 md:px-[106px] flex flex-col"}
+                    class={"w-full max-w-[1440px] px-6 lg:px-[106px] flex flex-col"}
                 >
                     {media.type === "image" && "src" in media
                         ? (
@@ -114,7 +114,7 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                             __html: textDesktop?.content ??
                                                 "",
                                         }}
-                                        className={` hidden lg:block lg:w-full lg:max-w-[770px] text-[#626262] `}
+                                        className={` hidden md:block w-full lg:max-w-[770px] text-[#626262] `}
                                         style={{
                                             lineHeight: `${
                                                 textDesktop?.lineHeight ??
@@ -125,7 +125,7 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                 </div>
                                 <Video
                                     src={media.video}
-                                    width={media.width ?? 1194}
+                                    width={media.width ?? 1228}
                                     height={media.height ?? 674}
                                     controls={true}
                                     class={`hidden md:block md:h-[450px] lg:h-[674px] object-fill`}
@@ -148,7 +148,7 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                             __html: textMobile?.content ??
                                                 "",
                                         }}
-                                        className={`block lg:hidden  w-full md:w-[400px] text-sm text-[#626262] `}
+                                        className={`block md:hidden  w-full text-sm text-[#626262] `}
                                         style={{
                                             lineHeight: `${
                                                 textMobile?.lineHeight ??
