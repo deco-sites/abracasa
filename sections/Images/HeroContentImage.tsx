@@ -1,14 +1,5 @@
-/*
-
-TODO:
-- [ ] imagem excedendo o tamanho do container 1440px
-
-
-*/
-
 import { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Button from "deco-sites/abracasa/components/ui/Button.tsx";
 
 export interface ImageProps {
     src: ImageWidget;
@@ -35,10 +26,12 @@ const HeroContentImage = (
     return (
         <div class="mt-[55px] lg:mt-[86px] relative w-full">
             <div class="flex justify-center">
-                <div class="w-full max-w-[1440px] flex flex-col lg:flex-row md:pl-[124px] lg:gap-[143px]">
+                <div class="w-full max-w-[1440px] flex flex-col lg:flex-row  px-6  lg:pl-[106px] lg:px-0 gap-[51px] lg:gap-[143px]">
                     {/* Coluna do conteúdo */}
-                    <div class="w-full lg:max-w-[371px] justify-center flex flex-col">
-                        <div>
+                    <div class="w-full lg:max-w-[371px]">
+                        <div
+                            class={"flex justify-between flex-row-reverse items-center lg:items-start lg:flex-col lg:justify-center gap-[23px] lg:gap-0"}
+                        >
                             <Image
                                 src={logo}
                                 alt="Logo"
@@ -46,7 +39,16 @@ const HeroContentImage = (
                                 height={206}
                                 loading="lazy"
                                 decoding="async"
-                                class=" lg:max-w-[206px] lg:max-h-[206px] md:mb-[42px]"
+                                class="hidden md:block lg:max-w-[206px] lg:max-h-[206px] lg:mb-[42px]"
+                            />
+                            <Image
+                                src={logo}
+                                alt="Logo"
+                                width={135}
+                                height={135}
+                                loading="lazy"
+                                decoding="async"
+                                class="block md:hidden"
                             />
                             <div class={"md:max-w-[345px]"}>
                                 <span
@@ -60,14 +62,12 @@ const HeroContentImage = (
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href={button?.buttonLink ?? "#"}
-                                class={"hidden md:flex justify-center items-center mt-[77px] btn bg-transparent uppercase rounded-none py-2 border-[1px] border-solid border-[#555555] text-center text-[17px] font-semibold w-full text-[#555555] max-w-[371px]"}
+                                class={"hidden lg:flex justify-center items-center mt-[77px] btn bg-transparent uppercase rounded-none py-2 border-[1px] border-solid border-[#555555] text-center text-[17px] font-semibold w-full text-[#555555] max-w-[371px]"}
                             >
                                 <span>{button.buttonText}</span>
                             </a>
                         </div>
                     </div>
-
-                    {/* Coluna da imagem */}
                     <div
                         class="flex-1 xl:w-[822px] h-ful md:h-auto "
                         style={{ height: `${image.mobileHeight}px` }}
@@ -81,6 +81,18 @@ const HeroContentImage = (
                             decoding="async"
                             class="w-full h-full object-cover block"
                         />
+                    </div>
+                    <div
+                        class={"flex lg:hidden justify-center items-center"}
+                    >
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={button?.buttonLink ?? "#"}
+                            class={"flex justify-center items-center btn bg-transparent uppercase rounded-none py-2 border-[1px] border-solid border-[#555555] text-center text-[17px] font-semibold w-full text-[#555555] max-w-[371px]"}
+                        >
+                            <span>{button.buttonText}</span>
+                        </a>
                     </div>
                 </div>
             </div>

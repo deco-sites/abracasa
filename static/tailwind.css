@@ -5530,6 +5530,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-\[18px\] {
   gap: 18px;
 }
+.gap-\[23px\] {
+  gap: 23px;
+}
 .gap-\[2px\] {
   gap: 2px;
 }
@@ -5544,6 +5547,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[4px\] {
   gap: 4px;
+}
+.gap-\[51px\] {
+  gap: 51px;
 }
 .gap-\[58px\] {
   gap: 58px;
@@ -8484,10 +8490,6 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 1.75rem;
   }
 
-  .md\:mb-\[42px\] {
-    margin-bottom: 42px;
-  }
-
   .md\:mb-\[45px\] {
     margin-bottom: 45px;
   }
@@ -8790,10 +8792,6 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 92px;
   }
 
-  .md\:pl-\[124px\] {
-    padding-left: 124px;
-  }
-
   .md\:pt-1 {
     padding-top: 0.25rem;
   }
@@ -8944,6 +8942,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mb-\[30px\] {
     margin-bottom: 30px;
+  }
+
+  .lg\:mb-\[42px\] {
+    margin-bottom: 42px;
   }
 
   .lg\:mb-\[66px\] {
@@ -9270,6 +9272,10 @@ details.collapse summary::-webkit-details-marker {
     justify-content: space-between;
   }
 
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
   .lg\:gap-1 {
     gap: 0.25rem;
   }
@@ -9469,6 +9475,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pl-3 {
     padding-left: 0.75rem;
+  }
+
+  .lg\:pl-\[106px\] {
+    padding-left: 106px;
   }
 
   .lg\:pr-10 {
