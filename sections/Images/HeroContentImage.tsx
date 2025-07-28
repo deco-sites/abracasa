@@ -24,7 +24,7 @@ const HeroContentImage = (
     { image, logo, text, button }: HeroContentImageProps,
 ) => {
     return (
-        <div class="mt-[55px] lg:mt-[86px] relative w-full">
+        <div class="mt-[55px] lg:mt-[86px] relative w-full font-inter">
             <div class="flex justify-center">
                 <div class="w-full max-w-[1440px] flex flex-col lg:flex-row lg:pl-[106px] px-0 gap-[51px] lg:gap-[143px]">
                     {/* Coluna do conteúdo */}
@@ -52,7 +52,7 @@ const HeroContentImage = (
                             />
                             <div class={"md:max-w-[345px]"}>
                                 <span
-                                    class="font-normal leading-[28px]"
+                                    class="text-sm md:text-base font-normal leading-[20px] md:leading-[26px] text-[#626262]"
                                     dangerouslySetInnerHTML={{
                                         __html: text ?? "",
                                     }}

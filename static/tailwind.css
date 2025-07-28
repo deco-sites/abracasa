@@ -8878,6 +8878,10 @@ details.collapse summary::-webkit-details-marker {
     line-height: 1.75rem;
   }
 
+  .md\:leading-\[26px\] {
+    line-height: 26px;
+  }
+
   .md\:leading-\[66px\] {
     line-height: 66px;
   }
