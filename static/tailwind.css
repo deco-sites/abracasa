@@ -5651,6 +5651,10 @@ details.collapse summary::-webkit-details-marker {
 .overflow-ellipsis {
   text-overflow: ellipsis;
 }
+.hyphens-auto {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -8730,6 +8734,11 @@ details.collapse summary::-webkit-details-marker {
     gap: 59px;
   }
 
+  .md\:hyphens-none {
+    -webkit-hyphens: none;
+            hyphens: none;
+  }
+
   .md\:border-t {
     border-top-width: 1px;
   }
@@ -8815,6 +8824,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:pt-\[84px\] {
     padding-top: 84px;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-center {

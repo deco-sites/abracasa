@@ -46,7 +46,7 @@
             "src": "https://assets.decocache.com/abracasa/a83954d2-52c2-41e9-b7c7-dfeb98d50566/quadro_rocha_735x1095cm-1.png"
           }
         ],
-        "text": "<p><span>Nos inspiramos na cidade onde vivemos, nas </span><strong><span>linhas retas e curvas das paisagens</span></strong><span>, na amplitude de nossas praias e no modo descontraído de levar a vida.&nbsp;<br><br>Gostamos da arte e da cultura do nosso povo e da forma calorosa de se relacionar.</span></p>"
+        "text": "<p>Nos inspiramos na cidade onde vivemos, nas <strong>linhas retas e curvas das paisagens</strong>, na amplitude de nossas praias e no modo descontraído de levar a vida.&nbsp;<br><br>Gostamos da arte e da cultura do nosso povo e da forma calorosa de se relacionar.</p>"
       }
     },
     {
@@ -59,7 +59,7 @@
         },
         "text": {
           "textMobile": {
-            "content": "<p style=\"text-align: justify\">Olhamos para dentro, mas também estamos sempre<br>em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do <br>design escandinavo, que atravessa o tempo. <br>Viajamos em busca de expandir o olhar, mas<br> retornamos sempre para a nossa essência.</p>",
+            "content": "<p style=\"text-align: justify\"><span>Olhamos para dentro, mas também estamos sempre em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do design escandinavo, que atravessa o tempo. </span><br><span>Viajamos em busca de expandir o olhar, mas retornamos sempre para a nossa essência.</span></p>",
             "textAlignment": "justify",
             "position": "left"
           },
@@ -100,10 +100,10 @@
         "__resolveType": "site/sections/Images/ImageVideo.tsx",
         "text": {
           "textMobile": {
-            "content": "<p style=\"text-align: right\"><span>Iniciamos o nosso processo de</span><br><span> criação a partir de uma inquietação: <br></span><strong><span>O que podemos fazer de diferente? </span><br><span>Com mais cuidado, mais detalhe e</span><br><span> mais identidade.</span></strong></p>"
+            "content": "<p style=\"text-align: right\">Iniciamos o nosso processo de<br> criação a partir de uma inquietação: <br><strong>O que podemos fazer de diferente? <br>Com mais cuidado, mais detalhe e<br> mais identidade.</strong></p>"
           },
           "textDesktop": {
-            "content": "<p style=\"text-align: right\"><span>Iniciamos o nosso processo de criação a partir de uma inquietação: <br></span><strong><span>O que podemos fazer de diferente? Com mais cuidado, mais detalhe e mais identidade.</span></strong></p>",
+            "content": "<p style=\"text-align: right\">Iniciamos o nosso processo de criação a partir de uma inquietação: <br><strong>O que podemos fazer de diferente? Com mais cuidado, mais detalhe e mais identidade.</strong></p>",
             "position": "right"
           }
         },

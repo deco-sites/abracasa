@@ -206,7 +206,7 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                             __html: textMobile?.content ??
                                                 "",
                                         }}
-                                        className={`block md:hidden  w-full text-sm text-[#626262] `}
+                                        className={`block md:hidden  w-full text-sm hyphens-auto text-[#626262] `}
                                         style={{
                                             lineHeight: `${
                                                 textMobile?.lineHeight ??

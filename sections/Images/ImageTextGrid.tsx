@@ -12,7 +12,7 @@ export interface ImageTextGridProps {
 
 const ImageTextGrid = ({ images, text }: ImageTextGridProps) => {
     return (
-        <div class="w-full mt-[72px] lg:mt-[149px]">
+        <div class="w-full mt-[72px] lg:mt-[149px] font-inter">
             <div class="flex justify-center">
                 <div class="w-full max-w-[1440px] px-6 md:px-[106px] flex flex-col lg:flex-row gap-12 lg:gap-[106px]">
                     <div class="
@@ -60,7 +60,7 @@ const ImageTextGrid = ({ images, text }: ImageTextGridProps) => {
               min-w-0
             ">
                         <div
-                            class="font-normal text-[#212121] p-4"
+                            class="font-normal text-sm text-justify hyphens-auto md:hyphens-none md:text-left  md:text-base text-[#626262]"
                             dangerouslySetInnerHTML={{ __html: text }}
                         />
                     </div>
