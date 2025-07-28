@@ -4427,9 +4427,6 @@ details.collapse summary::-webkit-details-marker {
 .mt-\[120px\] {
   margin-top: 120px;
 }
-.mt-\[149px\] {
-  margin-top: 149px;
-}
 .mt-\[15px\] {
   margin-top: 15px;
 }
@@ -5533,6 +5530,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-\[23px\] {
   gap: 23px;
 }
+.gap-\[27px\] {
+  gap: 27px;
+}
 .gap-\[2px\] {
   gap: 2px;
 }
@@ -6318,10 +6318,6 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-.py-\[66px\] {
-  padding-top: 66px;
-  padding-bottom: 66px;
-}
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -6420,6 +6416,9 @@ details.collapse summary::-webkit-details-marker {
 .pt-12 {
   padding-top: 3rem;
 }
+.pt-16 {
+  padding-top: 4rem;
+}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -6455,6 +6454,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-\[50px\] {
   padding-top: 50px;
+}
+.pt-\[60px\] {
+  padding-top: 60px;
+}
+.pt-\[66px\] {
+  padding-top: 66px;
 }
 .text-left {
   text-align: left;
@@ -8721,6 +8726,10 @@ details.collapse summary::-webkit-details-marker {
     gap: 117px;
   }
 
+  .md\:gap-\[59px\] {
+    gap: 59px;
+  }
+
   .md\:border-t {
     border-top-width: 1px;
   }
@@ -8798,6 +8807,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .md\:pt-\[145px\] {
+    padding-top: 145px;
   }
 
   .md\:pt-\[84px\] {
@@ -8982,6 +8995,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mt-\[119px\] {
     margin-top: 119px;
+  }
+
+  .lg\:mt-\[149px\] {
+    margin-top: 149px;
   }
 
   .lg\:mt-\[172px\] {
@@ -9491,6 +9508,14 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-\[119px\] {
+    padding-top: 119px;
+  }
+
+  .lg\:pt-\[146\] {
+    padding-top: 146;
   }
 
   .lg\:pt-\[82px\] {

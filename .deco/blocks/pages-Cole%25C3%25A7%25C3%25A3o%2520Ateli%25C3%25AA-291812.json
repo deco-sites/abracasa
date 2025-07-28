@@ -85,12 +85,34 @@
           "desktopWidth": 522,
           "mobileSrc": "https://assets.decocache.com/abracasa/23fa3c85-972e-437a-ad57-458fc562cccd/Vertical-Mesa-Athos-Final-2.jpg",
           "mobileWidth": 324,
-          "mobileHeight": 416
+          "mobileHeight": 416,
+          "alt": " Imagem Design Exclusivo"
         },
         "textContent": "<p><span style=\"color: #626262\">Pensamos em tudo isso no momento de criação.<br>Na troca de ideias e no movimento em busca de novas <br>peças para compor um ambiente, nasce um Produto.&nbsp;</span></p>",
         "reverse": true,
         "paddingX": true,
         "title": "design exclusivo"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageVideo.tsx",
+        "text": {
+          "textMobile": {
+            "content": "<p style=\"text-align: right\"><span>Iniciamos o nosso processo de</span><br><span> criação a partir de uma inquietação: <br></span><strong><span>O que podemos fazer de diferente? </span><br><span>Com mais cuidado, mais detalhe e</span><br><span> mais identidade.</span></strong></p>"
+          },
+          "textDesktop": {
+            "content": "<p style=\"text-align: right\"><span>Iniciamos o nosso processo de criação a partir de uma inquietação: <br></span><strong><span>O que podemos fazer de diferente? Com mais cuidado, mais detalhe e mais identidade.</span></strong></p>",
+            "position": "right"
+          }
+        },
+        "media": {
+          "type": "image",
+          "src": "https://assets.decocache.com/abracasa/993ba747-0751-4cb6-acaa-1d353bc0b0d5/Rectangle-205.png",
+          "width": 1228,
+          "height": 682
+        }
       }
     }
   ],

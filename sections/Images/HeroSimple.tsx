@@ -47,7 +47,9 @@ export const getLayoutClasses = ({
         ? `w-full max-w-[1440px] px-6 lg:px-[106px] md:mx-auto`
         : "max-w-[1196px] mx-6 md:mx-auto";
 
-    const paddingY = paddingX ? "py-[66px] md:py-36" : "py-24 md:py-36";
+    const verticalSpacing = paddingX
+        ? "pt-[66px] lg:pt-[146]"
+        : "py-24 md:py-36";
 
     const title = reverse
         ? "text-[40px] md:text-[clamp(28px,4.5vw,70px)] lg:text-[clamp(28px,4.5vw,70px)] text-[#212121] font-semibold mb-[22px] md:mb-[59px] md:leading-[66px] leading-[44px] max-w-[295px] lg:max-w-[319px] w-full"
@@ -57,7 +59,7 @@ export const getLayoutClasses = ({
         reverse: `${reversePosition}`,
         container: `${container}`,
         title: `${title}`,
-        paddingY: `${paddingY}`,
+        verticalSpacing: `${verticalSpacing}`,
     };
 };
 
@@ -74,14 +76,18 @@ function HeroSimple(
         button,
     }: Props,
 ) {
-    const { reverse: reversePosition, container, title: titleClass, paddingY } =
-        getLayoutClasses({
-            paddingX,
-            reverse,
-        });
+    const {
+        reverse: reversePosition,
+        container,
+        title: titleClass,
+        verticalSpacing,
+    } = getLayoutClasses({
+        paddingX,
+        reverse,
+    });
 
     return (
-        <div class={`${paddingY}`}>
+        <div class={`${verticalSpacing}`}>
             <div class={`${container}`}>
                 <div
                     class={`flex ${reversePosition} items-center font-inter`}

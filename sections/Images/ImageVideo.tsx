@@ -23,7 +23,6 @@ export interface ImageProps {
     type?: "image";
     /** @title Imagem */
     src: ImageWidget;
-    /** @title Texto alternativo */
     alt?: string;
     /** @title Largura */
     width?: number;
@@ -63,21 +62,80 @@ export interface ImageVideoProps {
     };
 }
 
+export const getLayoutClasses = ({
+    media,
+}: {
+    media: ImageProps | VideoProps;
+}) => {
+    switch (media.type) {
+        case "image":
+            return "pt-16 md:pt-[145px]";
+        case "video":
+            return "pt-[60px] lg:pt-[119px]";
+        default:
+            return "pt-16 md:pt-[145px]";
+    }
+};
+
 const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
     const {
         textDesktop = null,
         textMobile = null,
     } = text;
 
+    const verticalSpacing = getLayoutClasses({ media });
+
     return (
-        <div class={"w-full mt-[60px] lg:mt-[119px]"}>
+        <div class={`w-full ${verticalSpacing}`}>
             <div class={"flex justify-center font-inter"}>
                 <div
                     class={"w-full max-w-[1440px] px-6 lg:px-[106px] flex flex-col"}
                 >
                     {media.type === "image" && "src" in media
                         ? (
-                            <>
+                            <div
+                                class={"w-full flex flex-col gap-[27px] md:gap-[59px]"}
+                            >
+                                <div
+                                    style={{
+                                        justifyContent: textDesktop?.position,
+                                    }}
+                                    class={"w-full flex"}
+                                >
+                                    <span
+                                        dangerouslySetInnerHTML={{
+                                            __html: textDesktop?.content ??
+                                                "",
+                                        }}
+                                        className={` hidden md:block w-full lg:max-w-[770px] text-[#626262] `}
+                                        style={{
+                                            lineHeight: `${
+                                                textDesktop?.lineHeight ??
+                                                    26
+                                            }px`,
+                                        }}
+                                    />
+                                </div>
+                                <div
+                                    style={{
+                                        justifyContent: textDesktop?.position,
+                                    }}
+                                    class={"w-full flex"}
+                                >
+                                    <span
+                                        dangerouslySetInnerHTML={{
+                                            __html: textMobile?.content ??
+                                                "",
+                                        }}
+                                        className={` block md:hidden w-full text-sm text-[#626262] `}
+                                        style={{
+                                            lineHeight: `${
+                                                textMobile?.lineHeight ??
+                                                    26
+                                            }px`,
+                                        }}
+                                    />
+                                </div>
                                 <Image
                                     src={media.src ?? ""}
                                     alt={media.alt ?? "imagem"}
@@ -96,7 +154,7 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                     decoding="async"
                                     class="lg:hidden"
                                 />
-                            </>
+                            </div>
                         )
                         : media.type !== "image" && "video" in media
                         ? (
