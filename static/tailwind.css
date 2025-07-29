@@ -4454,6 +4454,9 @@ details.collapse summary::-webkit-details-marker {
 .mt-\[77px\] {
   margin-top: 77px;
 }
+.mt-\[82px\] {
+  margin-top: 82px;
+}
 .mt-\[86px\] {
   margin-top: 86px;
 }
@@ -5524,6 +5527,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-\[16px\] {
   gap: 16px;
 }
+.gap-\[17px\] {
+  gap: 17px;
+}
 .gap-\[18px\] {
   gap: 18px;
 }
@@ -5553,6 +5559,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[58px\] {
   gap: 58px;
+}
+.gap-\[68px\] {
+  gap: 68px;
 }
 .gap-\[6px\] {
   gap: 6px;
@@ -6378,6 +6387,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
+.pb-\[43px\] {
+  padding-bottom: 43px;
+}
 .pb-\[66px\] {
   padding-bottom: 66px;
 }
@@ -6464,6 +6476,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-\[66px\] {
   padding-top: 66px;
+}
+.pt-\[68px\] {
+  padding-top: 68px;
+}
+.pt-\[82px\] {
+  padding-top: 82px;
 }
 .text-left {
   text-align: left;
@@ -8760,6 +8778,11 @@ details.collapse summary::-webkit-details-marker {
     padding-right: 0px;
   }
 
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -9014,6 +9037,10 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 119px;
   }
 
+  .lg\:mt-\[144px\] {
+    margin-top: 144px;
+  }
+
   .lg\:mt-\[149px\] {
     margin-top: 149px;
   }
@@ -9124,6 +9151,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-\[440px\] {
     width: 440px;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:w-full {
@@ -9362,12 +9393,24 @@ details.collapse summary::-webkit-details-marker {
     gap: 106px;
   }
 
+  .lg\:gap-\[113px\] {
+    gap: 113px;
+  }
+
   .lg\:gap-\[129px\] {
     gap: 129px;
   }
 
   .lg\:gap-\[143px\] {
     gap: 143px;
+  }
+
+  .lg\:gap-\[159px\] {
+    gap: 159px;
+  }
+
+  .lg\:gap-\[183px\] {
+    gap: 183px;
   }
 
   .lg\:gap-\[191px\] {
@@ -9513,6 +9556,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pl-\[106px\] {
     padding-left: 106px;
+  }
+
+  .lg\:pr-0 {
+    padding-right: 0px;
   }
 
   .lg\:pr-10 {

@@ -114,6 +114,70 @@
           "height": 682
         }
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ColectionHeroGrid.tsx",
+        "section": {
+          "0": {
+            "media": {
+              "type": "image",
+              "src": "https://assets.decocache.com/abracasa/6009033a-4b98-4920-a79d-85022f3e8d09/Vertical-Mesa-Athos-Final-1.jpg"
+            },
+            "text": {
+              "button": {
+                "target": "_blank"
+              },
+              "title": "<p>teste1</p>"
+            },
+            "name": "teste2"
+          },
+          "1": {
+            "media": {
+              "type": "image",
+              "src": "https://assets.decocache.com/abracasa/2e8b5008-5d7a-4284-8349-db45cda65ee3/_MG_3001-Aprimorado-NR-1.jpg"
+            },
+            "text": {
+              "button": {
+                "target": "_blank"
+              },
+              "title": "<p>teste2</p>"
+            }
+          },
+          "text": {},
+          "media": [
+            {
+              "src": "https://assets.decocache.com/abracasa/6009033a-4b98-4920-a79d-85022f3e8d09/Vertical-Mesa-Athos-Final-1.jpg",
+              "type": "image"
+            }
+          ]
+        },
+        "section2": {
+          "text": {}
+        },
+        "text": [
+          {
+            "title": "<p><span style=\"color: #212121; font-size: 52pt\">paixão <br>pelo design</span><br><br><span style=\"color: #5b5b5b\">Partimos sempre de um olhar atento para os materiais. Seja madeira, ferro ou tecido, buscamos explorar ao máximo o que cada um pode oferecer em termos de acabamento, encaixes e texturas.</span></p>",
+            "limitTitleText": false,
+            "titleMobile": "<p><span style=\"color: #212121; font-size: 30pt\">paixão<br>pelo design</span><br><br><span style=\"color: #5b5b5b\">Partimos sempre de um olhar atento para os materiais. Seja madeira, ferro ou tecido, buscamos explorar ao máximo o que cada um pode oferecer em termos de acabamento, encaixes e texturas.</span><br><br></p>"
+          },
+          {
+            "title": "<p><span style=\"color: #5b5b5b\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>",
+            "titleMobile": "<p><span style=\"color: #5b5b5b\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>"
+          }
+        ],
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/6009033a-4b98-4920-a79d-85022f3e8d09/Vertical-Mesa-Athos-Final-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/6009033a-4b98-4920-a79d-85022f3e8d09/Vertical-Mesa-Athos-Final-1.jpg"
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/2e8b5008-5d7a-4284-8349-db45cda65ee3/_MG_3001-Aprimorado-NR-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/2e8b5008-5d7a-4284-8349-db45cda65ee3/_MG_3001-Aprimorado-NR-1.jpg"
+          }
+        ]
+      }
     }
   ],
   "seo": {

@@ -14,7 +14,7 @@ const ImageTextGrid = ({ images, text }: ImageTextGridProps) => {
     return (
         <div class="w-full mt-[72px] lg:mt-[149px] font-inter">
             <div class="flex justify-center">
-                <div class="w-full max-w-[1440px] px-6 md:px-[106px] flex flex-col lg:flex-row gap-12 lg:gap-[106px]">
+                <div class="w-full max-w-[1440px] px-6 lg:px-[106px] flex flex-col lg:flex-row gap-12 lg:gap-[106px]">
                     <div class="
               w-full
               min-h-[190px]
