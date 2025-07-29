@@ -4310,6 +4310,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 4px;
   margin-bottom: 4px;
 }
+.my-\[68px\] {
+  margin-top: 68px;
+  margin-bottom: 68px;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -5523,6 +5527,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-9 {
   gap: 2.25rem;
+}
+.gap-\[117px\] {
+  gap: 117px;
 }
 .gap-\[16px\] {
   gap: 16px;
@@ -8975,6 +8982,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:my-16 {
     margin-top: 4rem;
     margin-bottom: 4rem;
+  }
+
+  .lg\:my-\[170px\] {
+    margin-top: 170px;
+    margin-bottom: 170px;
   }
 
   .lg\:mb-6 {

@@ -5,6 +5,11 @@ import { useId } from "$store/sdk/useId.ts";
 import Image from "apps/website/components/Image.tsx";
 
 interface Props {
+    /**
+     * When `true`, reverses the order of elements by applying `flex-row-reverse` for row layouts
+     * and `flex-col-reverse` for column layouts, flipping the flex container's direction.
+     */
+    reverse?: boolean;
     /** @description Desktop title */
     title?: RichText;
     /** @description Line Height of the text */
@@ -32,27 +37,76 @@ interface Props {
         desktop?: LiveImage;
         mobile?: LiveImage;
         finalText?: string;
-    }[]
+    }[];
 }
 
-function HeroTitleImages({ title, lineHeightTitle, titleMobile, lineHeightTitleMobile, justifyCenter, image, mainImage = [] }: Props) {
+export const getLayoutClasses = ({
+    reverse,
+}: {
+    reverse?: boolean;
+}) => {
+    const reversePosition = reverse
+        ? "flex-col-reverse gap-[117px]"
+        : "flex-col";
+    const container = reverse
+        ? `my-[68px] lg:my-[170px]`
+        : "mt-[72px] lg:mt-[172px]";
+
+    return {
+        reverse: `${reversePosition}`,
+        container: `${container}`,
+    };
+};
+
+function HeroTitleImages(
+    {
+        reverse,
+        title,
+        lineHeightTitle,
+        titleMobile,
+        lineHeightTitleMobile,
+        justifyCenter,
+        image,
+        mainImage = [],
+    }: Props,
+) {
     const id = useId();
 
+    const { container, reverse: reversePosition } = getLayoutClasses({
+        reverse,
+    });
+
     return (
-        <div id={id} class="mt-[72px] lg:mt-[172px]">
+        <div id={id} class={`${container}}`}>
             <div class="max-w-[1196px] mx-auto">
-                <div class="flex flex-col font-inter">
-                    <h1 class={`sliderP leading-[1] font-semibold hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${justifyCenter ? 'max-w-[782px] !font-light tracking-wider !mx-auto mb-[51px] lg:mb-[154px] leading-6' : ''}`} dangerouslySetInnerHTML={{ __html: title ?? '' }}
-                     style={{lineHeight: lineHeightTitle || "" }} />
-                    <h1 class={`sliderP mx-6 leading-[1] font-semibold mb-7 lg:mb-[66px] lg:hidden ${justifyCenter ? 'max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6' : ''}`} dangerouslySetInnerHTML={{ __html: titleMobile ?? '' }}
-                    style={{lineHeight: lineHeightTitleMobile || "" }}  />
+                <div
+                    class={`flex font-inter ${reversePosition}`}
+                >
+                    <h1
+                        class={`sliderP leading-[1] font-semibold hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${
+                            justifyCenter
+                                ? "max-w-[782px] !font-light tracking-wider !mx-auto mb-[51px] lg:mb-[154px] leading-6"
+                                : ""
+                        }`}
+                        dangerouslySetInnerHTML={{ __html: title ?? "" }}
+                        style={{ lineHeight: lineHeightTitle || "" }}
+                    />
+                    <h1
+                        class={`sliderP mx-6 leading-[1] font-semibold mb-7 lg:mb-[66px] lg:hidden ${
+                            justifyCenter
+                                ? "max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6"
+                                : ""
+                        }`}
+                        dangerouslySetInnerHTML={{ __html: titleMobile ?? "" }}
+                        style={{ lineHeight: lineHeightTitleMobile || "" }}
+                    />
                     {/* Desktop view */}
                     <ul class="hidden lg:flex gap-[18px] mx-6 xl:mx-0">
                         {image?.map((img) => (
                             <li>
                                 <a href={img.link}>
                                     <Image
-                                        src={img.desktop ?? ''}
+                                        src={img.desktop ?? ""}
                                         alt={img.alt}
                                         width={img.width ?? 386}
                                         height={img.height ?? 563}
@@ -73,7 +127,7 @@ function HeroTitleImages({ title, lineHeightTitle, titleMobile, lineHeightTitleM
                             >
                                 <a href={img.link}>
                                     <Image
-                                        src={img.mobile ?? ''}
+                                        src={img.mobile ?? ""}
                                         alt={img.alt}
                                         width={img.widthMobile ?? 278}
                                         height={img.heightMobile ?? 403}
@@ -86,43 +140,55 @@ function HeroTitleImages({ title, lineHeightTitle, titleMobile, lineHeightTitleM
                     </Slider>
                     <SliderJS rootId={id} />
 
-                    {Array.isArray(mainImage) && mainImage.map((main) => (
-                        <div class="flex flex-col justify-center items-center gap-7 lg:gap-16 mb-6 mt-7 lg:mt-[48px]">
-                            <>
-                                <Image
-                                    src={main.desktop ?? ''}
-                                    alt={main.finalText}
-                                    width={1210}
-                                    height={591}
-                                    loading="lazy"
-                                    decoding="async"
-                                    class="hidden lg:block" />
+                    {Array.isArray(mainImage) &&
+                        mainImage.map((main) => (
+                            <div class="flex flex-col justify-center items-center gap-7 lg:gap-16 mb-6 mt-7 lg:mt-[48px]">
+                                <>
+                                    <Image
+                                        src={main.desktop ?? ""}
+                                        alt={main.finalText}
+                                        width={1210}
+                                        height={591}
+                                        loading="lazy"
+                                        decoding="async"
+                                        class="hidden lg:block"
+                                    />
 
-                                <Image
-                                    src={main.mobile ?? ''}
-                                    alt={main.finalText}
-                                    width={376}
-                                    height={186}
-                                    loading="lazy"
-                                    decoding="async"
-                                    class="lg:hidden w-full" />
-                            </>
+                                    <Image
+                                        src={main.mobile ?? ""}
+                                        alt={main.finalText}
+                                        width={376}
+                                        height={186}
+                                        loading="lazy"
+                                        decoding="async"
+                                        class="lg:hidden w-full"
+                                    />
+                                </>
 
-                            {main.finalText && <span class="text-2xl font-normal text-[#212121] text-center" dangerouslySetInnerHTML={{ __html: main.finalText }} />}
-                        </div>
-                    ))}
-
+                                {main.finalText && (
+                                    <span
+                                        class="text-2xl font-normal text-[#212121] text-center"
+                                        dangerouslySetInnerHTML={{
+                                            __html: main.finalText,
+                                        }}
+                                    />
+                                )}
+                            </div>
+                        ))}
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default HeroTitleImages;
 
 export function LoadingFallback() {
     return (
-        <div style={{ height: "650px" }} class="flex justify-center items-center">
+        <div
+            style={{ height: "650px" }}
+            class="flex justify-center items-center"
+        >
             <span class="loading loading-spinner" />
         </div>
     );

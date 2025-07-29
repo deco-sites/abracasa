@@ -178,6 +178,82 @@
           }
         ]
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png",
+            "mobile": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png",
+            "alt": "Processo criativo de desenvolvimento de móveis com escolha de tecidos e desenhos preliminares."
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/ef67d6ef-e9bc-4f25-84f1-33bc9efce59f/_MG_3001-Aprimorado-NR-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/ef67d6ef-e9bc-4f25-84f1-33bc9efce59f/_MG_3001-Aprimorado-NR-1.jpg",
+            "alt": "Amostras de tecidos e materiais para móveis organizadas em prateleira com paletas de cores e catálogos"
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/ab972616-5cc7-47df-86ed-d784e5540230/_MG_5073-Aprimorado-NR-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/ab972616-5cc7-47df-86ed-d784e5540230/_MG_5073-Aprimorado-NR-1.jpg",
+            "alt": "Amostras de revestimento em couro sintético em diferentes cores sobre mesa de madeira"
+          }
+        ],
+        "justifyCenter": true,
+        "title": "<p><strong><span style=\"font-size: 19pt\">Valorizamos a simplicidade e a leveza dos detalhes.</span></strong></p>",
+        "titleMobile": "<p style=\"text-align: center\"><strong>Valorizamos a simplicidade e a leveza dos detalhes.</strong></p>",
+        "reverse": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
+          "count": 48,
+          "fq": "H:450",
+          "sort": "OrderByPriceASC",
+          "filters": "dynamic",
+          "advancedConfigs": {
+            "includeOriginalAttributes": []
+          },
+          "useCollectionName": false
+        },
+        "cardLayout": {
+          "hide": {
+            "productDescription": true,
+            "skuSelector": true
+          },
+          "basics": {
+            "contentAlignment": "Left",
+            "oldPriceSize": "Small"
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          }
+        },
+        "layout": {
+          "columns": {
+            "mobile": 2,
+            "desktop": 4
+          },
+          "variant": "drawer"
+        },
+        "hiddenFilters": [
+          "designers",
+          "marcas",
+          "encomenda",
+          "departments",
+          "brands",
+          "moveis",
+          "decoração",
+          "ambientes",
+          "móveis"
+        ]
+      }
     }
   ],
   "seo": {
