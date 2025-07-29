@@ -120,7 +120,7 @@ function ColectionHero({ image, text }: Props) {
 
                     {text?.[1]?.title && (
                         <div
-                            class="text-left md:px-0"
+                            class="text-left md:px-0 max-w-[394px]"
                             style={{
                                 lineHeight: `${
                                     text?.[1]?.lineHeightTitle ?? 26
