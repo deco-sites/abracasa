@@ -201,13 +201,6 @@
               "@type": "SiteNavigationElement",
               "image": [],
               "children": []
-            },
-            {
-              "url": "/moveis/office/estantes",
-              "name": "Estantes",
-              "@type": "SiteNavigationElement",
-              "image": [],
-              "children": []
             }
           ]
         },
