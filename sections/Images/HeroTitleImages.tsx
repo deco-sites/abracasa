@@ -45,9 +45,7 @@ export const getLayoutClasses = ({
 }: {
     reverse?: boolean;
 }) => {
-    const reversePosition = reverse
-        ? "flex-col-reverse gap-[117px]"
-        : "flex-col";
+    const reversePosition = reverse ? "flex-col-reverse" : "flex-col";
     const container = reverse
         ? `my-[68px] lg:my-[170px]`
         : "mt-[72px] lg:mt-[172px]";
@@ -83,22 +81,32 @@ function HeroTitleImages(
                     class={`flex font-inter ${reversePosition}`}
                 >
                     <h1
-                        class={`sliderP leading-[1] font-semibold hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${
+                        class={`sliderP leading-[1]  hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${
+                            reverse &&
+                            " pt-[117px]"
+                        } ${
                             justifyCenter
                                 ? "max-w-[782px] !font-light tracking-wider !mx-auto mb-[51px] lg:mb-[154px] leading-6"
                                 : ""
                         }`}
                         dangerouslySetInnerHTML={{ __html: title ?? "" }}
-                        style={{ lineHeight: lineHeightTitle || "" }}
+                        style={{
+                            lineHeight: lineHeightTitle || "",
+                            fontWeight: `${reverse ? 700 : 600}`,
+                            fontSize: `${reverse && "26px"}`,
+                        }}
                     />
                     <h1
-                        class={`sliderP mx-6 leading-[1] font-semibold mb-7 lg:mb-[66px] lg:hidden ${
+                        class={`sliderP mx-6 leading-[1] font-semibold mb-7 pt-[49px] lg:mb-[66px] lg:hidden ${
                             justifyCenter
                                 ? "max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6"
                                 : ""
                         }`}
                         dangerouslySetInnerHTML={{ __html: titleMobile ?? "" }}
-                        style={{ lineHeight: lineHeightTitleMobile || "" }}
+                        style={{
+                            lineHeight: lineHeightTitleMobile || "",
+                            fontWeight: `${reverse ? 700 : 600}`,
+                        }}
                     />
                     {/* Desktop view */}
                     <ul class="hidden lg:flex gap-[18px] mx-6 xl:mx-0">
@@ -112,6 +120,10 @@ function HeroTitleImages(
                                         height={img.height ?? 563}
                                         loading="lazy"
                                         decoding="async"
+                                        class={` ${
+                                            reverse &&
+                                            "min-h-[580px] object-cover h-full w-full"
+                                        }`}
                                     />
                                 </a>
                             </li>
@@ -133,6 +145,10 @@ function HeroTitleImages(
                                         height={img.heightMobile ?? 403}
                                         loading="lazy"
                                         decoding="async"
+                                        class={` ${
+                                            reverse &&
+                                            "min-h-[403px] object-cover h-full w-full"
+                                        }`}
                                     />
                                 </a>
                             </Slider.Item>

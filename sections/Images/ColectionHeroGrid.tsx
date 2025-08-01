@@ -197,16 +197,11 @@ function ColectionHero({ image, text }: Props) {
                         ))}
                     </Slider>
                     <SliderJS rootId={id} />
-                    {text?.[1]?.title && (
+                    {text?.[1]?.contentMobile && (
                         <div
                             class="text-left text-sm hyphens-auto md:hidden block px-6 pt-[68px]"
-                            style={{
-                                lineHeight: `${
-                                    text?.[1]?.lineHeightTitleMobile ?? 20
-                                }px`,
-                            }}
                             dangerouslySetInnerHTML={{
-                                __html: text?.[1]?.titleMobile ?? "",
+                                __html: text?.[1]?.contentMobile ?? "",
                             }}
                         />
                     )}

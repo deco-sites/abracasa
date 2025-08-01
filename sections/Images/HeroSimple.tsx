@@ -26,6 +26,7 @@ interface Props {
     title?: string;
     letterSpacingTitle?: number;
     textContent?: RichText;
+    textContentMobile?: RichText;
     button?: {
         buttonText?: string;
         buttonLink?: string;
@@ -78,6 +79,7 @@ function HeroSimple(
         title,
         letterSpacingTitle,
         textContent,
+        textContentMobile,
         button,
     }: Props,
 ) {
@@ -134,9 +136,17 @@ function HeroSimple(
                             {title}
                         </span>
                         <span
-                            class={`${textContentClass}`}
+                            class={`${textContentClass} ${
+                                textContentMobile ? "hidden md:block" : ""
+                            }`}
                             dangerouslySetInnerHTML={{
                                 __html: textContent ?? "",
+                            }}
+                        />
+                        <span
+                            class={`${textContentClass} hyphens-auto md:hidden`}
+                            dangerouslySetInnerHTML={{
+                                __html: textContentMobile ?? "",
                             }}
                         />
                         {button && (

@@ -4761,6 +4761,9 @@ details.collapse summary::-webkit-details-marker {
 .min-h-\[36px\] {
   min-height: 36px;
 }
+.min-h-\[403px\] {
+  min-height: 403px;
+}
 .min-h-\[40px\] {
   min-height: 40px;
 }
@@ -4781,6 +4784,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-h-\[56\.15px\] {
   min-height: 56.15px;
+}
+.min-h-\[580px\] {
+  min-height: 580px;
 }
 .min-h-\[90px\] {
   min-height: 90px;
@@ -5533,9 +5539,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-9 {
   gap: 2.25rem;
-}
-.gap-\[117px\] {
-  gap: 117px;
 }
 .gap-\[16px\] {
   gap: 16px;
@@ -6478,11 +6481,17 @@ details.collapse summary::-webkit-details-marker {
 .pt-8 {
   padding-top: 2rem;
 }
+.pt-\[117px\] {
+  padding-top: 117px;
+}
 .pt-\[27px\] {
   padding-top: 27px;
 }
 .pt-\[45px\] {
   padding-top: 45px;
+}
+.pt-\[49px\] {
+  padding-top: 49px;
 }
 .pt-\[50px\] {
   padding-top: 50px;

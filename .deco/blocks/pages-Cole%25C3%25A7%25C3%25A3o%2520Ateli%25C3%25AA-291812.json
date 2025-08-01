@@ -89,10 +89,11 @@
           "mobileHeight": 416,
           "alt": " Imagem Design Exclusivo"
         },
-        "textContent": "<p><span style=\"color: #626262\">Pensamos em tudo isso no momento de criação.<br>Na troca de ideias e no movimento em busca de novas <br>peças para compor um ambiente, nasce um Produto.&nbsp;</span></p>",
+        "textContent": "<p><span style=\"color: rgb(98, 98, 98)\">Pensamos em tudo isso no momento de criação.<br>Na troca de ideias e no movimento em busca de novas <br>peças para compor um ambiente, nasce um </span><strong><span style=\"color: rgb(98, 98, 98)\">Produto.&nbsp;</span></strong></p>",
         "reverse": true,
         "paddingX": true,
-        "title": "design exclusivo"
+        "title": "design exclusivo",
+        "textContentMobile": "<p><span style=\"color: rgb(98, 98, 98)\">Pensamos em tudo isso no momento de criação. Na troca de ideias e no movimento em busca de novas peças para compor um ambiente, nasce um </span><strong><span style=\"color: rgb(98, 98, 98)\">Produto.&nbsp;</span></strong></p>"
       }
     },
     {
@@ -193,7 +194,8 @@
           {
             "desktop": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png",
             "mobile": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png",
-            "alt": "Processo criativo de desenvolvimento de móveis com escolha de tecidos e desenhos preliminares."
+            "alt": "Processo criativo de desenvolvimento de móveis com escolha de tecidos e desenhos preliminares.",
+            "height": 580
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/ef67d6ef-e9bc-4f25-84f1-33bc9efce59f/_MG_3001-Aprimorado-NR-1.jpg",
