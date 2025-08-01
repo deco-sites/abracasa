@@ -36,6 +36,8 @@ export interface Props {
 
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
+
+  categoryId?: string | null;
 }
 
 function NotFound() {
@@ -55,11 +57,12 @@ function Result({
   startingPage = 0,
   isCategoriesFilterActive = false,
   hiddenFilters = [],
+  categoryId
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo.recordPerPage || products.length;
   const id = useId();
-
+  console.log(categoryId, "Result")
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
 
@@ -75,6 +78,7 @@ function Result({
         <SearchControls
           sortParam={sortParam}
           sortOptions={sortOptions}
+          categoryId={categoryId}
           filters={filters}
           breadcrumb={breadcrumb}
           displayFilter={layout?.variant === "drawer"}
@@ -186,7 +190,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   }));
 
   let filteredProducts = updatedProducts;
-  if (url.searchParams.has("readyDelivery")) {
+  if (url.searchParams.has("prontaEntrega")) {
     filteredProducts = updatedProducts.filter((product) =>
       product.additionalProperty?.some((property) =>
         property.value?.includes("Pronta Entrega")
@@ -208,7 +212,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
   const getCategoryId = await fetchPageId();
   categoryId = getCategoryId.id;
-
+  console.log(categoryId, "loader")
   const fetchAtelieProducts = async (
     ctx: AppContext,
     categoryId: string | null,
@@ -245,7 +249,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     if (url.searchParams.has("addAtelie")) {
       filteredProduct = filterByAdditionalProperty(
         filteredProduct,
-        "Ateliê Casa",
+        "Atelie Casa",
       );
     }
     if (url.searchParams.has("addAtelieEntrega")) {
@@ -255,7 +259,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
       );
     }
   } else if (url.searchParams.has("add")) {
-    const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "330");
+    const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "401");
    return { ...props, page: getAtelieProducts };
   } else if (url.searchParams.has("addAtelie")) {
     const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "450");

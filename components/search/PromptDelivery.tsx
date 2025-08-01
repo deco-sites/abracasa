@@ -3,7 +3,7 @@ import { useSignal } from "@preact/signals";
 
 export default function PromptDelivery() {
   const urlSearchParams = new URLSearchParams(window.location.search);
-  const prontaEntregaAtivo = urlSearchParams.has("readyDelivery");
+  const prontaEntregaAtivo = urlSearchParams.has("prontaEntrega");
   const atelieAtivo = urlSearchParams.has("addAtelie");
 
   const enabled = useSignal(prontaEntregaAtivo || urlSearchParams.has("addAtelieEntrega"));
@@ -15,12 +15,12 @@ export default function PromptDelivery() {
     searchParams.delete("add");
     searchParams.delete("addAtelie");
     searchParams.delete("addAtelieEntrega");
-    searchParams.delete("readyDelivery");
+    searchParams.delete("prontaEntrega");
 
     if (ativaProntaEntrega && atelieAtivo) {
       searchParams.set("addAtelieEntrega", "true");
     } else if (ativaProntaEntrega) {
-      searchParams.set("readyDelivery", "true");
+      searchParams.set("prontaEntrega", "true");
     } else if (atelieAtivo) {
       searchParams.set("addAtelie", "atelieCasa");
     }

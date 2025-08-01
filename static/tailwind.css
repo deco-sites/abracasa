@@ -7982,6 +7982,10 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 2rem;
   }
 
+  .sm\:mt-\[15px\] {
+    margin-top: 15px;
+  }
+
   .sm\:block {
     display: block;
   }

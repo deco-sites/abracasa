@@ -19,28 +19,28 @@ export type Props = Pick<
   displayFilter?: boolean;
   isCategoriesFilterActive?: boolean;
   hiddenFilters?: string[];
+  categoryId?: string;
 };
 
-function updateUrlParams(prontaEntrega: boolean, atelieCadabra: boolean) {
-  const urlSearchParams = new URLSearchParams(window.location.search);
+  const updateUrlParams = (ativaProntaEntrega: boolean, atelieAtivo: boolean) => {
+    const url = new URL(window.location.href);
+    const searchParams = url.searchParams;
 
-  urlSearchParams.delete("readyDelivery");
-  urlSearchParams.delete("addAtelie");
-  urlSearchParams.delete("addAtelieEntrega");
+    searchParams.delete("add");
+    searchParams.delete("addAtelie");
+    searchParams.delete("addAtelieEntrega");
+    searchParams.delete("prontaEntrega");
 
-  if (prontaEntrega && atelieCadabra) {
-    urlSearchParams.set("addAtelieEntrega", "true");
-  } else {
-    if (prontaEntrega) {
-      urlSearchParams.set("readyDelivery", "true");
+    if (ativaProntaEntrega && atelieAtivo) {
+      searchParams.set("addAtelieEntrega", "true");
+    } else if (ativaProntaEntrega) {
+      searchParams.set("prontaEntrega", "true");
+    } else if (atelieAtivo) {
+      searchParams.set("addAtelie", "atelieCasa");
     }
-    if (atelieCadabra) {
-      urlSearchParams.set("addAtelie", "atelieCadabra");
-    }
-  }
 
-  window.location.search = urlSearchParams.toString();
-}
+    window.location.href = `${url.pathname}?${searchParams.toString()}`;
+  };
 
 
 function AtelieCasaToggle() {
@@ -84,10 +84,11 @@ export default function SearchControls({
   sortOptions,
   isCategoriesFilterActive,
   hiddenFilters = [],
+  categoryId
 }: Props) {
   const open = useSignal(false);
   const currentUrl = useSignal("");
-
+  console.log(categoryId, "SearchControls")
   useEffect(() => {
     if (IS_BROWSER) {
       currentUrl.value = globalThis?.location?.href;
@@ -133,7 +134,7 @@ export default function SearchControls({
     >
       <div class="flex w-full sm:h-full sm:border-t sm:border-base-200">
         <div class="flex flex-col justify-between xl:container xl:max-w-[85%] h-full w-full sm:flex-row sm:mb-0 sm:p-0 sm:gap-4">
-          <div class="flex lg:hidden flex-col items-start gap-2 border-b border-base-200 sm:border-none pb-4 w-full">
+          <div class="flex lg:hidden sm:mt-[15px] flex-col items-start gap-2 border-b border-base-200 sm:border-none pb-4 w-full">
             <div class="flex flex-row items-center gap-[11px] w-full">
               <Button
                 hasBtnClass={false}
@@ -165,8 +166,12 @@ export default function SearchControls({
             </div>
 
             <div class="flex flex-row sm:flex-row gap-[11px] w-full">
-              <PromptDelivery />
-              <AtelieCasaToggle />
+              { categoryId === null ? "" : (
+                <>
+                <PromptDelivery />
+                <AtelieCasaToggle />
+                </>
+              )}
             </div>
           </div>
 
@@ -203,8 +208,12 @@ export default function SearchControls({
             </div>
 
             <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[486px]">
-              <PromptDelivery />
-              <AtelieCasaToggle />              
+              { categoryId === null ? "" : (
+                <>
+                <PromptDelivery />
+                <AtelieCasaToggle />
+                </>
+              )}             
               {sortOptions.length > 0 && (
                 <Sort sortParam={sortParam} sortOptions={sortOptions} />
               )}
