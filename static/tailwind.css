@@ -5142,6 +5142,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[440px\] {
   max-width: 440px;
 }
+.max-w-\[447px\] {
+  max-width: 447px;
+}
 .max-w-\[46px\] {
   max-width: 46px;
 }
@@ -5575,6 +5578,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[6px\] {
   gap: 6px;
+}
+.gap-\[76px\] {
+  gap: 76px;
 }
 .\!gap-x-\[0px\] {
   -moz-column-gap: 0px !important;

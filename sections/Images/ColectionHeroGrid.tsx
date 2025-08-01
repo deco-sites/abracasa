@@ -30,14 +30,14 @@ export interface Props {
      *  @title Adicionar texto
      */
     text?: {
-        /** @description turn this option true to limit title max width */
-        limitTitleText?: boolean;
-        title?: RichText;
         /** @description Line Height of the text */
         lineHeightTitle?: number;
-        titleMobile?: RichText;
+        title?: RichText;
+        content?: RichText;
         /** @description Line Height of the text */
         lineHeightTitleMobile?: number;
+        titleMobile?: RichText;
+        contentMobile?: RichText;
     }[];
 }
 
@@ -49,19 +49,32 @@ function ColectionHero({ image, text }: Props) {
                 {/* Desktop */}
                 {/* Coluna Esquerda */}
                 <div class="flex-col hidden md:flex gap-[43px] lg:gap-[113px] pt-[82px]">
-                    {text?.[0]?.title && (
-                        <div
-                            class="text-left md:px-0"
-                            style={{
-                                lineHeight: `${
-                                    text?.[0]?.lineHeightTitle ?? 26
-                                }px`,
-                            }}
-                            dangerouslySetInnerHTML={{
-                                __html: text?.[0]?.title ?? "",
-                            }}
-                        />
-                    )}
+                    <div class={"flex flex-col gap-[76px]"}>
+                        {text?.[0]?.title && (
+                            <div
+                                class="text-left md:px-0"
+                                style={{
+                                    lineHeight: `${
+                                        text?.[0]
+                                            ?.lineHeightTitle ?? 26
+                                    }px`,
+                                }}
+                                dangerouslySetInnerHTML={{
+                                    __html: text?.[0]?.title ??
+                                        "",
+                                }}
+                            />
+                        )}
+                        {text?.[0]?.content && (
+                            <div
+                                class="text-left md:px-0"
+                                dangerouslySetInnerHTML={{
+                                    __html: text?.[0]?.content ??
+                                        "",
+                                }}
+                            />
+                        )}
+                    </div>
 
                     {image?.[0] && (
                         <a
@@ -127,7 +140,7 @@ function ColectionHero({ image, text }: Props) {
                                 }px`,
                             }}
                             dangerouslySetInnerHTML={{
-                                __html: text?.[1]?.title ?? "",
+                                __html: text?.[1]?.content ?? "",
                             }}
                         />
                     )}
@@ -137,19 +150,33 @@ function ColectionHero({ image, text }: Props) {
                 <div
                     class={"w-full md:hidden flex flex-col"}
                 >
-                    {text?.[0]?.title && (
-                        <div
-                            class="text-left md:hidden block text-sm hyphens-auto px-6 md:px-0 pb-[43px]"
-                            style={{
-                                lineHeight: `${
-                                    text?.[0]?.lineHeightTitleMobile ?? 20
-                                }px`,
-                            }}
-                            dangerouslySetInnerHTML={{
-                                __html: text?.[0]?.titleMobile ?? "",
-                            }}
-                        />
-                    )}
+                    <div class={"flex flex-col gap-[18px] pb-[43px]"}>
+                        {text?.[0]?.title && (
+                            <div
+                                class="text-left px-6 max-w-[447px]"
+                                style={{
+                                    lineHeight: `${
+                                        text?.[0]
+                                            ?.lineHeightTitle ?? 26
+                                    }px`,
+                                }}
+                                dangerouslySetInnerHTML={{
+                                    __html: text?.[0]?.titleMobile ??
+                                        "",
+                                }}
+                            />
+                        )}
+                        {text?.[0]?.contentMobile && (
+                            <div
+                                class="text-left  block text-sm hyphens-auto px-6 "
+                                dangerouslySetInnerHTML={{
+                                    __html: text?.[0]?.contentMobile ??
+                                        "",
+                                }}
+                            />
+                        )}
+                    </div>
+
                     <Slider class="carousel carousel-center snap-mandatory scroll-smooth sm:snap-end gap-[17px] col-span-full row-start-2 row-end-5 pl-6 ">
                         {image?.map((img, index) => (
                             <Slider.Item

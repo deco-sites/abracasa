@@ -159,13 +159,18 @@
         },
         "text": [
           {
-            "title": "<p><span style=\"color: #212121; font-size: 52pt\">paixão <br>pelo design</span><br><br><span style=\"color: #5b5b5b\">Partimos sempre de um olhar atento para os materiais. Seja madeira, ferro ou tecido, buscamos explorar ao máximo o que cada um pode oferecer em termos de acabamento, encaixes e texturas.</span></p>",
             "limitTitleText": false,
-            "titleMobile": "<p><span style=\"color: #212121; font-size: 30pt\">paixão<br>pelo design</span><br><br><span style=\"color: #5b5b5b\">Partimos sempre de um olhar atento para os materiais. Seja madeira, ferro ou tecido, buscamos explorar ao máximo o que cada um pode oferecer em termos de acabamento, encaixes e texturas.</span><br><br></p>"
+            "titleMobile": "<h2><strong><span style=\"color: #212121; font-size: 30pt\">paixão <br>pelo design</span></strong></h2>",
+            "content": "<p><span style=\"color: #5b5b5b\">Partimos sempre de um olhar atento para os materiais. Seja madeira, ferro ou tecido, buscamos explorar ao máximo o que cada um pode oferecer em termos de acabamento, encaixes e texturas.</span></p>",
+            "title": "<h2><strong><span style=\"color: #212121; font-size: 52pt\">paixão </span></strong><br><strong><span style=\"color: #212121; font-size: 52pt\">pelo design</span></strong></h2>",
+            "lineHeightTitle": 40,
+            "contentMobile": "<p><span style=\"color: rgb(91, 91, 91)\">Partimos sempre de um olhar atento para os materiais. Seja madeira, ferro ou tecido, buscamos explorar ao máximo o que cada um pode oferecer em termos de acabamento, encaixes e texturas.</span></p>",
+            "lineHeightTitleMobile": 24
           },
           {
-            "title": "<p><span style=\"color: #5b5b5b\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>",
-            "titleMobile": "<p><span style=\"color: #5b5b5b\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>"
+            "titleMobile": "<p></p>",
+            "content": "<p><span style=\"color: #5b5b5b\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>",
+            "contentMobile": "<p><span style=\"color: rgb(91, 91, 91)\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>"
           }
         ],
         "image": [
