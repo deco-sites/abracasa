@@ -11,17 +11,71 @@ import type { ProductListingPage } from "apps/commerce/types.ts";
 import { useEffect } from "preact/hooks";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-export type Props =
-  & Pick<
-    ProductListingPage,
-    "filters" | "breadcrumb" | "sortOptions"
-  >
-  & {
-    sortParam?: "legacy" | "intelligent";
-    displayFilter?: boolean;
-    isCategoriesFilterActive?: boolean;
-    hiddenFilters?: string[];
+export type Props = Pick<
+  ProductListingPage,
+  "filters" | "breadcrumb" | "sortOptions"
+> & {
+  sortParam?: "legacy" | "intelligent";
+  displayFilter?: boolean;
+  isCategoriesFilterActive?: boolean;
+  hiddenFilters?: string[];
+};
+
+function updateUrlParams(prontaEntrega: boolean, atelieCadabra: boolean) {
+  const urlSearchParams = new URLSearchParams(window.location.search);
+
+  urlSearchParams.delete("readyDelivery");
+  urlSearchParams.delete("addAtelie");
+  urlSearchParams.delete("addAtelieEntrega");
+
+  if (prontaEntrega && atelieCadabra) {
+    urlSearchParams.set("addAtelieEntrega", "true");
+  } else {
+    if (prontaEntrega) {
+      urlSearchParams.set("readyDelivery", "true");
+    }
+    if (atelieCadabra) {
+      urlSearchParams.set("addAtelie", "atelieCadabra");
+    }
+  }
+
+  window.location.search = urlSearchParams.toString();
+}
+
+
+function AtelieCasaToggle() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const enabled = useSignal(
+    urlParams.has("addAtelie") || urlParams.has("addAtelieEntrega"),
+  );
+
+  const prontaEntregaEnabled = urlParams.has("add") ||
+    urlParams.has("addAtelieEntrega");
+
+  const handleClick = () => {
+    updateUrlParams(prontaEntregaEnabled, !enabled.value);
   };
+
+  return (
+    <div className="w-full flex items-center justify-between gap-2 bg-[#f2f2f2] py-[11px] px-3 lg:p-[15px] lg:pb-[11px] max-w-[160px] rounded">
+      <span className="leading-[22px] text-[#555555] text-[14px] lg:text-[13px] font-sans">
+        Ateliê Casa
+      </span>
+      <button
+        onClick={handleClick}
+        className={`w-[38px] h-5 flex items-center rounded-full transition-colors ${
+          enabled.value ? "bg-[#4E4D4D] p-1" : "bg-[#B4B4B4] p-0.5"
+        }`}
+      >
+        <div
+          className={`h-4 w-4 bg-white rounded-full shadow-md transform transition ${
+            enabled.value ? "translate-x-4" : "translate-x-0"
+          }`}
+        />
+      </button>
+    </div>
+  );
+}
 
 export default function SearchControls({
   filters,
@@ -79,19 +133,27 @@ export default function SearchControls({
     >
       <div class="flex w-full sm:h-full sm:border-t sm:border-base-200">
         <div class="flex flex-col justify-between xl:container xl:max-w-[85%] h-full w-full sm:flex-row sm:mb-0 sm:p-0 sm:gap-4">
-          {/* Mobile Filters */}
-          <div class="flex lg:hidden flex-row items-start gap-2 border-b border-base-200 sm:border-none pb-4 w-full">
-            <div class="flex items-center gap-2">
+          <div class="flex lg:hidden flex-col items-start gap-2 border-b border-base-200 sm:border-none pb-4 w-full">
+            <div class="flex flex-row items-center gap-[11px] w-full">
               <Button
                 hasBtnClass={false}
-                class={displayFilter
-                  ? "flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"
-                  : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[15px] w-full max-w-[80px] py-2 px-[13px]"}
+                class={
+                  displayFilter
+                    ? "flex items-center justify-between text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
+                    : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
+                }
                 onClick={() => {
                   open.value = true;
                 }}
               >
                 Filtrar
+                <Icon
+                  id="Filter"
+                  width={20}
+                  height={18}
+                  strokeWidth={2}
+                  loading="lazy"
+                />
               </Button>
 
               {sortOptions.length > 0 && (
@@ -102,12 +164,12 @@ export default function SearchControls({
               )}
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-5 w-full max-w-[169px]">
+            <div class="flex flex-row sm:flex-row gap-[11px] w-full">
               <PromptDelivery />
+              <AtelieCasaToggle />
             </div>
           </div>
 
-          {/* Desktop Filters */}
           <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-12 mt-[86px] w-full">
             <div class="flex items-center gap-4">
               <Filters
@@ -117,33 +179,32 @@ export default function SearchControls({
               />
               {currentUrl.value &&
                 new URL(currentUrl.value).search !== "" &&
-                (!new URL(currentUrl.value).searchParams.has("readyDelivery") &&
-                  ((() => {
-                    const searchParams = new URL(currentUrl.value).searchParams;
-                    let paramCount = 0;
+                !new URL(currentUrl.value).searchParams.has("readyDelivery") &&
+                (() => {
+                  const searchParams = new URL(currentUrl.value).searchParams;
+                  let paramCount = 0;
 
-                    searchParams.forEach((_, key) => {
-                      if (key !== "_gl" && key !== "page") {
-                        paramCount++;
-                      }
-                    });
+                  searchParams.forEach((_, key) => {
+                    if (key !== "_gl" && key !== "page") {
+                      paramCount++;
+                    }
+                  });
 
-                    return paramCount > 0;
-                  })())) &&
-                (
+                  return paramCount > 0;
+                })() && (
                   <button
                     aria-label="limpar filtros"
                     onClick={removeSort}
-                    class="text-[15px] lg:text-[13px] leading-[22px] text-[#494949] font-normal"
+                    class="text-[14px] lg:text-[13px] leading-[22px] text-[#494949] font-normal"
                   >
                     Limpar filtros
                   </button>
                 )}
             </div>
 
-            <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[339px]">
+            <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[486px]">
               <PromptDelivery />
-
+              <AtelieCasaToggle />              
               {sortOptions.length > 0 && (
                 <Sort sortParam={sortParam} sortOptions={sortOptions} />
               )}

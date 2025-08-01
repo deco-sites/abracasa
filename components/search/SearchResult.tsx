@@ -135,6 +135,9 @@ function Result({
 export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const url = new URL(req.url);
   const layoutValue = url.searchParams.get("layout");
+  const currentPathName = url.pathname;
+  let filteredProduct = props.page?.products || [];
+  let categoryId: string | null = null;
 
   const updatedLayout = {
     mobile: Number(layoutValue) || props?.layout?.columns?.mobile || 1,
@@ -190,11 +193,83 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
       )
     );
   }
+  
+   const fetchPageId = async () => {
+    try {
+      const response = await fetch(
+        `https://abracasa.vtexcommercestable.com.br/api/catalog_system/pub/portal/pagetype${currentPathName}`,
+      );
+      return await response.json();
+    } catch (error) {
+      console.error(`Error`, error);
+      return null;
+    }
+  };
+
+  const getCategoryId = await fetchPageId();
+  categoryId = getCategoryId.id;
+
+  const fetchAtelieProducts = async (
+    ctx: AppContext,
+    categoryId: string | null,
+    clusterId: string,
+  ) => {
+    try {
+      return await ctx.invoke.vtex.loaders.legacy.productListingPage({
+        fq: `C:${categoryId},productClusterIds:${clusterId}`,
+      });
+    } catch (error) {
+      console.error("Error fetching atelie products:", error);
+      return { products: [] };
+    }
+  };
+
+    const filterByAdditionalProperty = (
+    products: Product[],
+    value: string,
+  ): Product[] => {
+    return products.filter((product) =>
+      product.additionalProperty?.some((property) =>
+        property.value?.includes(value)
+      )
+    ) || [];
+  };
+
+    if (url.searchParams.has("map")) {
+    if (url.searchParams.has("add")) {
+      filteredProduct = filterByAdditionalProperty(
+        filteredProduct,
+        "Pronta Entrega",
+      );
+    }
+    if (url.searchParams.has("addAtelie")) {
+      filteredProduct = filterByAdditionalProperty(
+        filteredProduct,
+        "Ateliê Casa",
+      );
+    }
+    if (url.searchParams.has("addAtelieEntrega")) {
+      filteredProduct = filterByAdditionalProperty(
+        filteredProduct,
+        "Ateliê + Pronta entrega",
+      );
+    }
+  } else if (url.searchParams.has("add")) {
+    const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "330");
+   return { ...props, page: getAtelieProducts };
+  } else if (url.searchParams.has("addAtelie")) {
+    const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "450");
+    return { ...props, page: getAtelieProducts };
+  } else if (url.searchParams.has("addAtelieEntrega")) {
+    const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "558");
+    return { ...props, page: getAtelieProducts };
+  }
 
   return {
     ...props,
     page: { ...props.page, products: filteredProducts },
     layout: { ...props.layout, columns: updatedLayout },
+    categoryId
   };
 };
 

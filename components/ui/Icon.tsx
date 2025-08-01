@@ -25,6 +25,7 @@ export type AvailableIcons =
   | "Spotify"
   | "Pinterest"
   | "FilterList"
+  | "Filter"
   | "Heart"
   | "HeartOutline"
   | "Store"
