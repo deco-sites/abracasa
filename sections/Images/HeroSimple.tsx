@@ -48,15 +48,15 @@ export const getLayoutClasses = ({
         : "max-w-[1196px] mx-6 md:mx-auto";
 
     const verticalSpacing = paddingX
-        ? "pt-[66px] lg:pt-[146]"
+        ? "pt-[66px] lg:pt-[146px]"
         : "py-24 md:py-36";
 
     const title = reverse
-        ? "text-[40px] md:text-[clamp(28px,4.5vw,70px)] lg:text-[clamp(28px,4.5vw,70px)] text-[#212121] font-semibold mb-[22px] md:mb-[59px] md:leading-[66px] leading-[44px] max-w-[295px] lg:max-w-[319px] w-full"
+        ? "text-[clamp(40px,4.5vw,70px)] leading-[clamp(48px,5vw,80px)] text-[#212121] font-semibold mb-[clamp(22px,4vw,59px)] max-w-[clamp(295px,30vw,319px)] w-full"
         : "text-[38px] text-[#555555] font-normal mb-4 md:text-[54px] w-full";
 
     const textContent = reverse
-        ? "text-sm md:text-base hyphens-auto md:hyphens-none text-[#626262]"
+        ? "text-sm md:text-base  text-[#626262]"
         : "font-normal mb-[22px] md:mb-[45px] leading-[28px]";
 
     return {
@@ -117,14 +117,16 @@ function HeroSimple(
                         class="hidden md:block"
                     />
                     <div class="flex flex-col">
-                        <span
-                            class="font-extralight text-base text-[#555555] md:text-[26px] w-full mt-[46px]"
-                            style={{
-                                letterSpacing: letterSpacingSubTitle || "",
-                            }}
-                        >
-                            {subTitle}
-                        </span>
+                        {subTitle && (
+                            <span
+                                class="font-extralight text-base text-[#555555] md:text-[26px] w-full mt-[46px]"
+                                style={{
+                                    letterSpacing: letterSpacingSubTitle || "",
+                                }}
+                            >
+                                {subTitle}
+                            </span>
+                        )}
                         <span
                             class={`${titleClass}`}
                             style={{ letterSpacing: letterSpacingTitle || "" }}
