@@ -131,7 +131,7 @@ function ColectionHero({ image, text }: Props) {
                         </a>
                     )}
 
-                    {text?.[1]?.title && (
+                    {text?.[1]?.content && (
                         <div
                             class="text-left md:px-0 max-w-[394px]"
                             style={{

@@ -47,7 +47,7 @@ export const getLayoutClasses = ({
 }) => {
     const reversePosition = reverse ? "flex-col-reverse" : "flex-col";
     const container = reverse
-        ? `my-[68px] lg:my-[170px]`
+        ? `pt-[68px] lg:pt-[170px]`
         : "mt-[72px] lg:mt-[172px]";
 
     return {
@@ -75,18 +75,17 @@ function HeroTitleImages(
     });
 
     return (
-        <div id={id} class={`${container}}`}>
+        <div id={id} class={`${container}`}>
             <div class="max-w-[1196px] mx-auto">
                 <div
                     class={`flex font-inter ${reversePosition}`}
                 >
                     <h1
                         class={`sliderP leading-[1]  hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${
-                            reverse &&
-                            " pt-[117px]"
+                            reverse ? " pt-[117px]" : "mb-[51px] lg:mb-[154px]"
                         } ${
                             justifyCenter
-                                ? "max-w-[782px] !font-light tracking-wider !mx-auto mb-[51px] lg:mb-[154px] leading-6"
+                                ? "max-w-[782px] !font-light tracking-wider !mx-auto leading-6"
                                 : ""
                         }`}
                         dangerouslySetInnerHTML={{ __html: title ?? "" }}

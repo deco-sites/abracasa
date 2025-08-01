@@ -170,8 +170,9 @@
           },
           {
             "titleMobile": "<p></p>",
-            "content": "<p><span style=\"color: #5b5b5b\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>",
-            "contentMobile": "<p><span style=\"color: rgb(91, 91, 91)\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>"
+            "content": "<p><span style=\"color: rgb(91, 91, 91)\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>",
+            "contentMobile": "<p><span style=\"color: rgb(91, 91, 91)\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>",
+            "title": "<p></p>"
           }
         ],
         "image": [

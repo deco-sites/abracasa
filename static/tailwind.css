@@ -4310,10 +4310,6 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 4px;
   margin-bottom: 4px;
 }
-.my-\[68px\] {
-  margin-top: 68px;
-  margin-bottom: 68px;
-}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -8992,11 +8988,6 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 4rem;
   }
 
-  .lg\:my-\[170px\] {
-    margin-top: 170px;
-    margin-bottom: 170px;
-  }
-
   .lg\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -9592,6 +9583,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pt-\[146px\] {
     padding-top: 146px;
+  }
+
+  .lg\:pt-\[170px\] {
+    padding-top: 170px;
   }
 
   .lg\:pt-\[82px\] {
