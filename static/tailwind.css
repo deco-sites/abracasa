@@ -4452,9 +4452,6 @@ details.collapse summary::-webkit-details-marker {
 .mt-\[5px\] {
   margin-top: 5px;
 }
-.mt-\[60px\] {
-  margin-top: 60px;
-}
 .mt-\[72px\] {
   margin-top: 72px;
 }
@@ -8800,11 +8797,6 @@ details.collapse summary::-webkit-details-marker {
     padding-right: 2rem;
   }
 
-  .md\:px-\[106px\] {
-    padding-left: 106px;
-    padding-right: 106px;
-  }
-
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -9044,10 +9036,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .lg\:mt-\[119px\] {
-    margin-top: 119px;
   }
 
   .lg\:mt-\[144px\] {

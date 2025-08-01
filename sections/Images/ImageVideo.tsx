@@ -100,14 +100,14 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                     style={{
                                         justifyContent: textDesktop?.position,
                                     }}
-                                    class={"w-full flex"}
+                                    class={"w-full hidden md:flex"}
                                 >
                                     <span
                                         dangerouslySetInnerHTML={{
                                             __html: textDesktop?.content ??
                                                 "",
                                         }}
-                                        className={` hidden md:block w-full lg:max-w-[770px] text-[#626262] `}
+                                        className={`  w-full lg:max-w-[770px] text-[#626262] `}
                                         style={{
                                             lineHeight: `${
                                                 textDesktop?.lineHeight ??
@@ -120,14 +120,14 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                     style={{
                                         justifyContent: textDesktop?.position,
                                     }}
-                                    class={"w-full flex"}
+                                    class={"w-full flex md:hidden"}
                                 >
                                     <span
                                         dangerouslySetInnerHTML={{
                                             __html: textMobile?.content ??
                                                 "",
                                         }}
-                                        className={` block md:hidden w-full text-sm text-[#626262] `}
+                                        className={` w-full text-sm text-[#626262] `}
                                         style={{
                                             lineHeight: `${
                                                 textMobile?.lineHeight ??
