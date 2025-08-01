@@ -35,7 +35,7 @@ export interface ImageProps {
  */
 export interface VideoProps {
     /** @title Tipo */
-    type?: "video";
+    type: "video";
     /** @title Vídeo */
     video: VideoWidget;
     /** @title Largura */
@@ -73,7 +73,7 @@ export const getLayoutClasses = ({
         case "video":
             return "pt-[60px] lg:pt-[119px]";
         default:
-            return "pt-16 md:pt-[145px]";
+            return "pt-[90px] md:pt-[119px]";
     }
 };
 
@@ -165,14 +165,14 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                     style={{
                                         justifyContent: textDesktop?.position,
                                     }}
-                                    class={"w-full flex"}
+                                    class={"w-full hidden md:flex "}
                                 >
                                     <span
                                         dangerouslySetInnerHTML={{
                                             __html: textDesktop?.content ??
                                                 "",
                                         }}
-                                        className={` hidden md:block w-full lg:max-w-[770px] text-[#626262] `}
+                                        className={` w-full lg:max-w-[770px] text-[#626262] `}
                                         style={{
                                             lineHeight: `${
                                                 textDesktop?.lineHeight ??
