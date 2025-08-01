@@ -53,7 +53,7 @@ export const getLayoutClasses = ({
         : "py-24 md:py-36";
 
     const title = reverse
-        ? "text-[clamp(40px,4.5vw,70px)] leading-[clamp(48px,5vw,80px)] text-[#212121] font-semibold mb-[clamp(22px,4vw,59px)] max-w-[clamp(295px,30vw,319px)] w-full"
+        ? "text-[clamp(40px,4.5vw,70px)] leading-[clamp(44px,5vw,66px)] text-[#212121] font-semibold mb-[clamp(22px,4vw,59px)] max-w-[clamp(295px,30vw,319px)] w-full"
         : "text-[38px] text-[#555555] font-normal mb-4 md:text-[54px] w-full";
 
     const textContent = reverse
