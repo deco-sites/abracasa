@@ -1,14 +1,25 @@
 import { useSignal } from "@preact/signals";
 
-
 export default function PromptDelivery() {
   const urlSearchParams = new URLSearchParams(window.location.search);
-  const prontaEntregaAtivo = urlSearchParams.has("prontaEntrega");
-  const atelieAtivo = urlSearchParams.has("addAtelie");
+  const enabled = useSignal(
+    urlSearchParams.has("prontaEntrega") ||
+      urlSearchParams.has("addAtelieEntrega"),
+  );
 
-  const enabled = useSignal(prontaEntregaAtivo || urlSearchParams.has("addAtelieEntrega"));
+  const getCurrentUrlParams = () => {
+    const params = new URLSearchParams(window.location.search);
+    return {
+      prontaEntrega: params.has("prontaEntrega") ||
+        params.has("addAtelieEntrega"),
+      atelie: params.has("addAtelie") || params.has("addAtelieEntrega"),
+    };
+  };
 
-  const updateUrlParams = (ativaProntaEntrega: boolean) => {
+  const updateUrlParams = (
+    ativaProntaEntrega: boolean,
+    atelieAtivo: boolean,
+  ) => {
     const url = new URL(window.location.href);
     const searchParams = url.searchParams;
 
@@ -29,7 +40,8 @@ export default function PromptDelivery() {
   };
 
   const handleClick = () => {
-    updateUrlParams(!enabled.value);
+    const { prontaEntrega, atelie } = getCurrentUrlParams();
+    updateUrlParams(!prontaEntrega, atelie);
   };
   return (
     <div class="w-full flex items-center justify-between gap-2 bg-[#f2f2f2] py-[11px] px-3 lg:px-[13px] lg:py-[13px] max-w-[169px] rounded">
@@ -42,14 +54,14 @@ export default function PromptDelivery() {
         aria-label="Toggle Pronta Entrega"
         class={`w-[38px] h-5 flex items-center rounded-full transition-all duration-300 ${
           enabled.value ? "bg-[#4E4D4D] p-1" : "bg-[#B4B4B4] p-0.5"
-        }`} 
+        }`}
       >
         <div
           class={`h-4 w-4 bg-white rounded-full shadow-md transform transition-all duration-300 ${
             enabled.value ? "translate-x-4" : "translate-x-0"
           }`}
         />
-      </button> 
+      </button>
     </div>
   );
 }

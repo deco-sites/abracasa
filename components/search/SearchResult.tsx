@@ -57,12 +57,12 @@ function Result({
   startingPage = 0,
   isCategoriesFilterActive = false,
   hiddenFilters = [],
-  categoryId
+  categoryId,
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo.recordPerPage || products.length;
   const id = useId();
-  console.log(categoryId, "Result")
+  console.log(categoryId, "Result");
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
 
@@ -164,8 +164,8 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
       return fetchedProducts?.products?.filter((item) =>
         item.productID !==
-        products.find((product) => extractSimilarLabel(product) === label)
-          ?.productID
+          products.find((product) => extractSimilarLabel(product) === label)
+            ?.productID
       ) || [];
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);
@@ -197,8 +197,8 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
       )
     );
   }
-  
-   const fetchPageId = async () => {
+
+  const fetchPageId = async () => {
     try {
       const response = await fetch(
         `https://abracasa.vtexcommercestable.com.br/api/catalog_system/pub/portal/pagetype${currentPathName}`,
@@ -212,7 +212,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
   const getCategoryId = await fetchPageId();
   categoryId = getCategoryId.id;
-  console.log(categoryId, "loader")
+  console.log(categoryId, "loader");
   const fetchAtelieProducts = async (
     ctx: AppContext,
     categoryId: string | null,
@@ -228,7 +228,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     }
   };
 
-    const filterByAdditionalProperty = (
+  const filterByAdditionalProperty = (
     products: Product[],
     value: string,
   ): Product[] => {
@@ -239,7 +239,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     ) || [];
   };
 
-    if (url.searchParams.has("map")) {
+  if (url.searchParams.has("map")) {
     if (url.searchParams.has("add")) {
       filteredProduct = filterByAdditionalProperty(
         filteredProduct,
@@ -260,7 +260,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     }
   } else if (url.searchParams.has("add")) {
     const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "401");
-   return { ...props, page: getAtelieProducts };
+    return { ...props, page: getAtelieProducts };
   } else if (url.searchParams.has("addAtelie")) {
     const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "450");
     return { ...props, page: getAtelieProducts };
@@ -273,7 +273,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     ...props,
     page: { ...props.page, products: filteredProducts },
     layout: { ...props.layout, columns: updatedLayout },
-    categoryId
+    categoryId,
   };
 };
 
