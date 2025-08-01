@@ -6493,6 +6493,9 @@ details.collapse summary::-webkit-details-marker {
 .pt-\[82px\] {
   padding-top: 82px;
 }
+.pt-\[90px\] {
+  padding-top: 90px;
+}
 .text-left {
   text-align: left;
 }
@@ -8849,6 +8852,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .md\:pt-\[119px\] {
+    padding-top: 119px;
   }
 
   .md\:pt-\[145px\] {

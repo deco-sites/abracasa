@@ -46,7 +46,7 @@
             "src": "https://assets.decocache.com/abracasa/a83954d2-52c2-41e9-b7c7-dfeb98d50566/quadro_rocha_735x1095cm-1.png"
           }
         ],
-        "text": "<p>Nos inspiramos na cidade onde vivemos, nas <strong>linhas retas e curvas das paisagens</strong>, na amplitude de nossas praias e no modo descontraído de levar a vida.&nbsp;<br><br>Gostamos da arte e da cultura do nosso povo e da forma calorosa de se relacionar.</p>"
+        "text": "<p>Nos inspiramos na cidade onde vivemos, nas <strong>linhas retas e curvas </strong>das paisagens, na amplitude de nossas praias e no modo descontraído de levar a vida.&nbsp;<br><br>Gostamos da arte e da cultura do nosso povo e da forma calorosa de se relacionar.</p>"
       }
     },
     {
@@ -55,7 +55,8 @@
         "__resolveType": "site/sections/Images/ImageVideo.tsx",
         "media": {
           "image": "https://assets.decocache.com/abracasa/a82c8de6-1804-4518-8f63-cafc7202db6e/Group-1779.png",
-          "video": "https://assets.decocache.com/abracasa/837391de-8c94-4497-a6fb-6ddb86fb61bf/1742561538659-0ec3bc06-9539-4ac4-a468-3d39908566a5"
+          "video": "https://assets.decocache.com/abracasa/837391de-8c94-4497-a6fb-6ddb86fb61bf/1742561538659-0ec3bc06-9539-4ac4-a468-3d39908566a5",
+          "type": "video"
         },
         "text": {
           "textMobile": {

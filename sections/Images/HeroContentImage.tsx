@@ -30,7 +30,7 @@ const HeroContentImage = (
                     {/* Coluna do conteúdo */}
                     <div class="w-full lg:max-w-[371px] px-6 lg:px-0">
                         <div
-                            class={"flex justify-between flex-row-reverse items-center lg:items-start lg:flex-col lg:justify-center gap-[23px] lg:gap-0"}
+                            class={"flex justify-between flex-row-reverse items-center lg:items-start lg:flex-col lg:justify-center h-full gap-[23px] lg:gap-0"}
                         >
                             <Image
                                 src={logo}
@@ -89,7 +89,7 @@ const HeroContentImage = (
                             target="_blank"
                             rel="noopener noreferrer"
                             href={button?.buttonLink ?? "#"}
-                            class={"flex justify-center items-center btn bg-transparent uppercase rounded-none py-2 border-[1px] border-solid border-[#555555] text-center text-[17px] font-semibold w-full text-[#555555] max-w-[371px]"}
+                            class={"flex justify-center items-center btn bg-transparent uppercase rounded-none py-2 border-[1px] border-solid border-[#555555] text-center text-xs font-semibold w-full text-[#555555] max-w-[371px]"}
                         >
                             <span>{button.buttonText}</span>
                         </a>
