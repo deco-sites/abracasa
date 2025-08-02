@@ -12,8 +12,10 @@ import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { usePartialSection } from "@deco/deco/hooks";
-/** @titleBy title */
-interface Tab {
+/**
+ * @titleBy title
+ */
+export interface Tab {
   title: string;
   products: Product[] | null;
 }
