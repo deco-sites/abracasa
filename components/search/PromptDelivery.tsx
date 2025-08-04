@@ -1,48 +1,50 @@
 import { useSignal } from "@preact/signals";
+import { useEffect } from "preact/hooks";
 
 export default function PromptDelivery() {
-  const urlSearchParams = new URLSearchParams(window.location.search);
-  const enabled = useSignal(
-    urlSearchParams.has("prontaEntrega") ||
-      urlSearchParams.has("addAtelieEntrega"),
-  );
+  const enabled = useSignal(false);
 
   const getCurrentUrlParams = () => {
     const params = new URLSearchParams(window.location.search);
     return {
-      prontaEntrega: params.has("prontaEntrega") ||
-        params.has("addAtelieEntrega"),
+      prontaEntrega: params.has("add") || params.has("addAtelieEntrega"),
       atelie: params.has("addAtelie") || params.has("addAtelieEntrega"),
     };
   };
 
-  const updateUrlParams = (
-    ativaProntaEntrega: boolean,
-    atelieAtivo: boolean,
-  ) => {
-    const url = new URL(window.location.href);
-    const searchParams = url.searchParams;
+  const updateUrlParams = (ativaProntaEntrega: boolean, atelieAtivo: boolean) => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
 
-    searchParams.delete("add");
-    searchParams.delete("addAtelie");
-    searchParams.delete("addAtelieEntrega");
-    searchParams.delete("prontaEntrega");
+    urlSearchParams.delete("add");
+    urlSearchParams.delete("addAtelie");
+    urlSearchParams.delete("addAtelieEntrega");
 
     if (ativaProntaEntrega && atelieAtivo) {
-      searchParams.set("addAtelieEntrega", "true");
-    } else if (ativaProntaEntrega) {
-      searchParams.set("prontaEntrega", "true");
-    } else if (atelieAtivo) {
-      searchParams.set("addAtelie", "atelieCasa");
+      urlSearchParams.set("addAtelieEntrega", "true");
+    } else {
+      if (ativaProntaEntrega) {
+        urlSearchParams.set("add", "prontaEntrega");
+      }
+      if (atelieAtivo) {
+        urlSearchParams.set("addAtelie", "atelieCadabra");
+      }
     }
 
-    window.location.href = `${url.pathname}?${searchParams.toString()}`;
+    window.location.search = urlSearchParams.toString();
   };
 
   const handleClick = () => {
     const { prontaEntrega, atelie } = getCurrentUrlParams();
     updateUrlParams(!prontaEntrega, atelie);
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      enabled.value = params.has("add") || params.has("addAtelieEntrega");
+    }
+  }, []);
+
   return (
     <div class="w-full flex items-center justify-between gap-2 bg-[#f2f2f2] py-[11px] px-3 lg:px-[13px] lg:py-[13px] max-w-[169px] rounded">
       <span class="leading-[22px] text-[#555555] text-[14px] lg:text-[13px] font-sans">

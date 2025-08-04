@@ -11,71 +11,75 @@ import type { ProductListingPage } from "apps/commerce/types.ts";
 import { useEffect } from "preact/hooks";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-export type Props =
-  & Pick<
-    ProductListingPage,
-    "filters" | "breadcrumb" | "sortOptions"
-  >
-  & {
-    sortParam?: "legacy" | "intelligent";
-    displayFilter?: boolean;
-    isCategoriesFilterActive?: boolean;
-    hiddenFilters?: string[];
-    categoryId?: string;
-  };
-
-const updateUrlParams = (ativaProntaEntrega: boolean, atelieAtivo: boolean) => {
-  const url = new URL(window.location.href);
-  const searchParams = url.searchParams;
-
-  searchParams.delete("add");
-  searchParams.delete("addAtelie");
-  searchParams.delete("addAtelieEntrega");
-  searchParams.delete("prontaEntrega");
-
-  if (ativaProntaEntrega && atelieAtivo) {
-    searchParams.set("addAtelieEntrega", "true");
-  } else if (ativaProntaEntrega) {
-    searchParams.set("prontaEntrega", "true");
-  } else if (atelieAtivo) {
-    searchParams.set("addAtelie", "atelieCasa");
-  }
-
-  window.location.href = `${url.pathname}?${searchParams.toString()}`;
+export type Props = Pick<
+  ProductListingPage,
+  "filters" | "breadcrumb" | "sortOptions"
+> & {
+  sortParam?: "legacy" | "intelligent";
+  displayFilter?: boolean;
+  isCategoriesFilterActive?: boolean;
+  hiddenFilters?: string[];
+  categoryId?: string;
 };
 
-function AtelieCasaToggle() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const enabled = useSignal(
-    urlParams.has("addAtelie") || urlParams.has("addAtelieEntrega"),
-  );
+export function AtelieCasaToggle() {
+  const enabled = useSignal(false);
 
   const getCurrentUrlParams = () => {
     const params = new URLSearchParams(window.location.search);
     return {
-      prontaEntrega: params.has("prontaEntrega") ||
-        params.has("addAtelieEntrega"),
+      prontaEntrega: params.has("add") || params.has("addAtelieEntrega"),
       atelie: params.has("addAtelie") || params.has("addAtelieEntrega"),
     };
+  };
+
+  const updateUrlParams = (ativaProntaEntrega: boolean, atelieAtivo: boolean) => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+
+    urlSearchParams.delete("add");
+    urlSearchParams.delete("addAtelie");
+    urlSearchParams.delete("addAtelieEntrega");
+
+    if (ativaProntaEntrega && atelieAtivo) {
+      urlSearchParams.set("addAtelieEntrega", "true");
+    } else {
+      if (ativaProntaEntrega) {
+        urlSearchParams.set("add", "prontaEntrega");
+      }
+      if (atelieAtivo) {
+        urlSearchParams.set("addAtelie", "atelieCadabra");
+      }
+    }
+
+    window.location.search = urlSearchParams.toString();
   };
 
   const handleClick = () => {
     const { prontaEntrega, atelie } = getCurrentUrlParams();
     updateUrlParams(prontaEntrega, !atelie);
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      enabled.value = params.has("addAtelie") || params.has("addAtelieEntrega");
+    }
+  }, []);
+
   return (
-    <div className="w-full flex items-center justify-between gap-2 bg-[#f2f2f2] py-[11px] px-3 lg:p-[15px] lg:pb-[11px] max-w-[160px] rounded">
-      <span className="leading-[22px] text-[#555555] text-[14px] lg:text-[13px] font-sans">
+    <div class="w-full flex items-center justify-between gap-2 bg-[#f2f2f2] py-[11px] px-3 lg:px-[13px] lg:py-[13px] max-w-[160px] rounded">
+      <span class="leading-[22px] text-[#555555] text-[14px] lg:text-[13px] font-sans">
         Ateliê Casa
       </span>
       <button
         onClick={handleClick}
-        className={`w-[38px] h-5 flex items-center rounded-full transition-colors ${
+        aria-label="Toggle Ateliê Casa"
+        class={`w-[38px] h-5 flex items-center rounded-full transition-all duration-300 ${
           enabled.value ? "bg-[#4E4D4D] p-1" : "bg-[#B4B4B4] p-0.5"
         }`}
       >
         <div
-          className={`h-4 w-4 bg-white rounded-full shadow-md transform transition ${
+          class={`h-4 w-4 bg-white rounded-full shadow-md transform transition-all duration-300 ${
             enabled.value ? "translate-x-4" : "translate-x-0"
           }`}
         />
@@ -145,9 +149,11 @@ export default function SearchControls({
             <div class="flex flex-row items-center gap-[11px] w-full">
               <Button
                 hasBtnClass={false}
-                class={displayFilter
-                  ? "flex items-center justify-between text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
-                  : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"}
+                class={
+                  displayFilter
+                    ? "flex items-center justify-between text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
+                    : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
+                }
                 onClick={() => {
                   open.value = true;
                 }}
@@ -171,7 +177,9 @@ export default function SearchControls({
             </div>
 
             <div class="flex flex-row sm:flex-row gap-[11px] w-full">
-              {categoryId === null ? "" : (
+              {categoryId === null ? (
+                ""
+              ) : (
                 <>
                   <PromptDelivery />
                   <AtelieCasaToggle />
@@ -202,18 +210,20 @@ export default function SearchControls({
 
                   return paramCount > 0;
                 })() && (
-                <button
-                  aria-label="limpar filtros"
-                  onClick={removeSort}
-                  class="text-[14px] lg:text-[13px] leading-[22px] text-[#494949] font-normal"
-                >
-                  Limpar filtros
-                </button>
-              )}
+                  <button
+                    aria-label="limpar filtros"
+                    onClick={removeSort}
+                    class="text-[14px] lg:text-[13px] leading-[22px] text-[#494949] font-normal"
+                  >
+                    Limpar filtros
+                  </button>
+                )}
             </div>
 
             <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[486px]">
-              {categoryId === null ? "" : (
+              {categoryId === null ? (
+                ""
+              ) : (
                 <>
                   <PromptDelivery />
                   <AtelieCasaToggle />

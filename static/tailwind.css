@@ -9237,10 +9237,6 @@ details.collapse summary::-webkit-details-marker {
     padding: 4rem;
   }
 
-  .lg\:p-\[15px\] {
-    padding: 15px;
-  }
-
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -9323,10 +9319,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pb-0 {
     padding-bottom: 0px;
-  }
-
-  .lg\:pb-\[11px\] {
-    padding-bottom: 11px;
   }
 
   .lg\:pb-\[126px\] {
