@@ -3,18 +3,10 @@
   "path": "/campanha/sale",
   "sections": [
     {
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
@@ -31,10 +23,10 @@
           },
           "matcher": "/*"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "OrderByTopSaleDESC",
         "count": 48,
@@ -95,7 +87,6 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": [
         "0"
       ],
@@ -106,5 +97,71 @@
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Promoção | Abra Casa",
+    "description": "Aproveite até 50% OFF em móveis: Sofás, mesas, poltronas e muito mais. Entrega nacional e 8x sem juros. Confira!",
+    "jsonLD": {
+      "sort": "OrderByPriceDESC",
+      "count": 12,
+      "filters": "dynamic",
+      "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
+      "@type": "ProductDetailsPage",
+      "breadcrumbList": {
+        "@type": "BreadcrumbList",
+        "image": null,
+        "video": null
+      },
+      "product": {
+        "@type": "Product",
+        "additionalProperty": [],
+        "aggregateRating": {
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "@type": "Brand",
+          "video": null,
+          "image": null
+        },
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "hasVariant": [],
+          "additionalProperty": [],
+          "video": null,
+          "image": null
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "offers": [],
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/KeepProduct",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "video": null,
+            "image": null,
+            "returnShippingFeesAmount": {
+              "image": null,
+              "video": null
+            }
+          }
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": [],
+        "video": null,
+        "image": null
+      },
+      "seo": null,
+      "pageInfo": {
+        "recordPerPage": null,
+        "records": null,
+        "previousPage": null
+      }
+    },
+    "canonical": "https://www.abracasa.com.br/campanha/sale"
+  }
 }
