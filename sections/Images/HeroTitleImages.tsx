@@ -81,13 +81,11 @@ function HeroTitleImages(
                     class={`flex font-inter ${reversePosition}`}
                 >
                     <h1
-                        class={`sliderP leading-[1]  hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${
-                            reverse ? " pt-[117px]" : "mb-[51px] lg:mb-[154px]"
-                        } ${
-                            justifyCenter
+                        class={`sliderP leading-[1]  hidden lg:block mx-6 xl:mx-0 mb-7 lg:mb-[66px] ${reverse ? " pt-[117px]" : "mb-[51px] lg:mb-[154px]"
+                            } ${justifyCenter
                                 ? "max-w-[782px] !font-light tracking-wider !mx-auto leading-6"
                                 : ""
-                        }`}
+                            }`}
                         dangerouslySetInnerHTML={{ __html: title ?? "" }}
                         style={{
                             lineHeight: lineHeightTitle || "",
@@ -96,11 +94,10 @@ function HeroTitleImages(
                         }}
                     />
                     <h1
-                        class={`sliderP mx-6 leading-[1] font-semibold mb-7 pt-[49px] lg:mb-[66px] lg:hidden ${
-                            justifyCenter
+                        class={`sliderP mx-6 leading-[1] font-semibold mb-7 pt-[49px] lg:mb-[66px] lg:hidden ${justifyCenter
                                 ? "max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6"
                                 : ""
-                        }`}
+                            }`}
                         dangerouslySetInnerHTML={{ __html: titleMobile ?? "" }}
                         style={{
                             lineHeight: lineHeightTitleMobile || "",
@@ -119,10 +116,9 @@ function HeroTitleImages(
                                         height={img.height ?? 563}
                                         loading="lazy"
                                         decoding="async"
-                                        class={` ${
-                                            reverse &&
-                                            "min-h-[580px] object-cover h-full w-full"
-                                        }`}
+                                        class={` ${reverse &&
+                                            "object-cover h-full w-full"
+                                            }`}
                                     />
                                 </a>
                             </li>
@@ -144,10 +140,9 @@ function HeroTitleImages(
                                         height={img.heightMobile ?? 403}
                                         loading="lazy"
                                         decoding="async"
-                                        class={` ${
-                                            reverse &&
+                                        class={` ${reverse &&
                                             "min-h-[403px] object-cover h-full w-full"
-                                        }`}
+                                            }`}
                                     />
                                 </a>
                             </Slider.Item>

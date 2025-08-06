@@ -45,7 +45,7 @@ function ColectionHero({ image, text }: Props) {
     const id = useId();
     return (
         <div class="mt-[82px] lg:mt-[144px]">
-            <div class="max-w-[1440px] mx-auto font-inter grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[183px] px-0 md:px-6 lg:pl-[106px] lg:pr-0">
+            <div class="max-w-[1196px] mx-auto font-inter grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[183px] px-0 md:px-6 lg:pr-0 xl:pl-0">
                 {/* Desktop */}
                 {/* Coluna Esquerda */}
                 <div class="flex-col hidden md:flex gap-[43px] lg:gap-[113px] pt-[82px]">
@@ -54,10 +54,9 @@ function ColectionHero({ image, text }: Props) {
                             <div
                                 class="text-left md:px-0"
                                 style={{
-                                    lineHeight: `${
-                                        text?.[0]
-                                            ?.lineHeightTitle ?? 26
-                                    }px`,
+                                    lineHeight: `${text?.[0]
+                                        ?.lineHeightTitle ?? 26
+                                        }px`,
                                 }}
                                 dangerouslySetInnerHTML={{
                                     __html: text?.[0]?.title ??
@@ -135,9 +134,8 @@ function ColectionHero({ image, text }: Props) {
                         <div
                             class="text-left md:px-0 max-w-[394px]"
                             style={{
-                                lineHeight: `${
-                                    text?.[1]?.lineHeightTitle ?? 26
-                                }px`,
+                                lineHeight: `${text?.[1]?.lineHeightTitle ?? 26
+                                    }px`,
                             }}
                             dangerouslySetInnerHTML={{
                                 __html: text?.[1]?.content ?? "",
@@ -155,10 +153,9 @@ function ColectionHero({ image, text }: Props) {
                             <div
                                 class="text-left px-6 max-w-[447px]"
                                 style={{
-                                    lineHeight: `${
-                                        text?.[0]
-                                            ?.lineHeightTitle ?? 26
-                                    }px`,
+                                    lineHeight: `${text?.[0]
+                                        ?.lineHeightTitle ?? 26
+                                        }px`,
                                 }}
                                 dangerouslySetInnerHTML={{
                                     __html: text?.[0]?.titleMobile ??

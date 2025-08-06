@@ -89,7 +89,7 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
         <div class={`w-full ${verticalSpacing}`}>
             <div class={"flex justify-center font-inter"}>
                 <div
-                    class={"w-full max-w-[1440px] px-6 lg:px-[106px] flex flex-col"}
+                    class={"w-full max-w-[1196px] px-6 xl:px-0 flex flex-col"}
                 >
                     {media.type === "image" && "src" in media
                         ? (
@@ -109,10 +109,9 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                         }}
                                         className={`  w-full lg:max-w-[770px] text-[#626262] `}
                                         style={{
-                                            lineHeight: `${
-                                                textDesktop?.lineHeight ??
-                                                    26
-                                            }px`,
+                                            lineHeight: `${textDesktop?.lineHeight ??
+                                                26
+                                                }px`,
                                         }}
                                     />
                                 </div>
@@ -129,10 +128,9 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                                         }}
                                         className={` w-full text-sm text-[#626262] `}
                                         style={{
-                                            lineHeight: `${
-                                                textMobile?.lineHeight ??
-                                                    26
-                                            }px`,
+                                            lineHeight: `${textMobile?.lineHeight ??
+                                                26
+                                                }px`,
                                         }}
                                     />
                                 </div>
@@ -157,67 +155,65 @@ const ImageVideo = ({ media, text = {} }: ImageVideoProps) => {
                             </div>
                         )
                         : media.type !== "image" && "video" in media
-                        ? (
-                            <div
-                                class={`flex flex-col gap-[58px] lg:gap-[129px]`}
-                            >
+                            ? (
                                 <div
-                                    style={{
-                                        justifyContent: textDesktop?.position,
-                                    }}
-                                    class={"w-full hidden md:flex "}
+                                    class={`flex flex-col gap-[58px] lg:gap-[129px]`}
                                 >
-                                    <span
-                                        dangerouslySetInnerHTML={{
-                                            __html: textDesktop?.content ??
-                                                "",
-                                        }}
-                                        className={` w-full lg:max-w-[770px] text-[#626262] `}
+                                    <div
                                         style={{
-                                            lineHeight: `${
-                                                textDesktop?.lineHeight ??
+                                            justifyContent: textDesktop?.position,
+                                        }}
+                                        class={"w-full hidden md:flex "}
+                                    >
+                                        <span
+                                            dangerouslySetInnerHTML={{
+                                                __html: textDesktop?.content ??
+                                                    "",
+                                            }}
+                                            className={` w-full lg:max-w-[770px] text-[#626262] `}
+                                            style={{
+                                                lineHeight: `${textDesktop?.lineHeight ??
                                                     26
-                                            }px`,
-                                        }}
+                                                    }px`,
+                                            }}
+                                        />
+                                    </div>
+                                    <Video
+                                        src={media.video}
+                                        width={media.width ?? 1228}
+                                        height={media.height ?? 674}
+                                        controls={true}
+                                        class={`hidden md:block md:h-[450px] lg:h-[674px] object-fill`}
                                     />
-                                </div>
-                                <Video
-                                    src={media.video}
-                                    width={media.width ?? 1228}
-                                    height={media.height ?? 674}
-                                    controls={true}
-                                    class={`hidden md:block md:h-[450px] lg:h-[674px] object-fill`}
-                                />
-                                <Video
-                                    src={media.video}
-                                    width={media.width ?? 768}
-                                    height={media.height ?? 185}
-                                    controls={true}
-                                    class=" md:hidden h-[185px] object-fill"
-                                />
-                                <div
-                                    style={{
-                                        justifyContent: textMobile?.position,
-                                    }}
-                                    className={`w-full flex lg:hidden`}
-                                >
-                                    <span
-                                        dangerouslySetInnerHTML={{
-                                            __html: textMobile?.content ??
-                                                "",
-                                        }}
-                                        className={`block md:hidden  w-full text-sm hyphens-auto text-[#626262] `}
+                                    <Video
+                                        src={media.video}
+                                        width={media.width ?? 768}
+                                        height={media.height ?? 185}
+                                        controls={true}
+                                        class=" md:hidden h-[185px] object-fill"
+                                    />
+                                    <div
                                         style={{
-                                            lineHeight: `${
-                                                textMobile?.lineHeight ??
-                                                    20
-                                            }px`,
+                                            justifyContent: textMobile?.position,
                                         }}
-                                    />
+                                        className={`w-full flex lg:hidden`}
+                                    >
+                                        <span
+                                            dangerouslySetInnerHTML={{
+                                                __html: textMobile?.content ??
+                                                    "",
+                                            }}
+                                            className={`block md:hidden  w-full text-sm hyphens-auto text-[#626262] `}
+                                            style={{
+                                                lineHeight: `${textMobile?.lineHeight ??
+                                                    20
+                                                    }px`,
+                                            }}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                        : <div>Tipo de mídia não suportado</div>}
+                            )
+                            : <div>Tipo de mídia não suportado</div>}
                 </div>
             </div>
         </div>

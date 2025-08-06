@@ -26,7 +26,7 @@ const HeroContentImage = (
     return (
         <div class="mt-[55px] lg:mt-[86px] relative w-full font-inter">
             <div class="flex justify-center">
-                <div class="w-full max-w-[1440px] flex flex-col lg:flex-row lg:pl-[106px] px-0 gap-[51px] lg:gap-[143px]">
+                <div class="w-full max-w-[1196px] lg:px-6 lg:pr-0 xl:px-0 flex flex-col lg:flex-row px-0 gap-[51px] lg:gap-[143px]">
                     {/* Coluna do conteúdo */}
                     <div class="w-full lg:max-w-[371px] px-6 lg:px-0">
                         <div

@@ -196,17 +196,20 @@
             "desktop": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png",
             "mobile": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png",
             "alt": "Processo criativo de desenvolvimento de móveis com escolha de tecidos e desenhos preliminares.",
-            "height": 580
+            "height": 580,
+            "width": 396
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/ef67d6ef-e9bc-4f25-84f1-33bc9efce59f/_MG_3001-Aprimorado-NR-1.jpg",
             "mobile": "https://assets.decocache.com/abracasa/ef67d6ef-e9bc-4f25-84f1-33bc9efce59f/_MG_3001-Aprimorado-NR-1.jpg",
-            "alt": "Amostras de tecidos e materiais para móveis organizadas em prateleira com paletas de cores e catálogos"
+            "alt": "Amostras de tecidos e materiais para móveis organizadas em prateleira com paletas de cores e catálogos",
+            "width": 396
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/ab972616-5cc7-47df-86ed-d784e5540230/_MG_5073-Aprimorado-NR-1.jpg",
             "mobile": "https://assets.decocache.com/abracasa/ab972616-5cc7-47df-86ed-d784e5540230/_MG_5073-Aprimorado-NR-1.jpg",
-            "alt": "Amostras de revestimento em couro sintético em diferentes cores sobre mesa de madeira"
+            "alt": "Amostras de revestimento em couro sintético em diferentes cores sobre mesa de madeira",
+            "width": 396
           }
         ],
         "justifyCenter": true,

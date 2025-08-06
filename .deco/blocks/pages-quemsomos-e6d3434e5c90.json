@@ -3,12 +3,6 @@
   "path": "/institucional/quem-somos",
   "sections": [
     {
-      "type": "website",
-      "__resolveType": "website/sections/Seo/Seo.tsx",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
@@ -204,6 +198,8 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
+        "title": "<p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Nosso design é pensado para se manter</span></strong></p><p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">relevante e elegante ao longo dos anos.</span></strong></p><p style=\"text-align: justify\"></p><p style=\"text-align: center\"></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">produtos e o design atemporal. Hoje, contamos com 15 lojas divididas entre</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
+        "titleMobile": "<p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">Nosso design é pensado</span></strong></p><p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">para se manter relevante e</span></strong></p><p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">elegante ao longo dos anos.</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"></p><p><span style=\"color: rgb(98, 98, 98)\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos produtos e o design atemporal. Hoje, contamos com 15 lojas divididas entre o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
         "image": [
           {
             "desktop": "https://assets.decocache.com/abracasa/630c3a4e-135c-4da4-956e-3463eb0d547e/IMG_1737-1(1)-2.png",
@@ -218,10 +214,8 @@
             "mobile": "https://assets.decocache.com/abracasa/52af24c0-f5aa-4f85-a00d-fe58451939fa/IMG_1737-1(1)-1.jpg"
           }
         ],
-        "title": "<p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Nosso design é pensado para se manter</span></strong></p><p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">relevante e elegante ao longo dos anos.</span></strong></p><p style=\"text-align: justify\"></p><p style=\"text-align: center\"></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">produtos e o design atemporal. Hoje, contamos com 15 lojas divididas entre</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(98, 98, 98)\">o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
-        "titleMobile": "<p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">Nosso design é pensado</span></strong></p><p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">para se manter relevante e</span></strong></p><p style=\"text-align: justify\"><strong><span style=\"color: rgb(33, 33, 33); font-size: 16pt\">elegante ao longo dos anos.</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"></p><p><span style=\"color: rgb(98, 98, 98)\">Não nos limitamos a tendências momentâneas. Priorizamos a qualidade dos produtos e o design atemporal. Hoje, contamos com 15 lojas divididas entre o Rio de Janeiro e São Paulo.&nbsp;</span></p>",
-        "justifyCenter": true,
         "lineHeightTitle": 1.4,
+        "justifyCenter": true,
         "lineHeightTitleMobile": 1.4
       }
     },
@@ -266,5 +260,11 @@
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Quem Somos | Abra Casa",
+    "description": "",
+    "canonical": "https://www.abracasa.com.br/institucional/quem-somos"
+  }
 }

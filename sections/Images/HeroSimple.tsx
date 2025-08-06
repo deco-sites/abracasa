@@ -45,7 +45,7 @@ export const getLayoutClasses = ({
         ? "flex-col-reverse md:flex-row-reverse gap-[43px] lg:gap-[191px] justify-between"
         : "flex-col md:flex-row md:gap-[117px]";
     const container = paddingX
-        ? `w-full max-w-[1440px] px-6 lg:px-[106px] md:mx-auto`
+        ? `w-full max-w-[1196px] px-6 xl:px-0 md:mx-auto`
         : "max-w-[1196px] mx-6 md:mx-auto";
 
     const verticalSpacing = paddingX
@@ -136,9 +136,8 @@ function HeroSimple(
                             {title}
                         </span>
                         <span
-                            class={`${textContentClass} ${
-                                textContentMobile ? "hidden md:block" : ""
-                            }`}
+                            class={`${textContentClass} ${textContentMobile ? "hidden md:block" : ""
+                                }`}
                             dangerouslySetInnerHTML={{
                                 __html: textContent ?? "",
                             }}
