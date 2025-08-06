@@ -95,8 +95,8 @@ function HeroTitleImages(
                     />
                     <h1
                         class={`sliderP mx-6 leading-[1] font-semibold mb-7 pt-[49px] lg:mb-[66px] lg:hidden ${justifyCenter
-                                ? "max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6"
-                                : ""
+                            ? "max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6"
+                            : ""
                             }`}
                         dangerouslySetInnerHTML={{ __html: titleMobile ?? "" }}
                         style={{
@@ -107,7 +107,7 @@ function HeroTitleImages(
                     {/* Desktop view */}
                     <ul class="hidden lg:flex gap-[18px] mx-6 xl:mx-0">
                         {image?.map((img) => (
-                            <li>
+                            <li class="w-full">
                                 <a href={img.link}>
                                     <Image
                                         src={img.desktop ?? ""}
