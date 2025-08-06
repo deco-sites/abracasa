@@ -30,9 +30,6 @@
       "jsonLD": null
     },
     {
-      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
-    },
-    {
       "__resolveType": "site/sections/Social/WhatsApp.tsx",
       "phone": 5521971174398
     }
@@ -44,10 +41,6 @@
       "extraPathsToProxy": [],
       "includeScriptsToHead": {
         "includes": [
-          {
-            "defer": true,
-            "__resolveType": "analytics/loaders/DecoAnalyticsScript.ts"
-          },
           {
             "__resolveType": "analytics/loaders/OneDollarScript.ts"
           }
