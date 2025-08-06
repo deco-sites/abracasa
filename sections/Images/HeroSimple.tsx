@@ -2,6 +2,16 @@ import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 
 interface Props {
+    /**
+     * @title Espaçamento lateral (desktop)
+     * @description Espaçamento da borda lateral da página
+     */
+    paddingX?: boolean;
+    /**
+     * @title Inverter posição do conteúdo
+     * @description Trocar a posição do texto e da imagem
+     */
+    reverse?: boolean;
     image: {
         desktopSrc?: ImageWidget;
         desktopWidth?: number;
@@ -10,25 +20,88 @@ interface Props {
         mobileWidth?: number;
         mobileHeight?: number;
         alt?: string;
-    }
+    };
     subTitle?: string;
     letterSpacingSubTitle?: number;
     title?: string;
     letterSpacingTitle?: number;
     textContent?: RichText;
+    textContentMobile?: RichText;
     button?: {
         buttonText?: string;
         buttonLink?: string;
-    }
+    };
 }
 
-function HeroSimple({ image, subTitle, letterSpacingSubTitle , title, letterSpacingTitle, textContent, button }: Props) {
+export const getLayoutClasses = ({
+    paddingX,
+    reverse,
+}: {
+    paddingX?: boolean;
+    limitedText?: boolean;
+    reverse?: boolean;
+}) => {
+    const reversePosition = reverse
+        ? "flex-col-reverse md:flex-row-reverse gap-[43px] lg:gap-[191px] justify-between"
+        : "flex-col md:flex-row md:gap-[117px]";
+    const container = paddingX
+        ? `w-full max-w-[1196px] px-6 xl:px-0 md:mx-auto`
+        : "max-w-[1196px] mx-6 md:mx-auto";
+
+    const verticalSpacing = paddingX
+        ? "pt-[66px] lg:pt-[146px]"
+        : "py-24 md:py-36";
+
+    const title = reverse
+        ? "text-[clamp(40px,4.5vw,70px)] leading-[clamp(44px,5vw,66px)] text-[#212121] font-semibold mb-[clamp(22px,4vw,59px)] max-w-[clamp(295px,30vw,319px)] w-full"
+        : "text-[38px] text-[#555555] font-normal mb-4 md:text-[54px] w-full";
+
+    const textContent = reverse
+        ? "text-sm md:text-base  text-[#626262]"
+        : "font-normal mb-[22px] md:mb-[45px] leading-[28px]";
+
+    return {
+        reverse: `${reversePosition}`,
+        container: `${container}`,
+        title: `${title}`,
+        verticalSpacing: `${verticalSpacing}`,
+        textContent: `${textContent}`,
+    };
+};
+
+function HeroSimple(
+    {
+        paddingX,
+        reverse,
+        image,
+        subTitle,
+        letterSpacingSubTitle,
+        title,
+        letterSpacingTitle,
+        textContent,
+        textContentMobile,
+        button,
+    }: Props,
+) {
+    const {
+        reverse: reversePosition,
+        container,
+        title: titleClass,
+        verticalSpacing,
+        textContent: textContentClass,
+    } = getLayoutClasses({
+        paddingX,
+        reverse,
+    });
+
     return (
-        <div class="py-24 md:py-36">
-            <div class="max-w-[1196px] mx-6 md:mx-auto">
-                <div class="flex flex-col md:flex-row md:gap-[117px] items-center font-inter">
+        <div class={`${verticalSpacing}`}>
+            <div class={`${container}`}>
+                <div
+                    class={`flex ${reversePosition} items-center font-inter`}
+                >
                     <Image
-                        src={image.mobileSrc ?? ''}
+                        src={image.mobileSrc ?? ""}
                         alt={image.alt}
                         width={image.mobileWidth ?? 327}
                         height={image.mobileHeight ?? 432}
@@ -37,7 +110,7 @@ function HeroSimple({ image, subTitle, letterSpacingSubTitle , title, letterSpac
                         class="md:hidden"
                     />
                     <Image
-                        src={image.desktopSrc ?? ''}
+                        src={image.desktopSrc ?? ""}
                         alt={image.alt}
                         width={image.desktopWidth ?? 481}
                         height={image.desktopHeight ?? 634}
@@ -46,26 +119,58 @@ function HeroSimple({ image, subTitle, letterSpacingSubTitle , title, letterSpac
                         class="hidden md:block"
                     />
                     <div class="flex flex-col">
-                        <span class="font-extralight text-base text-[#555555] md:text-[26px] w-full mt-[46px]"
-                        style={{letterSpacing: letterSpacingSubTitle || "" }}>{subTitle}</span>
-                        <span class="text-[38px] text-[#555555] font-normal mb-4 md:text-[54px] w-full"
-                        style={{letterSpacing: letterSpacingTitle || "" }}>{title}</span>
-                        <span class="font-normal mb-[22px] md:mb-[45px] leading-[28px]" dangerouslySetInnerHTML={{ __html: textContent ?? '' }} />
-                        <a class="btn bg-transparent rounded-none py-2 border-[1px] border-solid border-[#212121] text-center text-base font-semibold w-full hover:bg-[#212121] hover:text-white text-[#212121] max-w-[331px]" href={button?.buttonLink}>
-                            <span>{button?.buttonText}</span>
-                        </a>
+                        {subTitle && (
+                            <span
+                                class="font-extralight text-base text-[#555555] md:text-[26px] w-full mt-[46px]"
+                                style={{
+                                    letterSpacing: letterSpacingSubTitle || "",
+                                }}
+                            >
+                                {subTitle}
+                            </span>
+                        )}
+                        <span
+                            class={`${titleClass}`}
+                            style={{ letterSpacing: letterSpacingTitle || "" }}
+                        >
+                            {title}
+                        </span>
+                        <span
+                            class={`${textContentClass} ${textContentMobile ? "hidden md:block" : ""
+                                }`}
+                            dangerouslySetInnerHTML={{
+                                __html: textContent ?? "",
+                            }}
+                        />
+                        <span
+                            class={`${textContentClass} hyphens-auto md:hidden`}
+                            dangerouslySetInnerHTML={{
+                                __html: textContentMobile ?? "",
+                            }}
+                        />
+                        {button && (
+                            <a
+                                class="btn bg-transparent rounded-none py-2 border-[1px] border-solid border-[#212121] text-center text-base font-semibold w-full hover:bg-[#212121] hover:text-white text-[#212121] max-w-[331px]"
+                                href={button?.buttonLink}
+                            >
+                                <span>{button?.buttonText}</span>
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default HeroSimple
+export default HeroSimple;
 
 export function LoadingFallback() {
     return (
-        <div style={{ height: "700px" }} class="flex justify-center items-center">
+        <div
+            style={{ height: "700px" }}
+            class="flex justify-center items-center"
+        >
             <span class="loading loading-spinner" />
         </div>
     );
