@@ -41,6 +41,20 @@
           }
         },
         {
+          "alt": "Ateliê",
+          "href": "https://www.abracasa.com.br/colecao-atelie",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/6a82fb15-0929-407d-8e3a-1f4060fdda72/casa_banner_home_princial_mobile_atelie_767x942.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/edb73223-4149-442c-9081-3e8ee72ba84b/casa_banner_desk_atelie_casa_1920x71.gif",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Sofá Malba",
           "href": "https://www.abracasa.com.br/campanha/sofa-malba",
           "mobile": {
@@ -120,20 +134,6 @@
           },
           "desktop": {
             "image": "https://assets.decocache.com/abracasa/07c33d25-d65c-4981-8ffe-086f30655aba/casa_novapoltronacostela_banner_desktop_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Ateliê",
-          "href": "/campanha/atelie-casa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/6a82fb15-0929-407d-8e3a-1f4060fdda72/casa_banner_home_princial_mobile_atelie_767x942.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/edb73223-4149-442c-9081-3e8ee72ba84b/casa_banner_desk_atelie_casa_1920x71.gif",
             "width": 1920,
             "height": 713
           }

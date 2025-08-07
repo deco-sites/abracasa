@@ -19,7 +19,7 @@
       "section": {
         "__resolveType": "site/sections/Images/HeroContentImage.tsx",
         "image": {
-          "src": "https://assets.decocache.com/abracasa/e68b32b3-6801-4942-9de8-5a395f2ea845/Rectangle-203.png",
+          "src": "https://assets.decocache.com/abracasa/e483d314-3b50-4b2e-a37f-e30f59f0bb9c/fotos_Atelie-(7).jpg",
           "desktopWidth": 822,
           "desktopHeight": 576
         },
@@ -37,13 +37,13 @@
         "__resolveType": "site/sections/Images/ImageTextGrid.tsx",
         "images": [
           {
-            "src": "https://assets.decocache.com/abracasa/1428e6f1-c99c-4367-931e-9621a23f37f2/FOTO_04-1.png"
+            "src": "https://assets.decocache.com/abracasa/8e90e1a2-3832-4460-830d-be58c5f6f1b0/FOTO_04-1-(1).jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/bc842656-67f7-4e05-87de-c7a38c8b6fbb/_MG_3317-Aprimorado-NR-1.jpg"
+            "src": "https://assets.decocache.com/abracasa/2a66bd9c-c32b-49ad-978f-6652e27670f4/_MG_3317-Aprimorado-NR-1-(2).jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/a83954d2-52c2-41e9-b7c7-dfeb98d50566/quadro_rocha_735x1095cm-1.png"
+            "src": "https://assets.decocache.com/abracasa/39c8128c-7a14-423f-b554-377f8cbce4a3/quadro_rocha_735x1095cm-1.jpg"
           }
         ],
         "text": "<p>Nos inspiramos na cidade onde vivemos, nas <strong>linhas retas e curvas </strong>das paisagens, na amplitude de nossas praias e no modo descontraído de levar a vida.&nbsp;<br><br>Gostamos da arte e da cultura do nosso povo e da forma calorosa de se relacionar.</p>"
@@ -111,7 +111,7 @@
         },
         "media": {
           "type": "image",
-          "src": "https://assets.decocache.com/abracasa/993ba747-0751-4cb6-acaa-1d353bc0b0d5/Rectangle-205.png",
+          "src": "https://assets.decocache.com/abracasa/5165eeb8-340e-4c23-93cc-73d2cd78bb00/fotos_Atelie-(8).jpg",
           "width": 1228,
           "height": 682
         }
@@ -177,12 +177,12 @@
         ],
         "image": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/6009033a-4b98-4920-a79d-85022f3e8d09/Vertical-Mesa-Athos-Final-1.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/6009033a-4b98-4920-a79d-85022f3e8d09/Vertical-Mesa-Athos-Final-1.jpg"
+            "desktop": "https://assets.decocache.com/abracasa/47218cee-992d-4b21-98f6-9a141b28f755/fotos_Atelie-(2).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/85718109-4670-4e50-904b-6849e2fa6c65/fotos_Atelie-(9).jpg"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/2e8b5008-5d7a-4284-8349-db45cda65ee3/_MG_3001-Aprimorado-NR-1.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/2e8b5008-5d7a-4284-8349-db45cda65ee3/_MG_3001-Aprimorado-NR-1.jpg"
+            "desktop": "https://assets.decocache.com/abracasa/85718109-4670-4e50-904b-6849e2fa6c65/fotos_Atelie-(9).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/47218cee-992d-4b21-98f6-9a141b28f755/fotos_Atelie-(2).jpg"
           }
         ]
       }
