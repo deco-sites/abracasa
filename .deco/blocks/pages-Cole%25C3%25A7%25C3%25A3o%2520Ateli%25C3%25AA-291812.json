@@ -23,7 +23,7 @@
           "desktopWidth": 822,
           "desktopHeight": 576
         },
-        "logo": "https://assets.decocache.com/abracasa/14f6de6d-cd56-4591-b60b-4d408d3f70ee/ABRA_ATELIE_LOGO-01-1.png",
+        "logo": "https://assets.decocache.com/abracasa/d9c17884-9d5f-4806-ab7f-26868fc0783e/ABRA_ATELIE_LOGO-01-1.png",
         "text": "<p><span>Ateliê Casa é o que acreditamos e buscamos para a nossa marca carioca.&nbsp;<br></span><strong><span>Um jeito leve de ocupar os espaços.</span></strong></p>",
         "button": {
           "buttonText": "confira os produtos",
@@ -193,21 +193,21 @@
         "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
         "image": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png",
-            "mobile": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png",
+            "desktop": "https://assets.decocache.com/abracasa/fea31b3e-45d6-4eae-8840-4fb19a119484/fotos_Atelie-(6).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/fea31b3e-45d6-4eae-8840-4fb19a119484/fotos_Atelie-(6).jpg",
             "alt": "Processo criativo de desenvolvimento de móveis com escolha de tecidos e desenhos preliminares.",
             "height": 580,
             "width": 396
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/ef67d6ef-e9bc-4f25-84f1-33bc9efce59f/_MG_3001-Aprimorado-NR-1.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/ef67d6ef-e9bc-4f25-84f1-33bc9efce59f/_MG_3001-Aprimorado-NR-1.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/cd54ee15-6022-43e3-a056-5f1ba01c8fa1/fotos_Atelie-(3).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/cd54ee15-6022-43e3-a056-5f1ba01c8fa1/fotos_Atelie-(3).jpg",
             "alt": "Amostras de tecidos e materiais para móveis organizadas em prateleira com paletas de cores e catálogos",
             "width": 396
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/ab972616-5cc7-47df-86ed-d784e5540230/_MG_5073-Aprimorado-NR-1.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/ab972616-5cc7-47df-86ed-d784e5540230/_MG_5073-Aprimorado-NR-1.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
             "alt": "Amostras de revestimento em couro sintético em diferentes cores sobre mesa de madeira",
             "width": 396
           }
@@ -264,7 +264,8 @@
           "decoração",
           "ambientes",
           "móveis"
-        ]
+        ],
+        "categoryId": null
       }
     }
   ],
