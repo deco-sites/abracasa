@@ -6,7 +6,7 @@
   },
   "products": {
     "props": {
-      "sort": "",
+      "sort": "OrderByScoreDESC",
       "count": 12
     },
     "__resolveType": "vtex/loaders/legacy/productList.ts"
