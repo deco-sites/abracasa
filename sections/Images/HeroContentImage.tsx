@@ -59,7 +59,7 @@ const HeroContentImage = (
                                 />
                             </div>
                             <a
-                                target="_blank"
+                                target="_self"
                                 rel="noopener noreferrer"
                                 href={button?.buttonLink ?? "#"}
                                 class={"hidden lg:flex justify-center items-center mt-[77px] btn bg-transparent uppercase rounded-none py-2 border-[1px] border-solid border-[#555555] text-center text-[17px] font-semibold w-full text-[#555555] max-w-[371px]"}
