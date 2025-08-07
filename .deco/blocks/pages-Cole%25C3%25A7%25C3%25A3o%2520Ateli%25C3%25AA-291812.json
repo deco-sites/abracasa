@@ -226,7 +226,7 @@
           "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
           "count": 48,
           "fq": "H:450",
-          "sort": "OrderByPriceASC",
+          "sort": "OrderByTopSaleDESC",
           "filters": "dynamic",
           "advancedConfigs": {
             "includeOriginalAttributes": []
