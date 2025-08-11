@@ -97,20 +97,6 @@
           }
         },
         {
-          "alt": "Aniversario Casa",
-          "href": "https://www.abracasa.com.br/campanha/aniversario-casa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/dad63b18-aea0-44a9-9b5a-3b971ccad957/casa_banner_mobile_40anos-(1).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/0973c48b-3321-4a0e-942a-858444be28e4/casa_banner_desktop_40anos.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Coleção 2025",
           "href": "https://www.abracasa.com.br/colecao-2025",
           "mobile": {
