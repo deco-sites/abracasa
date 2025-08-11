@@ -6,8 +6,9 @@
   },
   "products": {
     "props": {
-      "sort": "OrderByScoreDESC",
-      "count": 12
+      "sort": "",
+      "count": 12,
+      "collection": "559"
     },
     "__resolveType": "vtex/loaders/legacy/productList.ts"
   },
