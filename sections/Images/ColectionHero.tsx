@@ -79,15 +79,15 @@ function ColectionHero({
           class={`flex flex-col lg:mx-7 xl:mx-0 ${twoText ? "gap-0" : "gap-7"}`}
         >
           <h2
-            class={`mx-6 lg:mx-0 hidden lg:block leading-[1.2] tracking-wider ${
-              twoText ? "font-thin sliderP" : "font-semibold"
-            } ${limitTitleText ? "max-w-[495px] sliderP !font-light" : ""}`}
+            class={`mx-6 lg:mx-0 hidden lg:block leading-[1.2] ${
+              twoText ? "font-thin sliderP tracking-[6px]" : "font-semibold tracking-wider"
+            } ${limitTitleText ? "max-w-[495px] sliderP !font-light" : ""}`}  
             dangerouslySetInnerHTML={{ __html: title ?? "" }}
             style={{ lineHeight: lineHeightTitle || "" }}
           />
           <h2
-            class={`font-semibold mx-6 lg:mx-0 lg:hidden tracking-wider
-              ${twoText ? "font-thin sliderP" : "font-semibold"}
+            class={`font-semibold mx-6 lg:mx-0 lg:hidden
+              ${twoText ? "font-thin sliderP tracking-widest" : "font-semibold tracking-wider"}
               ${limitTitleText ? "max-w-[495px] sliderP !font-light" : ""}`}
             dangerouslySetInnerHTML={{ __html: titleMobile ?? "" }}
             style={{ lineHeight: lineHeightTitleMobile }}
@@ -95,8 +95,8 @@ function ColectionHero({
           {dobleTitle && (
             <>
               <h2
-                class={`font-normal mx-6 lg:mx-0 hidden lg:block leading-[1.2] tracking-wider 
-                  ${twoText ? "sliderP mb-[134px]" : ""}
+                class={`font-normal mx-6 lg:mx-0 hidden lg:block leading-[1.2] 
+                  ${twoText ? "sliderP mb-[134px] tracking-normal" : "tracking-wider"}
                   ${limitTitleText ? "max-w-[495px] sliderP !font-light" : ""}`}
                 dangerouslySetInnerHTML={{ __html: TitleTwo ?? "" }}
                 style={{ lineHeight: lineHeightTitleTwo || "" }}

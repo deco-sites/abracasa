@@ -6872,6 +6872,12 @@ details.collapse summary::-webkit-details-marker {
 .tracking-\[1px\] {
   letter-spacing: 1px;
 }
+.tracking-\[6px\] {
+  letter-spacing: 6px;
+}
+.tracking-normal {
+  letter-spacing: 0em;
+}
 .tracking-tighter {
   letter-spacing: -0.05em;
 }

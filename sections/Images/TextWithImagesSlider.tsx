@@ -34,12 +34,12 @@ export default function TextWithImagesSlider({
   return (
     <section class= {`pl-6 mx-auto xl:pl-0 max-w-[1210px] w-full xl:mx-auto xl:mt-[79px] mt-[60px] flex xl:flex-row items-start ${reverseMob ? "flex-col-reverse lg:mb-[67px] mb-0" : "flex-col"}`} >
       <div
-        class="hidden tracking-[1px] xl:block sliderP font-normal w-1/3 text-left mr-[133px] my-auto"
+        class="hidden xl:block sliderP font-normal w-1/3 text-left mr-[133px] my-auto"
         dangerouslySetInnerHTML={{ __html: text || "" }}
         style={{ lineHeight: lineHeightText || "" }}
       />
       <div
-        class={`xl:hidden mr-6 block sliderP font-normal text-left ${reverseMob ? "tracking-[1px] mt-[65px] mb-0" : "mb-[60px] "}`}
+        class={`xl:hidden mr-6 block sliderP font-normal text-left ${reverseMob ? "mt-[65px] mb-0" : "mb-[60px] "}`}
         dangerouslySetInnerHTML={{ __html: textMobile || "" }}  
         style={{ lineHeight: lineHeightTextMobile || "" }}
       />

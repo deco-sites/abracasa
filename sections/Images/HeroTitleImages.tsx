@@ -94,7 +94,7 @@ function HeroTitleImages({
           <h1
             class={`sliderP leading-[1] hidden lg:block mx-6 xl:mx-0 mb-7 ${
               justifyEnd
-                ? "font-semibold text-left lg:mb-[164px] tracking-[1px]"
+                ? "font-semibold text-left lg:mb-[164px]"
                 : "lg:mb-[66px]"
             }
                 ${reverse ? " pt-[117px]" : "mb-[51px] lg:mb-[154px]"} ${
@@ -112,7 +112,7 @@ function HeroTitleImages({
           <h1
             class={`sliderP mx-6 leading-[1] font-semibold lg:mb-[66px] lg:hidden ${
               justifyEnd
-                ? "pt-[29px] mb-[101px] tracking-[1px]"
+                ? "pt-[29px] mb-[101px]"
                 : "pt-[49px] mb-7"
             } ${
               justifyCenter
@@ -151,7 +151,7 @@ function HeroTitleImages({
               <h1
                 class={`sliderP  leading-[1] hidden lg:block mx-6 xl:mx-0 mb-7 lg:mt-[165px] ${
                   justifyEnd
-                    ? "font-semibold tracking-[1px] text-left lg:mb-[44px] lg:mt-[164px]"
+                    ? "font-semibold text-left lg:mb-[44px] lg:mt-[164px]"
                     : ""
                 } ${
                   justifyCenter
@@ -200,7 +200,7 @@ function HeroTitleImages({
                 class={`sliderP mx-6 leading-[1] font-semibold pt-[49px] lg:mt-[82px] lg:hidden 
                     ${
                       justifyEnd
-                        ? "mb-[18px] pt-[82px] tracking-[1px]"
+                        ? "mb-[18px] pt-[82px]"
                         : "mb-7 pt-[49px]"
                     }
                     ${
