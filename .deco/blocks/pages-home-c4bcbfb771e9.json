@@ -13,34 +13,6 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "alt": "Sale Abracasa",
-          "href": "https://www.abracasa.com.br/campanha/sale",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/908f27b5-49d9-4835-bf34-ddc8bcd56488/casa_banner_mobile_sale_jun_25_767x942-(1).gif",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/b93e727b-c158-41ec-9b1b-2e3460712524/casa_banner_desktop_sale_jun_1920x713-(1).gif",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Sale Casa - Sofá",
-          "href": "https://www.abracasa.com.br/moveis/sofa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/b5ef1090-fed2-4d82-9123-10ad90c15000/casa__abra_week_banner_sofa_mobile_767x972_2-(1).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/d07beee3-4754-422b-9c06-a980d5644bbb/casa__abra_week_banner_sofa_desk_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Ateliê",
           "href": "https://www.abracasa.com.br/colecao-atelie",
           "mobile": {
