@@ -1,0 +1,250 @@
+{
+  "name": "Fernanda Sampaio",
+  "path": "/fernanda-sampaio",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header - 01"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/Video.tsx",
+        "video": {
+          "content": {
+            "hasContainer": false,
+            "type": "Video",
+            "video": "https://assets.decocache.com/abracasa/837391de-8c94-4497-a6fb-6ddb86fb61bf/1742561538659-0ec3bc06-9539-4ac4-a468-3d39908566a5",
+            "autoplay": false,
+            "controls": true
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
+        "title": "<p style=\"text-align: justify\"><span style=\"color: #000000; font-size: 18pt\">Fernanda Sampaio</span><span style=\"font-size: 18pt\"> </span><span style=\"color: #3e3e3e; font-size: 18pt\">assina mais uma linha, com</span></p><p style=\"text-align: justify\"><span style=\"color: #3e3e3e; font-size: 18pt\">exclusividade, para a Abra Casa. A designer</span></p><p style=\"text-align: justify\"><span style=\"color: #3e3e3e; font-size: 18pt\">carioca imprime, em cada peça, o equilíbrio entre</span></p><p style=\"text-align: justify\"><span style=\"color: #3e3e3e; font-size: 18pt\">funcionalidade e leveza estética, destacando a</span></p><p style=\"text-align: justify\"><span style=\"color: #3e3e3e; font-size: 18pt\">madeira como protagonista de seus proj</span><span style=\"color: #3e3e3e; font-size: 19pt\">etos.&nbsp;</span></p>",
+        "titleMobile": "<p><span style=\"color: #000000; font-size: 12pt\">Fernanda Sampaio</span><span style=\"color: #3e3e3e; font-size: 12pt\"> assina mais uma linha, com exclusividade, para a Abra Casa. A designer carioca imprime, em cada peça, o equilíbrio entre funcionalidade e leveza estética, destacando a madeira como protagonista de seus projetos.&nbsp;</span></p>",
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          }
+        ],
+        "lineHeightTitle": 1.4,
+        "justifyCenter": false,
+        "reverse": false,
+        "lineHeightTitleMobile": 1.4,
+        "showText": true,
+        "description": "<p><span style=\"color: #3e3e3e; font-size: 18pt\">Os móveis se destacam pelos pés em madeira</span></p><p><span style=\"color: #3e3e3e; font-size: 18pt\">maciça de Eucalipto, cuidadosamente trabalhados</span></p><p><span style=\"color: #3e3e3e; font-size: 18pt\">com detalhes de marcenaria, que evidenciam o</span></p><p><span style=\"color: #3e3e3e; font-size: 18pt\">compromisso com a qualidade e acabamento.</span></p>",
+        "descriptionMobile": "<p><span style=\"color: #3e3e3e; font-size: 12pt\">Os móveis se destacam pelos pés em madeira maciça de Eucalipto, cuidadosamente trabalhados com detalhes de marcenaria, que evidenciam o compromisso com a qualidade e acabamento.</span></p>",
+        "lineHeightDescription": 1.4,
+        "lineHeightDescriptionMobile": 1.4,
+        "showTwoText": true,
+        "alignEnd": true,
+        "justifyEnd": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ColectionHero.tsx",
+        "title": "<p style=\"text-align: justify\"><span style=\"font-size: 45pt\">LINHA NORI</span></p>",
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "heightMobile": 362
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "heightMobile": 362
+          }
+        ],
+        "lineHeightTitle": 1.4,
+        "titleMobile": "<p><span style=\"font-size: 32pt\">LINHA NORI</span></p>",
+        "limitTitleText": false,
+        "mobileSlider": true,
+        "Titletwo": "<p>TESTE</p>",
+        "twoText": true,
+        "dobleTitle": true,
+        "TitleTwo": "<p><span style=\"font-size: 21pt\">Simplicidade nos detalhes&nbsp;</span></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p style=\"text-align: justify\"><span style=\"color: rgb(62, 62, 62)\">A linha Nori busca explorar uma estética minimalista de geometria</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(62, 62, 62)\">linear e bordas arredondadas, evidenciando a estrutura do móvel.</span></p>",
+        "button": {
+          "isBold": false
+        },
+        "lineHeightTitleTwo": 1.4,
+        "lineHeigthTitleTwoMobile": 1.4,
+        "TitleTwoMobile": "<p><span style=\"font-size: 15pt\">Simplicidade nos detalhes</span></p><p></p><p></p><p></p><p><span style=\"font-size: 15pt\">&nbsp;</span></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">A linha Nori busca explorar uma estética minimalista de geometria linear e bordas arredondadas, evidenciando a estrutura do móvel.</span></p>",
+        "textTwo": "<p><span style=\"color: #3e3e3e\">Com molduras discretas inspiradas na </span></p><p><span style=\"color: #3e3e3e\">Fusuma, elemento da arquitetura japonesa,</span></p><p><span style=\"color: #3e3e3e\">o design das peças busca contemplação e </span></p><p><span style=\"color: #3e3e3e\">serenidade.&nbsp;Perfeito para espaços urbanos</span></p><p><span style=\"color: #3e3e3e\">que pedem leveza, organização e beleza. &nbsp;</span></p>",
+        "lineHeightTextTwo": 1.4,
+        "textTwoMobile": "<p style=\"text-align: justify\"><span style=\"color: #3e3e3e; font-size: 11pt\">Com molduras discretas inspiradas na Fusuma, elemento da arquitetura japonesa, o design das peças busca contemplação e serenidade.&nbsp;Perfeito para espaços urbanos que pedem leveza, organização e beleza. &nbsp;</span></p>",
+        "lineHeightTextTwoMobile": 1.4
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/TextWithImagesSlider.tsx",
+        "images": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          }
+        ],
+        "text": "<p><span style=\"color: rgb(62, 62, 62)\">A base aparente, distanciada&nbsp;do corpo do produto, traz a beleza da estrutura que muitas vezes é escondida.&nbsp;</span></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">A borda arredondada da escrivaninha traz personalidade e conforto no seu uso.</span></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">Os puxadores são funcionais e discretos.</span></p><p><span style=\"color: rgb(62, 62, 62)\">Os móveis são fechados para trazer esse lugar de organização e sofisticação.&nbsp;</span></p>",
+        "lineHeigthText": 1.4,
+        "textMobile": "<p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">A base aparente, distanciada&nbsp;do corpo do produto, traz a beleza da estrutura que muitas vezes é escondida.</span></p><p></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">&nbsp;</span></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">A borda arredondada da escrivaninha traz personalidade e conforto no seu uso.</span></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Os puxadores são funcionais e discretos. Os móveis são fechados para trazer esse lugar de organização e sofisticação.</span>&nbsp;</p>",
+        "lineHeightTextMobile": 1.4,
+        "lineHeightText": 1.4
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/SectionText.tsx",
+        "title": "<p><span style=\"color: rgb(21, 21, 21); font-size: 18pt\">Nori é uma experiência de equilíbrio — entre estética e função, tradição e contemporaneidade.&nbsp;</span></p>",
+        "description": "<p></p><p></p>",
+        "changeFontFamily": true,
+        "titleMobile": "<p><span style=\"color: rgb(21, 21, 21); font-size: 15pt\">Nori é uma experiência de equilíbrio — entre estética e função, tradição e contemporaneidade.&nbsp;</span></p>",
+        "lineHeightTitle": 1.4,
+        "lineHeightTitleMobile": 1.4
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "layout": {
+          "headerfontSize": "Small",
+          "headerAlignment": "left"
+        },
+        "products": {
+          "props": {
+            "sort": "OrderByScoreDESC",
+            "count": 12
+          },
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "cardLayout": {
+          "__resolveType": "Product Card Layout - 01"
+        },
+        "bannerImage": {
+          "image": {}
+        },
+        "noTitle": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ColectionHero.tsx",
+        "title": "<p style=\"text-align: justify\"><span style=\"font-size: 45pt\">LINHA ARP</span></p>",
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "heightMobile": 362
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "heightMobile": 362
+          }
+        ],
+        "limitTitleText": false,
+        "lineHeightTitle": 1.4,
+        "mobileSlider": true,
+        "Titletwo": "<p>TESTE</p>",
+        "twoText": true,
+        "dobleTitle": true,
+        "TitleTwo": "<p><span style=\"font-size: 21pt\">Versátil e descontraído&nbsp;</span></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">A Linha Arp é ideal para quem valoriza uma casa com estilo</span></p><p><span style=\"color: rgb(62, 62, 62)\">e criatividade.&nbsp;As peças convidam o cliente a trazer a sua</span></p><p><span style=\"color: rgb(62, 62, 62)\">personalidade compondo um ambiente único.&nbsp;</span></p>",
+        "button": {
+          "isBold": false
+        },
+        "titleMobile": "<p><span style=\"font-size: 32pt\">LINHA ARP</span></p>",
+        "lineHeightTitleTwo": 1.4,
+        "lineHeigthTitleTwoMobile": 1.4,
+        "TitleTwoMobile": "<p><span style=\"font-size: 15pt\">Versátil e descontraído</span></p><p></p><p></p><p></p><p><span style=\"font-size: 15pt\">&nbsp;</span></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">A Linha Arp é ideal para quem valoriza uma casa com estilo e criatividade.&nbsp;As peças convidam o cliente a trazer a sua personalidade compondo um ambiente único.&nbsp;</span></p>",
+        "textTwo": "<p><span style=\"color: rgb(62, 62, 62)\">Um convite para transformar o cotidiano em uma</span></p><p><span style=\"color: rgb(62, 62, 62)\">experiência acolhedora e divertida.</span></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">&nbsp;</span></p><p><span style=\"color: rgb(62, 62, 62)\">Disponível em duas tonalidades: Natural e Nozes</span></p>",
+        "lineHeightTextTwo": 1.4,
+        "textTwoMobile": "<p style=\"text-align: justify\"><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Um convite para transformar o cotidiano em uma experiência acolhedora e divertida.&nbsp;</span></p><p style=\"text-align: justify\"></p><p style=\"text-align: justify\"></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Disponível em duas tonalidades: Natural e Nozes</span></p>",
+        "lineHeightTextTwoMobile": 1.4,
+        "lineHeightTitleTwoMobile": 1.4,
+        "lineHeightTitleMobile": 1.4
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/TextWithImagesSlider.tsx",
+        "images": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          }
+        ],
+        "text": "<p><span style=\"color: rgb(62, 62, 62)\">As portas de correr ripadas transmitem</span></p><p><span style=\"color: rgb(62, 62, 62)\">leveza, em conjunto com&nbsp;tampo de vidro</span></p><p><span style=\"color: rgb(62, 62, 62)\">da escrivaninha revela o cuidado em cada</span></p><p><span style=\"color: rgb(62, 62, 62)\">detalhe da estrutura. &nbsp;</span></p>",
+        "lineHeigthText": 1.4,
+        "textMobile": "<p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">As portas de correr ripadas transmitem leveza, em conjunto com&nbsp;tampo de vidro da escrivaninha revela o cuidado em cada detalhe da estrutura. </span></p>",
+        "lineHeightTextMobile": 1.4,
+        "lineHeightText": 1.4,
+        "reverseMob": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "layout": {
+          "headerfontSize": "Small",
+          "headerAlignment": "left"
+        },
+        "products": {
+          "props": {
+            "sort": "OrderByScoreDESC",
+            "count": 12
+          },
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "cardLayout": {
+          "__resolveType": "Product Card Layout - 01"
+        },
+        "bannerImage": {
+          "image": {}
+        },
+        "noTitle": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer - 01"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
