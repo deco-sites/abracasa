@@ -35,17 +35,20 @@
           {
             "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
             "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "height": 577
+            "height": 577,
+            "heightMobile": 362
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
             "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "height": 577
+            "height": 577,
+            "heightMobile": 362
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
             "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "height": 577
+            "height": 577,
+            "heightMobile": 362
           }
         ],
         "lineHeightTitle": 1.4,
@@ -107,12 +110,14 @@
           {
             "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
             "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "height": 464
+            "height": 464,
+            "heightMobile": 290
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
             "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "height": 464
+            "height": 464,
+            "heightMobile": 290
           }
         ],
         "text": "<p><span style=\"color: #3e3e3e\">Com puxadores funcionais e discretos,</span></p><p><span style=\"color: #3e3e3e\">os móveis carregam sofisticação sendo</span></p><p><span style=\"color: #3e3e3e\">perfeitos para espaços urbanos que</span></p><p><span style=\"color: #3e3e3e\">pedem leveza, organização e beleza.</span></p><p></p><p></p><p></p><p></p><p><span style=\"color: #3e3e3e\">A distância entre tampo e base da</span></p><p><span style=\"color: #3e3e3e\">escrivaninha, traz a beleza da estrutura</span></p><p><span style=\"color: #3e3e3e\">que muitas vezes é escondida. Suas</span></p><p><span style=\"color: #3e3e3e\">bordas arredondadas são um convite a</span></p><p><span style=\"color: #3e3e3e\">apreciação e ao conforto.</span></p>",
@@ -205,12 +210,14 @@
           {
             "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
             "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "height": 464
+            "height": 464,
+            "heightMobile": 290
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
             "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "height": 646
+            "height": 464,
+            "heightMobile": 290
           }
         ],
         "text": "<p><span style=\"color: #3e3e3e\">As portas de correr em conjunto com o</span></p><p><span style=\"color: #3e3e3e\">tampo de vidro da escrivaninha, revelam a</span></p><p><span style=\"color: #3e3e3e\">versatilidade e a leveza da Linha Arp.</span></p>",
