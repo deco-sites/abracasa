@@ -73,7 +73,7 @@ export default function TextWithImagesSlider({
           </Slider>
           <SliderJS rootId={id} />
 
-          <div class="hidden xl:flex gap-[22px] absolute right-0">
+          <div class="hidden xl:flex gap-[22px] max-h-[464px] absolute right-0">
             {images.map((img, i) => (
               <Image
                 key={i}

@@ -4734,6 +4734,9 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[415px\] {
   max-height: 415px;
 }
+.max-h-\[464px\] {
+  max-height: 464px;
+}
 .max-h-\[50\%\] {
   max-height: 50%;
 }
