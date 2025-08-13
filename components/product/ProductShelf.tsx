@@ -59,19 +59,25 @@ function ProductShelf({
   return (
     <div
       id="4017801744-0"
-      class={`w-full container ${shelfWithBanner ? "" : "py-8 lg:gap-4 lg:py-10"
+      class={`w-full container
+        ${
+          shelfWithBanner ? "" : "py-8 lg:gap-4 lg:py-10"
         } flex flex-col gap-3 relative lg:max-w-[85%]`}
     >
-      <Header
-        title={title || ""}
-        description={description || ""}
-        fontSize={layout?.headerfontSize || "Small"}
-        alignment={layout?.headerAlignment || "left"}
-      />
+      <div class="min-h-10">
+        <Header
+          title={title || ""}
+          description={description || ""}
+          fontSize={layout?.headerfontSize || "Small"}
+          alignment={layout?.headerAlignment || "left"}
+        />
+      </div>
 
       <div
         id={id}
-        class={`grid grid-cols-[48px_1fr_48px] ${shelfWithBanner ? '' : 'pl-6 sm:px-0'}`}
+        class={`grid grid-cols-[48px_1fr_48px] ${
+          shelfWithBanner ? "" : "pl-6 sm:px-0"
+        }`}
       >
         <Slider class="flex overflow-x-scroll snap-mandatory scroll-smooth sm:snap-end scrollbar col-span-full row-start-2 row-end-5 pb-2">
           {shelfWithBanner && bannerImage && (
@@ -89,8 +95,16 @@ function ProductShelf({
                   decoding="async"
                   class="w-full h-full "
                   style={{
-                    maxWidth: `${bannerImage.image.widthMobile ? bannerImage.image.widthMobile : '410'}px`,
-                    maxHeight: `${bannerImage.image.heightMobile ? bannerImage.image.heightMobile : '462'}px`
+                    maxWidth: `${
+                      bannerImage.image.widthMobile
+                        ? bannerImage.image.widthMobile
+                        : "410"
+                    }px`,
+                    maxHeight: `${
+                      bannerImage.image.heightMobile
+                        ? bannerImage.image.heightMobile
+                        : "462"
+                    }px`,
                   }}
                 />
               </div>
@@ -99,7 +113,9 @@ function ProductShelf({
           {products?.map((product, index) => (
             <Slider.Item
               index={shelfWithBanner && bannerImage ? index + 1 : index}
-              class={`carousel-item w-[252px] lg:w-[292px] ${index !== products.length - 1 ? 'mr-6' : ''}`}
+              class={`carousel-item w-[252px] lg:w-[292px] ${
+                index !== products.length - 1 ? "mr-6" : ""
+              }`}
             >
               <ProductCard
                 product={product}
@@ -114,8 +130,9 @@ function ProductShelf({
 
         <>
           <div
-            class={`hidden sm:block z-10 col-start-1 row-start-3 absolute right-11 ${shelfWithBanner ? "top-[-38px]" : "top-[38px]"
-              }`}
+            class={`hidden sm:block z-10 col-start-1 row-start-3 absolute right-11 ${
+              shelfWithBanner ? "top-[-38px]" : "top-[38px]"
+            }`}
           >
             <Slider.PrevButton class="btn !w-8 !h-8 !min-h-8 btn-circle btn-outline bg-base-100">
               <Icon
@@ -127,8 +144,9 @@ function ProductShelf({
             </Slider.PrevButton>
           </div>
           <div
-            class={`hidden sm:block z-10 col-start-3 row-start-3 absolute right-0 ${shelfWithBanner ? "top-[-38px]" : "top-[38px]"
-              }`}
+            class={`hidden sm:block z-10 col-start-3 row-start-3 absolute right-0 ${
+              shelfWithBanner ? "top-[-38px]" : "top-[38px]"
+            }`}
           >
             <Slider.NextButton class="btn !w-8 !h-8 !min-h-8 btn-circle btn-outline bg-base-100">
               <Icon size={16} id="ChevronRight" strokeWidth={3} />
@@ -146,7 +164,7 @@ function ProductShelf({
                 mapProductToAnalyticsItem({
                   index,
                   product,
-                  ...(useOffer(product.offers)),
+                  ...useOffer(product.offers),
                 })
               ),
             },
@@ -165,23 +183,26 @@ export const loader = async (props: Props, _req: Request, ctx: AppContext) => {
   if (!products) return null;
 
   const extractSimilarLabel = (item: Product) =>
-    item.isVariantOf?.additionalProperty.find((aP) =>
-      aP.name === "ProdutosSimilares"
+    item.isVariantOf?.additionalProperty.find(
+      (aP) => aP.name === "ProdutosSimilares"
     )?.value;
 
   const fetchSimilarProducts = async (label: string) => {
     try {
-      const fetchedProducts = await ctx.invoke.vtex.loaders.legacy
-        .productListingPage({
+      const fetchedProducts =
+        await ctx.invoke.vtex.loaders.legacy.productListingPage({
           fq: `specificationFilter_178:${encodeURIComponent(label)}`,
           count: 20,
         });
 
-      return fetchedProducts?.products?.filter((item) =>
-        item.productID !==
-        products.find((product) => extractSimilarLabel(product) === label)
-          ?.productID
-      ) || [];
+      return (
+        fetchedProducts?.products?.filter(
+          (item) =>
+            item.productID !==
+            products.find((product) => extractSimilarLabel(product) === label)
+              ?.productID
+        ) || []
+      );
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);
       return [];
@@ -199,9 +220,10 @@ export const loader = async (props: Props, _req: Request, ctx: AppContext) => {
 
   const updatedProducts = products.map((product, index) => ({
     ...product,
-    isSimilarTo: similarsLabels[index] === undefined
-      ? undefined
-      : similarsProductsResults[index],
+    isSimilarTo:
+      similarsLabels[index] === undefined
+        ? undefined
+        : similarsProductsResults[index],
   }));
 
   return {
