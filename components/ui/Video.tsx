@@ -82,8 +82,7 @@ export default function Video(
         muted={content.muted}
         controls={content.controls}
         loop={content.loop}
-        class="w-full h-full object-fill object-center"
-        style={{ maxHeight: content.height }}
+        class="w-full h-full object-cover object-center"
       />
     );
   }
