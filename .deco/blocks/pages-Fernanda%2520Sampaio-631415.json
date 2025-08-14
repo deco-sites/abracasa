@@ -106,7 +106,10 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "description": "Rack, buffet, escrivaninha e gaveteiros assinados por Fernanda Sampaio: design que alia estética e função com elegância para ambientes residenciais e corporativos.",
+    "canonical": "https://www.abracasa.com.br/campanha/fernanda-sampaio",
+    "title": "Móveis Exclusivos | Abra Casa"
   },
   "__resolveType": "website/pages/Page.tsx"
 }
