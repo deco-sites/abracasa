@@ -28,6 +28,7 @@ import * as $OutOfStock from "./islands/OutOfStock.tsx";
 import * as $PhysicalStoresButton from "./islands/PhysicalStoresButton.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
 import * as $ProxyIframe from "./islands/ProxyIframe.tsx";
+import * as $ReturnToTop from "./islands/ReturnToTop.tsx";
 import * as $SearchControls from "./islands/SearchControls.tsx";
 import * as $SearchTitle from "./islands/SearchTitle.tsx";
 import * as $Shelf_AddToCartButton from "./islands/Shelf/AddToCartButton.tsx";
@@ -67,6 +68,7 @@ const manifest = {
     "./islands/PhysicalStoresButton.tsx": $PhysicalStoresButton,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
     "./islands/ProxyIframe.tsx": $ProxyIframe,
+    "./islands/ReturnToTop.tsx": $ReturnToTop,
     "./islands/SearchControls.tsx": $SearchControls,
     "./islands/SearchTitle.tsx": $SearchTitle,
     "./islands/Shelf/AddToCartButton.tsx": $Shelf_AddToCartButton,

@@ -114,7 +114,9 @@ function ColectionHero({
             <a
               href={button.link || "#"}
               target={button.target || "_blank"}
-              class={`w-fit flex mx-6 lg:mx-0 items-center justify-center border border-black text-black hover:bg-black hover:text-white transition-colors duration-300 py-2.5 px-12 ${
+              class={`w-fit flex mx-6 lg:mx-0 items-center justify-center border border-black text-black hover:bg-black hover:text-white transition-colors duration-300 py-2.5 px-12
+                ${twoText ? "mb-7" : ""}
+                ${
                 button.isBold ? "font-bold" : "font-medium"
               }`}
             >

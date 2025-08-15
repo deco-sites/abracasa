@@ -3988,6 +3988,9 @@ details.collapse summary::-webkit-details-marker {
 .bottom-6 {
   bottom: 1.5rem;
 }
+.bottom-\[10\%\] {
+  bottom: 10%;
+}
 .left-0 {
   left: 0px;
 }
@@ -4026,6 +4029,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .right-2 {
   right: 0.5rem;
+}
+.right-2\.5 {
+  right: 0.625rem;
 }
 .right-3 {
   right: 0.75rem;
@@ -4734,11 +4740,11 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[415px\] {
   max-height: 415px;
 }
-.max-h-\[464px\] {
-  max-height: 464px;
-}
 .max-h-\[50\%\] {
   max-height: 50%;
+}
+.max-h-\[514px\] {
+  max-height: 514px;
 }
 .max-h-\[525px\] {
   max-height: 525px;
@@ -5316,6 +5322,14 @@ details.collapse summary::-webkit-details-marker {
 }
 .translate-x-\[-50\%\] {
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-0 {
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-4 {
+  --tw-translate-y: 1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .translate-y-\[200\%\] {
@@ -5968,6 +5982,10 @@ details.collapse summary::-webkit-details-marker {
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 .border-gray-dark {
   --tw-border-opacity: 1;
@@ -9141,8 +9159,8 @@ details.collapse summary::-webkit-details-marker {
     margin-left: 80px;
   }
 
-  .lg\:mr-\[218px\] {
-    margin-right: 218px;
+  .lg\:mr-\[140px\] {
+    margin-right: 140px;
   }
 
   .lg\:mt-0 {
@@ -9888,8 +9906,8 @@ details.collapse summary::-webkit-details-marker {
     height: 126px;
   }
 
-  .xl\:h-\[464px\] {
-    height: 464px;
+  .xl\:h-\[514px\] {
+    height: 514px;
   }
 
   .xl\:max-h-\[564px\] {

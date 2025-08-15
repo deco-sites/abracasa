@@ -37,17 +37,17 @@ export default function TextWithImagesSlider({
     >
       <div class="realtive w-full">
         <div
-          class={`max-w-[1210px] xl:h-[464px] pl-6 xl:pl-0 w-full xl:mt-[79px] mt-[60px] mx-auto flex xl:flex-row xl:justify-between ${
+          class={`max-w-[1210px] xl:h-[514px] pl-6 xl:pl-0 w-full xl:mt-[79px] mt-[60px] mx-auto flex xl:flex-row xl:justify-between items-center ${
             reverseMob ? "flex-col-reverse lg:mb-[67px] mb-0" : "flex-col"
           }`}
         >
           <div
-            class="hidden xl:block sliderP font-normal text-left my-auto"
+            class="font-inter hidden xl:block sliderP font-normal text-left my-auto"
             dangerouslySetInnerHTML={{ __html: text || "" }}
             style={{ lineHeight: lineHeightText || "" }}
           />
           <div
-            class={`xl:hidden mr-6 block sliderP font-normal text-left ${
+            class={`font-inter xl:hidden mr-6 block sliderP font-normal text-left ${
               reverseMob ? "mt-[65px] mb-0" : "mb-[60px] "
             }`}
             dangerouslySetInnerHTML={{ __html: textMobile || "" }}
@@ -73,7 +73,7 @@ export default function TextWithImagesSlider({
           </Slider>
           <SliderJS rootId={id} />
 
-          <div class="hidden xl:flex gap-[22px] max-h-[464px] absolute right-0">
+          <div class="hidden xl:flex gap-[22px] max-h-[514px] absolute right-0">
             {images.map((img, i) => (
               <Image
                 key={i}

@@ -38,6 +38,7 @@ export interface Props {
   cardLayout?: cardLayout;
   shelfWithBanner?: boolean;
   bannerImage?: BannerImage;
+  sliderId?: string;
 }
 
 function ProductShelf({
@@ -48,8 +49,10 @@ function ProductShelf({
   cardLayout,
   shelfWithBanner = false,
   bannerImage,
+  sliderId
 }: Props) {
   const id = useId();
+  const AdminSliderId = sliderId ?? "colecao-tal";
   const platform = usePlatform();
 
   if (!products || products.length === 0) {
@@ -64,7 +67,7 @@ function ProductShelf({
           shelfWithBanner ? "" : "py-8 lg:gap-4 lg:py-10"
         } flex flex-col gap-3 relative lg:max-w-[85%]`}
     >
-      <div class="min-h-10">
+      <div class="min-h-10" id={AdminSliderId}>
         <Header
           title={title || ""}
           description={description || ""}
