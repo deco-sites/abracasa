@@ -96,7 +96,7 @@ function ColectionHero({
             <>
               <h2
                 class={`font-normal mx-6 lg:mx-0 hidden lg:block leading-[1.2] 
-                  ${twoText ? "sliderP mb-[134px] tracking-normal" : "tracking-wider"}
+                  ${twoText ? "sliderP mb-[60px] tracking-normal" : "tracking-wider"}
                   ${limitTitleText ? "max-w-[495px] sliderP !font-light" : ""}`}
                 dangerouslySetInnerHTML={{ __html: TitleTwo ?? "" }}
                 style={{ lineHeight: lineHeightTitleTwo || "" }}
