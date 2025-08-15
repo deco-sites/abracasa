@@ -120,7 +120,8 @@
       "hiddenFilters": [
         "marcas",
         "departamentos"
-      ]
+      ],
+      "categoryId": null
     },
     {
       "__resolveType": "site/sections/Content/SectionText.tsx",

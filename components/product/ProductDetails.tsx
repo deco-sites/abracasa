@@ -175,16 +175,15 @@ export default function ProductDetails(
                           {!item?.name?.includes("Materiais") &&
                             !item?.name?.includes("Limpeza e cuidados") &&
                             !item?.value?.includes("Abrir manual") && (
-                            <span
-                              className={`${
-                                item.name === "Entrega"
-                                  ? "text-justify"
-                                  : "text-end"
-                              } w-full`}
-                            >
-                              {item.value}
-                            </span>
-                          )}
+                              <span
+                                className={`${item.name === "Entrega"
+                                    ? "text-justify"
+                                    : "text-end"
+                                  } w-full`}
+                              >
+                                {item.value}
+                              </span>
+                            )}
                         </li>
                       );
                     })}
@@ -347,27 +346,26 @@ export default function ProductDetails(
                           />
                         )
                         : item?.name?.includes("Materiais")
-                        ? (
-                          <div
-                            className="w-[65%] text-justify leading-relaxed tracking-wide"
-                            dangerouslySetInnerHTML={{
-                              __html:
-                                item?.value?.replace(/\r?\n/g, "<br />") ||
-                                "",
-                            }}
-                          />
-                        )
-                        : (
-                          <span
-                            className={`${
-                              item.name === "Entrega"
-                                ? "text-justify"
-                                : "text-end"
-                            } w-[65%]`}
-                          >
-                            {item.value}
-                          </span>
-                        )}
+                          ? (
+                            <div
+                              className="w-[65%] text-justify leading-relaxed tracking-wide"
+                              dangerouslySetInnerHTML={{
+                                __html:
+                                  item?.value?.replace(/\r?\n/g, "<br />") ||
+                                  "",
+                              }}
+                            />
+                          )
+                          : (
+                            <span
+                              className={`${item.name === "Entrega"
+                                  ? "text-justify"
+                                  : "text-end"
+                                } w-[65%]`}
+                            >
+                              {item.value}
+                            </span>
+                          )}
                     </li>
                   );
                 })}
@@ -439,6 +437,7 @@ export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
   );
   const VTEXAPIAPPKEY = await props?.appKey?.get?.();
   const VTEXAPIAPPTOKEN = await props?.appToken?.get?.();
+  console.log(VTEXAPIAPPKEY, "q q vem do appkey daqui?")
   if (skuId && VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null && !isKit) {
     const data = await fetchSafe(
       `https://abracasa.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit/${skuId}`,

@@ -9,8 +9,10 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import type { Product, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
-import { AppContext } from "apps/vtex/mod.ts";
+import { AppContext } from "$store/apps/site.ts";
+import { AppContext as AppContextVTEX } from "apps/vtex/mod.ts";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
+import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 // import { hidden } from "std/fmt/colors.ts";
 
 export interface Layout {
@@ -37,7 +39,7 @@ export interface Props {
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
 
-  categoryId?: string | null;
+  dataTreePathJoined?: string | null;
 }
 
 function NotFound() {
@@ -57,12 +59,11 @@ function Result({
   startingPage = 0,
   isCategoriesFilterActive = false,
   hiddenFilters = [],
-  categoryId,
+  dataTreePathJoined,
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo.recordPerPage || products.length;
   const id = useId();
-  console.log(categoryId, "Result");
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
 
@@ -78,7 +79,7 @@ function Result({
         <SearchControls
           sortParam={sortParam}
           sortOptions={sortOptions}
-          categoryId={categoryId}
+          dataTreePathJoined={dataTreePathJoined}
           filters={filters}
           breadcrumb={breadcrumb}
           displayFilter={layout?.variant === "drawer"}
@@ -137,6 +138,9 @@ function Result({
 }
 
 export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+
+  const ctxVtex = ctx as unknown as AppContextVTEX;
+
   const url = new URL(req.url);
   const layoutValue = url.searchParams.get("layout");
   const currentPathName = url.pathname;
@@ -156,7 +160,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
   const fetchSimilarProducts = async (label: string) => {
     try {
-      const fetchedProducts = await ctx.invoke.vtex.loaders.legacy
+      const fetchedProducts = await ctxVtex.invoke.vtex.loaders.legacy
         .productListingPage({
           fq: `specificationFilter_178:${encodeURIComponent(label)}`,
           count: 20,
@@ -164,8 +168,8 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
       return fetchedProducts?.products?.filter((item) =>
         item.productID !==
-          products.find((product) => extractSimilarLabel(product) === label)
-            ?.productID
+        products.find((product) => extractSimilarLabel(product) === label)
+          ?.productID
       ) || [];
     } catch (error) {
       console.error(`Failed to fetch products for label ${label}:`, error);
@@ -212,15 +216,35 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
   const getCategoryId = await fetchPageId();
   categoryId = getCategoryId.id;
-  console.log(categoryId, "loader");
+
+  const VTEXAPIAPPKEY = ctx.appKey?.get?.();
+  const VTEXAPIAPPTOKEN = ctx.appToken?.get?.();
+
+  let dataTreePathJoined = null;
+
+  if (VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null && categoryId) {
+    const data = await fetchSafe(
+      `https://abracasa.vtexcommercestable.com.br/api/catalog/pvt/category/${categoryId}?includeTreePath=true`,
+      {
+        headers: {
+          "X-VTEX-API-AppKey": VTEXAPIAPPKEY,
+          "X-VTEX-API-AppToken": VTEXAPIAPPTOKEN,
+        },
+      },
+    ).then((data) => data.json());
+    if (data) {
+      dataTreePathJoined = data.TreePathIds.join("/");
+    }
+  }
+
   const fetchAtelieProducts = async (
-    ctx: AppContext,
-    categoryId: string | null,
+    ctxVtex: AppContextVTEX,
+    categoryPath: string | null,
     clusterId: string,
   ) => {
     try {
-      return await ctx.invoke.vtex.loaders.legacy.productListingPage({
-        fq: `C:${categoryId},productClusterIds:${clusterId}`,
+      return await ctxVtex.invoke.vtex.loaders.legacy.productListingPage({
+        fq: `C:${categoryPath},productClusterIds:${clusterId}`,
       });
     } catch (error) {
       console.error("Error fetching atelie products:", error);
@@ -259,21 +283,22 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
       );
     }
   } else if (url.searchParams.has("add")) {
-    const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "401");
-    return { ...props, page: getAtelieProducts };
+    const getAtelieProducts = await fetchAtelieProducts(ctxVtex, dataTreePathJoined, "401");
+    return { ...props, page: getAtelieProducts, dataTreePathJoined };
   } else if (url.searchParams.has("addAtelie")) {
-    const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "450");
-    return { ...props, page: getAtelieProducts };
+    const getAtelieProducts = await fetchAtelieProducts(ctxVtex, dataTreePathJoined, "450");
+    return { ...props, page: getAtelieProducts, dataTreePathJoined };
   } else if (url.searchParams.has("addAtelieEntrega")) {
-    const getAtelieProducts = await fetchAtelieProducts(ctx, categoryId, "558");
-    return { ...props, page: getAtelieProducts };
+    const getAtelieProducts = await fetchAtelieProducts(ctxVtex, dataTreePathJoined, "558");
+    return { ...props, page: getAtelieProducts, dataTreePathJoined };
   }
+
 
   return {
     ...props,
     page: { ...props.page, products: filteredProducts },
     layout: { ...props.layout, columns: updatedLayout },
-    categoryId,
+    dataTreePathJoined,
   };
 };
 

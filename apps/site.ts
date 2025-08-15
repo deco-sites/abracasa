@@ -10,6 +10,7 @@ import manifest, { Manifest } from "../manifest.gen.ts";
 import { Config } from "apps/vtex/loaders/config.ts";
 import { type Section } from "@deco/deco/blocks";
 import { type App, type AppContext as AC } from "@deco/deco";
+import { Secret } from "apps/website/loaders/secret.ts";
 export type AppContext = AC<ReturnType<typeof Site>>;
 export type Props = {
   /**
@@ -19,6 +20,8 @@ export type Props = {
    */
   platform: Platform;
   theme?: Section;
+  appKey?: Secret;
+  appToken?: Secret;
   vtex?: Config;
 } & CommerceProps;
 export type Platform =
