@@ -19,6 +19,9 @@ export type Props = Pick<
   displayFilter?: boolean;
   isCategoriesFilterActive?: boolean;
   hiddenFilters?: string[];
+  /**
+  * @hide true
+  */
   dataTreePathJoined?: string;
 };
 
