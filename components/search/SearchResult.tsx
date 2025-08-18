@@ -9,8 +9,10 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import type { Product, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
-import { AppContext } from "apps/vtex/mod.ts";
+import { AppContext } from "$store/apps/site.ts";
+import { AppContext as AppContextVTEX } from "apps/vtex/mod.ts";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
+import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 // import { hidden } from "std/fmt/colors.ts";
 
 export interface Layout {
@@ -36,6 +38,10 @@ export interface Props {
 
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
+  /**
+   * @hide true
+   */
+  dataTreePathJoined?: string | null;
 }
 
 function NotFound() {
@@ -55,11 +61,11 @@ function Result({
   startingPage = 0,
   isCategoriesFilterActive = false,
   hiddenFilters = [],
+  dataTreePathJoined,
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo.recordPerPage || products.length;
   const id = useId();
-
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
 
@@ -75,6 +81,7 @@ function Result({
         <SearchControls
           sortParam={sortParam}
           sortOptions={sortOptions}
+          dataTreePathJoined={dataTreePathJoined}
           filters={filters}
           breadcrumb={breadcrumb}
           displayFilter={layout?.variant === "drawer"}
@@ -133,8 +140,14 @@ function Result({
 }
 
 export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+
+  const ctxVtex = ctx as unknown as AppContextVTEX;
+
   const url = new URL(req.url);
   const layoutValue = url.searchParams.get("layout");
+  const currentPathName = url.pathname;
+  let filteredProduct = props.page?.products || [];
+  let categoryId: string | null = null;
 
   const updatedLayout = {
     mobile: Number(layoutValue) || props?.layout?.columns?.mobile || 1,
@@ -149,7 +162,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
   const fetchSimilarProducts = async (label: string) => {
     try {
-      const fetchedProducts = await ctx.invoke.vtex.loaders.legacy
+      const fetchedProducts = await ctxVtex.invoke.vtex.loaders.legacy
         .productListingPage({
           fq: `specificationFilter_178:${encodeURIComponent(label)}`,
           count: 20,
@@ -183,7 +196,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   }));
 
   let filteredProducts = updatedProducts;
-  if (url.searchParams.has("readyDelivery")) {
+  if (url.searchParams.has("prontaEntrega")) {
     filteredProducts = updatedProducts.filter((product) =>
       product.additionalProperty?.some((property) =>
         property.value?.includes("Pronta Entrega")
@@ -191,10 +204,103 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     );
   }
 
+  const fetchPageId = async () => {
+    try {
+      const response = await fetch(
+        `https://abracasa.vtexcommercestable.com.br/api/catalog_system/pub/portal/pagetype${currentPathName}`,
+      );
+      return await response.json();
+    } catch (error) {
+      console.error(`Error`, error);
+      return null;
+    }
+  };
+
+  const getCategoryId = await fetchPageId();
+  categoryId = getCategoryId.id;
+
+  const VTEXAPIAPPKEY = ctx.appKey?.get?.();
+  const VTEXAPIAPPTOKEN = ctx.appToken?.get?.();
+
+  let dataTreePathJoined = null;
+
+  if (VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null && categoryId) {
+    const data = await fetchSafe(
+      `https://abracasa.vtexcommercestable.com.br/api/catalog/pvt/category/${categoryId}?includeTreePath=true`,
+      {
+        headers: {
+          "X-VTEX-API-AppKey": VTEXAPIAPPKEY,
+          "X-VTEX-API-AppToken": VTEXAPIAPPTOKEN,
+        },
+      },
+    ).then((data) => data.json());
+    if (data) {
+      dataTreePathJoined = data.TreePathIds.join("/");
+    }
+  }
+
+  const fetchAtelieProducts = async (
+    ctxVtex: AppContextVTEX,
+    categoryPath: string | null,
+    clusterId: string,
+  ) => {
+    try {
+      return await ctxVtex.invoke.vtex.loaders.legacy.productListingPage({
+        fq: `C:${categoryPath},productClusterIds:${clusterId}`,
+      });
+    } catch (error) {
+      console.error("Error fetching atelie products:", error);
+      return { products: [] };
+    }
+  };
+
+  const filterByAdditionalProperty = (
+    products: Product[],
+    value: string,
+  ): Product[] => {
+    return products.filter((product) =>
+      product.additionalProperty?.some((property) =>
+        property.value?.includes(value)
+      )
+    ) || [];
+  };
+
+  if (url.searchParams.has("map")) {
+    if (url.searchParams.has("add")) {
+      filteredProduct = filterByAdditionalProperty(
+        filteredProduct,
+        "Pronta Entrega",
+      );
+    }
+    if (url.searchParams.has("addAtelie")) {
+      filteredProduct = filterByAdditionalProperty(
+        filteredProduct,
+        "Atelie Casa",
+      );
+    }
+    if (url.searchParams.has("addAtelieEntrega")) {
+      filteredProduct = filterByAdditionalProperty(
+        filteredProduct,
+        "Ateliê + Pronta entrega",
+      );
+    }
+  } else if (url.searchParams.has("add")) {
+    const getAtelieProducts = await fetchAtelieProducts(ctxVtex, dataTreePathJoined, "401");
+    return { ...props, page: getAtelieProducts, dataTreePathJoined };
+  } else if (url.searchParams.has("addAtelie")) {
+    const getAtelieProducts = await fetchAtelieProducts(ctxVtex, dataTreePathJoined, "450");
+    return { ...props, page: getAtelieProducts, dataTreePathJoined };
+  } else if (url.searchParams.has("addAtelieEntrega")) {
+    const getAtelieProducts = await fetchAtelieProducts(ctxVtex, dataTreePathJoined, "558");
+    return { ...props, page: getAtelieProducts, dataTreePathJoined };
+  }
+
+
   return {
     ...props,
     page: { ...props.page, products: filteredProducts },
     layout: { ...props.layout, columns: updatedLayout },
+    dataTreePathJoined,
   };
 };
 

@@ -7,7 +7,8 @@
   "products": {
     "props": {
       "sort": "",
-      "count": 12
+      "count": 12,
+      "collection": "559"
     },
     "__resolveType": "vtex/loaders/legacy/productList.ts"
   },

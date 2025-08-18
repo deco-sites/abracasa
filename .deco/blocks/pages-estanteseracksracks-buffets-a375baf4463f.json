@@ -19,8 +19,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://assets.decocache.com/abracasa/5547c2fe-06dc-440f-afe1-f3b796253284/casa_colecao25_racks_banner_especial_mobile_800x400-(1).png",
-            "desktop": "https://assets.decocache.com/abracasa/5604e9d4-4106-40bd-bcb9-8575034ef6fe/casa_colecao25_racks_banner_especial_desktop_1800x220-(1).jpg"
+            "mobile": "https://assets.decocache.com/abracasa/225fb586-8768-4e6f-97e0-9824f2be6009/banner_especial_rack2_mobile.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/1320aa5d-c577-4afc-ab19-cbb65d021bdb/banner_especial_rack2_desktop.jpg"
           },
           "matcher": "/*"
         }

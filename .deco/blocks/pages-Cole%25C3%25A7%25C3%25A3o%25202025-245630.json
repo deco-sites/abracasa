@@ -108,7 +108,7 @@
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
-          "sort": "OrderByPriceASC",
+          "sort": "OrderByTopSaleDESC",
           "filters": "dynamic",
           "fq": "H:553",
           "count": 48
@@ -148,7 +148,8 @@
             "image": "Change image",
             "card": "None"
           }
-        }
+        },
+        "categoryId": null
       }
     },
     {

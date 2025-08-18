@@ -13,29 +13,15 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "alt": "Sale Abracasa",
-          "href": "https://www.abracasa.com.br/campanha/sale",
+          "alt": "Ateliê",
+          "href": "https://www.abracasa.com.br/colecao-atelie",
           "mobile": {
-            "image": "https://assets.decocache.com/abracasa/5a4305e3-cab1-4957-910e-9e7b99565110/casa_banner_mobile_sale_jun_25_767x942.jpg",
+            "image": "https://assets.decocache.com/abracasa/6a82fb15-0929-407d-8e3a-1f4060fdda72/casa_banner_home_princial_mobile_atelie_767x942.jpg",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://assets.decocache.com/abracasa/b4168017-4fb0-4cea-bc44-1ef511b97c54/casa_banner_desktop_sale_jun_1920x713-(1).jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Sale Casa - Sofá",
-          "href": "https://www.abracasa.com.br/moveis/sofa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/b5ef1090-fed2-4d82-9123-10ad90c15000/casa__abra_week_banner_sofa_mobile_767x972_2-(1).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/d07beee3-4754-422b-9c06-a980d5644bbb/casa__abra_week_banner_sofa_desk_1920x713.jpg",
+            "image": "https://assets.decocache.com/abracasa/1aafde43-0d43-4474-aee5-8fb932c23de8/casa_banner2_desk_atelie_casa_1920x713-(3).gif",
             "width": 1920,
             "height": 713
           }
@@ -69,15 +55,15 @@
           }
         },
         {
-          "alt": "Aniversario Casa",
-          "href": "https://www.abracasa.com.br/campanha/aniversario-casa",
+          "alt": "Home Office",
+          "href": "https://www.abracasa.com.br/campanha/home-office",
           "mobile": {
-            "image": "https://assets.decocache.com/abracasa/dad63b18-aea0-44a9-9b5a-3b971ccad957/casa_banner_mobile_40anos-(1).jpg",
+            "image": "https://assets.decocache.com/abracasa/0d023b72-40a0-462a-945f-ae4a2dd052aa/casa_escrivaninhas_banner_mobile_767x942-(1).jpg",
             "width": 767,
             "height": 942
           },
           "desktop": {
-            "image": "https://assets.decocache.com/abracasa/0973c48b-3321-4a0e-942a-858444be28e4/casa_banner_desktop_40anos.jpg",
+            "image": "https://assets.decocache.com/abracasa/5730f7cb-7b79-43fa-a788-ee7c88b4f914/casa_escrivaninhas_banner_desktop_1920x713px-(1).jpg",
             "width": 1920,
             "height": 713
           }
@@ -106,20 +92,6 @@
           },
           "desktop": {
             "image": "https://assets.decocache.com/abracasa/07c33d25-d65c-4981-8ffe-086f30655aba/casa_novapoltronacostela_banner_desktop_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Ateliê",
-          "href": "/campanha/atelie-casa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/7f834d11-e523-4da8-9c36-cd8324278cf2/1742561367041-52bf5e43-458b-4a61-bb11-077aca0bea9e",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/decd6f78-5486-46e7-85b0-17a89c60e8dd/1742561368850-3ed26f73-e2ed-4aee-a6be-8a49535587c5",
             "width": 1920,
             "height": 713
           }

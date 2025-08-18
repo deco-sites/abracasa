@@ -1,0 +1,276 @@
+{
+  "name": "Coleção Ateliê",
+  "path": "/colecao-atelie",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/sections/Seo/Seo.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header - 01"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroContentImage.tsx",
+        "image": {
+          "src": "https://assets.decocache.com/abracasa/e483d314-3b50-4b2e-a37f-e30f59f0bb9c/fotos_Atelie-(7).jpg",
+          "desktopWidth": 822,
+          "desktopHeight": 576
+        },
+        "logo": "https://assets.decocache.com/abracasa/d9c17884-9d5f-4806-ab7f-26868fc0783e/ABRA_ATELIE_LOGO-01-1.png",
+        "text": "<p><span>Ateliê Casa é o que acreditamos e buscamos para a nossa marca carioca.&nbsp;<br></span><strong><span>Um jeito leve de ocupar os espaços.</span></strong></p>",
+        "button": {
+          "buttonText": "confira os produtos",
+          "buttonLink": "#PLP"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageTextGrid.tsx",
+        "images": [
+          {
+            "src": "https://assets.decocache.com/abracasa/8e90e1a2-3832-4460-830d-be58c5f6f1b0/FOTO_04-1-(1).jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/2a66bd9c-c32b-49ad-978f-6652e27670f4/_MG_3317-Aprimorado-NR-1-(2).jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/39c8128c-7a14-423f-b554-377f8cbce4a3/quadro_rocha_735x1095cm-1.jpg"
+          }
+        ],
+        "text": "<p>Nos inspiramos na cidade onde vivemos, nas <strong>linhas retas e curvas </strong>das paisagens, na amplitude de nossas praias e no modo descontraído de levar a vida.&nbsp;<br><br>Gostamos da arte e da cultura do nosso povo e da forma calorosa de se relacionar.</p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageVideo.tsx",
+        "media": {
+          "image": "https://assets.decocache.com/abracasa/a82c8de6-1804-4518-8f63-cafc7202db6e/Group-1779.png",
+          "video": "https://assets.decocache.com/abracasa/44798c7b-3b36-42f8-8aa4-40e38ea2d1f1/casa_atelie_conceitual_1920x1080.mp4",
+          "type": "video"
+        },
+        "text": {
+          "textMobile": {
+            "content": "<p style=\"text-align: justify\"><span>Olhamos para dentro, mas também estamos sempre em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do design escandinavo, que atravessa o tempo. </span><br><span>Viajamos em busca de expandir o olhar, mas retornamos sempre para a nossa essência.</span></p>",
+            "textAlignment": "justify",
+            "position": "left"
+          },
+          "textDesktop": {
+            "content": "<p style=\"text-align: justify\">Olhamos para dentro, mas também estamos sempre em busca de inspirações externas. <br>Somos apaixonados pelo minimalismo do design escandinavo, que atravessa o tempo. <br>Viajamos em busca de expandir o olhar, mas retornamos sempre para a nossa essência.</p>",
+            "textAlignment": "justify",
+            "gap": 100,
+            "position": "left"
+          }
+        },
+        "gap": {
+          "mobile": 58
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroSimple.tsx",
+        "image": {
+          "desktopSrc": "https://assets.decocache.com/abracasa/931ec088-fcea-4ae6-9aaf-44a9eecb987f/Vertical-Mesa-Athos-Final-2-(1).jpg",
+          "desktopHeight": 670,
+          "desktopWidth": 522,
+          "mobileSrc": "https://assets.decocache.com/abracasa/931ec088-fcea-4ae6-9aaf-44a9eecb987f/Vertical-Mesa-Athos-Final-2-(1).jpg",
+          "mobileWidth": 324,
+          "mobileHeight": 416,
+          "alt": " Imagem Design Exclusivo"
+        },
+        "textContent": "<p><span style=\"color: rgb(98, 98, 98)\">Pensamos em tudo isso no momento de criação.<br>Na troca de ideias e no movimento em busca de novas <br>peças para compor um ambiente, nasce um </span><strong><span style=\"color: rgb(98, 98, 98)\">Produto.&nbsp;</span></strong></p>",
+        "reverse": true,
+        "paddingX": true,
+        "title": "design exclusivo",
+        "textContentMobile": "<p><span style=\"color: rgb(98, 98, 98)\">Pensamos em tudo isso no momento de criação. Na troca de ideias e no movimento em busca de novas peças para compor um ambiente, nasce um </span><strong><span style=\"color: rgb(98, 98, 98)\">Produto.&nbsp;</span></strong></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageVideo.tsx",
+        "text": {
+          "textMobile": {
+            "content": "<p style=\"text-align: right\">Iniciamos o nosso processo de<br> criação a partir de uma inquietação: <br><strong>O que podemos fazer de diferente? <br>Com mais cuidado, mais detalhe e<br> mais identidade.</strong></p>"
+          },
+          "textDesktop": {
+            "content": "<p style=\"text-align: right\">Iniciamos o nosso processo de criação a partir de uma inquietação: <br><strong>O que podemos fazer de diferente? Com mais cuidado, mais detalhe e mais identidade.</strong></p>",
+            "position": "right"
+          }
+        },
+        "media": {
+          "type": "image",
+          "src": "https://assets.decocache.com/abracasa/6a4c4d3f-6f2b-421f-9dd8-6f6f3e1a29ab/Rectangle-205-(1).jpg",
+          "width": 1228,
+          "height": 682
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ColectionHeroGrid.tsx",
+        "section": {
+          "0": {
+            "media": {
+              "type": "image",
+              "src": "https://assets.decocache.com/abracasa/6009033a-4b98-4920-a79d-85022f3e8d09/Vertical-Mesa-Athos-Final-1.jpg"
+            },
+            "text": {
+              "button": {
+                "target": "_blank"
+              },
+              "title": "<p>teste1</p>"
+            },
+            "name": "teste2"
+          },
+          "1": {
+            "media": {
+              "type": "image",
+              "src": "https://assets.decocache.com/abracasa/2e8b5008-5d7a-4284-8349-db45cda65ee3/_MG_3001-Aprimorado-NR-1.jpg"
+            },
+            "text": {
+              "button": {
+                "target": "_blank"
+              },
+              "title": "<p>teste2</p>"
+            }
+          },
+          "text": {},
+          "media": [
+            {
+              "src": "https://assets.decocache.com/abracasa/6009033a-4b98-4920-a79d-85022f3e8d09/Vertical-Mesa-Athos-Final-1.jpg",
+              "type": "image"
+            }
+          ]
+        },
+        "section2": {
+          "text": {}
+        },
+        "text": [
+          {
+            "limitTitleText": false,
+            "titleMobile": "<h2><strong><span style=\"color: #212121; font-size: 30pt\">paixão <br>pelo design</span></strong></h2>",
+            "content": "<p><span style=\"color: #5b5b5b\">Partimos sempre de um olhar atento para os materiais. Seja madeira, ferro ou tecido, buscamos explorar ao máximo o que cada um pode oferecer em termos de acabamento, encaixes e texturas.</span></p>",
+            "title": "<h2><strong><span style=\"color: #212121; font-size: 52pt\">paixão </span></strong><br><strong><span style=\"color: #212121; font-size: 52pt\">pelo design</span></strong></h2>",
+            "lineHeightTitle": 40,
+            "contentMobile": "<p><span style=\"color: rgb(91, 91, 91)\">Partimos sempre de um olhar atento para os materiais. Seja madeira, ferro ou tecido, buscamos explorar ao máximo o que cada um pode oferecer em termos de acabamento, encaixes e texturas.</span></p>",
+            "lineHeightTitleMobile": 24
+          },
+          {
+            "titleMobile": "<p></p>",
+            "content": "<p><span style=\"color: rgb(91, 91, 91)\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>",
+            "contentMobile": "<p><span style=\"color: rgb(91, 91, 91)\">Nada é por acaso, cada centímetro importa. <br>Um chanfro, uma costura, uma inclinação, tudo pode transformar o resultado.<br><br>Testamos, ajustamos, redesenhamos… até que o resultado seja aquilo que imaginamos.</span></p>",
+            "title": "<p></p>"
+          }
+        ],
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/47218cee-992d-4b21-98f6-9a141b28f755/fotos_Atelie-(2).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/85718109-4670-4e50-904b-6849e2fa6c65/fotos_Atelie-(9).jpg"
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/85718109-4670-4e50-904b-6849e2fa6c65/fotos_Atelie-(9).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/47218cee-992d-4b21-98f6-9a141b28f755/fotos_Atelie-(2).jpg"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
+            "alt": "Processo criativo de desenvolvimento de móveis com escolha de tecidos e desenhos preliminares.",
+            "height": 580,
+            "width": 396
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/cd54ee15-6022-43e3-a056-5f1ba01c8fa1/fotos_Atelie-(3).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/cd54ee15-6022-43e3-a056-5f1ba01c8fa1/fotos_Atelie-(3).jpg",
+            "alt": "Amostras de tecidos e materiais para móveis organizadas em prateleira com paletas de cores e catálogos",
+            "width": 396
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/aeb3f6cb-eeba-45e4-a2e6-1a7ed4ece98d/Mask-group-(1).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/aeb3f6cb-eeba-45e4-a2e6-1a7ed4ece98d/Mask-group-(1).jpg",
+            "alt": "Amostras de revestimento em couro sintético em diferentes cores sobre mesa de madeira",
+            "width": 396
+          }
+        ],
+        "justifyCenter": true,
+        "title": "<p><strong><span style=\"font-size: 19pt\">Valorizamos a simplicidade e a leveza dos detalhes.</span></strong></p>",
+        "titleMobile": "<p style=\"text-align: center\"><strong>Valorizamos a simplicidade e a leveza dos detalhes.</strong></p>",
+        "reverse": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
+          "count": 48,
+          "fq": "H:450",
+          "sort": "OrderByTopSaleDESC",
+          "filters": "dynamic",
+          "advancedConfigs": {
+            "includeOriginalAttributes": []
+          },
+          "useCollectionName": false
+        },
+        "cardLayout": {
+          "hide": {
+            "productDescription": true,
+            "skuSelector": true
+          },
+          "basics": {
+            "contentAlignment": "Left",
+            "oldPriceSize": "Small"
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          }
+        },
+        "layout": {
+          "columns": {
+            "mobile": 2,
+            "desktop": 4
+          },
+          "variant": "drawer"
+        },
+        "hiddenFilters": [
+          "designers",
+          "marcas",
+          "encomenda",
+          "departments",
+          "brands",
+          "moveis",
+          "decoração",
+          "ambientes",
+          "móveis"
+        ],
+        "categoryId": null
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

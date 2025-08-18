@@ -1,0 +1,116 @@
+{
+  "name": "Fernanda Sampaio",
+  "path": "/campanha/fernanda-sampaio",
+  "sections": [
+    {
+      "title": "Poltrona Maggiolina",
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "titleTemplate": "Poltrona Maggiolina"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "desktop": "https://assets.decocache.com/abracasa/482dbf69-4ecf-4b54-b014-81559839dc4e/casa_banner_especial_desktop_maggiolina_1800x220.png",
+            "mobile": "https://assets.decocache.com/abracasa/70048d44-a4c9-42d3-8d24-ca41eeec54b3/casa_banner_especial_mobile_maggiolina_800x400.png",
+            "alt": "moveis-exclusivos-abra-casa"
+          },
+          "matcher": "/*",
+          "title": "Móveis Exclusivos | Abra Casa"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "html": "<p style=\"text-align: center\"><br></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+    },
+    {
+      "html": "<p></p>",
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+    },
+    {
+      "page": {
+        "fq": "H:560",
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "isCategoriesFilterActive": true,
+      "categoryId": null
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "description": "Rack, buffet, escrivaninha e gaveteiros assinados por Fernanda Sampaio: design que alia estética e função com elegância para ambientes residenciais e corporativos.",
+    "canonical": "https://www.abracasa.com.br/campanha/fernanda-sampaio",
+    "title": "Móveis Exclusivos | Abra Casa"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
