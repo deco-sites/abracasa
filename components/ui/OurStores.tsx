@@ -14,6 +14,11 @@ export interface Store {
    */
   titleStore: string;
   /**
+   * @title Mapa
+   * @description Link para o mapa da loja (ex: https://goo.gl/maps/
+   */
+  map?: string;
+  /**
    * @title WhatsApp
    * @description Número do WhatsApp (ex: 11999999999)
    */
@@ -108,19 +113,29 @@ export default function OurStores(
             class={"flex-1 overflow-y-scroll scroll-smooth pr-3 md:pr-4 overflow-x-hidden flex flex-col gap-3 md:gap-4 max-h-[420px] md:max-h-[470px] lg:max-h-full lg:h-full scrollbar-secondary scrollbar-gutter-stable"}
           >
             {selectedCity?.stores.map((store) => (
-              <a
-                href={`https://api.whatsapp.com/send?phone=55${store.whatsapp}`}
-                target={"_blank"}
-                rel="noopener noreferrer"
+              <div
                 class={"w-full cursor-pointe"}
               >
                 <div class="flex flex-col justify-center border border-[#B1B1B1] py-4 px-[22px] md:py-[18px] md:px-[26px] lg:w-[420px] min-h-[120px] md:min-h-[146px]">
-                  <strong
-                    style={{ fontFamily: "'Inter', sans-serif" }}
-                    class="block font-semibold uppercase text-[#585858] pb-[7px] md:pb-[6px]"
-                  >
-                    {store.titleStore}
-                  </strong>
+                  <div class={"flex md:items-center justify-between "}>
+                    <strong
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                      class="block font-semibold uppercase text-[#585858] pb-[7px] md:pb-[6px]"
+                    >
+                      {store.titleStore}
+                    </strong>
+
+                    {store.map && (
+                      <a
+                        href={store.map}
+                        target={"_blank"}
+                        rel="noopener noreferrer"
+                        class={"uppercase text-[#585858] text-[7px]  md:text-[9px] leading-5 underline font-inter font-medium cursor-pointer"}
+                      >
+                        ver no mapa
+                      </a>
+                    )}
+                  </div>
                   <div>
                     <div
                       style={{ fontFamily: "'Inter', sans-serif" }}
@@ -129,7 +144,10 @@ export default function OurStores(
                         __html: store.description,
                       }}
                     />
-                    <div
+                    <a
+                      href={`https://api.whatsapp.com/send?phone=55${store.whatsapp}`}
+                      target={"_blank"}
+                      rel="noopener noreferrer"
                       style={{ fontFamily: "'Inter', sans-serif" }}
                       class="flex gap-1 items-center flex-wrap max-w-full text-xs md:text-sm text-[#585858] font-light"
                     >
@@ -144,10 +162,10 @@ export default function OurStores(
                       <p class=" whitespace-nowrap">
                         Whatsapp: {formatPhone(store.whatsapp)}
                       </p>
-                    </div>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </div>

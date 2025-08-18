@@ -680,7 +680,9 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -1137,7 +1139,9 @@ html {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -1660,7 +1664,9 @@ html {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
   padding: 1.5rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -2684,7 +2690,9 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: start;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -3350,7 +3358,8 @@ details.collapse summary::-webkit-details-marker {
 .glass,
   .glass.btn-active {
   border: none;
-  backdrop-filter: blur(var(--glass-blur, 40px));
+  -webkit-backdrop-filter: blur(var(--glass-blur, 40px));
+          backdrop-filter: blur(var(--glass-blur, 40px));
   background-color: transparent;
   background-image: linear-gradient(
         135deg,
@@ -3370,7 +3379,8 @@ details.collapse summary::-webkit-details-marker {
 
   .glass.btn-active {
     border: none;
-    backdrop-filter: blur(var(--glass-blur, 40px));
+    -webkit-backdrop-filter: blur(var(--glass-blur, 40px));
+            backdrop-filter: blur(var(--glass-blur, 40px));
     background-color: transparent;
     background-image: linear-gradient(
           135deg,
@@ -3841,7 +3851,9 @@ details.collapse summary::-webkit-details-marker {
 .tooltip:before,
 .tooltip:after {
   opacity: 0;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-delay: 100ms;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -4684,6 +4696,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-h-\[415px\] {
   max-height: 415px;
+}
+.max-h-\[420px\] {
+  max-height: 420px;
 }
 .max-h-\[50\%\] {
   max-height: 50%;
@@ -5691,7 +5706,8 @@ details.collapse summary::-webkit-details-marker {
   text-overflow: ellipsis;
 }
 .hyphens-auto {
-  hyphens: auto;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 .whitespace-nowrap {
   white-space: nowrap;
@@ -6639,6 +6655,9 @@ details.collapse summary::-webkit-details-marker {
 .text-\[48px\] {
   font-size: 48px;
 }
+.text-\[7px\] {
+  font-size: 7px;
+}
 .text-\[8px\] {
   font-size: 8px;
 }
@@ -7147,7 +7166,9 @@ details.collapse summary::-webkit-details-marker {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -8859,7 +8880,8 @@ details.collapse summary::-webkit-details-marker {
   }
 
   .md\:hyphens-none {
-    hyphens: none;
+    -webkit-hyphens: none;
+            hyphens: none;
   }
 
   .md\:border-t {
@@ -9002,6 +9024,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:text-\[54px\] {
     font-size: 54px;
+  }
+
+  .md\:text-\[9px\] {
+    font-size: 9px;
   }
 
   .md\:text-base {
@@ -9199,12 +9225,20 @@ details.collapse summary::-webkit-details-marker {
     height: 18px;
   }
 
+  .lg\:h-\[574px\] {
+    height: 574px;
+  }
+
   .lg\:h-\[674px\] {
     height: 674px;
   }
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:max-h-\[206px\] {
@@ -9283,12 +9317,12 @@ details.collapse summary::-webkit-details-marker {
     min-width: 205px;
   }
 
-  .lg\:min-w-\[486px\] {
-    min-width: 486px;
-  }
-
   .lg\:min-w-\[445px\] {
     min-width: 445px;
+  }
+
+  .lg\:min-w-\[486px\] {
+    min-width: 486px;
   }
 
   .lg\:min-w-\[61px\] {
