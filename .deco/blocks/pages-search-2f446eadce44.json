@@ -52,7 +52,8 @@
       },
       "startingPage": 1,
       "__resolveType": "site/sections/Product/SearchResult.tsx",
-      "isCategoriesFilterActive": true
+      "isCategoriesFilterActive": true,
+      "dataTreePathJoined": null
     },
     {
       "__resolveType": "Footer - 01"
