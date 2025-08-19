@@ -13,34 +13,6 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "alt": "Sale Abracasa",
-          "href": "https://www.abracasa.com.br/campanha/sale",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/9bb9feab-eb49-4114-bc11-eca80b2bb6bd/casa_banner_mobile_sale_jun_25_767x942-(2).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/f1d860ed-d07c-4662-8fb6-cd4dd94042e8/casa_banner_desktop_sale_jun_1920x713-(2).jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Sale Casa - Sofá",
-          "href": "https://www.abracasa.com.br/moveis/sofa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/b5ef1090-fed2-4d82-9123-10ad90c15000/casa__abra_week_banner_sofa_mobile_767x972_2-(1).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/d07beee3-4754-422b-9c06-a980d5644bbb/casa__abra_week_banner_sofa_desk_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Ateliê",
           "href": "https://www.abracasa.com.br/colecao-atelie",
           "mobile": {
@@ -49,7 +21,7 @@
             "height": 942
           },
           "desktop": {
-            "image": "https://assets.decocache.com/abracasa/edb73223-4149-442c-9081-3e8ee72ba84b/casa_banner_desk_atelie_casa_1920x71.gif",
+            "image": "https://assets.decocache.com/abracasa/1aafde43-0d43-4474-aee5-8fb932c23de8/casa_banner2_desk_atelie_casa_1920x713-(3).gif",
             "width": 1920,
             "height": 713
           }
@@ -92,20 +64,6 @@
           },
           "desktop": {
             "image": "https://assets.decocache.com/abracasa/5730f7cb-7b79-43fa-a788-ee7c88b4f914/casa_escrivaninhas_banner_desktop_1920x713px-(1).jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Aniversario Casa",
-          "href": "https://www.abracasa.com.br/campanha/aniversario-casa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/dad63b18-aea0-44a9-9b5a-3b971ccad957/casa_banner_mobile_40anos-(1).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/0973c48b-3321-4a0e-942a-858444be28e4/casa_banner_desktop_40anos.jpg",
             "width": 1920,
             "height": 713
           }

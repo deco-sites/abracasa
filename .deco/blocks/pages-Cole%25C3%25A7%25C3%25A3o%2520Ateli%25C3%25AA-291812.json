@@ -81,10 +81,10 @@
       "section": {
         "__resolveType": "site/sections/Images/HeroSimple.tsx",
         "image": {
-          "desktopSrc": "https://assets.decocache.com/abracasa/23fa3c85-972e-437a-ad57-458fc562cccd/Vertical-Mesa-Athos-Final-2.jpg",
+          "desktopSrc": "https://assets.decocache.com/abracasa/931ec088-fcea-4ae6-9aaf-44a9eecb987f/Vertical-Mesa-Athos-Final-2-(1).jpg",
           "desktopHeight": 670,
           "desktopWidth": 522,
-          "mobileSrc": "https://assets.decocache.com/abracasa/23fa3c85-972e-437a-ad57-458fc562cccd/Vertical-Mesa-Athos-Final-2.jpg",
+          "mobileSrc": "https://assets.decocache.com/abracasa/931ec088-fcea-4ae6-9aaf-44a9eecb987f/Vertical-Mesa-Athos-Final-2-(1).jpg",
           "mobileWidth": 324,
           "mobileHeight": 416,
           "alt": " Imagem Design Exclusivo"
@@ -111,7 +111,7 @@
         },
         "media": {
           "type": "image",
-          "src": "https://assets.decocache.com/abracasa/5165eeb8-340e-4c23-93cc-73d2cd78bb00/fotos_Atelie-(8).jpg",
+          "src": "https://assets.decocache.com/abracasa/6a4c4d3f-6f2b-421f-9dd8-6f6f3e1a29ab/Rectangle-205-(1).jpg",
           "width": 1228,
           "height": 682
         }
@@ -193,8 +193,8 @@
         "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
         "image": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/fea31b3e-45d6-4eae-8840-4fb19a119484/fotos_Atelie-(6).jpg",
-            "mobile": "https://assets.decocache.com/abracasa/fea31b3e-45d6-4eae-8840-4fb19a119484/fotos_Atelie-(6).jpg",
+            "desktop": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
             "alt": "Processo criativo de desenvolvimento de móveis com escolha de tecidos e desenhos preliminares.",
             "height": 580,
             "width": 396
@@ -206,8 +206,8 @@
             "width": 396
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
-            "mobile": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
+            "desktop": "https://assets.decocache.com/abracasa/aeb3f6cb-eeba-45e4-a2e6-1a7ed4ece98d/Mask-group-(1).jpg",
+            "mobile": "https://assets.decocache.com/abracasa/aeb3f6cb-eeba-45e4-a2e6-1a7ed4ece98d/Mask-group-(1).jpg",
             "alt": "Amostras de revestimento em couro sintético em diferentes cores sobre mesa de madeira",
             "width": 396
           }

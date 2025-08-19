@@ -3988,8 +3988,8 @@ details.collapse summary::-webkit-details-marker {
 .bottom-6 {
   bottom: 1.5rem;
 }
-.bottom-\[10\%\] {
-  bottom: 10%;
+.bottom-\[80px\] {
+  bottom: 80px;
 }
 .left-0 {
   left: 0px;

@@ -72,5 +72,17 @@
     }
   },
   "__resolveType": "site/apps/site.ts",
-  "firstByteThresholdMS": false
+  "firstByteThresholdMS": false,
+  "whilelistURLs": [],
+  "whitelistPatterns": [],
+  "appKey": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "0214a58dd601aae177e8149b12472e59ca495c8a1ea3d8313c74ac07974916ff",
+    "name": "VTEXAPPKEY"
+  },
+  "appToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "69483b887e46466400722bfe48e7a577119ed76626d155da6080cfbd379f3483dd16d4e69883b7a9e67d74a622a60cda9f0a8c388d07581b59d64035368cc760e8f4cc3b1a81466165ce3319862b9ec9e183679c24146907ec11df5e8699de6c8945b97ab13d5b69b546a74e2ae21bb840af75fc1b3e602996ebb7ca384a0430a43f35eeddba1f029132657643a54adf",
+    "name": "VTEXAPPTOKEN"
+  }
 }

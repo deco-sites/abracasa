@@ -30,7 +30,7 @@ export default function ReturnToTop ({ content }: ReturnToTopProps) {
       onClick={scrollToTop}
       aria-label="Voltar ao topo"
       class={`
-        fixed bottom-[10%] right-2.5 flex flex-col items-center gap-1 z-50
+        fixed bottom-[80px] right-2.5 flex flex-col items-center gap-1 z-50
         transition-all duration-300
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}
       `}
