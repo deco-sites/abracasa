@@ -20,8 +20,8 @@ export type Props = Pick<
   isCategoriesFilterActive?: boolean;
   hiddenFilters?: string[];
   /**
-  * @hide true
-  */
+   * @ignore
+   */
   dataTreePathJoined?: string;
 };
 
