@@ -39,7 +39,7 @@ export interface Props {
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
   /**
-   * @hide true
+   * @ignore
    */
   dataTreePathJoined?: string | null;
 }
