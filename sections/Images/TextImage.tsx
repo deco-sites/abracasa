@@ -4,7 +4,7 @@ import { useId } from "$store/sdk/useId.ts";
 
 export interface Props {
   title: HTMLWidget;
-  paragraphs?: { text: HTMLWidget }[];
+  paragraphs?: { text: HTMLWidget }[] /* @maxItems 7 */;
   image: ImageWidget;
   imageWidth?: number;
   imageHeight?: number;

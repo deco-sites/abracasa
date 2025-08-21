@@ -37,7 +37,7 @@
         "titleMobile": "<p><span style=\"color: rgb(21, 21, 21); font-size: 18pt\">Soluções em mobiliário para espaços corporativos</span></p>",
         "TitleTwoMobile": "<p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Curadoria especializada, atendimento personalizado e soluções sob medida para o seu projeto.&nbsp;</span></p>",
         "addDescription": true,
-        "titleDescription": "<p><span style=\"color: #151515; font-size: 24pt\">Entendemos que cada</span></p><p><span style=\"color: #151515; font-size: 24pt\">espaço corporativo tem</span></p><p><span style=\"color: #151515; font-size: 24pt\">uma identidade única</span></p>",
+        "titleDescription": "<p><span style=\"color: rgb(21, 21, 21); font-size: 23pt\">Entendemos que cada</span></p><p><span style=\"color: rgb(21, 21, 21); font-size: 23pt\">espaço corporativo tem</span></p><p><span style=\"color: rgb(21, 21, 21); font-size: 23pt\">uma identidade única</span></p>",
         "titleDescriptionMob": "<p><span style=\"color: #151515; font-size: 13pt\">Entendemos que cada espaço corporativo tem uma identidade única</span></p>",
         "description": "<p><span style=\"color: #3e3e3e\">Por isso, nossa curadoria atua de forma</span></p><p><span style=\"color: #3e3e3e\">estratégica, desenvolvendo </span><strong><span style=\"color: #3e3e3e\">soluções</span></strong></p><p><strong><span style=\"color: #3e3e3e\">personalizadas</span></strong><span style=\"color: #3e3e3e\"> para os mais diversos</span></p><p><span style=\"color: #3e3e3e\">ambientes, como </span><strong><span style=\"color: #3e3e3e\">escritórios</span></strong><span style=\"color: #3e3e3e\">, </span><strong><span style=\"color: #3e3e3e\">hotéis</span></strong><span style=\"color: #3e3e3e\">,</span></p><p><strong><span style=\"color: #3e3e3e\">restaurantes</span></strong><span style=\"color: #3e3e3e\"> e muito mais.</span></p>",
         "descriptionMobile": "<p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Por isso, nossa curadoria atua de forma estratégica, desenvolvendo </span><strong><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">soluções personalizadas</span></strong><span style=\"color: rgb(62, 62, 62); font-size: 11pt\"> para os mais diversos ambientes, como </span><strong><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">escritórios</span></strong><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">, </span><strong><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">hotéis</span></strong><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">, </span><strong><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">restaurantes</span></strong><span style=\"color: rgb(62, 62, 62); font-size: 11pt\"> e muito mais.</span></p>"
@@ -149,7 +149,7 @@
         "titleMobile": "<p><span style=\"color: #151515; font-size: 13pt\">Nossos diferenciais</span></p>",
         "paragraphsMobile": [
           {
-            "text": "<p><span style=\"color: #3e3e3e; font-size: 11pt\">Descontos especiais&nbsp;</span></p>"
+            "text": "<p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Descontos especiais&nbsp;</span></p>"
           },
           {
             "text": "<p><span style=\"color: #3e3e3e; font-size: 11pt\">Desenvolvimento de móveis personalizados</span></p>"
