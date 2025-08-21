@@ -21,7 +21,8 @@
         "image": {
           "src": "https://assets.decocache.com/abracasa/e483d314-3b50-4b2e-a37f-e30f59f0bb9c/fotos_Atelie-(7).jpg",
           "desktopWidth": 822,
-          "desktopHeight": 576
+          "desktopHeight": 576,
+          "alt": "cadeira-mesa-de-centro-mesa-lateral-abra-scasa"
         },
         "logo": "https://assets.decocache.com/abracasa/d9c17884-9d5f-4806-ab7f-26868fc0783e/ABRA_ATELIE_LOGO-01-1.png",
         "text": "<p><span>Ateliê Casa é o que acreditamos e buscamos para a nossa marca carioca.&nbsp;<br></span><strong><span>Um jeito leve de ocupar os espaços.</span></strong></p>",
@@ -270,7 +271,10 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Coleção Ateliê | Abra Casa",
+    "description": "Cadeira de escritório, cama, mesa e rack com assinatura exclusiva da Abra Casa — design moderno, conforto e originalidade em cada detalhe.",
+    "canonical": "https://www.abracasa.com.br/colecao-atelie"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

@@ -16,5 +16,6 @@
   "__resolveType": "decohub/apps/vtex.ts",
   "defaultSegment": {
     "channelPrivacy": "public"
-  }
+  },
+  "setRefreshToken": false
 }
