@@ -88,7 +88,7 @@
           "mobileSrc": "https://assets.decocache.com/abracasa/931ec088-fcea-4ae6-9aaf-44a9eecb987f/Vertical-Mesa-Athos-Final-2-(1).jpg",
           "mobileWidth": 324,
           "mobileHeight": 416,
-          "alt": " Imagem Design Exclusivo"
+          "alt": "imagem-design-exclusivo-abra-casa"
         },
         "textContent": "<p><span style=\"color: rgb(98, 98, 98)\">Pensamos em tudo isso no momento de criação.<br>Na troca de ideias e no movimento em busca de novas <br>peças para compor um ambiente, nasce um </span><strong><span style=\"color: rgb(98, 98, 98)\">Produto.&nbsp;</span></strong></p>",
         "reverse": true,
@@ -114,7 +114,8 @@
           "type": "image",
           "src": "https://assets.decocache.com/abracasa/6a4c4d3f-6f2b-421f-9dd8-6f6f3e1a29ab/Rectangle-205-(1).jpg",
           "width": 1228,
-          "height": 682
+          "height": 682,
+          "alt": "equipe-de-criacao-abra-casa"
         }
       }
     },
@@ -179,11 +180,13 @@
         "image": [
           {
             "desktop": "https://assets.decocache.com/abracasa/47218cee-992d-4b21-98f6-9a141b28f755/fotos_Atelie-(2).jpg",
-            "mobile": "https://assets.decocache.com/abracasa/85718109-4670-4e50-904b-6849e2fa6c65/fotos_Atelie-(9).jpg"
+            "mobile": "https://assets.decocache.com/abracasa/85718109-4670-4e50-904b-6849e2fa6c65/fotos_Atelie-(9).jpg",
+            "alt": "paixao-pelo-design-abra-casa"
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/85718109-4670-4e50-904b-6849e2fa6c65/fotos_Atelie-(9).jpg",
-            "mobile": "https://assets.decocache.com/abracasa/47218cee-992d-4b21-98f6-9a141b28f755/fotos_Atelie-(2).jpg"
+            "mobile": "https://assets.decocache.com/abracasa/47218cee-992d-4b21-98f6-9a141b28f755/fotos_Atelie-(2).jpg",
+            "alt": "poltrona-lala-abra-casa"
           }
         ]
       }
@@ -196,20 +199,20 @@
           {
             "desktop": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
             "mobile": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
-            "alt": "Processo criativo de desenvolvimento de móveis com escolha de tecidos e desenhos preliminares.",
+            "alt": "escolha-de-tecidos-e-desenhos preliminares-abra-casa",
             "height": 580,
             "width": 396
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/cd54ee15-6022-43e3-a056-5f1ba01c8fa1/fotos_Atelie-(3).jpg",
             "mobile": "https://assets.decocache.com/abracasa/cd54ee15-6022-43e3-a056-5f1ba01c8fa1/fotos_Atelie-(3).jpg",
-            "alt": "Amostras de tecidos e materiais para móveis organizadas em prateleira com paletas de cores e catálogos",
-            "width": 396
+            "width": 396,
+            "alt": "amostras-de-tecidos-e-materiais-organizadas-em-prateleira-abra-casa"
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/aeb3f6cb-eeba-45e4-a2e6-1a7ed4ece98d/Mask-group-(1).jpg",
             "mobile": "https://assets.decocache.com/abracasa/aeb3f6cb-eeba-45e4-a2e6-1a7ed4ece98d/Mask-group-(1).jpg",
-            "alt": "Amostras de revestimento em couro sintético em diferentes cores sobre mesa de madeira",
+            "alt": "amostras-de-revestimento-em-couro-sintético-abra-casa",
             "width": 396
           }
         ],
