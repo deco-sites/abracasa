@@ -21,7 +21,8 @@
         {
           "image": {
             "mobile": "https://assets.decocache.com/abracasa/3ddd5e76-825a-447b-a92b-95bbf99d7d96/casa_banner_especial_mobile_malba_800x400.png",
-            "desktop": "https://assets.decocache.com/abracasa/f39813a9-cc16-4579-a963-4e444e63b091/casa_banner_especial_desktop_malba_1800x220.jpg"
+            "desktop": "https://assets.decocache.com/abracasa/f39813a9-cc16-4579-a963-4e444e63b091/casa_banner_especial_desktop_malba_1800x220.jpg",
+            "alt": "sala-mobiliada-com-o-sofa-malba-abra-casa"
           },
           "matcher": "/*"
         }
@@ -104,7 +105,10 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Sofá Malba | Abra Casa",
+    "description": "Sofá retrátil com estilo e conforto? O sofá Malba chegou! Lançamento com acabamento premium e design pensado para o seu bem-estar.",
+    "canonical": "https://www.abracasa.com.br/campanha/sofa-malba"
   },
   "__resolveType": "website/pages/Page.tsx"
 }
