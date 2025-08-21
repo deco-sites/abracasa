@@ -216,7 +216,8 @@
         ],
         "lineHeightTitle": 1.4,
         "justifyCenter": true,
-        "lineHeightTitleMobile": 1.4
+        "lineHeightTitleMobile": 1.4,
+        "justifyEnd": false
       }
     },
     {
