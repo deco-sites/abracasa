@@ -51,7 +51,7 @@ export function useStores(props: LiveProductProps): UseStoresResult {
   async function getStockData() {
     try {
       const url =
-        `https://sheets.googleapis.com/v4/spreadsheets/1MQJnfXASX3Ayw4EadYwQ8CVeGP88zQyhn65hm0QQC0I?fields=sheets(properties(title),data.rowData.values.formattedValue)&key=AIzaSyBrrO7AEU5h8FMdE2YipRZ9-8uTt-oZrXU`;
+        `https://sheets.googleapis.com/v4/spreadsheets/1nnaI3ngTySVPeCseXQ77SdBfPgbt2TPLjUEutbm6T0c?fields=sheets(properties(title),data.rowData.values.formattedValue)&key=AIzaSyBrrO7AEU5h8FMdE2YipRZ9-8uTt-oZrXU`;
 
       const response = await fetch(url);
       const data: StockData = await response.json();
