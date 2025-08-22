@@ -40,9 +40,9 @@ export default function SectionTextImage({
   const id = useId();
 
   return (
-    <section className="w-full relative xl:h-[513px]">
-      <div class="xl:mt-[121px] mt-[46px] mx-6 flex flex-col xl:flex-row-reverse items-start gap-6 xl:gap-[123px] max-w-[1210px] xl:h-full xl:mx-auto">
-        <div className="hidden xl:block w-[422px] my-auto">
+    <section className="w-full relative xl:h-[538px]">
+      <div className="xl:mt-[121px] mt-[46px] mx-6 flex flex-col xl:flex-row-reverse items-start gap-6 max-w-[1210px] xl:h-full xl:mx-auto">
+        <div className="hidden xl:block w-[422px] my-auto mr-[48px]">
           <h1 className="font-semibold mb-[49px] font-inter">
             <span dangerouslySetInnerHTML={{ __html: title }} />
           </h1>
@@ -50,7 +50,7 @@ export default function SectionTextImage({
             {paragraphs.map((p, i) => (
               <div key={`${id}-p-desk-${i}`} className="flex flex-col">
                 <div
-                  className="h-[48px] flex items-center"
+                  className="h-[54px] flex items-center"
                   dangerouslySetInnerHTML={{ __html: p.text }}
                 />
                 <hr className="text-gray-800" />
@@ -67,7 +67,7 @@ export default function SectionTextImage({
             {paragraphsMobile.map((p, i) => (
               <div key={`${id}-p-mob-${i}`} className="flex flex-col">
                 <div
-                  className="h-[48px] flex items-center"
+                  className="h-[54px] flex items-center"
                   dangerouslySetInnerHTML={{ __html: p.text }}
                 />
                 <hr className="text-gray-800" />
@@ -90,8 +90,8 @@ export default function SectionTextImage({
           />
 
           {caption ? (
-            <div class="flex w-full justify-end">
-              <p class="font-inter text-[#626262] text-[8px] lg:text-[10px]">
+            <div className="flex w-full justify-end">
+              <p className="font-inter text-[#626262] text-[8px] lg:text-[10px]">
                 {caption}
               </p>
             </div>
@@ -107,8 +107,8 @@ export default function SectionTextImage({
             className="w-full h-auto"
           />
           {caption ? (
-            <div class="flex w-full justify-end">
-              <p class="font-inter text-[#626262] text-[8px] lg:text-[10px]">
+            <div className="flex w-full justify-end">
+              <p className="font-inter text-[#626262] text-[8px] lg:text-[10px]">
                 {caption}
               </p>
             </div>
