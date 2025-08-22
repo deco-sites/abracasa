@@ -41,7 +41,7 @@ export default function SectionTextImage({
 
   return (
     <section className="w-full relative xl:h-[538px]">
-      <div className="xl:mt-[121px] mt-[46px] mx-6 flex flex-col xl:flex-row-reverse items-start gap-6 max-w-[1210px] xl:h-full xl:mx-auto">
+      <div className="xl:mt-[121px] mt-[46px] mx-6 flex flex-col xl:flex-row-reverse items-start gap-[69px] max-w-[1210px] xl:h-full xl:mx-auto">
         <div className="hidden xl:block w-[422px] my-auto mr-[48px]">
           <h1 className="font-semibold mb-[49px] font-inter">
             <span dangerouslySetInnerHTML={{ __html: title }} />
