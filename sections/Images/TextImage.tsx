@@ -50,7 +50,7 @@ export default function SectionTextImage({
             {paragraphs.map((p, i) => (
               <div key={`${id}-p-desk-${i}`} className="flex flex-col">
                 <div
-                  className="h-[54px] flex items-center"
+                  className="flex items-center py-[11px]"
                   dangerouslySetInnerHTML={{ __html: p.text }}
                 />
                 <hr className="text-gray-800" />
