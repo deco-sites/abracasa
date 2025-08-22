@@ -4,20 +4,37 @@ export interface Props {
   textAndImage?: {
     texts?: {
       text: HTMLWidget;
+      textMob: HTMLWidget;
     }[];
 
     images?: {
       image: ImageWidget;
       description: string;
+      caption:string;
     }[];
   }[];
+  textBelow?: boolean;
 }
 
-export default function TextAndImage({ textAndImage }: Props) {
+export default function TextAndImage({ textAndImage, textBelow, }: Props) {
   return (
-    <section class="w-full h-full flex items-center justify-center border-b border-solid border-[#8282829f]">
-      <div class="max-w-[1200px] h-full flex items-center justify-center mx-6">
-        <div class="w-full h-full flex flex-col items-center justify-center gap-2">
+    <section
+      class={`w-full h-full flex items-center justify-center border-b border-solid border-[#8282829f] ${
+        textBelow ? "border-b-0 font-inter" : "border-b"
+      }`}
+    >
+      <div
+        class={`h-full flex items-center justify-center ${
+          textBelow ? "max-w-[1230px]" : "max-w-[1200px] mx-6"
+        }`}
+      >
+        <div
+          class={`w-full h-full flex items-center justify-center  ${
+            textBelow
+              ? "flex-col-reverse lg:gap-[115px] gap-[76px] mt-[61px] lg:mt-[125px mb-[76px] lg:mb-[115px]"
+              : "flex-col gap-2"
+          }`}
+        >
           {textAndImage?.map((item) => {
             const texts = item?.texts ?? [];
             const images = item?.images ?? [];
@@ -25,16 +42,37 @@ export default function TextAndImage({ textAndImage }: Props) {
             return (
               <>
                 {texts?.map((text) => (
-                  <div class="w-full h-full">
-                    <p dangerouslySetInnerHTML={{ __html: text.text }} />
-                  </div>
+                  <>
+                    <div
+                      class={`w-full h-full ${
+                        textBelow ? "hidden lg:block" : ""
+                      }`}
+                    >
+                      <p dangerouslySetInnerHTML={{ __html: text.text }} />
+                    </div>
+                    {textBelow && (
+                      <div class="w-full h-full lg:hidden px-6">
+                        <p dangerouslySetInnerHTML={{ __html: text.textMob }} />
+                      </div>
+                    )}
+                  </>
                 ))}
 
                 {images?.map((image) => (
                   <div class="w-full h-full">
-                    <img src={image.image} alt={image.description} />
+                    <img
+                      src={image.image}
+                      alt={image.description}
+                    />
+                    { image.caption ?
+                        <div class="flex w-full justify-end pr-6 lg:p-0">
+                          <p class="font-inter text-[#626262] text-[8px] lg:text-[10px]">
+                            {image.caption}
+                          </p>
+                        </div>
+                     : null }
                   </div>
-                ))}
+                ))} 
               </>
             );
           })}
