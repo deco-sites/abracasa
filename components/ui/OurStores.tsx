@@ -47,20 +47,24 @@ export interface City {
    */
   state: BrazilianStates;
   stores: Store[];
-}
-
-export interface Props {
   /**
    * @title Imagem para Desktop
    * @description Imagem para dispositivos desktop.
    */
   imageDesktop?: ImageWidget;
   /**
+   * @title Texto alternativo da imagem
+   * @description Texto alternativo para a imagem, importante para acessibilidade.
+   */
+  imageAlt?: string;
+  /**
    * @title Imagem para Mobile
    * @description Imagem para dispositivos móveis.
    */
-
   imageMobile?: ImageWidget;
+}
+
+export interface Props {
   /**
    * @title Cidades e lojas
    * @description Lista de cidades e suas respectivas lojas.
@@ -79,7 +83,7 @@ const formatPhone = (raw: string) => {
 };
 
 export default function OurStores(
-  { cities, imageDesktop, imageMobile }: Props,
+  { cities }: Props,
 ) {
   const [selectedState, setSelectedState] = useState<BrazilianStates>("RJ");
 
@@ -172,15 +176,15 @@ export default function OurStores(
         <div class="w-full aspect-[3/1] min-h-[269px] max-h-[574px] overflow-hidden">
           <img
             class="w-full h-full object-cover md:block hidden"
-            src={imageDesktop ?? DEFAULT_IMAGE_DESKTOP}
-            alt="Imagem de nossas lojas"
+            src={selectedCity?.imageDesktop ?? DEFAULT_IMAGE_DESKTOP}
+            alt={selectedCity?.imageAlt ?? "Imagem da loja"}
             decoding="async"
             loading="lazy"
           />
           <img
             class="w-full h-full object-cover block md:hidden"
-            src={imageMobile ?? DEFAULT_IMAGE_MOBILE}
-            alt="Imagem de nossas lojas"
+            src={selectedCity?.imageMobile ?? DEFAULT_IMAGE_MOBILE}
+            alt={selectedCity?.imageAlt ?? "Imagem da loja"}
             decoding="async"
             loading="lazy"
           />

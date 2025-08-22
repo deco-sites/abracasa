@@ -145,7 +145,9 @@
               "whatsapp": "21971136523"
             }
           ],
-          "title": "Rio de Janeiro"
+          "title": "Rio de Janeiro",
+          "imageMobile": "https://assets.decocache.com/abracasa/6766bed5-aa08-40b9-aa4a-b7bcbc8d185d/loja_rj_mobile.png",
+          "imageDesktop": "https://assets.decocache.com/abracasa/25988df5-58bb-4c41-807e-d01339c35c5f/loja_rj_desktop.png"
         },
         {
           "state": "SP",
@@ -171,7 +173,9 @@
               "whatsapp": "11930636723"
             }
           ],
-          "title": "São Paulo"
+          "title": "São Paulo",
+          "imageDesktop": "https://assets.decocache.com/abracasa/69059d6d-cd6d-451d-8c2e-cf367d7da4ee/loja_sp_desktop.png",
+          "imageMobile": "https://assets.decocache.com/abracasa/75340d93-7370-459b-8751-0eae04ec9183/loja_sp_mobile.png"
         }
       ],
       "imageDesktop": "https://assets.decocache.com/abracasa/83a217f2-325e-43d3-85f2-6a0afdac8dca/nossas_lojas_banner.png",
