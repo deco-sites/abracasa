@@ -67,7 +67,7 @@ export default function SectionTextImage({
             {paragraphsMobile.map((p, i) => (
               <div key={`${id}-p-mob-${i}`} className="flex flex-col">
                 <div
-                  className="h-[54px] flex items-center"
+                  className="py-[11px] flex items-center"
                   dangerouslySetInnerHTML={{ __html: p.text }}
                 />
                 <hr className="text-gray-800" />
