@@ -90,7 +90,107 @@
         }
       ],
       "title": "Nossas Lojas ",
-      "__resolveType": "site/sections/Content/OurStores.tsx"
+      "__resolveType": "site/sections/Content/OurStores.tsx",
+      "cities": [
+        {
+          "state": "RJ",
+          "stores": [
+            {
+              "titleStore": "CASA SHOPPING",
+              "telephone": "2124317260",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Avenida Ayrton Senna, 2150 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-900.</span></p><p style=\"text-align: start\"><span style=\"color: rgb(85, 85, 85)\">Casa Shopping - Bloco F Loja F</span></p>",
+              "whatsapp": "21971093039",
+              "map": "https://maps.app.goo.gl/Dk3u6HqXjMqaEfgk8"
+            },
+            {
+              "titleStore": "COPACABANA",
+              "telephone": "2134960585",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Av N.S. de Copacabana 1137 - A - Copacabana - Rio de Janeiro - RJ</span></p>",
+              "whatsapp": "21998630486",
+              "map": "https://maps.app.goo.gl/MCvhsXii2ga6Bhtu7"
+            },
+            {
+              "titleStore": "RIO SUL",
+              "telephone": "2122755776",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Rio Sul - Rua Lauro Muller, 116 Lj 76G - 4º Piso</span></p>",
+              "whatsapp": "21997874278",
+              "map": "https://maps.app.goo.gl/Pe45vzm7oYDfu8h69"
+            },
+            {
+              "titleStore": "ICARAÍ",
+              "telephone": "2136200200",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Rio Gavião Peixoto, 68. Icaraí, Niterói</span></p>",
+              "whatsapp": "21971174540",
+              "map": "https://maps.app.goo.gl/bQj94ABUhg6h4ohk7"
+            },
+            {
+              "titleStore": "SHOPPING TIJUCA",
+              "telephone": "2131724678",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Avenida Maracanã , 987 - bloco 4 - loja 35 (Subsolo) - Shopping Tijuca</span></p>",
+              "whatsapp": "21997223184",
+              "map": "https://maps.app.goo.gl/j4wfky8BiF9cnJyC8"
+            },
+            {
+              "titleStore": "RECREIO SHOPPING",
+              "telephone": "2130305397",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Avenida das Américas, 19019, Lj 203 FGHI - 2º piso</span></p>",
+              "whatsapp": "21971097308",
+              "map": "https://maps.app.goo.gl/XqHSKNkCoNgEXW7z9"
+            },
+            {
+              "titleStore": "VIA PARQUE",
+              "telephone": "2130420008",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Avenida Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro - RJ, 22.775-003</span><br><span style=\"color: rgb(85, 85, 85)\">Shopping Via Parque - 1.125 B1</span></p>",
+              "whatsapp": "21971096391",
+              "map": "https://maps.app.goo.gl/yQXDfLyJV68chJc69"
+            },
+            {
+              "titleStore": "BARRA SHOPPING",
+              "telephone": "2133496416",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: </span><span style=\"color: #585858\">Avenida das Américas, 4.666 - Barra da Tijuca, Rio de Janeiro - RJ, 22640-102.</span></p><p style=\"text-align: start\"><span style=\"color: #585858\">Barra Shopping - Nível Lagoa Loja 122B</span></p>",
+              "whatsapp": "21971136523",
+              "map": "https://maps.app.goo.gl/uPPWETRE3EhG62ri7"
+            }
+          ],
+          "title": "Rio de Janeiro",
+          "imageMobile": "https://assets.decocache.com/abracasa/6766bed5-aa08-40b9-aa4a-b7bcbc8d185d/loja_rj_mobile.png",
+          "imageDesktop": "https://assets.decocache.com/abracasa/25988df5-58bb-4c41-807e-d01339c35c5f/loja_rj_desktop.png"
+        },
+        {
+          "state": "SP",
+          "stores": [
+            {
+              "titleStore": "LAR CENTER",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Avenida Otto Baumbart, 500 - Vila Guilherme, São Paulo - SP, 02049-000</span></p>",
+              "whatsapp": "11916872226",
+              "map": "https://maps.app.goo.gl/EZY8aHtscpCEgrba7"
+            },
+            {
+              "titleStore": "VILA NOVA CONCEIÇÃO",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Rua João Cachoeira 1091 - Vila Nova Conceição, São Paulo - SP, 04535-013</span></p>",
+              "whatsapp": "11964986764",
+              "map": "https://maps.app.goo.gl/RThhttTH7ZmuMbMU7"
+            },
+            {
+              "titleStore": "ANÁLIA FRANCO",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Rua Emília Marengo 305 - Anália Franco, São Paulo - SP, 03336-000</span></p>",
+              "whatsapp": "11968402748",
+              "map": "https://maps.app.goo.gl/kYRZ2aMxCcAz9nD18"
+            },
+            {
+              "titleStore": "PINHEIROS",
+              "description": "<p><span style=\"color: rgb(85, 85, 85)\">Endereço: Rua Teodoro Sampaio, 1312 - Pinheiros (Estacionamento privado na R.Francisco Leitão, 591) , São Paulo - SP, 05406-100.</span></p>",
+              "whatsapp": "11930636723",
+              "map": "https://maps.app.goo.gl/uUvhuRT22BjASMwg7"
+            }
+          ],
+          "title": "São Paulo",
+          "imageDesktop": "https://assets.decocache.com/abracasa/69059d6d-cd6d-451d-8c2e-cf367d7da4ee/loja_sp_desktop.png",
+          "imageMobile": "https://assets.decocache.com/abracasa/75340d93-7370-459b-8751-0eae04ec9183/loja_sp_mobile.png"
+        }
+      ],
+      "imageDesktop": "https://assets.decocache.com/abracasa/83a217f2-325e-43d3-85f2-6a0afdac8dca/nossas_lojas_banner.png",
+      "imageMobile": "https://assets.decocache.com/abracasa/4c3efc39-90a7-47ce-a9c5-092875aa107f/nossas_lojas_banner_mobile.png"
     },
     {
       "__resolveType": "Footer - 01"
