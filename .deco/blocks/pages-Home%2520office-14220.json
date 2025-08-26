@@ -21,9 +21,11 @@
         {
           "image": {
             "mobile": "https://assets.decocache.com/abracasa/646dd604-4e6c-446a-b438-c41917f37938/casa_escriv_banner_especial_mobile_800x400px-(1).jpg",
-            "desktop": "https://assets.decocache.com/abracasa/9233fd0e-a6ba-49df-874d-44f86800ea44/casa_escr_banner_especial_desktop_1800x220px-(1).jpg"
+            "desktop": "https://assets.decocache.com/abracasa/9233fd0e-a6ba-49df-874d-44f86800ea44/casa_escr_banner_especial_desktop_1800x220px-(1).jpg",
+            "alt": "conjunto-home-office-com-bancada-modulo-e-cadeira"
           },
-          "matcher": "/*"
+          "matcher": "/*",
+          "title": "Home Office"
         }
       ],
       "__resolveType": "site/sections/Category/CategoryBanner.tsx"
