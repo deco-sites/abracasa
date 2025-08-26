@@ -160,7 +160,10 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Coleção 2025 | Abra Casa",
+    "description": "Conheça a Coleção 2025: Sofá retrátil, cadeiras, rack e mesas com acabamentos exclusivos e design moderno para transformar sua sala com sofisticação.",
+    "canonical": "https://www.abracasa.com.br/colecao-2025"
   },
   "__resolveType": "website/pages/Page.tsx"
 }
