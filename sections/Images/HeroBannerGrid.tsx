@@ -34,10 +34,25 @@ interface Props {
   }[];
 }
 
-function HeroBannerGrid({ changeSpacing ,title, mainImage, imageItems }: Props) {
+function HeroBannerGrid({
+  changeSpacing,
+  title,
+  mainImage,
+  imageItems,
+}: Props) {
   return (
-    <div class={`${changeSpacing ? "lg:mb-[130px] lg:max-w-[1300px] mb-14" : "mb-10 lg:max-w-[85%]"} lg:mx-auto `}>
-      <span class={` ${title ? "block" : "hidden"} font-sans text-2xl text-dimgray mb-5 px-4 lg:px-0 lg:mb-[14px] `}>
+    <div
+      class={`${
+        changeSpacing
+          ? "lg:mb-[130px] lg:max-w-[1300px] mb-14"
+          : "mb-10 lg:max-w-[85%]"
+      } lg:mx-auto `}
+    >
+      <span
+        class={` ${
+          title ? "block" : "hidden"
+        } font-sans text-2xl text-dimgray mb-5 px-4 lg:px-0 lg:mb-[14px] `}
+      >
         {title}
       </span>
       <div class="flex flex-col lg:flex-row">
@@ -58,7 +73,10 @@ function HeroBannerGrid({ changeSpacing ,title, mainImage, imageItems }: Props) 
             height={mainImage?.height ?? 508}
             loading="lazy"
             decoding="async"
-            class="hidden lg:block"
+            class="hidden lg:block h-full object-cover"
+            style={{
+              maxHeight: `${mainImage?.height ?? 508}px`,
+            }}
           />
           {mainImage?.showNewTitle ? (
             <div class="absolute font-inter flex flex-col inset-0 items-start justify-end pl-[30px] pb-[30px] text-center">
@@ -98,6 +116,9 @@ function HeroBannerGrid({ changeSpacing ,title, mainImage, imageItems }: Props) 
                   loading="lazy"
                   decoding="async"
                   class="hidden lg:block"
+                  style={{
+                    maxHeight: `${mainImage?.height ?? 248}px`,
+                  }}
                 />
               </a>
             </li>
