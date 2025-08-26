@@ -7363,6 +7363,29 @@ details.collapse summary::-webkit-details-marker {
 .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
+@media (max-width: 1023px) {
+    .scrollbar-category::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .scrollbar-category::-webkit-scrollbar-track {
+      background: #e0e0e0;
+      border-radius: 0;
+    }
+
+    .scrollbar-category::-webkit-scrollbar-thumb {
+      background: #555555;
+      border-radius: 0;
+    }
+  }
+@media (min-width: 1024px) {
+    .scrollbar-category::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+.scrollbar-gutter-stable::-webkit-scrollbar {
+    scrollbar-gutter: stable;
+  }
 .scrollbar::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -9531,6 +9554,14 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:min-w-\[96px\] {
     min-width: 96px;
+  }
+
+  .lg\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .lg\:max-w-\[1300px\] {
+    max-width: 1300px;
   }
 
   .lg\:max-w-\[134px\] {
