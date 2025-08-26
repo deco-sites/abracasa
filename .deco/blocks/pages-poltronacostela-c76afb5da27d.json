@@ -102,5 +102,11 @@
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Poltrona Costela | Abra Casa",
+    "description": "Conheça o lançamento da nova poltrona Costela: design, conforto incomparável e sofisticação para transformar sua sala com personalidade e estilo.",
+    "canonical": "https://www.abracasa.com.br/campanha/poltrona-costela"
+  }
 }
