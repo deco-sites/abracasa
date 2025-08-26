@@ -1,0 +1,358 @@
+{
+  "name": "Dia do Designers",
+  "path": "/mes-dos-designers",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header - 01"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/SimpleBanner.tsx",
+        "desktopImage": {
+          "src": "https://assets.decocache.com/abracasa/6a4c4d3f-6f2b-421f-9dd8-6f6f3e1a29ab/Rectangle-205-(1).jpg"
+        },
+        "mobileImage": {
+          "src": "https://assets.decocache.com/abracasa/6a4c4d3f-6f2b-421f-9dd8-6f6f3e1a29ab/Rectangle-205-(1).jpg"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/SectionTitle.tsx",
+        "title": "<p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Frase bonita aqui sobre termos design</span></p><p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">assinado e releituras de designers famosos</span></p>",
+        "titleMob": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 12pt\">Frase bonita aqui sobre termos</span></p><p style=\"text-align: right\"><span style=\"color: #212121; font-size: 12pt\">design assinado e releituras</span></p><p style=\"text-align: right\"><span style=\"color: #212121; font-size: 12pt\">de designers famosos</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
+        "mainImage": {
+          "src": "https://assets.decocache.com/abracasa/2a66bd9c-c32b-49ad-978f-6652e27670f4/_MG_3317-Aprimorado-NR-1-(2).jpg",
+          "width": 650,
+          "srcMobile": "https://assets.decocache.com/abracasa/2a66bd9c-c32b-49ad-978f-6652e27670f4/_MG_3317-Aprimorado-NR-1-(2).jpg",
+          "showNewTitle": true,
+          "titleAndSubtitle": {
+            "newTitle": "Ateliê Casa  ",
+            "subTitle": "NOSSO DESIGN PARA VOCÊ  ",
+            "button": {
+              "title": "VER TUDO",
+              "href": "/",
+              "target": "_blank"
+            }
+          },
+          "href": "/"
+        },
+        "imageItems": [
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          }
+        ],
+        "changeSpacing": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
+        "mainImage": {
+          "src": "https://assets.decocache.com/abracasa/f988307f-bff5-483e-8b4d-e9fbd15f33bf/banner_fernanda_sampaio_mb.png",
+          "width": 650,
+          "srcMobile": "https://assets.decocache.com/abracasa/f988307f-bff5-483e-8b4d-e9fbd15f33bf/banner_fernanda_sampaio_mb.png",
+          "showNewTitle": true,
+          "titleAndSubtitle": {
+            "newTitle": "Fernanda Sampaio",
+            "button": {
+              "title": "VER TUDO",
+              "href": "/",
+              "target": "_blank"
+            },
+            "subTitle": "DESIGNER CARIOCA  "
+          },
+          "href": "/"
+        },
+        "imageItems": [
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          }
+        ],
+        "changeSpacing": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
+        "mainImage": {
+          "src": "https://assets.decocache.com/abracasa/52af24c0-f5aa-4f85-a00d-fe58451939fa/IMG_1737-1(1)-1.jpg",
+          "width": 650,
+          "srcMobile": "https://assets.decocache.com/abracasa/52af24c0-f5aa-4f85-a00d-fe58451939fa/IMG_1737-1(1)-1.jpg",
+          "showNewTitle": true,
+          "titleAndSubtitle": {
+            "newTitle": "Martin Eisler",
+            "subTitle": "ARQUITETO E DESIGNER  ",
+            "button": {
+              "title": "VER TUDO",
+              "href": "/",
+              "target": "_blank"
+            }
+          },
+          "href": "/"
+        },
+        "imageItems": [
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          }
+        ],
+        "changeSpacing": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
+        "mainImage": {
+          "src": "https://assets.decocache.com/abracasa/95f4657c-5aa8-44d7-be24-12d031b0a4ba/_MG_3317-Aprimorado-NR-1.jpg",
+          "width": 650,
+          "srcMobile": "https://assets.decocache.com/abracasa/95f4657c-5aa8-44d7-be24-12d031b0a4ba/_MG_3317-Aprimorado-NR-1.jpg",
+          "showNewTitle": true,
+          "titleAndSubtitle": {
+            "newTitle": "Marco Zanuso  ",
+            "button": {
+              "title": "VER TUDO",
+              "href": "/",
+              "target": "_blank"
+            },
+            "subTitle": "ARQUITETO E DESIGNER MODERNISTA  "
+          },
+          "href": "/"
+        },
+        "imageItems": [
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          }
+        ],
+        "changeSpacing": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
+        "mainImage": {
+          "src": "https://assets.decocache.com/abracasa/fa0c65dc-1c58-4154-b3d8-48bfcd64690d/_MG_3317-Aprimorado-NR-2.jpg",
+          "width": 650,
+          "srcMobile": "https://assets.decocache.com/abracasa/fa0c65dc-1c58-4154-b3d8-48bfcd64690d/_MG_3317-Aprimorado-NR-2.jpg",
+          "showNewTitle": true,
+          "titleAndSubtitle": {
+            "newTitle": "Charles & Ray Eames",
+            "button": {
+              "title": "VER TUDO",
+              "href": "/",
+              "target": "_blank"
+            },
+            "subTitle": "CASAL DE DESIGNERS NORTE-AMERICANOS"
+          },
+          "href": "/"
+        },
+        "imageItems": [
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          },
+          {
+            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+          }
+        ],
+        "changeSpacing": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/SectionLaunch.tsx",
+        "title": "LANÇAMENTO",
+        "subTitle": "Rapha Preto",
+        "description": "ARTISTA E DESIGNER",
+        "backgroundColor": "#8c8c8c",
+        "button": {
+          "link": "/",
+          "title": "VER MAIS"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/HighlightsBanners.tsx",
+        "title": "Mais designers ",
+        "cards": [
+          {
+            "image": {
+              "icon": "https://assets.decocache.com/abracasa/ab972616-5cc7-47df-86ed-d784e5540230/_MG_5073-Aprimorado-NR-1.jpg"
+            },
+            "link": "/",
+            "showNewTitle": true,
+            "titleAndSubtitle": {
+              "newTitle": "George Nelson",
+              "subTitle": "DESIGNER INSDUSTRIAL AMERICANO  ",
+              "button": {
+                "title": "VER MAIS"
+              }
+            }
+          },
+          {
+            "image": {
+              "icon": "https://assets.decocache.com/abracasa/95f4657c-5aa8-44d7-be24-12d031b0a4ba/_MG_3317-Aprimorado-NR-1.jpg"
+            },
+            "showNewTitle": true,
+            "titleAndSubtitle": {
+              "newTitle": "Ligia Koehler  ",
+              "subTitle": "DESIGNER BRASILEIRA  ",
+              "button": {
+                "title": "VER MAIS"
+              }
+            },
+            "link": "/"
+          },
+          {
+            "image": {
+              "icon": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png"
+            },
+            "showNewTitle": true,
+            "titleAndSubtitle": {
+              "newTitle": "Hakim Hazim  ",
+              "subTitle": "DESIGNER CONTEMPORÂNEO  ",
+              "button": {
+                "title": "VER MAIS"
+              }
+            },
+            "link": "/"
+          }
+        ],
+        "textCenter": true,
+        "color": {
+          "changeBackgroundColor": true,
+          "backgroundColor": "#f5f5f5"
+        },
+        "showBarSlider": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer - 01"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

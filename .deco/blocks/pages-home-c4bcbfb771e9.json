@@ -156,7 +156,8 @@
               "link": "https://www.abracasa.com.br/ambientes/sala-de-jantar",
               "image": {
                 "alt": "Madeira",
-                "icon": "https://assets.decocache.com/abracasa/207885bc-ba4a-4acc-86fa-64c3337d2da7/casa_banner_secundario_colecao_2025_jantar.jpg"
+                "icon": "https://assets.decocache.com/abracasa/207885bc-ba4a-4acc-86fa-64c3337d2da7/casa_banner_secundario_colecao_2025_jantar.jpg",
+                "isBorder": false
               }
             },
             {
