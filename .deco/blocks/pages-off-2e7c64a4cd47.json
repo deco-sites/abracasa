@@ -22,7 +22,8 @@
         {
           "image": {
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/b33e6e6d-4b22-4c8d-8967-6b8218f36064/casa_off_especial_mobile_800x400.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/49b7ab15-cc5b-4b92-8913-bd64c5ddb8b3/casa_off_especial_desktop_1800x220.png"
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/49b7ab15-cc5b-4b92-8913-bd64c5ddb8b3/casa_off_especial_desktop_1800x220.png",
+            "alt": "off-descontos-em-moveis-selecionados"
           },
           "matcher": "/*"
         }
@@ -105,5 +106,11 @@
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Off | Abra Casa",
+    "description": "Os móveis que você ama estão em oferta! Mesa, cadeira, poltrona e rack com descontos especiais para decorar sua casa com elegância.",
+    "canonical": "https://www.abracasa.com.br/off"
+  }
 }
