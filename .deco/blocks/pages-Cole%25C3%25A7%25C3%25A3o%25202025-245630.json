@@ -60,11 +60,14 @@
         "image": [
           {
             "desktop": "https://data.decoassets.com/abracasa/a322bcac-768c-4d9d-be01-f6af86ae9d7f/_MG_3001-Aprimorado-NR-1.jpg",
-            "mobile": "https://data.decoassets.com/abracasa/a322bcac-768c-4d9d-be01-f6af86ae9d7f/_MG_3001-Aprimorado-NR-1.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/a322bcac-768c-4d9d-be01-f6af86ae9d7f/_MG_3001-Aprimorado-NR-1.jpg",
+            "alt": "estante-aparador-baoba-com-itens-decorativos",
+            "link": "https://www.abracasa.com.br/estante-aparador-baoba-preto-e-tammi---1-80mx50cm--nv/p?skuId=2011593"
           },
           {
             "mobile": "https://data.decoassets.com/abracasa/02413ce5-c9cf-4610-95e9-629d457594db/Vertical-Mesa-Athos-Final-1.jpg",
-            "desktop": "https://data.decoassets.com/abracasa/02413ce5-c9cf-4610-95e9-629d457594db/Vertical-Mesa-Athos-Final-1.jpg"
+            "desktop": "https://data.decoassets.com/abracasa/02413ce5-c9cf-4610-95e9-629d457594db/Vertical-Mesa-Athos-Final-1.jpg",
+            "alt": "conjuntos-de-mesa-athos-e-cadeiras"
           }
         ],
         "titleMobile": "<p><span style=\"color: rgb(33, 33, 33); font-size: 24pt\">Uma expressão</span><br></p><p><span style=\"color: rgb(33, 33, 33); font-size: 24pt\">de arte através</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 24pt\">da paixão pelo design.</span></p>",
@@ -84,15 +87,18 @@
         "image": [
           {
             "desktop": "https://data.decoassets.com/abracasa/1bbdd935-445a-4d3a-8279-b5e5579d7a5e/_MG_3446-Aprimorado-NR-1.jpg",
-            "mobile": "https://data.decoassets.com/abracasa/1bbdd935-445a-4d3a-8279-b5e5579d7a5e/_MG_3446-Aprimorado-NR-1.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/1bbdd935-445a-4d3a-8279-b5e5579d7a5e/_MG_3446-Aprimorado-NR-1.jpg",
+            "alt": "sofa-com-alofadas-decorativas"
           },
           {
             "desktop": "https://data.decoassets.com/abracasa/4f690735-38e4-48b4-b385-8fe875bfa18c/_MG_5645-Enhanced-NR-1.jpg",
-            "mobile": "https://data.decoassets.com/abracasa/4f690735-38e4-48b4-b385-8fe875bfa18c/_MG_5645-Enhanced-NR-1.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/4f690735-38e4-48b4-b385-8fe875bfa18c/_MG_5645-Enhanced-NR-1.jpg",
+            "alt": "menina-sentada-com-livro-apoiado-na-mesa"
           },
           {
             "desktop": "https://data.decoassets.com/abracasa/6f7dcd5b-45cc-488f-9d0e-efc7adfe95d2/_MG_5137-Aprimorado-NR-1.jpg",
-            "mobile": "https://data.decoassets.com/abracasa/6f7dcd5b-45cc-488f-9d0e-efc7adfe95d2/_MG_5137-Aprimorado-NR-1.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/6f7dcd5b-45cc-488f-9d0e-efc7adfe95d2/_MG_5137-Aprimorado-NR-1.jpg",
+            "alt": "mesa-lateral-trip-redonda-com-xicara-de-cafe"
           }
         ],
         "mainImage": [
