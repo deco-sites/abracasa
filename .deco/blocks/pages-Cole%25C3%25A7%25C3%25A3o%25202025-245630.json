@@ -33,17 +33,20 @@
           {
             "desktop": "https://data.decoassets.com/abracasa/0b5e4552-a941-4c47-9020-3a3c2811ce8d/_MG_5073-Aprimorado-NR-1.jpg",
             "mobile": "https://data.decoassets.com/abracasa/0b5e4552-a941-4c47-9020-3a3c2811ce8d/_MG_5073-Aprimorado-NR-1.jpg",
-            "link": "https://www.abracasa.com.br/banco-frame-2-lugares-1-10m-palha-natural-canela/p?skuId=2011191"
+            "link": "https://www.abracasa.com.br/banco-frame-2-lugares-1-10m-palha-natural-canela/p?skuId=2011191",
+            "alt": "banco-frame-cesto-com-manta"
           },
           {
             "desktop": "https://data.decoassets.com/abracasa/ab9d8539-e9a8-43e1-a070-82e7dc237b73/_MG_3317-Aprimorado-NR-1.jpg",
             "mobile": "https://data.decoassets.com/abracasa/ab9d8539-e9a8-43e1-a070-82e7dc237b73/_MG_3317-Aprimorado-NR-1.jpg",
-            "link": "https://www.abracasa.com.br/poltrona-maggiolina---verde-oliva-e-almofadas---verde-militar-1/p?skuId=2011159"
+            "link": "https://www.abracasa.com.br/poltrona-maggiolina---verde-oliva-e-almofadas---verde-militar-1/p?skuId=2011159",
+            "alt": "polltrona-maggiolina-e-banco-na-lateral-com-livro"
           },
           {
             "desktop": "https://data.decoassets.com/abracasa/e260c894-6fe6-4688-8972-682eced7f028/_MG_3063-Aprimorado-NR-1.jpg",
             "mobile": "https://data.decoassets.com/abracasa/e260c894-6fe6-4688-8972-682eced7f028/_MG_3063-Aprimorado-NR-1.jpg",
-            "link": "https://www.abracasa.com.br/buffet-frame-palha-natural-2portas-e-3gavetas-160m-nozes/p?skuId=2008980"
+            "link": "https://www.abracasa.com.br/buffet-frame-palha-natural-2portas-e-3gavetas-160m-nozes/p?skuId=2008980",
+            "alt": "buffet-frame-palha-natural-com-vaso"
           }
         ],
         "titleMobile": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 31pt\">design</span></p><p style=\"text-align: right\"><span style=\"color: #212121; font-size: 31pt\">contemporâneo</span></p>"
