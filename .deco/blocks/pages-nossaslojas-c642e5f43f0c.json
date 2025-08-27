@@ -195,7 +195,7 @@
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "title": "Nossas Lojas",
+    "title": "Nossas Lojas | Abra Casa",
     "description": "Conheça as lojas Abra Casa! Espaços pensados para inspirar sua decoração, com móveis modernos, atendimento personalizado e experiências únicas de compra.",
     "canonical": "https://www.abracasa.com.br/institucional/nossas-lojas",
     "type": "website"
