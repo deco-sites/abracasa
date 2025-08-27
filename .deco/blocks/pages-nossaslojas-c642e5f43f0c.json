@@ -3,19 +3,13 @@
   "path": "/institucional/nossas-lojas",
   "sections": [
     {
-      "type": "website",
-      "__resolveType": "website/sections/Seo/Seo.tsx",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx",
-      "title": "Nossas Lojas"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
       "__resolveType": "InstitutionalMenu - Abracasa"
     },
     {
+      "__resolveType": "site/sections/Content/OurStores.tsx",
       "cards": [
         {
           "titleStore": "CASA SHOPPING",
@@ -91,7 +85,6 @@
         }
       ],
       "title": "Nossas Lojas ",
-      "__resolveType": "site/sections/Content/OurStores.tsx",
       "cities": [
         {
           "state": "RJ",
@@ -202,8 +195,9 @@
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "title": "Nossas Lojas | Abra Casa",
+    "title": "Nossas Lojas",
     "description": "Conheça as lojas Abra Casa! Espaços pensados para inspirar sua decoração, com móveis modernos, atendimento personalizado e experiências únicas de compra.",
-    "canonical": "https://www.abracasa.com.br/institucional/nossas-lojas"
+    "canonical": "https://www.abracasa.com.br/institucional/nossas-lojas",
+    "type": "website"
   }
 }
