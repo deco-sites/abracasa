@@ -19,11 +19,18 @@ interface Props {
   titleMobile?: RichText;
   /** @description Line Height of the text */
   lineHeightTitleMobile?: number;
+  /** @description Add a subtitle below the main title */
   dobleTitle?: boolean;
   TitleTwo?: RichText;
   lineHeightTitleTwo?: number;
   TitleTwoMobile?: RichText;
   lineHeightTitleTwoMobile?: number;
+  /** @description Add a title and description below the second image */
+  addDescription?: boolean;
+  titleDescription?: RichText;
+  titleDescriptionMob?: RichText;
+  description?: RichText;
+  descriptionMobile?: RichText;
   button?: {
     link?: string;
     title?: string;
@@ -44,6 +51,7 @@ interface Props {
     alt?: string;
     link?: string;
   }[];
+  /** @description Add a text below the second image */
   twoText?: boolean;
   textTwo?: RichText;
   lineHeightTextTwo?: number;
@@ -69,25 +77,41 @@ function ColectionHero({
   lineHeightTitleTwoMobile,
   lineHeightTextTwo,
   textTwoMobile,
-  lineHeightTextTwoMobile
+  lineHeightTextTwoMobile,
+  addDescription,
+  titleDescription,
+  titleDescriptionMob,
+  description,
+  descriptionMobile,
 }: Props) {
   const id = useId();
   return (
-    <div class="mt-[72px] lg:mt-[172px] relative">
+    <div
+      class={`relative ${
+        addDescription ? "lg:mt-[223px] mt-[60px]" : "mt-[72px] lg:mt-[172px]"
+      }`}
+    >
       <div class="max-w-[1210px] mx-auto font-inter">
         <div
           class={`flex flex-col lg:mx-7 xl:mx-0 ${twoText ? "gap-0" : "gap-7"}`}
         >
           <h2
-            class={`mx-6 lg:mx-0 hidden lg:block leading-[1.2] ${
-              twoText ? "font-thin sliderP tracking-[6px]" : "font-semibold tracking-wider"
-            } ${limitTitleText ? "max-w-[495px] sliderP !font-light" : ""}`}  
+            class={`sliderP mx-6 lg:mx-0 hidden lg:block leading-[1.2] 
+              ${
+                twoText
+                  ? "font-thin tracking-[6px]"
+                  : "font-semibold tracking-wider"
+              } ${limitTitleText ? "max-w-[495px] !font-light" : ""}`}
             dangerouslySetInnerHTML={{ __html: title ?? "" }}
             style={{ lineHeight: lineHeightTitle || "" }}
           />
           <h2
             class={`font-semibold mx-6 lg:mx-0 lg:hidden
-              ${twoText ? "font-thin sliderP tracking-widest" : "font-semibold tracking-wider"}
+              ${
+                twoText
+                  ? "font-thin sliderP tracking-widest"
+                  : "font-semibold tracking-wider"
+              }
               ${limitTitleText ? "max-w-[495px] sliderP !font-light" : ""}`}
             dangerouslySetInnerHTML={{ __html: titleMobile ?? "" }}
             style={{ lineHeight: lineHeightTitleMobile }}
@@ -95,14 +119,20 @@ function ColectionHero({
           {dobleTitle && (
             <>
               <h2
-                class={`font-normal mx-6 lg:mx-0 hidden lg:block leading-[1.2] 
-                  ${twoText ? "sliderP mb-[60px] tracking-normal" : "tracking-wider"}
+                class={`font-normal mx-6 lg:mx-0 hidden lg:block leading-[1.2]
+                  ${addDescription ? "mb-[68px] mt-[5px]" : ""} 
+                  ${
+                    twoText
+                      ? "sliderP mb-[60px] tracking-normal"
+                      : "tracking-wider"
+                  }
                   ${limitTitleText ? "max-w-[495px] sliderP !font-light" : ""}`}
                 dangerouslySetInnerHTML={{ __html: TitleTwo ?? "" }}
                 style={{ lineHeight: lineHeightTitleTwo || "" }}
               />
               <h2
-                class={`font-normal mb-[68px] mx-6 lg:mx-0 lg:hidden 
+                class={`font-normal mx-6 lg:mx-0 lg:hidden
+                  ${addDescription ? "mb-[32px]" : "mb-[68px]"}
                   ${twoText ? "sliderP" : ""}
                   ${limitTitleText ? "max-w-[495px] sliderP !font-light" : ""}`}
                 dangerouslySetInnerHTML={{ __html: TitleTwoMobile ?? "" }}
@@ -116,9 +146,7 @@ function ColectionHero({
               target={button.target || "_blank"}
               class={`w-fit flex mx-6 lg:mx-0 items-center justify-center border border-black text-black hover:bg-black hover:text-white transition-colors duration-300 py-2.5 px-12
                 ${twoText ? "mb-7 underline" : ""}
-                ${
-                button.isBold ? "font-bold" : "font-medium"
-              }`}
+                ${button.isBold ? "font-bold" : "font-medium"}`}
             >
               {button.title}
             </a>
@@ -171,7 +199,11 @@ function ColectionHero({
                 class={`${
                   index === 1
                     ? img.video
-                      ? "xl:absolute xl:top-[-65px] xl:right-[3%]"
+                      ? addDescription
+                        ? "xl:absolute xl:top-[-124px] xl:right-[3%]"
+                        : "xl:absolute xl:top-[-65px] xl:right-[3%]"
+                      : addDescription
+                      ? "xl:absolute xl:right-0 xl:top-[-124px]"
                       : "xl:absolute xl:right-0 xl:top-0"
                     : ""
                 }`}
@@ -231,6 +263,26 @@ function ColectionHero({
                 class="sliderP font-normal lg:hidden mx-6 text-left xl:absolute xl:bottom-[239px] xl:w-[588px] xl:right-0"
                 style={{ lineHeight: lineHeightTextTwoMobile || "" }}
                 dangerouslySetInnerHTML={{ __html: textTwoMobile ?? "" }}
+              />
+            </div>
+          ) : null}
+          {addDescription ? (
+            <div class="flex flex-col mt-1 justify-start xl:justify-end font-inter ">
+              <h2
+                class="leading-normal font-semibold hidden lg:block sliderP text-left xl:mb-[32px] xl:absolute xl:bottom-[139px] xl:w-[588px] xl:right-0"
+                dangerouslySetInnerHTML={{ __html: titleDescription ?? "" }}
+              />
+              <h2
+                class="mx-6 font-semibold lg:hidden mt-[2px] mb-[28px]"
+                dangerouslySetInnerHTML={{ __html: titleDescriptionMob ?? "" }}
+              />
+              <h2
+                class="hidden lg:block text-left xl:absolute xl:bottom-[30px] xl:w-[588px] xl:right-0"
+                dangerouslySetInnerHTML={{ __html: description ?? "" }}
+              />
+              <h2
+                class="lg:hidden mx-6"
+                dangerouslySetInnerHTML={{ __html: descriptionMobile ?? "" }}
               />
             </div>
           ) : null}
