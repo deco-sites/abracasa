@@ -17,7 +17,6 @@ export interface Props {
   imageMobileHeight?: number;
   altMobile?: string;
 
-  caption: string;
 }
 
 export default function SectionTextImage({
@@ -35,7 +34,6 @@ export default function SectionTextImage({
   imageMobileHeight,
   altMobile,
 
-  caption,
 }: Props) {
   const id = useId();
 
@@ -88,14 +86,6 @@ export default function SectionTextImage({
               maxHeight: imageHeight ? `${imageHeight}px` : "513px",
             }}
           />
-
-          {caption ? (
-            <div className="flex w-full justify-end">
-              <p className="font-inter text-[#626262] text-[8px] lg:text-[10px]">
-                {caption}
-              </p>
-            </div>
-          ) : null}
         </div>
 
         <div className="xl:hidden flex-col flex justify-center">
@@ -106,13 +96,6 @@ export default function SectionTextImage({
             alt={altMobile}
             className="w-full h-auto"
           />
-          {caption ? (
-            <div className="flex w-full justify-end">
-              <p className="font-inter text-[#626262] text-[8px] lg:text-[10px]">
-                {caption}
-              </p>
-            </div>
-          ) : null}
         </div>
       </div>
     </section>

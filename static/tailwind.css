@@ -5694,6 +5694,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-\[68px\] {
   gap: 68px;
 }
+.gap-\[69px\] {
+  gap: 69px;
+}
 .gap-\[6px\] {
   gap: 6px;
 }
@@ -9205,6 +9208,10 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 67px;
   }
 
+  .lg\:mb-\[68px\] {
+    margin-bottom: 68px;
+  }
+
   .lg\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -9279,6 +9286,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mt-\[82px\] {
     margin-top: 82px;
+  }
+
+  .lg\:mt-\[85px\] {
+    margin-top: 85px;
   }
 
   .lg\:mt-\[86px\] {
@@ -9679,10 +9690,6 @@ details.collapse summary::-webkit-details-marker {
     border-color: rgb(223 223 223 / var(--tw-border-opacity));
   }
 
-  .lg\:p-0 {
-    padding: 0px;
-  }
-
   .lg\:p-10 {
     padding: 2.5rem;
   }
@@ -9841,10 +9848,6 @@ details.collapse summary::-webkit-details-marker {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .lg\:text-\[10px\] {
-    font-size: 10px;
   }
 
   .lg\:text-\[11px\] {

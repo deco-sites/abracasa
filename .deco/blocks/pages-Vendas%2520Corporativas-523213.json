@@ -57,7 +57,7 @@
             ],
             "images": [
               {
-                "image": "https://assets.decocache.com/abracasa/dda617e2-854d-4164-ae84-fb9ff29cf21f/WhatsApp-Image-2024-01-26-at-11.00-1.png",
+                "image": "https://assets.decocache.com/abracasa/26feb800-3429-41dd-8ae2-7886a3324f1e/imagem_2025-08-29_135701005.png",
                 "description": "sala",
                 "caption": "Foto: Lorem Ipsum"
               }
@@ -119,7 +119,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/TextImage.tsx",
-        "image": "https://assets.decocache.com/abracasa/4f556d55-9579-4e2d-9de2-f6bd0498f0cd/_MG_5073-Aprimorado-NR-1.png",
+        "image": "https://assets.decocache.com/abracasa/e851b365-0c73-40a6-9ef1-bf828c3fd6ed/imagem_2025-08-29_135526698.png",
         "title": "<p><span style=\"color: #212121; font-size: 23pt\">Nossos diferenciais</span></p>",
         "paragraphs": [
           {
@@ -183,7 +183,8 @@
         "changeFontFamily": false,
         "title": "<p style=\"text-align: center\"><span style=\"color: #212121; font-size: 15pt\">Entre em contato e descubra como podemos transformar o seu espaço.</span><span style=\"font-size: 15pt\">&nbsp;</span></p>",
         "description": "<p style=\"text-align: center\"><span style=\"color: #212121\">+55 21 97420-6504&nbsp;</span></p>",
-        "changeFontWeight": true
+        "changeFontWeight": true,
+        "link": "/"
       }
     },
     {

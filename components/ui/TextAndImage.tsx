@@ -10,13 +10,12 @@ export interface Props {
     images?: {
       image: ImageWidget;
       description: string;
-      caption:string;
     }[];
   }[];
   textBelow?: boolean;
 }
 
-export default function TextAndImage({ textAndImage, textBelow, }: Props) {
+export default function TextAndImage({ textAndImage, textBelow }: Props) {
   return (
     <section
       class={`w-full h-full flex items-center justify-center border-b border-solid border-[#8282829f] ${
@@ -60,19 +59,9 @@ export default function TextAndImage({ textAndImage, textBelow, }: Props) {
 
                 {images?.map((image) => (
                   <div class="w-full h-full">
-                    <img
-                      src={image.image}
-                      alt={image.description}
-                    />
-                    { image.caption ?
-                        <div class="flex w-full justify-end pr-6 lg:p-0">
-                          <p class="font-inter text-[#626262] text-[8px] lg:text-[10px]">
-                            {image.caption}
-                          </p>
-                        </div>
-                     : null }
+                    <img src={image.image} alt={image.description} />
                   </div>
-                ))} 
+                ))}
               </>
             );
           })}

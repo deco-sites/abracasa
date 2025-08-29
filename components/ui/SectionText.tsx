@@ -5,6 +5,7 @@ export interface Props {
   changeFontWeight?: boolean;
   title: HTMLWidget;
   description: HTMLWidget;
+  link?: string;
 }
 
 export default function SectionNewsLetter({
@@ -12,11 +13,16 @@ export default function SectionNewsLetter({
   description,
   changeFontFamily,
   changeFontWeight,
+  link,
 }: Props) {
   if (!title || !description) return null;
 
   return (
-    <div class={`max-w-[1240px] h-full flex items-center justify-center mx-auto ${changeFontWeight ? "mt-[85px] mb-[68px]" : ""}`}>
+    <div
+      class={`max-w-[1240px] h-full flex items-center justify-center mx-auto ${
+        changeFontWeight ? "lg:mt-[85px] lg:mb-[68px]" : ""
+      }`}
+    >
       <div
         class={`w-full h-full text-center ${
           changeFontFamily || changeFontWeight ? "font-inter" : "font-sans"
@@ -26,9 +32,18 @@ export default function SectionNewsLetter({
             : "my-10 md:my-7 py-2 px-6"
         }`}
       >
-        <div class={`${changeFontWeight ? "mb-5" : ""}`} dangerouslySetInnerHTML={{ __html: title }} />
+        <div
+          class={`${changeFontWeight ? "mb-5" : ""}`}
+          dangerouslySetInnerHTML={{ __html: title }}
+        />
 
-        <div dangerouslySetInnerHTML={{ __html: description }} />
+        {link ? (
+          <a href={link}>
+            <div dangerouslySetInnerHTML={{ __html: description }} />
+          </a>
+        ) : (
+          <div dangerouslySetInnerHTML={{ __html: description }} />
+        )}
       </div>
     </div>
   );
