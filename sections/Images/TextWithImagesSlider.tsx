@@ -41,6 +41,7 @@ export default function TextWithImagesSlider({
             reverseMob ? "flex-col-reverse lg:mb-[67px] mb-0" : "flex-col"
           }`}
         >
+
           <div
             class="font-inter hidden xl:block sliderP font-normal text-left my-auto"
             dangerouslySetInnerHTML={{ __html: text || "" }}

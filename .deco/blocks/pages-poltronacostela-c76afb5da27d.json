@@ -21,14 +21,8 @@
         {
           "image": {
             "mobile": "https://data.decoassets.com/abracasa/6584ffe8-113c-4df6-a90f-8311789b5155/casa_dark_banner_especial_mobile_800x400.2.jpg",
-            "desktop": "https://data.decoassets.com/abracasa/feb3a842-6f84-428d-af98-3928aed91280/casa_dark_banner_especial_desktop_1800x2202.jpg"
-          },
-          "matcher": "/*"
-        },
-        {
-          "image": {
-            "desktop": "https://assets.decocache.com/abracasa/38b3b39f-d339-4ff8-baa4-954d9c675ade/casa_dark_banner_especial_desktop_1800x220.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/cde12897-043f-49ea-b05e-1c7e6586c449/casa_dark_banner_especial_mobile_800x400.jpg"
+            "desktop": "https://data.decoassets.com/abracasa/feb3a842-6f84-428d-af98-3928aed91280/casa_dark_banner_especial_desktop_1800x2202.jpg",
+            "alt": "quatro-poltronas-costelas-com-e-sem-puff"
           },
           "matcher": "/*"
         }
@@ -102,5 +96,11 @@
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Poltrona Costela | Abra Casa",
+    "description": "Conheça o lançamento da nova poltrona Costela: design, conforto incomparável e sofisticação para transformar sua sala com personalidade e estilo.",
+    "canonical": "https://www.abracasa.com.br/campanha/poltrona-costela"
+  }
 }

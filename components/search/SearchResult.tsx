@@ -39,9 +39,9 @@ export interface Props {
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
   /**
-   * @hide true
+   * @ignore
    */
-  dataTreePathJoined?: string | null;
+  dataTreePathJoined?: string;
 }
 
 function NotFound() {
@@ -195,14 +195,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
       : similarsProductsResults[index],
   }));
 
-  let filteredProducts = updatedProducts;
-  if (url.searchParams.has("prontaEntrega")) {
-    filteredProducts = updatedProducts.filter((product) =>
-      product.additionalProperty?.some((property) =>
-        property.value?.includes("Pronta Entrega")
-      )
-    );
-  }
+  const filteredProducts = updatedProducts;
 
   const fetchPageId = async () => {
     try {
@@ -219,12 +212,14 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const getCategoryId = await fetchPageId();
   categoryId = getCategoryId.id;
 
+  const getPageType = getCategoryId.pageType;
+
   const VTEXAPIAPPKEY = ctx.appKey?.get?.();
   const VTEXAPIAPPTOKEN = ctx.appToken?.get?.();
 
   let dataTreePathJoined = null;
 
-  if (VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null && categoryId) {
+  if (VTEXAPIAPPKEY != null && VTEXAPIAPPTOKEN != null && categoryId && getPageType !== "Collection") {
     const data = await fetchSafe(
       `https://abracasa.vtexcommercestable.com.br/api/catalog/pvt/category/${categoryId}?includeTreePath=true`,
       {
