@@ -3,15 +3,25 @@
   "path": "/campanha/poltrona-costela",
   "sections": [
     {
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
-      "title": "Poltrona Costela",
-      "titleTemplate": "Poltrona Costela"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "jsonLD": {
+              "sort": "OrderByPriceDESC",
+              "count": 12,
+              "filters": "dynamic",
+              "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+            "title": "Poltrona Costela",
+            "titleTemplate": "Poltrona Costela"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "Header - 01"
