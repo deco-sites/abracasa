@@ -333,9 +333,10 @@
         "cards": [
           {
             "image": {
-              "icon": "https://assets.decocache.com/abracasa/89b1faaf-f276-49ae-865d-bd0e2bcb8712/Rectangle-242.jpg"
+              "icon": "https://assets.decocache.com/abracasa/89b1faaf-f276-49ae-865d-bd0e2bcb8712/Rectangle-242.jpg",
+              "alt": "colecao-designer-industrial-george-nelson"
             },
-            "link": "/",
+            "link": "/designers/george-nelson",
             "showNewTitle": true,
             "titleAndSubtitle": {
               "newTitle": "George Nelson",
@@ -347,7 +348,9 @@
           },
           {
             "image": {
-              "icon": "https://assets.decocache.com/abracasa/58fbaa64-f56d-436d-ad92-d7940971d2f7/1381140an-1.jpg"
+              "icon": "https://assets.decocache.com/abracasa/58fbaa64-f56d-436d-ad92-d7940971d2f7/1381140an-1.jpg",
+              "alt": "designer-brasileira-LIGIA-KOEHLER",
+              "isBorder": false
             },
             "showNewTitle": true,
             "titleAndSubtitle": {
@@ -357,11 +360,13 @@
                 "title": "VER MAIS"
               }
             },
-            "link": "/"
+            "link": "/designers/ligia-koehler"
           },
           {
             "image": {
-              "icon": "https://assets.decocache.com/abracasa/82942c12-2b70-43f7-acf9-a2f52fd38511/03-5.jpg"
+              "icon": "https://assets.decocache.com/abracasa/82942c12-2b70-43f7-acf9-a2f52fd38511/03-5.jpg",
+              "alt": "designer-comtemporaneo-HAKIM HAZIM",
+              "isBorder": false
             },
             "showNewTitle": true,
             "titleAndSubtitle": {
@@ -371,7 +376,7 @@
                 "title": "VER MAIS"
               }
             },
-            "link": "/"
+            "link": "/designers/hakim-hazim"
           }
         ],
         "textCenter": true,
