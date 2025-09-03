@@ -41,6 +41,7 @@ function HeroBannerGrid({ title, mainImage, imageItems }: Props) {
             loading="lazy"
             decoding="async"
             class="w-full lg:hidden"
+            
           />
           <Image
             src={mainImage?.src ?? ""}
@@ -49,7 +50,10 @@ function HeroBannerGrid({ title, mainImage, imageItems }: Props) {
             height={mainImage?.height ?? 508}
             loading="lazy"
             decoding="async"
-            class="hidden lg:block"
+            class="hidden lg:block object-cover h-full"
+            style={{
+              maxHeight: `${mainImage?.height ?? 508}px`,
+            }}
           />
         </a>
         <ul class="grid grid-cols-2 grid-rows-3 gap-x-5 gap-y-4 lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-[14px] lg:gap-y-3 px-5 mt-[18px] lg:mt-0">
@@ -84,3 +88,4 @@ function HeroBannerGrid({ title, mainImage, imageItems }: Props) {
 }
 
 export default HeroBannerGrid;
+

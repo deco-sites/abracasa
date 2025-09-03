@@ -18,6 +18,7 @@ export interface VideoUploaded {
    * @default true
    */
   loop?: boolean;
+  notFullWidth?: boolean
 }
 
 export interface Youtube {
@@ -82,7 +83,7 @@ export default function Video(
         muted={content.muted}
         controls={content.controls}
         loop={content.loop}
-        class="w-full h-full object-cover object-center"
+        class={`w-full h-full object-cover object-center ${content.notFullWidth? "lg:max-w-[1210px] lg:max-h-[684px] lg:px-0 px-6 mx-auto" : ""}`}
       />
     );
   }
