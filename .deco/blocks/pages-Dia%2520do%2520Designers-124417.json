@@ -274,18 +274,28 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Content/SectionLaunch.tsx",
-        "title": "LANÇAMENTO",
-        "subTitle": "Rapha Preto",
-        "description": "ARTISTA E DESIGNER",
-        "backgroundColor": "#8c8c8c",
-        "button": {
-          "link": "/",
-          "title": "VER MAIS"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Content/SectionLaunch.tsx",
+              "title": "LANÇAMENTO",
+              "subTitle": "Rapha Preto",
+              "description": "ARTISTA E DESIGNER",
+              "backgroundColor": "#8c8c8c",
+              "button": {
+                "link": "/",
+                "title": "VER MAIS"
+              }
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
         }
-      }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
