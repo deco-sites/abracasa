@@ -13,10 +13,12 @@
       "section": {
         "__resolveType": "site/sections/Images/SimpleBanner.tsx",
         "desktopImage": {
-          "src": "https://assets.decocache.com/abracasa/6a4c4d3f-6f2b-421f-9dd8-6f6f3e1a29ab/Rectangle-205-(1).jpg"
+          "src": "https://assets.decocache.com/abracasa/b4ca2ddf-8eb0-45e7-a6b9-dbd2efb89e11/abra-casa-banner-semana-design.gif",
+          "alt": "mes-do-design-abra-casa"
         },
         "mobileImage": {
-          "src": "https://assets.decocache.com/abracasa/6a4c4d3f-6f2b-421f-9dd8-6f6f3e1a29ab/Rectangle-205-(1).jpg"
+          "src": "https://assets.decocache.com/abracasa/3447699d-9b9c-4631-9064-c3a94aa457a7/abra-casa-mobile-semana-design.gif",
+          "alt": "mes-do-design-abra-casa"
         }
       }
     },
@@ -45,33 +47,46 @@
               "target": "_blank"
             }
           },
-          "href": "/",
-          "width": 580
+          "href": "/campanha/atelie-casa",
+          "width": 580,
+          "alt": "campanha-atelie-abra-casa"
         },
         "imageItems": [
           {
             "src": "https://assets.decocache.com/abracasa/e2fa0356-8c1c-4b79-95ca-7f3e5e699716/Group-1844.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/e2fa0356-8c1c-4b79-95ca-7f3e5e699716/Group-1844.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/e2fa0356-8c1c-4b79-95ca-7f3e5e699716/Group-1844.jpg",
+            "href": "https://www.abracasa.com.br/rack-chico-2-portas-com-frisos-olmo-1-80m/p?skuId=2009749",
+            "alt": "rack-chico-2-portas-com-frisos-olmo-1-80m"
           },
           {
             "src": "https://assets.decocache.com/abracasa/de2e08d9-db5c-4c7e-8df3-23d07c4744da/Group-1845.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/de2e08d9-db5c-4c7e-8df3-23d07c4744da/Group-1845.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/de2e08d9-db5c-4c7e-8df3-23d07c4744da/Group-1845.jpg",
+            "href": "https://www.abracasa.com.br/cadeira-lala-palha-creme---cognac/p?skuId=2010959",
+            "alt": "cadeira-lala-palha-creme-cognac"
           },
           {
             "src": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg",
+            "href": "https://www.abracasa.com.br/sofa-pluma-modulado-bambino-cru---2-30m/p?skuId=2011176",
+            "alt": "sofa-pluma-modulado-bambino-cru"
           },
           {
             "src": "https://assets.decocache.com/abracasa/c2b54b6b-ef28-4aed-81af-cf41cb03afea/Group-1849.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/c2b54b6b-ef28-4aed-81af-cf41cb03afea/Group-1849.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/c2b54b6b-ef28-4aed-81af-cf41cb03afea/Group-1849.jpg",
+            "href": "https://www.abracasa.com.br/sofa-noah-trento-verde-pesto/p?skuId=2010602",
+            "alt": "sofa-noah-trento-verde-pesto"
           },
           {
             "src": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg",
+            "alt": "cristaleira-atrio-2-portas-e-2-gavetas-nature-e-incolor",
+            "href": "https://www.abracasa.com.br/cristaleira-atrio-2-portas-e-2-gavetas-nature-e-incolor---85cm/p?skuId=2011417"
           },
           {
             "src": "https://assets.decocache.com/abracasa/68778189-1233-4798-a81a-64dd8bf8c713/Group-1847.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/68778189-1233-4798-a81a-64dd8bf8c713/Group-1847.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/68778189-1233-4798-a81a-64dd8bf8c713/Group-1847.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-huma-cognac/p?skuId=2008898",
+            "alt": "poltrona-huma-cognac"
           }
         ],
         "changeSpacing": true
@@ -94,8 +109,9 @@
             },
             "subTitle": "DESIGNER CARIOCA  "
           },
-          "href": "/",
-          "width": 580
+          "href": "/campanha/fernanda-sampaio",
+          "width": 580,
+          "alt": "designer-fernanda-sampaio-abra-casa"
         },
         "imageItems": [
           {
