@@ -33,17 +33,20 @@
           {
             "desktop": "https://data.decoassets.com/abracasa/0b5e4552-a941-4c47-9020-3a3c2811ce8d/_MG_5073-Aprimorado-NR-1.jpg",
             "mobile": "https://data.decoassets.com/abracasa/0b5e4552-a941-4c47-9020-3a3c2811ce8d/_MG_5073-Aprimorado-NR-1.jpg",
-            "link": "https://www.abracasa.com.br/banco-frame-2-lugares-1-10m-palha-natural-canela/p?skuId=2011191"
+            "link": "https://www.abracasa.com.br/banco-frame-2-lugares-1-10m-palha-natural-canela/p?skuId=2011191",
+            "alt": "banco-frame-cesto-com-manta"
           },
           {
             "desktop": "https://data.decoassets.com/abracasa/ab9d8539-e9a8-43e1-a070-82e7dc237b73/_MG_3317-Aprimorado-NR-1.jpg",
             "mobile": "https://data.decoassets.com/abracasa/ab9d8539-e9a8-43e1-a070-82e7dc237b73/_MG_3317-Aprimorado-NR-1.jpg",
-            "link": "https://www.abracasa.com.br/poltrona-maggiolina---verde-oliva-e-almofadas---verde-militar-1/p?skuId=2011159"
+            "link": "https://www.abracasa.com.br/poltrona-maggiolina---verde-oliva-e-almofadas---verde-militar-1/p?skuId=2011159",
+            "alt": "polltrona-maggiolina-e-banco-na-lateral-com-livro"
           },
           {
             "desktop": "https://data.decoassets.com/abracasa/e260c894-6fe6-4688-8972-682eced7f028/_MG_3063-Aprimorado-NR-1.jpg",
             "mobile": "https://data.decoassets.com/abracasa/e260c894-6fe6-4688-8972-682eced7f028/_MG_3063-Aprimorado-NR-1.jpg",
-            "link": "https://www.abracasa.com.br/buffet-frame-palha-natural-2portas-e-3gavetas-160m-nozes/p?skuId=2008980"
+            "link": "https://www.abracasa.com.br/buffet-frame-palha-natural-2portas-e-3gavetas-160m-nozes/p?skuId=2008980",
+            "alt": "buffet-frame-palha-natural-com-vaso"
           }
         ],
         "titleMobile": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 31pt\">design</span></p><p style=\"text-align: right\"><span style=\"color: #212121; font-size: 31pt\">contemporâneo</span></p>"
@@ -57,11 +60,14 @@
         "image": [
           {
             "desktop": "https://data.decoassets.com/abracasa/a322bcac-768c-4d9d-be01-f6af86ae9d7f/_MG_3001-Aprimorado-NR-1.jpg",
-            "mobile": "https://data.decoassets.com/abracasa/a322bcac-768c-4d9d-be01-f6af86ae9d7f/_MG_3001-Aprimorado-NR-1.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/a322bcac-768c-4d9d-be01-f6af86ae9d7f/_MG_3001-Aprimorado-NR-1.jpg",
+            "alt": "estante-aparador-baoba-com-itens-decorativos",
+            "link": "https://www.abracasa.com.br/estante-aparador-baoba-preto-e-tammi---1-80mx50cm--nv/p?skuId=2011593"
           },
           {
             "mobile": "https://data.decoassets.com/abracasa/02413ce5-c9cf-4610-95e9-629d457594db/Vertical-Mesa-Athos-Final-1.jpg",
-            "desktop": "https://data.decoassets.com/abracasa/02413ce5-c9cf-4610-95e9-629d457594db/Vertical-Mesa-Athos-Final-1.jpg"
+            "desktop": "https://data.decoassets.com/abracasa/02413ce5-c9cf-4610-95e9-629d457594db/Vertical-Mesa-Athos-Final-1.jpg",
+            "alt": "conjuntos-de-mesa-athos-e-cadeiras"
           }
         ],
         "titleMobile": "<p><span style=\"color: rgb(33, 33, 33); font-size: 24pt\">Uma expressão</span><br></p><p><span style=\"color: rgb(33, 33, 33); font-size: 24pt\">de arte através</span></p><p><span style=\"color: rgb(33, 33, 33); font-size: 24pt\">da paixão pelo design.</span></p>",
@@ -81,15 +87,18 @@
         "image": [
           {
             "desktop": "https://data.decoassets.com/abracasa/1bbdd935-445a-4d3a-8279-b5e5579d7a5e/_MG_3446-Aprimorado-NR-1.jpg",
-            "mobile": "https://data.decoassets.com/abracasa/1bbdd935-445a-4d3a-8279-b5e5579d7a5e/_MG_3446-Aprimorado-NR-1.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/1bbdd935-445a-4d3a-8279-b5e5579d7a5e/_MG_3446-Aprimorado-NR-1.jpg",
+            "alt": "sofa-com-alofadas-decorativas"
           },
           {
             "desktop": "https://data.decoassets.com/abracasa/4f690735-38e4-48b4-b385-8fe875bfa18c/_MG_5645-Enhanced-NR-1.jpg",
-            "mobile": "https://data.decoassets.com/abracasa/4f690735-38e4-48b4-b385-8fe875bfa18c/_MG_5645-Enhanced-NR-1.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/4f690735-38e4-48b4-b385-8fe875bfa18c/_MG_5645-Enhanced-NR-1.jpg",
+            "alt": "menina-sentada-com-livro-apoiado-na-mesa"
           },
           {
             "desktop": "https://data.decoassets.com/abracasa/6f7dcd5b-45cc-488f-9d0e-efc7adfe95d2/_MG_5137-Aprimorado-NR-1.jpg",
-            "mobile": "https://data.decoassets.com/abracasa/6f7dcd5b-45cc-488f-9d0e-efc7adfe95d2/_MG_5137-Aprimorado-NR-1.jpg"
+            "mobile": "https://data.decoassets.com/abracasa/6f7dcd5b-45cc-488f-9d0e-efc7adfe95d2/_MG_5137-Aprimorado-NR-1.jpg",
+            "alt": "mesa-lateral-trip-redonda-com-xicara-de-cafe"
           }
         ],
         "mainImage": [
@@ -160,7 +169,10 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Coleção 2025 | Abra Casa",
+    "description": "Conheça a Coleção 2025: Sofá retrátil, cadeiras, rack e mesas com acabamentos exclusivos e design moderno para transformar sua sala com sofisticação.",
+    "canonical": "https://www.abracasa.com.br/colecao-2025"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

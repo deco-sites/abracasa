@@ -3,40 +3,32 @@
   "path": "/campanha/home-office",
   "sections": [
     {
-      "title": "Toques Essenciais",
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
-      "titleTemplate": "Toques Essenciais"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
             "mobile": "https://assets.decocache.com/abracasa/646dd604-4e6c-446a-b438-c41917f37938/casa_escriv_banner_especial_mobile_800x400px-(1).jpg",
-            "desktop": "https://assets.decocache.com/abracasa/9233fd0e-a6ba-49df-874d-44f86800ea44/casa_escr_banner_especial_desktop_1800x220px-(1).jpg"
+            "desktop": "https://assets.decocache.com/abracasa/9233fd0e-a6ba-49df-874d-44f86800ea44/casa_escr_banner_especial_desktop_1800x220px-(1).jpg",
+            "alt": "conjunto-home-office-com-bancada-modulo-e-cadeira"
           },
-          "matcher": "/*"
+          "matcher": "/*",
+          "title": "Home Office"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
-      "html": "<p style=\"text-align: center\"><br></p>",
-      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p style=\"text-align: center\"><br></p>"
     },
     {
       "html": "<p></p>",
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "OrderByTopSaleDESC",
         "count": 48,
@@ -96,7 +88,6 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
     {
@@ -104,7 +95,15 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Home Office",
+    "description": "Seu home office merece o melhor! Na Abra Casa, descubra cadeira de escritório, escrivaninha e conjuntos office que unem conforto e estilo.",
+    "jsonLD": {
+      "sort": "OrderByPriceDESC",
+      "count": 12,
+      "filters": "dynamic",
+      "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+    }
   },
   "__resolveType": "website/pages/Page.tsx"
 }

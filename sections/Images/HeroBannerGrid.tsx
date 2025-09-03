@@ -65,6 +65,7 @@ function HeroBannerGrid({
             loading="lazy"
             decoding="async"
             class="w-full lg:hidden"
+            
           />
           <Image
             src={mainImage?.src ?? ""}
@@ -130,3 +131,4 @@ function HeroBannerGrid({
 }
 
 export default HeroBannerGrid;
+

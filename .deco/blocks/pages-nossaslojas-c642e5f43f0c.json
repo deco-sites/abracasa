@@ -3,18 +3,13 @@
   "path": "/institucional/nossas-lojas",
   "sections": [
     {
-      "type": "website",
-      "__resolveType": "website/sections/Seo/Seo.tsx",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
       "__resolveType": "InstitutionalMenu - Abracasa"
     },
     {
+      "__resolveType": "site/sections/Content/OurStores.tsx",
       "cards": [
         {
           "titleStore": "CASA SHOPPING",
@@ -90,7 +85,6 @@
         }
       ],
       "title": "Nossas Lojas ",
-      "__resolveType": "site/sections/Content/OurStores.tsx",
       "cities": [
         {
           "state": "RJ",
@@ -154,7 +148,8 @@
           ],
           "title": "Rio de Janeiro",
           "imageMobile": "https://assets.decocache.com/abracasa/6766bed5-aa08-40b9-aa4a-b7bcbc8d185d/loja_rj_mobile.png",
-          "imageDesktop": "https://assets.decocache.com/abracasa/25988df5-58bb-4c41-807e-d01339c35c5f/loja_rj_desktop.png"
+          "imageDesktop": "https://assets.decocache.com/abracasa/25988df5-58bb-4c41-807e-d01339c35c5f/loja_rj_desktop.png",
+          "imageAlt": "sala-mobiliada-com-moveis-abra-casa"
         },
         {
           "state": "SP",
@@ -186,7 +181,8 @@
           ],
           "title": "São Paulo",
           "imageDesktop": "https://assets.decocache.com/abracasa/69059d6d-cd6d-451d-8c2e-cf367d7da4ee/loja_sp_desktop.png",
-          "imageMobile": "https://assets.decocache.com/abracasa/75340d93-7370-459b-8751-0eae04ec9183/loja_sp_mobile.png"
+          "imageMobile": "https://assets.decocache.com/abracasa/75340d93-7370-459b-8751-0eae04ec9183/loja_sp_mobile.png",
+          "imageAlt": "fachada-loja-sao-paulo"
         }
       ],
       "imageDesktop": "https://assets.decocache.com/abracasa/83a217f2-325e-43d3-85f2-6a0afdac8dca/nossas_lojas_banner.png",
@@ -196,5 +192,12 @@
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Nossas Lojas | Abra Casa",
+    "description": "Conheça as lojas Abra Casa! Espaços pensados para inspirar sua decoração, com móveis modernos, atendimento personalizado e experiências únicas de compra.",
+    "canonical": "https://www.abracasa.com.br/institucional/nossas-lojas",
+    "type": "website"
+  }
 }

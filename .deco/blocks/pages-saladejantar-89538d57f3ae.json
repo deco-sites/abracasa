@@ -3,24 +3,16 @@
   "path": "/ambientes/sala-de-jantar",
   "sections": [
     {
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
-            "alt": "Banner",
             "mobile": "https://assets.decocache.com/abracasa/d38d41f1-336e-4743-9c7b-7be06ad5b685/casa_colecao_banner_especiala_mobile_800x400.jpg",
-            "desktop": "https://assets.decocache.com/abracasa/a612f126-2892-4318-83ea-7c3893ff0d53/casa_coleca_banner_especiala_desktop_1800x220.jpg.jpg"
+            "desktop": "https://assets.decocache.com/abracasa/a612f126-2892-4318-83ea-7c3893ff0d53/casa_coleca_banner_especiala_desktop_1800x220.jpg.jpg",
+            "alt": "sala-de-jantar-com-mesa-e-quatro-cadeiras"
           },
           "matcher": "/*"
         },
@@ -30,10 +22,10 @@
             "mobile": "https://assets.decocache.com/abracasa/d38d41f1-336e-4743-9c7b-7be06ad5b685/casa_colecao_banner_especiala_mobile_800x400.jpg"
           }
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "OrderByTopSaleDESC",
         "count": 48,
@@ -91,17 +83,27 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "startingPage": 1
     },
     {
+      "__resolveType": "site/sections/Content/SectionText.tsx",
       "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sala de jantar&nbsp;</span></p>",
-      "description": "<p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Na Abra Casa você deixa a sua sala de jantar mais completa! Preparamos diversos tipos e tamanhos de conjuntos de mesas e cadeiras para deixar esse momento ainda mais confortável. E se você prefere montar o seu conjunto do seu jeito, é só escolher. São mesas redondas ou quadradas, com tampos em madeira ou de vidro, cadeiras estofadas ou de polipropileno, para todos os tamanhos de casas e famílias.&nbsp;</span></p>",
-      "__resolveType": "site/sections/Content/SectionText.tsx"
+      "description": "<p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Na Abra Casa você deixa a sua sala de jantar mais completa! Preparamos diversos tipos e tamanhos de conjuntos de mesas e cadeiras para deixar esse momento ainda mais confortável. E se você prefere montar o seu conjunto do seu jeito, é só escolher. São mesas redondas ou quadradas, com tampos em madeira ou de vidro, cadeiras estofadas ou de polipropileno, para todos os tamanhos de casas e famílias.&nbsp;</span></p>"
     },
     {
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
+    "jsonLD": {
+      "sort": "OrderByPriceDESC",
+      "count": 12,
+      "filters": "dynamic",
+      "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+    },
+    "title": "Sala de Jantar | Abra Casa",
+    "description": "Na Abra Casa, sua sala de jantar ganha vida! Mesas, cadeiras e racks exclusivos que trazem elegância, conforto e funcionalidade para todos os estilos."
+  }
 }

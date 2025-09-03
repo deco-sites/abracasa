@@ -3,31 +3,30 @@
   "path": "/campanha/sofa-malba",
   "sections": [
     {
-      "title": "Sofá Malba",
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
-      "titleTemplate": "Sofá Malba"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
-      "banners": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "image": {
-            "mobile": "https://assets.decocache.com/abracasa/3ddd5e76-825a-447b-a92b-95bbf99d7d96/casa_banner_especial_mobile_malba_800x400.png",
-            "desktop": "https://assets.decocache.com/abracasa/f39813a9-cc16-4579-a963-4e444e63b091/casa_banner_especial_desktop_malba_1800x220.jpg",
-            "alt": "sala-mobiliada-com-o-sofa-malba-abra-casa"
+          "value": {
+            "banners": [
+              {
+                "image": {
+                  "mobile": "https://assets.decocache.com/abracasa/3ddd5e76-825a-447b-a92b-95bbf99d7d96/casa_banner_especial_mobile_malba_800x400.png",
+                  "desktop": "https://assets.decocache.com/abracasa/f39813a9-cc16-4579-a963-4e444e63b091/casa_banner_especial_desktop_malba_1800x220.jpg",
+                  "alt": "sala-mobiliada-com-o-sofa-malba-abra-casa"
+                },
+                "matcher": "/*"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
-          "matcher": "/*"
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
       "html": "<p style=\"text-align: center\"><br></p>",
@@ -107,8 +106,7 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
     "title": "Sofá Malba | Abra Casa",
-    "description": "Sofá retrátil com estilo e conforto? O sofá Malba chegou! Lançamento com acabamento premium e design pensado para o seu bem-estar.",
-    "canonical": "https://www.abracasa.com.br/campanha/sofa-malba"
+    "description": "Sofá retrátil com estilo e conforto? O sofá Malba chegou! Lançamento com acabamento premium e design pensado para o seu bem-estar."
   },
   "__resolveType": "website/pages/Page.tsx"
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Mês dos Designers",
-  "path": "/mes-dos-designers",
+  "name": "Dia do Designer",
+  "path": "/dia-do-designer",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -24,8 +24,8 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Content/SectionTitle.tsx",
-        "title": "<p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Frase bonita aqui sobre termos design</span></p><p style=\"text-align: right\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">assinado e releituras de designers famosos</span></p>",
-        "titleMob": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 12pt\">Frase bonita aqui sobre termos</span></p><p style=\"text-align: right\"><span style=\"color: #212121; font-size: 12pt\">design assinado e releituras</span></p><p style=\"text-align: right\"><span style=\"color: #212121; font-size: 12pt\">de designers famosos</span></p>"
+        "title": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 18pt\">Para os apaixonados pelos traços</span></p><p style=\"text-align: right\"><span style=\"color: #212121; font-size: 18pt\">únicos e formas atemporais</span>&nbsp;</p>",
+        "titleMob": "<p style=\"text-align: right\"><span style=\"color: #212121\">Para os apaixonados pelos traços</span></p><p style=\"text-align: right\"><span style=\"color: #212121\">únicos e formas atemporais</span>&nbsp;</p>"
       }
     },
     {
@@ -33,8 +33,8 @@
       "section": {
         "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
         "mainImage": {
-          "src": "https://assets.decocache.com/abracasa/2a66bd9c-c32b-49ad-978f-6652e27670f4/_MG_3317-Aprimorado-NR-1-(2).jpg",
-          "srcMobile": "https://assets.decocache.com/abracasa/2a66bd9c-c32b-49ad-978f-6652e27670f4/_MG_3317-Aprimorado-NR-1-(2).jpg",
+          "src": "https://assets.decocache.com/abracasa/bdd41b26-03fc-44a8-b873-13ce871e9d79/Rectangle-229.jpg",
+          "srcMobile": "https://assets.decocache.com/abracasa/bdd41b26-03fc-44a8-b873-13ce871e9d79/Rectangle-229.jpg",
           "showNewTitle": true,
           "titleAndSubtitle": {
             "newTitle": "Ateliê Casa  ",
@@ -50,28 +50,28 @@
         },
         "imageItems": [
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/e2fa0356-8c1c-4b79-95ca-7f3e5e699716/Group-1844.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/e2fa0356-8c1c-4b79-95ca-7f3e5e699716/Group-1844.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/de2e08d9-db5c-4c7e-8df3-23d07c4744da/Group-1845.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/de2e08d9-db5c-4c7e-8df3-23d07c4744da/Group-1845.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/c2b54b6b-ef28-4aed-81af-cf41cb03afea/Group-1849.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/c2b54b6b-ef28-4aed-81af-cf41cb03afea/Group-1849.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/68778189-1233-4798-a81a-64dd8bf8c713/Group-1847.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/68778189-1233-4798-a81a-64dd8bf8c713/Group-1847.jpg"
           }
         ],
         "changeSpacing": true
@@ -82,8 +82,8 @@
       "section": {
         "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
         "mainImage": {
-          "src": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
-          "srcMobile": "https://assets.decocache.com/abracasa/8794013a-17d5-45f5-8bad-6f641a85d69e/fotos_Atelie-(4).jpg",
+          "src": "https://assets.decocache.com/abracasa/cf73d661-5869-4f76-a720-736eea28148d/Rectangle-307.jpg",
+          "srcMobile": "https://assets.decocache.com/abracasa/cf73d661-5869-4f76-a720-736eea28148d/Rectangle-307.jpg",
           "showNewTitle": true,
           "titleAndSubtitle": {
             "newTitle": "Fernanda Sampaio",
@@ -99,28 +99,28 @@
         },
         "imageItems": [
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/c7f0d94a-608a-4565-87e9-0def3c5a9cf0/Group-1850.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/c7f0d94a-608a-4565-87e9-0def3c5a9cf0/Group-1850.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/9d000d92-cc96-4f9c-8ddd-5217fb95ea1b/Group-1851.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/9d000d92-cc96-4f9c-8ddd-5217fb95ea1b/Group-1851.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/d58d3499-d1ad-4e4a-9fda-b0c6d0b3baea/Group-1852.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/d58d3499-d1ad-4e4a-9fda-b0c6d0b3baea/Group-1852.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/331a66e0-eb56-462c-9f91-636b97ceb25a/Group-1855.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/331a66e0-eb56-462c-9f91-636b97ceb25a/Group-1855.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/a4375d44-3e81-484e-9e23-6da7c82bc0c1/Group-1854.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/a4375d44-3e81-484e-9e23-6da7c82bc0c1/Group-1854.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/254ca864-c2be-4c08-bf77-c5cd47781140/Group-1853.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/254ca864-c2be-4c08-bf77-c5cd47781140/Group-1853.jpg"
           }
         ],
         "changeSpacing": true
@@ -131,8 +131,8 @@
       "section": {
         "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
         "mainImage": {
-          "src": "https://assets.decocache.com/abracasa/52af24c0-f5aa-4f85-a00d-fe58451939fa/IMG_1737-1(1)-1.jpg",
-          "srcMobile": "https://assets.decocache.com/abracasa/52af24c0-f5aa-4f85-a00d-fe58451939fa/IMG_1737-1(1)-1.jpg",
+          "src": "https://assets.decocache.com/abracasa/84aa52e8-d0de-4453-a024-bfe172746da8/Rectangle-249.jpg",
+          "srcMobile": "https://assets.decocache.com/abracasa/84aa52e8-d0de-4453-a024-bfe172746da8/Rectangle-249.jpg",
           "showNewTitle": true,
           "titleAndSubtitle": {
             "newTitle": "Martin Eisler",
@@ -148,28 +148,28 @@
         },
         "imageItems": [
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/65a730e1-01f2-48b2-99be-975a3cf3ad53/Group-1857.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/65a730e1-01f2-48b2-99be-975a3cf3ad53/Group-1857.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/d6f1f68e-622d-406e-885d-6f6c99d69a6a/Group-1858.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/d6f1f68e-622d-406e-885d-6f6c99d69a6a/Group-1858.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/a22fae9f-fb00-4b4e-9b28-c9fa00822b84/Group-1861.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/a22fae9f-fb00-4b4e-9b28-c9fa00822b84/Group-1861.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/b541b2be-d97d-41e6-a426-5348841d8adf/Group-1860.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/b541b2be-d97d-41e6-a426-5348841d8adf/Group-1860.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg"
           }
         ],
         "changeSpacing": true
@@ -180,8 +180,8 @@
       "section": {
         "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
         "mainImage": {
-          "src": "https://assets.decocache.com/abracasa/95f4657c-5aa8-44d7-be24-12d031b0a4ba/_MG_3317-Aprimorado-NR-1.jpg",
-          "srcMobile": "https://assets.decocache.com/abracasa/95f4657c-5aa8-44d7-be24-12d031b0a4ba/_MG_3317-Aprimorado-NR-1.jpg",
+          "src": "https://assets.decocache.com/abracasa/e375faba-58f0-4497-86e1-ba98e42f0b55/Rectangle-293.jpg",
+          "srcMobile": "https://assets.decocache.com/abracasa/e375faba-58f0-4497-86e1-ba98e42f0b55/Rectangle-293.jpg",
           "showNewTitle": true,
           "titleAndSubtitle": {
             "newTitle": "Marco Zanuso  ",
@@ -197,28 +197,28 @@
         },
         "imageItems": [
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/3d2436a4-4caa-4137-83ba-01d002261557/Group-1862.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/3d2436a4-4caa-4137-83ba-01d002261557/Group-1862.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/071ed7f9-37fe-4d12-a7ed-43bd6d9b7e1f/Group-1863.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/071ed7f9-37fe-4d12-a7ed-43bd6d9b7e1f/Group-1863.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/7acc873b-f9cd-4086-8988-5d1d57f50cfe/Group-1864.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/7acc873b-f9cd-4086-8988-5d1d57f50cfe/Group-1864.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/eb2c6831-8ee2-48b3-92c9-6903f845d6f2/Group-1867.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/eb2c6831-8ee2-48b3-92c9-6903f845d6f2/Group-1867.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/99dddc66-7c28-43e6-b4fd-890fae16d51d/Group-1866.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/99dddc66-7c28-43e6-b4fd-890fae16d51d/Group-1866.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/0b1378c4-615e-49a8-901c-9a3f22e754d9/Group-1865.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/0b1378c4-615e-49a8-901c-9a3f22e754d9/Group-1865.jpg"
           }
         ],
         "changeSpacing": true
@@ -229,8 +229,8 @@
       "section": {
         "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
         "mainImage": {
-          "src": "https://assets.decocache.com/abracasa/fa0c65dc-1c58-4154-b3d8-48bfcd64690d/_MG_3317-Aprimorado-NR-2.jpg",
-          "srcMobile": "https://assets.decocache.com/abracasa/fa0c65dc-1c58-4154-b3d8-48bfcd64690d/_MG_3317-Aprimorado-NR-2.jpg",
+          "src": "https://assets.decocache.com/abracasa/f828cb7e-31e7-4184-b717-3d788d799f49/Rectangle-300.jpg",
+          "srcMobile": "https://assets.decocache.com/abracasa/f828cb7e-31e7-4184-b717-3d788d799f49/Rectangle-300.jpg",
           "showNewTitle": true,
           "titleAndSubtitle": {
             "newTitle": "Charles & Ray Eames",
@@ -246,28 +246,28 @@
         },
         "imageItems": [
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/81f62076-58c3-4b9b-8543-7d6f9941379f/Group-1868.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/81f62076-58c3-4b9b-8543-7d6f9941379f/Group-1868.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/e96f25c8-9759-4f76-bb1f-b77c6e57456b/Group-1869.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/e96f25c8-9759-4f76-bb1f-b77c6e57456b/Group-1869.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/e3f0b293-77ed-4a6b-aa65-98e59e296988/Group-1870.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/e3f0b293-77ed-4a6b-aa65-98e59e296988/Group-1870.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/b5d1db2c-ff5c-4988-9434-da79be6baac0/Group-1873.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/b5d1db2c-ff5c-4988-9434-da79be6baac0/Group-1873.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/70c484b5-6224-4581-840a-1f5534545811/Group-1872.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/70c484b5-6224-4581-840a-1f5534545811/Group-1872.jpg"
           },
           {
-            "src": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg"
+            "src": "https://assets.decocache.com/abracasa/24a319ad-b253-40b1-81bf-a39de1de10db/Group-1871.jpg",
+            "srcMobile": "https://assets.decocache.com/abracasa/24a319ad-b253-40b1-81bf-a39de1de10db/Group-1871.jpg"
           }
         ],
         "changeSpacing": true
@@ -295,7 +295,7 @@
         "cards": [
           {
             "image": {
-              "icon": "https://assets.decocache.com/abracasa/ab972616-5cc7-47df-86ed-d784e5540230/_MG_5073-Aprimorado-NR-1.jpg"
+              "icon": "https://assets.decocache.com/abracasa/89b1faaf-f276-49ae-865d-bd0e2bcb8712/Rectangle-242.jpg"
             },
             "link": "/",
             "showNewTitle": true,
@@ -309,7 +309,7 @@
           },
           {
             "image": {
-              "icon": "https://assets.decocache.com/abracasa/95f4657c-5aa8-44d7-be24-12d031b0a4ba/_MG_3317-Aprimorado-NR-1.jpg"
+              "icon": "https://assets.decocache.com/abracasa/58fbaa64-f56d-436d-ad92-d7940971d2f7/1381140an-1.jpg"
             },
             "showNewTitle": true,
             "titleAndSubtitle": {
@@ -323,7 +323,7 @@
           },
           {
             "image": {
-              "icon": "https://assets.decocache.com/abracasa/53ce83b9-0d92-4761-bd03-014d7c24b348/image-17.png"
+              "icon": "https://assets.decocache.com/abracasa/82942c12-2b70-43f7-acf9-a2f52fd38511/03-5.jpg"
             },
             "showNewTitle": true,
             "titleAndSubtitle": {
