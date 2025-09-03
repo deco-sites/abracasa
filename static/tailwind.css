@@ -9538,6 +9538,14 @@ details.collapse summary::-webkit-details-marker {
     min-width: 96px;
   }
 
+  .lg\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .lg\:max-w-\[1210px\] {
+    max-width: 1210px;
+  }
+
   .lg\:max-w-\[134px\] {
     max-width: 134px;
   }
