@@ -1,6 +1,6 @@
 {
   "name": "Vendas Corporativas",
-  "path": "/vendas-corporativas",
+  "path": "/venda-corporativa",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
