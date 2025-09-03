@@ -171,33 +171,46 @@
               "target": "_blank"
             }
           },
-          "href": "/",
-          "width": 580
+          "href": "/designers/martin-eisler",
+          "width": 580,
+          "alt": "designer-martin-eisler"
         },
         "imageItems": [
           {
             "src": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-costela-com-braco-puff-caramelo/p?skuId=2009722",
+            "alt": "poltrona-costela-com-braco-puff-caramelo"
           },
           {
             "src": "https://assets.decocache.com/abracasa/65a730e1-01f2-48b2-99be-975a3cf3ad53/Group-1857.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/65a730e1-01f2-48b2-99be-975a3cf3ad53/Group-1857.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/65a730e1-01f2-48b2-99be-975a3cf3ad53/Group-1857.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-e-puff-costela-trend-bege/p?skuId=2009010",
+            "alt": "poltrona-e-puff-costela-trend-bege"
           },
           {
             "src": "https://assets.decocache.com/abracasa/d6f1f68e-622d-406e-885d-6f6c99d69a6a/Group-1858.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/d6f1f68e-622d-406e-885d-6f6c99d69a6a/Group-1858.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/d6f1f68e-622d-406e-885d-6f6c99d69a6a/Group-1858.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-puff-costela-slim-sarja-verde-oliva/p?skuId=2009724",
+            "alt": "poltrona-puff-costela-slim-sarja-verde-oliva"
           },
           {
             "src": "https://assets.decocache.com/abracasa/a22fae9f-fb00-4b4e-9b28-c9fa00822b84/Group-1861.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/a22fae9f-fb00-4b4e-9b28-c9fa00822b84/Group-1861.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/a22fae9f-fb00-4b4e-9b28-c9fa00822b84/Group-1861.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-puff-costela-slim-sarja-verde-oliva/p?skuId=2009724",
+            "alt": "poltrona-puff-costela-slim-sarja-verde-oliva"
           },
           {
             "src": "https://assets.decocache.com/abracasa/b541b2be-d97d-41e6-a426-5348841d8adf/Group-1860.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/b541b2be-d97d-41e6-a426-5348841d8adf/Group-1860.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/b541b2be-d97d-41e6-a426-5348841d8adf/Group-1860.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-costela-com-puff-botone---terracota/p?skuId=2010514",
+            "alt": "poltrona-costela-com-puff-botone-terracota"
           },
           {
             "src": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-e-puff-costela-dark-argila/p?skuId=2011462",
+            "alt": "poltrona-e-puff-costela-dark-argila"
           }
         ],
         "changeSpacing": true
@@ -220,8 +233,9 @@
             },
             "subTitle": "ARQUITETO E DESIGNER MODERNISTA  "
           },
-          "href": "/",
-          "width": 580
+          "href": "/designers/marco-zanuso",
+          "width": 580,
+          "alt": "design-marco-zanuso"
         },
         "imageItems": [
           {
@@ -269,8 +283,9 @@
             },
             "subTitle": "CASAL DE DESIGNERS NORTE-AMERICANOS"
           },
-          "href": "/",
-          "width": 580
+          "href": "/designers/charles---ray-eames",
+          "width": 580,
+          "alt": "designers-charles-ray-eames"
         },
         "imageItems": [
           {
