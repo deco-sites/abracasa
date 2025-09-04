@@ -3,20 +3,10 @@
   "path": "/campanha/fernanda-sampaio",
   "sections": [
     {
-      "title": "Poltrona Maggiolina",
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
-      "titleTemplate": "Poltrona Maggiolina"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
@@ -27,18 +17,18 @@
           "matcher": "/*",
           "title": "Móveis Exclusivos | Abra Casa"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
-      "html": "<p style=\"text-align: center\"><br></p>",
-      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p style=\"text-align: center\"><br></p>"
     },
     {
       "html": "<p></p>",
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "fq": "H:560",
         "sort": "OrderByTopSaleDESC",
@@ -98,7 +88,6 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true,
       "categoryId": null
     },
@@ -107,9 +96,15 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
     "description": "Rack, buffet, escrivaninha e gaveteiros assinados por Fernanda Sampaio: design que alia estética e função com elegância para ambientes residenciais e corporativos.",
     "canonical": "https://www.abracasa.com.br/campanha/fernanda-sampaio",
+    "jsonLD": {
+      "sort": "OrderByPriceDESC",
+      "count": 12,
+      "filters": "dynamic",
+      "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+    },
     "title": "Móveis Exclusivos | Abra Casa"
   },
   "__resolveType": "website/pages/Page.tsx"
