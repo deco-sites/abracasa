@@ -1,6 +1,6 @@
-import Avatar from "$store/components/ui/Avatar.tsx";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import type { Product } from "apps/commerce/types.ts";
+import VariantButton from "deco-sites/abracasa/islands/VariantButton.tsx";
 
 interface Props {
   product: Product;
@@ -11,16 +11,17 @@ function VariantSelector({ product }: Props) {
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const possibilities = useVariantPossibilities(hasVariant, product);
 
-  const sortedPossibilities = Object.entries(possibilities)
-    .map(([key, values]) => {
-      const sortedValues = Object.entries(values)
-        .sort(([sizeA], [sizeB]) =>
+  const sortedPossibilities = Object.entries(possibilities).map(
+    ([key, values]) => {
+      const sortedValues = Object.entries(values).sort(
+        ([sizeA], [sizeB]) =>
           parseFloat(sizeA.replace(",", ".")) -
           parseFloat(sizeB.replace(",", "."))
-        );
+      );
 
       return [key, Object.fromEntries(sortedValues)];
-    });
+    }
+  );
 
   return (
     <ul className="flex flex-col gap-4 max-w-[60%]">
@@ -33,16 +34,11 @@ function VariantSelector({ product }: Props) {
             <ul className="grid grid-cols-3 items-center gap-x-1.5 gap-y-3">
               {Object.entries(values).map(([value, link]) => (
                 <li key={value}>
-                  <button f-partial={link} f-client-nav>
-                    <Avatar
-                      content={value}
-                      variant={link === url
-                        ? "active"
-                        : link
-                          ? "default"
-                          : "disabled"}
-                    />
-                  </button>
+                  <VariantButton
+                    value={value}
+                    link={link}
+                    isActive={link === url}
+                  />
                 </li>
               ))}
             </ul>
