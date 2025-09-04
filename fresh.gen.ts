@@ -35,6 +35,7 @@ import * as $Shelf_AddToCartButton from "./islands/Shelf/AddToCartButton.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $ShowTogether_AddToCartButton from "./islands/ShowTogether/AddToCartButton.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
+import * as $VariantButton from "./islands/VariantButton.tsx";
 import * as $WishlistButton from "./islands/WishlistButton.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -75,6 +76,7 @@ const manifest = {
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/ShowTogether/AddToCartButton.tsx": $ShowTogether_AddToCartButton,
     "./islands/SliderJS.tsx": $SliderJS,
+    "./islands/VariantButton.tsx": $VariantButton,
     "./islands/WishlistButton.tsx": $WishlistButton,
   },
   baseUrl: import.meta.url,
