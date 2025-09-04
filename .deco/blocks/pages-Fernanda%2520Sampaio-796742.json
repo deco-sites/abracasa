@@ -33,16 +33,20 @@
         "titleMobile": "<p><span style=\"color: rgb(0, 0, 0); font-size: 12pt\">Fernanda Sampaio</span><span style=\"font-size: 12pt\"> </span><span style=\"color: rgb(62, 62, 62); font-size: 12pt\">assina duas novas linhas, com exclusividade, para a Abra Casa. A designer carioca imprime o equilíbrio entre funcionalidade e leveza estética, destacando a madeira como protagonista de seus projetos</span></p><p></p><p></p><p></p>",
         "image": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/f208e4a5-8c45-49bd-b926-ecafb3a9325b/rack-arp-fernanda-sampaio.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/f208e4a5-8c45-49bd-b926-ecafb3a9325b/rack-arp-fernanda-sampaio.jpg",
             "height": 577,
-            "heightMobile": 362
+            "heightMobile": 362,
+            "link": "https://www.abracasa.com.br/rack-arp-1-porta-e-1-gaveta-natural---1-60m/p?skuId=2011719",
+            "alt": "rack-arp-fernanda-sampaio"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/8b8c208f-92ea-47ac-aa88-cc3f18c32de4/rack-arp-fernanda-sampaio-gaveta.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/8b8c208f-92ea-47ac-aa88-cc3f18c32de4/rack-arp-fernanda-sampaio-gaveta.jpg",
             "height": 577,
-            "heightMobile": 362
+            "heightMobile": 362,
+            "link": "https://www.abracasa.com.br/rack-arp-1-porta-e-1-gaveta-natural---1-60m/p?skuId=2011719",
+            "alt": "rack-arp-fernanda-sampaio-1-gaveta"
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/98e80792-27a9-4cf7-af67-f41cd366cb40/escrivaninha-arp-fernanda-sampaio.jpg",
@@ -283,7 +287,10 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Fernanda Sampaio | Abra Casa",
+    "description": "Descubra a nova linha exclusiva da Abra Casa por Fernanda Sampaio com rack, escrivaninha e gaveteiro que unem design autoral, funcionalidade e sofisticação.",
+    "canonical": "https://www.abracasa.com.br/campanha/fernanda-sampaio"
   },
   "__resolveType": "website/pages/Page.tsx"
 }
