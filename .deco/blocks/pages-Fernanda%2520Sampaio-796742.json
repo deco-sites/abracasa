@@ -123,16 +123,18 @@
         "__resolveType": "site/sections/Images/TextWithImagesSlider.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/a13fa7d6-6b10-4ef7-acbc-c6267ab57058/escrivaninha-gaveteiro-nori.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/a13fa7d6-6b10-4ef7-acbc-c6267ab57058/escrivaninha-gaveteiro-nori.jpg",
             "height": 464,
-            "heightMobile": 290
+            "heightMobile": 290,
+            "alt": "escrivaninha-e-gaveteiro-nori-oculos-porta-lapis"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/02860fc2-59b8-4192-84d7-32164cd4b5ef/rack-nori-vasos.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/02860fc2-59b8-4192-84d7-32164cd4b5ef/rack-nori-vasos.jpg",
             "height": 464,
-            "heightMobile": 290
+            "heightMobile": 290,
+            "alt": "rack-nori-com-vasos-apoiados"
           }
         ],
         "text": "<p><span style=\"color: rgb(62, 62, 62)\">Com puxadores funcionais e discretos, os móveis </span></p><p><span style=\"color: rgb(62, 62, 62)\">carregam sofisticação sendo perfeitos para espaços </span></p><p><span style=\"color: rgb(62, 62, 62)\">urbanos que pedem leveza, organização e beleza.</span></p><p></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">A distância entre tampo e base da escrivaninha, traz </span></p><p><span style=\"color: rgb(62, 62, 62)\">a beleza da estrutura que muitas vezes é escondida. </span></p><p><span style=\"color: rgb(62, 62, 62)\">Suas bordas arredondadas são um convite a </span></p><p><span style=\"color: rgb(62, 62, 62)\">apreciação e ao conforto.</span></p>",
@@ -262,7 +264,8 @@
         "products": {
           "props": {
             "sort": "OrderByScoreDESC",
-            "count": 12
+            "count": 12,
+            "collection": "560"
           },
           "__resolveType": "vtex/loaders/legacy/productList.ts"
         },
