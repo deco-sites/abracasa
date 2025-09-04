@@ -167,7 +167,8 @@
         "products": {
           "props": {
             "sort": "OrderByScoreDESC",
-            "count": 12
+            "count": 12,
+            "collection": "560"
           },
           "__resolveType": "vtex/loaders/legacy/productList.ts"
         },
