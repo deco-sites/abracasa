@@ -1,4 +1,3 @@
-import { useState } from "preact/hooks";
 import Avatar from "$store/components/ui/Avatar.tsx";
 
 interface Props {
@@ -8,8 +7,6 @@ interface Props {
 }
 
 export default function VariantButton({ value, link, isActive }: Props) {
-  const [current, setCurrent] = useState(isActive);
-
   const handleClick = () => {
     if (!link) return;
 
@@ -18,7 +15,6 @@ export default function VariantButton({ value, link, isActive }: Props) {
         "skuId"
       );
       if (skuId) {
-        setCurrent(true);
         window.history.replaceState({}, "", `?skuId=${skuId}`);
         console.log("Selecionou SKU:", skuId);
       }
@@ -29,7 +25,7 @@ export default function VariantButton({ value, link, isActive }: Props) {
 
   return (
     <button f-partial={link} f-client-nav onClick={handleClick}>
-      <Avatar content={value} variant={current ? "active" : "default"} />
+      <Avatar content={value} variant={isActive ? "active" : "default"} />
     </button>
   );
 }
