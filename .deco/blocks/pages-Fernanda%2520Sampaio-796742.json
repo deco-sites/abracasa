@@ -166,7 +166,7 @@
         },
         "products": {
           "props": {
-            "sort": "OrderByScoreDESC",
+            "sort": "OrderByTopSaleDESC",
             "count": 12,
             "collection": "560"
           },
@@ -189,16 +189,20 @@
         "title": "<p style=\"text-align: justify\"><span style=\"font-size: 45pt\">LINHA ARP</span></p>",
         "image": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/8f70630c-7b72-48ac-8e70-c1d29dabd829/IMG_0113-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/8f70630c-7b72-48ac-8e70-c1d29dabd829/IMG_0113-1.jpg",
             "heightMobile": 362,
             "width": 648,
-            "height": 798
+            "height": 798,
+            "link": "https://www.abracasa.com.br/buffet-arp-1-porta-e-2-gavetas-natural---1-60m/p?skuId=2011706",
+            "alt": "buffet-arp-fernanda-sampaio"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "heightMobile": 362
+            "desktop": "https://assets.decocache.com/abracasa/a8be5443-01c8-4f69-bfdc-d20a8ad9bd1c/IMG_0227-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/a8be5443-01c8-4f69-bfdc-d20a8ad9bd1c/IMG_0227-1.jpg",
+            "heightMobile": 362,
+            "link": "https://www.abracasa.com.br/rack-arp-1-porta-e-1-gaveta-nozes---1-60m/p?skuId=2011720",
+            "alt": "rack-arp-fernanda-sampaio"
           }
         ],
         "limitTitleText": false,
