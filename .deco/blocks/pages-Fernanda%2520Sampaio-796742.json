@@ -78,16 +78,20 @@
         "title": "<p style=\"text-align: justify\"><span style=\"font-size: 45pt\">LINHA NORI</span></p>",
         "image": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/5dc85464-6d67-4c91-bb78-2bb592de8fe1/conjunto-office-nori.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/5dc85464-6d67-4c91-bb78-2bb592de8fe1/conjunto-office-nori.jpg",
             "heightMobile": 362,
             "height": 798,
-            "width": 648
+            "width": 648,
+            "link": "https://www.abracasa.com.br/escrivaninha-nori-1-85m-natural-com-gaveteiro-nori-45cm---natural/p?skuId=2012382",
+            "alt": "conjunto-office-com- escrivaninha-e-gaveteiro-nori"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "heightMobile": 362
+            "desktop": "https://assets.decocache.com/abracasa/42e0923e-4b8b-41d7-bdbc-49eeb23d347f/rach-nori.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/42e0923e-4b8b-41d7-bdbc-49eeb23d347f/rach-nori.jpg",
+            "heightMobile": 362,
+            "link": "https://www.abracasa.com.br/rack-nori-3-portas-e-1-gaveta-natural---1-80m/p?skuId=2012381",
+            "alt": "rack-nori-3-portas-1-gaveta"
           }
         ],
         "lineHeightTitle": 1.4,
