@@ -326,11 +326,15 @@
           },
           {
             "src": "https://assets.decocache.com/abracasa/70c484b5-6224-4581-840a-1f5534545811/Group-1872.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/70c484b5-6224-4581-840a-1f5534545811/Group-1872.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/70c484b5-6224-4581-840a-1f5534545811/Group-1872.jpg",
+            "href": "https://www.abracasa.com.br/cadeira-eiffel-com-braco-base-madeira-preta/p?skuId=2000220",
+            "alt": "cadeira-eiffel-com-braco-base-madeira-preta"
           },
           {
             "src": "https://assets.decocache.com/abracasa/24a319ad-b253-40b1-81bf-a39de1de10db/Group-1871.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/24a319ad-b253-40b1-81bf-a39de1de10db/Group-1871.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/24a319ad-b253-40b1-81bf-a39de1de10db/Group-1871.jpg",
+            "href": "https://www.abracasa.com.br/cadeira-eames-eiffel-base-madeira-branca/p?skuId=2000217",
+            "alt": "cadeira-eames-eiffel-base-madeira-branca"
           }
         ],
         "changeSpacing": true
