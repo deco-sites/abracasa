@@ -236,11 +236,12 @@
         "__resolveType": "site/sections/Images/TextWithImagesSlider.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/a10434d3-46f4-4bfa-84e8-a26c1293b17f/escrivaninha-arp-tampo-vidro.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/a10434d3-46f4-4bfa-84e8-a26c1293b17f/escrivaninha-arp-tampo-vidro.jpg",
             "height": 514,
             "heightMobile": 290,
-            "width": 440
+            "width": 440,
+            "alt": "conjunto-office-arp-cadeira-delta"
           },
           {
             "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
