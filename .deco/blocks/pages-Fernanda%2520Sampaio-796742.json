@@ -45,10 +45,12 @@
             "heightMobile": 362
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/98e80792-27a9-4cf7-af67-f41cd366cb40/escrivaninha-arp-fernanda-sampaio.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/98e80792-27a9-4cf7-af67-f41cd366cb40/escrivaninha-arp-fernanda-sampaio.jpg",
             "height": 577,
-            "heightMobile": 362
+            "heightMobile": 362,
+            "alt": "escrivaninha-arp-tampo-vidro-fernanda-sampaio",
+            "link": "https://www.abracasa.com.br/escrivaninha-arp-nozes-com-tampo-vidro---1-60m/p?skuId=2012376"
           }
         ],
         "lineHeightTitle": 1.4,
