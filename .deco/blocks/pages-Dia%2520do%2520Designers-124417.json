@@ -13,12 +13,13 @@
       "section": {
         "__resolveType": "site/sections/Images/SimpleBanner.tsx",
         "desktopImage": {
-          "src": "https://assets.decocache.com/abracasa/6a4c4d3f-6f2b-421f-9dd8-6f6f3e1a29ab/Rectangle-205-(1).jpg"
+          "src": "https://assets.decocache.com/abracasa/b4ca2ddf-8eb0-45e7-a6b9-dbd2efb89e11/abra-casa-banner-semana-design.gif",
+          "alt": "mes-do-design-abra-casa"
         },
         "mobileImage": {
-          "src": "https://assets.decocache.com/abracasa/6a4c4d3f-6f2b-421f-9dd8-6f6f3e1a29ab/Rectangle-205-(1).jpg"
-        },
-        "href": "/"
+          "src": "https://assets.decocache.com/abracasa/3447699d-9b9c-4631-9064-c3a94aa457a7/abra-casa-mobile-semana-design.gif",
+          "alt": "mes-do-design-abra-casa"
+        }
       }
     },
     {
@@ -46,33 +47,46 @@
               "target": "_blank"
             }
           },
-          "href": "/",
-          "width": 580
+          "href": "/campanha/atelie-casa",
+          "width": 580,
+          "alt": "campanha-atelie-abra-casa"
         },
         "imageItems": [
           {
             "src": "https://assets.decocache.com/abracasa/e2fa0356-8c1c-4b79-95ca-7f3e5e699716/Group-1844.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/e2fa0356-8c1c-4b79-95ca-7f3e5e699716/Group-1844.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/e2fa0356-8c1c-4b79-95ca-7f3e5e699716/Group-1844.jpg",
+            "href": "https://www.abracasa.com.br/rack-chico-2-portas-com-frisos-olmo-1-80m/p?skuId=2009749",
+            "alt": "rack-chico-2-portas-com-frisos-olmo-1-80m"
           },
           {
             "src": "https://assets.decocache.com/abracasa/de2e08d9-db5c-4c7e-8df3-23d07c4744da/Group-1845.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/de2e08d9-db5c-4c7e-8df3-23d07c4744da/Group-1845.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/de2e08d9-db5c-4c7e-8df3-23d07c4744da/Group-1845.jpg",
+            "href": "https://www.abracasa.com.br/cadeira-lala-palha-creme---cognac/p?skuId=2010959",
+            "alt": "cadeira-lala-palha-creme-cognac"
           },
           {
             "src": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg",
+            "href": "https://www.abracasa.com.br/sofa-pluma-modulado-bambino-cru---2-30m/p?skuId=2011176",
+            "alt": "sofa-pluma-modulado-bambino-cru"
           },
           {
             "src": "https://assets.decocache.com/abracasa/c2b54b6b-ef28-4aed-81af-cf41cb03afea/Group-1849.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/c2b54b6b-ef28-4aed-81af-cf41cb03afea/Group-1849.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/c2b54b6b-ef28-4aed-81af-cf41cb03afea/Group-1849.jpg",
+            "href": "https://www.abracasa.com.br/sofa-noah-trento-verde-pesto/p?skuId=2010602",
+            "alt": "sofa-noah-trento-verde-pesto"
           },
           {
             "src": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg",
+            "alt": "cristaleira-atrio-2-portas-e-2-gavetas-nature-e-incolor",
+            "href": "https://www.abracasa.com.br/cristaleira-atrio-2-portas-e-2-gavetas-nature-e-incolor---85cm/p?skuId=2011417"
           },
           {
             "src": "https://assets.decocache.com/abracasa/68778189-1233-4798-a81a-64dd8bf8c713/Group-1847.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/68778189-1233-4798-a81a-64dd8bf8c713/Group-1847.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/68778189-1233-4798-a81a-64dd8bf8c713/Group-1847.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-huma-cognac/p?skuId=2008898",
+            "alt": "poltrona-huma-cognac"
           }
         ],
         "changeSpacing": true
@@ -95,33 +109,46 @@
             },
             "subTitle": "DESIGNER CARIOCA  "
           },
-          "href": "/",
-          "width": 580
+          "href": "/campanha/fernanda-sampaio",
+          "width": 580,
+          "alt": "designer-fernanda-sampaio-abra-casa"
         },
         "imageItems": [
           {
             "src": "https://assets.decocache.com/abracasa/c7f0d94a-608a-4565-87e9-0def3c5a9cf0/Group-1850.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/c7f0d94a-608a-4565-87e9-0def3c5a9cf0/Group-1850.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/c7f0d94a-608a-4565-87e9-0def3c5a9cf0/Group-1850.jpg",
+            "href": "https://www.abracasa.com.br/buffet-nori-2-gavetas-e-2-portas-natural---1-80m/p?skuId=2012386",
+            "alt": "buffet-nori-2-gavetas-e-2-portas-natural-1-80m"
           },
           {
             "src": "https://assets.decocache.com/abracasa/9d000d92-cc96-4f9c-8ddd-5217fb95ea1b/Group-1851.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/9d000d92-cc96-4f9c-8ddd-5217fb95ea1b/Group-1851.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/9d000d92-cc96-4f9c-8ddd-5217fb95ea1b/Group-1851.jpg",
+            "href": "https://www.abracasa.com.br/rack-nori-3-portas-e-1-gaveta-natural---1-80m/p?skuId=2012381",
+            "alt": "rack-nori-3-portas-e-1-gaveta-natural-1-80m"
           },
           {
             "src": "https://assets.decocache.com/abracasa/d58d3499-d1ad-4e4a-9fda-b0c6d0b3baea/Group-1852.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/d58d3499-d1ad-4e4a-9fda-b0c6d0b3baea/Group-1852.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/d58d3499-d1ad-4e4a-9fda-b0c6d0b3baea/Group-1852.jpg",
+            "alt": "escrivaninha-nori-1-85m-natural-com-gaveteiro-nori-45cm-natural",
+            "href": "https://www.abracasa.com.br/escrivaninha-nori-1-85m-natural-com-gaveteiro-nori-45cm---natural/p?skuId=2012382"
           },
           {
             "src": "https://assets.decocache.com/abracasa/331a66e0-eb56-462c-9f91-636b97ceb25a/Group-1855.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/331a66e0-eb56-462c-9f91-636b97ceb25a/Group-1855.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/331a66e0-eb56-462c-9f91-636b97ceb25a/Group-1855.jpg",
+            "href": "https://www.abracasa.com.br/buffet-arp-1-porta-e-2-gavetas-natural---1-60m/p?skuId=2011706",
+            "alt": "buffet-arp-1-porta-e-2-gavetas-natural-1-60m"
           },
           {
             "src": "https://assets.decocache.com/abracasa/a4375d44-3e81-484e-9e23-6da7c82bc0c1/Group-1854.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/a4375d44-3e81-484e-9e23-6da7c82bc0c1/Group-1854.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/a4375d44-3e81-484e-9e23-6da7c82bc0c1/Group-1854.jpg",
+            "href": "https://www.abracasa.com.br/rack-arp-1-porta-e-1-gaveta-nozes---1-60m/p?skuId=2011720",
+            "alt": "rack-arp-1-porta-e-1-gaveta-nozes-1-60m"
           },
           {
             "src": "https://assets.decocache.com/abracasa/254ca864-c2be-4c08-bf77-c5cd47781140/Group-1853.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/254ca864-c2be-4c08-bf77-c5cd47781140/Group-1853.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/254ca864-c2be-4c08-bf77-c5cd47781140/Group-1853.jpg",
+            "href": "https://www.abracasa.com.br/conjunto-office---escrivaninha-arp-nozes-com-tampo-em-vidro-1-60m---cadeira-de-escritorio-delta-pret/p?skuId=2012414",
+            "alt": "conjunto-office-escrivaninha-arp-nozes-com-tampo-em-vidro-1-60m-cadeira-de-escritorio-delta-preta"
           }
         ],
         "changeSpacing": true
@@ -144,33 +171,46 @@
               "target": "_blank"
             }
           },
-          "href": "/",
-          "width": 580
+          "href": "/designers/martin-eisler",
+          "width": 580,
+          "alt": "designer-martin-eisler"
         },
         "imageItems": [
           {
             "src": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-costela-com-braco-puff-caramelo/p?skuId=2009722",
+            "alt": "poltrona-costela-com-braco-puff-caramelo"
           },
           {
             "src": "https://assets.decocache.com/abracasa/65a730e1-01f2-48b2-99be-975a3cf3ad53/Group-1857.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/65a730e1-01f2-48b2-99be-975a3cf3ad53/Group-1857.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/65a730e1-01f2-48b2-99be-975a3cf3ad53/Group-1857.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-e-puff-costela-trend-bege/p?skuId=2009010",
+            "alt": "poltrona-e-puff-costela-trend-bege"
           },
           {
             "src": "https://assets.decocache.com/abracasa/d6f1f68e-622d-406e-885d-6f6c99d69a6a/Group-1858.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/d6f1f68e-622d-406e-885d-6f6c99d69a6a/Group-1858.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/d6f1f68e-622d-406e-885d-6f6c99d69a6a/Group-1858.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-puff-costela-slim-sarja-verde-oliva/p?skuId=2009724",
+            "alt": "poltrona-puff-costela-slim-sarja-verde-oliva"
           },
           {
             "src": "https://assets.decocache.com/abracasa/a22fae9f-fb00-4b4e-9b28-c9fa00822b84/Group-1861.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/a22fae9f-fb00-4b4e-9b28-c9fa00822b84/Group-1861.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/a22fae9f-fb00-4b4e-9b28-c9fa00822b84/Group-1861.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-puff-costela-slim-sarja-verde-oliva/p?skuId=2009724",
+            "alt": "poltrona-puff-costela-slim-sarja-verde-oliva"
           },
           {
             "src": "https://assets.decocache.com/abracasa/b541b2be-d97d-41e6-a426-5348841d8adf/Group-1860.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/b541b2be-d97d-41e6-a426-5348841d8adf/Group-1860.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/b541b2be-d97d-41e6-a426-5348841d8adf/Group-1860.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-costela-com-puff-botone---terracota/p?skuId=2010514",
+            "alt": "poltrona-costela-com-puff-botone-terracota"
           },
           {
             "src": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
-            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg"
+            "srcMobile": "https://assets.decocache.com/abracasa/3745404c-aa5d-4ea0-b8df-07d4d0d1f82c/Group-1859.jpg",
+            "href": "https://www.abracasa.com.br/poltrona-e-puff-costela-dark-argila/p?skuId=2011462",
+            "alt": "poltrona-e-puff-costela-dark-argila"
           }
         ],
         "changeSpacing": true
@@ -193,8 +233,9 @@
             },
             "subTitle": "ARQUITETO E DESIGNER MODERNISTA  "
           },
-          "href": "/",
-          "width": 580
+          "href": "/designers/marco-zanuso",
+          "width": 580,
+          "alt": "design-marco-zanuso"
         },
         "imageItems": [
           {
@@ -242,8 +283,9 @@
             },
             "subTitle": "CASAL DE DESIGNERS NORTE-AMERICANOS"
           },
-          "href": "/",
-          "width": 580
+          "href": "/designers/charles---ray-eames",
+          "width": 580,
+          "alt": "designers-charles-ray-eames"
         },
         "imageItems": [
           {
@@ -275,18 +317,28 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Content/SectionLaunch.tsx",
-        "title": "LANÇAMENTO",
-        "subTitle": "Rapha Preto",
-        "description": "ARTISTA E DESIGNER",
-        "backgroundColor": "#8c8c8c",
-        "button": {
-          "link": "/",
-          "title": "VER MAIS"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Content/SectionLaunch.tsx",
+              "title": "LANÇAMENTO",
+              "subTitle": "Rapha Preto",
+              "description": "ARTISTA E DESIGNER",
+              "backgroundColor": "#8c8c8c",
+              "button": {
+                "link": "/",
+                "title": "VER MAIS"
+              }
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
         }
-      }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -296,9 +348,10 @@
         "cards": [
           {
             "image": {
-              "icon": "https://assets.decocache.com/abracasa/89b1faaf-f276-49ae-865d-bd0e2bcb8712/Rectangle-242.jpg"
+              "icon": "https://assets.decocache.com/abracasa/89b1faaf-f276-49ae-865d-bd0e2bcb8712/Rectangle-242.jpg",
+              "alt": "colecao-designer-industrial-george-nelson"
             },
-            "link": "/",
+            "link": "/designers/george-nelson",
             "showNewTitle": true,
             "titleAndSubtitle": {
               "newTitle": "George Nelson",
@@ -310,7 +363,9 @@
           },
           {
             "image": {
-              "icon": "https://assets.decocache.com/abracasa/58fbaa64-f56d-436d-ad92-d7940971d2f7/1381140an-1.jpg"
+              "icon": "https://assets.decocache.com/abracasa/58fbaa64-f56d-436d-ad92-d7940971d2f7/1381140an-1.jpg",
+              "alt": "designer-brasileira-LIGIA-KOEHLER",
+              "isBorder": false
             },
             "showNewTitle": true,
             "titleAndSubtitle": {
@@ -320,11 +375,13 @@
                 "title": "VER MAIS"
               }
             },
-            "link": "/"
+            "link": "/designers/ligia-koehler"
           },
           {
             "image": {
-              "icon": "https://assets.decocache.com/abracasa/82942c12-2b70-43f7-acf9-a2f52fd38511/03-5.jpg"
+              "icon": "https://assets.decocache.com/abracasa/82942c12-2b70-43f7-acf9-a2f52fd38511/03-5.jpg",
+              "alt": "designer-comtemporaneo-HAKIM HAZIM",
+              "isBorder": false
             },
             "showNewTitle": true,
             "titleAndSubtitle": {
@@ -334,7 +391,7 @@
                 "title": "VER MAIS"
               }
             },
-            "link": "/"
+            "link": "/designers/hakim-hazim"
           }
         ],
         "textCenter": true,
