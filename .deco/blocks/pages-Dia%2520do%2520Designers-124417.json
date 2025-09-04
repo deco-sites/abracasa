@@ -1,6 +1,6 @@
 {
-  "name": "Mês do Designer",
-  "path": "/mes-do-designers",
+  "name": "Mês do Design",
+  "path": "/mes-do-design",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
