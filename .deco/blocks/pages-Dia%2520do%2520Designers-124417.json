@@ -13,7 +13,7 @@
       "section": {
         "__resolveType": "site/sections/Images/SimpleBanner.tsx",
         "desktopImage": {
-          "src": "https://assets.decocache.com/abracasa/d6cf2b69-7a34-4a14-a550-552ea3ccc95d/casa_banner_desktop_semana_design_1920x713.jpg",
+          "src": "https://assets.decocache.com/abracasa/4d3ef86a-3d46-4bed-802d-5479b0cbe4c6/casa_banner_desktop_semana_design_1920x713.gif",
           "alt": "mes-do-design-abra-casa"
         },
         "mobileImage": {
