@@ -13,6 +13,20 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
+          "href": "https://www.abracasa.com.br/mes-do-design",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/c6b45295-5e11-4c95-a007-e9cc67bb8e59/casa_banner_mobile_semana_design_767x942-(1).gif",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/64a0eac4-8c87-41fe-bb2d-e36183dab3e5/casa_banner_desktop_semana_design_1920x713.gif",
+            "width": 1920,
+            "height": 713
+          },
+          "alt": "Mês do Design"
+        },
+        {
           "alt": "Ateliê",
           "href": "https://www.abracasa.com.br/colecao-atelie",
           "mobile": {
@@ -92,20 +106,6 @@
           },
           "desktop": {
             "image": "https://assets.decocache.com/abracasa/07c33d25-d65c-4981-8ffe-086f30655aba/casa_novapoltronacostela_banner_desktop_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Off",
-          "href": "https://www.abracasa.com.br/off",
-          "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/f6557b54-82fc-4281-89ca-4954835db1c4/casa_banner_mobile_off_2024.gif",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/534ce57c-cbcb-402d-b46c-8150d59e6175/casa_banner_desktop_off_2024.gif",
             "width": 1920,
             "height": 713
           }
@@ -367,5 +367,11 @@
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
-  "unindexedDomain": false
+  "unindexedDomain": false,
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Mês do Design | Abra Casa",
+    "description": "Mês do Design Abra Casa: móveis assinados como sofás, poltrona e rack que destacam elegância, funcionalidade e design único em cada ambiente.",
+    "canonical": "https://www.abracasa.com.br/mes-do-design"
+  }
 }
