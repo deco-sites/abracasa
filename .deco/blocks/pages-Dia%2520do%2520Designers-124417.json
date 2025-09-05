@@ -26,11 +26,11 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Content/SectionTitle.tsx",
-        "title": "<p style=\"text-align: justify\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Para os apaixonados pelos traços</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">únicos e formas atemporais</span>&nbsp;</p>",
-        "titleMob": "<p style=\"text-align: justify\"><span style=\"color: rgb(33, 33, 33)\">Para os apaixonados pelos traços</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(33, 33, 33)\">únicos e formas atemporais</span>&nbsp;</p>",
+        "title": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Para os apaixonados pelos traços únicos e formas atemporais</span>&nbsp;</p>",
+        "titleMob": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33)\">Para os apaixonados pelos traços únicos e formas atemporais</span>&nbsp;</p>",
         "button": {
           "buttonLink": "#mes-do-design",
-          "buttonText": "VER TODA COLEÇÃO"
+          "buttonText": "VER COLEÇÃO DO MÊS DO DESIGN"
         }
       }
     },
