@@ -182,7 +182,8 @@
             "mainImage": {
               "src": "https://assets.decocache.com/abracasa/bf3bedb4-1ae1-4e4f-9609-d45a609ac7e3/banner_designerexclusivo_800x924.jpg",
               "srcMobile": "https://assets.decocache.com/abracasa/bf3bedb4-1ae1-4e4f-9609-d45a609ac7e3/banner_designerexclusivo_800x924.jpg",
-              "href": "/campanha/atelie-casa"
+              "href": "/colecao-atelie",
+              "alt": "atelie-abra-casa"
             },
             "imageItems": [
               {
