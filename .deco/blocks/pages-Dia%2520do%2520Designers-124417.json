@@ -13,7 +13,7 @@
       "section": {
         "__resolveType": "site/sections/Images/SimpleBanner.tsx",
         "desktopImage": {
-          "src": "https://assets.decocache.com/abracasa/d6cf2b69-7a34-4a14-a550-552ea3ccc95d/casa_banner_desktop_semana_design_1920x713.jpg",
+          "src": "https://assets.decocache.com/abracasa/194318e1-ed92-48b7-9196-40e00e83830c/casa_banner_desktop_semana_design_1920x713.jpg",
           "alt": "mes-do-design-abra-casa"
         },
         "mobileImage": {
@@ -26,8 +26,12 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Content/SectionTitle.tsx",
-        "title": "<p style=\"text-align: right\"><span style=\"color: #212121; font-size: 18pt\">Para os apaixonados pelos traços</span></p><p style=\"text-align: right\"><span style=\"color: #212121; font-size: 18pt\">únicos e formas atemporais</span>&nbsp;</p>",
-        "titleMob": "<p style=\"text-align: right\"><span style=\"color: #212121\">Para os apaixonados pelos traços</span></p><p style=\"text-align: right\"><span style=\"color: #212121\">únicos e formas atemporais</span>&nbsp;</p>"
+        "title": "<p style=\"text-align: justify\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Para os apaixonados pelos traços</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">únicos e formas atemporais</span>&nbsp;</p>",
+        "titleMob": "<p style=\"text-align: justify\"><span style=\"color: rgb(33, 33, 33)\">Para os apaixonados pelos traços</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(33, 33, 33)\">únicos e formas atemporais</span>&nbsp;</p>",
+        "button": {
+          "buttonLink": "#mes-do-design",
+          "buttonText": "VER TODA COLEÇÃO"
+        }
       }
     },
     {
@@ -40,12 +44,12 @@
           "showNewTitle": true,
           "titleAndSubtitle": {
             "newTitle": "Ateliê Casa  ",
-            "subTitle": "NOSSO DESIGN PARA VOCÊ  ",
             "button": {
               "title": "VER TUDO",
               "href": "/",
               "target": "_blank"
-            }
+            },
+            "subTitle": "NOSSO DESIGN PARA VOCÊ  "
           },
           "href": "/campanha/atelie-casa",
           "width": 580,
@@ -67,8 +71,8 @@
           {
             "src": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg",
             "srcMobile": "https://assets.decocache.com/abracasa/15f46bda-08b0-4c74-9f32-352ebeafe9d7/Group-1846.jpg",
-            "href": "https://www.abracasa.com.br/sofa-pluma-modulado-bambino-cru---2-30m/p?skuId=2011176",
-            "alt": "sofa-pluma-modulado-bambino-cru"
+            "alt": "sofa-pluma-modulado-bambino-cru",
+            "href": "https://www.abracasa.com.br/sofa-pluma-modulado-bambino-cru---2-30m/p?skuId=2011176"
           },
           {
             "src": "https://assets.decocache.com/abracasa/c2b54b6b-ef28-4aed-81af-cf41cb03afea/Group-1849.jpg",
@@ -79,8 +83,8 @@
           {
             "src": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg",
             "srcMobile": "https://assets.decocache.com/abracasa/c51324fc-dbd2-4171-85c1-cfe2cc70d368/Group-1848.jpg",
-            "alt": "cristaleira-atrio-2-portas-e-2-gavetas-nature-e-incolor",
-            "href": "https://www.abracasa.com.br/cristaleira-atrio-2-portas-e-2-gavetas-nature-e-incolor---85cm/p?skuId=2011417"
+            "href": "https://www.abracasa.com.br/cristaleira-atrio-2-portas-e-2-gavetas-nature-e-incolor---85cm/p?skuId=2011417",
+            "alt": "cristaleira-atrio-2-portas-e-2-gavetas-nature-e-incolor"
           },
           {
             "src": "https://assets.decocache.com/abracasa/68778189-1233-4798-a81a-64dd8bf8c713/Group-1847.jpg",
@@ -424,6 +428,14 @@
           "backgroundColor": "#f5f5f5"
         },
         "showBarSlider": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": null,
+        "sliderId": "mes-do-design"
       }
     },
     {
