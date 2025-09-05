@@ -26,10 +26,10 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Content/SectionTitle.tsx",
-        "title": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33); font-size: 18pt\">Para os apaixonados pelos traços únicos e formas atemporais</span>&nbsp;</p>",
-        "titleMob": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33)\">Para os apaixonados pelos traços únicos e formas atemporais</span>&nbsp;</p>",
+        "title": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33); font-size: 22pt\">Para os apaixonados pelos traços únicos e formas atemporais</span><span style=\"font-size: 22pt\">&nbsp;</span></p>",
+        "titleMob": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33); font-size: 15pt\">Para os apaixonados pelos traços únicos e formas atemporais</span><span style=\"font-size: 15pt\">&nbsp;</span></p>",
         "button": {
-          "buttonLink": "#mes-do-design",
+          "buttonLink": "#PLP",
           "buttonText": "VER COLEÇÃO DO MÊS DO DESIGN"
         }
       }
@@ -433,26 +433,67 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "props": {
-            "sort": "",
-            "count": 20,
-            "collection": "430"
-          },
-          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "fq": "H:539",
+          "sort": "OrderByTopSaleDESC",
+          "count": 48,
+          "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
         },
         "layout": {
-          "headerfontSize": "Small",
-          "headerAlignment": "left"
+          "columns": {
+            "mobile": 2,
+            "desktop": 4
+          },
+          "variant": "drawer",
+          "pagination": "show-more"
         },
         "cardLayout": {
-          "__resolveType": "Product Card Layout - 01"
+          "layout": {
+            "hide": {
+              "skuSelector": true,
+              "productDescription": true
+            },
+            "show": {
+              "cta": true,
+              "allPrices": true,
+              "productName": true,
+              "skuSelector": true,
+              "installments": true,
+              "productDescription": true
+            },
+            "basics": {
+              "oldPriceSize": "Small",
+              "contentAlignment": "Left"
+            },
+            "onMouseOver": {
+              "card": "None",
+              "image": "Change image",
+              "showCta": false,
+              "showCardShadow": false,
+              "showSkuSelector": false,
+              "showFavoriteIcon": true
+            },
+            "elementsPositions": {
+              "skuSelector": "Top",
+              "favoriteIcon": "Top right"
+            },
+            "backgroundAndBorder": {
+              "shadow": "None",
+              "bgColor": "Transparent",
+              "borderColor": "Transparent",
+              "borderRadius": "None"
+            }
+          },
+          "products": {
+            "term": "a",
+            "count": 2,
+            "__resolveType": "vtex/loaders/legacy/productList.ts"
+          },
+          "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
         },
-        "bannerImage": {
-          "image": {}
-        },
-        "sliderId": "mes-do-design"
+        "startingPage": 1,
+        "isCategoriesFilterActive": true
       }
     },
     {
