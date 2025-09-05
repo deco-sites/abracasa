@@ -19,7 +19,7 @@ export default function SectionTitle({ title, titleMob, button }: Props) {
         />
         <div class="lg:hidden" dangerouslySetInnerHTML={{ __html: titleMob }} />
       </div>
-      <div class="flex lg:hidden justify-start px-6 lg:px-0 mt-[77px]">
+      <div class="flex lg:hidden justify-start lg:px-0 mt-[77px]">
         <a
           target="_self"
           rel="noopener noreferrer"
@@ -31,7 +31,7 @@ export default function SectionTitle({ title, titleMob, button }: Props) {
           <span>{button?.buttonText}</span>
         </a>
       </div>
-      <div class="hidden lg:flex justify-start px-6 lg:px-0 mt-[51px]">
+      <div class="hidden lg:flex justify-start lg:px-0">
         <a
           target="_self"
           rel="noopener noreferrer"
