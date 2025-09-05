@@ -434,7 +434,24 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": null,
+        "products": {
+          "props": {
+            "sort": "",
+            "count": 20,
+            "collection": "430"
+          },
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "layout": {
+          "headerfontSize": "Small",
+          "headerAlignment": "left"
+        },
+        "cardLayout": {
+          "__resolveType": "Product Card Layout - 01"
+        },
+        "bannerImage": {
+          "image": {}
+        },
         "sliderId": "mes-do-design"
       }
     },
