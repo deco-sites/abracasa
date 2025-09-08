@@ -108,9 +108,12 @@
         "video": {
           "content": {
             "type": "Video",
-            "video": "https://assets.decocache.com/abracasa/44798c7b-3b36-42f8-8aa4-40e38ea2d1f1/casa_atelie_conceitual_1920x1080.mp4",
+            "video": "https://assets.decocache.com/abracasa/a2154aeb-bd32-4d78-b0c3-da59c1841265/1920x1080_1-(1).mp4",
             "notFullWidth": true,
-            "controls": true
+            "controls": true,
+            "loop": true,
+            "autoplay": false,
+            "preload": false
           }
         }
       }

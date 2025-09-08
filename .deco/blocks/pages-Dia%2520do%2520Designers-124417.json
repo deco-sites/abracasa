@@ -13,12 +13,15 @@
       "section": {
         "__resolveType": "site/sections/Images/SimpleBanner.tsx",
         "desktopImage": {
-          "src": "https://assets.decocache.com/abracasa/a1eb6d99-0f9e-4a7a-87b4-b14522a4ca5e/casa_banner_desktop_semana_design_1920x713.jpg",
-          "alt": "mes-do-design-abra-casa"
+          "src": "https://assets.decocache.com/abracasa/fece824d-6bbc-4f54-b361-8db461b04b80/casa_banner_desktop_semana_design_1920x713.jpg",
+          "alt": "mes-do-design-abra-casa",
+          "height": 713,
+          "width": 1920
         },
         "mobileImage": {
           "src": "https://assets.decocache.com/abracasa/e541b94c-637e-4f23-a35c-4d1047133ff2/casa_banner_mobile_semana_design_767x942.jpg",
-          "alt": "mes-do-design-abra-casa"
+          "alt": "mes-do-design-abra-casa",
+          "height": 1200
         }
       }
     },
