@@ -382,7 +382,7 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
     "title": "Home | Abra Casa",
-    "description": "",
-    "canonical": ""
+    "description": "Na Abra Casa você encontra cadeira de escritório, mesas, sofá cama e poltrona com design exclusivo, conforto e funcionalidade para todos os ambientes.",
+    "canonical": "https://www.abracasa.com.br/"
   }
 }
