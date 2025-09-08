@@ -20,7 +20,21 @@
             "width": 1920,
             "height": 713
           },
-          "alt": "Mês do Design"
+          "alt": "Fernanda Sampaio"
+        },
+        {
+          "alt": "Mês do Design",
+          "href": "https://www.abracasa.com.br/mes-do-design",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/dc8c7c4b-5d19-4e6e-ae41-5d82b2bba802/casa_banner_mobile_semana_design_767x942.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/f2a49f34-a803-4d25-9dc4-cd632e988a7f/casa_banner_desktop_semana_design_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
         },
         {
           "alt": "Ateliê",

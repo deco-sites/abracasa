@@ -438,7 +438,7 @@
       "section": {
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
-          "fq": "H:539",
+          "fq": "H:562",
           "sort": "OrderByTopSaleDESC",
           "count": 48,
           "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
