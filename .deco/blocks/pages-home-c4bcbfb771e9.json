@@ -367,8 +367,8 @@
   "unindexedDomain": false,
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "title": "Mês do Design | Abra Casa",
-    "description": "Mês do Design Abra Casa: móveis assinados como sofás, poltrona e rack que destacam elegância, funcionalidade e design único em cada ambiente.",
-    "canonical": "https://www.abracasa.com.br/mes-do-design"
+    "title": "Home | Abra Casa",
+    "description": "",
+    "canonical": ""
   }
 }
