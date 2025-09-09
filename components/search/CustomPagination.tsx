@@ -21,17 +21,18 @@ function generatePageLinks(pageInfo: Props["pageInfo"]) {
 
   const totalPages = Math.ceil(pageInfo.records / pageInfo.recordPerPage);
 
-  const links = Array.from({ length: totalPages }, (_, i) => i + 1).map((
-    i,
-  ) => ({
-    label: i,
-    href: `${pageFormated}page=${i}`,
-    show: i < 5 && pageInfo.currentPage < 4
-      ? true
-      : i > pageInfo.currentPage - 3 && i < pageInfo.currentPage + 2
-      ? true
-      : false,
-  }));
+  const links = Array.from({ length: totalPages }, (_, i) => i + 1).map(
+    (i) => ({
+      label: i,
+      href: `${pageFormated}page=${i}`,
+      show:
+        i < 5 && pageInfo.currentPage < 4
+          ? true
+          : i > pageInfo.currentPage - 3 && i < pageInfo.currentPage + 2
+          ? true
+          : false,
+    })
+  );
 
   return links;
 }
@@ -47,7 +48,7 @@ export default function PaginationCustom({ pageInfo }: Props) {
         <a
           aria-label="previous page link"
           rel="prev"
-          href={pageInfo.previousPage ?? "#"}
+          href={pageInfo.previousPage ? `${pageInfo.previousPage}#PLP` : "#"}
           disabled={!pageInfo.previousPage}
           class={`${
             pageInfo.currentPage === 1 ? "hidden" : "flex"
@@ -65,7 +66,7 @@ export default function PaginationCustom({ pageInfo }: Props) {
               } ${
                 item.show ? "flex" : "hidden"
               } w-8 h-8 border justify-center items-center mx-[5px] my-0 rounded-[5px] border-solid text-sm font-normal leading-6`}
-              href={item.href}
+              href={`${item.href}#PLP`}
             >
               {item.label}
             </a>
@@ -74,7 +75,7 @@ export default function PaginationCustom({ pageInfo }: Props) {
         <a
           aria-label="next page link"
           rel="next"
-          href={pageInfo.nextPage ?? "#"}
+          href={pageInfo.nextPage ? `${pageInfo.nextPage}#PLP` : "#"}
           disabled={!pageInfo.nextPage}
           class="flex items-center justify-center text-neutral-800 w-8 h-8 disabled:cursor-not-allowed disabled:opacity-70"
         >
