@@ -272,7 +272,7 @@
           "props": {
             "sort": "OrderByScoreDESC",
             "count": 12,
-            "collection": "560"
+            "collection": "563"
           },
           "__resolveType": "vtex/loaders/legacy/productList.ts"
         },
