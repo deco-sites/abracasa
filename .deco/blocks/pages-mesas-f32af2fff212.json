@@ -3,15 +3,6 @@
   "path": "/moveis/mesas",
   "sections": [
     {
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
@@ -162,5 +153,16 @@
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
+    "jsonLD": {
+      "sort": "OrderByPriceDESC",
+      "count": 12,
+      "filters": "dynamic",
+      "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+    },
+    "title": "Mesas | Abra Casa",
+    "description": "Mesas de jantar, escrivaninhas e mesas de centro com estilo, praticidade e sofisticação. Acesse Abra Casa e descubra peças que valorizam seu espaço."
+  }
 }
