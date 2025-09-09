@@ -3,21 +3,13 @@
   "path": "/moveis",
   "sections": [
     {
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
-    },
-    {
       "__resolveType": "Topbar1"
     },
     {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
@@ -27,10 +19,10 @@
           },
           "matcher": "/*"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx",
       "categories": [
         {
           "href": "/moveis/poltronas",
@@ -112,10 +104,10 @@
           },
           "label": "Colchões"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "OrderByTopSaleDESC",
         "count": 48,
@@ -174,7 +166,6 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": [
         "marcas",
         "departamentos",
@@ -185,5 +176,15 @@
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
+    "jsonLD": {
+      "sort": "OrderByPriceDESC",
+      "count": 12,
+      "filters": "dynamic",
+      "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+    },
+    "title": "Móveis | Abra Casa"
+  }
 }
