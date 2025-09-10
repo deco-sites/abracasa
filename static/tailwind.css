@@ -1539,6 +1539,10 @@ html {
     border-radius: inherit;
   }
 }
+.\!link {
+  cursor: pointer !important;
+  text-decoration-line: underline !important;
+}
 .link {
   cursor: pointer;
   text-decoration-line: underline;
@@ -2609,9 +2613,17 @@ details.collapse summary::-webkit-details-marker {
 .join-item:focus {
   isolation: isolate;
 }
+.\!link:focus {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+}
 .link:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+.\!link:focus-visible {
+  outline: 2px solid currentColor !important;
+  outline-offset: 2px !important;
 }
 .link:focus-visible {
   outline: 2px solid currentColor;
