@@ -30,7 +30,7 @@
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
-        "fq": "H:560",
+        "fq": "H:564",
         "sort": "OrderByTopSaleDESC",
         "count": 48,
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"

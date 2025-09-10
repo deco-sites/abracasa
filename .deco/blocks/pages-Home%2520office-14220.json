@@ -96,14 +96,15 @@
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "title": "Home Office",
+    "title": "Home Office | Abra Casa",
     "description": "Seu home office merece o melhor! Na Abra Casa, descubra cadeira de escritório, escrivaninha e conjuntos office que unem conforto e estilo.",
     "jsonLD": {
       "sort": "OrderByPriceDESC",
       "count": 12,
       "filters": "dynamic",
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-    }
+    },
+    "canonical": "https://www.abracasa.com.br/campanha/home-office"
   },
   "__resolveType": "website/pages/Page.tsx"
 }
