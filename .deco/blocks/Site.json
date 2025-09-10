@@ -5,8 +5,6 @@
     "title": "Abra Casa",
     "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/dd611c73-e08c-4c75-8a4f-872551785125/favicon-32x32.png",
     "jsonLDs": [],
-    "canonical": "https://www.abracasa.com.br/",
-    "noIndexing": false,
     "description": "Com 25 anos de experiência no mercado a Abra Casa oferece móveis, cadeiras, luminárias, sofás e artigos de decoração em geral exclusivos com entrega em todo Brasil. Deixe seu ambiente com o seu jeito.",
     "titleTemplate": "%s",
     "descriptionTemplate": "%s"

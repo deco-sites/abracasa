@@ -390,13 +390,6 @@
           "children": []
         },
         {
-          "url": "/decoracao/tapetes",
-          "name": "Tapetes",
-          "@type": "SiteNavigationElement",
-          "image": [],
-          "children": []
-        },
-        {
           "url": "/decoracao/vasos-e-cachepots",
           "name": "Vasos e Cachepots",
           "@type": "SiteNavigationElement",
@@ -577,7 +570,7 @@
           "itemMenuImage": "https://assets.decocache.com/abracasa/950f1bbe-4148-4867-b863-0a310a3504ca/Layer_1-(2).svg",
           "description": "<p style=\"text-align: center\">Produtos autorais criados por </p><p style=\"text-align: center\">nossos designers da Abra Casa.</p>",
           "activeStyle": true,
-          "url": "https://www.abracasa.com.br/campanha/atelie-casa"
+          "url": "https://www.abracasa.com.br/colecao-atelie"
         },
         {
           "children": [],

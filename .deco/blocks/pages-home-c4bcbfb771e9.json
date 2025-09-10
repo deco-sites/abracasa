@@ -3,15 +3,39 @@
   "path": "/",
   "sections": [
     {
-      "noIndexing": false,
-      "__resolveType": "website/sections/Seo/Seo.tsx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
+        {
+          "href": "https://www.abracasa.com.br/fernanda-sampaio",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/9cfb2cf1-2bd7-40ec-9447-4075fdbc42df/banner-mobile-fernanda-sampaio.gif",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/5bf7e8cb-770f-43de-8ac1-91cc4e0c6e19/banner-desk-fernanda-sampaio.gif.gif",
+            "width": 1920,
+            "height": 713
+          },
+          "alt": "Fernanda Sampaio"
+        },
+        {
+          "alt": "Mês do Design",
+          "href": "https://www.abracasa.com.br/mes-do-design",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/e541b94c-637e-4f23-a35c-4d1047133ff2/casa_banner_mobile_semana_design_767x942.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/6b036b30-70da-41c6-9f97-e81298b25953/casa_banner_desktop_semana_design_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
         {
           "alt": "Ateliê",
           "href": "https://www.abracasa.com.br/colecao-atelie",
@@ -95,20 +119,6 @@
             "width": 1920,
             "height": 713
           }
-        },
-        {
-          "alt": "Off",
-          "href": "https://www.abracasa.com.br/off",
-          "mobile": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/f6557b54-82fc-4281-89ca-4954835db1c4/casa_banner_mobile_off_2024.gif",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/534ce57c-cbcb-402d-b46c-8150d59e6175/casa_banner_desktop_off_2024.gif",
-            "width": 1920,
-            "height": 713
-          }
         }
       ],
       "preload": true,
@@ -156,7 +166,8 @@
               "link": "https://www.abracasa.com.br/ambientes/sala-de-jantar",
               "image": {
                 "alt": "Madeira",
-                "icon": "https://assets.decocache.com/abracasa/207885bc-ba4a-4acc-86fa-64c3337d2da7/casa_banner_secundario_colecao_2025_jantar.jpg"
+                "icon": "https://assets.decocache.com/abracasa/207885bc-ba4a-4acc-86fa-64c3337d2da7/casa_banner_secundario_colecao_2025_jantar.jpg",
+                "isBorder": false
               }
             },
             {
@@ -185,7 +196,8 @@
             "mainImage": {
               "src": "https://assets.decocache.com/abracasa/bf3bedb4-1ae1-4e4f-9609-d45a609ac7e3/banner_designerexclusivo_800x924.jpg",
               "srcMobile": "https://assets.decocache.com/abracasa/bf3bedb4-1ae1-4e4f-9609-d45a609ac7e3/banner_designerexclusivo_800x924.jpg",
-              "href": "/campanha/atelie-casa"
+              "href": "/colecao-atelie",
+              "alt": "atelie-abra-casa"
             },
             "imageItems": [
               {
@@ -359,6 +371,22 @@
       "__resolveType": "Footer - 01"
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    },
+    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Social/InstagramWidget.tsx"
@@ -366,5 +394,11 @@
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
-  "unindexedDomain": false
+  "unindexedDomain": false,
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Home | Abra Casa",
+    "description": "Na Abra Casa você encontra cadeira de escritório, mesas, sofá cama e poltrona com design exclusivo, conforto e funcionalidade para todos os ambientes.",
+    "canonical": "https://www.abracasa.com.br/"
+  }
 }

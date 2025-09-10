@@ -3,17 +3,13 @@
   "path": "/ambientes",
   "sections": [
     {
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      "__resolveType": "Topbar1"
     },
-    { "__resolveType": "Topbar1" },
-    { "__resolveType": "Header - 01" },
     {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
@@ -23,10 +19,10 @@
           },
           "matcher": "/*"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Category/CategoryShelf.tsx",
       "categories": [
         {
           "href": "/ambientes/sala-de-jantar",
@@ -68,23 +64,29 @@
           },
           "label": "Varanda e Área Externa"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryShelf.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "OrderByTopSaleDESC",
         "count": 48,
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer",
         "pagination": "show-more"
       },
       "cardLayout": {
         "layout": {
-          "hide": { "skuSelector": true, "productDescription": true },
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
           "show": {
             "cta": true,
             "allPrices": true,
@@ -93,7 +95,10 @@
             "installments": true,
             "productDescription": true
           },
-          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
           "onMouseOver": {
             "card": "None",
             "image": "Change image",
@@ -120,10 +125,22 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "startingPage": 1
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
+    "jsonLD": {
+      "sort": "OrderByPriceDESC",
+      "count": 12,
+      "filters": "dynamic",
+      "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+    },
+    "description": "Na Abra Casa você encontra tudo para sala de jantar, escritório e quarto. Móveis com estilo contemporâneo e decoração para ambientes únicos.",
+    "title": "Ambientes | Abra Casa"
+  }
 }

@@ -16,7 +16,7 @@
           "content": {
             "hasContainer": false,
             "type": "Video",
-            "video": "https://assets.decocache.com/abracasa/837391de-8c94-4497-a6fb-6ddb86fb61bf/1742561538659-0ec3bc06-9539-4ac4-a468-3d39908566a5",
+            "video": "https://assets.decocache.com/abracasa/4f0fc08e-ad7a-45f8-bd3a-fc703e2eca0d/youtuber_fernandasampaio_1920x1080_comusica.mp4",
             "autoplay": false,
             "controls": true,
             "height": 531,
@@ -33,22 +33,28 @@
         "titleMobile": "<p><span style=\"color: rgb(0, 0, 0); font-size: 12pt\">Fernanda Sampaio</span><span style=\"font-size: 12pt\"> </span><span style=\"color: rgb(62, 62, 62); font-size: 12pt\">assina duas novas linhas, com exclusividade, para a Abra Casa. A designer carioca imprime o equilíbrio entre funcionalidade e leveza estética, destacando a madeira como protagonista de seus projetos</span></p><p></p><p></p><p></p>",
         "image": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/f208e4a5-8c45-49bd-b926-ecafb3a9325b/rack-arp-fernanda-sampaio.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/f208e4a5-8c45-49bd-b926-ecafb3a9325b/rack-arp-fernanda-sampaio.jpg",
             "height": 577,
-            "heightMobile": 362
+            "heightMobile": 362,
+            "link": "https://www.abracasa.com.br/rack-arp-1-porta-e-1-gaveta-natural---1-60m/p?skuId=2011719",
+            "alt": "rack-arp-fernanda-sampaio"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/8b8c208f-92ea-47ac-aa88-cc3f18c32de4/rack-arp-fernanda-sampaio-gaveta.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/8b8c208f-92ea-47ac-aa88-cc3f18c32de4/rack-arp-fernanda-sampaio-gaveta.jpg",
             "height": 577,
-            "heightMobile": 362
+            "heightMobile": 362,
+            "link": "https://www.abracasa.com.br/rack-arp-1-porta-e-1-gaveta-natural---1-60m/p?skuId=2011719",
+            "alt": "rack-arp-fernanda-sampaio-1-gaveta"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/98e80792-27a9-4cf7-af67-f41cd366cb40/escrivaninha-arp-fernanda-sampaio.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/98e80792-27a9-4cf7-af67-f41cd366cb40/escrivaninha-arp-fernanda-sampaio.jpg",
             "height": 577,
-            "heightMobile": 362
+            "heightMobile": 362,
+            "alt": "escrivaninha-arp-tampo-vidro-fernanda-sampaio",
+            "link": "https://www.abracasa.com.br/escrivaninha-arp-nozes-com-tampo-vidro---1-60m/p?skuId=2012376"
           }
         ],
         "lineHeightTitle": 1.4,
@@ -72,16 +78,20 @@
         "title": "<p style=\"text-align: justify\"><span style=\"font-size: 45pt\">LINHA NORI</span></p>",
         "image": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/5dc85464-6d67-4c91-bb78-2bb592de8fe1/conjunto-office-nori.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/5dc85464-6d67-4c91-bb78-2bb592de8fe1/conjunto-office-nori.jpg",
             "heightMobile": 362,
             "height": 798,
-            "width": 648
+            "width": 648,
+            "link": "https://www.abracasa.com.br/escrivaninha-nori-1-85m-natural-com-gaveteiro-nori-45cm---natural/p?skuId=2012382",
+            "alt": "conjunto-office-com- escrivaninha-e-gaveteiro-nori"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "heightMobile": 362
+            "desktop": "https://assets.decocache.com/abracasa/42e0923e-4b8b-41d7-bdbc-49eeb23d347f/rach-nori.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/42e0923e-4b8b-41d7-bdbc-49eeb23d347f/rach-nori.jpg",
+            "heightMobile": 362,
+            "link": "https://www.abracasa.com.br/rack-nori-3-portas-e-1-gaveta-natural---1-80m/p?skuId=2012381",
+            "alt": "rack-nori-3-portas-1-gaveta"
           }
         ],
         "lineHeightTitle": 1.4,
@@ -113,16 +123,18 @@
         "__resolveType": "site/sections/Images/TextWithImagesSlider.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/a13fa7d6-6b10-4ef7-acbc-c6267ab57058/escrivaninha-gaveteiro-nori.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/a13fa7d6-6b10-4ef7-acbc-c6267ab57058/escrivaninha-gaveteiro-nori.jpg",
             "height": 464,
-            "heightMobile": 290
+            "heightMobile": 290,
+            "alt": "escrivaninha-e-gaveteiro-nori-oculos-porta-lapis"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/02860fc2-59b8-4192-84d7-32164cd4b5ef/rack-nori-vasos.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/02860fc2-59b8-4192-84d7-32164cd4b5ef/rack-nori-vasos.jpg",
             "height": 464,
-            "heightMobile": 290
+            "heightMobile": 290,
+            "alt": "rack-nori-com-vasos-apoiados"
           }
         ],
         "text": "<p><span style=\"color: rgb(62, 62, 62)\">Com puxadores funcionais e discretos, os móveis </span></p><p><span style=\"color: rgb(62, 62, 62)\">carregam sofisticação sendo perfeitos para espaços </span></p><p><span style=\"color: rgb(62, 62, 62)\">urbanos que pedem leveza, organização e beleza.</span></p><p></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">A distância entre tampo e base da escrivaninha, traz </span></p><p><span style=\"color: rgb(62, 62, 62)\">a beleza da estrutura que muitas vezes é escondida. </span></p><p><span style=\"color: rgb(62, 62, 62)\">Suas bordas arredondadas são um convite a </span></p><p><span style=\"color: rgb(62, 62, 62)\">apreciação e ao conforto.</span></p>",
@@ -154,8 +166,9 @@
         },
         "products": {
           "props": {
-            "sort": "OrderByScoreDESC",
-            "count": 12
+            "sort": "OrderByTopSaleDESC",
+            "count": 12,
+            "collection": "560"
           },
           "__resolveType": "vtex/loaders/legacy/productList.ts"
         },
@@ -176,16 +189,20 @@
         "title": "<p style=\"text-align: justify\"><span style=\"font-size: 45pt\">LINHA ARP</span></p>",
         "image": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/8f70630c-7b72-48ac-8e70-c1d29dabd829/IMG_0113-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/8f70630c-7b72-48ac-8e70-c1d29dabd829/IMG_0113-1.jpg",
             "heightMobile": 362,
             "width": 648,
-            "height": 798
+            "height": 798,
+            "link": "https://www.abracasa.com.br/buffet-arp-1-porta-e-2-gavetas-natural---1-60m/p?skuId=2011706",
+            "alt": "buffet-arp-fernanda-sampaio"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "heightMobile": 362
+            "desktop": "https://assets.decocache.com/abracasa/a8be5443-01c8-4f69-bfdc-d20a8ad9bd1c/IMG_0227-1.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/a8be5443-01c8-4f69-bfdc-d20a8ad9bd1c/IMG_0227-1.jpg",
+            "heightMobile": 362,
+            "link": "https://www.abracasa.com.br/rack-arp-1-porta-e-1-gaveta-nozes---1-60m/p?skuId=2011720",
+            "alt": "rack-arp-fernanda-sampaio"
           }
         ],
         "limitTitleText": false,
@@ -219,18 +236,20 @@
         "__resolveType": "site/sections/Images/TextWithImagesSlider.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/a10434d3-46f4-4bfa-84e8-a26c1293b17f/escrivaninha-arp-tampo-vidro.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/a10434d3-46f4-4bfa-84e8-a26c1293b17f/escrivaninha-arp-tampo-vidro.jpg",
             "height": 514,
             "heightMobile": 290,
-            "width": 440
+            "width": 440,
+            "alt": "conjunto-office-arp-cadeira-delta"
           },
           {
-            "desktop": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
-            "mobile": "https://assets.decocache.com/abracasa/40ae656f-f8bf-422b-bd0a-7e6b3c1edb39/_MG_5073-Aprimorado-NR-3.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/cb10f33f-b1a0-4878-968a-7ac7ad95dcbd/Rack-Arp-1-Porta-1-Gaveta.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/cb10f33f-b1a0-4878-968a-7ac7ad95dcbd/Rack-Arp-1-Porta-1-Gaveta.jpg",
             "height": 514,
             "heightMobile": 290,
-            "width": 440
+            "width": 440,
+            "alt": "rack-arp-1-gaveta-1-porta"
           }
         ],
         "text": "<p><span style=\"color: #3e3e3e\">As portas de correr em conjunto com o</span></p><p><span style=\"color: #3e3e3e\">tampo de vidro da escrivaninha, revelam a</span></p><p><span style=\"color: #3e3e3e\">versatilidade e a leveza da Linha Arp.</span></p>",
@@ -252,7 +271,8 @@
         "products": {
           "props": {
             "sort": "OrderByScoreDESC",
-            "count": 12
+            "count": 12,
+            "collection": "563"
           },
           "__resolveType": "vtex/loaders/legacy/productList.ts"
         },
@@ -281,7 +301,10 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Fernanda Sampaio | Abra Casa",
+    "description": "Descubra a nova linha exclusiva da Abra Casa por Fernanda Sampaio com rack, escrivaninha e gaveteiro que unem design autoral, funcionalidade e sofisticação.",
+    "canonical": "https://www.abracasa.com.br/campanha/fernanda-sampaio"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

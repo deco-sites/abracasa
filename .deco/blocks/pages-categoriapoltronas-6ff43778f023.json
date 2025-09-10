@@ -3,12 +3,6 @@
   "path": "/moveis/poltronas",
   "sections": [
     {
-      "jsonLD": {
-        "__resolveType": "PLP Intelligent Loader"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
@@ -16,7 +10,6 @@
       "banners": [
         {
           "image": {
-            "alt": "Banner",
             "mobile": "https://data.decoassets.com/abracasa/ae93f9fc-9ad4-4ef4-80af-702fbc234943/casa_colecao_banner_especial_mobile_800x400.jpg",
             "desktop": "https://data.decoassets.com/abracasa/b4f73541-2f19-4c1a-97d6-c0fb4d138c0c/casa_coleca_banner_especial_desktop_1800x220.jpg"
           },
@@ -55,5 +48,11 @@
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
-  "unindexedDomain": false
+  "unindexedDomain": false,
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Poltronas | Abra Casa",
+    "description": "As poltronas Abra Casa são ideais para quem busca conforto e beleza. Modelos exclusivos que se adaptam a diferentes estilos e valorizam seu ambiente.",
+    "canonical": "https://www.abracasa.com.br/moveis/poltronas"
+  }
 }

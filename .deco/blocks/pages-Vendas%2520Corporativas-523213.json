@@ -1,0 +1,204 @@
+{
+  "name": "Vendas Corporativas",
+  "path": "/venda-corporativa",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header - 01"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ColectionHero.tsx",
+        "mobileSlider": true,
+        "title": "<p><span style=\"color: #212121; font-size: 32pt\">Soluções em mobiliário</span></p><p><span style=\"color: #212121; font-size: 32pt\">para espaços corporativos</span></p>",
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/bd723a4d-025f-4e4b-a7a3-d7a7716dd6ae/_MG_3001-Aprimorado-NR-1.png",
+            "width": 630,
+            "height": 775,
+            "mobile": "https://assets.decocache.com/abracasa/bd723a4d-025f-4e4b-a7a3-d7a7716dd6ae/_MG_3001-Aprimorado-NR-1.png",
+            "widthMobile": 275,
+            "heightMobile": 404
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/a7ec82ee-d0a6-4ba6-a75a-77921b979959/Vertical-Mesa-Athos-Final-1.png",
+            "width": 588,
+            "height": 800,
+            "mobile": "https://assets.decocache.com/abracasa/a7ec82ee-d0a6-4ba6-a75a-77921b979959/Vertical-Mesa-Athos-Final-1.png"
+          }
+        ],
+        "dobleTitle": true,
+        "twoText": false,
+        "limitTitleText": false,
+        "TitleTwo": "<p><span style=\"color: #626262\">Curadoria especializada, atendimento personalizado</span></p><p><span style=\"color: #626262\">e soluções sob medida para o seu projeto.&nbsp;</span></p>",
+        "titleMobile": "<p><span style=\"color: #212121; font-size: 18pt\">Soluções em mobiliário para espaços corporativos</span></p>",
+        "TitleTwoMobile": "<p><span style=\"color: #626262; font-size: 11pt\">Curadoria especializada, atendimento personalizado e soluções sob medida para o seu projeto.&nbsp;</span></p>",
+        "addDescription": true,
+        "titleDescription": "<p><span style=\"color: #212121; font-size: 23pt\">Entendemos que cada</span></p><p><span style=\"color: #212121; font-size: 23pt\">espaço corporativo tem</span></p><p><span style=\"color: #212121; font-size: 23pt\">uma identidade única</span></p>",
+        "titleDescriptionMob": "<p><span style=\"color: #212121; font-size: 13pt\">Entendemos que cada espaço corporativo tem uma identidade única</span></p>",
+        "description": "<p><span style=\"color: #626262\">Por isso, nossa curadoria atua de forma</span></p><p><span style=\"color: #626262\">estratégica, desenvolvendo </span><strong><span style=\"color: #626262\">soluções</span></strong></p><p><strong><span style=\"color: #626262\">personalizadas</span></strong><span style=\"color: #626262\"> para os mais diversos</span></p><p><span style=\"color: #626262\">ambientes, como </span><strong><span style=\"color: #626262\">escritórios</span></strong><span style=\"color: #626262\">, </span><strong><span style=\"color: #626262\">hotéis</span></strong><span style=\"color: #626262\">,</span></p><p><strong><span style=\"color: #626262\">restaurantes</span></strong><span style=\"color: #626262\"> e muito mais.</span></p>",
+        "descriptionMobile": "<p><span style=\"color: #626262; font-size: 11pt\">Por isso, nossa curadoria atua de forma estratégica, desenvolvendo </span><strong><span style=\"color: #626262; font-size: 11pt\">soluções personalizadas</span></strong><span style=\"color: #626262; font-size: 11pt\"> para os mais diversos ambientes, como </span><strong><span style=\"color: #626262; font-size: 11pt\">escritórios</span></strong><span style=\"color: #626262; font-size: 11pt\">, </span><strong><span style=\"color: #626262; font-size: 11pt\">hotéis</span></strong><span style=\"color: #626262; font-size: 11pt\">, </span><strong><span style=\"color: #626262; font-size: 11pt\">restaurantes</span></strong><span style=\"color: #626262; font-size: 11pt\"> e muito mais.</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/TextAndImage.tsx",
+        "textAndImage": [
+          {
+            "texts": [
+              {
+                "text": "<p><span style=\"color: #626262\">Com um portfólio que alia </span><strong><span style=\"color: #626262\">design acessível</span></strong><span style=\"color: #626262\">, </span><strong><span style=\"color: #626262\">produtos de qualidade</span></strong><span style=\"color: #626262\"> e </span><strong><span style=\"color: #626262\">atendimento</span></strong></p><p><strong><span style=\"color: #626262\">especializado</span></strong><span style=\"color: #626262\">, oferecemos uma experiência completa para empresas que buscam</span></p><p><strong><span style=\"color: #626262\">praticidade e eficiência no planejamento de seus projetos</span></strong><span style=\"color: #626262\">.</span></p>",
+                "textMob": "<p><span style=\"color: #626262; font-size: 11pt\">Com um portfólio que alia </span><strong><span style=\"color: #626262; font-size: 11pt\">design acessível</span></strong><span style=\"color: #626262; font-size: 11pt\">, </span><strong><span style=\"color: #626262; font-size: 11pt\">produtos de qualidade</span></strong><span style=\"color: #626262; font-size: 11pt\"> e </span><strong><span style=\"color: #626262; font-size: 11pt\">atendimento especializado</span></strong><span style=\"color: #626262; font-size: 11pt\">, oferecemos uma experiência completa para empresas que buscam </span><strong><span style=\"color: #626262; font-size: 11pt\">praticidade e eficiência no planejamento de seus projetos</span></strong><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">.</span></p>"
+              }
+            ],
+            "images": [
+              {
+                "image": "https://assets.decocache.com/abracasa/26feb800-3429-41dd-8ae2-7886a3324f1e/imagem_2025-08-29_135701005.png",
+                "description": "sala",
+                "caption": "Foto: Lorem Ipsum"
+              }
+            ]
+          }
+        ],
+        "textBelow": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
+        "image": [
+          {
+            "desktop": "https://assets.decocache.com/abracasa/c0ed3bed-b926-438e-8678-42e13fe9a89b/_MG_5073-Aprimorado-NR-1.jpg",
+            "width": 388,
+            "height": 568,
+            "mobile": "https://assets.decocache.com/abracasa/c0ed3bed-b926-438e-8678-42e13fe9a89b/_MG_5073-Aprimorado-NR-1.jpg",
+            "widthMobile": 276,
+            "heightMobile": 404
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/95f4657c-5aa8-44d7-be24-12d031b0a4ba/_MG_3317-Aprimorado-NR-1.jpg",
+            "width": 388,
+            "height": 568,
+            "mobile": "https://assets.decocache.com/abracasa/95f4657c-5aa8-44d7-be24-12d031b0a4ba/_MG_3317-Aprimorado-NR-1.jpg",
+            "widthMobile": 276,
+            "heightMobile": 404
+          },
+          {
+            "desktop": "https://assets.decocache.com/abracasa/fa0c65dc-1c58-4154-b3d8-48bfcd64690d/_MG_3317-Aprimorado-NR-2.jpg",
+            "width": 388,
+            "height": 568,
+            "mobile": "https://assets.decocache.com/abracasa/fa0c65dc-1c58-4154-b3d8-48bfcd64690d/_MG_3317-Aprimorado-NR-2.jpg",
+            "widthMobile": 276,
+            "heightMobile": 404
+          }
+        ],
+        "marginZero": true,
+        "marginTopZero": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/Video.tsx",
+        "video": {
+          "content": {
+            "type": "Video",
+            "video": "https://assets.decocache.com/abracasa/a2154aeb-bd32-4d78-b0c3-da59c1841265/1920x1080_1-(1).mp4",
+            "notFullWidth": true,
+            "controls": true,
+            "loop": true,
+            "autoplay": false,
+            "preload": false
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/TextImage.tsx",
+        "image": "https://assets.decocache.com/abracasa/e851b365-0c73-40a6-9ef1-bf828c3fd6ed/imagem_2025-08-29_135526698.png",
+        "title": "<p><span style=\"color: #212121; font-size: 23pt\">Nossos diferenciais</span></p>",
+        "paragraphs": [
+          {
+            "text": "<p><span style=\"color: #626262\">Descontos especiais&nbsp;</span></p><p></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262\">Desenvolvimento de móveis personalizados</span></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262\">Design acessível&nbsp;</span></p><p></p><p></p><p></p><p></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262\">Produtos de Qualidade</span></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262\">Atendimento personalizado</span></p><p></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262\">Praticidade&nbsp;</span></p><p></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262\">Planejamento&nbsp;de&nbsp;entrega</span></p>"
+          }
+        ],
+        "imageWidth": 731,
+        "imageHeight": 513,
+        "imageMobile": "https://assets.decocache.com/abracasa/e851b365-0c73-40a6-9ef1-bf828c3fd6ed/imagem_2025-08-29_135526698.png",
+        "imageMobileWidth": 327,
+        "imageMobileHeight": 230,
+        "titleMobile": "<p><span style=\"color: #212121; font-size: 13pt\">Nossos diferenciais</span></p>",
+        "paragraphsMobile": [
+          {
+            "text": "<p><span style=\"color: #626262; font-size: 11pt\">Descontos especiais&nbsp;</span></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262; font-size: 11pt\">Desenvolvimento de móveis personalizados</span></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262; font-size: 11pt\">Design acessível&nbsp;</span></p><p></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262; font-size: 11pt\">Produtos de qualidade</span></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262; font-size: 11pt\">Atendimento personalizado&nbsp;</span></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262; font-size: 11pt\">Praticidade&nbsp;</span></p>"
+          },
+          {
+            "text": "<p><span style=\"color: #626262; font-size: 11pt\">Planejamento&nbsp;de&nbsp;entrega</span></p>"
+          }
+        ],
+        "caption": "Foto: Lorem Ipsum"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/SectionText.tsx",
+        "changeFontFamily": false,
+        "title": "<p style=\"text-align: center\"><span style=\"color: #212121; font-size: 15pt\">Entre em contato e descubra como podemos transformar o seu espaço.</span><span style=\"font-size: 15pt\">&nbsp;</span></p>",
+        "description": "<p style=\"text-align: center\"><span style=\"color: #212121\">+55 21 97420-6504&nbsp;</span></p>",
+        "changeFontWeight": true,
+        "link": "/"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer - 01"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

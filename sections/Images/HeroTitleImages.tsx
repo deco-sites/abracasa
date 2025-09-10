@@ -10,6 +10,7 @@ interface Props {
    * and `flex-col-reverse` for column layouts, flipping the flex container's direction.
    */
   reverse?: boolean;
+  marginTopZero?: boolean;
   /** @description Desktop title */
   title?: RichText;
   /** @description Line Height of the text */
@@ -53,10 +54,19 @@ interface Props {
   lineHeightDescriptionMobile?: number;
 }
 
-export const getLayoutClasses = ({ reverse }: { reverse?: boolean }) => {
+export const getLayoutClasses = ({
+  reverse,
+  marginTopZero,
+}: {
+  reverse?: boolean;
+  marginTopZero?: boolean;
+}) => {
   const reversePosition = reverse ? "flex-col-reverse" : "flex-col";
-  const container = reverse
-    ? `pt-[68px] lg:pt-[170px]`
+
+  const container = marginTopZero
+    ? "mt-0 lg:mt-0 lg:mb-[120px] mb-[47px]"
+    : reverse
+    ? "pt-[68px] lg:pt-[170px]"
     : "mt-[72px] lg:mt-[172px]";
 
   return {
@@ -67,6 +77,7 @@ export const getLayoutClasses = ({ reverse }: { reverse?: boolean }) => {
 
 function HeroTitleImages({
   reverse,
+  marginTopZero,
   title,
   lineHeightTitle,
   titleMobile,
@@ -85,44 +96,50 @@ function HeroTitleImages({
 
   const { container, reverse: reversePosition } = getLayoutClasses({
     reverse,
+    marginTopZero,
   });
 
   return (
     <div id={id} class={`${container}`}>
       <div class="max-w-[1196px] mx-auto">
         <div class={`flex font-inter ${reversePosition}`}>
-          <h1
-            class={`sliderP leading-[1] hidden lg:block mx-6 xl:mx-0 mb-7 ${
-              justifyEnd
-                ? "font-semibold text-left lg:mb-[164px]"
-                : "lg:mb-[66px]"
-            }
+          {title && title.trim() !== "" && (
+            <h1
+              class={`sliderP leading-[1] hidden lg:block mx-6 xl:mx-0 mb-7 ${
+                justifyEnd
+                  ? "font-semibold text-left lg:mb-[164px]"
+                  : "lg:mb-[66px]"
+              }
                 ${reverse ? " pt-[117px]" : "mb-[51px] lg:mb-[154px]"} ${
-              justifyCenter
-                ? "max-w-[782px] !font-light tracking-wider !mx-auto leading-6"
-                : ""
-            }`}
-            dangerouslySetInnerHTML={{ __html: title ?? "" }}
-            style={{
-              lineHeight: lineHeightTitle || "",
-              fontWeight: `${reverse ? 700 : 600}`,
-              fontSize: `${reverse && "26px"}`,
-            }}
-          />
-          <h1
-            class={`sliderP mx-6 leading-[1] font-semibold lg:mb-[66px] lg:hidden ${
-              justifyEnd ? "pt-[29px] mb-[101px]" : "pt-[49px] mb-7"
-            } ${
-              justifyCenter
-                ? "max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6"
-                : ""
-            }`}
-            dangerouslySetInnerHTML={{ __html: titleMobile ?? "" }}
-            style={{
-              lineHeight: lineHeightTitleMobile || "",
-              fontWeight: `${reverse ? 700 : 600}`,
-            }}
-          />
+                justifyCenter
+                  ? "max-w-[782px] !font-light tracking-wider !mx-auto leading-6"
+                  : ""
+              }`}
+              dangerouslySetInnerHTML={{ __html: title }}
+              style={{
+                lineHeight: lineHeightTitle || "",
+                fontWeight: `${reverse ? 700 : 600}`,
+                fontSize: `${reverse && "26px"}`,
+              }}
+            />
+          )}
+
+          {titleMobile && titleMobile.trim() !== "" && (
+            <h1
+              class={`sliderP mx-6 leading-[1] font-semibold lg:mb-[66px] lg:hidden ${
+                justifyEnd ? "pt-[29px] mb-[101px]" : "pt-[49px] mb-7"
+              } ${
+                justifyCenter
+                  ? "max-w-[782px] !font-light tracking-wider mb-[51px] lg:mb-[154px] leading-6"
+                  : ""
+              }`}
+              dangerouslySetInnerHTML={{ __html: titleMobile }}
+              style={{
+                lineHeight: lineHeightTitleMobile || "",
+                fontWeight: `${reverse ? 700 : 600}`,
+              }}
+            />
+          )}
 
           {/* Desktop view */}
           <ul class="hidden lg:flex gap-[18px] mx-6 xl:mx-0">
@@ -142,7 +159,7 @@ function HeroTitleImages({
               </li>
             ))}
           </ul>
-          {showTwoText ? (
+          {showTwoText && description && description.trim() !== "" ? (
             <div
               class={`${justifyEnd ? "flex lg:justify-end lg:mr-[140px]" : ""}`}
             >
@@ -156,7 +173,7 @@ function HeroTitleImages({
                     ? "max-w-[782px] !font-light tracking-wider !mx-auto leading-6"
                     : ""
                 }`}
-                dangerouslySetInnerHTML={{ __html: description ?? "" }}
+                dangerouslySetInnerHTML={{ __html: description }}
                 style={{
                   lineHeight: lineHeightDescription || "",
                 }}
@@ -190,7 +207,9 @@ function HeroTitleImages({
           </Slider>
           <SliderJS rootId={id} />
 
-          {showTwoText ? (
+          {showTwoText &&
+          descriptionMobile &&
+          descriptionMobile.trim() !== "" ? (
             <div
               class={`${justifyEnd ? "flex lg:justify-end lg:mr-[140px]" : ""}`}
             >
@@ -202,7 +221,7 @@ function HeroTitleImages({
                         ? "max-w-[782px] !font-light tracking-wider mb-[51px] lg:mt-[154px] leading-6"
                         : ""
                     }`}
-                dangerouslySetInnerHTML={{ __html: descriptionMobile ?? "" }}
+                dangerouslySetInnerHTML={{ __html: descriptionMobile }}
                 style={{
                   lineHeight: lineHeightDescriptionMobile || "",
                 }}
