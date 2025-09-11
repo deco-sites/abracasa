@@ -17,10 +17,12 @@
             "hasContainer": false,
             "type": "Video",
             "video": "https://assets.decocache.com/abracasa/4f0fc08e-ad7a-45f8-bd3a-fc703e2eca0d/youtuber_fernandasampaio_1920x1080_comusica.mp4",
-            "autoplay": false,
+            "autoplay": true,
             "controls": true,
-            "height": 531,
-            "forceHeight": true
+            "height": 300,
+            "forceHeight": true,
+            "notFullWidth": true,
+            "muted": true
           }
         }
       }
@@ -29,7 +31,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
-        "title": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">Fernanda Sampaio</span><span style=\"font-size: 18pt\"> </span><span style=\"color: #777777; font-size: 18pt\">assina duas novas linhas, com exclusividade, para a Abra</span></p><p style=\"text-align: justify\"><span style=\"color: #777777; font-size: 18pt\">Casa. A designer carioca imprime o equilíbrio entre funcionalidade e leveza</span></p><p style=\"text-align: justify\"><span style=\"color: #777777; font-size: 18pt\">estética, destacando a madeira como protagonista de seus projetos.&nbsp;</span></p>",
+        "title": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">Fernanda Sampaio</span><span style=\"font-size: 18pt\"> </span><span style=\"color: rgb(119, 119, 119); font-size: 18pt\">assina duas novas linhas, com exclusividade, para a Abra</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(119, 119, 119); font-size: 18pt\">Casa. A designer carioca imprime o equilíbrio entre funcionalidade e leveza</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(119, 119, 119); font-size: 18pt\">estética, destacando a madeira como protagonista de seus projetos.&nbsp;</span></p>",
         "titleMobile": "<p><span style=\"color: rgb(0, 0, 0); font-size: 12pt\">Fernanda Sampaio</span><span style=\"font-size: 12pt\"> </span><span style=\"color: rgb(62, 62, 62); font-size: 12pt\">assina duas novas linhas, com exclusividade, para a Abra Casa. A designer carioca imprime o equilíbrio entre funcionalidade e leveza estética, destacando a madeira como protagonista de seus projetos</span></p><p></p><p></p><p></p>",
         "image": [
           {
