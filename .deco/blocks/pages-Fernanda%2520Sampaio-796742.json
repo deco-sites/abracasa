@@ -168,7 +168,7 @@
         },
         "products": {
           "props": {
-            "sort": "OrderByTopSaleDESC",
+            "sort": "",
             "count": 12,
             "collection": "560"
           },
@@ -272,7 +272,7 @@
         },
         "products": {
           "props": {
-            "sort": "OrderByScoreDESC",
+            "sort": "",
             "count": 12,
             "collection": "563"
           },
