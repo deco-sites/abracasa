@@ -16,13 +16,13 @@
           "content": {
             "hasContainer": false,
             "type": "Video",
-            "video": "https://assets.decocache.com/abracasa/4f0fc08e-ad7a-45f8-bd3a-fc703e2eca0d/youtuber_fernandasampaio_1920x1080_comusica.mp4",
+            "video": "https://assets.decocache.com/abracasa/d56a0ca9-4e51-4ae6-b86f-3c62944520bd/youtuber_fernandasampaio_1920x1080_comusica_2.mp4",
             "autoplay": true,
             "controls": true,
-            "height": 300,
             "forceHeight": true,
             "notFullWidth": true,
-            "muted": true
+            "muted": true,
+            "loop": true
           }
         }
       }
