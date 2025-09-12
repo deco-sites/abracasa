@@ -36,7 +36,7 @@
     },
     {
       "page": {
-        "fq": "H:283",
+        "fq": "H:269",
         "sort": "OrderByBestDiscountDESC",
         "count": 48,
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
