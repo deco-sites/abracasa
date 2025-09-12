@@ -368,29 +368,18 @@
       }
     },
     {
-      "__resolveType": "Footer - 01"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
+        "popup": {
+          "source": "https://assets.decocache.com/abracasa/74605b7f-0a1d-4b7c-8902-dcf63e898f7e/popup_semana_cliente.gif",
+          "description": "semana-do-cliente",
+          "target": "_self"
+        }
+      }
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
-              "popup": {
-                "source": "https://assets.decocache.com/abracasa/74605b7f-0a1d-4b7c-8902-dcf63e898f7e/popup_semana_cliente.gif",
-                "description": "...",
-                "link": "/",
-                "target": "_self"
-              }
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/never.ts"
-          }
-        }
-      ]
+      "__resolveType": "Footer - 01"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
