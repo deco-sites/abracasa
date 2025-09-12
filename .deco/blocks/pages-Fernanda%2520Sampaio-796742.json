@@ -16,11 +16,13 @@
           "content": {
             "hasContainer": false,
             "type": "Video",
-            "video": "https://assets.decocache.com/abracasa/4f0fc08e-ad7a-45f8-bd3a-fc703e2eca0d/youtuber_fernandasampaio_1920x1080_comusica.mp4",
-            "autoplay": false,
+            "video": "https://assets.decocache.com/abracasa/d56a0ca9-4e51-4ae6-b86f-3c62944520bd/youtuber_fernandasampaio_1920x1080_comusica_2.mp4",
+            "autoplay": true,
             "controls": true,
-            "height": 531,
-            "forceHeight": true
+            "forceHeight": true,
+            "notFullWidth": true,
+            "muted": true,
+            "loop": true
           }
         }
       }
@@ -29,7 +31,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/HeroTitleImages.tsx",
-        "title": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">Fernanda Sampaio</span><span style=\"font-size: 18pt\"> </span><span style=\"color: #777777; font-size: 18pt\">assina duas novas linhas, com exclusividade, para a Abra</span></p><p style=\"text-align: justify\"><span style=\"color: #777777; font-size: 18pt\">Casa. A designer carioca imprime o equilíbrio entre funcionalidade e leveza</span></p><p style=\"text-align: justify\"><span style=\"color: #777777; font-size: 18pt\">estética, destacando a madeira como protagonista de seus projetos.&nbsp;</span></p>",
+        "title": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">Fernanda Sampaio</span><span style=\"font-size: 18pt\"> </span><span style=\"color: rgb(119, 119, 119); font-size: 18pt\">assina duas novas linhas, com exclusividade, para a Abra</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(119, 119, 119); font-size: 18pt\">Casa. A designer carioca imprime o equilíbrio entre funcionalidade e leveza</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(119, 119, 119); font-size: 18pt\">estética, destacando a madeira como protagonista de seus projetos.&nbsp;</span></p>",
         "titleMobile": "<p><span style=\"color: rgb(0, 0, 0); font-size: 12pt\">Fernanda Sampaio</span><span style=\"font-size: 12pt\"> </span><span style=\"color: rgb(62, 62, 62); font-size: 12pt\">assina duas novas linhas, com exclusividade, para a Abra Casa. A designer carioca imprime o equilíbrio entre funcionalidade e leveza estética, destacando a madeira como protagonista de seus projetos</span></p><p></p><p></p><p></p>",
         "image": [
           {
@@ -101,7 +103,7 @@
         "Titletwo": "<p>TESTE</p>",
         "twoText": true,
         "dobleTitle": true,
-        "TitleTwo": "<p><span style=\"font-size: 21pt\">Simplicidade nos detalhes&nbsp;</span></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p style=\"text-align: justify\"><span style=\"color: rgb(62, 62, 62)\">A linha Nori busca explorar uma estética minimalista de geometria</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(62, 62, 62)\">linear e bordas arredondadas, evidenciando a estrutura do móvel.</span></p>",
+        "TitleTwo": "<p><span style=\"font-size: 21pt\">Simplicidade nos detalhes&nbsp;</span></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p style=\"text-align: justify\"><span style=\"color: rgb(62, 62, 62)\">A Linha Nori busca explorar uma estética minimalista </span></p><p style=\"text-align: justify\"><span style=\"color: rgb(62, 62, 62)\">de geometria linear e bordas arredondadas.</span></p>",
         "button": {
           "isBold": false,
           "link": "#linha-nori",
@@ -110,8 +112,8 @@
         },
         "lineHeightTitleTwo": 1.4,
         "lineHeigthTitleTwoMobile": 1.4,
-        "TitleTwoMobile": "<p><span style=\"font-size: 15pt\">Simplicidade nos detalhes</span></p><p></p><p></p><p></p><p><span style=\"font-size: 15pt\">&nbsp;</span></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">A linha Nori busca explorar uma estética minimalista de geometria linear e bordas arredondadas, evidenciando a estrutura do móvel.</span></p>",
-        "textTwo": "<p><span style=\"color: #3e3e3e\">Com molduras discretas inspiradas na Fusuma,</span></p><p><span style=\"color: #3e3e3e\">elemento da arquitetura japonesa, o design</span></p><p><span style=\"color: #3e3e3e\">das peças busca contemplação e serenidade.</span></p>",
+        "TitleTwoMobile": "<p><span style=\"font-size: 15pt\">Simplicidade nos detalhes</span></p><p></p><p></p><p></p><p><span style=\"font-size: 15pt\">&nbsp;</span></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">A Linha Nori busca explorar uma estética minimalista de geometria linear e bordas arredondadas.</span></p>",
+        "textTwo": "<p><span style=\"color: rgb(62, 62, 62)\">Com molduras discretas inspiradas na Fusuma,</span></p><p><span style=\"color: rgb(62, 62, 62)\">elemento da arquitetura japonesa, o design</span></p><p><span style=\"color: rgb(62, 62, 62)\">das peças busca contemplação e serenidade.</span></p>",
         "lineHeightTextTwo": 1.4,
         "textTwoMobile": "<p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Com molduras discretas inspiradas na Fusuma, elemento da arquitetura japonesa, o design das peças busca contemplação e serenidade.</span></p>",
         "lineHeightTextTwoMobile": 1.4
@@ -137,9 +139,9 @@
             "alt": "rack-nori-com-vasos-apoiados"
           }
         ],
-        "text": "<p><span style=\"color: rgb(62, 62, 62)\">Com puxadores funcionais e discretos, os móveis </span></p><p><span style=\"color: rgb(62, 62, 62)\">carregam sofisticação sendo perfeitos para espaços </span></p><p><span style=\"color: rgb(62, 62, 62)\">urbanos que pedem leveza, organização e beleza.</span></p><p></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">A distância entre tampo e base da escrivaninha, traz </span></p><p><span style=\"color: rgb(62, 62, 62)\">a beleza da estrutura que muitas vezes é escondida. </span></p><p><span style=\"color: rgb(62, 62, 62)\">Suas bordas arredondadas são um convite a </span></p><p><span style=\"color: rgb(62, 62, 62)\">apreciação e ao conforto.</span></p>",
+        "text": "<p><span style=\"color: rgb(62, 62, 62)\">Com puxadores funcionais e discreto,</span></p><p><span style=\"color: rgb(62, 62, 62)\">são perfeitos para espaços urbanos que</span></p><p><span style=\"color: rgb(62, 62, 62)\">pedem leveza, organização e beleza.</span></p><p></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">A distância entre o tampo e a base da</span></p><p><span style=\"color: rgb(62, 62, 62)\">escrivaninha revela a estrutura que muitas</span></p><p><span style=\"color: rgb(62, 62, 62)\">vezes é escondida. Suas bordas arredondadas</span></p><p><span style=\"color: rgb(62, 62, 62)\">são um convite a apreciação e ao conforto.</span></p>",
         "lineHeigthText": 1.4,
-        "textMobile": "<p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Com puxadores funcionais e discretos, os móveis carregam sofisticação sendo perfeitos para espaços urbanos que pedem leveza, organização e beleza. A distância entre tampo e base da escrivaninha, traz a beleza da estrutura que muitas vezes é escondida. Suas bordas arredondadas são um convite a apreciação e ao conforto.</span></p>",
+        "textMobile": "<p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Com puxadores funcionais e discreto, são perfeitos para espaços urbanos que pedem leveza, organização e beleza.</span></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">A distância entre o tampo e a base da escrivaninha revela a estrutura que muitas vezes é escondida. Suas bordas arredondadas são um convite a apreciação e ao conforto.</span></p>",
         "lineHeightTextMobile": 1.4,
         "lineHeightText": 1.4
       }
@@ -166,7 +168,7 @@
         },
         "products": {
           "props": {
-            "sort": "OrderByTopSaleDESC",
+            "sort": "",
             "count": 12,
             "collection": "560"
           },
@@ -211,7 +213,7 @@
         "Titletwo": "<p>TESTE</p>",
         "twoText": true,
         "dobleTitle": true,
-        "TitleTwo": "<p><span style=\"font-size: 21pt\">Versátil e descontraída&nbsp;</span></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">A Linha Arp é ideal para quem valoriza uma casa com estilo</span></p><p><span style=\"color: rgb(62, 62, 62)\">e criatividade.&nbsp;</span><span style=\"color: rgb(62, 62, 62); font-size: 12pt\">As peças convidam a trazer a sua personalidade</span></p><p><span style=\"color: rgb(62, 62, 62); font-size: 12pt\">compondo um ambiente único.</span></p>",
+        "TitleTwo": "<p><span style=\"font-size: 21pt\">Versátil e descontraída&nbsp;</span></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">A Linha Arp é ideal para quem valoriza uma casa com </span></p><p><span style=\"color: rgb(62, 62, 62)\">estilo e criatividade.&nbsp;As peças convidam você a trazer</span></p><p><span style=\"color: rgb(62, 62, 62)\">sua personalidade, compondo um ambiente único.</span></p>",
         "button": {
           "isBold": false,
           "title": "Veja a coleção",
@@ -221,7 +223,7 @@
         "titleMobile": "<p><span style=\"font-size: 32pt\">LINHA ARP</span></p>",
         "lineHeightTitleTwo": 1.4,
         "lineHeigthTitleTwoMobile": 1.4,
-        "TitleTwoMobile": "<p><span style=\"font-size: 15pt\">Versátil e descontraída</span></p><p></p><p></p><p></p><p><span style=\"font-size: 15pt\">&nbsp;</span></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">A Linha Arp é ideal para quem valoriza uma casa com estilo e criatividade.&nbsp;As peças convidam a trazer a sua personalidade compondo um ambiente único.&nbsp;</span></p>",
+        "TitleTwoMobile": "<p><span style=\"font-size: 15pt\">Versátil e descontraída</span></p><p></p><p></p><p></p><p><span style=\"font-size: 15pt\">&nbsp;</span></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">A Linha Arp é ideal para quem valoriza uma casa com estilo e criatividade.&nbsp;As peças convidam você a trazer sua personalidade, compondo um ambiente único.</span></p>",
         "textTwo": "<p><span style=\"color: rgb(62, 62, 62)\">Um convite para transformar o cotidiano em uma</span></p><p><span style=\"color: rgb(62, 62, 62)\">experiência acolhedora e divertida.</span></p><p></p><p><span style=\"color: rgb(62, 62, 62)\">&nbsp;</span></p><p><span style=\"color: rgb(62, 62, 62)\">Disponível em duas tonalidades: Natural e Nozes</span></p>",
         "lineHeightTextTwo": 1.4,
         "textTwoMobile": "<p style=\"text-align: justify\"><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Um convite para transformar o cotidiano em uma experiência acolhedora e divertida.&nbsp;</span></p><p style=\"text-align: justify\"></p><p style=\"text-align: justify\"></p><p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">Disponível em duas tonalidades: Natural e Nozes</span></p>",
@@ -252,7 +254,7 @@
             "alt": "rack-arp-1-gaveta-1-porta"
           }
         ],
-        "text": "<p><span style=\"color: #3e3e3e\">As portas de correr em conjunto com o</span></p><p><span style=\"color: #3e3e3e\">tampo de vidro da escrivaninha, revelam a</span></p><p><span style=\"color: #3e3e3e\">versatilidade e a leveza da Linha Arp.</span></p>",
+        "text": "<p><span style=\"color: rgb(62, 62, 62)\">As portas de correr em conjunto com o</span></p><p><span style=\"color: rgb(62, 62, 62)\">tampo de vidro da escrivaninha, revelam</span></p><p><span style=\"color: rgb(62, 62, 62)\"> a versatilidade e elegância da Linha Arp.</span></p>",
         "lineHeigthText": 1.4,
         "textMobile": "<p><span style=\"color: rgb(62, 62, 62); font-size: 11pt\">As portas de correr em conjunto com o tampo de vidro da escrivaninha, revelam a versatilidade e a leveza da Linha Arp.</span></p>",
         "lineHeightTextMobile": 1.4,
@@ -270,7 +272,7 @@
         },
         "products": {
           "props": {
-            "sort": "OrderByScoreDESC",
+            "sort": "",
             "count": 12,
             "collection": "563"
           },
