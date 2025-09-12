@@ -1,8 +1,8 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import { getCookies } from "std/http/cookie.ts";
-import { useScript } from "@deco/deco/hooks";
+import { useState, useEffect } from "preact/hooks";
+
 export interface Props {
   hoursToShowPopupAgain?: number;
   popup: {
@@ -12,86 +12,74 @@ export interface Props {
     target: "_self" | "_blank";
   };
 }
-export default function CampaignPopup(props: Props) {
-  if (!props || !props.popup) {
-    return null;
+
+const setPopupCookie = (name: string, value: string, hours: number) => {
+  const date = new Date();
+  if (hours > 0) {
+    date.setTime(date.getTime() + hours * 60 * 60 * 1000);
+  } else {
+    date.setTime(date.getTime() + 30 * 60 * 1000);
   }
-  const { popup, hoursToShowPopupAgain = 72 } = props;
-  const handleCloseModal = (name: string, value: string, hours: number) => {
-    document.addEventListener("DOMContentLoaded", () => {
-      const modalBtn = document.getElementById("close-modal-btn");
-      const modalOverlay = document.getElementById("modal-overlay");
-      function setPopupCookie() {
-        const date = new Date();
-        if (hours > 0) {
-          date.setTime(date.getTime() + (hours * 60 * 60 * 1000)); // Convert hours to milliseconds
-        } else {
-          // Set the cookie to expire at the end of the session
-          date.setTime(date.getTime() + (30 * 60 * 1000)); // Default to 30 minutes if not specified
-        }
-        const expires = hours > 0 ? "expires=" + date.toUTCString() : "";
-        document.cookie = name + "=" + (value || "") + ";" + expires +
-          ";path=/";
-      }
-      modalBtn?.addEventListener("click", () => {
-        setPopupCookie();
-        document.getElementById("modal")?.classList.add("hidden");
-      });
-      modalOverlay?.addEventListener("click", () => {
-        setPopupCookie();
-        document.getElementById("modal")?.classList.add("hidden");
-      });
-    });
+  const expires = hours > 0 ? "expires=" + date.toUTCString() : "";
+  document.cookie = `${name}=${value || ""};${expires};path=/`;
+};
+
+const getPopupCookie = (name: string) => {
+  const match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+  return match ? match[2] : null;
+};
+
+export default function CampaignPopup({
+  popup,
+  hoursToShowPopupAgain = 72,
+}: Props) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Mostra o modal só se não tiver o cookie
+    const cookie = getPopupCookie("modal-popup");
+    if (!cookie) {
+      setIsVisible(true);
+    }
+  }, []);
+
+  const handleClose = () => {
+    setPopupCookie("modal-popup", "closed", hoursToShowPopupAgain);
+    setIsVisible(false);
   };
+
+  if (!isVisible) return null;
+
   return (
-    <>
+    <div
+      id="modal"
+      class="fixed inset-0 z-[99999999999] flex items-center justify-center"
+    >
       <div
-        id="modal"
-        class="fixed inset-0 z-[99999999999] flex items-center justify-center"
-      >
-        <div id="modal-overlay" class="absolute inset-0 bg-black opacity-50" />
-
-        <div class="relative w-[90%] sm:w-[400px] h-[400px]">
-          <a href={popup.link} class="w-full h-full">
-            <Image
-              src={popup.source}
-              alt={popup.description}
-              width={400}
-              height={400}
-              loading="lazy"
-            />
-          </a>
-
-          <button
-            id="close-modal-btn"
-            class="absolute top-2 right-2 text-white bg-black rounded-full p-2 hover:bg-gray-800 transition-all duration-200"
-          >
-            <Icon id="XMark" size={20} strokeWidth={1} />
-          </button>
-        </div>
-      </div>
-
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{
-          __html: useScript(
-            handleCloseModal,
-            "modal-popup",
-            "closed",
-            hoursToShowPopupAgain,
-          ),
-        }}
+        id="modal-overlay"
+        class="absolute inset-0 bg-black opacity-50"
+        onClick={handleClose}
       />
-    </>
+
+      <div class="relative w-[90%] sm:w-[400px] h-[400px]">
+        <a href={popup.link} class="w-full h-full" target={popup.target}>
+          <Image
+            src={popup.source}
+            alt={popup.description}
+            width={400}
+            height={400}
+            loading="lazy"
+          />
+        </a>
+
+        <button
+          id="close-modal-btn"
+          class="absolute top-2 right-2 text-white bg-black rounded-full p-2 hover:bg-gray-800 transition-all duration-200"
+          onClick={handleClose}
+        >
+          <Icon id="XMark" size={20} strokeWidth={1} />
+        </button>
+      </div>
+    </div>
   );
 }
-export const loader = (props: Props, req: Request) => {
-  const cookies = getCookies(req.headers);
-  const cookie = cookies["modal-popup"];
-  if (cookie) {
-    return;
-  }
-  return {
-    ...props,
-  };
-};
