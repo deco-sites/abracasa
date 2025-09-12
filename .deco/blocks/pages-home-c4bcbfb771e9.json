@@ -371,27 +371,6 @@
       "__resolveType": "Footer - 01"
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Miscellaneous/CampaignPopup.tsx",
-              "popup": {
-                "source": "https://assets.decocache.com/abracasa/74605b7f-0a1d-4b7c-8902-dcf63e898f7e/popup_semana_cliente.gif",
-                "target": "_self"
-              }
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/date.ts",
-            "start": "2025-09-12T03:00:00.000Z"
-          }
-        }
-      ]
-    },
-    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Social/InstagramWidget.tsx"
