@@ -3,18 +3,10 @@
   "path": "/campanha/semana-do-cliente",
   "sections": [
     {
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
@@ -23,18 +15,18 @@
           },
           "matcher": "/*"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
-      "html": "<p style=\"text-align: center\"><br></p>",
-      "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
+      "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
+      "html": "<p style=\"text-align: center\"><br></p>"
     },
     {
       "html": "<p></p>",
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx"
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "fq": "H:269",
         "sort": "OrderByBestDiscountDESC",
@@ -94,12 +86,22 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isCategoriesFilterActive": true
     },
     {
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
+    "jsonLD": {
+      "sort": "OrderByPriceDESC",
+      "count": 12,
+      "filters": "dynamic",
+      "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+    },
+    "description": "15% de cashback e móveis com desconto? Só na Semana do Cliente Abra Casa! Design exclusivo e preços especiais para deixar sua casa do seu jeito.",
+    "title": "Semana do Cliente | Abra Casa"
+  }
 }
