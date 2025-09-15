@@ -5,6 +5,7 @@ import { useState, useEffect } from "preact/hooks";
 
 export interface Props {
   hoursToShowPopupAgain?: number;
+  disableCookie?: boolean;
   popup: {
     source: ImageWidget;
     description: string;
@@ -32,19 +33,27 @@ const getPopupCookie = (name: string) => {
 export default function CampaignPopup({
   popup,
   hoursToShowPopupAgain = 72,
+  disableCookie = false,
 }: Props) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Mostra o modal só se não tiver o cookie
-    const cookie = getPopupCookie("modal-popup");
-    if (!cookie) {
+    if (disableCookie) {
+      // Sempre mostra, ignorando cookie
       setIsVisible(true);
+    } else {
+      // Mostra o modal só se não tiver o cookie
+      const cookie = getPopupCookie("modal-popup");
+      if (!cookie) {
+        setIsVisible(true);
+      }
     }
-  }, []);
+  }, [disableCookie]);
 
   const handleClose = () => {
-    setPopupCookie("modal-popup", "closed", hoursToShowPopupAgain);
+    if (!disableCookie) {
+      setPopupCookie("modal-popup", "closed", hoursToShowPopupAgain);
+    }
     setIsVisible(false);
   };
 
