@@ -334,7 +334,24 @@
               "title": "LANÇAMENTO",
               "subTitle": "Rapha Preto",
               "description": "ARTISTA E DESIGNER",
-              "backgroundColor": "#8c8c8c",
+              "backgroundColor": "#8a8a8a",
+              "button": {
+                "link": "/",
+                "title": "VER MAIS"
+              }
+            }
+          },
+          "rule": null
+        },
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Content/SectionLaunch.tsx",
+              "title": "LANÇAMENTO",
+              "subTitle": "Rapha Preto",
+              "description": "ARTISTA E DESIGNER",
+              "backgroundColor": "#8a8a8a",
               "button": {
                 "link": "/",
                 "title": "VER MAIS"
