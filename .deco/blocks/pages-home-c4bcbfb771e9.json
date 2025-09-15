@@ -377,7 +377,8 @@
           "target": "_self",
           "link": "https://www.abracasa.com.br/campanha/semana-do-cliente"
         },
-        "hoursToShowPopupAgain": 0
+        "hoursToShowPopupAgain": 0,
+        "disableCookie": true
       }
     },
     {
