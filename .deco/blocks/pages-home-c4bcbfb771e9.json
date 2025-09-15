@@ -383,7 +383,8 @@
                 "description": "...",
                 "link": "/",
                 "target": "_self"
-              }
+              },
+              "disableCookie": false
             }
           },
           "rule": {
