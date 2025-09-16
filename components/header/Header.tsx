@@ -9,6 +9,7 @@ import { useScript } from "@deco/deco/hooks";
 export type TAlert = HTMLWidget;
 import type { Props as CampaignTimerProps } from "$store/components/header/CampaignTimer.tsx";
 import CampaignTimer from "$store/components/header/CampaignTimer.tsx";
+import CampaignPopup from "deco-sites/abracasa/components/header/CampaignPopup.tsx";
 
 export interface MenuItemProps {
   /**
@@ -21,9 +22,9 @@ export interface MenuItemProps {
   name?: string;
   /** URL of the item. */
   url?: string;
-   /** Description of the item. */
+  /** Description of the item. */
   description?: RichText;
-    /**
+  /**
    * @description an second style option to menu (+MAIS example)
    */
   activeStyle?: boolean;
@@ -62,11 +63,28 @@ export interface Props {
     src: ImageWidget;
     alt: string;
   };
+
+  /** @title Show popup */
+  showCampaignPopup?: boolean;
+  campaignPopup?: {
+    popup: {
+      source: ImageWidget;
+      description: string;
+      link: string;
+      target: "_self" | "_blank";
+    };
+  };
 }
-function Header(
-  { campaignTimer, searchbar, navItems, logo, device, isHomePage }:
-    SectionProps<typeof loader>,
-) {
+function Header({
+  campaignTimer,
+  showCampaignPopup,
+  campaignPopup,
+  searchbar,
+  navItems,
+  logo,
+  device,
+  isHomePage,
+}: SectionProps<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
   function handleScroll() {
@@ -79,7 +97,7 @@ function Header(
         header?.classList.remove(
           "text-white",
           "overlay",
-          "xl:hover:text-gray-dark",
+          "xl:hover:text-gray-dark"
         );
       } else {
         header?.classList.toggle("bg-base-100", scrollY);
@@ -94,6 +112,9 @@ function Header(
   }
   return (
     <>
+      {showCampaignPopup && campaignPopup && (
+        <CampaignPopup {...campaignPopup} />
+      )}
       {campaignTimer && <CampaignTimer {...campaignTimer} />}
       <header class={!isHomePage ? "h-24 xl:h-[126px]" : ""}>
         <Drawers menu={{ items }} platform={platform}>

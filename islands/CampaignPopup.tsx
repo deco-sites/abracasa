@@ -1,1 +1,1 @@
-export { default } from "../sections/Miscellaneous/CampaignPopup.tsx";
+export { default } from "../components/header/CampaignPopup.tsx";

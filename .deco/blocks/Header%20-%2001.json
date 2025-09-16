@@ -595,5 +595,14 @@
       "name": "+MAIS",
       "activeStyle": true
     }
-  ]
+  ],
+  "campaignPopup": {
+    "popup": {
+      "target": "_self",
+      "source": "https://assets.decocache.com/abracasa/74605b7f-0a1d-4b7c-8902-dcf63e898f7e/popup_semana_cliente.gif",
+      "description": "semana-do-cliente",
+      "link": "https://www.abracasa.com.br/campanha/semana-do-cliente"
+    }
+  },
+  "showCampaignPopup": true
 }
