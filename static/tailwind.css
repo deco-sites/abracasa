@@ -4359,6 +4359,9 @@ details.collapse summary::-webkit-details-marker {
 .mb-\[101px\] {
   margin-bottom: 101px;
 }
+.mb-\[104px\] {
+  margin-bottom: 104px;
+}
 .mb-\[130px\] {
   margin-bottom: 130px;
 }
@@ -10053,6 +10056,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pr-8 {
     padding-right: 2rem;
+  }
+
+  .lg\:pr-\[20px\] {
+    padding-right: 20px;
   }
 
   .lg\:pt-0 {
