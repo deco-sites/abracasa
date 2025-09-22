@@ -324,45 +324,32 @@
       "changeSpacing": true
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Content/SectionLaunch.tsx",
-              "title": "LANÇAMENTO",
-              "subTitle": "Rapha Preto",
-              "description": "ARTISTA E DESIGNER",
-              "backgroundColor": "#8a8a8a",
-              "button": {
-                "link": "/",
-                "title": "VER MAIS"
-              }
-            }
-          },
-          "rule": null
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/BannerGrid.tsx",
+        "itemsPerLine": {
+          "mobile": 1,
+          "desktop": 1
         },
-        {
-          "value": {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Content/SectionLaunch.tsx",
-              "title": "LANÇAMENTO",
-              "subTitle": "Rapha Preto",
-              "description": "ARTISTA E DESIGNER",
-              "backgroundColor": "#8a8a8a",
-              "button": {
-                "link": "/",
-                "title": "VER MAIS"
-              }
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/never.ts"
+        "borderRadius": {
+          "mobile": "none",
+          "desktop": "none"
+        },
+        "banners": [
+          {
+            "srcMobile": "https://assets.decocache.com/abracasa/326a667f-2eb5-46fe-b7c2-753630e75eb2/9b6cc802-15d6-4fc5-80eb-f38cb8a0434f.jpeg",
+            "srcDesktop": "https://assets.decocache.com/abracasa/285c4575-46fd-4578-9cd0-2f267aecb4e0/90ae4a20-4993-4941-a28a-3e75873484d1.jpeg",
+            "alt": "Poltrona e Puff May Tricô - Castor",
+            "href": "/poltrona-e-puff-may-trico---castor/p?skuId=2012440",
+            "heightDesktop": 399,
+            "widthDesktop": 1300,
+            "widthMobile": 327,
+            "heightMobile": 443,
+            "literalWidth": true
           }
-        }
-      ]
+        ],
+        "fullWidth": false
+      }
     },
     {
       "__resolveType": "site/sections/Content/HighlightsBanners.tsx",
