@@ -11,19 +11,21 @@ import type { ProductListingPage } from "apps/commerce/types.ts";
 import { useEffect } from "preact/hooks";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-export type Props = Pick<
-  ProductListingPage,
-  "filters" | "breadcrumb" | "sortOptions"
-> & {
-  sortParam?: "legacy" | "intelligent";
-  displayFilter?: boolean;
-  isCategoriesFilterActive?: boolean;
-  hiddenFilters?: string[];
-  /**
-   * @ignore
-   */
-  dataTreePathJoined?: string;
-};
+export type Props =
+  & Pick<
+    ProductListingPage,
+    "filters" | "breadcrumb" | "sortOptions"
+  >
+  & {
+    sortParam?: "legacy" | "intelligent";
+    displayFilter?: boolean;
+    isCategoriesFilterActive?: boolean;
+    hiddenFilters?: string[];
+    /**
+     * @ignore
+     */
+    dataTreePathJoined?: string;
+  };
 
 export function AtelieCasaToggle() {
   const enabled = useSignal(false);
@@ -36,7 +38,10 @@ export function AtelieCasaToggle() {
     };
   };
 
-  const updateUrlParams = (ativaProntaEntrega: boolean, atelieAtivo: boolean) => {
+  const updateUrlParams = (
+    ativaProntaEntrega: boolean,
+    atelieAtivo: boolean,
+  ) => {
     const urlSearchParams = new URLSearchParams(window.location.search);
 
     urlSearchParams.delete("add");
@@ -77,12 +82,14 @@ export function AtelieCasaToggle() {
       <button
         onClick={handleClick}
         aria-label="Toggle Ateliê Casa"
-        class={`w-[38px] h-5 flex items-center rounded-full transition-all duration-300 ${enabled.value ? "bg-[#4E4D4D] p-1" : "bg-[#B4B4B4] p-0.5"
-          }`}
+        class={`w-[38px] h-5 flex items-center rounded-full transition-all duration-300 ${
+          enabled.value ? "bg-[#4E4D4D] p-1" : "bg-[#B4B4B4] p-0.5"
+        }`}
       >
         <div
-          class={`h-4 w-4 bg-white rounded-full shadow-md transform transition-all duration-300 ${enabled.value ? "translate-x-4" : "translate-x-0"
-            }`}
+          class={`h-4 w-4 bg-white rounded-full shadow-md transform transition-all duration-300 ${
+            enabled.value ? "translate-x-4" : "translate-x-0"
+          }`}
         />
       </button>
     </div>
@@ -96,7 +103,7 @@ export default function SearchControls({
   sortOptions,
   isCategoriesFilterActive,
   hiddenFilters = [],
-  dataTreePathJoined,
+  // dataTreePathJoined,
 }: Props) {
   const open = useSignal(false);
   const currentUrl = useSignal("");
@@ -149,11 +156,9 @@ export default function SearchControls({
             <div class="flex flex-row items-center gap-[11px] w-full">
               <Button
                 hasBtnClass={false}
-                class={
-                  displayFilter
-                    ? "flex items-center justify-between text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
-                    : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
-                }
+                class={displayFilter
+                  ? "flex items-center justify-between text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
+                  : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"}
                 onClick={() => {
                   open.value = true;
                 }}
@@ -176,7 +181,8 @@ export default function SearchControls({
               )}
             </div>
 
-            <div class="flex flex-row sm:flex-row gap-[11px] w-full">
+            {
+              /* <div class="flex flex-row sm:flex-row gap-[11px] w-full">
               {dataTreePathJoined === null ? (
                 ""
               ) : (
@@ -185,7 +191,8 @@ export default function SearchControls({
                   <AtelieCasaToggle />
                 </>
               )}
-            </div>
+            </div> */
+            }
           </div>
 
           <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-12 mt-[86px] w-full">
@@ -210,17 +217,18 @@ export default function SearchControls({
 
                   return paramCount > 0;
                 })() && (
-                  <button
-                    aria-label="limpar filtros"
-                    onClick={removeSort}
-                    class="text-[14px] lg:text-[13px] leading-[22px] text-[#494949] font-normal"
-                  >
-                    Limpar filtros
-                  </button>
-                )}
+                <button
+                  aria-label="limpar filtros"
+                  onClick={removeSort}
+                  class="text-[14px] lg:text-[13px] leading-[22px] text-[#494949] font-normal"
+                >
+                  Limpar filtros
+                </button>
+              )}
             </div>
 
-            <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[486px]">
+            {
+              /* <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[486px]">
               {dataTreePathJoined === null ? (
                 ""
               ) : (
@@ -232,7 +240,8 @@ export default function SearchControls({
               {sortOptions.length > 0 && (
                 <Sort sortParam={sortParam} sortOptions={sortOptions} />
               )}
-            </div>
+            </div> */
+            }
           </div>
         </div>
       </div>
