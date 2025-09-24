@@ -3,18 +3,10 @@
   "path": "/moveis/guarda-roupas",
   "sections": [
     {
-      "jsonLD": {
-        "sort": "OrderByPriceDESC",
-        "count": 12,
-        "filters": "dynamic",
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
       "banners": [
         {
           "image": {
@@ -24,10 +16,10 @@
           },
           "matcher": "/*"
         }
-      ],
-      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+      ]
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "sort": "OrderByTopSaleDESC",
         "count": 48,
@@ -86,20 +78,30 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "hiddenFilters": [
         "departamentos",
         "marcas"
       ]
     },
     {
+      "__resolveType": "site/sections/Content/SectionText.tsx",
       "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Guarda-Roupa</span></p>",
-      "description": "<h2 class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Organização eficiente</span></h2><p>O guarda-roupa proporciona espaço dedicado para armazenar suas roupas, sapatos e acessórios de forma organizada. Com compartimentos, gavetas, prateleiras e cabideiros, você pode separar e categorizar suas peças de acordo com suas necessidades, facilitando encontrar o que você procura.</p><h2 class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Proteção das roupas</span></h2><p>Um guarda-roupa adequado ajuda a proteger suas roupas contra danos, como poeira, luz solar direta, umidade e possíveis amassados. Isso é especialmente importante para peças delicadas, como vestidos, ternos e itens de tecidos sensíveis. O guarda-roupa fornece um espaço seguro para armazenar suas roupas e prolongar sua vida útil.</p><h2 class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Acesso rápido e fácil</span></h2><p>Com um guarda-roupa, você pode organizar suas roupas de forma que fiquem visíveis e acessíveis. Isso facilita a localização de peças específicas, economizando tempo na hora de se vestir e evitando a bagunça desnecessária de outras áreas do quarto.</p><h2 class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Otimização do espaço</span></h2><p>Um guarda-roupa bem projetado maximiza o espaço disponível no seu quarto. Ele pode incluir prateleiras altas para itens dobrados, gavetas para roupas íntimas e acessórios, cabideiros para pendurar vestidos e casacos, além de espaço para sapatos e outros pertences. Isso ajuda a manter seu quarto organizado e livre de bagunça.</p>",
-      "__resolveType": "site/sections/Content/SectionText.tsx"
+      "description": "<h2 class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Organização eficiente</span></h2><p>O guarda-roupa proporciona espaço dedicado para armazenar suas roupas, sapatos e acessórios de forma organizada. Com compartimentos, gavetas, prateleiras e cabideiros, você pode separar e categorizar suas peças de acordo com suas necessidades, facilitando encontrar o que você procura.</p><h2 class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Proteção das roupas</span></h2><p>Um guarda-roupa adequado ajuda a proteger suas roupas contra danos, como poeira, luz solar direta, umidade e possíveis amassados. Isso é especialmente importante para peças delicadas, como vestidos, ternos e itens de tecidos sensíveis. O guarda-roupa fornece um espaço seguro para armazenar suas roupas e prolongar sua vida útil.</p><h2 class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Acesso rápido e fácil</span></h2><p>Com um guarda-roupa, você pode organizar suas roupas de forma que fiquem visíveis e acessíveis. Isso facilita a localização de peças específicas, economizando tempo na hora de se vestir e evitando a bagunça desnecessária de outras áreas do quarto.</p><h2 class=\"title-section\"><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Otimização do espaço</span></h2><p>Um guarda-roupa bem projetado maximiza o espaço disponível no seu quarto. Ele pode incluir prateleiras altas para itens dobrados, gavetas para roupas íntimas e acessórios, cabideiros para pendurar vestidos e casacos, além de espaço para sapatos e outros pertences. Isso ajuda a manter seu quarto organizado e livre de bagunça.</p>"
     },
     {
       "__resolveType": "Footer - 01"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
+    "jsonLD": {
+      "sort": "OrderByTopSaleDESC",
+      "count": 12,
+      "filters": "dynamic",
+      "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+    },
+    "title": "Guarda-Roupa | Abra Casa",
+    "description": "Guarda-roupas com estilo, qualidade e funcionalidade. Modelos exclusivos da Abra Casa pensados para otimizar o espaço com sofisticação."
+  }
 }
