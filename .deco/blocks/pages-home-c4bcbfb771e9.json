@@ -23,20 +23,6 @@
           "alt": "Fernanda Sampaio"
         },
         {
-          "alt": "Mês do Design",
-          "href": "https://www.abracasa.com.br/mes-do-design",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/e541b94c-637e-4f23-a35c-4d1047133ff2/casa_banner_mobile_semana_design_767x942.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/6b036b30-70da-41c6-9f97-e81298b25953/casa_banner_desktop_semana_design_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
           "alt": "Sofá Millow",
           "href": "https://www.abracasa.com.br/campanha/sofa-millow",
           "mobile": {
