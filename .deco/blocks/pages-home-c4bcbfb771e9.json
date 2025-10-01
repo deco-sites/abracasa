@@ -24,6 +24,20 @@
         },
         {
           "alt": "Sofá Millow",
+          "href": "https://www.abracasa.com.br/campanha/toques-essesnciais",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/54ac6ea0-da79-4e5a-927b-7b050e272108/casa_banner_mobile_toques_767x942_02.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/741ab61d-d46d-4eed-a45a-3fe5adeac7c8/casa_banner_desktop_toques_1920x713_02.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Sofá Millow",
           "href": "https://www.abracasa.com.br/campanha/sofa-millow",
           "mobile": {
             "image": "https://assets.decocache.com/abracasa/613e23f8-fcb2-43ae-b429-4acda81c1783/casa_banner_mobile_malba_767x942_02-(2).jpg",
