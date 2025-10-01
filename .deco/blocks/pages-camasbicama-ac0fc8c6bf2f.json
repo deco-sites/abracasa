@@ -18,9 +18,9 @@
       "banners": [
         {
           "image": {
-            "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184440/banner_categorias_cama_23.jpg?v=638191441147300000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184440/banner_categorias_cama_23.jpg?v=638191441147300000"
+            "alt": "banner-categoria-bicamas-abra-casa",
+            "mobile": "https://assets.decocache.com/abracasa/fff66441-fc77-42ed-a510-1a02b5e96208/bicamas_mobile.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/e0102905-508f-49f0-b7ec-9cc30cd416ea/bicamas_desk.jpg"
           },
           "matcher": "/*"
         }
