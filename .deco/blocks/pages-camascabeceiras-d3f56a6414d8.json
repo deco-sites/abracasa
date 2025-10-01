@@ -18,9 +18,9 @@
       "banners": [
         {
           "image": {
-            "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184440/banner_categorias_cama_23.jpg?v=638191441147300000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184440/banner_categorias_cama_23.jpg?v=638191441147300000"
+            "alt": "banner-categoria-camas-solteiro-abra-casa",
+            "mobile": "https://assets.decocache.com/abracasa/dac14e69-be5c-40c4-8299-57608f03257b/cama-solteiro_mobile.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/a7d708a1-224f-4f71-ae1c-c7633fa03f4a/cama-solteiro_desk.jpg"
           },
           "matcher": "/*"
         }
