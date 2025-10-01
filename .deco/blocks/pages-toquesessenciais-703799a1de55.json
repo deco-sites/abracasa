@@ -10,8 +10,9 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/f794dcd7-b15a-4cba-bfde-df5d801242b1/casa_toques_essenciais_banner_especial_mobile_800x400.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/cf708afe-5499-4a2c-ba63-6faa177d1943/casa_toques_essenciais_banner_especial_desktop_1800x220.png"
+            "mobile": "https://assets.decocache.com/abracasa/fb3d08a8-7ec5-46b2-aace-e1d2dc25b7a0/casa_banner_especial_mobile_toques_800x400.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/11e59c26-5f01-4017-a4e2-e855a1153737/casa_banner_especial_desktop_toques_1800x220.jpg",
+            "alt": "abra-casa-campanha-toques-essenciais"
           },
           "matcher": "/*"
         }
