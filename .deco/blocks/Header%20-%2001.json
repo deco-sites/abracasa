@@ -469,7 +469,7 @@
     {
       "children": [
         {
-          "url": " /nossos-designers",
+          "url": "/nossos-designers",
           "name": "Ver todos os designers",
           "@type": "SiteNavigationElement",
           "image": [],
