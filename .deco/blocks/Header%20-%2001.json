@@ -158,13 +158,6 @@
               "@type": "SiteNavigationElement",
               "image": [],
               "children": []
-            },
-            {
-              "url": "/moveis/camas/cabeceiras",
-              "name": "Cabeceiras",
-              "@type": "SiteNavigationElement",
-              "image": [],
-              "children": []
             }
           ]
         },
