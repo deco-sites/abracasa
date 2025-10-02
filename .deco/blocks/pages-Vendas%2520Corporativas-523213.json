@@ -185,7 +185,7 @@
         "__resolveType": "site/sections/Content/SectionText.tsx",
         "changeFontFamily": false,
         "title": "<p style=\"text-align: center\"><span style=\"color: #212121; font-size: 15pt\">Entre em contato e descubra como podemos transformar o seu espaço.</span><span style=\"font-size: 15pt\">&nbsp;</span></p>",
-        "description": "<p style=\"text-align: center\"><span style=\"color: #212121\">+55 21 97420-6504&nbsp;</span></p>",
+        "description": "<p style=\"text-align: center\">+55 21 97105-3288</p>",
         "changeFontWeight": true,
         "link": "/"
       }
