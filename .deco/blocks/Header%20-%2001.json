@@ -389,16 +389,16 @@
           "children": []
         },
         {
-          "url": "/decoracao/vasos-e-cachepots",
-          "name": "Vasos e Cachepots",
-          "@type": "SiteNavigationElement",
-          "image": [],
+          "url": "https://www.abracasa.com.br/decoracao/puff",
+          "name": "Puffs",
           "children": []
         },
         {
           "children": [],
-          "url": "https://www.abracasa.com.br/decoracao/puff",
-          "name": "Puffs"
+          "url": "/decoracao/vasos-e-cachepots",
+          "name": "Vasos e Cachepots",
+          "@type": "SiteNavigationElement",
+          "image": []
         }
       ],
       "image": [
