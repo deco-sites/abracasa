@@ -12,7 +12,7 @@ import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import { AppContext } from "$store/apps/site.ts";
 import { AppContext as AppContextVTEX } from "apps/vtex/mod.ts";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
-import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
+// import { fetchSafe } from "apps/vtex/utils/fetchVTEX.ts";
 // import { hidden } from "std/fmt/colors.ts";
 
 export interface Layout {
@@ -61,7 +61,7 @@ function Result({
   startingPage = 0,
   isCategoriesFilterActive = false,
   hiddenFilters = [],
-  dataTreePathJoined,
+  // dataTreePathJoined,
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo.recordPerPage || products.length;
@@ -81,7 +81,7 @@ function Result({
         <SearchControls
           sortParam={sortParam}
           sortOptions={sortOptions}
-          dataTreePathJoined={dataTreePathJoined}
+          // dataTreePathJoined={dataTreePathJoined}
           filters={filters}
           breadcrumb={breadcrumb}
           displayFilter={layout?.variant === "drawer"}
@@ -144,9 +144,9 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
   const url = new URL(req.url);
   const layoutValue = url.searchParams.get("layout");
-  const currentPathName = url.pathname;
-  let filteredProduct = props.page?.products || [];
-  let categoryId: string | null = null;
+  // const currentPathName = url.pathname;
+  // let filteredProduct = props.page?.products || [];
+  // let categoryId: string | null = null;
 
   const updatedLayout = {
     mobile: Number(layoutValue) || props?.layout?.columns?.mobile || 1,
@@ -199,123 +199,123 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
 
   const filteredProducts = updatedProducts;
 
-  const fetchPageId = async () => {
-    try {
-      const response = await fetch(
-        `https://abracasa.vtexcommercestable.com.br/api/catalog_system/pub/portal/pagetype${currentPathName}`
-      );
-      return await response.json();
-    } catch (error) {
-      console.error(`Error`, error);
-      return null;
-    }
-  };
+  // const fetchPageId = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       `https://abracasa.vtexcommercestable.com.br/api/catalog_system/pub/portal/pagetype${currentPathName}`
+  //     );
+  //     return await response.json();
+  //   } catch (error) {
+  //     console.error(`Error`, error);
+  //     return null;
+  //   }
+  // };
 
-  const getCategoryId = await fetchPageId();
-  categoryId = getCategoryId.id;
+  // const getCategoryId = await fetchPageId();
+  // categoryId = getCategoryId.id;
 
-  const getPageType = getCategoryId.pageType;
+  // const getPageType = getCategoryId.pageType;
 
-  const VTEXAPIAPPKEY = ctx.appKey?.get?.();
-  const VTEXAPIAPPTOKEN = ctx.appToken?.get?.();
+  // const VTEXAPIAPPKEY = ctx.appKey?.get?.();
+  // const VTEXAPIAPPTOKEN = ctx.appToken?.get?.();
 
-  let dataTreePathJoined = null;
+  // let dataTreePathJoined = null;
 
-  if (
-    VTEXAPIAPPKEY != null &&
-    VTEXAPIAPPTOKEN != null &&
-    categoryId &&
-    getPageType !== "Collection"
-  ) {
-    const data = await fetchSafe(
-      `https://abracasa.vtexcommercestable.com.br/api/catalog/pvt/category/${categoryId}?includeTreePath=true`,
-      {
-        headers: {
-          "X-VTEX-API-AppKey": VTEXAPIAPPKEY,
-          "X-VTEX-API-AppToken": VTEXAPIAPPTOKEN,
-        },
-      }
-    ).then((data) => data.json());
-    if (data) {
-      dataTreePathJoined = data.TreePathIds.join("/");
-    }
-  }
+  // if (
+  //   VTEXAPIAPPKEY != null &&
+  //   VTEXAPIAPPTOKEN != null &&
+  //   categoryId &&
+  //   getPageType !== "Collection"
+  // ) {
+  //   const data = await fetchSafe(
+  //     `https://abracasa.vtexcommercestable.com.br/api/catalog/pvt/category/${categoryId}?includeTreePath=true`,
+  //     {
+  //       headers: {
+  //         "X-VTEX-API-AppKey": VTEXAPIAPPKEY,
+  //         "X-VTEX-API-AppToken": VTEXAPIAPPTOKEN,
+  //       },
+  //     }
+  //   ).then((data) => data.json());
+  //   if (data) {
+  //     dataTreePathJoined = data.TreePathIds.join("/");
+  //   }
+  // }
 
-  const fetchAtelieProducts = async (
-    ctxVtex: AppContextVTEX,
-    categoryPath: string | null,
-    clusterId: string
-  ) => {
-    try {
-      return await ctxVtex.invoke.vtex.loaders.legacy.productListingPage({
-        fq: `C:${categoryPath},productClusterIds:${clusterId}`,
-      });
-    } catch (error) {
-      console.error("Error fetching atelie products:", error);
-      return { products: [] };
-    }
-  };
+  // const fetchAtelieProducts = async (
+  //   ctxVtex: AppContextVTEX,
+  //   categoryPath: string | null,
+  //   clusterId: string
+  // ) => {
+  //   try {
+  //     return await ctxVtex.invoke.vtex.loaders.legacy.productListingPage({
+  //       fq: `C:${categoryPath},productClusterIds:${clusterId}`,
+  //     });
+  //   } catch (error) {
+  //     console.error("Error fetching atelie products:", error);
+  //     return { products: [] };
+  //   }
+  // };
 
-  const filterByAdditionalProperty = (
-    products: Product[],
-    value: string
-  ): Product[] => {
-    return (
-      products.filter((product) =>
-        product.additionalProperty?.some((property) =>
-          property.value?.includes(value)
-        )
-      ) || []
-    );
-  };
+  // const filterByAdditionalProperty = (
+  //   products: Product[],
+  //   value: string
+  // ): Product[] => {
+  //   return (
+  //     products.filter((product) =>
+  //       product.additionalProperty?.some((property) =>
+  //         property.value?.includes(value)
+  //       )
+  //     ) || []
+  //   );
+  // };
 
-  if (url.searchParams.has("map")) {
-    if (url.searchParams.has("add")) {
-      filteredProduct = filterByAdditionalProperty(
-        filteredProduct,
-        "Pronta Entrega"
-      );
-    }
-    if (url.searchParams.has("addAtelie")) {
-      filteredProduct = filterByAdditionalProperty(
-        filteredProduct,
-        "Atelie Casa"
-      );
-    }
-    if (url.searchParams.has("addAtelieEntrega")) {
-      filteredProduct = filterByAdditionalProperty(
-        filteredProduct,
-        "Ateliê + Pronta entrega"
-      );
-    }
-  } else if (url.searchParams.has("add")) {
-    const getAtelieProducts = await fetchAtelieProducts(
-      ctxVtex,
-      dataTreePathJoined,
-      "401"
-    );
-    return { ...props, page: getAtelieProducts, dataTreePathJoined };
-  } else if (url.searchParams.has("addAtelie")) {
-    const getAtelieProducts = await fetchAtelieProducts(
-      ctxVtex,
-      dataTreePathJoined,
-      "450"
-    );
-    return { ...props, page: getAtelieProducts, dataTreePathJoined };
-  } else if (url.searchParams.has("addAtelieEntrega")) {
-    const getAtelieProducts = await fetchAtelieProducts(
-      ctxVtex,
-      dataTreePathJoined,
-      "558"
-    );
-    return { ...props, page: getAtelieProducts, dataTreePathJoined };
-  }
+  // if (url.searchParams.has("map")) {
+  //   if (url.searchParams.has("add")) {
+  //     filteredProduct = filterByAdditionalProperty(
+  //       filteredProduct,
+  //       "Pronta Entrega"
+  //     );
+  //   }
+  //   if (url.searchParams.has("addAtelie")) {
+  //     filteredProduct = filterByAdditionalProperty(
+  //       filteredProduct,
+  //       "Atelie Casa"
+  //     );
+  //   }
+  //   if (url.searchParams.has("addAtelieEntrega")) {
+  //     filteredProduct = filterByAdditionalProperty(
+  //       filteredProduct,
+  //       "Ateliê + Pronta entrega"
+  //     );
+  //   }
+  // } else if (url.searchParams.has("add")) {
+  //   const getAtelieProducts = await fetchAtelieProducts(
+  //     ctxVtex,
+  //     // dataTreePathJoined,
+  //     "401"
+  //   );
+  //   // return { ...props, page: getAtelieProducts, dataTreePathJoined };
+  // } else if (url.searchParams.has("addAtelie")) {
+  //   const getAtelieProducts = await fetchAtelieProducts(
+  //     ctxVtex,
+  //     // dataTreePathJoined,
+  //     "450"
+  //   );
+  //   // return { ...props, page: getAtelieProducts, dataTreePathJoined };
+  // } else if (url.searchParams.has("addAtelieEntrega")) {
+  //   const getAtelieProducts = await fetchAtelieProducts(
+  //     ctxVtex,
+  //     // dataTreePathJoined,
+  //     "558"
+  //   );
+  //   // return { ...props, page: getAtelieProducts, dataTreePathJoined };
+  // }
 
   return {
     ...props,
     page: { ...props.page, products: filteredProducts },
     layout: { ...props.layout, columns: updatedLayout },
-    dataTreePathJoined,
+    // dataTreePathJoined,
   };
 };
 

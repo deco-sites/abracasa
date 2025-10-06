@@ -52,7 +52,7 @@ function Sort(
 
   const filteredSortOptions = sortOptions.filter(
     ({ label }) =>
-      label !== "name:desc" && label !== "name:asc" && label !== "" && label !== "relevance:desc",
+      label !== "name:desc" && label !== "name:asc" && label !== "",
   );
 
   if (isMobile) {

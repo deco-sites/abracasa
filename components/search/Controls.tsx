@@ -11,19 +11,21 @@ import type { ProductListingPage } from "apps/commerce/types.ts";
 import { useEffect } from "preact/hooks";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-export type Props = Pick<
-  ProductListingPage,
-  "filters" | "breadcrumb" | "sortOptions"
-> & {
-  sortParam?: "legacy" | "intelligent";
-  displayFilter?: boolean;
-  isCategoriesFilterActive?: boolean;
-  hiddenFilters?: string[];
-  /**
-   * @ignore
-   */
-  dataTreePathJoined?: string;
-};
+export type Props =
+  & Pick<
+    ProductListingPage,
+    "filters" | "breadcrumb" | "sortOptions"
+  >
+  & {
+    sortParam?: "legacy" | "intelligent";
+    displayFilter?: boolean;
+    isCategoriesFilterActive?: boolean;
+    hiddenFilters?: string[];
+    /**
+     * @ignore
+     */
+    dataTreePathJoined?: string;
+  };
 
 export function AtelieCasaToggle() {
   const enabled = useSignal(false);
@@ -38,7 +40,7 @@ export function AtelieCasaToggle() {
 
   const updateUrlParams = (
     ativaProntaEntrega: boolean,
-    atelieAtivo: boolean
+    atelieAtivo: boolean,
   ) => {
     const urlSearchParams = new URLSearchParams(window.location.search);
 
@@ -101,7 +103,7 @@ export default function SearchControls({
   sortOptions,
   isCategoriesFilterActive,
   hiddenFilters = [],
-  dataTreePathJoined,
+  // dataTreePathJoined,
 }: Props) {
   const open = useSignal(false);
   const currentUrl = useSignal("");
@@ -154,11 +156,9 @@ export default function SearchControls({
             <div class="flex flex-row items-center gap-[11px] w-full">
               <Button
                 hasBtnClass={false}
-                class={
-                  displayFilter
-                    ? "flex items-center justify-between text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
-                    : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
-                }
+                class={displayFilter
+                  ? "flex items-center justify-between text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"
+                  : "sm:hidden flex items-center justify-center text-[#555555] bg-[#f2f2f2] text-[14px] w-full max-w-[169px] py-3 px-[11px]"}
                 onClick={() => {
                   open.value = true;
                 }}
@@ -181,7 +181,8 @@ export default function SearchControls({
               )}
             </div>
 
-            <div class="flex flex-row sm:flex-row gap-[11px] w-full">
+            {
+              /* <div class="flex flex-row sm:flex-row gap-[11px] w-full">
               {dataTreePathJoined === null ? (
                 ""
               ) : (
@@ -190,7 +191,8 @@ export default function SearchControls({
                   <AtelieCasaToggle />
                 </>
               )}
-            </div>
+            </div> */
+            }
           </div>
 
           <div class="hidden lg:flex flex-row items-center justify-between gap-2 mb-12 mt-[86px] w-full">
@@ -215,17 +217,18 @@ export default function SearchControls({
 
                   return paramCount > 0;
                 })() && (
-                  <button
-                    aria-label="limpar filtros"
-                    onClick={removeSort}
-                    class="text-[14px] lg:text-[13px] leading-[22px] text-[#494949] font-normal"
-                  >
-                    Limpar filtros
-                  </button>
-                )}
+                <button
+                  aria-label="limpar filtros"
+                  onClick={removeSort}
+                  class="text-[14px] lg:text-[13px] leading-[22px] text-[#494949] font-normal"
+                >
+                  Limpar filtros
+                </button>
+              )}
             </div>
 
-            <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[486px]">
+            {
+              /* <div class="flex items-center gap-3 lg:ml-2 lg:min-w-[486px]">
               {dataTreePathJoined === null ? (
                 ""
               ) : (
@@ -237,7 +240,8 @@ export default function SearchControls({
               {sortOptions.length > 0 && (
                 <Sort sortParam={sortParam} sortOptions={sortOptions} />
               )}
-            </div>
+            </div> */
+            }
           </div>
         </div>
       </div>
