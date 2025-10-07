@@ -3,17 +3,7 @@
   "path": "/nossos-designers",
   "sections": [
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "Header - 01"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/never.ts"
-          }
-        }
-      ]
+      "__resolveType": "Header - 01"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
