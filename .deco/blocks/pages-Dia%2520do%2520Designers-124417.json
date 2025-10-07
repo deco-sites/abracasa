@@ -3,30 +3,60 @@
   "path": "/nossos-designers",
   "sections": [
     {
-      "__resolveType": "Header - 01"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "Header - 01"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
-      "__resolveType": "site/sections/Images/SimpleBanner.tsx",
-      "desktopImage": {
-        "src": "https://assets.decocache.com/abracasa/fece824d-6bbc-4f54-b361-8db461b04b80/casa_banner_desktop_semana_design_1920x713.jpg",
-        "alt": "mes-do-design-abra-casa",
-        "height": 713,
-        "width": 1920
-      },
-      "mobileImage": {
-        "src": "https://assets.decocache.com/abracasa/e541b94c-637e-4f23-a35c-4d1047133ff2/casa_banner_mobile_semana_design_767x942.jpg",
-        "alt": "mes-do-design-abra-casa",
-        "height": 1200
-      }
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Images/SimpleBanner.tsx",
+            "desktopImage": {
+              "src": "https://assets.decocache.com/abracasa/fece824d-6bbc-4f54-b361-8db461b04b80/casa_banner_desktop_semana_design_1920x713.jpg",
+              "alt": "mes-do-design-abra-casa",
+              "height": 713,
+              "width": 1920
+            },
+            "mobileImage": {
+              "src": "https://assets.decocache.com/abracasa/e541b94c-637e-4f23-a35c-4d1047133ff2/casa_banner_mobile_semana_design_767x942.jpg",
+              "alt": "mes-do-design-abra-casa",
+              "height": 1200
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
-      "__resolveType": "site/sections/Content/SectionTitle.tsx",
-      "title": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33); font-size: 22pt\">Para os apaixonados pelos traços únicos e formas atemporais</span><span style=\"font-size: 22pt\">&nbsp;</span></p>",
-      "titleMob": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33); font-size: 15pt\">Para os apaixonados pelos traços únicos e formas atemporais</span><span style=\"font-size: 15pt\">&nbsp;</span></p>",
-      "button": {
-        "buttonLink": "#PLP",
-        "buttonText": "VER COLEÇÃO DO MÊS DO DESIGN"
-      }
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Content/SectionTitle.tsx",
+            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33); font-size: 22pt\">Para os apaixonados pelos traços únicos e formas atemporais</span><span style=\"font-size: 22pt\">&nbsp;</span></p>",
+            "titleMob": "<p style=\"text-align: center\"><span style=\"color: rgb(33, 33, 33); font-size: 15pt\">Para os apaixonados pelos traços únicos e formas atemporais</span><span style=\"font-size: 15pt\">&nbsp;</span></p>",
+            "button": {
+              "buttonLink": "#PLP",
+              "buttonText": "VER COLEÇÃO COMPLETA"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Images/HeroBannerGrid.tsx",
