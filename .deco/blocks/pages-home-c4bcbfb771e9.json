@@ -23,6 +23,20 @@
           "alt": "Abra Week"
         },
         {
+          "alt": "Abra Week",
+          "href": "https://www.abracasa.com.br/moveis/sofa",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/6bab7196-ba33-417f-b0f6-982702c2dd51/casa_banner_mobile_sofas_abraweek(1).jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/dd7470e4-931d-4465-b49c-cdba585b3f2a/casa_banner_desk_sofas_abraweek_1920x713-(1).jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Fernanda Sampaio",
           "href": "https://www.abracasa.com.br/fernanda-sampaio",
           "mobile": {
