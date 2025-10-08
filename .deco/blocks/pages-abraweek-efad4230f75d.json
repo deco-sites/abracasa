@@ -10,8 +10,9 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://assets.decocache.com/abracasa/dfbbaa7c-b321-46ba-8a90-afc3a65abbd0/casa_banner_especial_mobile_abraweek_800x400.jpg",
-            "desktop": "https://assets.decocache.com/abracasa/80ef76a2-fe50-403a-88e1-7bd131d3850a/casa_banner_especial_desk_abraweek_1800x220.jpg"
+            "mobile": "https://assets.decocache.com/abracasa/230c6f7f-0efd-404c-b2d0-bacc772ac9b1/casa_banner_especial_mobile_abraweek_800x400(1).jpg",
+            "desktop": "https://assets.decocache.com/abracasa/6216b7c1-3d13-4ff1-af65-d5db34789519/casa_banner_especial_desk_abraweek_1800x220(1).jpg",
+            "alt": "abra-week-abra-casa"
           },
           "matcher": "/*"
         }
