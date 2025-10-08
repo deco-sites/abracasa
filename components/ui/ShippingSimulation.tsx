@@ -1,5 +1,5 @@
 import { Signal, useSignal } from "@preact/signals";
-import { useCallback } from "preact/hooks";
+import { useCallback, useState } from "preact/hooks";
 import Button from "$store/components/ui/Button.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
@@ -17,22 +17,23 @@ const formatShippingEstimate = (estimate: string) => {
   if (type === "h") return `${time} horas`;
 };
 
-function ShippingContent({ simulation }: {
+function ShippingContent({
+  simulation,
+}: {
   simulation: Signal<SimulationOrderForm | null>;
 }) {
   const { cart } = useCart();
 
-  const methods = simulation.value?.logisticsInfo?.reduce(
-    (initial, { slas }) => [...initial, ...slas],
-    [] as Sla[],
-  ) ?? [];
+  const methods =
+    simulation.value?.logisticsInfo?.reduce(
+      (initial, { slas }) => [...initial, ...slas],
+      [] as Sla[]
+    ) ?? [];
 
   const locale = cart.value?.clientPreferencesData.locale || "pt-BR";
   const currencyCode = cart.value?.storePreferencesData.currencyCode || "BRL";
 
-  if (simulation.value == null) {
-    return null;
-  }
+  if (!simulation.value) return null;
 
   if (methods.length === 0) {
     return (
@@ -47,9 +48,9 @@ function ShippingContent({ simulation }: {
       {methods.map((method) => (
         <li class="flex justify-center items-center border-b border-[#d5d5d5] pb-4 px-1">
           <span class="w-[35%]">
-            {method.price === 0 ? "Grátis" : (
-              formatPrice(method.price / 100, currencyCode, locale)
-            )}
+            {method.price === 0
+              ? "Grátis"
+              : formatPrice(method.price / 100, currencyCode, locale)}
           </span>
 
           <span class="text-button w-full">
@@ -67,10 +68,15 @@ function ShippingSimulation({ items }: Props) {
   const loading = useSignal(false);
   const simulateResult = useSignal<SimulationOrderForm | null>(null);
   const { simulate, cart } = useCart();
+  const [cepError, setCepError] = useState("");
 
   const handleSimulation = useCallback(async () => {
-    if (postalCode.value.length !== 8) {
+    if (postalCode.value.replace(/\D/g, "").length !== 8) {
+      setCepError("Digite um CEP válido.");
+      simulateResult.value = null;
       return;
+    } else {
+      setCepError("");
     }
 
     try {
@@ -100,7 +106,7 @@ function ShippingSimulation({ items }: Props) {
       >
         <input
           as="input"
-          type="text"
+          type="number"
           class="w-full text-sm text-black h-[54px] pl-3 placeholder:text-[#D9D9D9] focus:outline-none"
           placeholder="Digite seu cep"
           value={postalCode.value}
@@ -120,6 +126,8 @@ function ShippingSimulation({ items }: Props) {
         </Button>
       </form>
 
+      {cepError && <span class="text-red-500 text-xs mt-1">{cepError}</span>}
+
       <div class="flex flex-col">
         <a
           class="text-xs leading-4 text-dimgray underline"
@@ -131,9 +139,7 @@ function ShippingSimulation({ items }: Props) {
       </div>
 
       <div>
-        <div>
-          <ShippingContent simulation={simulateResult} />
-        </div>
+        <ShippingContent simulation={simulateResult} />
       </div>
     </div>
   );
