@@ -3,5 +3,9 @@
   "count": 48,
   "fuzzy": "automatic",
   "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-  "selectedFacets": []
+  "selectedFacets": [],
+  "advancedConfigs": {
+    "includeOriginalAttributes": []
+  },
+  "simulationBehavior": "default"
 }
