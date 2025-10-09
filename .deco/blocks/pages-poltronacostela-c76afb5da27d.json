@@ -42,7 +42,7 @@
     {
       "page": {
         "fq": "H:300",
-        "sort": "OrderByReleaseDateDESC",
+        "sort": "OrderByTopSaleDESC",
         "count": 48,
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
