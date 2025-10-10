@@ -18,6 +18,7 @@ import Image from "apps/website/components/Image.tsx";
 interface BannerImage {
   image: {
     src: ImageWidget;
+    link: string;
     width?: number;
     height?: number;
     srcMobile: ImageWidget;
@@ -49,7 +50,7 @@ function ProductShelf({
   cardLayout,
   shelfWithBanner = false,
   bannerImage,
-  sliderId
+  sliderId,
 }: Props) {
   const id = useId();
   const AdminSliderId = sliderId ?? "colecao-tal";
@@ -89,27 +90,29 @@ function ProductShelf({
               class="carousel-item lg:hidden lg:w-[292px] mr-6"
             >
               <div class="flex items-center justify-center h-full">
-                <Image
-                  src={bannerImage.image.srcMobile}
-                  alt={bannerImage.image.alt}
-                  width={bannerImage.image.widthMobile ?? 410}
-                  height={bannerImage.image.heightMobile ?? 462}
-                  loading="lazy"
-                  decoding="async"
-                  class="w-full h-full "
-                  style={{
-                    maxWidth: `${
-                      bannerImage.image.widthMobile
-                        ? bannerImage.image.widthMobile
-                        : "410"
-                    }px`,
-                    maxHeight: `${
-                      bannerImage.image.heightMobile
-                        ? bannerImage.image.heightMobile
-                        : "462"
-                    }px`,
-                  }}
-                />
+                <a href={bannerImage.image.link}>
+                  <Image
+                    src={bannerImage.image.srcMobile}
+                    alt={bannerImage.image.alt}
+                    width={bannerImage.image.widthMobile ?? 410}
+                    height={bannerImage.image.heightMobile ?? 462}
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full h-full "
+                    style={{
+                      maxWidth: `${
+                        bannerImage.image.widthMobile
+                          ? bannerImage.image.widthMobile
+                          : "410"
+                      }px`,
+                      maxHeight: `${
+                        bannerImage.image.heightMobile
+                          ? bannerImage.image.heightMobile
+                          : "462"
+                      }px`,
+                    }}
+                  />
+                </a>
               </div>
             </Slider.Item>
           )}

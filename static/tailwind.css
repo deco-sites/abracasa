@@ -4899,6 +4899,9 @@ details.collapse summary::-webkit-details-marker {
 .min-h-\[50px\] {
   min-height: 50px;
 }
+.min-h-\[546px\] {
+  min-height: 546px;
+}
 .min-h-\[55\.41px\] {
   min-height: 55.41px;
 }
@@ -5142,6 +5145,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-w-\[40px\] {
   min-width: 40px;
+}
+.min-w-\[410px\] {
+  min-width: 410px;
 }
 .min-w-\[42px\] {
   min-width: 42px;
