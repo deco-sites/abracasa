@@ -14,6 +14,7 @@ interface Props extends Omit<ProductShelfProps, "products"> {
 interface BannerImage {
   image: {
     src: ImageWidget;
+    link: string;
     width?: number;
     height?: number;
     srcMobile: ImageWidget;
@@ -37,15 +38,17 @@ function ShelfWithBanner({
         {shelfBannerTitle}
       </h1>
       <div class="flex">
-        <Image
-          src={bannerImage.image.src}
-          alt={bannerImage.image.alt}
-          width={bannerImage.image.width ?? 410}
-          height={bannerImage.image.height ?? 462}
-          loading="lazy"
-          decoding="async"
-          class="hidden lg:block mr-4"
-        />
+        <a href={bannerImage.image.link} class="h-full hidden lg:block mr-4">
+          <Image
+            src={bannerImage.image.src}
+            alt={bannerImage.image.alt}
+            width={bannerImage.image.width ?? 410}
+            height={bannerImage.image.height ?? 462}
+            loading="lazy"
+            decoding="async"
+            class="min-h-[546px] min-w-[410px]"
+          />
+        </a>
         <ProductShelf
           products={products}
           description={description}
