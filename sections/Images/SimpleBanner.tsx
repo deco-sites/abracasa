@@ -3,6 +3,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 
 interface Props {
   href?: string;
+  marginBottom?: boolean;
   desktopImage: {
     src: ImageWidget;
     width?: number;
@@ -18,9 +19,9 @@ interface Props {
   };
 }
 
-function SimpleBanner({ desktopImage, mobileImage, href }: Props) {
+function SimpleBanner({ desktopImage, mobileImage, href, marginBottom }: Props) {
   return (
-    <div class="w-full">
+    <div class={`w-full ${marginBottom ? "mb-20" : ""}`}>
       {href ? (
         <a href={href}>
           <Image
