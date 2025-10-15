@@ -494,11 +494,18 @@
           "children": []
         },
         {
-          "url": "/designers/george-nelson",
+          "url": "/campanha/fernanda-sampaio",
           "@type": "SiteNavigationElement",
           "image": [],
           "children": [],
-          "name": "George Nelson"
+          "name": "Fernanda Sampaio"
+        },
+        {
+          "url": "/designers/george-nelson",
+          "name": "George Nelson",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": []
         },
         {
           "url": "/designers/hakim-hazim",
