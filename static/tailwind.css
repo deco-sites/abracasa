@@ -4338,6 +4338,9 @@ details.collapse summary::-webkit-details-marker {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.mb-20 {
+  margin-bottom: 5rem;
+}
 .mb-3 {
   margin-bottom: 0.75rem;
 }

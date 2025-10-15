@@ -6,28 +6,20 @@
       "__resolveType": "Header - 01"
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Images/SimpleBanner.tsx",
-            "desktopImage": {
-              "src": "https://assets.decocache.com/abracasa/fece824d-6bbc-4f54-b361-8db461b04b80/casa_banner_desktop_semana_design_1920x713.jpg",
-              "alt": "mes-do-design-abra-casa",
-              "height": 713,
-              "width": 1920
-            },
-            "mobileImage": {
-              "src": "https://assets.decocache.com/abracasa/e541b94c-637e-4f23-a35c-4d1047133ff2/casa_banner_mobile_semana_design_767x942.jpg",
-              "alt": "mes-do-design-abra-casa",
-              "height": 1200
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/never.ts"
-          }
-        }
-      ]
+      "__resolveType": "site/sections/Images/SimpleBanner.tsx",
+      "desktopImage": {
+        "src": "https://assets.decocache.com/abracasa/f90efa83-61da-40a3-8e0d-104b8eea9b82/casa_banner_desktop_semana_design_sem_assinatura_1920x713.jpg",
+        "alt": "nossos-designers-abra-casa",
+        "height": 713,
+        "width": 1920
+      },
+      "mobileImage": {
+        "src": "https://assets.decocache.com/abracasa/c3662521-a227-4524-b123-2ab5c014f1f1/casa_banner_mobile_semana_design_sem_assinatura_767x942.jpg",
+        "alt": "nossos-designers-abra-casa",
+        "height": 1200
+      },
+      "mBottom": true,
+      "marginBottom": true
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
