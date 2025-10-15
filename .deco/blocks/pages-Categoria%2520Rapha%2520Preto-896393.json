@@ -23,7 +23,7 @@
     },
     {
       "__resolveType": "site/sections/Cashback/HTMLContent.tsx",
-      "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"></p>"
+      "html": "<p><span style=\"color: rgb(119, 120, 122)\"><br><br></span></p><p style=\"text-align: center\"><strong><span style=\"font-size: 14pt\">RAPHA PRETO </span></strong><br><span style=\"color: rgb(119, 120, 122)\"><br></span></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Reconhecido pela criatividade e inovação no mundo da arte e do design. Natural de Santos, São Paulo, sua jornada de autodidata a um nome reconhecido internacionalmente é um testemunho de sua paixão incansável e talento nato. Sua arte, vivida desde sempre em sua vida, reflete um olhar profundo e sensível sobre o mundo. Suas criações, sejam esculturas</span></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">ou mobiliário de luxo, são celebradas no Brasil, Estados Unidos, Canadá e Emirados Árabes, consolidando-o como um artista verdadeiramente global.</span></p>"
     },
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
