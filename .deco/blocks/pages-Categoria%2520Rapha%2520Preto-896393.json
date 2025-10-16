@@ -18,7 +18,16 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Category/CategoryBanner.tsx",
-        "banners": []
+        "banners": [
+          {
+            "image": {
+              "desktop": "https://assets.decocache.com/abracasa/79a7fc14-eb70-4aff-8444-d0f7345fd6e3/casa_banner_especial_desk_bannerdesigner_1800x220.jpg",
+              "mobile": "https://assets.decocache.com/abracasa/a77b890f-47df-4e04-87e6-59eb49ed869a/casa_banner_especial_mobile_bannerdesigners_800x400.jpg",
+              "alt": "designer-rapha-preto"
+            },
+            "matcher": "/*"
+          }
+        ]
       }
     },
     {
