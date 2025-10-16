@@ -38,7 +38,8 @@
       "page": {
         "sort": "OrderByTopSaleDESC",
         "count": 48,
-        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
+        "fq": "H:572"
       },
       "layout": {
         "columns": {
