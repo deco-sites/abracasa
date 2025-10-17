@@ -19,8 +19,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/184802/banner_categorias_quarto-infantil.jpg?v=638207077691400000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/184802/banner_categorias_quarto-infantil.jpg?v=638207077691400000"
+            "mobile": "https://assets.decocache.com/abracasa/8ce1f85c-e5b7-4287-9300-17ab8a207aa0/banners-infantis_mobile.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/ffd0f8a2-8849-45ae-8e37-2c81ea00ee70/banners-moveis-infantis.jpg"
           },
           "matcher": "/*"
         }
