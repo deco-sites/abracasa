@@ -312,6 +312,23 @@
           }
         },
         {
+          "__resolveType": "website/sections/Rendering/Lazy.tsx",
+          "section": {
+            "__resolveType": "site/sections/Images/OurStoresHome.tsx",
+            "link": "/institucional/nossas-lojas",
+            "imagesDesktop": [
+              "https://assets.decocache.com/abracasa/c5d83551-b046-47f0-a5f3-312176e2706c/casa_nossas_lojas.jpg",
+              "https://assets.decocache.com/abracasa/341dc1ce-aeb5-4ed6-8539-0c5e440f8b54/casa_nossas_lojas(2).jpg",
+              "https://assets.decocache.com/abracasa/0710e8d2-67ca-4bc8-8566-37bdf2c2d0c6/casa_nossas_lojas(3).jpg"
+            ],
+            "imagesMobile": [
+              "https://assets.decocache.com/abracasa/c5d83551-b046-47f0-a5f3-312176e2706c/casa_nossas_lojas.jpg",
+              "https://assets.decocache.com/abracasa/341dc1ce-aeb5-4ed6-8539-0c5e440f8b54/casa_nossas_lojas(2).jpg",
+              "https://assets.decocache.com/abracasa/0710e8d2-67ca-4bc8-8566-37bdf2c2d0c6/casa_nossas_lojas(3).jpg"
+            ]
+          }
+        },
+        {
           "__resolveType": "site/sections/Social/InstagramPosts.tsx",
           "title": "Abra Casa no Instagram",
           "layout": {
