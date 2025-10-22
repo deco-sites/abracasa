@@ -9,35 +9,6 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "href": "https://www.abracasa.com.br/campanha/abra-week",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/5ff2d005-b25f-4c44-a55e-221e49eac7d8/casa_banner_mobile_abraweek_48h.jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/85e3683d-b747-41d1-8d8e-cbac38224a6a/casa_banner_desk_abraweek_1920x713_48h.jpg",
-            "width": 1920,
-            "height": 713
-          },
-          "alt": "Abra Week"
-        },
-        {
-          "alt": "Abra Week - Sofp",
-          "href": "https://www.abracasa.com.br/moveis/sofa",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/6bab7196-ba33-417f-b0f6-982702c2dd51/casa_banner_mobile_sofas_abraweek(1).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/4592de37-ea11-4ab0-9590-55b96b792e9e/casa_banner_desk_sofas_abraweek_1920x713.jpg",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Fernanda Sampaio",
           "href": "https://www.abracasa.com.br/fernanda-sampaio",
           "mobile": {
             "image": "https://assets.decocache.com/abracasa/9cfb2cf1-2bd7-40ec-9447-4075fdbc42df/banner-mobile-fernanda-sampaio.gif",
@@ -48,7 +19,8 @@
             "image": "https://assets.decocache.com/abracasa/5bf7e8cb-770f-43de-8ac1-91cc4e0c6e19/banner-desk-fernanda-sampaio.gif.gif",
             "width": 1920,
             "height": 713
-          }
+          },
+          "alt": "Fernanda Sampaio"
         },
         {
           "alt": "Toques Essenciais",
