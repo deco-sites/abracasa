@@ -339,33 +339,6 @@
           "facebookToken": "IGQWRQNjBlMjFHbF8xVGxVNkJGdGdDNThHbGxzTEZAkRENoYzV2MGR0SDRNTUs3SjBadVVtN0FWazZAtWjdUTzQzeVBXcldENXVBaDJhWHpkSGhIaDRLamdCRW04RFZArYkFlUUVrYzBmZATdHWTBDQkpZAdlZAiWDdwWXcZD"
         },
         {
-          "__resolveType": "website/sections/Rendering/Lazy.tsx",
-          "section": {
-            "__resolveType": "site/sections/Social/MeetStores.tsx",
-            "title": "Conheça nossas lojas:",
-            "images": [
-              {
-                "src": "https://data.decoassets.com/abracasa/e94e480b-a715-490a-94df-f5da8d30b0ec/WhatsApp-Image-2024-01-26-at-11.00-1.png",
-                "srcMobile": "https://data.decoassets.com/abracasa/37424979-c46f-4cd4-89f8-bef051084349/WhatsApp-Image-2024-01-26-at-11.00-1.png",
-                "href": "/institucional/nossas-lojas"
-              },
-              {
-                "src": "https://data.decoassets.com/abracasa/d38d48a1-d1cb-4ae5-a417-fbb024b378f8/WhatsApp-Image-2024-01-26-at-11.00-3.png",
-                "srcMobile": "https://data.decoassets.com/abracasa/d38d48a1-d1cb-4ae5-a417-fbb024b378f8/WhatsApp-Image-2024-01-26-at-11.00-3.png",
-                "href": "/institucional/nossas-lojas"
-              },
-              {
-                "src": "https://data.decoassets.com/abracasa/1c374fd7-c31b-465f-90f5-681073ee161b/WhatsApp-Image-2024-01-26-at-11.00-2.png",
-                "srcMobile": "https://data.decoassets.com/abracasa/1c374fd7-c31b-465f-90f5-681073ee161b/WhatsApp-Image-2024-01-26-at-11.00-2.png",
-                "href": "/institucional/nossas-lojas"
-              }
-            ],
-            "cta": {
-              "href": "/institucional/nossas-lojas"
-            }
-          }
-        },
-        {
           "__resolveType": "SectionNewsletter - Abracasa"
         },
         {

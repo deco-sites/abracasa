@@ -23,7 +23,7 @@ export default function OurStores({
 }: Props) {
   return (
     <div class="w-full">
-      <div class="bg-white flex flex-col items-center justify-center py-10 md:py-16">
+      <div class="bg-white flex flex-col items-center justify-center py-10">
         <div class="w-full max-w-[85%] mx-auto">
           <div class="hidden lg:flex flex-row justify-center gap-[75px] xl:gap-[123px]">
             <div class="flex flex-col gap-12 max-w-[278px] justify-center">
