@@ -4641,6 +4641,9 @@ details.collapse summary::-webkit-details-marker {
 .h-6 {
   height: 1.5rem;
 }
+.h-64 {
+  height: 16rem;
+}
 .h-7 {
   height: 1.75rem;
 }
@@ -4683,11 +4686,17 @@ details.collapse summary::-webkit-details-marker {
 .h-\[210px\] {
   height: 210px;
 }
+.h-\[247px\] {
+  height: 247px;
+}
 .h-\[280px\] {
   height: 280px;
 }
 .h-\[30px\] {
   height: 30px;
+}
+.h-\[338px\] {
+  height: 338px;
 }
 .h-\[34px\] {
   height: 34px;
@@ -4724,6 +4733,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[545px\] {
   height: 545px;
+}
+.h-\[546px\] {
+  height: 546px;
 }
 .h-\[54px\] {
   height: 54px;
@@ -4779,6 +4791,9 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[215px\] {
   max-height: 215px;
 }
+.max-h-\[247px\] {
+  max-height: 247px;
+}
 .max-h-\[250px\] {
   max-height: 250px;
 }
@@ -4814,6 +4829,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-h-\[525px\] {
   max-height: 525px;
+}
+.max-h-\[546px\] {
+  max-height: 546px;
 }
 .max-h-\[555px\] {
   max-height: 555px;
@@ -4853,6 +4871,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-h-\[140px\] {
   min-height: 140px;
+}
+.min-h-\[152px\] {
+  min-height: 152px;
 }
 .min-h-\[157px\] {
   min-height: 157px;
@@ -4910,6 +4931,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-h-\[56\.15px\] {
   min-height: 56.15px;
+}
+.min-h-\[87px\] {
+  min-height: 87px;
 }
 .min-h-\[90px\] {
   min-height: 90px;
@@ -4996,6 +5020,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[170px\] {
   width: 170px;
+}
+.w-\[202px\] {
+  width: 202px;
 }
 .w-\[252px\] {
   width: 252px;
@@ -5137,6 +5164,9 @@ details.collapse summary::-webkit-details-marker {
 .min-w-\[190px\] {
   min-width: 190px;
 }
+.min-w-\[229px\] {
+  min-width: 229px;
+}
 .min-w-\[250px\] {
   min-width: 250px;
 }
@@ -5209,6 +5239,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[1300px\] {
   max-width: 1300px;
 }
+.max-w-\[131px\] {
+  max-width: 131px;
+}
 .max-w-\[1350px\] {
   max-width: 1350px;
 }
@@ -5233,11 +5266,26 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[180px\] {
   max-width: 180px;
 }
+.max-w-\[202px\] {
+  max-width: 202px;
+}
 .max-w-\[220px\] {
   max-width: 220px;
 }
+.max-w-\[244px\] {
+  max-width: 244px;
+}
 .max-w-\[276px\] {
   max-width: 276px;
+}
+.max-w-\[278px\] {
+  max-width: 278px;
+}
+.max-w-\[280px\] {
+  max-width: 280px;
+}
+.max-w-\[289px\] {
+  max-width: 289px;
 }
 .max-w-\[2px\] {
   max-width: 2px;
@@ -5296,6 +5344,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[447px\] {
   max-width: 447px;
 }
+.max-w-\[449px\] {
+  max-width: 449px;
+}
 .max-w-\[46px\] {
   max-width: 46px;
 }
@@ -5335,6 +5386,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[80px\] {
   max-width: 80px;
 }
+.max-w-\[85\%\] {
+  max-width: 85%;
+}
 .max-w-\[850px\] {
   max-width: 850px;
 }
@@ -5358,6 +5412,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-full {
   max-width: 100%;
+}
+.max-w-md {
+  max-width: 28rem;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -5719,6 +5776,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-\[12px\] {
   gap: 12px;
 }
+.gap-\[15px\] {
+  gap: 15px;
+}
 .gap-\[16px\] {
   gap: 16px;
 }
@@ -5758,6 +5818,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-\[58px\] {
   gap: 58px;
 }
+.gap-\[5px\] {
+  gap: 5px;
+}
 .gap-\[68px\] {
   gap: 68px;
 }
@@ -5766,6 +5829,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[6px\] {
   gap: 6px;
+}
+.gap-\[75px\] {
+  gap: 75px;
 }
 .gap-\[76px\] {
   gap: 76px;
@@ -6936,6 +7002,9 @@ details.collapse summary::-webkit-details-marker {
 .leading-8 {
   line-height: 2rem;
 }
+.leading-9 {
+  line-height: 2.25rem;
+}
 .leading-\[1\.125rem\] {
   line-height: 1.125rem;
 }
@@ -7906,6 +7975,11 @@ details.collapse summary::-webkit-details-marker {
 .hover\:bg-\[\#2c2c2c\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(44 44 44 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#585858\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 88 88 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#6e6e6e\]:hover {
@@ -9531,6 +9605,10 @@ details.collapse summary::-webkit-details-marker {
     height: 5rem;
   }
 
+  .lg\:h-80 {
+    height: 20rem;
+  }
+
   .lg\:h-\[100px\] {
     height: 100px;
   }
@@ -10390,6 +10468,10 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:gap-\[123px\] {
+    gap: 123px;
   }
 
   .xl\:border-none {

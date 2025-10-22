@@ -82,22 +82,26 @@ const formatPhone = (raw: string) => {
   return `(${ddd}) ${part1}-${part2}`;
 };
 
-export default function OurStores(
-  { cities }: Props,
-) {
+export default function OurStores({ cities }: Props) {
   const [selectedState, setSelectedState] = useState<BrazilianStates>("RJ");
 
   const selectedCity = cities.find((city) => city.state === selectedState);
 
   return (
     <div
-      class={"w-full flex items-center justify-center my-10 lg:my-16 min-h-max lg:h-[574px]"}
+      class={
+        "w-full flex items-center justify-center my-10 lg:my-16 min-h-max lg:h-[574px]"
+      }
     >
       <div
-        class={"max-w-[95%] lg:max-w-7xl h-full lg:px-8 w-full flex gap-10 lg:flex-row flex-col"}
+        class={
+          "max-w-[95%] lg:max-w-7xl h-full lg:px-8 w-full flex gap-10 lg:flex-row flex-col"
+        }
       >
         <div
-          class={" h-full overflow-hidden lg:min-w-[445px] flex flex-col gap-y-9 "}
+          class={
+            " h-full overflow-hidden lg:min-w-[445px] flex flex-col gap-y-9 "
+          }
         >
           <div class={"flex flex-wrap gap-y-1 lg:w-[420px]"}>
             {cities.map((city) => (
@@ -114,12 +118,12 @@ export default function OurStores(
             ))}
           </div>
           <div
-            class={"flex-1 overflow-y-scroll scroll-smooth pr-3 md:pr-4 overflow-x-hidden flex flex-col gap-3 md:gap-4 max-h-[420px] md:max-h-[470px] lg:max-h-full lg:h-full scrollbar-secondary scrollbar-gutter-stable"}
+            class={
+              "flex-1 overflow-y-scroll scroll-smooth pr-3 md:pr-4 overflow-x-hidden flex flex-col gap-3 md:gap-4 max-h-[420px] md:max-h-[470px] lg:max-h-full lg:h-full scrollbar-secondary scrollbar-gutter-stable"
+            }
           >
             {selectedCity?.stores.map((store) => (
-              <div
-                class={"w-full cursor-pointe"}
-              >
+              <div class={"w-full cursor-pointe"}>
                 <div class="flex flex-col justify-center border border-[#B1B1B1] py-4 px-[22px] md:py-[18px] md:px-[26px] lg:w-[420px] min-h-[120px] md:min-h-[146px]">
                   <div class={"flex md:items-center justify-between "}>
                     <strong
@@ -134,7 +138,9 @@ export default function OurStores(
                         href={store.map}
                         target={"_blank"}
                         rel="noopener noreferrer"
-                        class={"uppercase text-[#585858] text-[7px]  md:text-[9px] leading-5 underline font-inter font-medium cursor-pointer"}
+                        class={
+                          "uppercase text-[#585858] text-[7px]  md:text-[9px] leading-5 underline font-inter font-medium cursor-pointer"
+                        }
                       >
                         ver no mapa
                       </a>

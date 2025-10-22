@@ -186,7 +186,17 @@
         }
       ],
       "imageDesktop": "https://assets.decocache.com/abracasa/83a217f2-325e-43d3-85f2-6a0afdac8dca/nossas_lojas_banner.png",
-      "imageMobile": "https://assets.decocache.com/abracasa/4c3efc39-90a7-47ce-a9c5-092875aa107f/nossas_lojas_banner_mobile.png"
+      "imageMobile": "https://assets.decocache.com/abracasa/4c3efc39-90a7-47ce-a9c5-092875aa107f/nossas_lojas_banner_mobile.png",
+      "overlayImagesDesktop": [
+        "https://assets.decocache.com/abracasa/c5d83551-b046-47f0-a5f3-312176e2706c/casa_nossas_lojas.jpg",
+        "https://assets.decocache.com/abracasa/341dc1ce-aeb5-4ed6-8539-0c5e440f8b54/5af00b4c78f784cdca0414803a118d5ac3fd8cc7.jpg",
+        "https://assets.decocache.com/abracasa/0710e8d2-67ca-4bc8-8566-37bdf2c2d0c6/casa_nossas_lojas(3).jpg"
+      ],
+      "overlayImagesMobile": [
+        "https://assets.decocache.com/abracasa/c5d83551-b046-47f0-a5f3-312176e2706c/casa_nossas_lojas.jpg",
+        "https://assets.decocache.com/abracasa/341dc1ce-aeb5-4ed6-8539-0c5e440f8b54/casa_nossas_lojas(2).jpg",
+        "https://assets.decocache.com/abracasa/0710e8d2-67ca-4bc8-8566-37bdf2c2d0c6/casa_nossas_lojas(3).jpg"
+      ]
     },
     {
       "__resolveType": "Footer - 01"

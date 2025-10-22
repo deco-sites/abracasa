@@ -312,6 +312,23 @@
           }
         },
         {
+          "__resolveType": "website/sections/Rendering/Lazy.tsx",
+          "section": {
+            "__resolveType": "site/sections/Images/OurStoresHome.tsx",
+            "link": "/institucional/nossas-lojas",
+            "imagesDesktop": [
+              "https://assets.decocache.com/abracasa/c5d83551-b046-47f0-a5f3-312176e2706c/casa_nossas_lojas.jpg",
+              "https://assets.decocache.com/abracasa/341dc1ce-aeb5-4ed6-8539-0c5e440f8b54/casa_nossas_lojas(2).jpg",
+              "https://assets.decocache.com/abracasa/0710e8d2-67ca-4bc8-8566-37bdf2c2d0c6/casa_nossas_lojas(3).jpg"
+            ],
+            "imagesMobile": [
+              "https://assets.decocache.com/abracasa/c5d83551-b046-47f0-a5f3-312176e2706c/casa_nossas_lojas.jpg",
+              "https://assets.decocache.com/abracasa/341dc1ce-aeb5-4ed6-8539-0c5e440f8b54/casa_nossas_lojas(2).jpg",
+              "https://assets.decocache.com/abracasa/0710e8d2-67ca-4bc8-8566-37bdf2c2d0c6/casa_nossas_lojas(3).jpg"
+            ]
+          }
+        },
+        {
           "__resolveType": "site/sections/Social/InstagramPosts.tsx",
           "title": "Abra Casa no Instagram",
           "layout": {
@@ -320,33 +337,6 @@
           },
           "description": "<p style=\"text-align: center\">Quer ver o seu cantinho por lá e aqui na home?<br>Poste uma foto com os seus móveis Abra Casa, marcando a <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/abracadabraoficial/\"><strong>@abracasadesign</strong></a>, e num passe de mágica você aparecerá por aqui!</p>",
           "facebookToken": "IGQWRQNjBlMjFHbF8xVGxVNkJGdGdDNThHbGxzTEZAkRENoYzV2MGR0SDRNTUs3SjBadVVtN0FWazZAtWjdUTzQzeVBXcldENXVBaDJhWHpkSGhIaDRLamdCRW04RFZArYkFlUUVrYzBmZATdHWTBDQkpZAdlZAiWDdwWXcZD"
-        },
-        {
-          "__resolveType": "website/sections/Rendering/Lazy.tsx",
-          "section": {
-            "__resolveType": "site/sections/Social/MeetStores.tsx",
-            "title": "Conheça nossas lojas:",
-            "images": [
-              {
-                "src": "https://data.decoassets.com/abracasa/e94e480b-a715-490a-94df-f5da8d30b0ec/WhatsApp-Image-2024-01-26-at-11.00-1.png",
-                "srcMobile": "https://data.decoassets.com/abracasa/37424979-c46f-4cd4-89f8-bef051084349/WhatsApp-Image-2024-01-26-at-11.00-1.png",
-                "href": "/institucional/nossas-lojas"
-              },
-              {
-                "src": "https://data.decoassets.com/abracasa/d38d48a1-d1cb-4ae5-a417-fbb024b378f8/WhatsApp-Image-2024-01-26-at-11.00-3.png",
-                "srcMobile": "https://data.decoassets.com/abracasa/d38d48a1-d1cb-4ae5-a417-fbb024b378f8/WhatsApp-Image-2024-01-26-at-11.00-3.png",
-                "href": "/institucional/nossas-lojas"
-              },
-              {
-                "src": "https://data.decoassets.com/abracasa/1c374fd7-c31b-465f-90f5-681073ee161b/WhatsApp-Image-2024-01-26-at-11.00-2.png",
-                "srcMobile": "https://data.decoassets.com/abracasa/1c374fd7-c31b-465f-90f5-681073ee161b/WhatsApp-Image-2024-01-26-at-11.00-2.png",
-                "href": "/institucional/nossas-lojas"
-              }
-            ],
-            "cta": {
-              "href": "/institucional/nossas-lojas"
-            }
-          }
         },
         {
           "__resolveType": "SectionNewsletter - Abracasa"
