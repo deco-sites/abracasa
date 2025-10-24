@@ -9,6 +9,21 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
+          "href": "https://www.abracasa.com.br/campanha/abra-week",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/24af7013-7347-40b3-9d71-f0ad5634d062/casa_banner_mobile_abraweek_-(1).jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/aa00589d-db17-4873-932e-6c59fdb4a033/casa_banner_desk_abraweek_1920x713_2.jpg",
+            "width": 1920,
+            "height": 713
+          },
+          "alt": "Abra Week"
+        },
+        {
+          "alt": "Fernanda Sampaio",
           "href": "https://www.abracasa.com.br/fernanda-sampaio",
           "mobile": {
             "image": "https://assets.decocache.com/abracasa/9cfb2cf1-2bd7-40ec-9447-4075fdbc42df/banner-mobile-fernanda-sampaio.gif",
@@ -19,8 +34,7 @@
             "image": "https://assets.decocache.com/abracasa/5bf7e8cb-770f-43de-8ac1-91cc4e0c6e19/banner-desk-fernanda-sampaio.gif.gif",
             "width": 1920,
             "height": 713
-          },
-          "alt": "Fernanda Sampaio"
+          }
         },
         {
           "alt": "Toques Essenciais",
