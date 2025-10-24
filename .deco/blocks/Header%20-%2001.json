@@ -45,10 +45,10 @@
     "link": {
       "backgroundHexButton": "#c0c0c0",
       "text": "<p>Aproveite</p>",
-      "href": "/campanha/abra-friday"
+      "href": "/"
     },
-    "hiddenButton": false,
-    "expiresAt": "2025-04-25T13:00:00.000Z"
+    "hiddenButton": true,
+    "expiresAt": "2025-10-25T13:00:00.000Z"
   },
   "navItems": [
     {
