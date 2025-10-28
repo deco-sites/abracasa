@@ -50,7 +50,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
   const hasVideo = videos.length > 0;
   if (hasVideo) {
     const videoModifiedUrl = new URL(
-      videos?.[0].contentUrl ?? "",
+      videos?.[0].contentUrl ?? ""
     ).searchParams.get("v");
     const video: VideoObject = {
       "@type": "VideoObject",
@@ -65,10 +65,10 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
   const heroLabel = files.find((label) => label.name === "hero");
   const adjustedFiles = heroLabel
     ? [
-      files[0],
-      heroLabel,
-      ...files.filter((item) => item !== heroLabel).slice(1),
-    ]
+        files[0],
+        heroLabel,
+        ...files.filter((item) => item !== heroLabel).slice(1),
+      ]
     : files;
 
   return (
@@ -87,6 +87,7 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
             showMadeiraLogo={additionalProperty?.some((property) =>
               property.value?.includes("Madeira Natural")
             )}
+            additionalProperty={additionalProperty}
           />
 
           {additionalProperty?.some((property) =>
@@ -195,30 +196,28 @@ export default function GallerySlider(props: ReturnType<typeof loader>) {
                     class="carousel-item w-[98px] relative"
                   >
                     <Slider.Dot index={index}>
-                      {item["@type"] === "ImageObject"
-                        ? (
+                      {item["@type"] === "ImageObject" ? (
+                        <Image
+                          style={{ aspectRatio: 1 }}
+                          class="group-disabled:border-base-300 border"
+                          width={98}
+                          height={98}
+                          src={item.url!}
+                          alt={item.alternateName}
+                        />
+                      ) : (
+                        <div class="flex items-center justify-center w-full relative">
                           <Image
                             style={{ aspectRatio: 1 }}
-                            class="group-disabled:border-base-300 border"
+                            src={images[0].url!}
+                            alt={images[0].alternateName}
                             width={98}
                             height={98}
-                            src={item.url!}
-                            alt={item.alternateName}
+                            class="group-disabled:border-base-300 border"
                           />
-                        )
-                        : (
-                          <div class="flex items-center justify-center w-full relative">
-                            <Image
-                              style={{ aspectRatio: 1 }}
-                              src={images[0].url!}
-                              alt={images[0].alternateName}
-                              width={98}
-                              height={98}
-                              class="group-disabled:border-base-300 border"
-                            />
-                            <Icon id="VideoPlay" size={36} class="absolute" />
-                          </div>
-                        )}
+                          <Icon id="VideoPlay" size={36} class="absolute" />
+                        </div>
+                      )}
                     </Slider.Dot>
                   </Slider.Item>
                 ))}
