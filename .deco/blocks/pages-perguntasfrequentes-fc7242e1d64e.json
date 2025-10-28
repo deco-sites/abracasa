@@ -5,8 +5,8 @@
     {
       "type": "website",
       "__resolveType": "website/sections/Seo/Seo.tsx",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
+      "titleTemplate": "Perguntas Frequentes | Abra Casa",
+      "descriptionTemplate": "%s"
     },
     {
       "__resolveType": "Header - 01"
