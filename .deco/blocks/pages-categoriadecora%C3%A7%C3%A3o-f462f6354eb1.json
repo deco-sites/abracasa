@@ -176,6 +176,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Decoração | Abra Casa",
-    "description": "Abra Casa reúne o melhor da decoração com peças criativas e elegantes. Dê vida aos seus ambientes com objetos cheios de expressão e bom gosto."
+    "description": "Abra Casa reúne o melhor da decoração com peças criativas e elegantes. Dê vida aos seus ambientes com objetos cheios de expressão e bom gosto.",
+    "canonical": "https://www.abracasa.com.br/decoracao"
   }
 }

@@ -126,7 +126,7 @@
     "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
     "title": "Sofá Cama | Abra Casa",
     "description": "Na Abra Casa, encontre o sofá cama perfeito para sua casa! Conforto, funcionalidade e design moderno em peças que transformam o ambiente com charme.",
-    "canonical": "",
+    "canonical": "https://www.abracasa.com.br/moveis/sofa/sofa-cama",
     "jsonLD": {
       "sort": "OrderByPriceDESC",
       "count": 12,

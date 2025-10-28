@@ -137,6 +137,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Cadeiras, Bancos e Banquetas | Abra Casa",
-    "description": "Abra Casa reúne cadeira de madeira, cadeira de escritório, bancos e banquetas com design exclusivo e conforto para todos os estilos de ambiente."
+    "description": "Abra Casa reúne cadeira de madeira, cadeira de escritório, bancos e banquetas com design exclusivo e conforto para todos os estilos de ambiente.",
+    "canonical": "https://www.abracasa.com.br/moveis/cadeiras-bancos-e-banquetas"
   }
 }

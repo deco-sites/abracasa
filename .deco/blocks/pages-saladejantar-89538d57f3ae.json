@@ -104,6 +104,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Sala de Jantar | Abra Casa",
-    "description": "Na Abra Casa, sua sala de jantar ganha vida! Mesas, cadeiras e racks exclusivos que trazem elegância, conforto e funcionalidade para todos os estilos."
+    "description": "Na Abra Casa, sua sala de jantar ganha vida! Mesas, cadeiras e racks exclusivos que trazem elegância, conforto e funcionalidade para todos os estilos.",
+    "canonical": "https://www.abracasa.com.br/ambientes/sala-de-jantar"
   }
 }

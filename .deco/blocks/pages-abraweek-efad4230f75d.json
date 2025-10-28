@@ -103,6 +103,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Abra Week | Abra Casa",
-    "description": "Chegou a Abra Week! Descontos imperdíveis em mesas, sofá cama e poltronas. Renove sua casa com estilo, conforto e design exclusivo Abra Casa."
+    "description": "Chegou a Abra Week! Descontos imperdíveis em mesas, sofá cama e poltronas. Renove sua casa com estilo, conforto e design exclusivo Abra Casa.",
+    "canonical": "https://www.abracasa.com.br/campanha/abra-week"
   }
 }

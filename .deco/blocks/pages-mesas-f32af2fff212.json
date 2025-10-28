@@ -163,6 +163,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Mesas | Abra Casa",
-    "description": "Mesas de jantar, escrivaninhas e mesas de centro com estilo, praticidade e sofisticação. Acesse Abra Casa e descubra peças que valorizam seu espaço."
+    "description": "Mesas de jantar, escrivaninhas e mesas de centro com estilo, praticidade e sofisticação. Acesse Abra Casa e descubra peças que valorizam seu espaço.",
+    "canonical": "https://www.abracasa.com.br/moveis/mesas"
   }
 }

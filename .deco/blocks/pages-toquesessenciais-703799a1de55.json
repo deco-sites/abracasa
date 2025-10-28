@@ -103,6 +103,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Toques Essenciais | Abra Casa",
-    "description": "Toques Essenciais Abra Casa: mesa de cabeceira, mesa lateral e banquetas com design único para valorizar os detalhes e o conforto do seu lar."
+    "description": "Toques Essenciais Abra Casa: mesa de cabeceira, mesa lateral e banquetas com design único para valorizar os detalhes e o conforto do seu lar.",
+    "canonical": "https://www.abracasa.com.br/campanha/toques-essenciais"
   }
 }

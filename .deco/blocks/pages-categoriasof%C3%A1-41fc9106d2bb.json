@@ -133,6 +133,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Sofás | Abra Casa",
-    "description": "Conheça a seleção de sofás da Abra Casa: sofá retrátil, sofá cama e modelos versáteis com design exclusivo, conforto e funcionalidade para sua casa."
+    "description": "Conheça a seleção de sofás da Abra Casa: sofá retrátil, sofá cama e modelos versáteis com design exclusivo, conforto e funcionalidade para sua casa.",
+    "canonical": "https://www.abracasa.com.br/moveis/sofa"
   }
 }

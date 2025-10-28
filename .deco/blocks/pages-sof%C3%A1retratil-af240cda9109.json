@@ -129,6 +129,7 @@
       "count": 12,
       "filters": "dynamic",
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-    }
+    },
+    "canonical": "https://www.abracasa.com.br/moveis/sofa/sofa-retratil"
   }
 }

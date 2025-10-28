@@ -134,6 +134,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Office | Abra Casa",
-    "description": "Escrivaninhas, cadeira de escritório e módulos com design moderno para criar um ambiente de trabalho produtivo, bonito e organizado na sua casa."
+    "description": "Escrivaninhas, cadeira de escritório e módulos com design moderno para criar um ambiente de trabalho produtivo, bonito e organizado na sua casa.",
+    "canonical": "https://www.abracasa.com.br/moveis/office"
   }
 }

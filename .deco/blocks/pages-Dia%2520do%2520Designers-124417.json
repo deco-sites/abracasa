@@ -496,7 +496,7 @@
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
     "title": " Nossos Designers | Abra Casa",
     "description": "Design que inspira! No Mês do Design, encontre peças assinadas por designers renomados e transforme sua casa com a curadoria da Abra Casa.",
-    "canonical": "https://www.abracasa.com.br/mes-do-design"
+    "canonical": "https://www.abracasa.com.br/nossos-designers"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

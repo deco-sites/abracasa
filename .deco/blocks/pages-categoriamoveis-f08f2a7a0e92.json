@@ -186,6 +186,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Móveis | Abra Casa",
-    "description": "Na Abra Casa, encontre móveis com estilo e funcionalidade: poltrona, mesa e sofá cama com design autoral, pensados para o seu conforto e bem-estar."
+    "description": "Na Abra Casa, encontre móveis com estilo e funcionalidade: poltrona, mesa e sofá cama com design autoral, pensados para o seu conforto e bem-estar.",
+    "canonical": "https://www.abracasa.com.br/moveis"
   }
 }

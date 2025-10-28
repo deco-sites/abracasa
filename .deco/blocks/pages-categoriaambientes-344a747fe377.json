@@ -141,6 +141,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "description": "Na Abra Casa você encontra tudo para sala de jantar, escritório e quarto. Móveis com estilo contemporâneo e decoração para ambientes únicos.",
-    "title": "Ambientes | Abra Casa"
+    "title": "Ambientes | Abra Casa",
+    "canonical": "https://www.abracasa.com.br/ambientes"
   }
 }

@@ -102,6 +102,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Cômodas | Abra Casa",
-    "description": "Na Abra Casa, você encontra cômodas que aliam organização e estilo. Peças com design exclusivo para transformar seu ambiente com elegância."
+    "description": "Na Abra Casa, você encontra cômodas que aliam organização e estilo. Peças com design exclusivo para transformar seu ambiente com elegância.",
+    "canonical": "https://www.abracasa.com.br/moveis/comoda"
   }
 }

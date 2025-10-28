@@ -9,7 +9,8 @@
         "filters": "dynamic",
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "canonical": "https://www.abracasa.com.br/moveis/estantes-e-racks"
     },
     {
       "__resolveType": "Header - 01"

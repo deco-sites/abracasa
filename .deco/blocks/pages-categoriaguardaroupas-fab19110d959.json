@@ -102,6 +102,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Guarda-Roupa | Abra Casa",
-    "description": "Guarda-roupas com estilo, qualidade e funcionalidade. Modelos exclusivos da Abra Casa pensados para otimizar o espaço com sofisticação."
+    "description": "Guarda-roupas com estilo, qualidade e funcionalidade. Modelos exclusivos da Abra Casa pensados para otimizar o espaço com sofisticação.",
+    "canonical": "https://www.abracasa.com.br/moveis/guarda-roupas"
   }
 }
