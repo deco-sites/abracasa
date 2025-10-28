@@ -1,7 +1,3 @@
-# robots.txt
-# Permite apenas os principais mecanismos de busca indexarem o site
-
-
 User-agent: *
 Disallow: /
 
