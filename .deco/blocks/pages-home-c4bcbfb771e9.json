@@ -9,7 +9,7 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "href": "https://www.abracasa.com.br/fernanda-sampaio",
+          "href": "https://www.abracasa.com.br/campanha/abra-friday",
           "mobile": {
             "image": "https://assets.decocache.com/abracasa/996ce8e2-a64b-4f4d-9634-f9dfdb6e906d/casa_banner_mobile_abra_friday_767x942_02.jpg",
             "width": 767,
@@ -20,7 +20,7 @@
             "width": 1920,
             "height": 713
           },
-          "alt": "Fernanda Sampaio"
+          "alt": "Abra Friday"
         },
         {
           "alt": "Fernanda Sampaio",
