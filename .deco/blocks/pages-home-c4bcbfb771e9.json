@@ -23,6 +23,20 @@
           "alt": "Abra Friday"
         },
         {
+          "alt": "Abra Friday - Sofás",
+          "href": "https://www.abracasa.com.br/moveis/sofa",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/750ab826-2743-4df5-be5d-68908634817e/casa_abra_friday_banner_sofa_mobile_767x942_2.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/4f7fc41f-9a3d-40d2-bf99-e45f9bd824b4/casa_abra_friday_banner_sofa_desktop_1920x713_2.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Fernanda Sampaio",
           "href": "https://www.abracasa.com.br/fernanda-sampaio",
           "mobile": {
