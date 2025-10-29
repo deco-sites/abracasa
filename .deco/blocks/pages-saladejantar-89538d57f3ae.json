@@ -10,8 +10,8 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://assets.decocache.com/abracasa/d38d41f1-336e-4743-9c7b-7be06ad5b685/casa_colecao_banner_especiala_mobile_800x400.jpg",
-            "desktop": "https://assets.decocache.com/abracasa/a612f126-2892-4318-83ea-7c3893ff0d53/casa_coleca_banner_especiala_desktop_1800x220.jpg.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/2cdd9775-85c8-4cc3-933d-2f91cfbb2a0c/casa_abra_friday_banner_especial_POLTRONA_mobile_800x400_jantar.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/559b1b7d-9d49-4c8f-8088-b10c79c362fd/casa_abra_friday_banner_especial_poltrona_desktop_1800x220_jantar.jpg",
             "alt": "sala-de-jantar-com-mesa-e-quatro-cadeiras"
           },
           "matcher": "/*"
