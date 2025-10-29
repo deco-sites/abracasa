@@ -11,8 +11,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://assets.decocache.com/abracasa/7d27cf25-1734-4895-ad30-e9ad9cba15a8/casa_banner_especial_sofas_mobile_abraweek_800x400.png",
-            "desktop": "https://assets.decocache.com/abracasa/872a5191-ef8e-4c3e-9129-7e151be358ac/casa_banner_especial_sofas_desk_abraweek_1800x220-(1).jpg"
+            "mobile": "https://assets.decocache.com/abracasa/7913ba8d-e758-4e9f-ab23-e5fc3a91ce23/casa_abra_friday_banner_especial_SOFAS_mobile_800x400.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/9c7d0b54-7e95-48a1-9ba6-97cd32a1c216/casa_abra_friday_banner_especial_sofas_desktop_1800x220.jpg"
           },
           "matcher": "/*"
         }
