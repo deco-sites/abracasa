@@ -11,6 +11,21 @@
         {
           "href": "https://www.abracasa.com.br/fernanda-sampaio",
           "mobile": {
+            "image": "https://assets.decocache.com/abracasa/996ce8e2-a64b-4f4d-9634-f9dfdb6e906d/casa_banner_mobile_abra_friday_767x942_02.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/071cf293-8939-43da-89ae-5ee65d99a2e7/casa_banner_desktop_abra_friday_1920x713_02.jpg",
+            "width": 1920,
+            "height": 713
+          },
+          "alt": "Fernanda Sampaio"
+        },
+        {
+          "alt": "Fernanda Sampaio",
+          "href": "https://www.abracasa.com.br/fernanda-sampaio",
+          "mobile": {
             "image": "https://assets.decocache.com/abracasa/9cfb2cf1-2bd7-40ec-9447-4075fdbc42df/banner-mobile-fernanda-sampaio.gif",
             "width": 767,
             "height": 942
@@ -19,8 +34,7 @@
             "image": "https://assets.decocache.com/abracasa/5bf7e8cb-770f-43de-8ac1-91cc4e0c6e19/banner-desk-fernanda-sampaio.gif.gif",
             "width": 1920,
             "height": 713
-          },
-          "alt": "Fernanda Sampaio"
+          }
         },
         {
           "alt": "Toques Essenciais",
