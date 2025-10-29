@@ -10,8 +10,8 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://data.decoassets.com/abracasa/ae93f9fc-9ad4-4ef4-80af-702fbc234943/casa_colecao_banner_especial_mobile_800x400.jpg",
-            "desktop": "https://data.decoassets.com/abracasa/b4f73541-2f19-4c1a-97d6-c0fb4d138c0c/casa_coleca_banner_especial_desktop_1800x220.jpg"
+            "mobile": "https://assets.decocache.com/abracasa/dacf0649-76cd-488b-b973-8de0e8f17db7/casa_abra_friday_banner_especial_POLTRONA_mobile_800x400_poltrona.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/72fba254-3171-4922-93f0-cf9529827b0d/casa_abra_friday_banner_especial_poltrona_desktop_1800x220_poltrona.jpg"
           },
           "matcher": "/*"
         }
