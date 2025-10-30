@@ -30,8 +30,8 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://assets.decocache.com/abracasa/d34a0a30-979a-48b0-8c8b-d2947eee78ce/casa_abra_friday_banner_especial_POLTRONA_mobile_800x400.jpg",
-            "desktop": "https://assets.decocache.com/abracasa/1cd199e9-ab3e-46ad-a8c4-8cf345ec76bb/casa_abra_friday_banner_especial_poltrona_desktop_1800x220.jpg",
+            "mobile": "https://assets.decocache.com/abracasa/e6ac2142-9a59-40ef-a4cd-8eea7a0a9dd0/casa_abra_friday_banner_especial_POLTRONA_mobile_800x400-(1).jpg",
+            "desktop": "https://assets.decocache.com/abracasa/042af3ba-7583-4a4c-8a57-c571fa84d62d/casa_abra_friday_banner_especial_poltrona_desktop_1800x220-(1).jpg",
             "alt": "abra-friday-poltronas-costela"
           },
           "matcher": "/*"
