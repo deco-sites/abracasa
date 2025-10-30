@@ -116,11 +116,11 @@ export default function PrincipalImages({
                     {hasWarrantyLogo && (
                       <img
                         src={asset("/image/selo-5-anos-de-garantia-04.png")}
-                        width={80}
+                        width={116}
                         height={80}
                         alt="Selo 5 anos de garantia"
                         loading="lazy"
-                        class="w-[80px]"
+                        class="w-[116px]"
                       />
                     )}
                   </div>
