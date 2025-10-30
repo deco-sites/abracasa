@@ -125,7 +125,7 @@
       ]
     },
     {
-      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Estantes e Racks&nbsp;</span></p>",
+      "title": "<h1 class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Estantes e Racks&nbsp;</span></h1>",
       "description": "<p class=\"title-section\">Para organizar e compartilhar momentos: conheça as estantes e racks da Abra Casa. Com desenhos exclusivos, nossas estantes e racks acompanham diversos estilos de decoração e foram pensados para todos os tamanhos de ambientes – dos mais compactos aos mais amplos. Você encontra estantes industriais, de madeira, para sala ou quarto. Já os racks você encontra no estilo retrô, de madeira, com gavetas e mais!&nbsp;</p>",
       "__resolveType": "site/sections/Content/SectionText.tsx"
     },

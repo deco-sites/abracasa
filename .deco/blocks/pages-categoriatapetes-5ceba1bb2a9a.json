@@ -79,7 +79,7 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx"
     },
     {
-      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Tapetes&nbsp;</span></p>",
+      "title": "<h1 class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Tapetes&nbsp;</span></h1>",
       "description": "<p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os tapetes da Abra Casa vão deixar o seu ambiente mais aconchegante.Para aquecer os pés, para decorar e para dar vida nova ao aconchego da casa: conheça os nossos tapetes! Com diversas estampas e acabamentos diferentes, aqui você encontra tapetes belgas, persas, para sala ou quarto e de diferentes tamanhos.&nbsp;</span></p>",
       "__resolveType": "site/sections/Content/SectionText.tsx"
     },

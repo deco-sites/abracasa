@@ -146,7 +146,7 @@
     },
     {
       "__resolveType": "site/sections/Content/SectionText.tsx",
-      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Mesas&nbsp;</span></p>",
+      "title": "<h1 class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Mesas&nbsp;</span></h1>",
       "description": "<p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">A sua nova mesa está na Abra Casa! Seja para reunir a família na hora das refeições ou para te auxiliar no home office, nós temos mesas com desenhos exclusivos, com diferentes acabamentos e formatos para você. Desde as queridas mesas de jantar Square – redondas ou quadradas - até as mesas de cabeceira e mesas de canto.&nbsp;</span></p>"
     },
     {
