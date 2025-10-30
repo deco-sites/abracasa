@@ -1,0 +1,106 @@
+{
+  "name": "Cama auxiliar",
+  "path": "/moveis/camas/cama-auxiliar",
+  "sections": [
+    {
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 12,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "banner-categoria-camas-solteiro-abra-casa",
+            "mobile": "https://assets.decocache.com/abracasa/23a17b2a-82de-4a82-989a-4707454b0fac/cama-auxiliar_mobile-(1).jpg",
+            "desktop": "https://assets.decocache.com/abracasa/d09f7740-55b1-42b4-8b8a-5e4337b12474/cama-auxiliar_desk-(1).jpg"
+          },
+          "matcher": "/*"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByTopSaleDESC",
+        "count": 48,
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "drawer",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "show": {
+            "cta": true,
+            "allPrices": true,
+            "productName": true,
+            "skuSelector": true,
+            "installments": true,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": false,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {
+            "skuSelector": "Top",
+            "favoriteIcon": "Top right"
+          },
+          "backgroundAndBorder": {
+            "shadow": "None",
+            "bgColor": "Transparent",
+            "borderColor": "Transparent",
+            "borderRadius": "None"
+          }
+        },
+        "products": {
+          "term": "a",
+          "count": 2,
+          "__resolveType": "vtex/loaders/legacy/productList.ts"
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "startingPage": 1,
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "hiddenFilters": [
+        "departamentos",
+        "marcas",
+        "produtossimilares"
+      ]
+    },
+    {
+      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Cama Solteiro&nbsp;</span></p>",
+      "description": "<p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Ter uma cama de solteiro oferece conforto pessoal, economia de espaço, versatilidade e opções de design. É uma escolha prática e acessível para quartos menores ou ambientes individuais, proporcionando um espaço confortável para descansar e relaxar.&nbsp;</span></p><p><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Conforto pessoal</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Uma cama de solteiro oferece espaço adequado para uma pessoa dormir confortavelmente. Ela permite que você tenha seu próprio espaço para descansar e relaxar, garantindo um boa noite de sono.&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Economia de espaço. As camas de solteiro são ideais para quartos menores ou espaços limitados, pois ocupam menos espaço do que camas de casal. Isso proporciona mais espaço livre no quarto para outros móveis ou circulação.</span></p><p><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Versatilidade</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As camas de solteiro são versáteis e podem ser utilizadas em vários ambientes, como quartos de crianças, quartos de hóspedes, quartos de estudantes universitários ou até mesmo em espaços de home office, onde você precisa de um lugar para descansar ou tirar um cochilo.</span></p><p><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Custo-benefício</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As camas de solteiro geralmente são mais acessíveis em comparação com camas maiores, como as de casal ou king-size. Isso torna uma opção mais econômica para quem tem um orçamento limitado.</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Ter uma cama de solteiro oferece conforto pessoal, economia de espaço, versatilidade e opções de design. É uma escolha prática e acessível para quartos menores ou ambientes individuais, proporcionando um espaço confortável para descansar e relaxar.</span></p><p><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Conforto pessoal</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Uma cama de solteiro oferece espaço adequado para uma pessoa dormir confortavelmente. Ela permite que você tenha seu próprio espaço para descansar e relaxar, garantindo um boa noite de sono.</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Economia de espaço. As camas de solteiro são ideais para quartos menores ou espaços limitados, pois ocupam menos espaço do que camas de casal. Isso proporciona mais espaço livre no quarto para outros móveis ou circulação.</span></p><p><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Versatilidade</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As camas de solteiro são versáteis e podem ser utilizadas em vários ambientes, como quartos de crianças, quartos de hóspedes, quartos de estudantes universitários ou até mesmo em espaços de home office, onde você precisa de um lugar para descansar ou tirar um cochilo.</span></p><p><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Custo-benefício</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">As camas de solteiro geralmente são mais acessíveis em comparação com camas maiores, como as de casal ou king-size. Isso torna uma opção mais econômica para quem tem um orçamento limitado.&nbsp;</span></p>",
+      "__resolveType": "site/sections/Content/SectionText.tsx"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
