@@ -20,8 +20,8 @@
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/185031/banner_categorias_cestos.png?v=638222598614630000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/185031/banner_categorias_cestos.png?v=638222598614630000"
+            "mobile": "https://assets.decocache.com/abracasa/6ae1e137-22a7-4625-9343-b0cadf1c30d0/banners-cesta.mobile.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/efaf3ca1-5454-45dc-8de3-7e428b57ecc3/banners-cesta.jpg"
           },
           "matcher": "/*"
         }
