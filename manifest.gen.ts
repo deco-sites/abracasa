@@ -84,11 +84,13 @@ import * as $$$$$$71 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$72 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$73 from "./sections/ProxyIframe.tsx";
 import * as $$$$$$74 from "./sections/ReturnToTop.tsx";
-import * as $$$$$$75 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$76 from "./sections/Social/InstagramWidget.tsx";
-import * as $$$$$$77 from "./sections/Social/MeetStores.tsx";
-import * as $$$$$$78 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$79 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$75 from "./sections/Seo/Seo.tsx";
+import * as $$$$$$76 from "./sections/Seo/SeoPDP.tsx";
+import * as $$$$$$77 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$78 from "./sections/Social/InstagramWidget.tsx";
+import * as $$$$$$79 from "./sections/Social/MeetStores.tsx";
+import * as $$$$$$80 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$81 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -174,11 +176,13 @@ const manifest = {
     "site/sections/Product/Wishlist.tsx": $$$$$$72,
     "site/sections/ProxyIframe.tsx": $$$$$$73,
     "site/sections/ReturnToTop.tsx": $$$$$$74,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$75,
-    "site/sections/Social/InstagramWidget.tsx": $$$$$$76,
-    "site/sections/Social/MeetStores.tsx": $$$$$$77,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$78,
-    "site/sections/Theme/Theme.tsx": $$$$$$79,
+    "site/sections/Seo/Seo.tsx": $$$$$$75,
+    "site/sections/Seo/SeoPDP.tsx": $$$$$$76,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$77,
+    "site/sections/Social/InstagramWidget.tsx": $$$$$$78,
+    "site/sections/Social/MeetStores.tsx": $$$$$$79,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$80,
+    "site/sections/Theme/Theme.tsx": $$$$$$81,
   },
   "apps": {
     "site/apps/decohub.ts": $$$$$$$$$$$0,
