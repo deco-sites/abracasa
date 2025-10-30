@@ -21,8 +21,9 @@
       "banners": [
         {
           "image": {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/21ce6f95-494f-4ee8-b883-5ec103d465ce/casa_abra_friday_banner_especial_mobile_800x400.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/abracasa/ccae5535-81df-4e2f-84ab-082b656c8e00/casa_abra_friday_banner_especial_desktop_1800x220.png"
+            "mobile": "https://assets.decocache.com/abracasa/29592b47-bdbf-4eb8-8c87-6309be52361f/casa_abra_friday_banner_especial_mobile_800x400.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/b9191185-707b-44ed-9a10-9aee6c52cfcb/casa_abra_friday_banner_especial_desktop_1800x220.jpg",
+            "alt": "campanha-abra-friday"
           },
           "matcher": "/*"
         }

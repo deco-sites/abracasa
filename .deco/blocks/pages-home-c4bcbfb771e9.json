@@ -9,6 +9,49 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
+          "href": "https://www.abracasa.com.br/campanha/abra-friday",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/996ce8e2-a64b-4f4d-9634-f9dfdb6e906d/casa_banner_mobile_abra_friday_767x942_02.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/071cf293-8939-43da-89ae-5ee65d99a2e7/casa_banner_desktop_abra_friday_1920x713_02.jpg",
+            "width": 1920,
+            "height": 713
+          },
+          "alt": "Abra Friday"
+        },
+        {
+          "alt": "Abra Friday - Sofás",
+          "href": "https://www.abracasa.com.br/moveis/sofa",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/750ab826-2743-4df5-be5d-68908634817e/casa_abra_friday_banner_sofa_mobile_767x942_2.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/4f7fc41f-9a3d-40d2-bf99-e45f9bd824b4/casa_abra_friday_banner_sofa_desktop_1920x713_2.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Abra Friday - Poltrona Costela",
+          "href": "https://www.abracasa.com.br/campanha/poltrona-costela",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/60e02abf-b6a9-41c7-a1d2-3318ef3c0101/casa_abra_friday_banner_costela_mobile_767x94_2.jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/b6315361-56d3-4a3e-be24-159829d912b1/casa_abra_friday_banner_costela_desktop_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
+          "alt": "Fernanda Sampaio",
           "href": "https://www.abracasa.com.br/fernanda-sampaio",
           "mobile": {
             "image": "https://assets.decocache.com/abracasa/9cfb2cf1-2bd7-40ec-9447-4075fdbc42df/banner-mobile-fernanda-sampaio.gif",
@@ -19,8 +62,7 @@
             "image": "https://assets.decocache.com/abracasa/5bf7e8cb-770f-43de-8ac1-91cc4e0c6e19/banner-desk-fernanda-sampaio.gif.gif",
             "width": 1920,
             "height": 713
-          },
-          "alt": "Fernanda Sampaio"
+          }
         },
         {
           "alt": "Toques Essenciais",
@@ -152,14 +194,14 @@
               "link": "https://www.abracasa.com.br/ambientes/sala-de-jantar",
               "image": {
                 "alt": "Madeira",
-                "icon": "https://assets.decocache.com/abracasa/0a36e7cd-201c-42fd-ad74-fbc2c4695089/casa_banner_secundario_colecao_2025_jantar-(1).jpg",
+                "icon": "https://assets.decocache.com/abracasa/d0c312a7-1386-4e03-9a76-f1a852d1bc41/casa_banner_secundario_abra_friday_3.jpg",
                 "isBorder": false
               }
             },
             {
-              "link": "https://www.abracasa.com.br/moveis/sofa/sofa-cama",
+              "link": "https://www.abracasa.com.br/moveis/estantes-e-racks/racks-e-buffets",
               "image": {
-                "icon": "https://assets.decocache.com/abracasa/d29530f3-8b83-412b-ac96-78cc93d6ee02/casa_banner_secundario_colecao_2025_sofacama-(1).jpg",
+                "icon": "https://assets.decocache.com/abracasa/343e87a3-0a27-4e0b-8c97-827ee5a14946/casa_banner_secundario_abra_friday_2.jpg",
                 "alt": "Sofá-cama"
               }
             },
@@ -167,7 +209,7 @@
               "link": "https://www.abracasa.com.br/moveis/poltronas",
               "image": {
                 "alt": "Rack",
-                "icon": "https://assets.decocache.com/abracasa/6e6e7765-e386-491b-8d3f-2292954b8f74/casa_banner_secundario_colecao_2025_poltrona-(1).jpg"
+                "icon": "https://assets.decocache.com/abracasa/64ffb963-b82e-4da9-a7c6-3a393df8824e/casa_banner_secundario_abra_friday_1.jpg"
               }
             }
           ],
