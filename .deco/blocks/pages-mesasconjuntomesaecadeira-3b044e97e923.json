@@ -9,7 +9,8 @@
         "filters": "dynamic",
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "canonical": "https://www.abracasa.com.br/moveis/mesas/conjunto-mesa-e-cadeira"
     },
     {
       "__resolveType": "Header - 01"
@@ -154,7 +155,7 @@
       ]
     },
     {
-      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Conjunto Mesa e Cadeira&nbsp;</span></p>",
+      "title": "<h1 class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Conjunto Mesa e Cadeira&nbsp;</span></h1>",
       "description": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Conforto&nbsp;</span></p><p>Um conjunto de mesa e cadeira de qualidade proporciona um alto nível de conforto. As cadeiras são projetadas para fornecer suporte adequado, permitindo que você se sente por longos períodos sem sentir desconforto ou fadiga.&nbsp;<span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\"></span></p><p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Durabilidade&nbsp;</span></p><p>Investir em um conjunto de mesa e cadeira de qualidade geralmente significa obter móveis duráveis e de longa duração. Esses itens são projetados para suportar o uso diário e resistir ao desgaste. Optar por móveis de qualidade também pode reduzir a necessidade de substituição frequente, resultando em economia a longo prazo.&nbsp;</p><p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">Estética e estilo&nbsp;</span></p><p>Além dos benefícios práticos, um conjunto de mesa e cadeira pode adicionar estilo e estética ao ambiente. Há uma ampla variedade de designs disponíveis, permitindo que você escolha um conjunto que se adapte ao seu gosto pessoal e ao estilo geral da decoração do espaço.&nbsp;<span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\"></span></p>",
       "__resolveType": "site/sections/Content/SectionText.tsx"
     },

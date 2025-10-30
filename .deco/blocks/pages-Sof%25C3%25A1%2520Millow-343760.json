@@ -103,7 +103,8 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Sofá Millow | Abra Casa",
-    "description": "Conheça o sofá retrátil Millow na Abra Casa: sofás com design contemporâneo, conforto extremo e funcionalidade para transformar sua sala."
+    "description": "Conheça o sofá retrátil Millow na Abra Casa: sofás com design contemporâneo, conforto extremo e funcionalidade para transformar sua sala.",
+    "canonical": "https://www.abracasa.com.br/campanha/sofa-millow"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

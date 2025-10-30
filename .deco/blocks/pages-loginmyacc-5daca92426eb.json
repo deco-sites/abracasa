@@ -2,7 +2,9 @@
   "name": "loginmyacc",
   "path": "/user-login",
   "sections": [
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "src": "/login",
       "minHeight": 800,
@@ -12,8 +14,17 @@
         "https://www.abracasa.com.br/login"
       ]
     },
-    { "__resolveType": "SectionNewsletter - Abracasa" },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "SectionNewsletter - Abracasa"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "titleTemplate": "Login | Abracasa",
+    "description": "Página de login para usuários abracasa."
+  },
   "__resolveType": "website/pages/Page.tsx"
 }

@@ -9,7 +9,8 @@
         "filters": "dynamic",
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "canonical": "https://www.abracasa.com.br/moveis/mesas/mesa-de-canto-e-lateral"
     },
     {
       "__resolveType": "Header - 01"
@@ -154,7 +155,7 @@
       ]
     },
     {
-      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Mesa de canto e lateral&nbsp;</span></p>",
+      "title": "<h1 class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Mesa de canto e lateral&nbsp;</span></h1>",
       "description": "<p><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Otimização do espaço&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Uma mesa de canto/lateral é uma excelente opção para otimizar o espaço em um ambiente. Ela é projetada para se encaixar em cantos ou áreas menores, aproveitando ao máximo o espaço disponível. Essas mesas são ideais para espaços compactos ou para aproveitar áreas que seriam normalmente subutilizadas.&nbsp;</span></p><p><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Versatilidade&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Uma mesa de canto/lateral pode ter várias utilidades, dependendo das necessidades do usuário. Ela pode servir como uma superfície de apoio para objetos decorativos, como uma luminária, um vaso de flores, uma escultura, entre outros. Além disso, pode ser usada como um local conveniente para colocar itens pessoais, como chaves, carteiras, celulares, controle remoto, entre outros.&nbsp;</span></p><p><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Complemento estético&nbsp;</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Uma mesa de canto/lateral pode adicionar estilo e elegância ao ambiente. Ela pode ser escolhida conforme o estilo de decoração predominante, ajudando a criar uma aparência coesa e atraente. Essas mesas estão disponíveis em diversos designs, materiais e cores, permitindo que você encontre uma opção que se encaixe perfeitamente na estética do espaço.&nbsp;</span></p>",
       "__resolveType": "site/sections/Content/SectionText.tsx"
     },

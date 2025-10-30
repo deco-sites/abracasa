@@ -114,7 +114,7 @@
     },
     {
       "__resolveType": "site/sections/Content/SectionText.tsx",
-      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sofá Retratil&nbsp;</span></p>",
+      "title": "<h1 class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sofá Retratil&nbsp;</span></h1>",
       "description": "<main class=\"main-content\"><section class=\"section-seo-text\"><div class=\"container\"><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Um sofá retrátil é ideal para quem busca conforto e praticidade porque se adapta a diferentes tipos de ambiente, conforme o seu momento do dia, proporcionando diferentes configurações e níveis de conforto. Aqui estão algumas características típicas de um sofá retrátil.&nbsp;</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">O sofá retrátil ideal para você</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Espaçoso, o sofá retrátil é opção para ambientes amplos, onde se recebe convidados e até são opções para hóspedes dormirem. Este modelo torna o espaço multifuncional, permitindo que um móvel de sala se torne uma cama para as visitas.&nbsp;</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Assentos retráteis</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás retráteis possuem assentos que podem ser estendidos para a frente, permitindo que você estique as pernas e apoie os pés. Essa função é ideal para relaxar, assistir TV ou tirar uma soneca confortavelmente.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Encostos reclináveis</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os encostos dos sofás retráteis podem ser reclinados para trás, permitindo que você se acomode em uma posição mais inclinada ou até mesmo deitada. Essa funcionalidade oferece opções de conforto adicionais e maior versatilidade ao sofá.</span></p><p class=\"title-section\"><span style=\"font-size: 18pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 18pt; color: rgb(85, 85, 85);\">Estilos e designs variados</span></p><p><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Os sofás retráteis estão disponíveis em uma ampla variedade de estilos, designs e tamanhos. Você pode encontrar opções que se encaixam em diferentes tipos de decoração e se adequar ao espaço disponível em sua sala de estar ou área de convívio.&nbsp;</span></p></div></section></main>"
     },
     {
@@ -129,6 +129,7 @@
       "count": 12,
       "filters": "dynamic",
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
-    }
+    },
+    "canonical": "https://www.abracasa.com.br/moveis/sofa/sofa-retratil"
   }
 }

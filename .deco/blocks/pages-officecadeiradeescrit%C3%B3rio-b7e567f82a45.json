@@ -9,7 +9,8 @@
         "filters": "dynamic",
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "canonical": "https://www.abracasa.com.br/moveis/office/cadeira-de-escritorio"
     },
     {
       "__resolveType": "Header - 01"
@@ -130,7 +131,7 @@
       ]
     },
     {
-      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Office&nbsp;</span></p>",
+      "title": "<h1 class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Office&nbsp;</span></h1>",
       "description": "<p>Na Abra Casa você encontra tudo para um home office completo e muito confortável! Separamos alguns conjuntos office para você não precisar se preocupar com nada na hora de montar o seu escritório. Mas se você gosta de construir o ambiente do seu jeito, temos uma seleção muito especial de cadeiras para escritório - giratórias e ergométricas -, gaveteiros, estantes, mesas, bancadas e mais!&nbsp;</p>",
       "__resolveType": "site/sections/Content/SectionText.tsx"
     },

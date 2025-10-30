@@ -3,3 +3,9 @@ Disallow: /
 
 User-agent: Googlebot
 Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+
+Sitemap: https://www.abracasa.com.br/sitemap.xml

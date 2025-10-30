@@ -1,0 +1,44 @@
+# Abracasa
+
+> Abracasa é uma loja online especializada em móveis e decoração para casa, oferecendo uma ampla variedade de produtos com entrega em todo o Brasil e montagem exclusiva no Grande Rio. Nosso objetivo é proporcionar qualidade, estilo e praticidade na compra de móveis.
+
+## Sitemap
+- [Sitemap principal](https://www.abracasa.com.br/sitemap.xml)
+
+## Diretrizes e Atribuições
+- Attribution: required  
+- Attribution-URL: [https://abracasa.com.br](https://abracasa.com.br)
+
+## Categorias de Produtos
+- [Sofás](https://abracasa.com.br/categoria/sofas): Sofás retráteis, fixos, sofá-cama, de 2 e 3 lugares — ideais para salas pequenas, grandes ou apartamentos.
+- [Mesas](https://www.abracasa.com.br/moveis/mesas): Mesas de jantar, centro, canto, laterais, infantis, de escritório e para áreas externas.
+- [Cadeiras, Bancos e Banquetas](https://www.abracasa.com.br/moveis/cadeiras-bancos-e-banquetas): Cadeiras de escritório, jantar, gamer, varanda, quarto e banquetas.
+- [Camas](https://www.abracasa.com.br/moveis/camas): Camas casal, queen, king, solteiro, infantil, bicamas, camas com gavetas e cama sofá.
+- [Cômodas](https://www.abracasa.com.br/moveis/comoda): Cômodas de 3 ou 4 gavetas, grandes ou pequenas — ideais para quartos de casal e solteiro.
+- [Colchões](https://www.abracasa.com.br/moveis/colchoes): Colchões de espuma, casal, queen, solteiro, berço e mini berço.
+- [Poltronas](https://www.abracasa.com.br/moveis/poltronas): Poltronas com puff, poltrona papai, reclinável, de couro, madeira ou decorativa para sala e escritório.
+- [Guarda-Roupas](https://www.abracasa.com.br/moveis/guarda-roupas): Guarda-roupas com 2, 3 ou 4 portas, com gavetas, grandes, pequenos, casal, solteiro e infantil.
+- [Office](https://www.abracasa.com.br/moveis/office): Móveis para escritório ou estudo — cadeiras, mesas, módulos com gavetas, armários e escrivaninhas.
+- [Racks e estantes](https://www.abracasa.com.br/moveis/estantes-e-racks): Racks, estantes e aparadores.
+- [Infantil](https://www.abracasa.com.br/moveis/infantil): Kit quarto infantil e berço.
+
+## Móveis por Ambiente
+
+- [Bar](https://www.abracasa.com.br/ambientes/bar): Itens para compor o espaço do bar com estilo e funcionalidade — carrinhos de bar, banquetas altas, bandejas, bancos, esculturas e centros de mesa decorativos.
+- [Escritório](https://www.abracasa.com.br/ambientes/escritorio): Móveis e acessórios para estudo ou home office — escrivaninhas, bancadas, cadeiras ergonômicas, módulos com gavetas, estantes, luminárias e conjuntos de cadeiras.
+- [Sala de Estar](https://www.abracasa.com.br/ambientes/sala-de-estar): Peças que unem conforto e decoração — sofás, poltronas, racks, prateleiras, tapetes, puffs, espelhos, cristaleiras e conjuntos de mesa com cadeiras.
+- [Sala de Jantar](https://www.abracasa.com.br/ambientes/sala-de-jantar): Mesas, aparadores e conjuntos de jantar com 2, 4 ou 6 cadeiras, além de centros de mesa e itens decorativos para o ambiente de refeições.
+- [Jardim e Varanda](https://www.abracasa.com.br/ambientes/varanda-e-area-externa): Móveis para áreas externas — bancos de jardim, mesas, sofás, vasos, esculturas e racks resistentes ao ambiente externo.
+- [Quarto](https://www.abracasa.com.br/ambientes/quarto): Móveis para todos os estilos de quarto — camas (solteiro, casal, queen e king), cômodas, guarda-roupas, prateleiras, mesas, cadeiras, espelhos, puffs, cabideiros e luminárias.
+
+## Móveis para Decoração
+- [Decoração](https://www.abracasa.com.br/decoracao): Itens e móveis decorativos para todos os ambientes — adornos, almofadas, cabideiros, prateleiras, cestos, luminárias, mantas, organizadores, tapetes, vasos e cachepots.
+
+
+## Promoções e Novidades
+- [Promoções](https://www.abracasa.com.br/off): Descontos em sofás, mesas, cadeiras e muito mais para renovar seu ambiente com economia e estilo.
+
+## Informações Institucionais
+- [Troca e Devolução](https://www.abracasa.com.br/institucional/troca-e-devolucao): Política clara para garantir satisfação e segurança em todas as compras.
+- [Quem Somos](https://www.abracasa.com.br/institucional/quem-somos): Conheça a história e propósito da Abracasa.
+- [Política de Privacidade](https://www.abracasa.com.br/institucional/politica-de-privacidade): Saiba como tratamos seus dados com transparência e segurança.

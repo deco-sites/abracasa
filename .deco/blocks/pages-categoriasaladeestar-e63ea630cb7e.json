@@ -9,7 +9,8 @@
         "filters": "dynamic",
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "canonical": "https://www.abracasa.com.br/ambientes/sala-de-estar"
     },
     { "__resolveType": "Header - 01" },
     {
@@ -78,7 +79,7 @@
       "__resolveType": "site/sections/Product/SearchResult.tsx"
     },
     {
-      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sala de estar&nbsp;</span></p>",
+      "title": "<h1 class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sala de estar&nbsp;</span></h1>",
       "description": "<p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Monte a sua sala de estar na Abra Casa! Aqui você encontra móveis com desenhos exclusivos e designs internacionais para deixar a sua sala completa e muito confortável. São poltronas, sofás, racks, tapetes, mesas, e claro, muitos itens de decoração!&nbsp;</span></p>",
       "__resolveType": "site/sections/Content/SectionText.tsx"
     },

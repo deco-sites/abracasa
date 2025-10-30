@@ -87,7 +87,7 @@
     },
     {
       "__resolveType": "site/sections/Content/SectionText.tsx",
-      "title": "<p class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sala de jantar&nbsp;</span></p>",
+      "title": "<h1 class=\"title-section\" style=\"line-height: 1.45;\" data-mce-style=\"line-height: 1.45;\"><span style=\"font-size: 24pt; color: rgb(85, 85, 85);\" data-mce-style=\"font-size: 24pt; color: rgb(85, 85, 85);\">Sala de jantar&nbsp;</span></h1>",
       "description": "<p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Na Abra Casa você deixa a sua sala de jantar mais completa! Preparamos diversos tipos e tamanhos de conjuntos de mesas e cadeiras para deixar esse momento ainda mais confortável. E se você prefere montar o seu conjunto do seu jeito, é só escolher. São mesas redondas ou quadradas, com tampos em madeira ou de vidro, cadeiras estofadas ou de polipropileno, para todos os tamanhos de casas e famílias.&nbsp;</span></p>"
     },
     {
@@ -104,6 +104,7 @@
       "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
     },
     "title": "Sala de Jantar | Abra Casa",
-    "description": "Na Abra Casa, sua sala de jantar ganha vida! Mesas, cadeiras e racks exclusivos que trazem elegância, conforto e funcionalidade para todos os estilos."
+    "description": "Na Abra Casa, sua sala de jantar ganha vida! Mesas, cadeiras e racks exclusivos que trazem elegância, conforto e funcionalidade para todos os estilos.",
+    "canonical": "https://www.abracasa.com.br/ambientes/sala-de-jantar"
   }
 }

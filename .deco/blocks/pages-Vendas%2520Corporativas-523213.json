@@ -198,7 +198,9 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "titleTemplate": "Vendas corporativas | Abracasa",
+    "description": "Soluções em mobiliário corporativo com curadoria especializada, design acessível e atendimento personalizado."
   },
   "__resolveType": "website/pages/Page.tsx"
 }
