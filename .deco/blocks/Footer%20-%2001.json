@@ -206,10 +206,10 @@
   "security": {
     "items": [
       {
-        "link": "http://secure.vtex.com/?an=abracasa",
         "image": "https://assets.decocache.com/abracasa/d51eccce-6caa-4191-a273-989512667243/1742561360392-50096b29-7ace-4964-9b49-80c9339074d0",
-        "target": "_blank",
-        "description": "Vtex PCI"
+        "target": "_self",
+        "description": "Vtex PCI",
+        "link": "#"
       },
       {
         "link": "https://www.ebit.com.br/abra-cadabra",
