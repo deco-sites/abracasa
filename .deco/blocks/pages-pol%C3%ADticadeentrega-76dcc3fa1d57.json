@@ -5,8 +5,8 @@
     {
       "type": "website",
       "__resolveType": "website/sections/Seo/Seo.tsx",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
+      "descriptionTemplate": "%s",
+      "titleTemplate": "Política de Entrega | Abra casa"
     },
     {
       "__resolveType": "Header - 01"
