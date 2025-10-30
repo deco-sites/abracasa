@@ -12,14 +12,16 @@
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
       "canonical": "https://www.abracasa.com.br/decoracao/cabideiros-e-prateleiras"
     },
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "banners": [
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/185083/casa_banner_categorias_cabideiroseprateleiras.png?v=638224404878000000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/185083/casa_banner_categorias_cabideiroseprateleiras.png?v=638224404878000000"
+            "mobile": "https://assets.decocache.com/abracasa/72d29a08-ad4b-401d-8d9a-cce6d5d1dfc4/banners-prateleiras.mobile.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/7a8df12e-8f4d-4ba5-b885-9a3f21059566/banners-prateleiras.jpg"
           },
           "matcher": "/*"
         }
@@ -33,13 +35,19 @@
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer",
         "pagination": "show-more"
       },
       "cardLayout": {
         "layout": {
-          "hide": { "skuSelector": true, "productDescription": true },
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
           "show": {
             "cta": true,
             "allPrices": true,
@@ -48,7 +56,10 @@
             "installments": true,
             "productDescription": true
           },
-          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
           "onMouseOver": {
             "card": "None",
             "image": "Change image",
@@ -83,7 +94,9 @@
       "description": "<p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85);\" data-mce-style=\"color: rgb(85, 85, 85);\">Itens para decoração é na Abra Casa! Nós sabemos como o momento de decorar cada cômodo é prazeroso. Essa é a hora de deixar a casa com a sua cara, e para te ajudar, selecionamos diversos itens de decor - dos artigos mais rústicos até os mais cleans – para você aproveitar.</span></p>",
       "__resolveType": "site/sections/Content/SectionText.tsx"
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }
