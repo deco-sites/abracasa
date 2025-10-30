@@ -12,14 +12,16 @@
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
       "canonical": "https://www.abracasa.com.br/decoracao/almofadas"
     },
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "banners": [
         {
           "image": {
             "alt": "Banner",
-            "mobile": "https://abracasa.vteximg.com.br/arquivos/ids/185082/casa_banner_categorias_almofadas.png?v=638224401402200000",
-            "desktop": "https://abracasa.vteximg.com.br/arquivos/ids/185082/casa_banner_categorias_almofadas.png?v=638224401402200000"
+            "mobile": "https://assets.decocache.com/abracasa/0c111cf5-a49e-406e-a5f0-12c6986ca39f/banners-almofadas.mobile.jpg",
+            "desktop": "https://assets.decocache.com/abracasa/e10462cf-1fdc-4cf0-8ec9-fcc0d817c664/banners-almofadas.jpg"
           },
           "matcher": "/*"
         }
@@ -33,13 +35,19 @@
         "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
       },
       "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
         "variant": "drawer",
         "pagination": "show-more"
       },
       "cardLayout": {
         "layout": {
-          "hide": { "skuSelector": true, "productDescription": true },
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
           "show": {
             "cta": true,
             "allPrices": true,
@@ -48,7 +56,10 @@
             "installments": true,
             "productDescription": true
           },
-          "basics": { "oldPriceSize": "Small", "contentAlignment": "Left" },
+          "basics": {
+            "oldPriceSize": "Small",
+            "contentAlignment": "Left"
+          },
           "onMouseOver": {
             "card": "None",
             "image": "Change image",
@@ -83,7 +94,9 @@
       "description": "<p class=\"title-section\"><span style=\"color: rgb(85, 85, 85); font-size: 18pt;\" data-mce-style=\"color: rgb(85, 85, 85); font-size: 18pt;\">Conforto</span></p><p><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85); font-size: 12pt;\" data-mce-style=\"color: rgb(85, 85, 85); font-size: 12pt;\">As almofadas são conhecidas por proporcionar conforto adicional em várias situações. Elas oferecem suporte macio e aconchegante para o corpo ao sentar-se, deitar-se ou relaxar.</span></p><p><br data-mce-bogus=\"1\"></p><p class=\"title-section\"><span style=\"color: rgb(85, 85, 85); font-size: 18pt;\" data-mce-style=\"color: rgb(85, 85, 85); font-size: 18pt;\">Decoração e estilo</span></p><p><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85); font-size: 12pt;\" data-mce-style=\"color: rgb(85, 85, 85); font-size: 12pt;\">As almofadas são itens decorativos versáteis, capazes de adicionar estilo e personalidade a qualquer ambiente. Elas estão disponíveis em uma ampla variedade de cores, padrões e texturas, permitindo que você as escolhas de acordo com sua preferência e estilo de decoração.</span></p><p><br data-mce-bogus=\"1\"></p><p class=\"title-section\"><span style=\"color: rgb(85, 85, 85); font-size: 18pt;\" data-mce-style=\"color: rgb(85, 85, 85); font-size: 18pt;\">Flexibilidade e versatilidade</span></p><p><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85); font-size: 12pt;\" data-mce-style=\"color: rgb(85, 85, 85); font-size: 12pt;\">As almofadas podem ser usadas em várias áreas da casa, como sala de estar, quarto, varanda ou área de leitura. Além disso, podem ser facilmente movidas e reposicionadas para se adequar às necessidades e preferências individuais.</span></p><p><br data-mce-bogus=\"1\"></p><p class=\"title-section\"><span style=\"color: rgb(85, 85, 85); font-size: 18pt;\" data-mce-style=\"color: rgb(85, 85, 85); font-size: 18pt;\">Relaxamento e bem-estar</span></p><p><br data-mce-bogus=\"1\"></p><p style=\"line-height: 1.4;\" data-mce-style=\"line-height: 1.4;\"><span style=\"color: rgb(85, 85, 85); font-size: 12pt;\" data-mce-style=\"color: rgb(85, 85, 85); font-size: 12pt;\">Almofadas macias e confortáveis contribuem para o relaxamento e o bem-estar. Elas podem ajudar a reduzir o estresse, promover o descanso e proporcionar uma sensação de conforto e tranquilidade.</span><br></p>",
       "__resolveType": "site/sections/Content/SectionText.tsx"
     },
-    { "__resolveType": "Footer - 01" }
+    {
+      "__resolveType": "Footer - 01"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }
