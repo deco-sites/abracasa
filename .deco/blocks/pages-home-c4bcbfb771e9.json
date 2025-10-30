@@ -51,6 +51,20 @@
           }
         },
         {
+          "alt": "Home Office",
+          "href": "https://www.abracasa.com.br/campanha/home-office",
+          "mobile": {
+            "image": "https://assets.decocache.com/abracasa/6d5841de-182b-4cbf-bed0-a4cfeb34c9a3/casa_escrivaninhas_banner_mobile_767x942-(2).jpg",
+            "width": 767,
+            "height": 942
+          },
+          "desktop": {
+            "image": "https://assets.decocache.com/abracasa/5d451c04-7a18-4fb3-9381-d8c15aa8f4d2/casa_escrivaninhas_banner_desktop_1920x713.jpg",
+            "width": 1920,
+            "height": 713
+          }
+        },
+        {
           "alt": "Fernanda Sampaio",
           "href": "https://www.abracasa.com.br/fernanda-sampaio",
           "mobile": {
@@ -102,20 +116,6 @@
           },
           "desktop": {
             "image": "https://assets.decocache.com/abracasa/795d85cc-34f2-4233-bc5e-b1ec15762018/casa_banner_desk_atelie_casa_novosite.gif",
-            "width": 1920,
-            "height": 713
-          }
-        },
-        {
-          "alt": "Home Office",
-          "href": "https://www.abracasa.com.br/campanha/home-office",
-          "mobile": {
-            "image": "https://assets.decocache.com/abracasa/6d5841de-182b-4cbf-bed0-a4cfeb34c9a3/casa_escrivaninhas_banner_mobile_767x942-(2).jpg",
-            "width": 767,
-            "height": 942
-          },
-          "desktop": {
-            "image": "https://assets.decocache.com/abracasa/5d451c04-7a18-4fb3-9381-d8c15aa8f4d2/casa_escrivaninhas_banner_desktop_1920x713.jpg",
             "width": 1920,
             "height": 713
           }
